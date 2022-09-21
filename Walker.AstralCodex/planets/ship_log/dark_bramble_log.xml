@@ -1,0 +1,32 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>DARK_BRAMBLE</ID>
+
+    <Entry>
+        <ID>codex_bramble_signal</ID>
+        <Name>Dark Bramble Research Station</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+    
+        <RumorFact>
+            <ID>codex_bramble_signal_rumor</ID> 
+            <SourceID>codex_lingering_chime_lower</SourceID> 
+            <RumorName>Dark Bramble Signal</RumorName> 
+            <Text>I detected a chiming signal coming from the surface of Dark Bramble.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_bramble_station</ID> 
+            <Text>I found a Nomai reasearch station on the surface of Dark Bramble.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_bramble_research</ID> 
+            <Text>The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_bramble_scroll</ID> 
+            <Text>I found a crytalline scroll on Dark Bramble that contains a first-contact message from an unknown species to the Nomai. Half of the message is in a language composed of symbols, the rest is in Nomai script. The scroll offers information of great value to the Nomai once they have advanced as a species.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

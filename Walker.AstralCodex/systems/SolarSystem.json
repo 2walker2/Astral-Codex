@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"curiosities": [
+		{
+			"color": {
+
+				"r": 119,
+				"g": 198,
+				"b": 206,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 132,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			},
+			"id": "codex_astral_codex"
+		}
+	],
+	"entryPositions": [
+		{ "id": "codex_astral_codex", "position": {"x": 1900, "y": -200 }},
+		{ "id": "codex_lingering_chime_lower", "position": {"x": 1500, "y": -100 }},
+		{ "id": "codex_lingering_chime", "position": {"x": 1600, "y": 100 }},
+		{ "id": "codex_bramble_signal", "position": {"x": 1200, "y": -400 }},
+		{ "id": "codex_interloper_signal", "position": {"x": 1400, "y": -500 }},
+		{ "id": "codex_ember_signal", "position": {"x": 1100, "y": -200 }},
+	],
+	"canEnterViaWarpDrive": false
+}

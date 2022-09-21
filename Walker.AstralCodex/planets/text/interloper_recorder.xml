@@ -1,0 +1,27 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text><![CDATA[<Color=#00ffbc>]]>&#38;&#62;&#38;]&#34;[/&#34; &#38;]]?] (.&#38;| ./{};@|&#38;   [/{.(([*[&#38;/} {+;}[;| &#60;[&#62;&#38;/{[?/{   _&#38;}}[{?/[/&#34; (.&#38;| {&#38;&#38;&#60; ;{ (;] ;{ ;@|&#38;   (.&#38;| ]&#38;;*}[/&#34; ./&#60;&#38;]&#34;?[/&#34; ([{{[?/   +]&#38;{{.]&#38; ][{[/&#34; |[#.[&#60; &#60;&#38;+|?^[/&#34;   |[#.[&#60; (]?$&#38;/ &#34;&#38;/&#38;];}[/&#34; -;]/[/&#34;<![CDATA[</Color>]]></Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text><![CDATA[<Color=#00ffbc>]]>emerging error fuel unstable   insufficient spatial dimensions   jettisoning fuel seed as far as able   fuel reacting undergoing fission   pressure rising liquid deploying   liquid frozen generating warning<![CDATA[</Color>]]></Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text><![CDATA[<Color=#00ffbc>]]>}~&#38; (.&#38;| *?/};[/&#38;&#60; -[}~[/&#34; }~[{ {&#38;&#38;&#60; [{ ~[&#34;~|^ &#60;;/&#34;&#38;]?.{ ;/&#60; *?/};*} [{ |[%&#38;|^ }? &#38;/&#60; [/ ^?.] &#60;&#38;&#62;[{&#38;   -&#38; -?.|&#60; .]&#34;&#38; ^?. }? %[/&#60;|^ ]&#38;|?*;}&#38; }? ; {;(&#38; &#60;[{};/*&#38; ?( ;++]?![&#62;;}&#38;|^ ?/&#38; ~./&#60;]&#38;&#60; ;/&#60; ([}^ %[|?&#62;&#38;}&#38;]{<![CDATA[</Color>]]></Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text><![CDATA[<Color=#00ffbc>]]>the fuel contained within this seed is highly dangerous and any contact with it is likely to end in your demise   we would urge you to kindly relocate to a safe distance of approximately one hundred and fity kilometers<![CDATA[</Color>]]></Text>
+	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_interloper_recorder</FactID>
+	      	<Condition>4</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

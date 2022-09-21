@@ -1,0 +1,20 @@
+public enum SpawnLocation
+{
+	Comet = 0,
+	HourglassTwin_1 = 1,
+	HourglassTwin_2 = 2,
+	TimberHearth = 3,
+	BrittleHollow = 4,
+	GasGiant = 5,
+	DarkBramble = 6,
+	GasGiantMoon = 7,
+	TimberHearth_Alt = 8,
+	Ship = 9,
+	QuantumMoon = 10,
+	LunarLookout = 11,
+	SignalDish = 12,
+	SunStation = 13,
+	None = 14,
+	InvisiblePlanet = 15,
+	InvisiblePlanet_Alt = 16,
+}

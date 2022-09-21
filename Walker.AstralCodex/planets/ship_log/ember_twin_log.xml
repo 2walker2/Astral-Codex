@@ -1,0 +1,21 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>CAVE_TWIN</ID>
+
+    <Entry>
+        <ID>codex_ember_signal</ID>
+        <Name>Crystalline Cairns</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+        <RumorFact>
+            <ID>codex_ember_signal_rumor</ID>
+            <SourceID>codex_lingering_chime_lower</SourceID> 
+            <RumorName>Ember Twin Signal</RumorName> 
+            <Text>I detected a chiming signal coming from Ember Twin.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_ember_cairns</ID> 
+            <Text>I found a set of crytalline cairns on ember twin. Two were in a language composed of symbols, the other two were in Nomai script. They contain a first-contact message from an unknown species to the Nomai. The species claims to originate from a previous universe. The message offers great knowledge to the Nomai when the time has come.</Text> 
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

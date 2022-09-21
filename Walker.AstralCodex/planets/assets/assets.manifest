@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1099498933
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: astral_codex
+      Dependencies: {}

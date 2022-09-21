@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Tesseract
+  - NomaiShuttleBody
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PlayerSafetyCollider
+  - Sun
+  - ShipInterior
+  - HelmetUVPass
+  - UNUSED
+  - "AdvancedDetector\t"
+  - Primitive
+  - 'IgnoreSun '
+  - 'AdvancedEffectVolume '
+  - "BasicEffectVolume\t"
+  - ProxyPrimitive
+  - "ReferenceFrameVolume\t"
+  - "BasicDetector\t"
+  - "Interactible\t"
+  - VisibleToProbe
+  - HeadsUpDisplay
+  - CloseRangeRFVolume
+  - "ProxyPrimitive2\t"
+  - PhysicalDetector
+  - "VisibleToPlayer\t"
+  - "DreamSimulation\t"
+  - Skybox
+  - "IgnoreOrbRaycast\t"
+  - "Flashback\t"
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sprites
+    uniqueID: 2891022733
+    locked: 0

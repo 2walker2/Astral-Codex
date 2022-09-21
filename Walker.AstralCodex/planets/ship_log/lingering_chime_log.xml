@@ -1,0 +1,88 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>Lingering Chime</ID>
+    <Entry>
+        <ID>codex_lingering_chime</ID>
+        <Name>Lingering Chime</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+
+        <RumorFact>
+            <ID>codex_lingering_chime_rumor</ID>
+            <RumorName>Anamalous Body</RumorName>
+            <Text>The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.</Text> 
+        </RumorFact>
+        <ExploreFact>
+            <ID>codex_lingering_chime_fact</ID>
+            <Text>There is an invisible structure far below the plane of the ecliptic.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>codex_lingering_chime_tesseract</ID>
+            <Text>I passed through a device that felt like a Nomai gravity beam and the structure revealed itself. I can see ghost matter now.</Text> 
+        </ExploreFact>
+        <ExploreFact>
+            <ID>codex_lingering_chime_text</ID>
+            <Text>There are three pieces of text in a language composed of symbols chalked onto the floor. They read:
+    +?+.|;}[?/ 
+    {+;*&#38;*];(}
+    /? {./</Text> 
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>codex_lingering_chime_lower</ID>
+        <Name>Lower Deck</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+
+        <IgnoreMoreToExplore/>
+
+        <RumorFact>
+            <ID>codex_lingering_chime_lower_rumor</ID> 
+            <SourceID>codex_lingering_chime</SourceID> 
+            <RumorName>Chime Signal</RumorName> 
+            <Text>There is an unknown signal coming from the lower deck of the structure. The path downwards is blocked by ghost matter.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_lingering_chime_lower_antenna</ID>
+            <Text>There is an antenna broadcasting a chiming signal on the lower deck.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_lingering_chime_lower_monolith</ID>
+            <Text>There is a strange monolith on the lower deck. It appears unpowered. Wires run to it from three indicator lights in the floor.</Text> 
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>codex_astral_codex</ID>
+        <Name>Astal Codex</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+        <IsCuriosity/>
+
+        <RumorFact>
+            <ID>codex_astral_codex_rumor</ID> 
+            <SourceID>codex_lingering_chime_lower</SourceID> 
+            <RumorName>Astral Codex</RumorName> 
+            <Text>A codex containing information of great value, offered to the Nomai by an unknown species.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_astral_codex_fact</ID>
+            <Text><![CDATA[<Color=#00ffbc>]]>CODEX DOWNLOADING   CODEX DOWNLOADED ONTO ALL CONNECTED DEVICES   TRANSLATION BEGINNING
+Our universe is dying. Soon our world, our species, and our knowledge will cease to exist. But we have found the Eye. We know now that this has happened before and will happen again and that knowledge gives us hope.
+This codex is a volume of our collected knowledge. Everything we have learned about the history of our universe and its inhabitants. By obtaining it, your species has proven itself worthy of its contents.
+But your own end times are close at hand. Before you retire to oblivion, we humbly request: add your knowledge to the codex and pass it onwards by any means available to you, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
+*~;|%&#38;&#60; };@|&#38;}{ {}]&#38;}*~ [/ ;|| &#38;[&#34;~} &#60;[]&#38;*}[?/{ ;/&#60; [ +?/&#60;&#38;] ?@|[)[?/<![CDATA[</Color>]]></Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>codex_astral_codex_addendum</ID>
+            <Text>Addendum by: The Hatchling
+The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until a single individual released the signal for the Nomai to find, and was imprisoned for their actions.
+
+The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
+
+I am a Hearthian, a young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death. (except maybe Riebeck)
+            </Text> 
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

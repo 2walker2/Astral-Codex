@@ -1,0 +1,22 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>COMET</ID>
+
+    <Entry>
+        <ID>codex_interloper_signal</ID>
+        <Name>Fuel Seed</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+    
+        <RumorFact>
+            <ID>codex_interloper_signal_rumor</ID> 
+            <SourceID>codex_lingering_chime_lower</SourceID> 
+            <RumorName>Interloper Signal</RumorName> 
+            <Text>I detected a chiming signal coming from The Interloper.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_interloper_recorder</ID> 
+            <Text>I found a crystalline recorder in the core of The Interloper. It warns that a fuel seed is about to rupture and recommends evacuation. Half of the recording is in a language composed of symbols, the rest is in Nomai script.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>
