@@ -18,7 +18,7 @@
 		"staticPosition": {
 			"y": -35000.0
 		},
-		"siderealPeriod": 5.0,
+		"siderealPeriod": 3.0,
 		"isStatic": true
 	},
 	"Props": {
