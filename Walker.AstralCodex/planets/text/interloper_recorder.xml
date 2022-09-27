@@ -16,7 +16,7 @@
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>the fuel contained within this seed is highly dangerous and any contact with it is likely to end in your demise   we would urge you to kindly relocate to a safe distance of approximately one hundred and fity kilometers<![CDATA[</Color>]]></Text>
+		<Text><![CDATA[<Color=#00ffbc>]]>the fuel contained within this seed is highly dangerous and any contact with it is likely to end in your demise   we would urge you to kindly relocate to a safe distance of approximately one hundred and fifty kilometers<![CDATA[</Color>]]></Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

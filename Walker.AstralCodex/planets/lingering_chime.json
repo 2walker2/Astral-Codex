@@ -50,6 +50,11 @@
 			{
 				"audio": "planets/assets/chimes.wav",
 				"detectionRadius": 100.0,
+<<<<<<< Updated upstream
+=======
+				"identificationRadius": 7.0,
+				"sourceRadius": 1.0,
+>>>>>>> Stashed changes
 				"frequency": "Astral Codex",
 				"name": "Chime Transmitter",
 				"position": {
@@ -127,7 +132,7 @@
     "audioVolumes": [
       {
         "audio": "planets/assets/ice-and-decay.mp3",
-        "track": "environment",
+        "track": "music",
         "radius": 20.0
       },
       {

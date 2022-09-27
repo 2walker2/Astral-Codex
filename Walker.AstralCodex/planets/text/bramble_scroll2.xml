@@ -1,12 +1,12 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text><![CDATA[<Color=#00ffbc>]]>&#60;&#38;}&#38;*}[/&#34; |[(&#38; /&#38;;][/&#34; {./   *?&#62;&#62;./[*;}[?/ &#60;&#38;}&#38;*}&#38;&#60; }];/{|;}[?/ @&#38;&#34;./   &#60;&#38;+|?^[/&#34; ([{} *?/};*} )[; |?*;| &#62;&#38;&#60;[.&#62;<![CDATA[</Color>]]></Text>
+		<Text><![CDATA[<Color=#00ffbc>]]>&#60;&#38;}&#38;*}[/&#34; |[(&#38; /&#38;;][/&#34; {./   *?&#62;&#62;./[*;}[?/ &#60;&#38;}&#38;*}&#38;&#60; }];/{|;}[?/ @&#38;&#34;./   &#60;&#38;+|?^[/&#34; ([]{} *?/};*} )[; |?*;| &#62;&#38;&#60;[.&#62;<![CDATA[</Color>]]></Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>detecting life nearing sun   communication detected translation begun   deploying fist contact via local medium<![CDATA[</Color>]]></Text>
+		<Text><![CDATA[<Color=#00ffbc>]]>detecting life nearing sun   communication detected translation begun   deploying first contact via local medium<![CDATA[</Color>]]></Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
