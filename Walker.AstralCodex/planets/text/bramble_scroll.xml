@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>OENO: This research station has been established to study the spacial distortions located within <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>.</Text>
+		<Text>OENO: This research station has been established to study the spacial distortions located within Dark Bramble.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>OENO: Our research is progressing rapidly. We have determined that the space within Dark Bramble is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
+		<Text>OENO: Research is progressing rapidly. We have determined that the space within Dark Bramble is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>3</ParentID>
-		<Text>OENO: By studying the sky shortly after an object has entered Dark Bramble, we believe we have located the space the interior occupies.</Text>
+		<Text>OENO: By studying the sky shortly after an object has entered Dark Bramble, we believe we have located the space the interior occupies. Coleus informs us that the phenomena is quite unsettling when viewed from the surface of Timber Hearth.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>

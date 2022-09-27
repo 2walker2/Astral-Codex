@@ -277,8 +277,7 @@
 					"x": -263.504181,
 					"y": 313.572662,
 					"z": -326.037384
-				},
-				"reveals": "codex_bramble_signal_rumor"
+				}
 			}
 		],
 		"reveal": [
@@ -287,7 +286,8 @@
 				"maxDistance": -1.0,
 				"revealOn": "enter",
 				"reveals": [
-					"codex_bramble_station"
+					"codex_bramble_station",
+					"codex_bramble_signal_rumor"
 				],
 				"position": {
 					"x": -263.504181,

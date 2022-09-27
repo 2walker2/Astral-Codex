@@ -3,7 +3,7 @@
 	"name": "Lingering Chime",
 	"Atmosphere": {
 		"hasSnow": true,
-		"size": 24.0,
+		"size": 20.0,
     "hasOxygen": true,
     "hasTrees": false
 	},
@@ -50,11 +50,8 @@
 			{
 				"audio": "planets/assets/chimes.wav",
 				"detectionRadius": 100.0,
-<<<<<<< Updated upstream
-=======
 				"identificationRadius": 7.0,
 				"sourceRadius": 1.0,
->>>>>>> Stashed changes
 				"frequency": "Astral Codex",
 				"name": "Chime Transmitter",
 				"position": {

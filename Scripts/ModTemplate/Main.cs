@@ -72,126 +72,133 @@ namespace AstralCodex
             newHorizons.LoadConfigs(this);
 
             //Setup
-            newHorizons.GetStarSystemLoadedEvent().AddListener((string system) => {
-                //Debug
-                ModHelper.Console.WriteLine($"LISTENER ADDED", MessageType.Success);
-
-                //Assign ghost matter material
-                foreach (string ghostMatterCrystal in ghostMatterCrystals)
+            newHorizons.GetStarSystemLoadedEvent().AddListener((string system) => 
+            {
+                if (system == "SolarSystem")
                 {
-                    GameObject crystal = GameObject.Find(ghostMatterCrystal);
-                    if (crystal != null)
-                    {
-                        crystal.AddComponent<GhostMatterMaterial>();
-                        ModHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
-                    }
-                }
+                    //Debug
+                    ModHelper.Console.WriteLine($"LISTENER ADDED", MessageType.Success);
 
-                //Find materials
-                materials = new Dictionary<string, Material>();
-                foreach (KeyValuePair<string, string> pair in materialsToFind)
-                {
-                    GameObject obj = GameObject.Find("MaterialReferences/"+pair.Key);
-                    if (obj != null)
+                    //Assign ghost matter material
+                    foreach (string ghostMatterCrystal in ghostMatterCrystals)
                     {
-                        MeshRenderer rend = obj.GetComponent<MeshRenderer>();
-                        if (rend != null)
+                        GameObject crystal = GameObject.Find(ghostMatterCrystal);
+                        if (crystal != null)
                         {
-                            Material mat = rend.material;
-                            if (mat != null)
+                            crystal.AddComponent<GhostMatterMaterial>();
+                            ModHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
+                        }
+                    }
+
+                    //Find materials
+                    materials = new Dictionary<string, Material>();
+                    foreach (KeyValuePair<string, string> pair in materialsToFind)
+                    {
+                        GameObject obj = GameObject.Find("MaterialReferences/" + pair.Key);
+                        if (obj != null)
+                        {
+                            MeshRenderer rend = obj.GetComponent<MeshRenderer>();
+                            if (rend != null)
                             {
-                                materials.Add(pair.Value, mat);
-                                ModHelper.Console.WriteLine($"FOUND MATERIAL " + pair.Value, MessageType.Success);
+                                Material mat = rend.material;
+                                if (mat != null)
+                                {
+                                    materials.Add(pair.Value, mat);
+                                    ModHelper.Console.WriteLine($"FOUND MATERIAL " + pair.Value, MessageType.Success);
+                                }
+                                else
+                                    ModHelper.Console.WriteLine($"FAILED TO FIND MATERIAL " + pair.Value, MessageType.Error);
                             }
                             else
-                                ModHelper.Console.WriteLine($"FAILED TO FIND MATERIAL " + pair.Value, MessageType.Error);
+                                ModHelper.Console.WriteLine($"FAILED TO FIND RENDERER FOR MATERIAL " + pair.Value, MessageType.Error);
                         }
                         else
-                            ModHelper.Console.WriteLine($"FAILED TO FIND RENDERER FOR MATERIAL " + pair.Value, MessageType.Error);
+                            ModHelper.Console.WriteLine($"FAILED TO FIND OBJECT FOR MATERIAL " + pair.Value, MessageType.Error);
                     }
-                    else
-                        ModHelper.Console.WriteLine($"FAILED TO FIND OBJECT FOR MATERIAL " + pair.Value, MessageType.Error);
-                }
 
-                //Assign scripts
-                foreach (KeyValuePair<string, Type> pair in componentsToAdd)
-                {
-                    GameObject obj = GameObject.Find(pair.Key);
-                    if (obj != null)
+                    //Increase ghost matter damage
+                    GameObject.Find("StationGhostMatter").GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+
+                    //Assign scripts
+                    foreach (KeyValuePair<string, Type> pair in componentsToAdd)
                     {
-                        obj.AddComponent(pair.Value);
-                        ModHelper.Console.WriteLine($"FOUND " + pair.Key, MessageType.Success);
+                        GameObject obj = GameObject.Find(pair.Key);
+                        if (obj != null)
+                        {
+                            obj.AddComponent(pair.Value);
+                            ModHelper.Console.WriteLine($"FOUND " + pair.Key, MessageType.Success);
+                        }
+                        else
+                            ModHelper.Console.WriteLine($"FAILED TO FIND " + pair.Key, MessageType.Error);
+                    }
+
+                    //Enable Lingering Chime reference frame
+                    GameObject rfVolume = GameObject.Find("LingeringChime_Body").transform.GetChild(1).gameObject;
+                    if (rfVolume != null)
+                    {
+                        ModHelper.Console.WriteLine("FOUND REFERENCE VOLUME", MessageType.Success);
+                        rfVolume.SetActive(true);
                     }
                     else
-                        ModHelper.Console.WriteLine($"FAILED TO FIND " + pair.Key, MessageType.Error);
-                }
+                    {
+                        ModHelper.Console.WriteLine("FAILED TO FIND REFERENCE VOLUME", MessageType.Error);
+                    }
 
-                //Enable Lingering Chime reference frame
-                GameObject rfVolume = GameObject.Find("LingeringChime_Body").transform.GetChild(1).gameObject;
-                if (rfVolume != null)
-                {
-                    ModHelper.Console.WriteLine("FOUND REFERENCE VOLUME", MessageType.Success);
-                    rfVolume.SetActive(true);
-                }
-                else
-                {
-                    ModHelper.Console.WriteLine("FAILED TO FIND REFERENCE VOLUME", MessageType.Error);
-                }
+                    //Increase Timber Hearth shuttle radius
+                    GameObject.Find("TimberHearth_Body/Sector_TH/Volumes_TH/RulesetVolumes_TH").GetComponent<PlanetoidRuleset>()._shuttleLandingRadius = 2000;
 
-                //Increase Timber Hearth shuttle radius
-                GameObject.Find("TimberHearth_Body/Sector_TH/Volumes_TH/RulesetVolumes_TH").GetComponent<PlanetoidRuleset>()._shuttleLandingRadius = 2000;
+                    //Scale dark bramble snow pile
+                    GameObject snow = GameObject.Find("BrambleSnowPile");
+                    if (snow != null) snow.transform.localScale = new Vector3(20, 4, 20);
 
-                //Scale dark bramble snow pile
-                GameObject snow = GameObject.Find("BrambleSnowPile");
-                if (snow != null) snow.transform.localScale = new Vector3(20, 4, 20);
+                    //Make sun cactus not cast shadows
+                    GameObject sunCactus = GameObject.Find("Sun_Body/Sector_SUN/Prefab_HGT_Cactus_Single_A");
+                    if (sunCactus != null)
+                    {
+                        ModHelper.Console.WriteLine("FOUND SUN CACTUS", MessageType.Success);
+                        MeshRenderer[] cactusRenderers = sunCactus.GetComponentsInChildren<MeshRenderer>();
+                        foreach (MeshRenderer r in cactusRenderers)
+                            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                    }
 
-                //Make sun cactus not cast shadows
-                GameObject sunCactus = GameObject.Find("Sun_Body/Sector_SUN/Prefab_HGT_Cactus_Single_A");
-                if (sunCactus != null)
-                {
-                    ModHelper.Console.WriteLine("FOUND SUN CACTUS", MessageType.Success);
-                    MeshRenderer[] cactusRenderers = sunCactus.GetComponentsInChildren<MeshRenderer>();
-                    foreach (MeshRenderer r in cactusRenderers)
-                        r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                    //Configure projection pool
+                    GameObject projectionRecorder = GameObject.Find("ProjectionRecorder");
+                    if (projectionRecorder != null)
+                    {
+                        Destroy(projectionRecorder.GetComponent<SphereCollider>());
+                        projectionRecorder.GetComponentInChildren<BoxCollider>().center = new Vector3(0, 0, 0.8f);
+                    }
+                    GameObject visionStructure = GameObject.Find("StationVision/Structure_NOM_RemoteViewer");
+                    if (visionStructure != null)
+                    {
+                        ModHelper.Console.WriteLine($"FOUND VISION STRUCTURE", MessageType.Success);
+                        Destroy(visionStructure.GetComponentInChildren<MeshRenderer>());
+                        Destroy(visionStructure.GetComponentInChildren<MeshCollider>());
+                    }
+                    GameObject visionPool = GameObject.Find("StationVision/RemoteViewer_Pool");
+                    if (visionPool != null)
+                    {
+                        ModHelper.Console.WriteLine($"FOUND VISION POOL", MessageType.Success);
+                        visionPool.GetComponent<MeshFilter>().mesh = null;
+                    }
+                    GameObject visionPedestal = GameObject.Find("StationVision/PedestalAnchor/Prefab_NOM_SharedPedestal");
+                    if (visionPedestal != null)
+                    {
+                        ModHelper.Console.WriteLine($"FOUND VISION PEDESTAL", MessageType.Success);
+                        foreach (SkinnedMeshRenderer r in visionPedestal.GetComponentsInChildren<SkinnedMeshRenderer>())
+                            Destroy(r);
+                        foreach (MeshRenderer r in visionPedestal.GetComponentsInChildren<MeshRenderer>())
+                            Destroy(r);
+                        Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
+                    }
+                    //DOESN'T WORK (SHOULD AFFECT VISION OVERLAY)
+                    /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
+                    if (visionCamera != null)
+                    {
+                        ModHelper.Console.WriteLine($"FOUND VISION CAMERA",MessageType.Success);
+                        visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
+                    }*/
                 }
-
-                //Configure projection pool
-                GameObject projectionRecorder = GameObject.Find("ProjectionRecorder");
-                if (projectionRecorder != null)
-                {
-                    Destroy(projectionRecorder.GetComponent<SphereCollider>());
-                    projectionRecorder.GetComponentInChildren<BoxCollider>().center = new Vector3(0, 0, 0.8f);
-                }
-                GameObject visionStructure = GameObject.Find("StationVision/Structure_NOM_RemoteViewer");
-                if (visionStructure != null)
-                {
-                    ModHelper.Console.WriteLine($"FOUND VISION STRUCTURE", MessageType.Success);
-                    Destroy(visionStructure.GetComponentInChildren<MeshRenderer>());
-                    Destroy(visionStructure.GetComponentInChildren<MeshCollider>());
-                }
-                GameObject visionPool = GameObject.Find("StationVision/RemoteViewer_Pool");
-                if (visionPool != null)
-                {
-                    ModHelper.Console.WriteLine($"FOUND VISION POOL", MessageType.Success);
-                    visionPool.GetComponent<MeshFilter>().mesh = null;
-                }
-                GameObject visionPedestal = GameObject.Find("StationVision/PedestalAnchor/Prefab_NOM_SharedPedestal");
-                if (visionPedestal != null)
-                {
-                    ModHelper.Console.WriteLine($"FOUND VISION PEDESTAL", MessageType.Success);
-                    foreach (SkinnedMeshRenderer r in visionPedestal.GetComponentsInChildren<SkinnedMeshRenderer>())
-                        Destroy(r);
-                    foreach (MeshRenderer r in visionPedestal.GetComponentsInChildren<MeshRenderer>())
-                        Destroy(r);
-                    Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
-                }
-                //DOESN'T WORK (SHOULD AFFECT VISION OVERLAY)
-                /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
-                if (visionCamera != null)
-                {
-                    ModHelper.Console.WriteLine($"FOUND VISION CAMERA",MessageType.Success);
-                    visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
-                }*/
             });
         }
 
