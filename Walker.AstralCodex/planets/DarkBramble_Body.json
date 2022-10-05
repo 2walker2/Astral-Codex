@@ -120,7 +120,6 @@
 				"scale": 1.00000012
 			},
 			{
-				"rename": "BrambleSnowPile",
 				"path": "BrittleHollow_Body/Sector_BH/Sector_SouthHemisphere/Sector_SouthPole/Sector_Observatory/Props_Observatory/OtherComponentsGroup/Props_BH_IceBench/SnowPile_Surface",
 				"position": {
 					"x": -256.844055,
@@ -132,7 +131,12 @@
 					"y": 201.500046,
 					"z": 348.578644
 				},
-				"scale": 20.0
+				"stretch":
+				{
+					"x": 20.0,
+					"y": 4.0,
+					"z": 20.0
+				}
 			},
 			{
 				"rename": "TranslationProbe1",
@@ -279,23 +283,6 @@
 					"z": -326.037384
 				}
 			}
-		],
-		"reveal": [
-			{
-				"maxAngle": 180.0,
-				"maxDistance": -1.0,
-				"revealOn": "enter",
-				"reveals": [
-					"codex_bramble_station",
-					"codex_bramble_signal_rumor"
-				],
-				"position": {
-					"x": -263.504181,
-					"y": 313.572662,
-					"z": -326.037384
-				},
-				"radius": 100.0
-			}
 		]
 	},
 	"ReferenceFrame": {},
@@ -310,35 +297,8 @@
 				"maxDistance": -1.0,
 				"revealOn": "enter",
 				"reveals": [
-					"codex_bramble_station"
-				],
-				"position": {
-					"x": -263.504181,
-					"y": 313.572662,
-					"z": -326.037384
-				},
-				"radius": 100.0
-			},
-			{
-				"maxAngle": 180.0,
-				"maxDistance": -1.0,
-				"revealOn": "enter",
-				"reveals": [
-					"codex_bramble_station"
-				],
-				"position": {
-					"x": -263.504181,
-					"y": 313.572662,
-					"z": -326.037384
-				},
-				"radius": 100.0
-			},
-			{
-				"maxAngle": 180.0,
-				"maxDistance": -1.0,
-				"revealOn": "enter",
-				"reveals": [
-					"codex_bramble_station"
+					"codex_bramble_station",
+					"codex_bramble_signal_rumor"
 				],
 				"position": {
 					"x": -263.504181,

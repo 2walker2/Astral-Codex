@@ -19,12 +19,17 @@
 		}
 	],
 	"entryPositions": [
-		{ "id": "codex_astral_codex", "position": {"x": 1900, "y": -200 }},
-		{ "id": "codex_lingering_chime_lower", "position": {"x": 1500, "y": -100 }},
-		{ "id": "codex_lingering_chime", "position": {"x": 1600, "y": 100 }},
-		{ "id": "codex_bramble_signal", "position": {"x": 1200, "y": -400 }},
-		{ "id": "codex_interloper_signal", "position": {"x": 1400, "y": -500 }},
-		{ "id": "codex_ember_signal", "position": {"x": 1100, "y": -200 }},
-	],
+		{ "id": "codex_astral_codex", "position": {"x": 3915, "y": 165 } },
+		{ "id": "codex_lingering_chime_lower", "position": {"x": 3675, "y": -165 } },
+		{ "id": "codex_lingering_chime_no_sun", "position": {"x": 3610, "y": 150 } },
+		{ "id": "codex_lingering_chime_spacecraft", "position": {"x": 3460, "y": 150 } },
+		{ "id": "codex_lingering_chime_population", "position": {"x": 3535, "y": 150 } },
+		{ "id": "codex_lingering_chime_upper", "position": {"x": 3535, "y": 235 } },
+		{ "id": "codex_lingering_chime", "position": {"x": 3235, "y": -100 } },
+		{ "id": "codex_projection", "position": {"x": 2485, "y": -55 } },
+		{ "id": "codex_bramble_signal", "position": {"x": 3990, "y": -265 } },
+		{ "id": "codex_interloper", "position": {"x": 3205, "y": 305 } },
+		{ "id": "codex_ember_signal", "position": {"x": 3790, "y": -460 } },
+		],
 	"canEnterViaWarpDrive": false
 }

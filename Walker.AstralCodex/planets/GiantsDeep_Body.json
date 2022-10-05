@@ -70,5 +70,8 @@
 		]
 	},
 	"ReferenceFrame": {},
-	"ShipLog": {}
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/giants_log.xml"
+	}
 }

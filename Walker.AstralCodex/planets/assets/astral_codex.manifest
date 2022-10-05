@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3372143890
+CRC: 1314895729
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e5c97af47c12def38d09a96b6dac0a8b
+    Hash: b99d408d64e23ea737bd5362b97c8ed9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 5342b751bddc2394e0e4874220ec3302
+    Hash: 218d0f36078239c8d524397fdf09eaeb
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -45,8 +45,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 75b33721cd4633949b48a1c2974c29a2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3d7fee243786b7a43aeb607db88d4b36, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: e5afbfd7790013445b68401b74453dce, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
 - Class: 114
@@ -95,11 +93,13 @@ Assets:
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintRed_d.png
 - Assets/Bundle/Materials/Bubble.mat
 - Assets/Bundle/Textures/Probe.png
+- Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_PaintOrange_s.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
+- Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
 - Assets/Bundle/Textures/BottomPattern.png
@@ -107,6 +107,7 @@ Assets:
 - Assets/Bundle/Models/interloper_detail.obj
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
+- Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_n.png
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_0.asset

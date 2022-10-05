@@ -11,6 +11,7 @@ namespace AstralCodex
         MeshRenderer cloakSphereRenderer;
         MeshRenderer sunDisplayRenderer;
         MeshRenderer renderer;
+        GameObject reveal;
 
         void Start()
         {
@@ -18,18 +19,20 @@ namespace AstralCodex
             cloakSphereRenderer = GameObject.Find("CloakSphere").GetComponent<MeshRenderer>();
             sunDisplayRenderer = GameObject.Find("SunDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
+            reveal = GameObject.Find("NoSunCompleteReveal");
+            reveal.SetActive(false);
         }
 
         void Update()
         {
             if (cloakSphereRenderer.enabled == true)
             {
-                TurnOn(renderer);
+                TurnOn(renderer, reveal);
                 sunDisplayRenderer.material = Main.instance.materials["black"];
             }
             else
             {
-                TurnOff(renderer);
+                TurnOff(renderer, reveal);
                 sunDisplayRenderer.material = Main.instance.materials["light"];
             }
         }

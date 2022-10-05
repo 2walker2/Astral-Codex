@@ -2,16 +2,16 @@
     <ID>COMET</ID>
 
     <Entry>
-        <ID>codex_interloper_signal</ID>
+        <ID>codex_interloper</ID>
         <Name>Fuel Seed</Name>
 
         <Curiosity>codex_astral_codex</Curiosity>
     
         <RumorFact>
-            <ID>codex_interloper_signal_rumor</ID> 
-            <SourceID>codex_lingering_chime_lower</SourceID> 
-            <RumorName>Interloper Signal</RumorName> 
-            <Text>I detected a chiming signal coming from The Interloper.</Text> 
+            <ID>codex_interloper_rumor</ID> 
+            <SourceID>codex_lingering_chime</SourceID> 
+            <RumorName>Missing Piece</RumorName> 
+            <Text>A piece of the Lingering Chime broke off and is missing.</Text> 
         </RumorFact>
 
         <ExploreFact>

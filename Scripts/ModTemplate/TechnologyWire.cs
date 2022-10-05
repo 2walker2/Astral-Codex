@@ -10,6 +10,7 @@ namespace AstralCodex
     {
         MeshRenderer renderer;
         MeshRenderer timberHearthDisplayRenderer;
+        GameObject reveal;
         bool shuttle = false;
         bool ship = true;
 
@@ -18,6 +19,8 @@ namespace AstralCodex
             on = true;
             renderer = GameObject.Find("TechnologyWire").GetComponent<MeshRenderer>();
             timberHearthDisplayRenderer = GameObject.Find("SpacecraftTimberHearthDisplay").GetComponent<MeshRenderer>();
+            reveal = GameObject.Find("SpacecraftCompleteReveal");
+            reveal.SetActive(false);
         }
 
         void OnTriggerEnter(Collider other)
@@ -26,7 +29,7 @@ namespace AstralCodex
             if (other.transform.root.CompareTag("Ship")) ship = true;
             if (on == false && (ship || shuttle))
             {
-                TurnOn(renderer);
+                TurnOn(renderer, reveal);
                 timberHearthDisplayRenderer.material = Main.instance.materials["light"];
             }
         }
@@ -41,7 +44,7 @@ namespace AstralCodex
             }
             if (on == true && (!ship && !shuttle))
             {
-                TurnOff(renderer);
+                TurnOff(renderer, reveal);
                 timberHearthDisplayRenderer.material = Main.instance.materials["black"];
             }
         }

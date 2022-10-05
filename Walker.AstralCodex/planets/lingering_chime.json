@@ -68,30 +68,50 @@
 					"position": {
 						"y": 21.0
 					},
-					"rename": "StationVision"
+					"rename": "StationVision",
+					"reveals": "codex_projection_fact"
 				}
 			}
 		]
 	},
   "Volumes": {
     "revealVolumes": [
+    	{
+    		"revealOn": "enter",
+    		"radius": 125.0,
+    		"reveals": [
+    			"codex_lingering_chime_rumor",
+    			"codex_lingering_chime_fact"
+    		]
+    	},
+    	{
+    		"revealOn": "enter",
+    		"radius": 20.0,
+    		"reveals": [
+    			"codex_lingering_chime_upper_rumor"
+    		]
+    	},
+    	{
+    		"revealOn": "enter",
+    		"position": {
+    			"y": -29.0
+    		},
+    		"radius": 10.0,
+    		"reveals": [
+    			"codex_interloper_rumor"
+    		]
+    	},
       {
-        "maxAngle": 180.0,
-        "maxDistance": -1.0,
         "revealOn": "enter",
         "reveals": [
-          "codex_lingering_chime_fact",
+          "codex_lingering_chime_tesseract",
+          "codex_lingering_chime_water",
+          "codex_lingering_chime_material",
+          "codex_lingering_chime_upper_fact",
           "codex_lingering_chime_lower_rumor",
-          "codex_lingering_chime_text"
-        ],
-        "radius": 20.0
-      },
-      {
-        "maxAngle": 180.0,
-        "maxDistance": -1.0,
-        "revealOn": "enter",
-        "reveals": [
-          "codex_lingering_chime_tesseract"
+          "codex_lingering_chime_population_fact",
+          "codex_lingering_chime_spacecraft_fact",
+          "codex_lingering_chime_no_sun_fact"
         ],
         "position": {
           "x": 11.45,
@@ -111,8 +131,30 @@
         "radius": 5.0
       },
       {
-        "maxAngle": 180.0,
-        "maxDistance": -1.0,
+      	"revealOn": "enter",
+      	"radius": 20.0,
+      	"reveals": [
+      		"codex_lingering_chime_population_complete"
+      	],
+      	"rename": "PopulationCompleteReveal"
+      },
+      {
+      	"revealOn": "enter",
+      	"radius": 20.0,
+      	"reveals": [
+      		"codex_lingering_chime_spacecraft_complete"
+      	],
+      	"rename": "SpacecraftCompleteReveal"
+      },
+      {
+      	"revealOn": "enter",
+      	"radius": 20.0,
+      	"reveals": [
+      		"codex_lingering_chime_no_sun_complete"
+      	],
+      	"rename": "NoSunCompleteReveal"
+      },
+      {
         "revealOn": "enter",
         "reveals": [
           "codex_astral_codex_fact",

@@ -147,10 +147,6 @@ namespace AstralCodex
                     //Increase Timber Hearth shuttle radius
                     GameObject.Find("TimberHearth_Body/Sector_TH/Volumes_TH/RulesetVolumes_TH").GetComponent<PlanetoidRuleset>()._shuttleLandingRadius = 2000;
 
-                    //Scale dark bramble snow pile
-                    GameObject snow = GameObject.Find("BrambleSnowPile");
-                    if (snow != null) snow.transform.localScale = new Vector3(20, 4, 20);
-
                     //Make sun cactus not cast shadows
                     GameObject sunCactus = GameObject.Find("Sun_Body/Sector_SUN/Prefab_HGT_Cactus_Single_A");
                     if (sunCactus != null)

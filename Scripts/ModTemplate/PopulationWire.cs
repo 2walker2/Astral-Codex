@@ -11,6 +11,7 @@ namespace AstralCodex
         GameObject playerClone;
         MeshRenderer renderer;
         MeshRenderer missingPopulationDisplay;
+        GameObject reveal;
 
         void Start()
         {
@@ -18,18 +19,20 @@ namespace AstralCodex
             playerClone = GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0).gameObject;
             missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
+            reveal = GameObject.Find("PopulationCompleteReveal");
+            reveal.SetActive(false);
         }
 
         void Update()
         {
             if (playerClone.activeInHierarchy)
             {
-                TurnOn(renderer);
+                TurnOn(renderer, reveal);
                 missingPopulationDisplay.material = Main.instance.materials["light"];
             }
             else
             {
-                TurnOff(renderer);
+                TurnOff(renderer, reveal);
                 missingPopulationDisplay.material = Main.instance.materials["black"];
             }
         }

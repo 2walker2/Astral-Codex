@@ -1,0 +1,20 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>GIANTS_DEEP</ID>
+    <Entry>
+        <ID>codex_projection</ID>
+        <Name>Anomaly Recording</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+
+        <RumorFact>
+            <ID>codex_projection_rumor</ID>
+            <SourceID>OPC_SUNKEN_MODULE</SourceID>
+            <RumorName>Anomaly Recording</RumorName>
+            <Text>The Orbital Probe Cannon generated a projection stone containing a recording from a previous probe.</Text> 
+        </RumorFact>
+        <ExploreFact>
+            <ID>codex_projection_fact</ID>
+            <Text>There is a structure visible during the recording. I can see the planets orbiting clockwise far above me.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>
