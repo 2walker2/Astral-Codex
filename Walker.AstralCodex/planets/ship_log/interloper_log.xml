@@ -16,7 +16,7 @@
 
         <ExploreFact>
             <ID>codex_interloper_recorder</ID> 
-            <Text>I found a crystalline recorder in the core of The Interloper. It warns that a fuel seed is about to rupture and recommends evacuation. Half of the recording is in a language composed of symbols, the rest is in Nomai script.</Text>
+            <Text>I found a crystalline recorder in the core of The Interloper. It describes liquid being used to counteract the effects of ghost matter along with a warning to the Nomai about the impending rupture.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

@@ -24,7 +24,7 @@
 			{
 				"rename": "TranslationProbe3",
 				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/Probe.prefab",
+				"path": "Assets/Bundle/ProbeBroken.prefab",
 				"position": {
 					"x": -6.35278368,
 					"y": 7.64093,
@@ -54,20 +54,21 @@
 				"location": "unspecified",
 				"xmlFile": "planets/text/interloper_recorder.xml",
 				"rename": "InterloperRecorder"
-			}
-		],
-		"signals": [
+			},
 			{
-				"audio": "planets/assets/chimes.wav",
-				"frequency": "Astral Codex",
-				"identificationRadius": 5.0,
-				"name": "Translation Probe Specter",
 				"position": {
-					"x": -6.35278368,
-					"y": 7.64093,
-					"z": -39.117527
+					"x": 28.6798515,
+					"y": 5.472388,
+					"z": 27.8935165
 				},
-				"reveals": "codex_interloper_signal_rumor"
+				"rotation": {
+					"x": 298.271423,
+					"y": 342.927063,
+					"z": 239.544418
+				},
+				"type": "cairn",
+				"xmlFile": "planets/text/interloper_cairn.xml",
+				"rename": "InterloperCairn"
 			}
 		]
 	},

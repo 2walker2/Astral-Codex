@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1314895729
+CRC: 2092841449
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b99d408d64e23ea737bd5362b97c8ed9
+    Hash: 40c5497782da111d54f05cf54f556134
   TypeTreeHash:
     serializedVersion: 2
     Hash: 218d0f36078239c8d524397fdf09eaeb
@@ -97,6 +97,7 @@ Assets:
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_PaintOrange_s.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
+- Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
 - Assets/Bundle/Models/stationv_map.obj
@@ -149,6 +150,7 @@ Assets:
 - Assets/Bundle/Audio/Signal.wav
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_4.asset
+- Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_SandStone_mat.mat
 - Assets/Bundle/Materials/GreenLight.mat

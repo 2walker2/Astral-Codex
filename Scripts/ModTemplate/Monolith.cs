@@ -45,13 +45,13 @@ namespace AstralCodex
             {
                 monolithEffect.SetActive(true);
                 monolithReveal.SetActive(true);
-                TurnOn(renderer);
+                TurnOn(renderer, null);
             }
             else
             {
                 monolithEffect.SetActive(false);
                 monolithReveal.SetActive(false);
-                TurnOff(renderer);
+                TurnOff(renderer, null);
             }
         }
 

@@ -37,7 +37,8 @@ namespace AstralCodex
                 "InterloperRecorder", 
                 "TranslationProbe1/Model", 
                 "TranslationProbe2/Model",
-                "TranslationProbe3/Model"
+                "TranslationProbe3/Model",
+                "InterloperCairn"
             };
             //Create materials list
             materialsToFind = new Dictionary<string, string>()
