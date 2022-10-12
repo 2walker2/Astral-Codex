@@ -10,7 +10,7 @@
             <ID>codex_projection_rumor</ID>
             <SourceID>OPC_SUNKEN_MODULE</SourceID>
             <RumorName>Anomaly Recording</RumorName>
-            <Text>The Orbital Probe Cannon generated a projection stone containing a recording from a previous probe.</Text> 
+            <Text>The Orbital Probe Cannon generated a projection stone containing a recording taken by a previous probe.</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>codex_projection_fact</ID>

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2092841449
+CRC: 1483091100
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 40c5497782da111d54f05cf54f556134
+    Hash: fb6c170c7714a5ba53d1aca6fa6fbbc0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 218d0f36078239c8d524397fdf09eaeb
@@ -94,12 +94,14 @@ Assets:
 - Assets/Bundle/Materials/Bubble.mat
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/Models/solar_flare.obj
+- Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_PaintOrange_s.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
+- Assets/Bundle/Textures/Wait.png
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
@@ -130,8 +132,10 @@ Assets:
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_n.png
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj
+- Assets/Bundle/Models/scanner.obj
 - Assets/Bundle/Station.prefab
 - Assets/Bundle/Textures/Smudge.png
+- Assets/Bundle/Textures/Effects_Bubbles_v2_d.png
 - Assets/Bundle/Textures/Population.png
 - Assets/Bundle/Materials/Sprite.mat
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_s.png

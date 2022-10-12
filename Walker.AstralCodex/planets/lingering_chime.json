@@ -33,9 +33,9 @@
 				"rename": "StationGhostMatter",
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
-					"x": -11.4998026,
+					"x": -11.4998274,
 					"y": 1.0,
-					"z": 0.001493454
+					"z": 0.00162315369
 				},
 				"rotation": {},
 				"scale": 0.9
@@ -75,7 +75,7 @@
 	},
 	"ReferenceFrame": {
 		"hideInMap": true,
-		"maxTargetDistance": 25000.0,
+		"maxTargetDistance": 30000.0,
 		"targetColliderRadius": 10000.0
 	},
 	"ShipLog": {
@@ -232,10 +232,10 @@
 					"codex_astral_codex_addendum"
 				],
 				"position": {
-					"x": 11.45,
-					"y": -2.0
+					"x": 11.6,
+					"y": -3.0
 				},
-				"radius": 2.0,
+				"radius": 1.0,
 				"rename": "CodexReveal"
 			}
 		]

@@ -21,12 +21,12 @@
 
         <ExploreFact>
             <ID>codex_bramble_research</ID> 
-            <Text>The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System. The Nomai noted that this phenomenon is most visible from the surface of Timber Hearth</Text>
+            <Text>The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System. They noted that this phenomenon is most visible from the surface of Timber Hearth.</Text>
         </ExploreFact>
 
         <ExploreFact>
             <ID>codex_bramble_scroll</ID> 
-            <Text>I found a crytalline scroll on Dark Bramble that contains a first-contact message from an unknown species to the Nomai. Half of the message is in a language composed of symbols, the rest is in Nomai script. The scroll offers information of great value to the Nomai once they have advanced as a species.</Text>
+            <Text>I found a crytalline scroll on Dark Bramble that contains a first-contact message from a member of an unknown species to the Nomai. Half of the message is in a language composed of symbols, the rest is in Nomai script. The scroll offers information of great value to the Nomai once they have advanced as a species.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

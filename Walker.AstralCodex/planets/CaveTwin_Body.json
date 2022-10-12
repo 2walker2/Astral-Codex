@@ -12,16 +12,110 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Probe.prefab",
 				"position": {
-					"x": -32.5074348,
-					"y": -93.72471,
-					"z": -117.637489
+					"x": -32.50658,
+					"y": -93.7247,
+					"z": -117.637306
 				},
 				"rotation": {
-					"x": 337.013733,
+					"x": 337.0137,
 					"y": 268.933838,
 					"z": 131.414459
 				},
 				"scale": 0.5
+			},
+			{
+				"rename": "EmberTwinTree",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumTrees/QuantumTree_Straight/Prefab_Tree_BH_Bristle_Straight/Mesh_BH_Bristle_Straight",
+				"position": {
+					"x": -20.1588516,
+					"y": -89.11746,
+					"z": -115.700493
+				},
+				"rotation": {
+					"x": 325.0268,
+					"y": 252.171066,
+					"z": 135.315735
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -20.7255859,
+					"y": -87.04913,
+					"z": -116.831123
+				},
+				"rotation": {
+					"x": 307.938568,
+					"y": 217.331238,
+					"z": 160.558212
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -18.158493,
+					"y": -85.72305,
+					"z": -118.3681
+				},
+				"rotation": {
+					"x": 305.923767,
+					"y": 200.621643,
+					"z": 173.216522
+				},
+				"scale": 1.00000012
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -24.2528343,
+					"y": -86.37509,
+					"z": -116.526741
+				},
+				"rotation": {
+					"x": 317.763123,
+					"y": 241.13356,
+					"z": 142.735916
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -22.5495758,
+					"y": -90.46048,
+					"z": -113.860886
+				},
+				"rotation": {
+					"x": 24.7089157,
+					"y": 303.982025,
+					"z": 132.060516
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -27.8768368,
+					"y": -88.70795,
+					"z": -113.904015
+				},
+				"rotation": {
+					"x": 339.9913,
+					"y": 119.760345,
+					"z": 231.492264
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -28.6738186,
+					"y": -87.66138,
+					"z": -114.478096
+				},
+				"rotation": {
+					"x": 332.308838,
+					"y": 126.777275,
+					"z": 228.645645
+				},
+				"scale": 1.00000012
 			}
 		],
 		"nomaiText": [
@@ -64,7 +158,7 @@
 					"z": -109.043655
 				},
 				"rotation": {
-					"x": 49.47851,
+					"x": 49.47855,
 					"y": 350.240662,
 					"z": 159.176239
 				},
@@ -81,7 +175,7 @@
 				},
 				"rotation": {
 					"x": 51.4686966,
-					"y": 0.5393752,
+					"y": 0.539370954,
 					"z": 167.129776
 				},
 				"type": "cairn",

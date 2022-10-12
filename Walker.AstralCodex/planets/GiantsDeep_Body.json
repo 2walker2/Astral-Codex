@@ -11,18 +11,18 @@
 				"rename": "ProjectionRecorder",
 				"path": "GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Prefab_NOM_RemoteViewer (1)/PedestalAnchor/Prefab_NOM_SharedPedestal",
 				"position": {
-					"x": -28.210537,
+					"x": -28.2095814,
 					"y": -66.4153442,
-					"z": -41.706234
+					"z": -41.7064362
 				},
 				"removeChildren": [
 					"Structure_NOM_SharedPedestal/Structure_NOM_SharedPedestal_side01",
 					"SharedPedestal_side01_bottom_jnt/SharedPedestal_side01_top_jnt/AstroBodySymbolRenderer"
 				],
 				"rotation": {
-					"x": 279.390472,
-					"y": 110.371513,
-					"z": 28.7552853
+					"x": 279.3902,
+					"y": 110.37149,
+					"z": 28.7553082
 				}
 			}
 		],

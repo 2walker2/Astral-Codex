@@ -11,14 +11,14 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/InterloperDetail.prefab",
 				"position": {
-					"x": -4.35742044,
-					"y": 7.992724,
-					"z": -35.90364
+					"x": -4.357424,
+					"y": 7.992707,
+					"z": -35.9035835
 				},
 				"rotation": {
 					"x": 302.532654,
 					"y": 304.163544,
-					"z": 3.1751772E-06
+					"z": 2.22262388E-05
 				}
 			},
 			{
@@ -26,13 +26,13 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/ProbeBroken.prefab",
 				"position": {
-					"x": -6.35278368,
-					"y": 7.64093,
-					"z": -39.117527
+					"x": -6.35353661,
+					"y": 7.64093065,
+					"z": -39.11823
 				},
 				"rotation": {
 					"x": 356.4226,
-					"y": 43.3447266,
+					"y": 43.3447227,
 					"z": 307.377747
 				},
 				"scale": 0.5
@@ -57,24 +57,22 @@
 			},
 			{
 				"position": {
-					"x": 28.6798515,
+					"x": 28.6796856,
 					"y": 5.472388,
 					"z": 27.8935165
 				},
 				"rotation": {
-					"x": 298.271423,
-					"y": 342.927063,
-					"z": 239.544418
+					"x": 298.271332,
+					"y": 342.927032,
+					"z": 239.5444
 				},
 				"type": "cairn",
+				"location": "unspecified",
 				"xmlFile": "planets/text/interloper_cairn.xml",
 				"rename": "InterloperCairn"
 			}
 		]
 	},
 	"ReferenceFrame": {},
-	"ShipLog": {
-		"spriteFolder": "planets/ship_log/images",
-		"xmlFile": "planets/ship_log/interloper_log.xml"
-	}
+	"ShipLog": {}
 }

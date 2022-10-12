@@ -19,7 +19,7 @@ TagManager:
   - Sun
   - ShipInterior
   - HelmetUVPass
-  - UNUSED
+  - FourthDimension
   - "AdvancedDetector\t"
   - Primitive
   - 'IgnoreSun '

@@ -35,7 +35,7 @@
         </RumorFact>
         <ExploreFact>
             <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a device that felt like a Nomai gravity beam and the structure revealed itself. I can see ghost matter now!</Text> 
+            <Text>I passed through a device that felt like a Nomai gravity beam and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[}<![CDATA[</Color>]]></Text> 
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_water</ID>
@@ -97,7 +97,7 @@
         <RumorFact>
             <ID>codex_lingering_chime_lower_rumor</ID> 
             <SourceID>codex_lingering_chime_upper</SourceID> 
-            <RumorName>Chime Signal</RumorName> 
+            <RumorName>Chime Signal</RumorName>
             <Text>There is an unknown signal coming from the lower deck of the structure. The path downwards is blocked by ghost matter.</Text> 
         </RumorFact>
 
@@ -109,6 +109,24 @@
         <ExploreFact>
             <ID>codex_lingering_chime_lower_monolith</ID>
             <Text>There is a strange monolith on the lower deck. It appears unpowered. Wires run to it from three indicator lights in the floor.</Text> 
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>codex_interloper</ID>
+        <Name>Fuel Seed</Name>
+
+        <Curiosity>codex_astral_codex</Curiosity>
+    
+        <RumorFact>
+            <ID>codex_interloper_rumor</ID> 
+            <SourceID>codex_lingering_chime</SourceID> 
+            <RumorName>Missing Piece</RumorName> 
+            <Text>A piece of the structure has broken off and is missing.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>codex_interloper_recorder</ID> 
+            <Text>I found a crystalline recorder in the core of The Interloper. It describes liquid being used to counteract the effects of ghost matter along with a warning to the Nomai about the impending rupture.</Text>
         </ExploreFact>
     </Entry>
     <Entry>

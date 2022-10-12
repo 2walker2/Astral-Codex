@@ -14,7 +14,10 @@ namespace AstralCodex
         List<Vector3> trackPoints;
         List<int> timeOffsets;
         GameObject fourDParticles;
-        bool entered = false;
+        GameObject fourDParticles2;
+        int fourDLayer = 0;
+        float timeStayed = 0;
+        float secondLayerDelay = 7f;
 
         void Awake()
         {
@@ -30,12 +33,36 @@ namespace AstralCodex
             lineRenderers = new List<LineRenderer>(GetComponentsInChildren<LineRenderer>());
             time = 0;
             fourDParticles = transform.Find("4DParticles").gameObject;
+            fourDParticles2 = transform.Find("4DParticles2").gameObject;
         }
 
         void Update()
         {
-            //Ensure 4D remains visible
-            if (entered == true && Camera.main!=null && (Camera.main.cullingMask & (1 << 22)) == 0) Camera.main.cullingMask += (1 << 22);
+            //Ensure correct layers remain visible
+            if (Camera.main != null)
+            {
+                if (fourDLayer != 2)
+                {
+                    // No 4D unless on layer 2
+                    if ((Camera.main.cullingMask & (1 << 12)) == 1)
+                        Camera.main.cullingMask -= (1 << 12);
+                }
+                if (fourDLayer != 0)
+                {
+                    // Visible to Probe visible unless on layer 0
+                    if ((Camera.main.cullingMask & (1 << 22)) == 0)
+                        Camera.main.cullingMask += (1 << 22);
+                }
+                if (fourDLayer == 2)
+                {
+                    // Default invisible if on layer 2
+                    if ((Camera.main.cullingMask & (1 << 0)) == 1)
+                        Camera.main.cullingMask -= (1 << 0);
+                    // Ship Interior invisible if on layer 2
+                    if ((Camera.main.cullingMask & (1 << 10)) == 1)
+                        Camera.main.cullingMask -= (1 << 10);
+                }
+            }
 
             //Animate tesseract
             time += Time.deltaTime;
@@ -80,11 +107,8 @@ namespace AstralCodex
             if (other.gameObject.CompareTag("Player"))
             {
                 Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
-                if (entered == false)
-                {
-                    //Make ghost matter visible
-                    Camera.main.cullingMask += (1 << 22);
-                    
+                if (fourDLayer == 0)
+                {   
                     //Disable probe launcher overlay
                     Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
                     foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
@@ -92,9 +116,28 @@ namespace AstralCodex
                     //Instantiate effect
                     fourDParticles.SetActive(true);
 
-                    entered = true;
+                    fourDLayer = 1;
                 }
             }
+        }
+
+        void OnTriggerStay(Collider other)
+        {
+            if (fourDLayer == 1)
+            {
+                timeStayed += Time.deltaTime;
+                //Second 4D layer
+                if (timeStayed > secondLayerDelay)
+                {
+                    fourDLayer = 2;
+                    fourDParticles2.SetActive(true);
+                }
+            }
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            timeStayed = 0;
         }
     }
 }

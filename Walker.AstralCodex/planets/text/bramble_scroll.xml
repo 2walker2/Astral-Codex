@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>OENO: Research is progressing rapidly. We have determined that the space within Dark Bramble is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
+		<Text>OENO: I am pleased to say that our research is progressing rapidly! We have determined that the space within Dark Bramble is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>3</ParentID>
-		<Text>OENO: By studying the sky shortly after an object has entered Dark Bramble, we believe we have located the space the interior occupies. Coleus informs us that the phenomena is quite unsettling when viewed from the surface of Timber Hearth.</Text>
+		<Text>OENO: By studying the sky shortly after an object has entered Dark Bramble, we believe we have located the space the interior occupies. Coleus informs us that the phenomena is most unsettling when viewed from the surface of Timber Hearth.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>

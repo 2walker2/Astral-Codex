@@ -56,7 +56,8 @@ namespace AstralCodex
                 {"PopulationWire", typeof(PopulationWire) },
                 {"SpacecraftDetector", typeof(TechnologyWire) },
                 {"Monolith", typeof(Monolith) },
-                {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) }
+                {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
+                {"PopulationScannerOrigin", typeof(PopulationTrails) }
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -119,6 +120,9 @@ namespace AstralCodex
 
                     //Increase ghost matter damage
                     GameObject.Find("StationGhostMatter").GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+
+                    //Enable Ember tree collision
+                    GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
 
                     //Assign scripts
                     foreach (KeyValuePair<string, Type> pair in componentsToAdd)
@@ -189,12 +193,13 @@ namespace AstralCodex
                         Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
                     }
                     //DOESN'T WORK (SHOULD AFFECT VISION OVERLAY)
-                    /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
+                    GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION CAMERA",MessageType.Success);
-                        visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
-                    }*/
+                        visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
+                        //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
+                    }
                 }
             });
         }
