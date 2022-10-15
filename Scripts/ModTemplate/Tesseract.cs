@@ -36,17 +36,11 @@ namespace AstralCodex
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
         }
 
-        void Update()
+        void LateUpdate()
         {
             //Ensure correct layers remain visible
             if (Camera.main != null)
             {
-                if (fourDLayer != 2)
-                {
-                    // No 4D unless on layer 2
-                    if ((Camera.main.cullingMask & (1 << 12)) == 1)
-                        Camera.main.cullingMask -= (1 << 12);
-                }
                 if (fourDLayer != 0)
                 {
                     // Visible to Probe visible unless on layer 0
@@ -55,12 +49,15 @@ namespace AstralCodex
                 }
                 if (fourDLayer == 2)
                 {
-                    // Default invisible if on layer 2
-                    if ((Camera.main.cullingMask & (1 << 0)) == 1)
-                        Camera.main.cullingMask -= (1 << 0);
-                    // Ship Interior invisible if on layer 2
-                    if ((Camera.main.cullingMask & (1 << 10)) == 1)
-                        Camera.main.cullingMask -= (1 << 10);
+                    // Unused visible on layer 2
+                    if ((Camera.main.cullingMask & (1 << 12)) == 0)
+                        Camera.main.cullingMask += (1 << 12);
+                }
+                else
+                {
+                    // Unused invisible unless on layer 2
+                    if ((Camera.main.cullingMask & (1 << 12)) == 1)
+                        Camera.main.cullingMask -= (1 << 12);
                 }
             }
 

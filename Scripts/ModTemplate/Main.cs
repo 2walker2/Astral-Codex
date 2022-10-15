@@ -15,7 +15,7 @@ namespace AstralCodex
         public static IModHelper modHelper;
         public static INewHorizons newHorizons;
         public static Main instance;
-
+        
         public Dictionary<string, Material> materials;
 
         List<string> ghostMatterCrystals;
@@ -24,6 +24,7 @@ namespace AstralCodex
 
         void Awake()
         {
+            
             //Initialize instance
             if (instance == null) instance = this;
             //Create ghost matter crystal material list
@@ -57,7 +58,8 @@ namespace AstralCodex
                 {"SpacecraftDetector", typeof(TechnologyWire) },
                 {"Monolith", typeof(Monolith) },
                 {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
-                {"PopulationScannerOrigin", typeof(PopulationTrails) }
+                {"PopulationScannerOrigin", typeof(PopulationTrails) },
+                {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) }
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
