@@ -194,7 +194,6 @@ namespace AstralCodex
                             Destroy(r);
                         Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
                     }
-                    //DOESN'T WORK (SHOULD AFFECT VISION OVERLAY)
                     GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
                     {
@@ -219,9 +218,8 @@ namespace AstralCodex
             else if (scene.name == "PostCreditScene")
             {
                 //Particles on end screen
-                if (Locator.GetShipLogManager().IsFactRevealed("codex_astral_codex_fact"))
-                {
-                    
+                //if (Locator.GetShipLogManager().IsFactRevealed("codex_astral_codex_fact"))
+                //{
                     GameObject probe = GameObject.Find("Probe");
                     if (probe != null)
                     {
@@ -234,7 +232,7 @@ namespace AstralCodex
                         probe.GetComponentInChildren<AudioSource>().clip = signal;
                         assetBundle.Unload(false);
                     }
-                }
+                //}
             }
         }
     }

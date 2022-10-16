@@ -1,0 +1,78 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Comet",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/InterloperDetail.prefab",
+				"position": {
+					"x": -4.3573513,
+					"y": 7.9927063,
+					"z": -35.9036522
+				},
+				"rotation": {
+					"x": 302.532654,
+					"y": 304.163544,
+					"z": 2.22262388E-05
+				}
+			},
+			{
+				"rename": "TranslationProbe3",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/ProbeBroken.prefab",
+				"position": {
+					"x": -6.353737,
+					"y": 7.64093,
+					"z": -39.1180954
+				},
+				"rotation": {
+					"x": 356.4226,
+					"y": 43.3447266,
+					"z": 307.377747
+				},
+				"scale": 0.5
+			}
+		],
+		"nomaiText": [
+			{
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				},
+				"rotation": {
+					"x": 15.0000143,
+					"y": 252.0,
+					"z": 151.0
+				},
+				"type": "recorder",
+				"location": "unspecified",
+				"xmlFile": "planets/text/interloper_recorder.xml",
+				"rename": "InterloperRecorder"
+			},
+			{
+				"position": {
+					"x": 28.6796856,
+					"y": 5.472388,
+					"z": 27.8935165
+				},
+				"rotation": {
+					"x": 298.271332,
+					"y": 342.927032,
+					"z": 239.5444
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/interloper_cairn.xml",
+				"rename": "InterloperCairn"
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {}
+}

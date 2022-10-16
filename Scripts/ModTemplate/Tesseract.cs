@@ -18,6 +18,7 @@ namespace AstralCodex
         int fourDLayer = 0;
         float timeStayed = 0;
         float secondLayerDelay = 7f;
+        Camera mapCamera;
 
         void Awake()
         {
@@ -34,6 +35,7 @@ namespace AstralCodex
             time = 0;
             fourDParticles = transform.Find("4DParticles").gameObject;
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
+            mapCamera = GameObject.Find("MapCamera").GetComponent<Camera>();
         }
 
         void LateUpdate()
@@ -46,18 +48,24 @@ namespace AstralCodex
                     // Visible to Probe visible unless on layer 0
                     if ((Camera.main.cullingMask & (1 << 22)) == 0)
                         Camera.main.cullingMask += (1 << 22);
+                    if (mapCamera!=null && (mapCamera.cullingMask & (1 << 22)) == 0)
+                        mapCamera.cullingMask += (1 << 22);
                 }
                 if (fourDLayer == 2)
                 {
                     // Unused visible on layer 2
                     if ((Camera.main.cullingMask & (1 << 12)) == 0)
                         Camera.main.cullingMask += (1 << 12);
+                    if (mapCamera != null && (mapCamera.cullingMask & (1 << 12)) == 0)
+                        mapCamera.cullingMask += (1 << 12);
                 }
                 else
                 {
                     // Unused invisible unless on layer 2
-                    if ((Camera.main.cullingMask & (1 << 12)) == 1)
+                    if ((Camera.main.cullingMask & (1 << 12)) != 0)
                         Camera.main.cullingMask -= (1 << 12);
+                    if (mapCamera != null && (mapCamera.cullingMask & (1 << 12)) != 0)
+                        mapCamera.cullingMask -= (1 << 12);
                 }
             }
 

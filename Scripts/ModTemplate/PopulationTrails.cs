@@ -9,11 +9,12 @@ namespace AstralCodex
 {
     class PopulationTrails : Trails
     {
-        
+
         void Awake()
         {
             targetPaths = new List<string> {
                 "Traveller_HEA_Player_v2",
+                "QuantumMoon_Body",
                 "Villager_HEA_Slate",
                 "Traveller_HEA_Gabbro",
                 "Traveller_HEA_Chert",
@@ -34,14 +35,13 @@ namespace AstralCodex
                 "Villager_HEA_Tektite_2",
                 "Villager_HEA_Esker",
                 "Villager_HEA_Hornfels (1)",
-                "Villager_HEA_Tuff",
-                "QuantumMoon_Body"
+                "Villager_HEA_Tuff"
                 };
         }
 
         public override void AdditionalTargets()
         {
-            targets.Add(GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0)); //Self
+            base.targets.Add(GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0)); //Self
         }
     }
 }

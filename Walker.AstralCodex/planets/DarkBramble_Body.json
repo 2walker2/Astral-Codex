@@ -30,9 +30,9 @@
 					"z": -343.790375
 				},
 				"rotation": {
-					"x": 29.12755,
+					"x": 29.1275578,
 					"y": 283.56897,
-					"z": 50.4816132
+					"z": 50.48161
 				},
 				"scale": 2.0
 			},
@@ -60,7 +60,7 @@
 				"rotation": {
 					"x": 355.4806,
 					"y": 301.193329,
-					"z": 57.0377159
+					"z": 57.03772
 				},
 				"scale": 3.5
 			},
@@ -113,7 +113,7 @@
 					"z": -314.839233
 				},
 				"rotation": {
-					"x": 23.28493,
+					"x": 23.2849274,
 					"y": 152.976028,
 					"z": 315.441345
 				},
@@ -165,59 +165,59 @@
 					},
 					{
 						"position": {
-							"x": -0.3231,
-							"y": 0.4747
+							"x": -1.5931,
+							"y": 0.9747
+						},
+						"type": "adult",
+						"variation": 19,
+						"zRotation": 76.0
+					},
+					{
+						"position": {
+							"x": -1.0031,
+							"y": 1.1547
 						},
 						"type": "adult",
 						"variation": 20,
-						"zRotation": 91.0
+						"zRotation": 330.0
 					},
 					{
 						"position": {
-							"x": 0.3969,
-							"y": 1.2247
-						},
-						"type": "adult",
-						"variation": 25,
-						"zRotation": 308.0
-					},
-					{
-						"position": {
-							"x": 0.5715,
-							"y": 1.406
+							"x": 0.1815,
+							"y": 1.786
 						},
 						"type": "adult",
 						"variation": 30,
-						"zRotation": 25.0
+						"zRotation": -53.0
 					},
 					{
 						"position": {
-							"x": 1.2715,
+							"x": 1.7715,
 							"y": 1.256
 						},
 						"type": "adult",
 						"variation": 20,
-						"zRotation": 190.0
+						"zRotation": 235.0
 					},
 					{
 						"position": {
-							"x": 1.4876,
-							"y": 0.416
+							"x": 2.0876,
+							"y": 0.316
 						},
 						"type": "adult",
-						"variation": 2,
-						"zRotation": 204.0
+						"variation": 4,
+						"zRotation": 119.0
 					}
 				],
 				"position": {
-					"x": -260.817261,
-					"y": 309.69516,
-					"z": -323.265137
+					"x": -260.7368,
+					"y": 309.661835,
+					"z": -323.259338
 				},
 				"rotation": {
-					"x": 322.200165,
-					"y": 283.563141,
-					"z": 319.1552
+					"x": 322.2119,
+					"y": 283.599121,
+					"z": 319.0798
 				},
 				"seed": 58,
 				"type": "scroll",
@@ -227,20 +227,23 @@
 			{
 				"arcInfo": [
 					{
+						"position": {},
 						"type": "adult",
 						"variation": 7,
-						"zRotation": 90.0
+						"zRotation": 51.0
 					},
 					{
 						"position": {
-							"x": -1.0
+							"x": -1.3,
+							"y": 0.05
 						},
 						"type": "adult",
 						"variation": 22,
-						"zRotation": 95.0
+						"zRotation": 74.0
 					},
 					{
 						"mirror": true,
+						"position": {},
 						"type": "adult",
 						"variation": 1,
 						"zRotation": 270.0
@@ -248,8 +251,8 @@
 					{
 						"mirror": true,
 						"position": {
-							"x": 1.4,
-							"y": 0.31
+							"x": 1.0,
+							"y": -0.09
 						},
 						"type": "adult",
 						"variation": 5,
@@ -257,14 +260,14 @@
 					}
 				],
 				"position": {
-					"x": -256.259827,
-					"y": 306.091217,
-					"z": -329.8384
+					"x": -256.37912,
+					"y": 306.1987,
+					"z": -329.7758
 				},
 				"rotation": {
-					"x": 322.605621,
-					"y": 283.607483,
-					"z": 318.222748
+					"x": 322.5916,
+					"y": 283.639038,
+					"z": 318.2091
 				},
 				"type": "scroll",
 				"location": "unspecified",
