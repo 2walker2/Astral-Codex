@@ -35,7 +35,9 @@ namespace AstralCodex
             time = 0;
             fourDParticles = transform.Find("4DParticles").gameObject;
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
-            mapCamera = GameObject.Find("MapCamera").GetComponent<Camera>();
+            GameObject mapCameraObject = GameObject.Find("MapCamera");
+            if (mapCameraObject != null)
+                mapCamera = mapCameraObject.GetComponent<Camera>();
         }
 
         void LateUpdate()

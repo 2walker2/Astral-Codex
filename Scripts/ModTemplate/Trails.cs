@@ -39,8 +39,8 @@ namespace AstralCodex
             }
             AdditionalTargets();
             //Get material
-            trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
-            trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
+            //trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
+            //trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)
             {

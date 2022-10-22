@@ -43,7 +43,9 @@ namespace AstralCodex
                         if (r.material != material)
                         {
                             if (!renderersToExclude.Contains(r.gameObject.name))
+                            {
                                 r.material = material;
+                            }
                             r.gameObject.layer = 22;
                             renderersToRemove.Add(r);
                         }

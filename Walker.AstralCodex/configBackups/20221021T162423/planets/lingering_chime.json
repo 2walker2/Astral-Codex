@@ -1,0 +1,251 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Lingering Chime",
+	"Atmosphere": {
+		"hasOxygen": true,
+		"hasSnow": true,
+		"size": 20.0
+	},
+	"Base": {
+		"ambientLight": -100.0,
+		"gravityFallOff": "linear",
+		"showMinimap": false,
+		"surfaceSize": 25.0,
+		"zeroGravityRadius": 125.0
+	},
+	"Orbit": {
+		"staticPosition": {
+			"y": -35000.0
+		},
+		"siderealPeriod": 3.0,
+		"isStatic": true
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Station.prefab",
+				"position": {},
+				"rotation": {},
+				"keepLoaded": true
+			},
+			{
+				"rename": "StationGhostMatter",
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
+				"position": {
+					"x": -11.5005474,
+					"y": 1.0,
+					"z": 0.00223708153
+				},
+				"rotation": {},
+				"scale": 0.9
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_lingering_chime"
+			}
+		],
+		"signals": [
+			{
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 100.0,
+				"frequency": "Astral Codex",
+				"identificationRadius": 7.0,
+				"name": "Chime Transmitter",
+				"position": {
+					"y": -10.5
+				},
+				"reveals": "codex_lingering_chime_lower_antenna"
+			}
+		],
+		"remotes": [
+			{
+				"id": "Anomaly Recording",
+				"decalPath": "planets/assets/vision_symbol.png",
+				"platform": {
+					"position": {
+						"y": 21.0
+					},
+					"rename": "StationVision",
+					"reveals": "codex_projection_fact"
+				}
+			}
+		]
+	},
+	"ReferenceFrame": {
+		"hideInMap": true,
+		"maxTargetDistance": 30000.0,
+		"targetColliderRadius": 10000.0
+	},
+	"ShipLog": {
+		"mapMode": {
+			"invisibleWhenHidden": true,
+			"manualNavigationPosition": {
+				"x": 4.0
+			},
+			"manualPosition": {
+				"x": 1547.0,
+				"y": -90.0
+			},
+			"revealedSprite": "planets/ship_log/images/lingering_chime_map.png",
+			"scale": 0.5
+		},
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/lingering_chime_log.xml"
+	},
+	"ShockEffect": {},
+	"Water": {
+		"size": 1.0,
+		"tint": {
+			"r": 148,
+			"g": 255,
+			"b": 243,
+			"a": 0
+		},
+		"curve": [
+			{
+				"value": 4.0
+			},
+			{
+				"time": 18.0,
+				"value": 11.5
+			}
+		]
+	},
+	"Volumes": {
+		"audioVolumes": [
+			{
+				"audio": "planets/assets/ice-and-decay.mp3",
+				"track": "music",
+				"radius": 20.0
+			},
+			{
+				"audio": "NomaiTractorBeamAmbient_LP",
+				"track": "environment",
+				"position": {
+					"x": 11.45,
+					"y": 3.26
+				},
+				"radius": 4.0
+			}
+		],
+		"revealVolumes": [
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_rumor",
+					"codex_lingering_chime_fact"
+				],
+				"radius": 125.0
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_upper_rumor"
+				],
+				"radius": 20.0
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_interloper_rumor"
+				],
+				"position": {
+					"y": -29.0
+				},
+				"radius": 10.0
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_tesseract",
+					"codex_lingering_chime_water",
+					"codex_lingering_chime_material",
+					"codex_lingering_chime_lower_rumor",
+					"codex_lingering_chime_population_fact",
+					"codex_lingering_chime_spacecraft_fact",
+					"codex_lingering_chime_no_sun_fact"
+				],
+				"position": {
+					"x": 11.45,
+					"y": 3.26
+				},
+				"radius": 4.0
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_lower_monolith"
+				],
+				"position": {
+					"x": -11.45,
+					"y": -3.5
+				},
+				"radius": 5.0
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_population_complete"
+				],
+				"radius": 20.0,
+				"rename": "PopulationCompleteReveal"
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_spacecraft_complete"
+				],
+				"radius": 20.0,
+				"rename": "SpacecraftCompleteReveal"
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_lingering_chime_no_sun_complete"
+				],
+				"radius": 20.0,
+				"rename": "NoSunCompleteReveal"
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_astral_codex_fact",
+					"codex_astral_codex_addendum"
+				],
+				"position": {
+					"x": 11.6,
+					"y": -3.0
+				},
+				"radius": 1.0,
+				"rename": "CodexReveal"
+			}
+		],
+		"zeroGravityVolumes": [
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
+			}
+		]
+	}
+}

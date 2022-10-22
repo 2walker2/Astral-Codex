@@ -11,14 +11,14 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/InterloperDetail.prefab",
 				"position": {
-					"x": -4.35775471,
-					"y": 7.9927063,
-					"z": -35.90399
+					"x": -4.35825253,
+					"y": 7.9921875,
+					"z": -35.9045677
 				},
 				"rotation": {
 					"x": 302.532654,
 					"y": 304.163544,
-					"z": 3.1751777E-05
+					"z": 4.762765E-05
 				}
 			},
 			{
@@ -26,14 +26,14 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/ProbeBroken.prefab",
 				"position": {
-					"x": -6.35359573,
-					"y": 7.64093,
-					"z": -39.11817
+					"x": 25.0896568,
+					"y": 4.93237257,
+					"z": 31.8200989
 				},
 				"rotation": {
-					"x": 356.4226,
-					"y": 43.34473,
-					"z": 307.377747
+					"x": 8.968709,
+					"y": 343.1274,
+					"z": 289.3435
 				},
 				"scale": 0.5
 			}
@@ -52,27 +52,28 @@
 				},
 				"type": "recorder",
 				"location": "unspecified",
-				"xmlFile": "planets/text/interloper_recorder.xml",
+				"xmlFile": "planets/text/interloper_recorder_warning.xml",
 				"rename": "InterloperRecorder"
 			},
 			{
 				"position": {
-					"x": 28.6796856,
-					"y": 5.472388,
-					"z": 27.8935165
+					"x": 24.3789043,
+					"y": 6.492459,
+					"z": 32.59187
 				},
 				"rotation": {
 					"x": 298.271332,
 					"y": 342.927032,
 					"z": 239.5444
 				},
-				"type": "cairn",
+				"type": "recorder",
 				"location": "unspecified",
-				"xmlFile": "planets/text/interloper_cairn.xml",
-				"rename": "InterloperCairn"
+				"xmlFile": "planets/text/interloper_recorder_breach.xml",
+				"rename": "InterloperRecorderPrecursor"
 			}
 		]
 	},
 	"ReferenceFrame": {},
-	"ShipLog": {}
+	"ShipLog": {},
+	"ShockEffect": {}
 }

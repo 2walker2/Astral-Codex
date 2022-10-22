@@ -1,0 +1,239 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "CaveTwin",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "TranslationProbe2",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Probe.prefab",
+				"position": {
+					"x": -32.50764,
+					"y": -93.72656,
+					"z": -117.636841
+				},
+				"rotation": {
+					"x": 337.013672,
+					"y": 268.933838,
+					"z": 131.414459
+				},
+				"scale": 0.5
+			},
+			{
+				"rename": "EmberTwinTree",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumTrees/QuantumTree_Straight/Prefab_Tree_BH_Bristle_Straight/Mesh_BH_Bristle_Straight",
+				"position": {
+					"x": -20.1582832,
+					"y": -89.11719,
+					"z": -115.700516
+				},
+				"rotation": {
+					"x": 325.0268,
+					"y": 252.171082,
+					"z": 135.31575
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {},
+				"rotation": {}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {},
+				"rotation": {},
+				"scale": 1.00000012
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {},
+				"rotation": {}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {},
+				"rotation": {}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -27.87806,
+					"y": -88.70703,
+					"z": -113.903748
+				},
+				"rotation": {
+					"x": 339.9913,
+					"y": 119.760361,
+					"z": 231.492264
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+				"position": {
+					"x": -28.674015,
+					"y": -87.66016,
+					"z": -114.477783
+				},
+				"rotation": {
+					"x": 332.308838,
+					"y": 126.777245,
+					"z": 228.645645
+				},
+				"scale": 1.00000012
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Interactables_NorthPole/Prefab_NOM_WarpReceiver/Structure_NOM_WarpReceiver_BrittleHollowSurface/Structure_NOM_WarpReceiver_BrittleHollowSurface_Rocks",
+				"position": {
+					"x": -21.0318928,
+					"y": -88.657196,
+					"z": -115.778488
+				},
+				"rotation": {
+					"x": 354.016022,
+					"y": 110.266968,
+					"z": 236.072388
+				},
+				"scale": 0.15,
+				"stretch": {
+					"x": 0.15,
+					"y": 0.25,
+					"z": 0.15
+				}
+			}
+		],
+		"nomaiText": [
+			{
+				"position": {
+					"x": -32.47903,
+					"y": -85.9996,
+					"z": -114.706238
+				},
+				"rotation": {
+					"x": 306.807129,
+					"y": 208.208786,
+					"z": 170.179932
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_computer.xml",
+				"rename": "TranslationCairn1"
+			},
+			{
+				"position": {
+					"x": -33.91851,
+					"y": -86.30034,
+					"z": -114.064293
+				},
+				"rotation": {
+					"x": 308.547516,
+					"y": 219.385254,
+					"z": 161.3227
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_message.xml",
+				"rename": "TranslationCairn2"
+			},
+			{
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				},
+				"rotation": {
+					"x": 307.9385,
+					"y": 217.3312,
+					"z": 160.558228
+				},
+				"type": "trailmarker",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_sign.xml"
+			},
+			{
+				"position": {
+					"x": -24.253727,
+					"y": -86.375,
+					"z": -116.526749
+				},
+				"rotation": {
+					"x": 317.763123,
+					"y": 241.133514,
+					"z": 142.7359
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_annona.xml"
+			},
+			{
+				"position": {
+					"x": -18.1588745,
+					"y": -85.72266,
+					"z": -118.368652
+				},
+				"rotation": {
+					"x": 305.923737,
+					"y": 200.621582,
+					"z": 173.216522
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_thatch.xml"
+			},
+			{
+				"position": {
+					"x": -22.54919,
+					"y": -90.46094,
+					"z": -113.862152
+				},
+				"rotation": {
+					"x": 24.7089386,
+					"y": 303.982,
+					"z": 132.060516
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_kousa.xml"
+			},
+			{
+				"position": {
+					"x": -24.5382576,
+					"y": -85.85324,
+					"z": -116.855553
+				},
+				"rotation": {
+					"x": 37.5990372,
+					"y": 192.719864,
+					"z": 287.055969
+				},
+				"type": "wall",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_text_poke.xml"
+			}
+		],
+		"signals": [
+			{
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 5.0,
+				"frequency": "Astral Codex",
+				"identificationRadius": 5.0,
+				"name": "Translation Probe Cinder",
+				"position": {
+					"x": -32.4503021,
+					"y": -93.82471,
+					"z": -117.116425
+				},
+				"reveals": "codex_ember_signal_rumor"
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/ember_twin_log.xml"
+	},
+	"ShockEffect": {}
+}

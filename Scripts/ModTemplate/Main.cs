@@ -33,13 +33,12 @@ namespace AstralCodex
                 "BrambleScroll2/Props_NOM_Scroll/Props_NOM_Scroll_Geo", 
                 "TranslationCairn1", 
                 "TranslationCairn2", 
-                "TranslationCairn3", 
-                "TranslationCairn4", 
                 "InterloperRecorder", 
                 "TranslationProbe1/Model", 
                 "TranslationProbe2/Model",
                 "TranslationProbe3/Model",
-                "InterloperCairn"
+                "InterloperCairn",
+                "ChimeSign"
             };
             //Create materials list
             materialsToFind = new Dictionary<string, string>()
@@ -218,8 +217,8 @@ namespace AstralCodex
             else if (scene.name == "PostCreditScene")
             {
                 //Particles on end screen
-                //if (Locator.GetShipLogManager().IsFactRevealed("codex_astral_codex_fact"))
-                //{
+                if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
+                {
                     GameObject probe = GameObject.Find("Probe");
                     if (probe != null)
                     {
@@ -228,11 +227,14 @@ namespace AstralCodex
                         AssetBundle assetBundle = ModHelper.Assets.LoadBundle("planets/assets/astral_codex");
                         Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
                         AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
-                        Destroy(probe.GetComponentInChildren<OWAudioSource>());
-                        probe.GetComponentInChildren<AudioSource>().clip = signal;
+                        //Audio (doesn't work)
+                        /*Destroy(probe.GetComponentInChildren<OWAudioSource>());
+                        AudioSource probeAudio = probe.GetComponentInChildren<AudioSource>();
+                        probeAudio.clip = signal;
+                        probeAudio.volume = 5f;*/
                         assetBundle.Unload(false);
                     }
-                //}
+                }
             }
         }
     }

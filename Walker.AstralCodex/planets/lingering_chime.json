@@ -10,7 +10,7 @@
 		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
-		"surfaceSize": 25.0,
+		"surfaceSize": 30.0,
 		"zeroGravityRadius": 125.0
 	},
 	"Orbit": {
@@ -33,9 +33,9 @@
 				"rename": "StationGhostMatter",
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
-					"x": -11.500123,
+					"x": -11.499836,
 					"y": 1.0,
-					"z": 0.00177013874
+					"z": 0.00134277344
 				},
 				"rotation": {},
 				"scale": 0.9
@@ -44,6 +44,24 @@
 		"entryLocation": [
 			{
 				"id": "codex_lingering_chime"
+			}
+		],
+		"nomaiText": [
+			{
+				"normal": {
+					"y": -1.0
+				},
+				"position": {
+					"y": -21.0
+				},
+				"rotation": {
+					"y": 180.0,
+					"z": 180.0
+				},
+				"type": "trailmarker",
+				"location": "unspecified",
+				"xmlFile": "planets/text/chime_sign.xml",
+				"rename": "ChimeSign"
 			}
 		],
 		"signals": [
@@ -94,6 +112,7 @@
 		"spriteFolder": "planets/ship_log/images",
 		"xmlFile": "planets/ship_log/lingering_chime_log.xml"
 	},
+	"ShockEffect": {},
 	"Water": {
 		"size": 1.0,
 		"tint": {
@@ -237,6 +256,33 @@
 				},
 				"radius": 1.0,
 				"rename": "CodexReveal"
+			}
+		],
+		"zeroGravityVolumes": [
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
+			},
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
+			},
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
+			},
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
+			},
+			{
+				"radius": 125.0,
+				"parentPath": "Volumes",
+				"rename": "ZeroGVolume"
 			}
 		]
 	}

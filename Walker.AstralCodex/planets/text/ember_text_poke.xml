@@ -1,0 +1,26 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>POKE: We have failed, Annona. Though the fault does not lie with the warp core I crafted, I cannot help but feel some responsibility. Hypothesis: had I better understood Annona's designs, less energy would have been required.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>POKE: However, despite this doubt (and the struggle of living without you), I will press on. Like this tree before me, we Nomai can thrive even in an environment far from our home.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>POKE: I depart soon to explore the comet alongside Pye and Clary. However, when I return I will investigate any way to reduce the energy the warp core requires (perhaps with more precision...).</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>2</ParentID>
+		<Text>POKE: The possibilities of the <![CDATA[<Color=orange>]]>Ash Twin Project<![CDATA[</Color>]]> still excite me. Once we have found the Eye, imagine what else we could achieve with this technology! With a negative time interval on this scale, we could potentially duplicate matter (or even one of us).</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>CLARY: I suspect two of you would be too much for the fabric of spacetime to handle. Come, sister, the shuttle is almost ready.</Text>
+	</TextBlock>
+</NomaiObject>

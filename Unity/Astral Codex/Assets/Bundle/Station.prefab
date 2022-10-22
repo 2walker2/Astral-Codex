@@ -9674,6 +9674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9157780073696123152}
   - component: {fileID: 5303611971645696447}
+  - component: {fileID: 4599457721337040636}
   m_Layer: 12
   m_Name: Trail1 (6)
   m_TagString: Untagged
@@ -9821,6 +9822,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &4599457721337040636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249565526324195867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &371854593449056445
 GameObject:
   m_ObjectHideFlags: 0
@@ -10018,6 +10031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5005639966145747240}
   - component: {fileID: 1123103273434027341}
+  - component: {fileID: 4810711121654704058}
   m_Layer: 12
   m_Name: Trail1 (6)
   m_TagString: Untagged
@@ -10165,6 +10179,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &4810711121654704058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439053259656784862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &526243792819188260
 GameObject:
   m_ObjectHideFlags: 0
@@ -15321,7 +15347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b33721cd4633949b48a1c2974c29a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thrustLimit: 25
+  _thrustLimit: 20
   _nerfJetpackBooster: 0
   _nerfDuration: 0.5
 --- !u!114 &449379845412102199
@@ -15572,6 +15598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2749311883265410655}
   - component: {fileID: 1092942029462629941}
+  - component: {fileID: 861192661545156264}
   m_Layer: 12
   m_Name: Trail1 (14)
   m_TagString: Untagged
@@ -15719,6 +15746,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &861192661545156264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151881455569303050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1157623013140361988
 GameObject:
   m_ObjectHideFlags: 0
@@ -15887,6 +15926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7114012505380785674}
   - component: {fileID: 2970355110459738826}
+  - component: {fileID: 5941759803760506404}
   m_Layer: 12
   m_Name: Trail1 (5)
   m_TagString: Untagged
@@ -16034,6 +16074,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5941759803760506404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181615781181295370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251031021016657108
 GameObject:
   m_ObjectHideFlags: 0
@@ -16143,6 +16195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5704188677647032979}
   - component: {fileID: 7868479803583605659}
+  - component: {fileID: 7942979363746436259}
   m_Layer: 12
   m_Name: Trail1 (18)
   m_TagString: Untagged
@@ -16290,6 +16343,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &7942979363746436259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384022483688803392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1476475538879152726
 GameObject:
   m_ObjectHideFlags: 0
@@ -21488,6 +21553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566407965194605076}
   - component: {fileID: 886841507598340634}
+  - component: {fileID: 1051373081073902203}
   m_Layer: 12
   m_Name: Trail1 (16)
   m_TagString: Untagged
@@ -21635,6 +21701,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1051373081073902203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761445143903416356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1774582151143059109
 GameObject:
   m_ObjectHideFlags: 0
@@ -26903,6 +26981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953743294533537437}
   - component: {fileID: 1609515697153409132}
+  - component: {fileID: 1519525303527591273}
   m_Layer: 12
   m_Name: Trail1 (21)
   m_TagString: Untagged
@@ -27050,6 +27129,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1519525303527591273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218189644814781501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2263458216954498754
 GameObject:
   m_ObjectHideFlags: 0
@@ -31813,6 +31904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627775649882721443}
   - component: {fileID: 4458543036189826137}
+  - component: {fileID: 5089935593568804621}
   m_Layer: 12
   m_Name: Trail1
   m_TagString: Untagged
@@ -31960,6 +32052,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5089935593568804621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2264591013585981775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2469265233978195745
 GameObject:
   m_ObjectHideFlags: 0
@@ -32049,6 +32153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2171030726730584884}
   - component: {fileID: 1962910431412273547}
+  - component: {fileID: 4747101558798919314}
   m_Layer: 12
   m_Name: Trail1 (4)
   m_TagString: Untagged
@@ -32196,6 +32301,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &4747101558798919314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497485279217374737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2523505550486180185
 GameObject:
   m_ObjectHideFlags: 0
@@ -32206,6 +32323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831969459938530053}
   - component: {fileID: 7386868905442858481}
+  - component: {fileID: 6064739106893250145}
   m_Layer: 12
   m_Name: Trail1 (17)
   m_TagString: Untagged
@@ -32353,6 +32471,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &6064739106893250145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523505550486180185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2628442788624623506
 GameObject:
   m_ObjectHideFlags: 0
@@ -32600,6 +32730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886688807212423046}
   - component: {fileID: 4576415647208303100}
+  - component: {fileID: 2922637395351868614}
   m_Layer: 12
   m_Name: Trail1 (10)
   m_TagString: Untagged
@@ -32747,6 +32878,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &2922637395351868614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2775826262146829697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2800871888180220483
 GameObject:
   m_ObjectHideFlags: 0
@@ -32826,6 +32969,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &2849555756210499762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6183519702626944325}
+  - component: {fileID: 7739095666055072197}
+  m_Layer: 0
+  m_Name: MonolithBackboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6183519702626944325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849555756210499762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.836, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5392898697001227038}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7739095666055072197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849555756210499762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05788231, y: 2.131513, z: 2.1773782}
+  m_Center: {x: 0.47105885, y: -0.032318354, z: 0.00946784}
 --- !u!1 &2912610587858196524
 GameObject:
   m_ObjectHideFlags: 0
@@ -33050,6 +33237,7 @@ Transform:
   - {fileID: 7111625920779464288}
   - {fileID: 6396552556841842656}
   - {fileID: 8520715614738303393}
+  - {fileID: 6437615915085765254}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33324,6 +33512,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6100934024831404480}
+  - {fileID: 1700438789992042146}
+  - {fileID: 6183519702626944325}
   m_Father: {fileID: 8026305439525518849}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33374,6 +33564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8895331533613505130}
   - component: {fileID: 1184225842630454395}
+  - component: {fileID: 3793940862859660133}
   m_Layer: 12
   m_Name: Trail1 (23)
   m_TagString: Untagged
@@ -33521,6 +33712,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &3793940862859660133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3511572668538394249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3597167454183223649
 GameObject:
   m_ObjectHideFlags: 0
@@ -33610,6 +33813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3625408879996957658}
   - component: {fileID: 3368201474967618838}
+  - component: {fileID: 6787082763022030331}
   m_Layer: 12
   m_Name: Trail1
   m_TagString: Untagged
@@ -33757,6 +33961,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &6787082763022030331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3627560473186475683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3767751302323552418
 GameObject:
   m_ObjectHideFlags: 0
@@ -33767,6 +33983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866585881106570893}
   - component: {fileID: 281206143100898417}
+  - component: {fileID: 5391279366049133348}
   m_Layer: 12
   m_Name: Trail1 (2)
   m_TagString: Untagged
@@ -33914,6 +34131,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5391279366049133348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3767751302323552418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3777173607490172202
 GameObject:
   m_ObjectHideFlags: 0
@@ -48766,6 +48995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7154114813745006428}
   - component: {fileID: 4914073784806800225}
+  - component: {fileID: 11890416458727618}
   m_Layer: 12
   m_Name: Trail1 (11)
   m_TagString: Untagged
@@ -48913,6 +49143,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &11890416458727618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4642064315527895308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4692670766364715839
 GameObject:
   m_ObjectHideFlags: 0
@@ -48923,6 +49165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 162598798985997893}
   - component: {fileID: 4246243121055491439}
+  - component: {fileID: 1966474300664963950}
   m_Layer: 12
   m_Name: Trail1 (7)
   m_TagString: Untagged
@@ -49070,6 +49313,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1966474300664963950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692670766364715839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4793050259925348158
 GameObject:
   m_ObjectHideFlags: 0
@@ -49159,6 +49414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2364122777978278981}
   - component: {fileID: 3285860414454345704}
+  - component: {fileID: 6356890374694848238}
   m_Layer: 12
   m_Name: Trail1 (1)
   m_TagString: Untagged
@@ -49306,6 +49562,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &6356890374694848238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872770523694667422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4927887788073960454
 GameObject:
   m_ObjectHideFlags: 0
@@ -54078,6 +54346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6924489981777180417}
   - component: {fileID: 1226116358867688368}
+  - component: {fileID: 4148068515472423356}
   m_Layer: 12
   m_Name: Trail1 (3)
   m_TagString: Untagged
@@ -54225,6 +54494,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &4148068515472423356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4996558079191870430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4997704575099638087
 GameObject:
   m_ObjectHideFlags: 0
@@ -59573,6 +59854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485063815603530840}
   - component: {fileID: 637439348080743642}
+  - component: {fileID: 1643387214823879512}
   m_Layer: 12
   m_Name: Trail1 (4)
   m_TagString: Untagged
@@ -59720,6 +60002,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1643387214823879512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5594733420328382339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5676456809346170909
 GameObject:
   m_ObjectHideFlags: 0
@@ -74266,6 +74560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7683939606273849893}
   - component: {fileID: 7465958080574085713}
+  - component: {fileID: 5526417148349792604}
   m_Layer: 12
   m_Name: Trail1 (19)
   m_TagString: Untagged
@@ -74413,6 +74708,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5526417148349792604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101269962919392192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6229001160734572030
 GameObject:
   m_ObjectHideFlags: 0
@@ -74512,6 +74819,51 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &6241824246103581931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700438789992042146}
+  - component: {fileID: 6496255014888208855}
+  m_Layer: 0
+  m_Name: SpacecraftScanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700438789992042146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241824246103581931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.99, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5392898697001227038}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6496255014888208855
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241824246103581931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.3284988
+  m_Height: 4.6569977
+  m_Direction: 1
+  m_Center: {x: -8.1807165, y: 2.6204796, z: 11.75668}
 --- !u!1 &6300183888955645443
 GameObject:
   m_ObjectHideFlags: 0
@@ -74567,6 +74919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7270085240999887224}
   - component: {fileID: 4418145783200082616}
+  - component: {fileID: 1494623034322092528}
   m_Layer: 12
   m_Name: Trail1 (15)
   m_TagString: Untagged
@@ -74714,6 +75067,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1494623034322092528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390090603527285286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6404950149577242662
 GameObject:
   m_ObjectHideFlags: 0
@@ -74724,6 +75089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927279733571817890}
   - component: {fileID: 8789874706471341224}
+  - component: {fileID: 8612403044859895023}
   m_Layer: 12
   m_Name: Trail1 (20)
   m_TagString: Untagged
@@ -74871,6 +75237,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &8612403044859895023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404950149577242662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6412710716389230869
 GameObject:
   m_ObjectHideFlags: 0
@@ -74964,6 +75342,109 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6422593369868267156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8453568964772056095}
+  - component: {fileID: 155553295151276774}
+  - component: {fileID: 8033837410338001951}
+  - component: {fileID: 6286296119068421229}
+  - component: {fileID: 6569745890704681218}
+  m_Layer: 21
+  m_Name: ScoutLaunchVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8453568964772056095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422593369868267156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8714963299391492580}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155553295151276774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422593369868267156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 5
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
+  _overrideLaunchSpeed: 0
+  _launchSpeed: 0
+--- !u!135 &8033837410338001951
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422593369868267156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6286296119068421229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422593369868267156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2230d37408c52364d84739d6ae8956b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ignorePlayer: 0
+  _ignoreProbe: 1
+  _ignoreProbeAnchor: 0
+  _preventItemDrop: 0
+  _ignoreMarshmallow: 0
+--- !u!114 &6569745890704681218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422593369868267156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lodActivationMask:
+    player: 1
+    probe: 1
+    ship: 1
+    environment: 0
+  _ignorePhysicsSwapDelay: 0
+  _drawBounds: 0
+  _doNotStream: 0
 --- !u!1 &6456248186763150084
 GameObject:
   m_ObjectHideFlags: 0
@@ -79717,6 +80198,36 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!1 &6529205208265337017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6437615915085765254}
+  m_Layer: 0
+  m_Name: PositionCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6437615915085765254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6529205208265337017}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8026305439525518849}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6557298437068617511
 GameObject:
   m_ObjectHideFlags: 0
@@ -79727,6 +80238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6139123689182892718}
   - component: {fileID: 6887551328234676330}
+  - component: {fileID: 9055229147654424790}
   m_Layer: 12
   m_Name: Trail1 (8)
   m_TagString: Untagged
@@ -79874,6 +80386,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &9055229147654424790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557298437068617511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6677756169443812612
 GameObject:
   m_ObjectHideFlags: 0
@@ -79914,6 +80438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5708806303054232548}
   - component: {fileID: 1564063480252748432}
+  - component: {fileID: 3042090561898480469}
   m_Layer: 12
   m_Name: Trail1 (1)
   m_TagString: Untagged
@@ -80061,6 +80586,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &3042090561898480469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888387300365228268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6942431294578077677
 GameObject:
   m_ObjectHideFlags: 0
@@ -80071,6 +80608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504857573503612500}
   - component: {fileID: 5427128419321399499}
+  - component: {fileID: 8933925975090394874}
   m_Layer: 12
   m_Name: Trail1 (13)
   m_TagString: Untagged
@@ -80218,6 +80756,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &8933925975090394874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942431294578077677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7032972207366071350
 GameObject:
   m_ObjectHideFlags: 0
@@ -90282,6 +90832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8605348698992967707}
   - component: {fileID: 7009923087361039613}
+  - component: {fileID: 5322433734148994181}
   m_Layer: 12
   m_Name: Trail1 (2)
   m_TagString: Untagged
@@ -90429,6 +90980,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5322433734148994181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7917305861638722664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8075538964583514436
 GameObject:
   m_ObjectHideFlags: 0
@@ -90459,6 +91022,7 @@ Transform:
   - {fileID: 6911615381454870458}
   - {fileID: 8902128014340772746}
   - {fileID: 6187762995616381558}
+  - {fileID: 8453568964772056095}
   m_Father: {fileID: 8026305439525518849}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100058,6 +100622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6648347974422784129}
   - component: {fileID: 5528326578957480776}
+  - component: {fileID: 2898252091788764182}
   m_Layer: 12
   m_Name: Trail1 (9)
   m_TagString: Untagged
@@ -100205,6 +100770,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &2898252091788764182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193295433928267868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8250659907082562841
 GameObject:
   m_ObjectHideFlags: 0
@@ -100215,6 +100792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6065166079188561771}
   - component: {fileID: 7413150736302209777}
+  - component: {fileID: 235699355576857946}
   m_Layer: 12
   m_Name: Trail1 (12)
   m_TagString: Untagged
@@ -100362,6 +100940,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &235699355576857946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250659907082562841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8572850267602600599
 GameObject:
   m_ObjectHideFlags: 0
@@ -100584,6 +101174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893371652658566355}
   - component: {fileID: 5194072274346799808}
+  - component: {fileID: 5289927414730739460}
   m_Layer: 12
   m_Name: Trail1 (5)
   m_TagString: Untagged
@@ -100731,6 +101322,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5289927414730739460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8759716276035361832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8824247408436614929
 GameObject:
   m_ObjectHideFlags: 0
@@ -105565,6 +106168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7249033604617035684}
   - component: {fileID: 5568951599814149051}
+  - component: {fileID: 9009843607338241113}
   m_Layer: 12
   m_Name: Trail1 (3)
   m_TagString: Untagged
@@ -105712,6 +106316,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &9009843607338241113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869788333052683941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8878766516980194669
 GameObject:
   m_ObjectHideFlags: 0
@@ -105801,6 +106417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681783967332102628}
   - component: {fileID: 6059444463276495749}
+  - component: {fileID: 3104272621627739305}
   m_Layer: 12
   m_Name: Trail1 (22)
   m_TagString: Untagged
@@ -105948,6 +106565,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &3104272621627739305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119390280211834459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7081535432756386770
 PrefabInstance:
   m_ObjectHideFlags: 0

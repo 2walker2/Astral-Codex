@@ -11,9 +11,9 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/NomaiRuin.prefab",
 				"position": {
-					"x": -258.197662,
-					"y": 309.903,
-					"z": -323.985
+					"x": -258.197632,
+					"y": 309.902344,
+					"z": -323.9849
 				},
 				"rotation": {
 					"x": 41.0927048,
@@ -25,23 +25,23 @@
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
-					"x": -224.0239,
-					"y": 317.367737,
-					"z": -343.790375
+					"x": -224.023865,
+					"y": 317.3672,
+					"z": -343.790283
 				},
 				"rotation": {
-					"x": 29.1275578,
+					"x": 29.12755,
 					"y": 283.56897,
-					"z": 50.48161
+					"z": 50.4816132
 				},
 				"scale": 2.0
 			},
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
-					"x": -255.088715,
-					"y": 282.691833,
-					"z": -348.958862
+					"x": -255.088654,
+					"y": 282.6914,
+					"z": -348.958832
 				},
 				"rotation": {
 					"x": 347.703,
@@ -53,23 +53,23 @@
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
-					"x": -176.118576,
-					"y": 298.074036,
-					"z": -386.678558
+					"x": -176.118546,
+					"y": 298.074219,
+					"z": -386.678467
 				},
 				"rotation": {
 					"x": 355.4806,
 					"y": 301.193329,
-					"z": 57.03772
+					"z": 57.0377159
 				},
 				"scale": 3.5
 			},
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Shelf (2)/Strucutre_NOM_Shelf",
 				"position": {
-					"x": -260.586334,
-					"y": 309.7826,
-					"z": -322.437317
+					"x": -260.586273,
+					"y": 309.78125,
+					"z": -322.437225
 				},
 				"rotation": {
 					"x": 320.819122,
@@ -80,9 +80,9 @@
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
-					"x": -255.539948,
-					"y": 306.064453,
-					"z": -329.2253
+					"x": -255.539886,
+					"y": 306.0664,
+					"z": -329.22522
 				},
 				"rotation": {
 					"x": 337.491974,
@@ -94,9 +94,9 @@
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThick",
 				"position": {
-					"x": -254.601563,
+					"x": -254.601517,
 					"y": 310.8164,
-					"z": -325.793121
+					"z": -325.79306
 				},
 				"rotation": {
 					"x": 53.0752144,
@@ -108,12 +108,12 @@
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District2/Interactables_HangingCity_District2/VisibleFrom_HangingCity/Props_NOM_Whiteboard (1)",
 				"position": {
-					"x": -262.038971,
-					"y": 316.8275,
-					"z": -314.839233
+					"x": -262.03894,
+					"y": 316.828125,
+					"z": -314.8391
 				},
 				"rotation": {
-					"x": 23.2849274,
+					"x": 23.28493,
 					"y": 152.976028,
 					"z": 315.441345
 				},
@@ -122,9 +122,9 @@
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_SouthHemisphere/Sector_SouthPole/Sector_Observatory/Props_Observatory/OtherComponentsGroup/Props_BH_IceBench/SnowPile_Surface",
 				"position": {
-					"x": -256.84433,
-					"y": 305.579529,
-					"z": -326.881134
+					"x": -256.844055,
+					"y": 305.578125,
+					"z": -326.881073
 				},
 				"rotation": {
 					"x": 51.58638,
@@ -143,9 +143,9 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Probe.prefab",
 				"position": {
-					"x": -255.3765,
-					"y": 306.1165,
-					"z": -330.5987
+					"x": -255.377441,
+					"y": 306.1172,
+					"z": -330.59848
 				},
 				"rotation": {
 					"x": 52.9306755,
@@ -192,37 +192,47 @@
 					},
 					{
 						"position": {
-							"x": 1.7715,
-							"y": 1.256
+							"x": 1.3715,
+							"y": 1.056
 						},
 						"type": "adult",
-						"variation": 20,
-						"zRotation": 235.0
+						"variation": 30,
+						"zRotation": 205.0
 					},
 					{
 						"position": {
-							"x": 2.0876,
-							"y": 0.316
+							"x": 0.7276,
+							"y": 0.216
 						},
 						"type": "adult",
-						"variation": 4,
-						"zRotation": 119.0
+						"variation": 12,
+						"zRotation": 19.0
+					},
+					{
+						"mirror": true,
+						"position": {
+							"x": 1.6,
+							"y": 0.6
+						},
+						"type": "adult",
+						"variation": 13,
+						"zRotation": -174.0
 					}
 				],
 				"position": {
-					"x": -260.7368,
+					"x": -260.7367,
 					"y": 309.661835,
-					"z": -323.259338
+					"z": -323.259521
 				},
 				"rotation": {
-					"x": 322.2119,
-					"y": 283.599121,
-					"z": 319.0798
+					"x": 322.203735,
+					"y": 283.5592,
+					"z": 319.153076
 				},
 				"seed": 58,
 				"type": "scroll",
 				"location": "unspecified",
-				"xmlFile": "planets/text/bramble_scroll.xml"
+				"xmlFile": "planets/text/bramble_scroll_nomai.xml"
 			},
 			{
 				"arcInfo": [
@@ -234,51 +244,54 @@
 					},
 					{
 						"position": {
-							"x": -1.3,
-							"y": 0.05
+							"x": -1.1,
+							"y": 0.45
 						},
 						"type": "adult",
-						"variation": 22,
+						"variation": 30,
 						"zRotation": 74.0
 					},
 					{
-						"mirror": true,
-						"position": {},
-						"type": "adult",
-						"variation": 1,
-						"zRotation": 270.0
-					},
-					{
-						"mirror": true,
 						"position": {
-							"x": 1.0,
-							"y": -0.09
+							"x": -1.2,
+							"y": 1.7
 						},
 						"type": "adult",
-						"variation": 5,
-						"zRotation": 245.0
+						"variation": 6,
+						"zRotation": 310.0
+					},
+					{
+						"position": {
+							"x": 0.5,
+							"y": 1.11
+						},
+						"type": "adult",
+						"variation": 8,
+						"zRotation": 115.0
 					}
 				],
 				"position": {
 					"x": -256.37912,
 					"y": 306.1987,
-					"z": -329.7758
+					"z": -329.77536
 				},
 				"rotation": {
-					"x": 322.5916,
-					"y": 283.639038,
-					"z": 318.2091
+					"x": 322.572357,
+					"y": 283.736938,
+					"z": 318.114746
 				},
 				"type": "scroll",
 				"location": "unspecified",
-				"xmlFile": "planets/text/bramble_scroll2.xml",
+				"xmlFile": "planets/text/bramble_scroll_precursor.xml",
 				"rename": "BrambleScroll2"
 			}
 		],
 		"signals": [
 			{
 				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 5.0,
 				"frequency": "Astral Codex",
+				"identificationRadius": 5.0,
 				"name": "Translation Probe Thicket",
 				"position": {
 					"x": -255.3765,
@@ -293,6 +306,7 @@
 		"spriteFolder": "planets/ship_log/images",
 		"xmlFile": "planets/ship_log/dark_bramble_log.xml"
 	},
+	"ShockEffect": {},
 	"Volumes": {
 		"revealVolumes": [
 			{
