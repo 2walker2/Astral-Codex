@@ -58,7 +58,8 @@ namespace AstralCodex
                 {"Monolith", typeof(Monolith) },
                 {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
-                {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) }
+                {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
+                {"Station/ProbeParticles", typeof(ProbeParticles) }
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -193,13 +194,13 @@ namespace AstralCodex
                             Destroy(r);
                         Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
                     }
-                    GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
+                    /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION CAMERA",MessageType.Success);
                         visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
                         //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
-                    }
+                    }*/
                 }
             });
         }

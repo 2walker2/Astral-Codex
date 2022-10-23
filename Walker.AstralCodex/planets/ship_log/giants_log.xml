@@ -10,11 +10,11 @@
             <ID>codex_projection_rumor</ID>
             <SourceID>OPC_SUNKEN_MODULE</SourceID>
             <RumorName>Anomaly Recording</RumorName>
-            <Text>The Orbital Probe Cannon generated a projection stone containing a recording taken by a previous probe.</Text> 
+            <Text>The Orbital Probe Cannon generated a projection stone containing a recording taken by a previous probe that impacted an unknown body matching partial criteria for the Eye of the Universe.</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>codex_projection_fact</ID>
-            <Text>There is a structure visible during the recording. I can see the planets orbiting clockwise far above me.</Text>
+            <Text>There is a structure below me during the recording. I can see the planets orbiting clockwise far above.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

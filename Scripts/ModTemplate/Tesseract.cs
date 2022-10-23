@@ -3,6 +3,8 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using NewHorizons;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -18,13 +20,21 @@ namespace AstralCodex
         int fourDLayer = 0;
         float timeStayed = 0;
         float secondLayerDelay = 7f;
-        Camera mapCamera;
+        List<string> cameraPaths;
+        List<Camera> cameras = new List<Camera>();
 
         void Awake()
         {
             //Constants
             trackPoints = new List<Vector3>() { new Vector3(-1, 1, 1), new Vector3(1, 1, 1), new Vector3(2, 2, 2), new Vector3(-2, 2, 2) };
             timeOffsets = new List<int>() { 0, 1, 1, 0, 0, 1, 1, 0, 3, 2, 2, 3, 3, 2, 2, 3 };
+            //Cameras
+            cameraPaths = new List<string>() {
+                "Probe_Body/CameraPivot/RotatingCameraPivot/RotatingCamera",
+                "MapCamera",
+                "Player_Body/PlayerCamera",
+                "Ship_Body/Module_Cockpit/Systems_Cockpit/LandingCamera"
+            };
         }
 
         void Start()
@@ -35,39 +45,37 @@ namespace AstralCodex
             time = 0;
             fourDParticles = transform.Find("4DParticles").gameObject;
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
-            GameObject mapCameraObject = GameObject.Find("MapCamera");
-            if (mapCameraObject != null)
-                mapCamera = mapCameraObject.GetComponent<Camera>();
+            //Get cameras
+            foreach (string path in cameraPaths)
+            {
+                GameObject camera = SearchUtilities.Find(path);
+                if (camera != null)
+                    cameras.Add(camera.GetComponent<Camera>());
+            }
         }
 
         void LateUpdate()
         {
             //Ensure correct layers remain visible
-            if (Camera.main != null)
+            foreach (Camera c in cameras)
             {
                 if (fourDLayer != 0)
                 {
                     // Visible to Probe visible unless on layer 0
-                    if ((Camera.main.cullingMask & (1 << 22)) == 0)
-                        Camera.main.cullingMask += (1 << 22);
-                    if (mapCamera!=null && (mapCamera.cullingMask & (1 << 22)) == 0)
-                        mapCamera.cullingMask += (1 << 22);
+                    if ((c.cullingMask & (1 << 22)) == 0)
+                        c.cullingMask += (1 << 22);
                 }
                 if (fourDLayer == 2)
                 {
                     // Unused visible on layer 2
-                    if ((Camera.main.cullingMask & (1 << 12)) == 0)
-                        Camera.main.cullingMask += (1 << 12);
-                    if (mapCamera != null && (mapCamera.cullingMask & (1 << 12)) == 0)
-                        mapCamera.cullingMask += (1 << 12);
+                    if ((c.cullingMask & (1 << 12)) == 0)
+                        c.cullingMask += (1 << 12);
                 }
                 else
                 {
                     // Unused invisible unless on layer 2
-                    if ((Camera.main.cullingMask & (1 << 12)) != 0)
-                        Camera.main.cullingMask -= (1 << 12);
-                    if (mapCamera != null && (mapCamera.cullingMask & (1 << 12)) != 0)
-                        mapCamera.cullingMask -= (1 << 12);
+                    if ((c.cullingMask & (1 << 12)) != 0)
+                        c.cullingMask -= (1 << 12);
                 }
             }
 

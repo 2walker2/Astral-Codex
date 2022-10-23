@@ -13,17 +13,17 @@ namespace AstralCodex
     {
         public List<Transform> targets;
         public List<string> targetPaths;
-        List<LineRenderer> trails;
+        public List<LineRenderer> trails;
         Material trailMat;
         float widthMultiplier;
         GameObject quantumMoon;
-        GameObject sixthLocation;
+        GameObject quantumMoonAtmosphere;
 
         public virtual void Start()
         {
             //Get QM
             quantumMoon = GameObject.Find("QuantumMoon_Body");
-            sixthLocation = quantumMoon.transform.Find("Sector_QuantumMoon/State_EYE").gameObject;
+            quantumMoonAtmosphere = quantumMoon.transform.Find("Atmosphere_QM/AtmoSphere").gameObject;
             //Get trails
             trails = GetComponentsInChildren<LineRenderer>().ToList();
             widthMultiplier = trails[0].widthMultiplier;
@@ -39,8 +39,8 @@ namespace AstralCodex
             }
             AdditionalTargets();
             //Get material
-            //trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
-            //trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
+            trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
+            trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)
             {
@@ -51,10 +51,6 @@ namespace AstralCodex
                 else
                     trails[i].enabled = false;
             }
-            //Lower alpha on player and ship trails
-            Color c = trails[0].material.color;
-            c.a = 1f;
-            trails[0].material.color = c;
         }
 
         public virtual void AdditionalTargets()
@@ -71,7 +67,7 @@ namespace AstralCodex
                 {
                     trails[i].enabled = true;
                     //If target on QM, don't appear when target is at 6th location
-                    if (targets[i].IsChildOf(quantumMoon.transform) && sixthLocation.activeInHierarchy == true)
+                    if (targets[i].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false)
                         trails[i].enabled = false;
                 }
                 else

@@ -39,6 +39,15 @@ namespace AstralCodex
                 };
         }
 
+        public override void Start()
+        {
+            base.Start();
+            //Lower alpha on player trail
+            Color c = trails[0].material.color;
+            c.a = 1f;
+            trails[0].material.color = c;
+        }
+
         public override void AdditionalTargets()
         {
             base.targets.Add(GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0)); //Self

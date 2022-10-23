@@ -3,4 +3,10 @@
 		<ID>1</ID>
 		<Text>Reunion Memorial</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_ember_memorial</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

@@ -121,7 +121,7 @@
             <ID>codex_interloper_rumor</ID> 
             <SourceID>codex_lingering_chime</SourceID> 
             <RumorName>Missing Piece</RumorName> 
-            <Text>A piece of the structure has broken off and is missing.</Text> 
+            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel seed has ruptured and blanketed the system.</Text> 
         </RumorFact>
 
         <ExploreFact>
@@ -145,21 +145,29 @@
 
         <ExploreFact>
             <ID>codex_astral_codex_fact</ID>
-            <Text><![CDATA[<Color=#00ffbc>]]>CODEX DOWNLOADING   CODEX DOWNLOADED ONTO ALL CONNECTED DEVICES   TRANSLATION BEGINNING
-Our universe is dying. Soon our world, our species, and our knowledge will cease to exist. But we have found the Eye. We know now that this has happened before and will happen again and that knowledge gives us hope.
-This codex is a volume of our collected knowledge. Everything we have learned about the history of our universe and its inhabitants. By obtaining it, your species has proven itself worthy of its contents.
-But your own end times are close at hand. Before you retire to oblivion, we humbly request: add your knowledge to the codex and pass it onwards by any means available to you, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
-*~;|%&#38;&#60; };@|&#38;}{ {}]&#38;}*~ [/ ;|| &#38;[&#34;~} &#60;[]&#38;*}[?/{ ;/&#60; [ +?/&#60;&#38;] ?@|[)[?/<![CDATA[</Color>]]></Text>
+            <Text><![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
+My species is gone. Soon I, and everything I have ever known will perish as well. But I have reached the Oculus. I know now that this has happened before and will happen again and that knowledge gives me hope that my people may be remembered. The preponderance of my life I have spent in orbit around the Oculus as the stars die around me, collecting the material to build a vessel that might survive this unknowable transition. Now, I am ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
+You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
+But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards through the Oculus, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
+Remember us.
+codex extraction in progress<![CDATA[</Color>]]></Text>
         </ExploreFact>
         <ExploreFact>
             <ID>codex_astral_codex_addendum</ID>
             <Text>Addendum by: The Hatchling
+The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
+
+I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)
+            </Text>
+            <AltText>
+                <Text>Addendum by: The Hatchling
 The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until a single individual released the signal for the Nomai to find, and was imprisoned for their actions.
 
 The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
 
-I am a Hearthian, a young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death. (except maybe Riebeck)
-            </Text> 
+I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)</Text>
+            </AltText>
+            <Condition>IP_SARCOPHAGUS_X3</Condition>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

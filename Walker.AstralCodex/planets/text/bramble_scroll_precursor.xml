@@ -6,18 +6,18 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>To Those Who Come After.
-Greetings from the past, may this message find you well. It has traveled far since I set it out upon an unknown astral sea. I know not who you are, reader, yet I hope a connection may here be made.<![CDATA[</Color>]]></Text>
+		<Text>To Those Who Come After.
+Greetings from the past, may this mess<![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>ge find you well. It has traveled far since I set it out upon an unknown astral sea. I know not who you are, r<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>ader, yet I hope a connection may here be made.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>I offer you in gift the <![CDATA[</Color>]]><![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]><![CDATA[<Color=#00ffbc>]]>, a collection of knowledge recorded and preserved eons before your time. It was the work of my life to bring this information to your light receptors. I desire that the minds that receieve be of curious nature that my loss has not been in vain.<![CDATA[</Color>]]></Text>
+		<Text>I offer you in gift the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>, a collection of knowledge recorded and <![CDATA[<Color=#00ffbc>]]>+<![CDATA[</Color>]]>reserved eons before your time. It was the work of my l<![CDATA[<Color=#00ffbc>]]>[<![CDATA[</Color>]]>fe to bring this information to your light receptors and I desire that the minds that receieve it be of curious <![CDATA[<Color=#00ffbc>]]>/<![CDATA[</Color>]]>ature that my loss has not been in vain.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>Seek the Lingering Chime, once your species has grown, and advanced, sufficiently to be worthy of the mission it bestows. May it grant you the <![CDATA[</Color>]]><![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]><![CDATA[<Color=#00ffbc>]]><![CDATA[</Color>]]></Text>
+		<Text><![CDATA[<Color=#00ffbc>]]>Seek the Lingering Chime. Once your <![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>pecies has grown, and advanced, s<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>fficiently to be worthy of the mission it bestows, may it grant you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

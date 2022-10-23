@@ -36,7 +36,11 @@
 	<ShipLogConditions>
 	    <RevealFact>
 	      	<FactID>codex_bramble_research</FactID>
-	      	<Condition>3</Condition>
+	      	<Condition>5</Condition>
+	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_bramble_travel</FactID>
+	      	<Condition>7</Condition>
 	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

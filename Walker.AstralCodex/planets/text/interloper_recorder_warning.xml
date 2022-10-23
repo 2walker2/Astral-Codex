@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text><![CDATA[<Color=#00ffbc>]]>emerging error fuel unstable   fuel seed jetissoned as far as able   pressure mounting leak detected   deploying liquid to conteract affected   liquid frozen rupture unprevented   communication found downloading translation   mimicing medium deploying caution<![CDATA[</Color>]]></Text>
+		<Text><![CDATA[<Color=#00ffbc>]]>emerging error fuel unstable   fuel seed jetissoned as far as able   pressure mounting leak detected   deploying liquid to conteract affected   liquid frozen rupture unprevented<![CDATA[</Color>]]></Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

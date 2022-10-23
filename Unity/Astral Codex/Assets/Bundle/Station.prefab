@@ -9674,7 +9674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9157780073696123152}
   - component: {fileID: 5303611971645696447}
-  - component: {fileID: 4599457721337040636}
+  - component: {fileID: 4029427193862954075}
   m_Layer: 12
   m_Name: Trail1 (6)
   m_TagString: Untagged
@@ -9822,7 +9822,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &4599457721337040636
+--- !u!114 &4029427193862954075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10031,7 +10031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5005639966145747240}
   - component: {fileID: 1123103273434027341}
-  - component: {fileID: 4810711121654704058}
+  - component: {fileID: 6810463915281855093}
   m_Layer: 12
   m_Name: Trail1 (6)
   m_TagString: Untagged
@@ -10179,7 +10179,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &4810711121654704058
+--- !u!114 &6810463915281855093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15598,7 +15598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2749311883265410655}
   - component: {fileID: 1092942029462629941}
-  - component: {fileID: 861192661545156264}
+  - component: {fileID: 1890418247426074129}
   m_Layer: 12
   m_Name: Trail1 (14)
   m_TagString: Untagged
@@ -15746,7 +15746,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &861192661545156264
+--- !u!114 &1890418247426074129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15926,7 +15926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7114012505380785674}
   - component: {fileID: 2970355110459738826}
-  - component: {fileID: 5941759803760506404}
+  - component: {fileID: 526314403393255581}
   m_Layer: 12
   m_Name: Trail1 (5)
   m_TagString: Untagged
@@ -16074,7 +16074,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5941759803760506404
+--- !u!114 &526314403393255581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16195,7 +16195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5704188677647032979}
   - component: {fileID: 7868479803583605659}
-  - component: {fileID: 7942979363746436259}
+  - component: {fileID: 4866454829992668149}
   m_Layer: 12
   m_Name: Trail1 (18)
   m_TagString: Untagged
@@ -16343,7 +16343,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &7942979363746436259
+--- !u!114 &4866454829992668149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21553,7 +21553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566407965194605076}
   - component: {fileID: 886841507598340634}
-  - component: {fileID: 1051373081073902203}
+  - component: {fileID: 7213528547808113794}
   m_Layer: 12
   m_Name: Trail1 (16)
   m_TagString: Untagged
@@ -21701,7 +21701,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1051373081073902203
+--- !u!114 &7213528547808113794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26981,7 +26981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953743294533537437}
   - component: {fileID: 1609515697153409132}
-  - component: {fileID: 1519525303527591273}
+  - component: {fileID: 3674611388372905521}
   m_Layer: 12
   m_Name: Trail1 (21)
   m_TagString: Untagged
@@ -27129,7 +27129,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1519525303527591273
+--- !u!114 &3674611388372905521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31904,7 +31904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627775649882721443}
   - component: {fileID: 4458543036189826137}
-  - component: {fileID: 5089935593568804621}
+  - component: {fileID: 32661039714564762}
   m_Layer: 12
   m_Name: Trail1
   m_TagString: Untagged
@@ -32052,7 +32052,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5089935593568804621
+--- !u!114 &32661039714564762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32153,7 +32153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2171030726730584884}
   - component: {fileID: 1962910431412273547}
-  - component: {fileID: 4747101558798919314}
+  - component: {fileID: 1891889969306020029}
   m_Layer: 12
   m_Name: Trail1 (4)
   m_TagString: Untagged
@@ -32301,7 +32301,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &4747101558798919314
+--- !u!114 &1891889969306020029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32323,7 +32323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831969459938530053}
   - component: {fileID: 7386868905442858481}
-  - component: {fileID: 6064739106893250145}
+  - component: {fileID: 6286314842473479177}
   m_Layer: 12
   m_Name: Trail1 (17)
   m_TagString: Untagged
@@ -32471,7 +32471,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &6064739106893250145
+--- !u!114 &6286314842473479177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32730,7 +32730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886688807212423046}
   - component: {fileID: 4576415647208303100}
-  - component: {fileID: 2922637395351868614}
+  - component: {fileID: 4737961204935358437}
   m_Layer: 12
   m_Name: Trail1 (10)
   m_TagString: Untagged
@@ -32878,7 +32878,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &2922637395351868614
+--- !u!114 &4737961204935358437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33238,6 +33238,7 @@ Transform:
   - {fileID: 6396552556841842656}
   - {fileID: 8520715614738303393}
   - {fileID: 6437615915085765254}
+  - {fileID: 6152902442453474359}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33564,7 +33565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8895331533613505130}
   - component: {fileID: 1184225842630454395}
-  - component: {fileID: 3793940862859660133}
+  - component: {fileID: 8139526905066840913}
   m_Layer: 12
   m_Name: Trail1 (23)
   m_TagString: Untagged
@@ -33712,7 +33713,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &3793940862859660133
+--- !u!114 &8139526905066840913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33813,7 +33814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3625408879996957658}
   - component: {fileID: 3368201474967618838}
-  - component: {fileID: 6787082763022030331}
+  - component: {fileID: 4500838596650550473}
   m_Layer: 12
   m_Name: Trail1
   m_TagString: Untagged
@@ -33961,7 +33962,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &6787082763022030331
+--- !u!114 &4500838596650550473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33983,7 +33984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866585881106570893}
   - component: {fileID: 281206143100898417}
-  - component: {fileID: 5391279366049133348}
+  - component: {fileID: 8593431669836176970}
   m_Layer: 12
   m_Name: Trail1 (2)
   m_TagString: Untagged
@@ -34131,7 +34132,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5391279366049133348
+--- !u!114 &8593431669836176970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48995,7 +48996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7154114813745006428}
   - component: {fileID: 4914073784806800225}
-  - component: {fileID: 11890416458727618}
+  - component: {fileID: 382953686833918322}
   m_Layer: 12
   m_Name: Trail1 (11)
   m_TagString: Untagged
@@ -49143,7 +49144,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &11890416458727618
+--- !u!114 &382953686833918322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49165,7 +49166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 162598798985997893}
   - component: {fileID: 4246243121055491439}
-  - component: {fileID: 1966474300664963950}
+  - component: {fileID: 1195901359226276525}
   m_Layer: 12
   m_Name: Trail1 (7)
   m_TagString: Untagged
@@ -49313,7 +49314,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1966474300664963950
+--- !u!114 &1195901359226276525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49414,7 +49415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2364122777978278981}
   - component: {fileID: 3285860414454345704}
-  - component: {fileID: 6356890374694848238}
+  - component: {fileID: 4093690951324934134}
   m_Layer: 12
   m_Name: Trail1 (1)
   m_TagString: Untagged
@@ -49562,7 +49563,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &6356890374694848238
+--- !u!114 &4093690951324934134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54346,7 +54347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6924489981777180417}
   - component: {fileID: 1226116358867688368}
-  - component: {fileID: 4148068515472423356}
+  - component: {fileID: 7896376606449678660}
   m_Layer: 12
   m_Name: Trail1 (3)
   m_TagString: Untagged
@@ -54494,7 +54495,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &4148068515472423356
+--- !u!114 &7896376606449678660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59854,7 +59855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485063815603530840}
   - component: {fileID: 637439348080743642}
-  - component: {fileID: 1643387214823879512}
+  - component: {fileID: 1729505915735351859}
   m_Layer: 12
   m_Name: Trail1 (4)
   m_TagString: Untagged
@@ -60002,7 +60003,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1643387214823879512
+--- !u!114 &1729505915735351859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74560,7 +74561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7683939606273849893}
   - component: {fileID: 7465958080574085713}
-  - component: {fileID: 5526417148349792604}
+  - component: {fileID: 6729399233955252898}
   m_Layer: 12
   m_Name: Trail1 (19)
   m_TagString: Untagged
@@ -74708,7 +74709,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5526417148349792604
+--- !u!114 &6729399233955252898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74919,7 +74920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7270085240999887224}
   - component: {fileID: 4418145783200082616}
-  - component: {fileID: 1494623034322092528}
+  - component: {fileID: 176516842778941532}
   m_Layer: 12
   m_Name: Trail1 (15)
   m_TagString: Untagged
@@ -75067,7 +75068,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1494623034322092528
+--- !u!114 &176516842778941532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75089,7 +75090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927279733571817890}
   - component: {fileID: 8789874706471341224}
-  - component: {fileID: 8612403044859895023}
+  - component: {fileID: 55515686182229270}
   m_Layer: 12
   m_Name: Trail1 (20)
   m_TagString: Untagged
@@ -75237,7 +75238,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &8612403044859895023
+--- !u!114 &55515686182229270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80238,7 +80239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6139123689182892718}
   - component: {fileID: 6887551328234676330}
-  - component: {fileID: 9055229147654424790}
+  - component: {fileID: 8417273846010893058}
   m_Layer: 12
   m_Name: Trail1 (8)
   m_TagString: Untagged
@@ -80386,7 +80387,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &9055229147654424790
+--- !u!114 &8417273846010893058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80438,7 +80439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5708806303054232548}
   - component: {fileID: 1564063480252748432}
-  - component: {fileID: 3042090561898480469}
+  - component: {fileID: 2522955467213139754}
   m_Layer: 12
   m_Name: Trail1 (1)
   m_TagString: Untagged
@@ -80586,7 +80587,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &3042090561898480469
+--- !u!114 &2522955467213139754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80608,7 +80609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504857573503612500}
   - component: {fileID: 5427128419321399499}
-  - component: {fileID: 8933925975090394874}
+  - component: {fileID: 6174617101169130668}
   m_Layer: 12
   m_Name: Trail1 (13)
   m_TagString: Untagged
@@ -80756,7 +80757,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &8933925975090394874
+--- !u!114 &6174617101169130668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90832,7 +90833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8605348698992967707}
   - component: {fileID: 7009923087361039613}
-  - component: {fileID: 5322433734148994181}
+  - component: {fileID: 1336166641455498735}
   m_Layer: 12
   m_Name: Trail1 (2)
   m_TagString: Untagged
@@ -90980,7 +90981,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5322433734148994181
+--- !u!114 &1336166641455498735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100622,7 +100623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6648347974422784129}
   - component: {fileID: 5528326578957480776}
-  - component: {fileID: 2898252091788764182}
+  - component: {fileID: 3848433415567873647}
   m_Layer: 12
   m_Name: Trail1 (9)
   m_TagString: Untagged
@@ -100770,7 +100771,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &2898252091788764182
+--- !u!114 &3848433415567873647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100792,7 +100793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6065166079188561771}
   - component: {fileID: 7413150736302209777}
-  - component: {fileID: 235699355576857946}
+  - component: {fileID: 2366702306370749204}
   m_Layer: 12
   m_Name: Trail1 (12)
   m_TagString: Untagged
@@ -100940,7 +100941,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &235699355576857946
+--- !u!114 &2366702306370749204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101174,7 +101175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893371652658566355}
   - component: {fileID: 5194072274346799808}
-  - component: {fileID: 5289927414730739460}
+  - component: {fileID: 6803936158543980702}
   m_Layer: 12
   m_Name: Trail1 (5)
   m_TagString: Untagged
@@ -101322,7 +101323,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5289927414730739460
+--- !u!114 &6803936158543980702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106168,7 +106169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7249033604617035684}
   - component: {fileID: 5568951599814149051}
-  - component: {fileID: 9009843607338241113}
+  - component: {fileID: 6603027953580353937}
   m_Layer: 12
   m_Name: Trail1 (3)
   m_TagString: Untagged
@@ -106316,7 +106317,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &9009843607338241113
+--- !u!114 &6603027953580353937
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106417,7 +106418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681783967332102628}
   - component: {fileID: 6059444463276495749}
-  - component: {fileID: 3104272621627739305}
+  - component: {fileID: 1344217289413843943}
   m_Layer: 12
   m_Name: Trail1 (22)
   m_TagString: Untagged
@@ -106565,7 +106566,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &3104272621627739305
+--- !u!114 &1344217289413843943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106577,6 +106578,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &236703534617373126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8026305439525518849}
+    m_Modifications:
+    - target: {fileID: 3503828822281597768, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004763928954408875, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_Name
+      value: ProbeParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453274188959968897, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453274188959968897, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453274188959968897, guid: 438860eadaf486f45825f0172511faec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 438860eadaf486f45825f0172511faec, type: 3}
+--- !u!4 &6152902442453474359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6209180413917672945, guid: 438860eadaf486f45825f0172511faec,
+    type: 3}
+  m_PrefabInstance: {fileID: 236703534617373126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7081535432756386770
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,8 +10,7 @@
 		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
-		"surfaceSize": 30.0,
-		"zeroGravityRadius": 125.0
+		"surfaceSize": 30.0
 	},
 	"Orbit": {
 		"staticPosition": {
@@ -173,18 +172,6 @@
 				"maxDistance": -1.0,
 				"revealOn": "enter",
 				"reveals": [
-					"codex_interloper_rumor"
-				],
-				"position": {
-					"y": -29.0
-				},
-				"radius": 10.0
-			},
-			{
-				"maxAngle": 180.0,
-				"maxDistance": -1.0,
-				"revealOn": "enter",
-				"reveals": [
 					"codex_lingering_chime_tesseract",
 					"codex_lingering_chime_water",
 					"codex_lingering_chime_material",
@@ -259,26 +246,6 @@
 			}
 		],
 		"zeroGravityVolumes": [
-			{
-				"radius": 125.0,
-				"parentPath": "Volumes",
-				"rename": "ZeroGVolume"
-			},
-			{
-				"radius": 125.0,
-				"parentPath": "Volumes",
-				"rename": "ZeroGVolume"
-			},
-			{
-				"radius": 125.0,
-				"parentPath": "Volumes",
-				"rename": "ZeroGVolume"
-			},
-			{
-				"radius": 125.0,
-				"parentPath": "Volumes",
-				"rename": "ZeroGVolume"
-			},
 			{
 				"radius": 125.0,
 				"parentPath": "Volumes",
