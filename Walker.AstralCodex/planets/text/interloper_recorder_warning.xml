@@ -1,17 +1,17 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text><![CDATA[<Color=#00ffbc>]]>emerging error fuel unstable   fuel seed jetissoned as far as able   pressure mounting leak detected   deploying liquid to conteract affected   liquid frozen rupture unprevented<![CDATA[</Color>]]></Text>
+		<Text>emerging error fuel unstable   fuel seed jettisoned as far as able   pressure mounting leak detected   deploying liquid to counteract affected   liquid frozen rupture unprevented</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>communication found downloading translation   mimicing medium deploying caution<![CDATA[</Color>]]></Text>
+		<Text>communication found downloading translation   mimicing medium deploying caution</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>I plea that this message reaches you in time. The fuel contained within this seed is highly dangerous and contact with it is certain to end in your demise. You must rapidly locate to a safe distance, your continued survival depends on it!<![CDATA[</Color>]]></Text>
+		<Text>I plea that this message reaches you in time. The fuel contained within this seed is highly dangerous and contact with it is certain to end in your demise. You must rapidly locate to a safe distance, your continued survival depends on it!</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

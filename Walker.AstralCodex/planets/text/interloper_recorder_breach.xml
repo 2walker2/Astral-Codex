@@ -1,15 +1,15 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text><![CDATA[<Color=#00ffbc>]]>seed breached
+		<Text>seed breached
 fuel rapidly dispersed
 life signs dwindling
-as stars at the end of a universe<![CDATA[</Color>]]></Text>
+as stars at the end of a universe</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text><![CDATA[<Color=#00ffbc>]]>
-I am sorry...<![CDATA[</Color>]]></Text>
+		<Text>
+I am sorry...</Text>
 	</TextBlock>
 </NomaiObject>

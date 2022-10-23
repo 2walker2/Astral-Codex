@@ -35,7 +35,7 @@
         </RumorFact>
         <ExploreFact>
             <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a device that felt like a Nomai gravity beam and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[}<![CDATA[</Color>]]></Text> 
+            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[}<![CDATA[</Color>]]></Text> 
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_water</ID>
@@ -46,11 +46,12 @@
             <ID>codex_lingering_chime_population</ID>
             <Name>Tally Display</Name>
             
+            <IgnoreMoreToExplore/>
             <Curiosity>codex_astral_codex</Curiosity>
 
             <ExploreFact>
                 <ID>codex_lingering_chime_population_fact</ID>
-                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only partially full. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one sixth full. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
@@ -61,6 +62,7 @@
             <ID>codex_lingering_chime_spacecraft</ID>
             <Name>Icons Display</Name>
 
+            <IgnoreMoreToExplore/>
             <Curiosity>codex_astral_codex</Curiosity>
 
             <ExploreFact>
@@ -76,6 +78,7 @@
             <ID>codex_lingering_chime_no_sun</ID>
             <Name>Circular Display</Name>
 
+            <IgnoreMoreToExplore/>
             <Curiosity>codex_astral_codex</Curiosity>
 
             <ExploreFact>
@@ -92,6 +95,7 @@
         <ID>codex_lingering_chime_lower</ID>
         <Name>Lower Deck</Name>
 
+        <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
 
         <RumorFact>
@@ -146,9 +150,9 @@
         <ExploreFact>
             <ID>codex_astral_codex_fact</ID>
             <Text><![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
-My species is gone. Soon I, and everything I have ever known will perish as well. But I have reached the Oculus. I know now that this has happened before and will happen again and that knowledge gives me hope that my people may be remembered. The preponderance of my life I have spent in orbit around the Oculus as the stars die around me, collecting the material to build a vessel that might survive this unknowable transition. Now, I am ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
+My species is gone. Soon I, and everything I have ever known, will perish as well. But I have reached the Eye. I know now that this has happened before and will happen again and that knowledge gives me hope that my people may be remembered. The preponderance of my life I have spent in orbit around the Oculus as the stars die around me, collecting the material to build a vessel that might survive this unknowable transition. Now, I am ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
 You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
-But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards through the Oculus, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
+But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards through the Eye, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
 Remember us.
 codex extraction in progress<![CDATA[</Color>]]></Text>
         </ExploreFact>

@@ -11,7 +11,8 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish",
 				"position": {},
 				"rotation": {},
-				"scale": 0.5
+				"scale": 0.5,
+				"keepLoaded": true
 			},
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_HT/Interactables_HTState/Interactables_CTState/CTState_Q_Objects/CTState_QCactus/Q_Cactus/Prefab_HGT_Cactus_Single_A",
@@ -20,7 +21,8 @@
 					"z": 40.0
 				},
 				"rotation": {},
-				"scale": 2.0
+				"scale": 2.0,
+				"keepLoaded": true
 			}
 		]
 	},

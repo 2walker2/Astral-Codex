@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>ANNONA: Welcome to Ember Twin, my friends! It is good to see you again after so long apart. Observation: we must develop a better means of interplanetary travel that we can properly reunited (perhaps warp travel could be recreated with the right equipment).</Text>
+		<Text>ANNONA: Welcome to Ember Twin, my friends! It is good to see you again after so long apart. Observation: we must develop a better means of interplanetary travel so that we can be properly reunited (perhaps warp travel could be recreated with the right equipment).</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

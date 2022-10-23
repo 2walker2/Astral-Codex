@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using NewHorizons;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -22,7 +24,7 @@ namespace AstralCodex
         public virtual void Start()
         {
             //Get QM
-            quantumMoon = GameObject.Find("QuantumMoon_Body");
+            quantumMoon = SearchUtilities.Find("QuantumMoon_Body");
             quantumMoonAtmosphere = quantumMoon.transform.Find("Atmosphere_QM/AtmoSphere").gameObject;
             //Get trails
             trails = GetComponentsInChildren<LineRenderer>().ToList();

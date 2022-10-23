@@ -4,13 +4,14 @@
         <ID>codex_projection</ID>
         <Name>Anomaly Recording</Name>
 
+        <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
 
         <RumorFact>
             <ID>codex_projection_rumor</ID>
             <SourceID>OPC_SUNKEN_MODULE</SourceID>
             <RumorName>Anomaly Recording</RumorName>
-            <Text>The Orbital Probe Cannon generated a projection stone containing a recording taken by a previous probe that impacted an unknown body matching partial criteria for the Eye of the Universe.</Text> 
+            <Text>The Orbital Probe Cannon generated a projection stone containing a recording taken by a previous probe. The probe impacted an unknown body matching partial criteria for the Eye of the Universe.</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>codex_projection_fact</ID>
