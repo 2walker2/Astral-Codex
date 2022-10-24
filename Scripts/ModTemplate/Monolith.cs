@@ -35,13 +35,13 @@ namespace AstralCodex
                 monolithRevealTrigger._player = false;
                 Main.modHelper.Console.WriteLine("FOUND MONOLITH REVEAL", MessageType.Success);
             }
-            /*while (monolithReveal != null)
+            while (monolithReveal != null)
             {
                 monolithReveal.SetActive(false);
                 previousMonolithReveal = monolithReveal;
                 monolithReveal = GameObject.Find("CodexReveal");
             }
-            if (previousMonolithReveal != null) monolithReveal = previousMonolithReveal;*/
+            if (previousMonolithReveal != null) monolithReveal = previousMonolithReveal;
         }
 
         void Update()
@@ -55,7 +55,7 @@ namespace AstralCodex
             else
             {
                 monolithEffect.SetActive(false);
-                //monolithReveal.SetActive(false);
+                monolithReveal.SetActive(false);
                 TurnOff(renderer, null);
             }
         }
