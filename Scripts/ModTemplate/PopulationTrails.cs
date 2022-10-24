@@ -35,7 +35,8 @@ namespace AstralCodex
                 "Villager_HEA_Tektite_2",
                 "Villager_HEA_Esker",
                 "Villager_HEA_Hornfels (1)",
-                "Villager_HEA_Tuff"
+                "Villager_HEA_Tuff",
+                "TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player"
                 };
         }
 
@@ -46,11 +47,6 @@ namespace AstralCodex
             Color c = trails[0].material.color;
             c.a = 1f;
             trails[0].material.color = c;
-        }
-
-        public override void AdditionalTargets()
-        {
-            base.targets.Add(GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0)); //Self
         }
     }
 }

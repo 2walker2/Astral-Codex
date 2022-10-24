@@ -22,10 +22,5 @@ namespace AstralCodex
                 "QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle"
                 };
         }
-
-        public override void AdditionalTargets()
-        {
-            return;
-        }
     }
 }

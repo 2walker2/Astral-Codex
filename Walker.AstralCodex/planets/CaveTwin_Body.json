@@ -224,7 +224,23 @@
 					"y": -93.82471,
 					"z": -117.116425
 				},
-				"reveals": "codex_ember_signal_rumor"
+			}
+		]
+	},
+	"Volumes": {
+		"revealVolumes": [
+			{
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				},
+				"radius": 15.0,
+				"revealOn": "enter",
+				"reveals": [
+					"codex_ember_memorial",
+					"codex_ember_signal_rumor"
+				]
 			}
 		]
 	},

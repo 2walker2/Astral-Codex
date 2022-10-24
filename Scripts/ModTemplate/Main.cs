@@ -38,7 +38,6 @@ namespace AstralCodex
                 "TranslationProbe1/Model", 
                 "TranslationProbe2/Model",
                 "TranslationProbe3/Model",
-                "InterloperCairn",
                 "ChimeSign"
             };
             //Create materials list

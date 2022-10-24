@@ -125,11 +125,16 @@
             <ID>codex_interloper_rumor</ID> 
             <SourceID>codex_lingering_chime</SourceID> 
             <RumorName>Missing Piece</RumorName> 
-            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel seed has ruptured and blanketed the system.</Text> 
+            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel seed has ruptured and blanketed the system.</Text>
         </RumorFact>
 
         <ExploreFact>
-            <ID>codex_interloper_recorder</ID> 
+            <ID>codex_interloper_recorder_breach</ID> 
+            <Text>I found a crystalline recorder containing an apology in the core of The Interloper.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_interloper_recorder_warning</ID> 
             <Text>I found a crystalline recorder in the core of The Interloper. It describes liquid being used to counteract the effects of ghost matter along with a warning to the Nomai about the impending rupture.</Text>
         </ExploreFact>
     </Entry>
@@ -170,8 +175,8 @@ The Strangers were archivists, preserving information at any cost. But their fea
 The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
 
 I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)</Text>
-            </AltText>
             <Condition>IP_SARCOPHAGUS_X3</Condition>
+            </AltText>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

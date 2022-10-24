@@ -1,12 +1,6 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Reunion Memorial</Text>
+		<Text><![CDATA[<Color=orange>]]>Reunion Memorial<![CDATA[</Color>]]></Text>
 	</TextBlock>
-	<ShipLogConditions>
-	    <RevealFact>
-	      	<FactID>codex_ember_memorial</FactID>
-	      	<Condition>1</Condition>
-	    </RevealFact>
-	</ShipLogConditions>
 </NomaiObject>

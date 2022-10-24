@@ -15,7 +15,7 @@
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
-	      	<FactID>codex_interloper_recorder</FactID>
+	      	<FactID>codex_interloper_recorder_warning</FactID>
 	      	<Condition>1</Condition>
 	    </RevealFact>
 	</ShipLogConditions>

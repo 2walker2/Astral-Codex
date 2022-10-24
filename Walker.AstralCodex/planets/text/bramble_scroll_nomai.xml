@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>OENO: This research station has been established to study the spacial distortions located within Dark Bramble.</Text>
+		<Text>OENO: This research station has been established to study the spacial distortions located within <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
@@ -11,17 +11,17 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>OENO: I am pleased to report that our research is progressing rapidly! We have determined that the space within Dark Bramble is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
+		<Text>OENO: I am pleased to report that our research is progressing rapidly! We have determined that the space within <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]> is distorted to an impossible degree. This space cannot possibly exist within a single location.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>CYCAD: Hypothesis: when an object, or entity, enters Dark Bramble, the interior manifests elsewhere within a pocket of space linked to this one. This manifestation would exert a repelling force on objects in its surroundings as space deforms to welcome it.</Text>
+		<Text>CYCAD: Hypothesis: when an object, or entity, enters <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, the interior manifests elsewhere within a pocket of space linked to this one. This manifestation would exert a repelling force on objects in its surroundings as space deforms to welcome it.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>OENO: By studying the sky shortly after an object has entered Dark Bramble, we believe we have located the space the interior occupies. Coleus informs us that the phenomenon is most unsettling when viewed from the surface of Timber Hearth.</Text>
+		<Text>OENO: By studying the sky shortly after an object has entered <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, we believe we have located the space the interior occupies. Coleus informs us that the phenomenon is most unsettling when viewed from the surface of <![CDATA[<Color=lightblue>]]>Timber Hearth<![CDATA[</Color>]]>.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
@@ -31,7 +31,7 @@
 	<TextBlock>
 		<ID>7</ID>
 		<ParentID>5</ParentID>
-		<Text>CYCAD: The comet Spire detected is entering the system! We will be returning to Timber Hearth via the <![CDATA[<Color=orange>]]>White Hole Station<![CDATA[</Color>]]> to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
+		<Text>CYCAD: The comet Spire detected is entering the system! We will be returning via the <![CDATA[<Color=orange>]]>White Hole Station<![CDATA[</Color>]]> to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

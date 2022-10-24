@@ -9675,13 +9675,13 @@ GameObject:
   - component: {fileID: 9157780073696123152}
   - component: {fileID: 5303611971645696447}
   - component: {fileID: 4029427193862954075}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9157780073696123152
 Transform:
   m_ObjectHideFlags: 0
@@ -9976,7 +9976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1242119288512140956}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: PopulationScannerOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10032,13 +10032,13 @@ GameObject:
   - component: {fileID: 5005639966145747240}
   - component: {fileID: 1123103273434027341}
   - component: {fileID: 6810463915281855093}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5005639966145747240
 Transform:
   m_ObjectHideFlags: 0
@@ -15599,13 +15599,13 @@ GameObject:
   - component: {fileID: 2749311883265410655}
   - component: {fileID: 1092942029462629941}
   - component: {fileID: 1890418247426074129}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2749311883265410655
 Transform:
   m_ObjectHideFlags: 0
@@ -15927,13 +15927,13 @@ GameObject:
   - component: {fileID: 7114012505380785674}
   - component: {fileID: 2970355110459738826}
   - component: {fileID: 526314403393255581}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7114012505380785674
 Transform:
   m_ObjectHideFlags: 0
@@ -16196,13 +16196,13 @@ GameObject:
   - component: {fileID: 5704188677647032979}
   - component: {fileID: 7868479803583605659}
   - component: {fileID: 4866454829992668149}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5704188677647032979
 Transform:
   m_ObjectHideFlags: 0
@@ -21354,7 +21354,7 @@ GameObject:
   - component: {fileID: 685132356547027057}
   - component: {fileID: 5597381149636625412}
   - component: {fileID: 4734920135106625449}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: SpacecraftScanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21515,7 +21515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6458222710618700156}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: SpacecraftScannerOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21554,13 +21554,13 @@ GameObject:
   - component: {fileID: 566407965194605076}
   - component: {fileID: 886841507598340634}
   - component: {fileID: 7213528547808113794}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &566407965194605076
 Transform:
   m_ObjectHideFlags: 0
@@ -26982,13 +26982,13 @@ GameObject:
   - component: {fileID: 1953743294533537437}
   - component: {fileID: 1609515697153409132}
   - component: {fileID: 3674611388372905521}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1953743294533537437
 Transform:
   m_ObjectHideFlags: 0
@@ -31905,13 +31905,13 @@ GameObject:
   - component: {fileID: 1627775649882721443}
   - component: {fileID: 4458543036189826137}
   - component: {fileID: 32661039714564762}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1627775649882721443
 Transform:
   m_ObjectHideFlags: 0
@@ -32154,13 +32154,13 @@ GameObject:
   - component: {fileID: 2171030726730584884}
   - component: {fileID: 1962910431412273547}
   - component: {fileID: 1891889969306020029}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2171030726730584884
 Transform:
   m_ObjectHideFlags: 0
@@ -32324,13 +32324,13 @@ GameObject:
   - component: {fileID: 7831969459938530053}
   - component: {fileID: 7386868905442858481}
   - component: {fileID: 6286314842473479177}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7831969459938530053
 Transform:
   m_ObjectHideFlags: 0
@@ -32731,13 +32731,13 @@ GameObject:
   - component: {fileID: 886688807212423046}
   - component: {fileID: 4576415647208303100}
   - component: {fileID: 4737961204935358437}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &886688807212423046
 Transform:
   m_ObjectHideFlags: 0
@@ -33566,13 +33566,13 @@ GameObject:
   - component: {fileID: 8895331533613505130}
   - component: {fileID: 1184225842630454395}
   - component: {fileID: 8139526905066840913}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8895331533613505130
 Transform:
   m_ObjectHideFlags: 0
@@ -33815,13 +33815,13 @@ GameObject:
   - component: {fileID: 3625408879996957658}
   - component: {fileID: 3368201474967618838}
   - component: {fileID: 4500838596650550473}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3625408879996957658
 Transform:
   m_ObjectHideFlags: 0
@@ -33985,13 +33985,13 @@ GameObject:
   - component: {fileID: 866585881106570893}
   - component: {fileID: 281206143100898417}
   - component: {fileID: 8593431669836176970}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &866585881106570893
 Transform:
   m_ObjectHideFlags: 0
@@ -40516,14 +40516,14 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     mode: 0
     timeMode: 0
     fps: 30
     frameOverTime:
       serializedVersion: 2
-      minMaxState: 1
-      scalar: 0.9999
+      minMaxState: 0
+      scalar: 0
       minScalar: 0.9999
       maxCurve:
         serializedVersion: 2
@@ -40575,8 +40575,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startFrame:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 0.9999
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -40627,8 +40627,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 1
-    tilesY: 1
+    tilesX: 4
+    tilesY: 4
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -48997,13 +48997,13 @@ GameObject:
   - component: {fileID: 7154114813745006428}
   - component: {fileID: 4914073784806800225}
   - component: {fileID: 382953686833918322}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7154114813745006428
 Transform:
   m_ObjectHideFlags: 0
@@ -49167,13 +49167,13 @@ GameObject:
   - component: {fileID: 162598798985997893}
   - component: {fileID: 4246243121055491439}
   - component: {fileID: 1195901359226276525}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &162598798985997893
 Transform:
   m_ObjectHideFlags: 0
@@ -49416,13 +49416,13 @@ GameObject:
   - component: {fileID: 2364122777978278981}
   - component: {fileID: 3285860414454345704}
   - component: {fileID: 4093690951324934134}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2364122777978278981
 Transform:
   m_ObjectHideFlags: 0
@@ -54348,13 +54348,13 @@ GameObject:
   - component: {fileID: 6924489981777180417}
   - component: {fileID: 1226116358867688368}
   - component: {fileID: 7896376606449678660}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6924489981777180417
 Transform:
   m_ObjectHideFlags: 0
@@ -59856,13 +59856,13 @@ GameObject:
   - component: {fileID: 485063815603530840}
   - component: {fileID: 637439348080743642}
   - component: {fileID: 1729505915735351859}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &485063815603530840
 Transform:
   m_ObjectHideFlags: 0
@@ -74562,13 +74562,13 @@ GameObject:
   - component: {fileID: 7683939606273849893}
   - component: {fileID: 7465958080574085713}
   - component: {fileID: 6729399233955252898}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7683939606273849893
 Transform:
   m_ObjectHideFlags: 0
@@ -74921,13 +74921,13 @@ GameObject:
   - component: {fileID: 7270085240999887224}
   - component: {fileID: 4418145783200082616}
   - component: {fileID: 176516842778941532}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7270085240999887224
 Transform:
   m_ObjectHideFlags: 0
@@ -75091,13 +75091,13 @@ GameObject:
   - component: {fileID: 927279733571817890}
   - component: {fileID: 8789874706471341224}
   - component: {fileID: 55515686182229270}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &927279733571817890
 Transform:
   m_ObjectHideFlags: 0
@@ -80240,13 +80240,13 @@ GameObject:
   - component: {fileID: 6139123689182892718}
   - component: {fileID: 6887551328234676330}
   - component: {fileID: 8417273846010893058}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6139123689182892718
 Transform:
   m_ObjectHideFlags: 0
@@ -80440,13 +80440,13 @@ GameObject:
   - component: {fileID: 5708806303054232548}
   - component: {fileID: 1564063480252748432}
   - component: {fileID: 2522955467213139754}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5708806303054232548
 Transform:
   m_ObjectHideFlags: 0
@@ -80610,13 +80610,13 @@ GameObject:
   - component: {fileID: 4504857573503612500}
   - component: {fileID: 5427128419321399499}
   - component: {fileID: 6174617101169130668}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4504857573503612500
 Transform:
   m_ObjectHideFlags: 0
@@ -80780,7 +80780,7 @@ GameObject:
   - component: {fileID: 9001781657646291653}
   - component: {fileID: 7318289122769535342}
   - component: {fileID: 4176680260727724317}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: PopulationScanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90834,13 +90834,13 @@ GameObject:
   - component: {fileID: 8605348698992967707}
   - component: {fileID: 7009923087361039613}
   - component: {fileID: 1336166641455498735}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8605348698992967707
 Transform:
   m_ObjectHideFlags: 0
@@ -100624,13 +100624,13 @@ GameObject:
   - component: {fileID: 6648347974422784129}
   - component: {fileID: 5528326578957480776}
   - component: {fileID: 3848433415567873647}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6648347974422784129
 Transform:
   m_ObjectHideFlags: 0
@@ -100794,13 +100794,13 @@ GameObject:
   - component: {fileID: 6065166079188561771}
   - component: {fileID: 7413150736302209777}
   - component: {fileID: 2366702306370749204}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6065166079188561771
 Transform:
   m_ObjectHideFlags: 0
@@ -101176,13 +101176,13 @@ GameObject:
   - component: {fileID: 2893371652658566355}
   - component: {fileID: 5194072274346799808}
   - component: {fileID: 6803936158543980702}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2893371652658566355
 Transform:
   m_ObjectHideFlags: 0
@@ -106170,13 +106170,13 @@ GameObject:
   - component: {fileID: 7249033604617035684}
   - component: {fileID: 5568951599814149051}
   - component: {fileID: 6603027953580353937}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7249033604617035684
 Transform:
   m_ObjectHideFlags: 0
@@ -106419,13 +106419,13 @@ GameObject:
   - component: {fileID: 6681783967332102628}
   - component: {fileID: 6059444463276495749}
   - component: {fileID: 1344217289413843943}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Trail1 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6681783967332102628
 Transform:
   m_ObjectHideFlags: 0

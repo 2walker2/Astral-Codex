@@ -23,7 +23,7 @@ namespace AstralCodex
             ghostMatterCollider.enabled = true;
         }
 
-        void OnTriggerEnter(Collider other)
+        void OnTriggerStay(Collider other)
         {
             if (other.gameObject.CompareTag("PlayerDetector"))
             {

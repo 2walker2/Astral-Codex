@@ -12,4 +12,10 @@ as stars at the end of a universe</Text>
 		<Text>
 I am sorry...</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_interloper_recorder_breach</FactID>
+	      	<Condition>2</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

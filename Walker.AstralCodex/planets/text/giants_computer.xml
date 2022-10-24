@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Anomaly matching partial criteria for the Eye of the Universe impacted by probe 78,809. Recording collected.</Text>
+		<Text>Anomaly matching partial criteria for the <![CDATA[<Color=orange>]]>Eye of the Universe<![CDATA[</Color>]]> impacted by probe 78,809. Recording collected.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

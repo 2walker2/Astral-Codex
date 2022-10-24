@@ -29,14 +29,19 @@ namespace AstralCodex
             //Disable monolith reveal
             monolithReveal = GameObject.Find("CodexReveal");
             GameObject previousMonolithReveal = null;
-            if (monolithReveal != null) Main.modHelper.Console.WriteLine("FOUND MONOLITH REVEAL", MessageType.Success);
-            while (monolithReveal != null)
+            if (monolithReveal != null)
+            {
+                ShipLogFactListTriggerVolume monolithRevealTrigger = monolithReveal.GetComponent<ShipLogFactListTriggerVolume>();
+                monolithRevealTrigger._player = false;
+                Main.modHelper.Console.WriteLine("FOUND MONOLITH REVEAL", MessageType.Success);
+            }
+            /*while (monolithReveal != null)
             {
                 monolithReveal.SetActive(false);
                 previousMonolithReveal = monolithReveal;
                 monolithReveal = GameObject.Find("CodexReveal");
             }
-            if (previousMonolithReveal != null) monolithReveal = previousMonolithReveal;
+            if (previousMonolithReveal != null) monolithReveal = previousMonolithReveal;*/
         }
 
         void Update()
@@ -50,7 +55,7 @@ namespace AstralCodex
             else
             {
                 monolithEffect.SetActive(false);
-                monolithReveal.SetActive(false);
+                //monolithReveal.SetActive(false);
                 TurnOff(renderer, null);
             }
         }
