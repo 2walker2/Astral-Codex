@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>POKE: I depart soon to explore the comet alongside Pye and Clary. However, when I return, I will investigate any way to reduce the energy the warp core requires (perhaps with more precision...).</Text>
+		<Text>POKE: I depart soon to explore the <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> alongside Pye and Clary. However, when I return, I will investigate any way to reduce the energy the warp core requires (perhaps with more precision...).</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>

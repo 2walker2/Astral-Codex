@@ -31,7 +31,7 @@
 	<TextBlock>
 		<ID>7</ID>
 		<ParentID>5</ParentID>
-		<Text>CYCAD: The comet Spire detected is entering the system! We will be returning via the <![CDATA[<Color=orange>]]>White Hole Station<![CDATA[</Color>]]> to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
+		<Text>CYCAD: The <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> Spire detected is entering the system! We will be returning via the <![CDATA[<Color=orange>]]>White Hole Station<![CDATA[</Color>]]> to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
