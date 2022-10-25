@@ -76,7 +76,7 @@ namespace AstralCodex
             newHorizons.LoadConfigs(this);
 
             //Setup
-            newHorizons.GetStarSystemLoadedEvent().AddListener((string system) => 
+            newHorizons.GetStarSystemLoadedEvent().AddListener((string system) =>
             {
                 if (system == "SolarSystem")
                 {
@@ -170,15 +170,17 @@ namespace AstralCodex
                     GameObject projectionRecorder = GameObject.Find("ProjectionRecorder");
                     if (projectionRecorder != null)
                     {
-                        projectionRecorder.GetComponent<SphereCollider>().enabled = false;
+                        Destroy(projectionRecorder.GetComponent<SphereCollider>());
+                        Destroy(projectionRecorder.GetComponent<OWCollider>());
                         projectionRecorder.GetComponentInChildren<BoxCollider>().center = new Vector3(0, 0, 0.8f);
                     }
                     GameObject visionStructure = GameObject.Find("StationVision/Structure_NOM_RemoteViewer");
                     if (visionStructure != null)
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION STRUCTURE", MessageType.Success);
-                        visionStructure.GetComponentInChildren<MeshRenderer>().enabled = false;
-                        visionStructure.GetComponentInChildren<MeshCollider>().enabled = false;
+                        Destroy(visionStructure.GetComponentInChildren<MeshRenderer>());
+                        Destroy(visionStructure.GetComponentInChildren<MeshCollider>());
+                        Destroy(visionStructure.GetComponentInChildren<OWCollider>());
                     }
                     GameObject visionPool = GameObject.Find("StationVision/RemoteViewer_Pool");
                     if (visionPool != null)
@@ -191,10 +193,14 @@ namespace AstralCodex
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION PEDESTAL", MessageType.Success);
                         foreach (SkinnedMeshRenderer r in visionPedestal.GetComponentsInChildren<SkinnedMeshRenderer>())
-                            r.enabled = false;
+                            Destroy(r);
                         foreach (MeshRenderer r in visionPedestal.GetComponentsInChildren<MeshRenderer>())
-                            r.enabled = false;
-                        visionPedestal.GetComponentInChildren<BoxCollider>().enabled = false;
+                            Destroy(r);
+                        foreach (OWRenderer r in visionPedestal.GetComponentsInChildren<OWRenderer>())
+                            Destroy(r);
+                        foreach (OWCollider r in visionPedestal.GetComponentsInChildren<OWCollider>())
+                            Destroy(r);
+                        Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
                     }
                     /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
