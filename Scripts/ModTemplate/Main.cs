@@ -121,7 +121,9 @@ namespace AstralCodex
                     }
 
                     //Increase ghost matter damage
-                    GameObject.Find("StationGhostMatter").GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+                    GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
+                    stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+
 
                     //Enable Ember tree collision
                     GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
@@ -168,15 +170,15 @@ namespace AstralCodex
                     GameObject projectionRecorder = GameObject.Find("ProjectionRecorder");
                     if (projectionRecorder != null)
                     {
-                        Destroy(projectionRecorder.GetComponent<SphereCollider>());
+                        projectionRecorder.GetComponent<SphereCollider>().enabled = false;
                         projectionRecorder.GetComponentInChildren<BoxCollider>().center = new Vector3(0, 0, 0.8f);
                     }
                     GameObject visionStructure = GameObject.Find("StationVision/Structure_NOM_RemoteViewer");
                     if (visionStructure != null)
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION STRUCTURE", MessageType.Success);
-                        Destroy(visionStructure.GetComponentInChildren<MeshRenderer>());
-                        Destroy(visionStructure.GetComponentInChildren<MeshCollider>());
+                        visionStructure.GetComponentInChildren<MeshRenderer>().enabled = false;
+                        visionStructure.GetComponentInChildren<MeshCollider>().enabled = false;
                     }
                     GameObject visionPool = GameObject.Find("StationVision/RemoteViewer_Pool");
                     if (visionPool != null)
@@ -189,10 +191,10 @@ namespace AstralCodex
                     {
                         ModHelper.Console.WriteLine($"FOUND VISION PEDESTAL", MessageType.Success);
                         foreach (SkinnedMeshRenderer r in visionPedestal.GetComponentsInChildren<SkinnedMeshRenderer>())
-                            Destroy(r);
+                            r.enabled = false;
                         foreach (MeshRenderer r in visionPedestal.GetComponentsInChildren<MeshRenderer>())
-                            Destroy(r);
-                        Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
+                            r.enabled = false;
+                        visionPedestal.GetComponentInChildren<BoxCollider>().enabled = false;
                     }
                     /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)

@@ -45,7 +45,7 @@ namespace AstralCodex
             base.Start();
             //Lower alpha on player trail
             Color c = trails[0].material.color;
-            c.a = 1f;
+            c.a = 0.5f;
             trails[0].material.color = c;
         }
     }
