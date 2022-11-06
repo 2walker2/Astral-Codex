@@ -19,7 +19,7 @@ namespace AstralCodex
         GameObject fourDParticles2;
         int fourDLayer = 0;
         float timeStayed = 0;
-        float secondLayerDelay = 7f;
+        float secondLayerDelay = 15f;
 
         void Awake()
         {

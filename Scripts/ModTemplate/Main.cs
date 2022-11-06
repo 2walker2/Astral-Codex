@@ -24,7 +24,6 @@ namespace AstralCodex
 
         void Awake()
         {
-            
             //Initialize instance
             if (instance == null) instance = this;
             //Create ghost matter crystal material list
