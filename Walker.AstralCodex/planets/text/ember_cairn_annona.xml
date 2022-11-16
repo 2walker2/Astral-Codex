@@ -3,10 +3,4 @@
 		<ID>1</ID>
 		<Text>ANNONA: Welcome to <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]>, my friends! It is good to see you again after so long apart. Observation: we must develop a better means of interplanetary travel so that we can be properly reunited (perhaps warp travel could be recreated with the right equipment).</Text>
 	</TextBlock>
-	<ShipLogConditions>
-	    <RevealFact>
-	      	<FactID>codex_ember_travel</FactID>
-	      	<Condition>1</Condition>
-	    </RevealFact>
-	</ShipLogConditions>
 </NomaiObject>
