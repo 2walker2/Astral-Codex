@@ -30,7 +30,12 @@
 
         <ExploreFact>
             <ID>codex_ember_cairns</ID> 
-            <Text>I found a set of crystalline cairns on Ember Twin that contain a message from a member of an unknown species to the Nomai. It offers great knowledge to the Nomai when the time has come. Several symbols are scattered throughout the message.</Text> 
+            <Text>I found a set of crystalline cairns on Ember Twin that contain a message from a member of an unknown species to the Nomai. It offers great knowledge to the Nomai when three criteria have been met.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_ember_symbols</ID> 
+            <Text>Symbols are scattered throughout the message written on the crystalline cairn.</Text> 
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

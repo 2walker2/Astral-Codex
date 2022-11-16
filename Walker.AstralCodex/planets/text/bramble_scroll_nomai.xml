@@ -31,16 +31,12 @@
 	<TextBlock>
 		<ID>7</ID>
 		<ParentID>5</ParentID>
-		<Text>CYCAD: The <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> Spire detected is entering the system! We will be returning via the <![CDATA[<Color=orange>]]>White Hole Station<![CDATA[</Color>]]> to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
+		<Text>CYCAD: The <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> Spire detected is entering the system! We will be rejoining our the rest of our clan to await news from the expedition team. Further exploration of this pehnomenon must wait for a subsequent time.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
 	      	<FactID>codex_bramble_research</FactID>
 	      	<Condition>5</Condition>
-	    </RevealFact>
-	    <RevealFact>
-	      	<FactID>codex_bramble_travel</FactID>
-	      	<Condition>7</Condition>
 	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

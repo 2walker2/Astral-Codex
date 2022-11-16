@@ -51,7 +51,11 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_population_fact</ID>
-                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one sixth full. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one sixth full. Symbols are chalked next to a satellite dish nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+            </ExploreFact>
+            <ExploreFact>
+                <ID>codex_lingering_chime_population_trails</ID>
+                <Text>After passing through the strange device a seond time, I can see green trails emanating from the satellite dish connected to points throughout the system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
@@ -67,11 +71,15 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_fact</ID>
-                <Text>There are 5 icons displayed next to an indicator light on the floor. The second icon is powered off. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
+                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a satellite dish nearby that read: <![CDATA[<Color=#00ffbc>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
+            </ExploreFact>
+            <ExploreFact>
+                <ID>codex_lingering_chime_spacecraft_trails</ID>
+                <Text>After passing through the strange device a seond time, I can see purple trails emanating from the satellite dish connected to points throughout the system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>
-                <Text>The second icon powered on and the indicator light turned green when a spacecraft was present on Timber Hearth.</Text>
+                <Text>All of the icons powered on and the indicator light turned green when a spacecraft was present on each planet in the system.</Text>
             </ExploreFact>
         </Entry>
         <Entry>
@@ -157,7 +165,7 @@
             <Text><![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
 My species is gone. Soon I, and everything I have ever known, will perish as well. But I have reached the Eye. I know now that this has happened before and will happen again and that knowledge gives me hope that my people may be remembered. The preponderance of my life I have spent in orbit around the Oculus as the stars die around me, collecting the material to build a vessel that might survive this unknowable transition. Now, I am ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
 You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
-But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards through the Eye, that it may persist, and grow, and inform the worthy species in the next cycle of what came before.
+But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards. Send whatever device you posses on a final journey through the Eye, that the Codex may persist, and grow, and inform the worthy species in the next cycle of what came before.
 Remember us.
 codex extraction in progress<![CDATA[</Color>]]></Text>
         </ExploreFact>

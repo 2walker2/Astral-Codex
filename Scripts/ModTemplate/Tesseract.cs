@@ -20,6 +20,7 @@ namespace AstralCodex
         int fourDLayer = 0;
         float timeStayed = 0;
         float secondLayerDelay = 15f;
+        GameObject trailsReveal;
 
         void Awake()
         {
@@ -36,6 +37,9 @@ namespace AstralCodex
             time = 0;
             fourDParticles = transform.Find("4DParticles").gameObject;
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
+            trailsReveal = SearchUtilities.Find("TrailsReveal");
+            if (trailsReveal != null)
+                trailsReveal.SetActive(false);
         }
 
         void LateUpdate()
@@ -116,6 +120,8 @@ namespace AstralCodex
                     fourDLayer = 2;
                     fourDParticles2.SetActive(true);
                     Trails.visible = true;
+                    if (trailsReveal != null)
+                        trailsReveal.SetActive(true);
                 }
             }
         }

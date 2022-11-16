@@ -21,17 +21,17 @@
 
         <ExploreFact>
             <ID>codex_bramble_research</ID> 
-            <Text>The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System. They noted that this phenomenon repells objects around it and is most visible from the surface of Timber Hearth.</Text>
-        </ExploreFact>
-
-        <ExploreFact>
-            <ID>codex_bramble_travel</ID> 
-            <Text>The Nomai used the White Hole Station to travel to and from Dark Bramble.</Text>
+            <Text>The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System. They noted that this phenomenon repells objects around it and that it is most visible from the surface of Timber Hearth.</Text>
         </ExploreFact>
 
         <ExploreFact>
             <ID>codex_bramble_scroll</ID> 
             <Text>I found a crytalline scroll on Dark Bramble that contains a first-contact message from a member of an unknown species to the Nomai. It offers information of great value to the Nomai once they have advanced as a species. Several symbols are scattered throughout the message.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_bramble_symbols</ID> 
+            <Text>Symbols are scattered throughout the message stored on the cystalline scroll.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

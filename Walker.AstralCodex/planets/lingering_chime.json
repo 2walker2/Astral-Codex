@@ -191,6 +191,21 @@
 				"maxDistance": -1.0,
 				"revealOn": "enter",
 				"reveals": [
+					"codex_lingering_chime_population_trails",
+					"codex_lingering_chime_spacecraft_trails",
+				],
+				"position": {
+					"x": 11.45,
+					"y": 3.26
+				},
+				"radius": 4.0,
+				"rename": "TrailsReveal"
+			},
+			{
+				"maxAngle": 180.0,
+				"maxDistance": -1.0,
+				"revealOn": "enter",
+				"reveals": [
 					"codex_lingering_chime_lower_monolith"
 				],
 				"position": {
@@ -239,9 +254,9 @@
 				],
 				"position": {
 					"x": 11.6,
-					"y": -3.0
+					"y": -1.6
 				},
-				"radius": 1.0,
+				"radius": 1.5,
 				"rename": "CodexReveal"
 			}
 		],
