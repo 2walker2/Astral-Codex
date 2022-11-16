@@ -17,7 +17,7 @@ Greetings from the past, may this mess<![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Col
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>Seek the <![CDATA[<Color=orange>]]>Lingering Chime<![CDATA[</Color>]]>. Once your <![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>pecies has grown, and advanced, s<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>fficiently to be worthy of the mission it bestows, may it grant you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
+		<Text>Seek the <![CDATA[<Color=orange>]]>Lingering Chime<![CDATA[</Color>]]>. Once your <![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>pecies has grown, and advanced, s<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>fficiently to be <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>orthy of the mission it bestows, may it grant you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

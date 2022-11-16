@@ -19,7 +19,8 @@ namespace AstralCodex
                 "GabbroShip_Body",
                 "DarkBramble_Body",
                 "Comet_Body/Prefab_NOM_Shuttle",
-                "QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle"
+                "QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle",
+                "ModelRocket_Body"
                 };
         }
     }

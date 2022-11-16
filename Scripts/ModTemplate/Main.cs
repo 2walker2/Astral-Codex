@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System;
 using Harmony;
 using System.Collections;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -53,7 +54,9 @@ namespace AstralCodex
                 {"Tesseract", typeof(Tesseract) },
                 {"SunWire", typeof(SunWire) },
                 {"PopulationWire", typeof(PopulationWire) },
-                {"SpacecraftDetector", typeof(TechnologyWire) },
+                {"TechnologyWire", typeof(TechnologyWire) },
+                {"TimberHearthSpacecraftDetector", typeof(SpacecraftDetector) },
+                {"AshTwinSpacecraftDetector", typeof(SpacecraftDetector) },
                 {"Monolith", typeof(Monolith) },
                 {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
@@ -68,7 +71,7 @@ namespace AstralCodex
         {
             // Starting here, you'll have access to OWML's mod helper.
             modHelper = ModHelper;
-            ModHelper.Console.WriteLine($"TEST mod loaded", MessageType.Success);
+            //ModHelper.Console.WriteLine($"ASTRAL CODEX mod loaded", MessageType.Success);
 
             //Get New Horizons interface
             newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
@@ -80,7 +83,7 @@ namespace AstralCodex
                 if (system == "SolarSystem")
                 {
                     //Debug
-                    ModHelper.Console.WriteLine($"LISTENER ADDED", MessageType.Success);
+                    //ModHelper.Console.WriteLine($"LISTENER ADDED", MessageType.Success);
 
                     //Assign ghost matter material
                     foreach (string ghostMatterCrystal in ghostMatterCrystals)
@@ -89,7 +92,7 @@ namespace AstralCodex
                         if (crystal != null)
                         {
                             crystal.AddComponent<GhostMatterMaterial>();
-                            ModHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
+                            //ModHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
                         }
                     }
 
@@ -107,7 +110,7 @@ namespace AstralCodex
                                 if (mat != null)
                                 {
                                     materials.Add(pair.Value, mat);
-                                    ModHelper.Console.WriteLine($"FOUND MATERIAL " + pair.Value, MessageType.Success);
+                                    //ModHelper.Console.WriteLine($"FOUND MATERIAL " + pair.Value, MessageType.Success);
                                 }
                                 else
                                     ModHelper.Console.WriteLine($"FAILED TO FIND MATERIAL " + pair.Value, MessageType.Error);
@@ -134,7 +137,7 @@ namespace AstralCodex
                         if (obj != null)
                         {
                             obj.AddComponent(pair.Value);
-                            ModHelper.Console.WriteLine($"FOUND " + pair.Key, MessageType.Success);
+                            //ModHelper.Console.WriteLine($"FOUND " + pair.Key, MessageType.Success);
                         }
                         else
                             ModHelper.Console.WriteLine($"FAILED TO FIND " + pair.Key, MessageType.Error);
@@ -144,7 +147,7 @@ namespace AstralCodex
                     GameObject rfVolume = GameObject.Find("LingeringChime_Body").transform.GetChild(1).gameObject;
                     if (rfVolume != null)
                     {
-                        ModHelper.Console.WriteLine("FOUND REFERENCE VOLUME", MessageType.Success);
+                        //ModHelper.Console.WriteLine("FOUND REFERENCE VOLUME", MessageType.Success);
                         rfVolume.SetActive(true);
                     }
                     else
@@ -152,14 +155,11 @@ namespace AstralCodex
                         ModHelper.Console.WriteLine("FAILED TO FIND REFERENCE VOLUME", MessageType.Error);
                     }
 
-                    //Increase Timber Hearth shuttle radius
-                    GameObject.Find("TimberHearth_Body/Sector_TH/Volumes_TH/RulesetVolumes_TH").GetComponent<PlanetoidRuleset>()._shuttleLandingRadius = 2000;
-
                     //Make sun cactus not cast shadows
                     GameObject sunCactus = GameObject.Find("Sun_Body/Sector_SUN/Prefab_HGT_Cactus_Single_A");
                     if (sunCactus != null)
                     {
-                        ModHelper.Console.WriteLine("FOUND SUN CACTUS", MessageType.Success);
+                        //ModHelper.Console.WriteLine("FOUND SUN CACTUS", MessageType.Success);
                         MeshRenderer[] cactusRenderers = sunCactus.GetComponentsInChildren<MeshRenderer>();
                         foreach (MeshRenderer r in cactusRenderers)
                             r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
@@ -176,7 +176,7 @@ namespace AstralCodex
                     GameObject visionStructure = GameObject.Find("StationVision/Structure_NOM_RemoteViewer");
                     if (visionStructure != null)
                     {
-                        ModHelper.Console.WriteLine($"FOUND VISION STRUCTURE", MessageType.Success);
+                        //ModHelper.Console.WriteLine($"FOUND PROJECTION STRUCTURE", MessageType.Success);
                         Destroy(visionStructure.GetComponentInChildren<MeshRenderer>());
                         Destroy(visionStructure.GetComponentInChildren<MeshCollider>());
                         Destroy(visionStructure.GetComponentInChildren<OWCollider>());
@@ -184,13 +184,13 @@ namespace AstralCodex
                     GameObject visionPool = GameObject.Find("StationVision/RemoteViewer_Pool");
                     if (visionPool != null)
                     {
-                        ModHelper.Console.WriteLine($"FOUND VISION POOL", MessageType.Success);
+                        //ModHelper.Console.WriteLine($"FOUND PROJECTION POOL", MessageType.Success);
                         visionPool.GetComponent<MeshFilter>().mesh = null;
                     }
                     GameObject visionPedestal = GameObject.Find("StationVision/PedestalAnchor/Prefab_NOM_SharedPedestal");
                     if (visionPedestal != null)
                     {
-                        ModHelper.Console.WriteLine($"FOUND VISION PEDESTAL", MessageType.Success);
+                        //ModHelper.Console.WriteLine($"FOUND PROJECTION PEDESTAL", MessageType.Success);
                         foreach (SkinnedMeshRenderer r in visionPedestal.GetComponentsInChildren<SkinnedMeshRenderer>())
                             Destroy(r);
                         foreach (MeshRenderer r in visionPedestal.GetComponentsInChildren<MeshRenderer>())
@@ -204,10 +204,20 @@ namespace AstralCodex
                     /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
                     {
-                        ModHelper.Console.WriteLine($"FOUND VISION CAMERA",MessageType.Success);
+                        //ModHelper.Console.WriteLine($"FOUND PROJECTION CAMERA",MessageType.Success);
                         visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
                         //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
                     }*/
+                }
+                else if (system == "EyeOfTheUniverse")
+                {
+                    //Ensure probe particles don't disappear when going to the Eye
+                    GameObject probeParticles = SearchUtilities.Find("ProbeParticles");
+                    if (probeParticles != null)
+                    {
+                        probeParticles.AddComponent<ProbeParticles>();
+                        probeParticles.transform.GetChild(0).GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                    }
                 }
             });
         }
@@ -231,7 +241,7 @@ namespace AstralCodex
                     if (probe != null)
                     {
                         AssetBundle.UnloadAllAssetBundles(false);   
-                        ModHelper.Console.WriteLine($"FOUND PROBE", MessageType.Success);
+                        //ModHelper.Console.WriteLine($"FOUND PROBE", MessageType.Success);
                         AssetBundle assetBundle = ModHelper.Assets.LoadBundle("planets/assets/astral_codex");
                         Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
                         AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");

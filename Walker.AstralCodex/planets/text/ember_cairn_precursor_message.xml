@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>I speak to you <![CDATA[<Color=#00ffbc>]]>(<![CDATA[</Color>]]>rom longer ago than you <![CDATA[<Color=#00ffbc>]]>*<![CDATA[</Color>]]>ould know. A species so advanced as yours is precisely what I hoped to find as you wi<![CDATA[<Color=#00ffbc>]]>|<![CDATA[</Color>]]>l certainly understand the imp<![CDATA[<Color=#00ffbc>]]>?<![CDATA[</Color>]]>rtance of this unde<![CDATA[<Color=#00ffbc>]]>]}<![CDATA[</Color>]]>aking. Seek the Lingering Chime, when the time is proper, it <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>ill bestow upon you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
+		<Text>I speak to you <![CDATA[<Color=#00ffbc>]]>(<![CDATA[</Color>]]>rom longer ago than you <![CDATA[<Color=#00ffbc>]]>*<![CDATA[</Color>]]>ould know. A species so advanced as yours is precisely what I <![CDATA[<Color=#00ffbc>]]>)<![CDATA[</Color>]]>oped to find as you wi<![CDATA[<Color=#00ffbc>]]>|<![CDATA[</Color>]]>l certainly understand the imp<![CDATA[<Color=#00ffbc>]]>?<![CDATA[</Color>]]>rtance of this unde<![CDATA[<Color=#00ffbc>]]>]}<![CDATA[</Color>]]>aking. Seek the Lingering Chime, when the time is proper, it <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>ill bestow upon you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

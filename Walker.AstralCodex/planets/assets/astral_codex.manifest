@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1772812666
+CRC: 3031434560
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d884cbd05d638304e147fff00b53ea62
+    Hash: 63e3360ad78b74f47bb0e2d3a0650c60
   TypeTreeHash:
     serializedVersion: 2
     Hash: 37e14951f7a1a5ddf5a64a1f96f24d2c
@@ -86,6 +86,7 @@ Assets:
 - Assets/Bundle/Shaders/GreenLight.shader
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Models/probe.obj
+- Assets/Bundle/Models/interloper.obj
 - Assets/Bundle/Textures/Signal.png
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
@@ -105,7 +106,7 @@ Assets:
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
-- Assets/Bundle/Textures/Wait.png
+- Assets/Bundle/Textures/WaitHere.png
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
@@ -119,6 +120,7 @@ Assets:
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_0.asset
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_Spiral_d.png
+- Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Textures/Chalkboard.jpg
 - Assets/Bundle/Materials/RedLight.mat
@@ -133,6 +135,7 @@ Assets:
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_WallInside_mat.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/SignalParticles.prefab
+- Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_n.png
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj

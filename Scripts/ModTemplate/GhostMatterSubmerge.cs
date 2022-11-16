@@ -16,7 +16,7 @@ namespace AstralCodex
         void Start()
         {
             ghostMatterCollider = GameObject.Find("StationGhostMatter/DarkMatterVolume").GetComponent<SphereShape>();
-            if (ghostMatterCollider != null) Main.modHelper.Console.WriteLine($"FOUND GHOST MATTER COLLIDER", MessageType.Success);
+            //if (ghostMatterCollider != null) Main.modHelper.Console.WriteLine($"FOUND GHOST MATTER COLLIDER", MessageType.Success);
             ghostMatterNotification = GameObject.Find("StationGhostMatter/DarkMatterVolume/NotificationVolume/ChildShape").GetComponent<SphereShape>();
             ghostMatterNotification.radius = 50;
             ghostMatterNotification.enabled = true;

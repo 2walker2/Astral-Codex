@@ -16,7 +16,7 @@ namespace AstralCodex
             if (on == false)
             {
                 on = true;
-                Main.modHelper.Console.WriteLine(gameObject.name + " turned on", MessageType.Success);
+                //Main.modHelper.Console.WriteLine(gameObject.name + " turned on", MessageType.Success);
                 renderer.material = Main.instance.materials["green"];
                 reveal.SetActive(true);
             }
@@ -27,7 +27,7 @@ namespace AstralCodex
             if (on == true)
             {
                 on = false;
-                Main.modHelper.Console.WriteLine(gameObject.name + " turned off", MessageType.Success);
+                //Main.modHelper.Console.WriteLine(gameObject.name + " turned off", MessageType.Success);
                 renderer.material = Main.instance.materials["red"];
                 reveal.SetActive(false);
             }

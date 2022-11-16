@@ -90,7 +90,7 @@ namespace AstralCodex
             //Move into 4D
             if (other.gameObject.CompareTag("Player"))
             {
-                Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
+                //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)
                 {   
                     //Disable probe launcher overlay

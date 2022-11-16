@@ -8,11 +8,12 @@
 	"Props": {
 		"details": [
 			{
+				"rename": "TimberHearthSpacecraftDetector",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/SpacecraftDetector.prefab",
 				"position": {},
 				"rotation": {},
-				"scale": 4500.0,
+				"scale": 1500.0,
 				"keepLoaded": true
 			}
 		]

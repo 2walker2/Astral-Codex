@@ -21,7 +21,7 @@ namespace AstralCodex
             on = false;
             sunWire = GameObject.Find("SunWire").GetComponent<Wire>();
             populationWire = GameObject.Find("PopulationWire").GetComponent<Wire>();
-            technologyWire = GameObject.Find("SpacecraftDetector").GetComponent<Wire>();
+            technologyWire = GameObject.Find("TechnologyWire").GetComponent<Wire>();
             monolithEffect = GameObject.Find("MonolithEffect");
             monolithEffect.AddComponent<MonolithEffect>();
             renderer = GetComponent<MeshRenderer>();
@@ -29,12 +29,6 @@ namespace AstralCodex
             //Disable monolith reveal
             monolithReveal = GameObject.Find("CodexReveal");
             GameObject previousMonolithReveal = null;
-            if (monolithReveal != null)
-            {
-                ShipLogFactListTriggerVolume monolithRevealTrigger = monolithReveal.GetComponent<ShipLogFactListTriggerVolume>();
-                monolithRevealTrigger._player = false;
-                Main.modHelper.Console.WriteLine("FOUND MONOLITH REVEAL", MessageType.Success);
-            }
             while (monolithReveal != null)
             {
                 monolithReveal.SetActive(false);
@@ -42,6 +36,12 @@ namespace AstralCodex
                 monolithReveal = GameObject.Find("CodexReveal");
             }
             if (previousMonolithReveal != null) monolithReveal = previousMonolithReveal;
+            if (monolithReveal != null)
+            {
+                ShipLogFactListTriggerVolume monolithRevealTrigger = monolithReveal.GetComponent<ShipLogFactListTriggerVolume>();
+                monolithRevealTrigger._player = false;
+                //Main.modHelper.Console.WriteLine("FOUND MONOLITH REVEAL", MessageType.Success);
+            }
         }
 
         void Update()

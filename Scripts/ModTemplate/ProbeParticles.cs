@@ -18,7 +18,6 @@ namespace AstralCodex
             GameObject probeBody = SearchUtilities.Find("Probe_Body");
             if (probeBody != null)
             {
-                Main.modHelper.Console.WriteLine("FOUND PROBE BODY", MessageType.Success);
                 transform.parent = probeBody.transform;
                 transform.localPosition = new Vector3(0,0,-0.25f);
                 transform.localRotation = Quaternion.identity;
