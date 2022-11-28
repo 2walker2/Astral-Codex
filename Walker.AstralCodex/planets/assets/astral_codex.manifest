@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3085043337
+CRC: 706506421
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0d5fce6abb0e24563e91085b47e676fb
+    Hash: 5f80e0b69a3a6184252c032704641d5b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 37e14951f7a1a5ddf5a64a1f96f24d2c
@@ -118,6 +118,7 @@ Assets:
 - Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_n.png
 - Assets/Bundle/Textures/TopPattern.png
+- Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_0.asset
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_Spiral_d.png
 - Assets/Bundle/Models/hollows_lantern.obj

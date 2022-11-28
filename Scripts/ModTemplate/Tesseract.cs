@@ -21,6 +21,8 @@ namespace AstralCodex
         float timeStayed = 0;
         float secondLayerDelay = 15f;
         GameObject trailsReveal;
+        GameObject skySphere;
+        int skySphereDisabled = 0;
 
         void Awake()
         {
@@ -40,10 +42,19 @@ namespace AstralCodex
             trailsReveal = SearchUtilities.Find("TrailsReveal");
             if (trailsReveal != null)
                 trailsReveal.SetActive(false);
+            skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
         }
 
         void LateUpdate()
         {
+            //Initially disable skySphere
+            if (skySphereDisabled == 5)
+            {
+                if (skySphere != null)
+                    skySphere.SetActive(false);
+            }
+            skySphereDisabled++;
+
             //Ensure correct layers remain visible
             if (Camera.main != null && fourDLayer != 0)
             {
@@ -103,6 +114,10 @@ namespace AstralCodex
 
                     //Instantiate effect
                     fourDParticles.SetActive(true);
+
+                    //Enable skybox
+                    if (skySphere != null)
+                        skySphere.SetActive(true);
 
                     fourDLayer = 1;
                 }

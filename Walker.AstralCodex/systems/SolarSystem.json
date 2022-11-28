@@ -19,17 +19,25 @@
 		}
 	],
 	"entryPositions": [
-		{ "id": "codex_astral_codex", "position": {"x": 3915, "y": 165 } },
-		{ "id": "codex_lingering_chime_lower", "position": {"x": 3675, "y": -165 } },
-		{ "id": "codex_lingering_chime_no_sun", "position": {"x": 3610, "y": 150 } },
-		{ "id": "codex_lingering_chime_spacecraft", "position": {"x": 3460, "y": 150 } },
-		{ "id": "codex_lingering_chime_population", "position": {"x": 3535, "y": 150 } },
-		{ "id": "codex_lingering_chime_upper", "position": {"x": 3535, "y": 235 } },
-		{ "id": "codex_lingering_chime", "position": {"x": 3235, "y": -100 } },
-		{ "id": "codex_projection", "position": {"x": 2485, "y": -55 } },
-		{ "id": "codex_bramble_signal", "position": {"x": 3990, "y": -265 } },
-		{ "id": "codex_interloper", "position": {"x": 3205, "y": 305 } },
-		{ "id": "codex_ember_signal", "position": {"x": 3790, "y": -460 } },
+		{ "id": "codex_astral_codex", "position": {"x": 3680, "y": -50 } }, 
+		{ "id": "codex_interloper", "position": {"x": 3450, "y": 300 } },
+		{ "id": "codex_lingering_chime_lower", "position": {"x": 3900, "y": -400 } },
+		{ "id": "codex_lingering_chime_no_sun", "position": {"x": 3520, "y": -490 } },
+		{ "id": "codex_lingering_chime_spacecraft", "position": {"x": 3380, "y": -490 } },
+		{ "id": "codex_lingering_chime_population", "position": {"x": 3450, "y": -490 } },
+		{ "id": "codex_lingering_chime_upper", "position": {"x": 3450, "y": -400 } },
+		{ "id": "codex_lingering_chime", "position": {"x": 3250, "y": -50 } },
+		{ "id": "codex_projection", "position": {"x": 2900, "y": -80 } },
+		{ "id": "codex_bramble_signal", "position": {"x": 4160, "y": -80 } },
+		{ "id": "codex_ember_signal", "position": {"x": 3970, "y": 250 } }
 		],
-	"canEnterViaWarpDrive": false
+	"canEnterViaWarpDrive": false,
+	"Skybox": {
+		"rightPath": "planets/assets/leftImage.png",
+		"leftPath": "planets/assets/rightImage.png",
+		"topPath": "planets/assets/upImage.png",
+		"bottomPath": "planets/assets/downImage.png",
+		"frontPath": "planets/assets/frontImage.png",
+		"backPath": "planets/assets/backImage.png"
+	}
 }
