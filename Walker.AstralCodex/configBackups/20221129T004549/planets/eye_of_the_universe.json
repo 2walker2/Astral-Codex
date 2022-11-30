@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Eye Of The Universe",
+	"starSystem": "EyeOfTheUniverse",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "ProbeParticles",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/SignalParticles.prefab",
+				"position": {
+					"x": -6.27944246E-05,
+					"y": -8.28355551E-05,
+					"z": -0.2500254
+				},
+				"rotation": {}
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}

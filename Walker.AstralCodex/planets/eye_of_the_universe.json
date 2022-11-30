@@ -1,14 +1,78 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"name" : "Eye Of The Universe",
-	"starSystem" : "EyeOfTheUniverse",
+	"name": "Eye Of The Universe",
+	"starSystem": "EyeOfTheUniverse",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
 	"Props": {
 		"details": [
 			{
+				"rename": "ProbeParticles",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/SignalParticles.prefab",
-				"rename": "ProbeParticles"
+				"position": {
+					"x": -6.27944246E-05,
+					"y": -8.28355551E-05,
+					"z": -0.2500254
+				},
+				"rotation": {}
+			},
+			{
+				"rename": "ProbePlaque",
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/Prefab_HEA_MuseumPlaque",
+				"position": {
+					"x": -1393.955,
+					"y": -0.472,
+					"z": 6009.824
+				},
+				"rotation": {
+					"x": 0,
+					"y": 162.0,
+					"z": 0
+				},
+				"keepLoaded": true,
+				"removeChildren": ["InteractVolume"]
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Probe.prefab",
+				"position": {
+					"x": -40.0517,
+					"y": 0,
+					"z": 7556.457
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				},
+				"quantumGroupID": "codex_eye_probe",
+				"keepLoaded": true
+			}
+		],
+		"quantumGroups": [
+			{
+				"type": "states",
+				"id": "codex_eye_probe",
+				"sequential": true
+			}
+		],
+		"dialogue": [
+			{
+				"rename": "PlaqueDialogue",
+				"position": {
+					"x": -1393.97, 
+					"y": 0.7815185, 
+					"z": 6009.858
+				},
+				"radius": 0.5,
+				"xmlFile": "planets/text/eye_plaque.xml"
 			}
 		]
-	}
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
 }

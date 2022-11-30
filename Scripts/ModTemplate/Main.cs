@@ -218,6 +218,25 @@ namespace AstralCodex
                         probeParticles.AddComponent<ProbeParticles>();
                         probeParticles.transform.GetChild(0).GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
                     }
+
+                    //Configure museum plaque
+                    GameObject plaqueDialogue = SearchUtilities.Find("PlaqueDialogue");
+                    if (plaqueDialogue != null)
+                    {
+                        CharacterDialogueTree plaqueDialogueTree = plaqueDialogue.GetComponent<CharacterDialogueTree>();
+                        Transform probeAttention = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/AttentionPoint_WarpCore").transform;
+                        plaqueDialogueTree._attentionPoint = probeAttention;
+                    }
+                    GameObject plaqueLightGO = SearchUtilities.Find("ProbePlaque/PointLight_HEA_MuseumPlaque");
+                    if (plaqueLightGO != null)
+                    {
+                        Light plaqueLight = plaqueLightGO.GetComponent<Light>();
+                        plaqueLight.intensity = 1.5f;
+                        plaqueLight.color = Color.cyan;
+                    }
+                    GameObject plaqueLightModel = SearchUtilities.Find("ProbePlaque/Props_HEA_MuseumPlaque_Geo/lantern_lamp");
+                    if (plaqueLightModel != null)
+                        plaqueLightModel.GetComponent<MeshRenderer>().material.color = Color.cyan;
                 }
             });
         }

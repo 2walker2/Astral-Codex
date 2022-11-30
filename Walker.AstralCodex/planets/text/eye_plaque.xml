@@ -1,0 +1,12 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>A little scout just like this one is now the home of the Astral Codex, a store of knowledge passed to us from the universe before ours.</Page>
+			<Page>Though we don't know much about the Codex's author, they have given us an opportunity to record the story of this universe and save it from being lost to the depths of time.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>
