@@ -12,30 +12,26 @@
 				"rename": "ProbeParticles",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/SignalParticles.prefab",
-				"position": {
-					"x": -6.27944246E-05,
-					"y": -8.28355551E-05,
-					"z": -0.2500254
-				},
+				"position": {},
 				"rotation": {}
 			},
 			{
 				"rename": "ProbePlaque",
 				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/Prefab_HEA_MuseumPlaque",
 				"position": {
-					"x": -1393.955,
-					"y": -0.472,
-					"z": 6009.824
+					"x": -1393.493,
+					"y": -0.4756,
+					"z": 6010.628
 				},
 				"rotation": {
 					"x": 0,
-					"y": 162.0,
+					"y": 168.5134,
 					"z": 0
 				},
 				"keepLoaded": true,
 				"removeChildren": ["InteractVolume"]
 			},
-			{
+			/*{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Probe.prefab",
 				"position": {
@@ -50,22 +46,22 @@
 				},
 				"quantumGroupID": "codex_eye_probe",
 				"keepLoaded": true
-			}
+			}*/
 		],
-		"quantumGroups": [
+		/*"quantumGroups": [
 			{
 				"type": "states",
 				"id": "codex_eye_probe",
 				"sequential": true
 			}
-		],
+		],*/
 		"dialogue": [
 			{
 				"rename": "PlaqueDialogue",
 				"position": {
-					"x": -1393.97, 
-					"y": 0.7815185, 
-					"z": 6009.858
+					"x": -1393.557, 
+					"y": 0.7460153, 
+					"z": 6010.843
 				},
 				"radius": 0.5,
 				"xmlFile": "planets/text/eye_plaque.xml"

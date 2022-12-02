@@ -220,23 +220,36 @@ namespace AstralCodex
                     }
 
                     //Configure museum plaque
+                    GameObject plaque = SearchUtilities.Find("ProbePlaque");
                     GameObject plaqueDialogue = SearchUtilities.Find("PlaqueDialogue");
-                    if (plaqueDialogue != null)
+                    if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
                     {
-                        CharacterDialogueTree plaqueDialogueTree = plaqueDialogue.GetComponent<CharacterDialogueTree>();
-                        Transform probeAttention = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/AttentionPoint_WarpCore").transform;
-                        plaqueDialogueTree._attentionPoint = probeAttention;
+                        if (plaqueDialogue != null)
+                        {
+                            CharacterDialogueTree plaqueDialogueTree = plaqueDialogue.GetComponent<CharacterDialogueTree>();
+                            Transform probeAttention = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/AttentionPoint_WarpCore").transform;
+                            plaqueDialogueTree._attentionPoint = probeAttention;
+                            plaqueDialogueTree._turnOffFlashlight = false;
+                            plaqueDialogueTree._turnOnFlashlight = false;
+                        }
+                        GameObject plaqueLightGO = SearchUtilities.Find("ProbePlaque/PointLight_HEA_MuseumPlaque");
+                        if (plaqueLightGO != null)
+                        {
+                            Light plaqueLight = plaqueLightGO.GetComponent<Light>();
+                            plaqueLight.intensity = 1.5f;
+                            plaqueLight.color = Color.cyan;
+                        }
+                        GameObject plaqueLightModel = SearchUtilities.Find("ProbePlaque/Props_HEA_MuseumPlaque_Geo/lantern_lamp");
+                        if (plaqueLightModel != null)
+                            plaqueLightModel.GetComponent<MeshRenderer>().material.color = Color.cyan;
                     }
-                    GameObject plaqueLightGO = SearchUtilities.Find("ProbePlaque/PointLight_HEA_MuseumPlaque");
-                    if (plaqueLightGO != null)
+                    else
                     {
-                        Light plaqueLight = plaqueLightGO.GetComponent<Light>();
-                        plaqueLight.intensity = 1.5f;
-                        plaqueLight.color = Color.cyan;
+                        if (plaque != null)
+                            plaque.SetActive(false);
+                        if (plaqueDialogue != null)
+                            plaqueDialogue.SetActive(false);
                     }
-                    GameObject plaqueLightModel = SearchUtilities.Find("ProbePlaque/Props_HEA_MuseumPlaque_Geo/lantern_lamp");
-                    if (plaqueLightModel != null)
-                        plaqueLightModel.GetComponent<MeshRenderer>().material.color = Color.cyan;
                 }
             });
         }
@@ -263,8 +276,8 @@ namespace AstralCodex
                         //ModHelper.Console.WriteLine($"FOUND PROBE", MessageType.Success);
                         AssetBundle assetBundle = ModHelper.Assets.LoadBundle("planets/assets/astral_codex");
                         Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
-                        AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
                         //Audio (doesn't work)
+                        AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
                         /*Destroy(probe.GetComponentInChildren<OWAudioSource>());
                         AudioSource probeAudio = probe.GetComponentInChildren<AudioSource>();
                         probeAudio.clip = signal;

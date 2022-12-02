@@ -5,8 +5,8 @@
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A little scout just like this one is now the home of the Astral Codex, a store of knowledge passed to us from the universe before ours.</Page>
-			<Page>Though we don't know much about the Codex's author, they have given us an opportunity to record the story of this universe and save it from being lost to the depths of time.</Page>
+			<Page>A little scout just like this one is now home to the Astral Codex, a store of knowledge passed to us from the universe before ours.</Page>
+			<Page>Although we don't know much about the Codex's author, they have given us the opportunity to save the story of this universe from being lost to the depths of time.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
