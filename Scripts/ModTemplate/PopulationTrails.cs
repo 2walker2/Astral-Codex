@@ -12,31 +12,53 @@ namespace AstralCodex
 
         void Awake()
         {
-            targetPaths = new List<string> {
-                "Traveller_HEA_Player_v2",
-                "QuantumMoon_Body",
-                "Villager_HEA_Slate",
-                "Traveller_HEA_Gabbro",
-                "Traveller_HEA_Chert",
-                "Traveller_HEA_Riebeck",
-                "DarkBramble_Body",
-                "Villager_HEA_Tephra",
-                "Villager_HEA_Galena",
-                "Villager_HEA_Mica",
-                "Villager_HEA_Gneiss",
-                "Villager_HEA_Spinel",
-                "Villager_HEA_Rutile",
-                "Villager_HEA_Marl",
-                "Villager_HEA_Porphy",
-                "Villager_HEA_Gossan",
-                "Villager_HEA_Arkose_GhostMatter",
-                "Villager_HEA_Moraine",
-                "Character_HEA_Hal_Museum",
-                "Villager_HEA_Tektite_2",
-                "Villager_HEA_Esker",
-                "Villager_HEA_Hornfels (1)",
-                "Villager_HEA_Tuff",
-                "TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player"
+            targetPaths = new List<List<string>> {
+                new List<string> {"Traveller_HEA_Player_v2" },
+                new List<string> {
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_HT/Interactables_HTState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_BH/Interactables_BHState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_GD/Interactables_GDState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle"
+                },
+                new List<string> {"Villager_HEA_Slate" },
+                new List<string> {"Traveller_HEA_Gabbro" },
+                new List<string> {"Traveller_HEA_Chert" },
+                new List<string> {"Traveller_HEA_Riebeck" },
+                new List<string> {"DB_PioneerDimension_Body/Sector_PioneerDimension/Interactables_PioneerDimension/Pioneer_Characters/Traveller_HEA_Feldspar" },
+                new List<string> {
+                    "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Villager_HEA_Tephra",
+                    "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_Hidden/Villager_HEA_Tephra (1)" 
+                },
+                new List<string> {
+                    "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Villager_HEA_Galena",
+                    "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_Hidden/Villager_HEA_Galena (1)"
+                },
+                new List<string> {"Villager_HEA_Mica" },
+                new List<string> {"Villager_HEA_Gneiss" },
+                new List<string> {"Villager_HEA_Spinel" },
+                new List<string> {"Villager_HEA_Rutile" },
+                new List<string> {"Villager_HEA_Marl" },
+                new List<string> {"Villager_HEA_Porphy" },
+                new List<string> {"Villager_HEA_Gossan" },
+                new List<string> {"Villager_HEA_Arkose_GhostMatter" },
+                new List<string> {"Villager_HEA_Moraine" },
+                new List<string> {
+                    "Villager_HEA_Hal_Outside",
+                    "Character_HEA_Hal_Museum"
+                },
+                new List<string> {
+                    "Villager_HEA_Tektite",
+                    "Villager_HEA_Tektite_2" 
+                },
+                new List<string> {"Villager_HEA_Esker" },
+                new List<string> {
+                    "Villager_HEA_Hornfels",
+                    "Villager_HEA_Hornfels (1)" 
+                },
+                new List<string> {"Villager_HEA_Tuff" },
+                new List<string> {"TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player" }
                 };
         }
 

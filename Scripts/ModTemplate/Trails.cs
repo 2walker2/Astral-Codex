@@ -15,8 +15,8 @@ namespace AstralCodex
     {
         public static bool visible = false;
 
-        public List<Transform> targets;
-        public List<string> targetPaths;
+        public List<List<Transform>> targets;
+        public List<List<string>> targetPaths;
         public List<LineRenderer> trails;
         Material trailMat;
         float widthMultiplier;
@@ -33,14 +33,19 @@ namespace AstralCodex
             trails = GetComponentsInChildren<LineRenderer>(true).ToList();
             widthMultiplier = trails[0].widthMultiplier;
             //Get targets
-            targets = new List<Transform>();
-            foreach (string path in targetPaths)
+            targets = new List<List<Transform>>();
+            foreach (List<string> pathList in targetPaths)
             {
-                GameObject go = SearchUtilities.Find(path);
-                if (go != null)
-                    targets.Add(go.transform);
-                else
-                    Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL TARGET " + path);
+                List<Transform> pathTargets = new List<Transform>();
+                foreach (string path in pathList)
+                {
+                    GameObject go = SearchUtilities.Find(path);
+                    if (go != null)
+                        pathTargets.Add(go.transform);
+                    else
+                        Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL TARGET " + path);
+                }
+                targets.Add(pathTargets);
             }
             //Get material
             trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
@@ -48,7 +53,7 @@ namespace AstralCodex
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)
             {
-                trails[i].gameObject.name = targets[i].name;
+                trails[i].gameObject.name = targets[i][0].name;
                 trails[i].material = trailMat;
             }
         }
@@ -60,24 +65,21 @@ namespace AstralCodex
             {
                 for (int i = 0; i < trails.Count && i < targets.Count; i++)
                 {
-                    if (targets[i]!=null && targets[i].gameObject.activeInHierarchy)
+                    bool validTarget = false;
+                    for (int j = 0; j < targets[i].Count; j++)
                     {
-                        trails[i].gameObject.SetActive(true);
-                        //If target on QM, don't appear when moon is at 6th location
-                        if (targets[i].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false)
-                            trails[i].gameObject.SetActive(false);
-                    }
-                    else
-                        trails[i].gameObject.SetActive(false);
+                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false))
+                            continue;
 
-                    if (trails[i].gameObject.activeInHierarchy == true)
-                    {
                         trails[i].SetPosition(0, transform.position);
-                        trails[i].SetPosition(3, targets[i].position + targets[i].up * 1.5f);
+                        trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f);
                         trails[i].SetPosition(1, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.1f));
                         trails[i].SetPosition(2, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.89f));
                         trails[i].widthMultiplier = Mathf.Min(widthMultiplier, Vector3.Distance(trails[i].GetPosition(3), transform.position) / 250);
+                        validTarget = true;
+                        break;
                     }
+                    trails[i].gameObject.SetActive(validTarget);
                 }
             }
         }

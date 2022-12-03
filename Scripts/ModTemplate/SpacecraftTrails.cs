@@ -12,15 +12,15 @@ namespace AstralCodex
         
         void Awake()
         {
-            targetPaths = new List<string> {
-                "Ship_Body",
-                "Prefab_HEA_RiebeckShip",
-                "Prefab_HEA_ChertShip",
-                "GabbroShip_Body",
-                "DarkBramble_Body",
-                "Comet_Body/Prefab_NOM_Shuttle",
-                "QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle",
-                "ModelRocket_Body"
+            targetPaths = new List<List<string>> {
+                new List<string> {"Ship_Body" },
+                new List<string> {"Prefab_HEA_RiebeckShip" },
+                new List<string> {"Prefab_HEA_ChertShip" },
+                new List<string> {"GabbroShip_Body" },
+                new List<string> {"DarkBramble_Body" },
+                new List<string> {"Comet_Body/Prefab_NOM_Shuttle" },
+                new List<string> {"QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle" },
+                new List<string> {"ModelRocket_Body" }
                 };
         }
     }
