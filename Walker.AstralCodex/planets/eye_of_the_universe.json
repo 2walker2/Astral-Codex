@@ -31,30 +31,160 @@
 				"keepLoaded": true,
 				"removeChildren": ["InteractVolume"]
 			},
-			/*{
+			{
+				"rename": "EyeProbe",
 				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/Probe.prefab",
+				"path": "Assets/Bundle/EyeProbe.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
 				"position": {
-					"x": -40.0517,
-					"y": 0,
-					"z": 7556.457
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
 				},
 				"rotation": {
 					"x": 0,
 					"y": 235.0281,
 					"z": 0
 				},
-				"quantumGroupID": "codex_eye_probe",
 				"keepLoaded": true
-			}*/
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState0.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState1.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState2.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState3.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState4.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState5.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState6.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EyeProbeStates/ScannerState7.prefab",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"quantumGroupID": "codex_eye_probe",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"rotation": {
+					"x": 0,
+					"y": 235.0281,
+					"z": 0
+				}
+			}
 		],
-		/*"quantumGroups": [
+		"quantumGroups": [
 			{
 				"type": "states",
 				"id": "codex_eye_probe",
-				"sequential": true
+				"sequential": true,
+				"loop": false
 			}
-		],*/
+		],
 		"dialogue": [
 			{
 				"rename": "PlaqueDialogue",

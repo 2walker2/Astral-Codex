@@ -8,7 +8,7 @@ namespace AstralCodex
 {
     class GhostMatterMaterial : MonoBehaviour
     {
-        static Material material;
+        //static Material material;
         List<MeshRenderer> renderers;
         static List<string> renderersToExclude;
 
@@ -27,24 +27,24 @@ namespace AstralCodex
 
         void Update()
         {
-            if (material == null)
+            /*if (material == null)
             {
                 GameObject ghostMatterClutter = GameObject.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter");
                 if (ghostMatterClutter != null)
                     material = ghostMatterClutter.GetComponent<MeshRenderer>().material;
             }
             else
-            {
+            {*/
                 if (renderers != null && renderers.Count > 0)
                 {
                     List<MeshRenderer> renderersToRemove = new List<MeshRenderer>();
                     foreach (MeshRenderer r in renderers)
                     {
-                        if (r.material != material)
+                        if (r.material != Main.instance.ghostMatterMaterial)
                         {
                             if (!renderersToExclude.Contains(r.gameObject.name))
                             {
-                                r.material = material;
+                                r.material = Main.instance.ghostMatterMaterial;
                             }
                             r.gameObject.layer = 22;
                             renderersToRemove.Add(r);
@@ -53,7 +53,7 @@ namespace AstralCodex
                     foreach (MeshRenderer r in renderersToRemove)
                         renderers.Remove(r);
                 }
-            }
+            //}
         }
     }
 }

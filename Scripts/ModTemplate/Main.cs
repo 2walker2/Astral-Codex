@@ -16,8 +16,9 @@ namespace AstralCodex
         public static IModHelper modHelper;
         public static INewHorizons newHorizons;
         public static Main instance;
-        
+
         public Dictionary<string, Material> materials;
+        public Material ghostMatterMaterial;
 
         List<string> ghostMatterCrystals;
         Dictionary<string, string> materialsToFind;
@@ -82,9 +83,6 @@ namespace AstralCodex
             {
                 if (system == "SolarSystem")
                 {
-                    //Debug
-                    //ModHelper.Console.WriteLine($"LISTENER ADDED", MessageType.Success);
-
                     //Assign ghost matter material
                     foreach (string ghostMatterCrystal in ghostMatterCrystals)
                     {
@@ -250,6 +248,16 @@ namespace AstralCodex
                         if (plaqueDialogue != null)
                             plaqueDialogue.SetActive(false);
                     }
+
+                    //Assign ghost matter material to Eye probe
+                    GameObject eyeProbe = SearchUtilities.Find("EyeProbe");
+                    if (eyeProbe != null)
+                    {
+                        MeshRenderer eyeProbeRenderer = eyeProbe.transform.Find("Model").GetComponent<MeshRenderer>();
+                        eyeProbeRenderer.material = ghostMatterMaterial;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND EYE PROBE", MessageType.Error);
                 }
             });
         }
@@ -263,6 +271,15 @@ namespace AstralCodex
                 GameObject titleTesseract = (GameObject) Instantiate(assetBundle.LoadAsset("Assets/Bundle/Tesseract.prefab"), new Vector3(-35, 100, -20), Quaternion.identity);
                 titleTesseract.AddComponent<Tesseract>();
                 assetBundle.Unload(false);
+            }
+            if (scene.name == "SolarSystem")
+            {
+                //Cache ghost matter material
+                GameObject ghostMatterClutter = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter");
+                if (ghostMatterClutter != null)
+                    ghostMatterMaterial = ghostMatterClutter.GetComponent<MeshRenderer>().material;
+                else
+                    ModHelper.Console.WriteLine("FAILED TO FIND GHOST MATTER MATERIAL", MessageType.Error);
             }
             else if (scene.name == "PostCreditScene")
             {

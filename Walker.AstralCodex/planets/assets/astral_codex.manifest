@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1166665911
+CRC: 3451090290
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 79493c3d77d6692e03ce947056ec5a39
+    Hash: a19780377f46f6e58157a5851eb8ac62
   TypeTreeHash:
     serializedVersion: 2
     Hash: 37e14951f7a1a5ddf5a64a1f96f24d2c
@@ -83,9 +83,11 @@ Assets:
 - Assets/Bundle/Tesseract.prefab
 - Assets/Bundle/Textures/Monolith.png
 - Assets/Bundle/Audio/TractorBeam.wav
+- Assets/Bundle/EyeProbeStates/ScannerState0.prefab
 - Assets/Bundle/Shaders/GreenLight.shader
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Models/probe.obj
+- Assets/Bundle/EyeProbeStates/ScannerPrecursor1.prefab
 - Assets/Bundle/Models/interloper.obj
 - Assets/Bundle/Textures/Signal.png
 - Assets/Bundle/SpacecraftDetector.prefab
@@ -98,15 +100,22 @@ Assets:
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintRed_d.png
 - Assets/Bundle/Materials/Bubble.mat
 - Assets/Bundle/Textures/Probe.png
+- Assets/Bundle/EyeProbeStates/ScannerState5.prefab
+- Assets/Bundle/EyeProbeStates/ScannerState7.prefab
 - Assets/Bundle/Models/solar_flare.obj
+- Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_PaintOrange_s.png
+- Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
+- Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/Audio/MonolithActivate.wav
+- Assets/Bundle/EyeProbe.prefab
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
 - Assets/Bundle/Textures/WaitHere.png
+- Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
@@ -117,6 +126,7 @@ Assets:
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_n.png
+- Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_0.asset
@@ -129,6 +139,7 @@ Assets:
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_SandStone_s.png
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Models/timber_hearth.obj
+- Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Probe.prefab
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_3.asset
@@ -138,13 +149,16 @@ Assets:
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_n.png
+- Assets/Bundle/EyeProbeStates/ScannerPrecursor3.prefab
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj
 - Assets/Bundle/Models/scanner.obj
 - Assets/Bundle/Station.prefab
 - Assets/Bundle/Textures/Smudge.png
 - Assets/Bundle/Textures/Effects_Bubbles_v2_d.png
+- Assets/Bundle/EyeProbeStates/ScannerPrecursor2.prefab
 - Assets/Bundle/Textures/Population.png
+- Assets/Bundle/EyeProbeStates/ScannerState6.prefab
 - Assets/Bundle/Materials/Sprite.mat
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_s.png
 - Assets/Bundle/Animations/RotateController.controller
@@ -154,16 +168,20 @@ Assets:
 - Assets/Bundle/Models/monolith.obj
 - Assets/Bundle/NomaiRuin.prefab
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_s.png
+- Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
 - Assets/Bundle/Materials/Floor.mat
 - Assets/Bundle/RuinDependancies/Mesh/Collider_RuinState_7_0.asset
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_n.png
+- Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_Ceiling_mat.mat
 - Assets/Bundle/Audio/Signal.wav
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_4.asset
+- Assets/Bundle/EyeProbeStates/ScannerState3.prefab
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
+- Assets/Bundle/Scanner.prefab
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_SandStone_mat.mat
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Models/hemisphere.obj
