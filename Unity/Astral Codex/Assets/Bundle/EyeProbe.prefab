@@ -123,6 +123,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6941094329457312207}
   - component: {fileID: 7745659662891930025}
+  - component: {fileID: 4698303160883304214}
+  - component: {fileID: 3585830227883479436}
   m_Layer: 0
   m_Name: EyeProbe
   m_TagString: Untagged
@@ -159,3 +161,40 @@ CapsuleCollider:
   m_Height: 4.32953
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4698303160883304214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019078448831277610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fe68bc48c100c4386d817d187c61d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ambientLight: {fileID: 0}
+  _planetaryFog: {fileID: 0}
+  _fogOverride: {fileID: 0}
+  _sandFunnel: {fileID: 0}
+  _entryFogPlane: {fileID: 0}
+  _exitFogPlane: {fileID: 0}
+  _transitionTime: 1
+--- !u!114 &3585830227883479436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019078448831277610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7fee243786b7a43aeb607db88d4b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionMode: 0
+  _layer: 8
+  _layerMask: 0
+  _pointChecksOnly: 0
+  _center: {x: 0, y: 0, z: 0}
+  _radius: 15

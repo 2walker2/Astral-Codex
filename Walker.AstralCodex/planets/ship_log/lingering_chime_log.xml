@@ -91,7 +91,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_fact</ID>
-                <Text>There is a large circular icon displayed next to an inidicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>/? {./<![CDATA[</Color>]]></Text>
+                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>/? {./<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_complete</ID>
@@ -120,7 +120,7 @@
 
         <ExploreFact>
             <ID>codex_lingering_chime_lower_monolith</ID>
-            <Text>There is a strange monolith on the lower deck. It appears unpowered. Wires run to it from three indicator lights in the floor.</Text> 
+            <Text>There is a strange metallic monolith on the lower deck. It appears unpowered. Wires run to it from three indicator lights in the floor.</Text> 
         </ExploreFact>
     </Entry>
     <Entry>

@@ -71,6 +71,16 @@
 				"xmlFile": "planets/text/interloper_recorder_breach.xml",
 				"rename": "InterloperRecorderBreach"
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_interloper",
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				},
+			}
 		]
 	},
 	"ReferenceFrame": {},

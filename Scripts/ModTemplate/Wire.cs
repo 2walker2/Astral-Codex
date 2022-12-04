@@ -11,6 +11,13 @@ namespace AstralCodex
     {
         public bool on = false;
 
+        public void Initialize(GameObject reveal)
+        {
+            reveal.SetActive(false);
+            ShipLogFactListTriggerVolume revealTrigger = reveal.GetComponent<ShipLogFactListTriggerVolume>();
+            revealTrigger._player = false;
+        }
+
         public void TurnOn(MeshRenderer renderer, GameObject reveal)
         {
             if (on == false)

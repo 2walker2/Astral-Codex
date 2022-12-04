@@ -26,7 +26,10 @@ namespace AstralCodex
                 new List<string> {"Traveller_HEA_Gabbro" },
                 new List<string> {"Traveller_HEA_Chert" },
                 new List<string> {"Traveller_HEA_Riebeck" },
-                new List<string> {"DB_PioneerDimension_Body/Sector_PioneerDimension/Interactables_PioneerDimension/Pioneer_Characters/Traveller_HEA_Feldspar" },
+                new List<string> {
+                    "DB_PioneerDimension_Body/Sector_PioneerDimension/Interactables_PioneerDimension/Pioneer_Characters/Traveller_HEA_Feldspar",
+                    "DarkBramble_Body"
+                },
                 new List<string> {
                     "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_PreGame/Villager_HEA_Tephra",
                     "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_Hidden/Villager_HEA_Tephra (1)" 

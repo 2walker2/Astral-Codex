@@ -16,7 +16,7 @@ namespace AstralCodex
             on = false;
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("SpacecraftCompleteReveal");
-            reveal.SetActive(false);
+            Initialize(reveal);
         }
 
         void Update()

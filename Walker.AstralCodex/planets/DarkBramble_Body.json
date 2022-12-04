@@ -299,6 +299,16 @@
 					"z": -330.5987
 				}
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_bramble_signal",
+				"position": {
+					"x": -258.197632,
+					"y": 309.902344,
+					"z": -323.9849
+				},
+			}
 		]
 	},
 	"ReferenceFrame": {},

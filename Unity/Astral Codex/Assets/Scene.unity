@@ -800,9 +800,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eye Probe
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2291332835177816607, guid: e1d090b560edcd84082b0d364ad97804, type: 3}
-    - {fileID: 9054254045524807338, guid: e1d090b560edcd84082b0d364ad97804, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1d090b560edcd84082b0d364ad97804, type: 3}
 --- !u!1001 &5694086750897465852
 PrefabInstance:

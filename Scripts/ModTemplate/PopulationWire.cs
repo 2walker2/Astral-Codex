@@ -20,7 +20,7 @@ namespace AstralCodex
             missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("PopulationCompleteReveal");
-            reveal.SetActive(false);
+            Initialize(reveal);
         }
 
         void Update()

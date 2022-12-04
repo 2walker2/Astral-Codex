@@ -20,7 +20,7 @@ namespace AstralCodex
             sunDisplayRenderer = GameObject.Find("SunDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("NoSunCompleteReveal");
-            reveal.SetActive(false);
+            Initialize(reveal);
         }
 
         void Update()

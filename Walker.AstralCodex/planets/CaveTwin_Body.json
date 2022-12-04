@@ -163,7 +163,7 @@
 						},
 						"type": "adult",
 						"variation": 22,
-						"zRotation": -42.0
+						"zRotation": 318.0
 					},
 					{
 						"position": {
@@ -189,7 +189,7 @@
 						},
 						"type": "adult",
 						"variation": 6,
-						"zRotation": -110.0
+						"zRotation": 250.0
 					}
 				],
 				"normal": {
@@ -223,7 +223,17 @@
 					"x": -32.4503021,
 					"y": -93.82471,
 					"z": -117.116425
-				},
+				}
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_ember_signal",
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				}
 			}
 		]
 	},

@@ -22,13 +22,16 @@ namespace AstralCodex
         float widthMultiplier;
         GameObject quantumMoon;
         GameObject quantumMoonAtmosphere;
+        GameObject darkBrambleCloakSphere;
 
         public virtual void Start()
         {
             visible = false;
             //Get QM
             quantumMoon = SearchUtilities.Find("QuantumMoon_Body");
-            quantumMoonAtmosphere = quantumMoon.transform.Find("Atmosphere_QM/AtmoSphere").gameObject;
+            quantumMoonAtmosphere = quantumMoon.transform.Find("QuantumMoon_Body/Atmosphere_QM/AtmoSphere").gameObject;
+            //Get Dark Bramble cloak sphere
+            darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
             //Get trails
             trails = GetComponentsInChildren<LineRenderer>(true).ToList();
             widthMultiplier = trails[0].widthMultiplier;
@@ -68,7 +71,7 @@ namespace AstralCodex
                     bool validTarget = false;
                     for (int j = 0; j < targets[i].Count; j++)
                     {
-                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false))
+                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphere.activeInHierarchy == false))
                             continue;
 
                         trails[i].SetPosition(0, transform.position);

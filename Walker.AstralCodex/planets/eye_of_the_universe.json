@@ -181,8 +181,7 @@
 			{
 				"type": "states",
 				"id": "codex_eye_probe",
-				"sequential": true,
-				"loop": false
+				"sequential": true
 			}
 		],
 		"dialogue": [
