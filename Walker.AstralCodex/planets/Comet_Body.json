@@ -11,14 +11,14 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/InterloperDetail.prefab",
 				"position": {
-					"x": -4.35825253,
+					"x": -4.357417,
 					"y": 7.9921875,
-					"z": -35.9045677
+					"z": -35.9045448
 				},
 				"rotation": {
 					"x": 302.532654,
 					"y": 304.163544,
-					"z": 4.762765E-05
+					"z": 5.3978E-05
 				}
 			},
 			{
@@ -26,16 +26,26 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/ProbeBroken.prefab",
 				"position": {
-					"x": 25.0896568,
-					"y": 4.93237257,
-					"z": 31.8200989
+					"x": 25.0899448,
+					"y": 4.93164063,
+					"z": 31.8200512
 				},
 				"rotation": {
-					"x": 8.968709,
+					"x": 8.96871,
 					"y": 343.1274,
 					"z": 289.3435
 				},
 				"scale": 0.5
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_interloper",
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				}
 			}
 		],
 		"nomaiText": [
@@ -70,16 +80,6 @@
 				"location": "unspecified",
 				"xmlFile": "planets/text/interloper_recorder_breach.xml",
 				"rename": "InterloperRecorderBreach"
-			}
-		],
-		"entryLocation": [
-			{
-				"id": "codex_interloper",
-				"position": {
-					"x": -2.54491878,
-					"y": 9.113178,
-					"z": -35.87623
-				},
 			}
 		]
 	},

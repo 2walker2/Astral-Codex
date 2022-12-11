@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1525230185
+CRC: 2150845748
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f19c19e31c1ed10d23f45a55321e88ff
+    Hash: 1e44161a2fa05bdf15b384737633dd27
   TypeTreeHash:
     serializedVersion: 2
     Hash: 59368301220b170f99894c86a8608b7a
@@ -82,6 +82,7 @@ Assets:
 - Assets/Bundle/InterloperDetail.prefab
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_s.png
 - Assets/Bundle/Materials/UnlitWhite.mat
+- Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
 - Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_SandStone_n.png
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_WallOutside_mat.mat
@@ -105,6 +106,7 @@ Assets:
 - Assets/Bundle/4DParticles.prefab
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintRed_d.png
 - Assets/Bundle/Materials/Bubble.mat
+- Assets/Bundle/Scanner.prefab
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState7.prefab
@@ -117,6 +119,7 @@ Assets:
 - Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
 - Assets/Bundle/ProbeBroken.prefab
+- Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/EyeProbe.prefab
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
@@ -187,7 +190,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
-- Assets/Bundle/Scanner.prefab
+- Assets/Bundle/Textures/Pentagon.png
 - Assets/Bundle/RuinDependancies/Material/Structure_EYE_SandStone_mat.mat
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Models/hemisphere.obj

@@ -32,9 +32,9 @@
 				"rename": "StationGhostMatter",
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
-					"x": -11.499836,
+					"x": -11.499774,
 					"y": 1.0,
-					"z": 0.00134277344
+					"z": 0.00136488676
 				},
 				"rotation": {},
 				"scale": 0.9
@@ -192,7 +192,7 @@
 				"revealOn": "enter",
 				"reveals": [
 					"codex_lingering_chime_population_trails",
-					"codex_lingering_chime_spacecraft_trails",
+					"codex_lingering_chime_spacecraft_trails"
 				],
 				"position": {
 					"x": 11.45,

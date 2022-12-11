@@ -32,6 +32,116 @@
 				"removeChildren": ["InteractVolume"]
 			},
 			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": 6.0278,
+					"z": 14.4644
+				},
+				"rotation": {
+					"y": 328.4119
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -46.6937,
+					"z": 7573.249
+				},
+				"rotation": {
+					"y": 168.2264
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -52.6833, 
+					"z": 7571.116
+				},
+				"rotation": {
+					"y": 136.7591
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -54.2999,
+					"z":7563.596
+				},
+				"rotation": {
+					"y": 74.2269
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -49.3716,
+					"z": 7557.715
+				},
+				"rotation": {
+					"y": 27.4262
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -30.5399,
+					"z": 7572.395
+				},
+				"rotation": {
+					"y": 160.2999
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -58.6879, 
+					"z": 7552.762
+				},
+				"rotation": {
+					"y": 79.9871
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -62.1255,
+					"z": 7564.463
+				},
+				"rotation": {
+					"y": 157.8528
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -52.2026,
+					"z": 7580.471
+				},
+				"rotation": {
+					"y": 215.0668
+				}
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Trees/Tree_Group (3)/Trees/Tree_TH_Sapling (4)",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"position": {
+					"x": -40.5626,
+					"z": 7580.17
+				},
+				"rotation": {
+					"y": 262.5297
+				}
+			},
+			{
 				"rename": "EyeProbe",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbe.prefab",
@@ -175,14 +285,33 @@
 					"y": 235.0281,
 					"z": 0
 				}
+			},
+			{
+				"rename": "QuantumProximityController",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Empty.prefab",
+				"position": {
+					"x": -45.1209,
+					"y": 0.56,
+					"z": 7565.978
+				},
+				"keepLoaded": true
 			}
 		],
 		"quantumGroups": [
 			{
 				"type": "states",
 				"id": "codex_eye_probe",
-				"sequential": true
+				"sequential": true,
+				"loop": false
 			}
+		],
+		"nomaiText": [
+			{
+				"rename": "EyeRecorderPrecursor",
+				"type": "preCrashRecorder",
+				"xmlFile": "planets/text/eye_recorder_precursor.xml"
+			}	
 		],
 		"dialogue": [
 			{
@@ -194,6 +323,21 @@
 				},
 				"radius": 0.5,
 				"xmlFile": "planets/text/eye_plaque.xml"
+			}
+		],
+		"signals": [
+			{
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 10000.0,
+				"frequency": "Astral Codex",
+				"identificationRadius": 15.0,
+				"name": "Translation Probe Astral",
+				"position": {
+					"x": -45.1209,
+					"y": 2.0,
+					"z": 7565.978
+				},
 			}
 		]
 	},

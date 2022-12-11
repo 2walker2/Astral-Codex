@@ -1,0 +1,21 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>And so it comes to this. This universe is cold but the experiences is contained will breath life into the next. All that is left to do is to take the final step and collapse the enumerable possibilities laid out before me.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>I sit here, amongst the phantoms of my companions, and I draft this message to you. If you are reading this then you are in much the same situation as I. All you know is gone. Yet before you stands countless potential new beginnings.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>Perhaps my final desparate ploy succeeded. Perhaps the Codex has been found and is, even now, hurtling headfirst into a newborn universe, preserving the past and recording the future. Or perhaps this message is simply the last dwindling specter of a forgotten people.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>Irregardless, and though I am long since gone, shall we take this final step together, friend?</Text>
+	</TextBlock>
+</NomaiObject>

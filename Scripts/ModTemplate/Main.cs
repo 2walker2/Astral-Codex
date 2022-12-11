@@ -206,6 +206,19 @@ namespace AstralCodex
                         visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
                         //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
                     }*/
+
+                    //Configure Dark Bramble Recorder
+                    GameObject brambleRecorder = SearchUtilities.Find("bramble_chert_recorder");
+                    GameObject brambleRecorderDialogue = SearchUtilities.Find("bramble_chert_recorder_dialogue");
+                    if (brambleRecorder != null && brambleRecorderDialogue != null)
+                    {
+                        CharacterDialogueTree brambleRecorderTree = brambleRecorder.GetComponent<CharacterDialogueTree>();
+                        CharacterDialogueTree brambleRecorderDialogueTree = brambleRecorderDialogue.GetComponent<CharacterDialogueTree>();
+                        brambleRecorderTree._xmlCharacterDialogueAsset = brambleRecorderDialogueTree._xmlCharacterDialogueAsset;
+                        Destroy(brambleRecorderDialogue);
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND BRAMBLE RECORDER OR DIALOGUE", MessageType.Error);
                 }
                 else if (system == "EyeOfTheUniverse")
                 {
@@ -249,15 +262,64 @@ namespace AstralCodex
                             plaqueDialogue.SetActive(false);
                     }
 
-                    //Assign ghost matter material to Eye probe
-                    GameObject eyeProbe = SearchUtilities.Find("EyeProbe");
+                    //Assign ghost matter material to Eye probe BROKEN
+                    /*GameObject eyeProbe = SearchUtilities.Find("EyeProbe");
                     if (eyeProbe != null)
                     {
                         MeshRenderer eyeProbeRenderer = eyeProbe.transform.Find("Model").GetComponent<MeshRenderer>();
                         eyeProbeRenderer.material = ghostMatterMaterial;
                     }
                     else
-                        ModHelper.Console.WriteLine("FAILED TO FIND EYE PROBE", MessageType.Error);
+                        ModHelper.Console.WriteLine("FAILED TO FIND EYE PROBE", MessageType.Error);*/
+
+                    //Make scanner root activate on proximity
+                    /*GameObject scannerRoot = SearchUtilities.Find("ScannerEnableRoot");
+                    if (scannerRoot != null)
+                        scannerRoot.AddComponent<ProximityEnable>();
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND SCANNER ENABLE ROOT", MessageType.Error);*/
+
+                    //Reparent quantum states
+                    /*GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
+                    GameObject instrumentZones = SearchUtilities.Find("InstrumentZones");
+                    if (quantumStates != null && instrumentZones != null)
+                        quantumStates.transform.parent = instrumentZones.transform;
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND INSTRUMENT ZONES OR QUANTUM STATES", MessageType.Error);*/
+
+                    //Set maximum distance for first quantum state
+                    /*GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
+                    if (quantumStates != null)
+                    {
+                        QuantumState[] quantumStatesStates = quantumStates.GetComponentsInChildren<QuantumState>();
+                        foreach (QuantumState state in quantumStatesStates)
+                        {
+                            state._checkPlayerDistance = true;
+                            state._maxPlayerDistance = 25;
+                        }
+                    }*/
+
+                    //Make quantum states turn quantum on proximity
+                    GameObject quantumProximityController = SearchUtilities.Find("QuantumProximityController");
+                    GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
+                    if (quantumProximityController != null && quantumStates != null)
+                    {
+                        ProximityQuantum proximityQuantum = quantumProximityController.AddComponent<ProximityQuantum>();
+                        proximityQuantum.quantumStates = quantumStates.GetComponent<NewHorizons.Components.Quantum.NHMultiStateQuantumObject>();
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND QUANTUM PROXIMITY CONTROLLER OR QUANTUM STATES", MessageType.Error);
+
+                    //Reparent final recorder
+                    GameObject precursorRecorder = SearchUtilities.Find("EyeRecorderPrecursor");
+                    GameObject precursorRecorderLocation = SearchUtilities.Find("PrecursorRecorderPosition");
+                    if (precursorRecorder != null && precursorRecorderLocation != null)
+                    {
+                        precursorRecorder.transform.parent = precursorRecorderLocation.transform;
+                        precursorRecorder.transform.localPosition = Vector3.zero;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND PRECURSOR RECORDER OR ITS ANCHOR", MessageType.Error);
                 }
             });
         }
