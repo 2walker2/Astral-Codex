@@ -237,12 +237,6 @@
 			}
 		]
 	},
-	"ReferenceFrame": {},
-	"ShipLog": {
-		"spriteFolder": "planets/ship_log/images",
-		"xmlFile": "planets/ship_log/ember_twin_log.xml"
-	},
-	"ShockEffect": {},
 	"Volumes": {
 		"revealVolumes": [
 			{
@@ -260,6 +254,24 @@
 				},
 				"radius": 15.0
 			}
+		],
+		"audioVolumes": [
+			{
+				"audio": "planets/assets/probes.mp3",
+				"track": "music",
+				"radius": 20.0,
+				"position": {
+					"x": -32.50764,
+					"y": -93.72656,
+					"z": -117.636772
+				}
+			}
 		]
-	}
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/ember_twin_log.xml"
+	},
+	"ShockEffect": {}
 }

@@ -2042,7 +2042,8 @@
 					"z": -423.1656
 				},
 				"radius": 1.0,
-				"xmlFile": "planets/text/bramble_chert_note.xml"
+				"xmlFile": "planets/text/bramble_chert_note.xml",
+				"rename": "bramble_chert_note_dialogue"
 			}
 		],
 		"entryLocation": [
@@ -2256,6 +2257,18 @@
 					"z": -326.037384
 				},
 				"radius": 100.0
+			}
+		],
+		"audioVolumes": [
+			{
+				"audio": "planets/assets/probes.mp3",
+				"track": "music",
+				"radius": 100.0,
+				"position": {
+					"x": -205.081039,
+					"y": 245.988281,
+					"z": -408.44278
+				}
 			}
 		]
 	}

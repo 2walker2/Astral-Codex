@@ -18,7 +18,6 @@ namespace AstralCodex
         public static Main instance;
 
         public Dictionary<string, Material> materials;
-        public Material ghostMatterMaterial;
 
         List<string> ghostMatterCrystals;
         Dictionary<string, string> materialsToFind;
@@ -262,43 +261,6 @@ namespace AstralCodex
                             plaqueDialogue.SetActive(false);
                     }
 
-                    //Assign ghost matter material to Eye probe BROKEN
-                    /*GameObject eyeProbe = SearchUtilities.Find("EyeProbe");
-                    if (eyeProbe != null)
-                    {
-                        MeshRenderer eyeProbeRenderer = eyeProbe.transform.Find("Model").GetComponent<MeshRenderer>();
-                        eyeProbeRenderer.material = ghostMatterMaterial;
-                    }
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND EYE PROBE", MessageType.Error);*/
-
-                    //Make scanner root activate on proximity
-                    /*GameObject scannerRoot = SearchUtilities.Find("ScannerEnableRoot");
-                    if (scannerRoot != null)
-                        scannerRoot.AddComponent<ProximityEnable>();
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND SCANNER ENABLE ROOT", MessageType.Error);*/
-
-                    //Reparent quantum states
-                    /*GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
-                    GameObject instrumentZones = SearchUtilities.Find("InstrumentZones");
-                    if (quantumStates != null && instrumentZones != null)
-                        quantumStates.transform.parent = instrumentZones.transform;
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND INSTRUMENT ZONES OR QUANTUM STATES", MessageType.Error);*/
-
-                    //Set maximum distance for first quantum state
-                    /*GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
-                    if (quantumStates != null)
-                    {
-                        QuantumState[] quantumStatesStates = quantumStates.GetComponentsInChildren<QuantumState>();
-                        foreach (QuantumState state in quantumStatesStates)
-                        {
-                            state._checkPlayerDistance = true;
-                            state._maxPlayerDistance = 25;
-                        }
-                    }*/
-
                     //Make quantum states turn quantum on proximity
                     GameObject quantumProximityController = SearchUtilities.Find("QuantumProximityController");
                     GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
@@ -334,15 +296,6 @@ namespace AstralCodex
                 titleTesseract.AddComponent<Tesseract>();
                 assetBundle.Unload(false);
             }
-            if (scene.name == "SolarSystem")
-            {
-                //Cache ghost matter material
-                GameObject ghostMatterClutter = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter");
-                if (ghostMatterClutter != null)
-                    ghostMatterMaterial = ghostMatterClutter.GetComponent<MeshRenderer>().material;
-                else
-                    ModHelper.Console.WriteLine("FAILED TO FIND GHOST MATTER MATERIAL", MessageType.Error);
-            }
             else if (scene.name == "PostCreditScene")
             {
                 //Particles on end screen
@@ -354,10 +307,11 @@ namespace AstralCodex
                         AssetBundle.UnloadAllAssetBundles(false);   
                         //ModHelper.Console.WriteLine($"FOUND PROBE", MessageType.Success);
                         AssetBundle assetBundle = ModHelper.Assets.LoadBundle("planets/assets/astral_codex");
-                        Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
+                        GameObject particles = (GameObject)Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
+                        particles.GetComponentInChildren<ParticleSystem>().Play();
                         //Audio (doesn't work)
-                        AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
-                        /*Destroy(probe.GetComponentInChildren<OWAudioSource>());
+                        /*AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
+                        Destroy(probe.GetComponentInChildren<OWAudioSource>());
                         AudioSource probeAudio = probe.GetComponentInChildren<AudioSource>();
                         probeAudio.clip = signal;
                         probeAudio.volume = 5f;*/

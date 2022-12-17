@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &78798838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &465794420
 Transform:
   m_ObjectHideFlags: 0
@@ -480,7 +480,7 @@ PrefabInstance:
     - target: {fileID: 4419602729582024382, guid: 8c126ef088ba9a84385e1e5e6a0471e1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4419602729582024383, guid: 8c126ef088ba9a84385e1e5e6a0471e1,
         type: 3}
@@ -771,8 +771,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143192284}
-  m_LocalRotation: {x: 0.26430655, y: -0.22623327, z: 0.06393519, w: 0.9353464}
-  m_LocalPosition: {x: 2.5281477, y: 3.8308673, z: -5.105913}
+  m_LocalRotation: {x: -0.09140642, y: 0.8985442, z: -0.22447452, w: -0.36588848}
+  m_LocalPosition: {x: 6.5406666, y: 4.194379, z: 6.6513762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -918,6 +918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Eye Probe
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019078448831277610, guid: e1d090b560edcd84082b0d364ad97804,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1d090b560edcd84082b0d364ad97804, type: 3}

@@ -3,12 +3,13 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
     class GhostMatterMaterial : MonoBehaviour
     {
-        //static Material material;
+        static Material material;
         List<MeshRenderer> renderers;
         static List<string> renderersToExclude;
 
@@ -27,24 +28,24 @@ namespace AstralCodex
 
         void Update()
         {
-            /*if (material == null)
+            if (material == null)
             {
-                GameObject ghostMatterClutter = GameObject.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter");
+                GameObject ghostMatterClutter = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter");
                 if (ghostMatterClutter != null)
                     material = ghostMatterClutter.GetComponent<MeshRenderer>().material;
             }
             else
-            {*/
+            {
                 if (renderers != null && renderers.Count > 0)
                 {
                     List<MeshRenderer> renderersToRemove = new List<MeshRenderer>();
                     foreach (MeshRenderer r in renderers)
                     {
-                        if (r.material != Main.instance.ghostMatterMaterial)
+                        if (r.material != material)
                         {
                             if (!renderersToExclude.Contains(r.gameObject.name))
                             {
-                                r.material = Main.instance.ghostMatterMaterial;
+                                r.material = material;
                             }
                             r.gameObject.layer = 22;
                             renderersToRemove.Add(r);
@@ -53,7 +54,7 @@ namespace AstralCodex
                     foreach (MeshRenderer r in renderersToRemove)
                         renderers.Remove(r);
                 }
-            //}
+            }
         }
     }
 }

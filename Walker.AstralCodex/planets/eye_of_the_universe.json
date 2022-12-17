@@ -327,10 +327,10 @@
 		],
 		"signals": [
 			{
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"audio": "planets/assets/chimes.wav",
 				"detectionRadius": 10000.0,
-				"frequency": "Astral Codex",
+				"frequency": "Traveler",
 				"identificationRadius": 15.0,
 				"name": "Translation Probe Astral",
 				"position": {
