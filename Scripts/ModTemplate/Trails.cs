@@ -22,21 +22,29 @@ namespace AstralCodex
         float widthMultiplier;
         GameObject quantumMoon;
         GameObject quantumMoonAtmosphere;
-        GameObject darkBrambleCloakSphere;
+        MeshRenderer darkBrambleCloakSphereRenderer;
 
         public virtual void Start()
         {
             visible = false;
             //Get QM
             quantumMoon = SearchUtilities.Find("QuantumMoon_Body");
-            quantumMoonAtmosphere = quantumMoon.transform.Find("QuantumMoon_Body/Atmosphere_QM/AtmoSphere").gameObject;
+            if (quantumMoon == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON", OWML.Common.MessageType.Error);
+            quantumMoonAtmosphere = SearchUtilities.Find("QuantumMoon_Body/Atmosphere_QM/AtmoSphere");
+            if (quantumMoonAtmosphere == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON ATMOSPHERE", OWML.Common.MessageType.Error);
             //Get Dark Bramble cloak sphere
-            darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
+            GameObject darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
+            if (darkBrambleCloakSphere != null)
+                darkBrambleCloakSphereRenderer = darkBrambleCloakSphere.GetComponent<MeshRenderer>();
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CLOAK SPHERE", OWML.Common.MessageType.Error);
             //Get trails
             trails = GetComponentsInChildren<LineRenderer>(true).ToList();
+            if (trails.Count == 0) Main.modHelper.Console.WriteLine("NO TRAILS FOUND", OWML.Common.MessageType.Error);
             widthMultiplier = trails[0].widthMultiplier;
             //Get targets
             targets = new List<List<Transform>>();
+            if (targetPaths == null) Main.modHelper.Console.WriteLine("NO TARGET PATHS", OWML.Common.MessageType.Error);
             foreach (List<string> pathList in targetPaths)
             {
                 List<Transform> pathTargets = new List<Transform>();
@@ -46,12 +54,16 @@ namespace AstralCodex
                     if (go != null)
                         pathTargets.Add(go.transform);
                     else
-                        Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL TARGET " + path);
+                        Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL TARGET " + path, OWML.Common.MessageType.Error);
                 }
                 targets.Add(pathTargets);
             }
             //Get material
-            trailMat = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail").GetComponent<ParticleSystemRenderer>().material;
+            GameObject trailMatGO = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail");
+            if (trailMatGO != null)
+                trailMat = trailMatGO.GetComponent<ParticleSystemRenderer>().material;
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL MATERIAL", OWML.Common.MessageType.Error);
             trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)
@@ -71,7 +83,7 @@ namespace AstralCodex
                     bool validTarget = false;
                     for (int j = 0; j < targets[i].Count; j++)
                     {
-                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphere.activeInHierarchy == false))
+                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false))
                             continue;
 
                         trails[i].SetPosition(0, transform.position);
