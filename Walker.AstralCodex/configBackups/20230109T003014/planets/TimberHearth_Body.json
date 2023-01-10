@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "TimberHearth",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "TimberHearthSpacecraftDetector",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/SpacecraftDetector.prefab",
+				"position": {},
+				"rotation": {},
+				"scale": 1500.0,
+				"keepLoaded": true
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District1/Props_HangingCity_District1/OtherComponentsGroup/Props_HangingCity_Building_10/Prefab_NOM_VaseThin",
+				"position": {
+					"x": 8.51173,
+					"y": -43.6960526,
+					"z": 185.644867
+				},
+				"rotation": {
+					"x": 13.3181763,
+					"y": 1.9481405,
+					"z": 263.2595
+				}
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}

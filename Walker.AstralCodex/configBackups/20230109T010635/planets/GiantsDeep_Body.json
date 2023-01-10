@@ -1,0 +1,78 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "GiantsDeep",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "ProjectionRecorder",
+				"path": "GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Prefab_NOM_RemoteViewer (1)/PedestalAnchor/Prefab_NOM_SharedPedestal",
+				"position": {
+					"x": -28.2095814,
+					"y": -66.41406,
+					"z": -41.7064362
+				},
+				"removeChildren": [
+					"Structure_NOM_SharedPedestal/Structure_NOM_SharedPedestal_side01",
+					"SharedPedestal_side01_bottom_jnt/SharedPedestal_side01_top_jnt/AstroBodySymbolRenderer"
+				],
+				"rotation": {
+					"x": 279.389862,
+					"y": 110.371132,
+					"z": 28.7557087
+				}
+			}
+		],
+		"nomaiText": [
+			{
+				"normal": {
+					"x": -0.6433741,
+					"y": 0.1430442,
+					"z": 0.7520692
+				},
+				"position": {
+					"x": -26.9076958,
+					"y": -66.08432,
+					"z": -40.65432
+				},
+				"rotation": {
+					"x": 37.00392,
+					"y": 43.2004738,
+					"z": 79.6815
+				},
+				"type": "computer",
+				"location": "unspecified",
+				"xmlFile": "planets/text/giants_computer.xml"
+			}
+		],
+		"remotes": [
+			{
+				"id": "Anomaly Recording",
+				"decalPath": "planets/assets/vision_symbol.png",
+				"stones": [
+					{
+						"position": {
+							"x": -28.8483,
+							"y": -65.9959,
+							"z": -41.0667
+						},
+						"rotation": {
+							"x": 279.3907,
+							"y": 110.3714,
+							"z": 28.7554
+						}
+					}
+				]
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/giants_log.xml"
+	},
+	"ShockEffect": {}
+}

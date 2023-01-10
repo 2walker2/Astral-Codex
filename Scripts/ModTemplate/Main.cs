@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System;
 using Harmony;
 using System.Collections;
+using System.Linq;
 using NewHorizons.Utility;
 
 namespace AstralCodex
@@ -61,7 +62,8 @@ namespace AstralCodex
                 {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
                 {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
-                {"Station/ProbeParticles", typeof(ProbeParticles) }
+                {"Station/ProbeParticles", typeof(ProbeParticles) },
+                {"Station/ThornParticles", typeof(ThornParticles) }
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -82,6 +84,31 @@ namespace AstralCodex
             {
                 if (system == "SolarSystem")
                 {
+                    //Flashback override
+                    //Define parameters of here
+                    int flashbackImageCount = 8;
+                    int repeatAmount = 5;
+                    GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
+                    if (flashbackCamera != null)
+                    {
+                        List<RenderTexture> renderTexturesList = new List<RenderTexture>();
+                        for (int renderTextureIndex = flashbackImageCount; renderTextureIndex>0; renderTextureIndex--)
+                        {
+                            Texture2D texture = ModHelper.Assets.GetTexture("textures/"+renderTextureIndex.ToString()+".png");
+                            RenderTexture renderTexture = new RenderTexture(480, 270, 0);
+                            renderTexture.enableRandomWrite = true;
+                            RenderTexture.active = renderTexture;
+                            Graphics.Blit(texture, renderTexture);
+                            renderTexturesList.AddRange(Enumerable.Repeat(renderTexture, repeatAmount));
+                        }
+                        RenderTexture[] renderTextureArray = renderTexturesList.ToArray();
+                        FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
+                        flashbackRecorder._renderTextureArray = renderTextureArray;
+                        flashbackRecorder._numCapturedSnapshots = flashbackImageCount * repeatAmount;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA");
+
                     //Assign ghost matter material
                     foreach (string ghostMatterCrystal in ghostMatterCrystals)
                     {
@@ -119,18 +146,10 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine($"FAILED TO FIND OBJECT FOR MATERIAL " + pair.Value, MessageType.Error);
                     }
 
-                    //Increase ghost matter damage
-                    GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
-                    stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
-
-
-                    //Enable Ember tree collision
-                    GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
-
                     //Assign scripts
                     foreach (KeyValuePair<string, Type> pair in componentsToAdd)
                     {
-                        GameObject obj = GameObject.Find(pair.Key);
+                        GameObject obj = SearchUtilities.Find(pair.Key);
                         if (obj != null)
                         {
                             obj.AddComponent(pair.Value);
@@ -139,6 +158,14 @@ namespace AstralCodex
                         else
                             ModHelper.Console.WriteLine($"FAILED TO FIND " + pair.Key, MessageType.Error);
                     }
+
+                    //Increase ghost matter damage
+                    GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
+                    stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+
+
+                    //Enable Ember tree collision
+                    GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
 
                     //Enable Lingering Chime reference frame
                     GameObject rfVolume = GameObject.Find("LingeringChime_Body").transform.GetChild(1).gameObject;

@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "TOWER_TWIN",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "AshTwinSpacecraftDetector",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/SpacecraftDetector.prefab",
+				"position": {},
+				"rotation": {},
+				"scale": 600.0,
+				"keepLoaded": true
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}
