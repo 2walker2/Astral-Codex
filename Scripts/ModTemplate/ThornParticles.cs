@@ -11,7 +11,7 @@ namespace AstralCodex
     class ThornParticles: MonoBehaviour
     {
         MeshRenderer cloakSphereRenderer;
-        ParticleSystem part;
+        ParticleSystemRenderer partRenderer;
 
         void Start()
         {
@@ -25,15 +25,12 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("PARTICLES FAILED TO FIND CLOAK SPHERE");
-            part = GetComponent<ParticleSystem>();
+            partRenderer = GetComponent<ParticleSystemRenderer>();
         }
 
         void Update()
         {
-            /*if (part.isPlaying && cloakSphereRenderer.enabled == false)
-                part.Stop(false, ParticleSystemStopBehavior.StopEmittingAndClear);
-            else if (!part.isPlaying && cloakSphereRenderer.enabled == true)
-                part.Play();*/
+            partRenderer.enabled = cloakSphereRenderer.enabled;
         }
     }
 }

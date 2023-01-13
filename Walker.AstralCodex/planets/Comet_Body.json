@@ -11,14 +11,14 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/InterloperDetail.prefab",
 				"position": {
-					"x": -4.358184,
-					"y": 7.99219465,
-					"z": -35.90503
+					"x": -4.35748,
+					"y": 7.992191,
+					"z": -35.9048347
 				},
 				"rotation": {
 					"x": 302.532654,
 					"y": 304.163544,
-					"z": 6.667873E-05
+					"z": 6.667872E-05
 				}
 			},
 			{
@@ -26,12 +26,12 @@
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/ProbeBroken.prefab",
 				"position": {
-					"x": 25.0891647,
-					"y": 4.931639,
-					"z": 31.8201065
+					"x": 25.0898819,
+					"y": 4.93163443,
+					"z": 31.8200226
 				},
 				"rotation": {
-					"x": 8.968712,
+					"x": 8.968713,
 					"y": 343.1274,
 					"z": 289.3435
 				},

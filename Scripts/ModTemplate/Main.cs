@@ -23,6 +23,7 @@ namespace AstralCodex
         List<string> ghostMatterCrystals;
         Dictionary<string, string> materialsToFind;
         Dictionary<string, Type> componentsToAdd;
+        Dictionary<string, Vector3> rotatingObjects;
 
         void Awake()
         {
@@ -37,7 +38,7 @@ namespace AstralCodex
                 "InterloperRecorderBreach",
                 "InterloperRecorderWarning",
                 "TranslationProbe1/Model", 
-                "TranslationProbe2/Model",
+                "TranslationProbe2/ScaleRoot/Model",
                 "TranslationProbe3/Model",
                 "ChimeSign"
             };
@@ -63,7 +64,20 @@ namespace AstralCodex
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
                 {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
                 {"Station/ProbeParticles", typeof(ProbeParticles) },
-                {"Station/ThornParticles", typeof(ThornParticles) }
+                {"Station/ThornParticles", typeof(ThornParticles) },
+                {"TranslationProbe2", typeof(EmberProjectionActivate) },
+                {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
+            };
+            //Create rotating objects list
+            rotatingObjects = new Dictionary<string, Vector3>()
+            {
+                {"TranslationProbe2/Projections", new Vector3(0, 2, 0) },
+                {"TranslationProbe2/Projections/Sun Scanner/ScanSource/SunScan", new Vector3(0, 8, 0) },
+                {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (4)/DarkBramble", new Vector3(0, 8, 0) },
+                {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (3)/GiantsDeep", new Vector3(0, 8, 0) },
+                {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (2)/BrittleHollow", new Vector3(0, 8, 0) },
+                {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (1)/TimberHearth", new Vector3(0, 8, 0) },
+                {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource/HourglassTwins", new Vector3(0, 8, 0) },
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -85,8 +99,8 @@ namespace AstralCodex
                 if (system == "SolarSystem")
                 {
                     //Flashback override
-                    //Define parameters of here
-                    int flashbackImageCount = 8;
+                    //Define parameters here
+                    /*int flashbackImageCount = 8;
                     int repeatAmount = 5;
                     GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
                     if (flashbackCamera != null)
@@ -107,7 +121,7 @@ namespace AstralCodex
                         flashbackRecorder._numCapturedSnapshots = flashbackImageCount * repeatAmount;
                     }
                     else
-                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA");
+                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA");*/
 
                     //Assign ghost matter material
                     foreach (string ghostMatterCrystal in ghostMatterCrystals)
@@ -157,6 +171,20 @@ namespace AstralCodex
                         }
                         else
                             ModHelper.Console.WriteLine($"FAILED TO FIND " + pair.Key, MessageType.Error);
+                    }
+
+                    //Assign rotating objects
+                    foreach (KeyValuePair<string, Vector3> pair in rotatingObjects)
+                    {
+                        GameObject obj = SearchUtilities.Find(pair.Key);
+                        if (obj != null)
+                        {
+                            Rotate added = obj.AddComponent<Rotate>();
+                            added.speed = pair.Value;
+                            //ModHelper.Console.WriteLine($"FOUND ROTATING OBJECT " + pair.Key, MessageType.Success);
+                        }
+                        else
+                            ModHelper.Console.WriteLine($"FAILED TO FIND ROTATING OBJECT " + pair.Key, MessageType.Error);
                     }
 
                     //Increase ghost matter damage
@@ -225,6 +253,7 @@ namespace AstralCodex
                             Destroy(r);
                         Destroy(visionPedestal.GetComponentInChildren<BoxCollider>());
                     }
+                    //Supposed to make vision overlay gray (doesn't work)
                     /*GameObject visionCamera = GameObject.Find("StationVision/RemoteViewerCamera");
                     if (visionCamera != null)
                     {

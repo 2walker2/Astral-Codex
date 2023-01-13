@@ -5,7 +5,7 @@
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>This is some sort of Nomai probe. I'd posit they used probes like this to remotely explore Dark Bramble. I wouldn't want to go in there either!</Page>
+			<Page>Chert’s Research Notes — property of Chert! This is some sort of Nomai probe. I'd posit they used probes like this to remotely explore Dark Bramble. I wouldn't want to go in there either!</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

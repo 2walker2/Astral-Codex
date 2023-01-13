@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2456077806
+CRC: 501936608
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 834bb805962f7c5719c622cdb6e30522
+    Hash: 4b32439436509a4e311f74232814e23d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 59368301220b170f99894c86a8608b7a
+    Hash: 1c36ec90ae6df5702325e22a17c625d8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -53,6 +53,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 2230d37408c52364d84739d6ae8956b9, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c6fe68bc48c100c4386d817d187c61d4, type: 3}
 - Class: 114
@@ -125,6 +127,7 @@ Assets:
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
 - Assets/Bundle/Textures/WaitHere.png
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
+- Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
 - Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
