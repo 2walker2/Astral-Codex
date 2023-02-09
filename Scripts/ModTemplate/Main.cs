@@ -37,7 +37,7 @@ namespace AstralCodex
                 "TranslationCairn2",
                 "InterloperRecorderBreach",
                 "InterloperRecorderWarning",
-                "TranslationProbe1/Model", 
+                "TranslationProbe1/ScaleRoot/Model", 
                 "TranslationProbe2/ScaleRoot/Model",
                 "TranslationProbe3/Model",
                 "ChimeSign"
@@ -67,6 +67,7 @@ namespace AstralCodex
                 {"Station/ThornParticles", typeof(ThornParticles) },
                 {"TranslationProbe2", typeof(EmberProjectionActivate) },
                 {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
+                {"TranslationProbe1", typeof(BrambleProjectionActivate) },
             };
             //Create rotating objects list
             rotatingObjects = new Dictionary<string, Vector3>()
@@ -78,6 +79,19 @@ namespace AstralCodex
                 {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (2)/BrittleHollow", new Vector3(0, 8, 0) },
                 {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (1)/TimberHearth", new Vector3(0, 8, 0) },
                 {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource/HourglassTwins", new Vector3(0, 8, 0) },
+                {"TranslationProbe1/Projections/HT Scanner", new Vector3(0, 5, 0) },
+                {"TranslationProbe1/Projections/TH Scanner", new Vector3(0, 3, 0) },
+                {"TranslationProbe1/Projections/BH Scanner", new Vector3(0, 2.5f, 0) },
+                {"TranslationProbe1/Projections/GD Scanner", new Vector3(0, 2, 0) },
+                {"TranslationProbe1/Projections/DB Scanner", new Vector3(0, 1.5f, 0) },
+                {"TranslationProbe1/Projections/Sun Scanner/ScanSource/Sun", new Vector3(3, -3, 3) },
+                {"TranslationProbe1/Projections/HT Scanner/ScanSource/Hourglass Twins", new Vector3(0, 10, 0) },
+                {"TranslationProbe1/Projections/TH Scanner/ScanSource/TimberHearth", new Vector3(0, 10, 0) },
+                {"TranslationProbe1/Projections/BH Scanner/ScanSource/Brittle Hollow", new Vector3(0, 10, 0) },
+                {"TranslationProbe1/Projections/GD Scanner/ScanSource/Giant's Deep", new Vector3(0, 10, 0) },
+                {"TranslationProbe1/Projections/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
+                {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
+                {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) }
             };
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;

@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Comet",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/InterloperDetail.prefab",
+				"position": {
+					"x": -4.357462,
+					"y": 7.992188,
+					"z": -35.9048233
+				},
+				"rotation": {
+					"x": 302.532654,
+					"y": 304.163544,
+					"z": 6.98539E-05
+				}
+			},
+			{
+				"rename": "TranslationProbe3",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/ProbeBroken.prefab",
+				"position": {
+					"x": 25.0893612,
+					"y": 4.93163347,
+					"z": 31.8201218
+				},
+				"rotation": {
+					"x": 8.968714,
+					"y": 343.1274,
+					"z": 289.3435
+				},
+				"scale": 0.5
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_interloper",
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				}
+			}
+		],
+		"nomaiText": [
+			{
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				},
+				"rotation": {
+					"x": 15.0000143,
+					"y": 252.0,
+					"z": 151.0
+				},
+				"type": "recorder",
+				"location": "unspecified",
+				"xmlFile": "planets/text/interloper_recorder_warning.xml",
+				"rename": "InterloperRecorderWarning"
+			},
+			{
+				"position": {
+					"x": 24.3789043,
+					"y": 6.492459,
+					"z": 32.59187
+				},
+				"rotation": {
+					"x": 298.271332,
+					"y": 342.927032,
+					"z": 239.5444
+				},
+				"type": "recorder",
+				"location": "unspecified",
+				"xmlFile": "planets/text/interloper_recorder_breach.xml",
+				"rename": "InterloperRecorderBreach"
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}

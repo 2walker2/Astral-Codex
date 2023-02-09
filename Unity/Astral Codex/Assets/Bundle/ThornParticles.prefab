@@ -85,11 +85,11 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -178,7 +178,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 50
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -856,11 +856,11 @@ ParticleSystem:
     radius:
       value: 0.0001
       mode: 0
-      spread: 1
+      spread: 0
       speed:
         serializedVersion: 2
-        minMaxState: 0
-        scalar: 1
+        minMaxState: 1
+        scalar: 3
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -870,6 +870,33 @@ ParticleSystem:
             value: 1
             inSlope: 0
             outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.16147307
+            value: -0.10769212
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.4472663
+            value: 0.6000004
+            inSlope: 1.9288958
+            outSlope: 1.9288958
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.8045677
+            value: -0.06955302
+            inSlope: -0.10026685
+            outSlope: -0.10026685
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
@@ -973,7 +1000,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.15
+      scalar: 0.2
       minScalar: 10
       maxCurve:
         serializedVersion: 2

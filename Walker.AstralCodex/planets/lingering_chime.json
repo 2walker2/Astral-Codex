@@ -32,9 +32,9 @@
 				"rename": "StationGhostMatter",
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
-					"x": -11.5001469,
+					"x": -11.4994841,
 					"y": 1.0,
-					"z": 0.00138447061
+					"z": 0.000695943832
 				},
 				"rotation": {},
 				"scale": 0.9

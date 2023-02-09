@@ -9,7 +9,7 @@
         <RumorFact>
             <ID>codex_lingering_chime_rumor</ID>
             <SourceID>codex_projection</SourceID>
-            <RumorName>Anamalous Body</RumorName>
+            <RumorName>Anomalous Body</RumorName>
             <Text>The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.</Text> 
         </RumorFact>
         <ExploreFact>
@@ -18,7 +18,7 @@
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_material</ID>
-            <Text>The structure is composed of the same material as Ghost Matter crystals.</Text>
+            <Text>The structure is composed of the same material as ghost matter crystals.</Text>
         </ExploreFact>
     </Entry>
     <Entry>
@@ -172,7 +172,7 @@
             <Text><![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
 My species and my world are gone. But I have reached the Eye and that gives me hope that my people may be remembered. The Chime is ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
 You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
-But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onwards. Send whatever device you possess on a final journey through the Eye, that the Codex may persist, and grow, and inform the worthy species in the next cycle of what came before.
+But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onward. Send whatever device you possess on a final journey through the Eye, that the Codex may persist, and grow, and inform the worthy species in the next cycle of what came before.
 Remember us.<![CDATA[</Color>]]></Text>
         </ExploreFact>
         <ExploreFact>

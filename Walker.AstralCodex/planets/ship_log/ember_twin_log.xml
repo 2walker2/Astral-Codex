@@ -24,6 +24,11 @@
         </ExploreFact>
 
         <ExploreFact>
+            <ID>codex_ember_shuttle</ID> 
+            <Text>The Nomai feared that a shuttle colliding with Ash Twin would be fatal for any passengers.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
             <ID>codex_ember_cairns</ID> 
             <Text>I found a set of crystalline cairns on Ember Twin that contain a message from a member of an unknown species to the Nomai. It offers great knowledge to the Nomai when three criteria have been met.</Text> 
         </ExploreFact>

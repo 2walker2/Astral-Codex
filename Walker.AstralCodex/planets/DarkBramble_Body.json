@@ -10,25 +10,24 @@
 			{
 				"rename": "TranslationProbe1",
 				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/Probe.prefab",
+				"path": "Assets/Bundle/BrambleProbe.prefab",
 				"position": {
-					"x": -221.677643,
-					"y": 218.947632,
-					"z": -417.065247
+					"x": -229.94101,
+					"y": 215.377289,
+					"z": -415.10614
 				},
 				"rotation": {
-					"x": 57.00421,
+					"x": 57.004158,
 					"y": 181.4137,
 					"z": 338.745819
-				},
-				"scale": 0.5
+				}
 			},
 			{
 				"assetBundle": "planets/assets/turtle_codex",
 				"path": "Assets/Astral Codex/ProjectionRuins.prefab",
 				"position": {
 					"x": -205.696579,
-					"y": 244.0996,
+					"y": 244.099579,
 					"z": -408.812225
 				},
 				"rotation": {
@@ -42,7 +41,7 @@
 				"path": "Assets/Astral Codex/StorageRoom01.prefab",
 				"position": {
 					"x": -225.259369,
-					"y": 224.144516,
+					"y": 224.1445,
 					"z": -413.063873
 				},
 				"rotation": {
@@ -56,7 +55,7 @@
 				"path": "Assets/Astral Codex/BrambleStation01.prefab",
 				"position": {
 					"x": -199.17131,
-					"y": 208.779282,
+					"y": 208.779266,
 					"z": -425.602875
 				},
 				"rotation": {
@@ -71,7 +70,7 @@
 				"path": "Assets/Astral Codex/DB_Mural.prefab",
 				"position": {
 					"x": -205.541779,
-					"y": 224.457016,
+					"y": 224.551788,
 					"z": -425.266968
 				},
 				"rotation": {
@@ -85,7 +84,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_2",
 				"position": {
 					"x": -215.719376,
-					"y": 220.406235,
+					"y": 220.406219,
 					"z": -421.417664
 				},
 				"rotation": {
@@ -99,7 +98,7 @@
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Lighting_City/Lights_FossilDistrict/Prefab_NOM_Lamp_Glow_Diamond_Wall",
 				"position": {
 					"x": -212.862946,
-					"y": 226.255844,
+					"y": 226.255829,
 					"z": -417.9726
 				},
 				"rotation": {
@@ -112,13 +111,13 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_NorthPoleSurface/Props_NorthPoleSurface/OtherComponentsGroup/LowBuilding/Prefab_NOM_SimpleChair",
 				"position": {
 					"x": -212.237869,
-					"y": 226.9746,
+					"y": 226.974579,
 					"z": -420.17514
 				},
 				"rotation": {
-					"x": 67.5097046,
+					"x": 67.50973,
 					"y": 223.387268,
-					"z": 17.61993
+					"z": 17.61995
 				},
 				"scale": 0.9999998
 			},
@@ -126,7 +125,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (1)",
 				"position": {
 					"x": -211.389145,
-					"y": 221.529282,
+					"y": 221.529266,
 					"z": -420.344727
 				},
 				"rotation": {
@@ -140,7 +139,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (3)",
 				"position": {
 					"x": -209.788513,
-					"y": 221.13475,
+					"y": 221.134735,
 					"z": -420.624939
 				},
 				"rotation": {
@@ -153,7 +152,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
 					"x": -188.476974,
-					"y": 237.347641,
+					"y": 237.347626,
 					"z": -421.336517
 				},
 				"rotation": {
@@ -164,24 +163,10 @@
 				"scale": 1.00000024
 			},
 			{
-				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
-				"position": {
-					"x": -228.0679,
-					"y": 202.876938,
-					"z": -418.137634
-				},
-				"rotation": {
-					"x": 66.12643,
-					"y": 178.369919,
-					"z": 334.614655
-				},
-				"scale": 1.7
-			},
-			{
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
 				"position": {
 					"x": -212.058426,
-					"y": 221.542953,
+					"y": 221.542938,
 					"z": -422.67804
 				},
 				"rotation": {
@@ -195,7 +180,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
 				"position": {
 					"x": -211.665115,
-					"y": 223.292953,
+					"y": 223.292938,
 					"z": -422.1008
 				},
 				"rotation": {
@@ -209,7 +194,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
 				"position": {
 					"x": -212.030167,
-					"y": 222.558578,
+					"y": 222.558563,
 					"z": -422.33786
 				},
 				"rotation": {
@@ -222,7 +207,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District2/Interactables_HangingCity_District2/VisibleFrom_HangingCity/Props_NOM_Whiteboard (1)",
 				"position": {
 					"x": -205.858231,
-					"y": 255.2949,
+					"y": 255.294891,
 					"z": -406.602142
 				},
 				"rotation": {
@@ -236,7 +221,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Shelf (2)/Strucutre_NOM_Shelf",
 				"position": {
 					"x": -231.520676,
-					"y": 235.679672,
+					"y": 235.679657,
 					"z": -407.9357
 				},
 				"rotation": {
@@ -250,7 +235,7 @@
 				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Prefab_NOM_NomaiTree_VarDRY_3",
 				"position": {
 					"x": -232.2944,
-					"y": 231.693344,
+					"y": 231.693329,
 					"z": -404.979034
 				},
 				"rotation": {
@@ -264,7 +249,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Container",
 				"position": {
 					"x": -196.901016,
-					"y": 244.462875,
+					"y": 244.46286,
 					"z": -413.312347
 				},
 				"rotation": {
@@ -278,7 +263,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Container",
 				"position": {
 					"x": -231.052872,
-					"y": 229.310532,
+					"y": 229.310516,
 					"z": -407.082245
 				},
 				"rotation": {
@@ -292,7 +277,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
 				"position": {
 					"x": -227.829239,
-					"y": 226.249985,
+					"y": 226.249969,
 					"z": -408.4161
 				},
 				"rotation": {
@@ -306,7 +291,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
 				"position": {
 					"x": -226.775055,
-					"y": 229.646469,
+					"y": 229.646454,
 					"z": -406.7338
 				},
 				"rotation": {
@@ -320,7 +305,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
 				"position": {
 					"x": -195.603592,
-					"y": 254.193344,
+					"y": 254.193329,
 					"z": -412.511749
 				},
 				"rotation": {
@@ -334,7 +319,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (8)",
 				"position": {
 					"x": -229.41983,
-					"y": 226.404282,
+					"y": 226.404266,
 					"z": -407.572418
 				},
 				"rotation": {
@@ -347,7 +332,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (50)",
 				"position": {
 					"x": -227.326721,
-					"y": 228.513657,
+					"y": 228.513641,
 					"z": -407.5567
 				},
 				"rotation": {
@@ -361,7 +346,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (45)",
 				"position": {
 					"x": -226.594482,
-					"y": 228.988266,
+					"y": 228.988251,
 					"z": -408.026978
 				},
 				"rotation": {
@@ -374,7 +359,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (45)",
 				"position": {
 					"x": -230.27005,
-					"y": 226.427719,
+					"y": 226.4277,
 					"z": -407.737854
 				},
 				"rotation": {
@@ -388,7 +373,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (1)",
 				"position": {
 					"x": -228.0975,
-					"y": 229.82225,
+					"y": 229.822235,
 					"z": -406.000732
 				},
 				"rotation": {
@@ -402,7 +387,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (2)",
 				"position": {
 					"x": -230.809753,
-					"y": 230.343735,
+					"y": 230.343719,
 					"z": -406.805756
 				},
 				"rotation": {
@@ -416,7 +401,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (3)",
 				"position": {
 					"x": -226.927032,
-					"y": 226.726547,
+					"y": 226.726532,
 					"z": -407.877075
 				},
 				"rotation": {
@@ -429,7 +414,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/Effects_GM_AuroraWisps",
 				"position": {
 					"x": -227.920471,
-					"y": 226.505844,
+					"y": 226.505829,
 					"z": -408.2136
 				},
 				"rotation": {
@@ -554,7 +539,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -217.170517,
-					"y": 255.720688,
+					"y": 255.720673,
 					"z": -393.396149
 				},
 				"rotation": {
@@ -568,7 +553,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -216.37175,
-					"y": 252.089828,
+					"y": 252.089813,
 					"z": -396.5258
 				},
 				"rotation": {
@@ -581,7 +566,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -216.381775,
-					"y": 248.146469,
+					"y": 248.146454,
 					"z": -399.4394
 				},
 				"rotation": {
@@ -595,7 +580,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -217.692261,
-					"y": 243.771469,
+					"y": 243.771454,
 					"z": -401.877838
 				},
 				"rotation": {
@@ -609,7 +594,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -220.1334,
-					"y": 239.589828,
+					"y": 239.589813,
 					"z": -403.496155
 				},
 				"rotation": {
@@ -623,7 +608,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -221.957672,
-					"y": 235.57225,
+					"y": 235.572235,
 					"z": -405.282654
 				},
 				"rotation": {
@@ -637,7 +622,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -222.088028,
-					"y": 231.927719,
+					"y": 231.9277,
 					"z": -407.675262
 				},
 				"rotation": {
@@ -651,7 +636,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -221.800476,
-					"y": 229.220688,
+					"y": 229.220673,
 					"z": -409.610046
 				},
 				"rotation": {
@@ -665,7 +650,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -221.156662,
-					"y": 226.07225,
+					"y": 226.072235,
 					"z": -411.930969
 				},
 				"rotation": {
@@ -678,7 +663,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -219.789917,
-					"y": 223.1328,
+					"y": 223.132782,
 					"z": -414.313873
 				},
 				"rotation": {
@@ -692,7 +677,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -217.476288,
-					"y": 221.113266,
+					"y": 221.113251,
 					"z": -416.635681
 				},
 				"rotation": {
@@ -706,7 +691,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -203.544968,
-					"y": 227.437485,
+					"y": 227.437469,
 					"z": -419.431152
 				},
 				"rotation": {
@@ -719,7 +704,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -201.729172,
-					"y": 228.970688,
+					"y": 228.970673,
 					"z": -419.537231
 				},
 				"rotation": {
@@ -733,7 +718,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -199.800613,
-					"y": 232.035141,
+					"y": 232.035126,
 					"z": -418.8916
 				},
 				"rotation": {
@@ -746,13 +731,13 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -198.161179,
-					"y": 234.914047,
+					"y": 234.914032,
 					"z": -418.153259
 				},
 				"rotation": {
-					"x": 55.6776123,
-					"y": 245.421188,
-					"z": 33.4805756
+					"x": 55.67762,
+					"y": 245.421173,
+					"z": 33.48057
 				},
 				"scale": 1.00000024
 			},
@@ -760,7 +745,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -196.652481,
-					"y": 237.841782,
+					"y": 237.841766,
 					"z": -417.144135
 				},
 				"rotation": {
@@ -774,13 +759,13 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -195.359055,
-					"y": 240.310532,
+					"y": 240.310516,
 					"z": -416.253632
 				},
 				"rotation": {
 					"x": 57.46579,
 					"y": 233.811554,
-					"z": 22.752655
+					"z": 22.7526436
 				},
 				"scale": 1.00000012
 			},
@@ -788,7 +773,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -193.889542,
-					"y": 243.164047,
+					"y": 243.164032,
 					"z": -415.140381
 				},
 				"rotation": {
@@ -802,7 +787,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -192.241821,
-					"y": 245.548813,
+					"y": 245.5488,
 					"z": -414.4452
 				},
 				"rotation": {
@@ -816,7 +801,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -190.6685,
-					"y": 247.429672,
+					"y": 247.429657,
 					"z": -414.04837
 				},
 				"rotation": {
@@ -830,7 +815,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -188.940216,
-					"y": 249.42186,
+					"y": 249.421844,
 					"z": -413.660858
 				},
 				"rotation": {
@@ -844,7 +829,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -188.181046,
-					"y": 251.4746,
+					"y": 251.474579,
 					"z": -412.6961
 				},
 				"rotation": {
@@ -857,7 +842,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -188.090256,
-					"y": 254.371078,
+					"y": 254.371063,
 					"z": -410.786377
 				},
 				"rotation": {
@@ -995,7 +980,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -210.671158,
-					"y": 255.812485,
+					"y": 255.812469,
 					"z": -396.9042
 				},
 				"rotation": {
@@ -1009,7 +994,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -212.937408,
-					"y": 254.314438,
+					"y": 254.314423,
 					"z": -396.754578
 				},
 				"rotation": {
@@ -1023,7 +1008,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -215.528244,
-					"y": 252.792953,
+					"y": 252.792938,
 					"z": -396.4663
 				},
 				"rotation": {
@@ -1065,7 +1050,7 @@
 				"path": "DarkBramble_Body/Sector_DB/TurtleArch",
 				"position": {
 					"x": -219.63298,
-					"y": 241.779282,
+					"y": 241.779266,
 					"z": -402.041382
 				},
 				"rotation": {
@@ -1078,7 +1063,7 @@
 				"path": "DarkBramble_Body/Sector_DB/TurtleArch",
 				"position": {
 					"x": -198.675247,
-					"y": 232.123032,
+					"y": 232.123016,
 					"z": -418.62796
 				},
 				"rotation": {
@@ -1120,7 +1105,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
 					"x": -179.223557,
-					"y": 255.398422,
+					"y": 255.3984,
 					"z": -415.164
 				},
 				"rotation": {
@@ -1133,7 +1118,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
 					"x": -224.9949,
-					"y": 253.173813,
+					"y": 253.1738,
 					"z": -391.0031
 				},
 				"rotation": {
@@ -1147,7 +1132,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
 					"x": -253.491333,
-					"y": 231.187485,
+					"y": 231.187469,
 					"z": -389.3778
 				},
 				"rotation": {
@@ -1174,22 +1159,8 @@
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
-					"x": -239.806488,
-					"y": 222.416,
-					"z": -403.964
-				},
-				"rotation": {
-					"x": 342.7371,
-					"y": 113.610931,
-					"z": 300.623535
-				},
-				"scale": 1.00000048
-			},
-			{
-				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
-				"position": {
 					"x": -213.074631,
-					"y": 229.605453,
+					"y": 229.605438,
 					"z": -412.885956
 				},
 				"rotation": {
@@ -1203,7 +1174,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
 				"position": {
 					"x": -203.682083,
-					"y": 209.414047,
+					"y": 209.414032,
 					"z": -422.064636
 				},
 				"rotation": {
@@ -1217,7 +1188,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
 				"position": {
 					"x": -209.799332,
-					"y": 218.4199,
+					"y": 218.419891,
 					"z": -424.960449
 				},
 				"rotation": {
@@ -1231,7 +1202,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask2",
 				"position": {
 					"x": -209.465347,
-					"y": 219.392563,
+					"y": 219.392548,
 					"z": -425.945526
 				},
 				"rotation": {
@@ -1245,7 +1216,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask2",
 				"position": {
 					"x": -209.379089,
-					"y": 219.207016,
+					"y": 219.207,
 					"z": -426.063751
 				},
 				"rotation": {
@@ -1258,7 +1229,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteSleepingBag/Props_HEA_MarshmallowStick",
 				"position": {
 					"x": -210.9571,
-					"y": 224.929672,
+					"y": 224.929657,
 					"z": -422.3824
 				},
 				"rotation": {
@@ -1271,7 +1242,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask6",
 				"position": {
 					"x": -208.951035,
-					"y": 225.119125,
+					"y": 225.11911,
 					"z": -422.4664
 				},
 				"rotation": {
@@ -1284,7 +1255,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
 					"x": -214.442062,
-					"y": 216.580063,
+					"y": 216.580048,
 					"z": -423.644
 				},
 				"rotation": {
@@ -1298,7 +1269,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
 					"x": -215.42601,
-					"y": 218.861313,
+					"y": 218.8613,
 					"z": -422.217072
 				},
 				"rotation": {
@@ -1312,7 +1283,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteLogAssets/Props_HEA_MarshmallowCanOpened",
 				"position": {
 					"x": -215.817459,
-					"y": 219.3574,
+					"y": 219.357391,
 					"z": -422.592255
 				},
 				"rotation": {
@@ -1326,7 +1297,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1/plaque_paper_1 (1)",
 				"position": {
 					"x": -203.563324,
-					"y": 209.460922,
+					"y": 209.4609,
 					"z": -423.336945
 				},
 				"rotation": {
@@ -1340,7 +1311,7 @@
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Volumes_Lakebed/O2_ChertCamp",
 				"position": {
 					"x": -206.6075,
-					"y": 214.253891,
+					"y": 214.253876,
 					"z": -422.5265
 				},
 				"rotation": {
@@ -1353,7 +1324,7 @@
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Volumes_Lakebed/O2_ChertCamp",
 				"position": {
 					"x": -197.854691,
-					"y": 251.798813,
+					"y": 251.7988,
 					"z": -407.6982
 				},
 				"rotation": {
@@ -1366,7 +1337,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
 				"position": {
 					"x": -205.080154,
-					"y": 245.988266,
+					"y": 245.988251,
 					"z": -408.443085
 				},
 				"rotation": {
@@ -1379,7 +1350,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Tree_TH_Stump",
 				"position": {
 					"x": -201.813736,
-					"y": 246.908188,
+					"y": 246.908173,
 					"z": -409.488983
 				},
 				"rotation": {
@@ -1393,7 +1364,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood",
 				"position": {
 					"x": -204.060471,
-					"y": 241.701157,
+					"y": 241.701141,
 					"z": -412.0181
 				},
 				"rotation": {
@@ -1407,7 +1378,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood",
 				"position": {
 					"x": -211.077682,
-					"y": 241.2285,
+					"y": 241.228485,
 					"z": -407.4767
 				},
 				"rotation": {
@@ -1421,7 +1392,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood",
 				"position": {
 					"x": -197.00441,
-					"y": 245.6328,
+					"y": 245.632782,
 					"z": -411.907745
 				},
 				"rotation": {
@@ -1435,7 +1406,7 @@
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood",
 				"position": {
 					"x": -206.7759,
-					"y": 248.855453,
+					"y": 248.855438,
 					"z": -405.226685
 				},
 				"rotation": {
@@ -1449,7 +1420,7 @@
 				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
 				"position": {
 					"x": -204.560562,
-					"y": 210.082016,
+					"y": 210.082,
 					"z": -423.222565
 				},
 				"rotation": {
@@ -1463,7 +1434,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
 					"x": -202.955933,
-					"y": 247.972641,
+					"y": 247.972626,
 					"z": -408.295959
 				},
 				"rotation": {
@@ -1476,7 +1447,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
 					"x": -205.150482,
-					"y": 248.54686,
+					"y": 248.546844,
 					"z": -406.974884
 				},
 				"rotation": {
@@ -1490,7 +1461,7 @@
 				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
 				"position": {
 					"x": -201.933228,
-					"y": 247.2871,
+					"y": 247.287079,
 					"z": -410.0094
 				},
 				"rotation": {
@@ -1504,13 +1475,13 @@
 				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
 				"position": {
 					"x": -209.263657,
-					"y": 242.0117,
+					"y": 242.011688,
 					"z": -409.313721
 				},
 				"rotation": {
-					"x": 62.0431633,
-					"y": 219.927551,
-					"z": 25.7900715
+					"x": 62.0432243,
+					"y": 219.927567,
+					"z": 25.7901115
 				},
 				"scale": 1.00000012
 			},
@@ -1518,7 +1489,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
 				"position": {
 					"x": -202.266434,
-					"y": 247.308578,
+					"y": 247.308563,
 					"z": -409.795929
 				},
 				"rotation": {
@@ -1532,7 +1503,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
 				"position": {
 					"x": -202.554733,
-					"y": 246.498032,
+					"y": 246.498016,
 					"z": -409.721222
 				},
 				"rotation": {
@@ -1546,7 +1517,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
 				"position": {
 					"x": -202.597214,
-					"y": 247.0078,
+					"y": 247.007782,
 					"z": -409.354767
 				},
 				"rotation": {
@@ -1560,7 +1531,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask2",
 				"position": {
 					"x": -202.587234,
-					"y": 246.410141,
+					"y": 246.410126,
 					"z": -409.759247
 				},
 				"rotation": {
@@ -1574,7 +1545,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask2",
 				"position": {
 					"x": -202.521255,
-					"y": 246.488266,
+					"y": 246.488251,
 					"z": -409.745026
 				},
 				"rotation": {
@@ -1587,7 +1558,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_Flask2",
 				"position": {
 					"x": -202.582565,
-					"y": 246.542953,
+					"y": 246.542938,
 					"z": -409.6767
 				},
 				"rotation": {
@@ -1600,7 +1571,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_ShortBottle1",
 				"position": {
 					"x": -202.592926,
-					"y": 247.029282,
+					"y": 247.029266,
 					"z": -409.341675
 				},
 				"rotation": {
@@ -1613,7 +1584,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_ShortBottle1",
 				"position": {
 					"x": -202.2265,
-					"y": 247.07225,
+					"y": 247.072235,
 					"z": -410.0192
 				},
 				"rotation": {
@@ -1627,7 +1598,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
 				"position": {
 					"x": -208.093063,
-					"y": 244.089828,
+					"y": 244.089813,
 					"z": -408.062531
 				},
 				"rotation": {
@@ -1641,7 +1612,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_ShortBottle1 (1)",
 				"position": {
 					"x": -208.491013,
-					"y": 245.443344,
+					"y": 245.443329,
 					"z": -408.384979
 				},
 				"rotation": {
@@ -1654,7 +1625,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_ShortBottle1 (1)",
 				"position": {
 					"x": -208.788925,
-					"y": 244.248032,
+					"y": 244.248016,
 					"z": -408.9949
 				},
 				"rotation": {
@@ -1668,7 +1639,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_LargePlate1",
 				"position": {
 					"x": -208.424484,
-					"y": 245.060532,
+					"y": 245.060516,
 					"z": -408.648651
 				},
 				"rotation": {
@@ -1682,7 +1653,7 @@
 				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_TallPot1",
 				"position": {
 					"x": -208.203873,
-					"y": 244.095688,
+					"y": 244.095673,
 					"z": -409.332123
 				},
 				"rotation": {
@@ -1696,7 +1667,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteLogAssets/Props_HEA_MarshmallowCanOpened",
 				"position": {
 					"x": -208.862442,
-					"y": 244.873032,
+					"y": 244.873016,
 					"z": -408.579346
 				},
 				"rotation": {
@@ -1710,7 +1681,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteLogAssets/Props_HEA_MarshmallowCanOpened",
 				"position": {
 					"x": -205.610275,
-					"y": 248.876938,
+					"y": 248.876923,
 					"z": -407.41153
 				},
 				"rotation": {
@@ -1724,7 +1695,7 @@
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
 				"position": {
 					"x": -205.236649,
-					"y": 224.25975,
+					"y": 224.259735,
 					"z": -424.6385
 				},
 				"rotation": {
@@ -1737,7 +1708,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_QuantumGroveEntrance/DetailPatches_QuantumGroveEntrance/Foliage_QuantumGroveEntrance/Foliage_TH_LowPatch (12)",
 				"position": {
 					"x": -204.138336,
-					"y": 249.779282,
+					"y": 249.779266,
 					"z": -407.92688
 				},
 				"rotation": {
@@ -1750,7 +1721,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_QuantumGroveEntrance/DetailPatches_QuantumGroveEntrance/Foliage_QuantumGroveEntrance/Foliage_TH_HighPatch (1)",
 				"position": {
 					"x": -211.506348,
-					"y": 240.980453,
+					"y": 240.980438,
 					"z": -408.737946
 				},
 				"rotation": {
@@ -1764,7 +1735,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_QuantumGroveEntrance/DetailPatches_QuantumGroveEntrance/Foliage_QuantumGroveEntrance/Foliage_TH_HighPatch (1)",
 				"position": {
 					"x": -198.541061,
-					"y": 245.667953,
+					"y": 245.667938,
 					"z": -412.917938
 				},
 				"rotation": {
@@ -1777,7 +1748,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_QuantumGroveEntrance/DetailPatches_QuantumGroveEntrance/Foliage_QuantumGroveEntrance/Foliage_TH_HighPatch (1)",
 				"position": {
 					"x": -204.157425,
-					"y": 241.001938,
+					"y": 241.001923,
 					"z": -413.6591
 				},
 				"rotation": {
@@ -1791,7 +1762,7 @@
 				"path": "TimberHearth_Body/Sector_TH/Sector_QuantumGroveEntrance/DetailPatches_QuantumGroveEntrance/Foliage_QuantumGroveEntrance/Foliage_TH_HighPatch (1)",
 				"position": {
 					"x": -207.792374,
-					"y": 247.718735,
+					"y": 247.718719,
 					"z": -407.15564
 				},
 				"rotation": {
@@ -1805,13 +1776,13 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (8)",
 				"position": {
 					"x": -202.251373,
-					"y": 220.970688,
+					"y": 220.970673,
 					"z": -423.8599
 				},
 				"rotation": {
-					"x": 68.16615,
-					"y": 211.251465,
-					"z": 7.927811
+					"x": 68.16634,
+					"y": 211.25148,
+					"z": 7.927857
 				},
 				"scale": 0.9999998
 			},
@@ -1819,7 +1790,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (8)",
 				"position": {
 					"x": -199.299332,
-					"y": 242.666,
+					"y": 242.665985,
 					"z": -413.78775
 				},
 				"rotation": {
@@ -1833,7 +1804,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (8)",
 				"position": {
 					"x": -195.982147,
-					"y": 244.17186,
+					"y": 244.171844,
 					"z": -414.557129
 				},
 				"rotation": {
@@ -1847,13 +1818,13 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -207.858429,
-					"y": 241.455063,
+					"y": 241.455048,
 					"z": -410.06134
 				},
 				"rotation": {
-					"x": 67.85746,
-					"y": 165.452713,
-					"z": 327.448364
+					"x": 67.857605,
+					"y": 165.452667,
+					"z": 327.4483
 				},
 				"scale": 1.00000024
 			},
@@ -1861,11 +1832,11 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -201.586014,
-					"y": 247.6621,
+					"y": 247.662079,
 					"z": -409.7275
 				},
 				"rotation": {
-					"x": 48.27637,
+					"x": 48.2763977,
 					"y": 168.799988,
 					"z": 333.505737
 				},
@@ -1875,7 +1846,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -204.209671,
-					"y": 249.691391,
+					"y": 249.691376,
 					"z": -406.734253
 				},
 				"rotation": {
@@ -1889,7 +1860,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -205.060287,
-					"y": 242.361313,
+					"y": 242.3613,
 					"z": -411.524536
 				},
 				"rotation": {
@@ -1903,13 +1874,13 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -208.122833,
-					"y": 240.052719,
+					"y": 240.0527,
 					"z": -410.1773
 				},
 				"rotation": {
-					"x": 58.59059,
+					"x": 58.59064,
 					"y": 211.831482,
-					"z": 2.92018342
+					"z": 2.92020917
 				},
 				"scale": 0.99999994
 			},
@@ -1917,7 +1888,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -208.7903,
-					"y": 238.869125,
+					"y": 238.86911,
 					"z": -410.74588
 				},
 				"rotation": {
@@ -1930,7 +1901,7 @@
 				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (9)",
 				"position": {
 					"x": -209.895462,
-					"y": 244.910141,
+					"y": 244.910126,
 					"z": -405.979523
 				},
 				"rotation": {
@@ -1943,7 +1914,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
 				"position": {
 					"x": -211.043961,
-					"y": 218.746078,
+					"y": 218.746063,
 					"z": -425.5065
 				},
 				"rotation": {
@@ -1957,7 +1928,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
 				"position": {
 					"x": -209.761826,
-					"y": 218.646469,
+					"y": 218.646454,
 					"z": -426.1311
 				},
 				"rotation": {
@@ -1970,7 +1941,7 @@
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Box",
 				"position": {
 					"x": -210.304871,
-					"y": 218.941391,
+					"y": 218.941376,
 					"z": -425.757751
 				},
 				"rotation": {
@@ -1985,7 +1956,7 @@
 				"path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder",
 				"position": {
 					"x": -208.053375,
-					"y": 244.5078,
+					"y": 244.507782,
 					"z": -409.1425
 				},
 				"rotation": {
@@ -1999,7 +1970,7 @@
 				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
 				"position": {
 					"x": -208.606949,
-					"y": 244.533188,
+					"y": 244.533173,
 					"z": -408.896027
 				},
 				"rotation": {
@@ -2013,7 +1984,7 @@
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
 				"position": {
 					"x": -212.993332,
-					"y": 220.082016,
+					"y": 220.082,
 					"z": -419.1059
 				},
 				"rotation": {
@@ -2026,15 +1997,125 @@
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
 				"position": {
-					"x": -222.9508,
-					"y": 220.003,
-					"z": -414.932861
+					"x": -222.951157,
+					"y": 220.003021,
+					"z": -414.9324
 				},
 				"rotation": {
 					"x": 341.1371,
 					"y": 104.193649,
 					"z": 302.59967
 				}
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -251.436813,
+					"y": 193.945679,
+					"z": -411.0928
+				},
+				"rotation": {
+					"x": 311.763062,
+					"y": 106.139969,
+					"z": 295.19
+				}
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -258.605835,
+					"y": 211.119,
+					"z": -397.472931
+				},
+				"rotation": {
+					"x": 331.703979,
+					"y": 112.385834,
+					"z": 297.1325
+				}
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -280.7414,
+					"y": 175.869156,
+					"z": -397.03656
+				},
+				"rotation": {
+					"x": 288.336456,
+					"y": 12.3450623,
+					"z": 24.60433
+				},
+				"scale": 2.0
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -236.650986,
+					"y": 205.150238,
+					"z": -416.136932
+				},
+				"rotation": {
+					"x": 312.892548,
+					"y": 90.52752,
+					"z": 305.217834
+				},
+				"scale": 0.5
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -223.1675,
+					"y": 207.002838,
+					"z": -421.851349
+				},
+				"rotation": {
+					"x": 317.568359,
+					"y": 315.432526,
+					"z": 58.3845177
+				},
+				"scale": 0.4999999
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -249.2887,
+					"y": 220.748489,
+					"z": -398.5697
+				},
+				"rotation": {
+					"x": 345.516663,
+					"y": 116.546822,
+					"z": 296.98938
+				},
+				"scale": 0.4999999
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -237.40799,
+					"y": 224.9882,
+					"z": -403.7486
+				},
+				"rotation": {
+					"x": 48.86791,
+					"y": 162.841141,
+					"z": 319.186035
+				},
+				"scale": 0.399999917
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {
+					"x": -241.236862,
+					"y": 212.027145,
+					"z": -409.7527
+				},
+				"rotation": {
+					"x": 332.603668,
+					"y": 108.066658,
+					"z": 299.906555
+				},
+				"scale": 0.399999917
 			}
 		],
 		"dialogue": [
@@ -2134,9 +2215,9 @@
 					}
 				],
 				"position": {
-					"x": -230.505783,
+					"x": -230.5058,
 					"y": 234.907486,
-					"z": -406.313965
+					"z": -406.313843
 				},
 				"rotation": {
 					"x": 300.7578,
@@ -2185,14 +2266,14 @@
 					}
 				],
 				"position": {
-					"x": -222.8728,
-					"y": 220.2514,
-					"z": -415.84906
+					"x": -222.970413,
+					"y": 220.3235,
+					"z": -415.724518
 				},
 				"rotation": {
-					"x": 19.0133,
-					"y": 127.659,
-					"z": 6.06760073
+					"x": 2.34426856,
+					"y": 117.2657,
+					"z": 4.116002
 				},
 				"type": "scroll",
 				"location": "unspecified",
@@ -2228,9 +2309,9 @@
 				"identificationRadius": 5.0,
 				"name": "Translation Probe Thicket",
 				"position": {
-					"x": -231.6082,
-					"y": 235.6904,
-					"z": -412.5423
+					"x": -229.9409,
+					"y": 215.3773,
+					"z": -415.1065
 				}
 			}
 		]

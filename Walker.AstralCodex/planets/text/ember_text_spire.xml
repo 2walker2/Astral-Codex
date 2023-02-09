@@ -1,0 +1,22 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SPIRE: We will need to build a gravity cannon here on <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]> to allow for shuttle travel back to <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>. This model can be used as reference for the full-scale construction as well as to send small objects until construction is complete.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SPIRE: Despite its scale, this model operates at full power. Be careful when near it - stepping inside will result in a rapid trip to orbit.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>1</ParentID>
+		<Text>KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with  <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. With passengers such a collision would surely be fatal.</Text>
+	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_ember_shuttle</FactID>
+	      	<Condition>4</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 501936608
+CRC: 2058120511
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4b32439436509a4e311f74232814e23d
+    Hash: e20289444ba6acc233c68837948284be
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1c36ec90ae6df5702325e22a17c625d8
+    Hash: 59368301220b170f99894c86a8608b7a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -54,8 +54,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: c6fe68bc48c100c4386d817d187c61d4, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
@@ -82,12 +80,9 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Bundle/InterloperDetail.prefab
-- Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_s.png
 - Assets/Bundle/Materials/UnlitWhite.mat
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
-- Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_SandStone_n.png
-- Assets/Bundle/RuinDependancies/Material/Structure_EYE_WallOutside_mat.mat
 - Assets/Bundle/Materials/Light.mat
 - Assets/Bundle/Tesseract.prefab
 - Assets/Bundle/Textures/Monolith.png
@@ -99,14 +94,12 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor1.prefab
 - Assets/Bundle/Models/interloper.obj
 - Assets/Bundle/Textures/Signal.png
+- Assets/Bundle/Models/timber_hearth_hologram.obj
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
-- Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_2.asset
 - Assets/Bundle/Textures/Bubble.png
-- Assets/Bundle/RuinDependancies/Textures/White_d.png
 - Assets/Bundle/Models/wire2.obj
 - Assets/Bundle/4DParticles.prefab
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintRed_d.png
 - Assets/Bundle/Materials/Bubble.mat
 - Assets/Bundle/Scanner.prefab
 - Assets/Bundle/Textures/Probe.png
@@ -116,53 +109,43 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
-- Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_PaintOrange_s.png
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Models/precursor.obj
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintWhite_d.png
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
+- Assets/Bundle/Models/brittle_hollow_hologram.obj
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/EyeProbe.prefab
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_d.png
 - Assets/Bundle/Textures/WaitHere.png
+- Assets/Bundle/Materials/ReunionMural.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
 - Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_n.png
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_d.png
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Models/interloper_detail.obj
 - Assets/Bundle/ThornParticles.prefab
+- Assets/Bundle/Textures/Reunion Mural.png
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
-- Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_Spiral_n.png
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/Materials/Skybox.mat
-- Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_0.asset
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_Spiral_d.png
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Textures/Chalkboard.jpg
 - Assets/Bundle/Materials/RedLight.mat
-- Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_1.asset
-- Assets/Bundle/RuinDependancies/Texture2D/Structure_NOM_SandStone_s.png
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Models/timber_hearth.obj
 - Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Probe.prefab
-- Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_3.asset
 - Assets/Bundle/Textures/AdvancedSpacecraft.png
-- Assets/Bundle/RuinDependancies/Material/Structure_EYE_WallInside_mat.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Models/attlerock.obj
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_n.png
 - Assets/Bundle/Materials/ThornParticles.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor3.prefab
 - Assets/Bundle/Materials/Solar Panel.mat
@@ -175,30 +158,22 @@ Assets:
 - Assets/Bundle/Textures/Population.png
 - Assets/Bundle/EyeProbeStates/ScannerState6.prefab
 - Assets/Bundle/Materials/Sprite.mat
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_WovenGrooves_s.png
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Animations/Rotate.anim
-- Assets/Bundle/RuinDependancies/Material/Structure_EYE_Floor_mat.mat
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
-- Assets/Bundle/NomaiRuin.prefab
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_s.png
 - Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
 - Assets/Bundle/Materials/Floor.mat
-- Assets/Bundle/RuinDependancies/Mesh/Collider_RuinState_7_0.asset
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_SandStone_n.png
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
-- Assets/Bundle/RuinDependancies/Material/Structure_EYE_Ceiling_mat.mat
 - Assets/Bundle/Audio/Signal.wav
+- Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat
-- Assets/Bundle/RuinDependancies/Mesh/Renderer_RuinState_7_4.asset
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
 - Assets/Bundle/Textures/Pentagon.png
-- Assets/Bundle/RuinDependancies/Material/Structure_EYE_SandStone_mat.mat
+- Assets/Bundle/Models/dark_bramble_hologram.obj
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Models/hemisphere.obj
-- Assets/Bundle/RuinDependancies/Texture2D/LOD_Structure_EYE_PaintOrange_s.png
 Dependencies: []

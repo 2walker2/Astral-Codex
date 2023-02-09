@@ -1,0 +1,838 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "CaveTwin",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "TranslationProbe2",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/EmberProbe.prefab",
+				"position": {
+					"x": -32.5076942,
+					"y": -93.72655,
+					"z": -117.636475
+				},
+				"rotation": {
+					"x": 337.013672,
+					"y": 268.933838,
+					"z": 131.414459
+				}
+			},
+			{
+				"rename": "EmberTwinTree",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumTrees/QuantumTree_Straight/Prefab_Tree_BH_Bristle_Straight/Mesh_BH_Bristle_Straight",
+				"position": {
+					"x": -20.1586418,
+					"y": -89.11717,
+					"z": -115.701439
+				},
+				"rotation": {
+					"x": 325.0268,
+					"y": 252.171082,
+					"z": 135.31575
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Interactables_NorthPole/Prefab_NOM_WarpReceiver/Structure_NOM_WarpReceiver_BrittleHollowSurface/Structure_NOM_WarpReceiver_BrittleHollowSurface_Rocks",
+				"position": {
+					"x": -21.0318871,
+					"y": -88.6562347,
+					"z": -115.778458
+				},
+				"rotation": {
+					"x": 354.016022,
+					"y": 110.266975,
+					"z": 236.072388
+				},
+				"scale": 0.15,
+				"stretch": {
+					"x": 0.15,
+					"y": 0.25,
+					"z": 0.15
+				}
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam (2)",
+				"position": {
+					"x": -13.04863,
+					"y": -69.6539154,
+					"z": -120.601532
+				},
+				"rotation": {
+					"x": 300.789,
+					"y": 185.5572,
+					"z": 185.296921
+				},
+				"scale": 0.8
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam",
+				"position": {
+					"x": -13.1627235,
+					"y": -75.58104,
+					"z": -120.114517
+				},
+				"rotation": {
+					"x": 6.560994,
+					"y": 285.7364,
+					"z": 123.450386
+				},
+				"scale": 0.8
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -20.4134369,
+					"y": -90.40297,
+					"z": -123.138268
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 312.0578,
+					"y": 204.723389,
+					"z": 337.1591
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -22.9972038,
+					"y": -93.23155,
+					"z": -120.360161
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 349.3239,
+					"y": 273.575439,
+					"z": 318.323975
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -19.8644714,
+					"y": -93.34065,
+					"z": -120.42482
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 19.1605377,
+					"y": 71.37121,
+					"z": 23.5931072
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -20.0662575,
+					"y": -93.92009,
+					"z": -123.970894
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 17.4124088,
+					"y": 1.50721133,
+					"z": 345.46402
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -19.87606,
+					"y": -93.9399261,
+					"z": -121.950714
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 307.355316,
+					"y": 49.81762,
+					"z": 158.645523
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -21.1308632,
+					"y": -94.51091,
+					"z": -122.094666
+				},
+				"removeChildren": [
+					"Structure_NOM_RailingPost_Geo"
+				],
+				"rotation": {
+					"x": 326.0839,
+					"y": 48.4461823,
+					"z": 49.73481
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+				"position": {
+					"x": -17.5400085,
+					"y": -83.31596,
+					"z": -120.180435
+				},
+				"rotation": {
+					"x": 8.021166,
+					"y": 287.6093,
+					"z": 124.602867
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+				"position": {
+					"x": -24.3102188,
+					"y": -92.50249,
+					"z": -111.844025
+				},
+				"rotation": {
+					"x": 310.8308,
+					"y": 162.67308,
+					"z": 205.12439
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -22.59098,
+					"y": -93.8826447,
+					"z": -111.229195
+				},
+				"rotation": {
+					"x": 308.488037,
+					"y": 199.5972,
+					"z": 175.954315
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -15.5751076,
+					"y": -85.07417,
+					"z": -119.379074
+				},
+				"rotation": {
+					"x": 348.465576,
+					"y": 274.133057,
+					"z": 125.023994
+				}
+			},
+			{
+				"rename": "Railing 1",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -15.6951027,
+					"y": -81.66429,
+					"z": -121.723793
+				},
+				"rotation": {
+					"x": 19.1810379,
+					"y": 295.793884,
+					"z": 126.539825
+				}
+			},
+			{
+				"rename": "Railing 2",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -14.5057983,
+					"y": -83.67021,
+					"z": -120.585014
+				},
+				"rotation": {
+					"x": 19.8265553,
+					"y": 296.302948,
+					"z": 126.709747
+				}
+			},
+			{
+				"rename": "Railing 3",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -13.255188,
+					"y": -85.949234,
+					"z": -119.268021
+				},
+				"rotation": {
+					"x": 354.832733,
+					"y": 278.5846,
+					"z": 124.376144
+				}
+			},
+			{
+				"rename": "Railing 4",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -14.3602409,
+					"y": -87.78395,
+					"z": -117.699371
+				},
+				"rotation": {
+					"x": 330.939667,
+					"y": 259.682922,
+					"z": 131.088043
+				}
+			},
+			{
+				"rename": "Railing 5",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -15.5153351,
+					"y": -89.58559,
+					"z": -116.145187
+				},
+				"rotation": {
+					"x": 333.944824,
+					"y": 262.56897,
+					"z": 129.752182
+				}
+			},
+			{
+				"rename": "Railing 6",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -16.4783669,
+					"y": -91.47246,
+					"z": -114.532921
+				},
+				"rotation": {
+					"x": 335.5015,
+					"y": 265.3283,
+					"z": 129.266647
+				}
+			},
+			{
+				"rename": "Railing 7",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -17.6468658,
+					"y": -93.4633942,
+					"z": -112.795265
+				},
+				"rotation": {
+					"x": 336.3401,
+					"y": 266.075073,
+					"z": 128.961929
+				}
+			},
+			{
+				"rename": "Railing 8",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -18.4077568,
+					"y": -95.27995,
+					"z": -111.199081
+				},
+				"rotation": {
+					"x": 340.318573,
+					"y": 270.089722,
+					"z": 129.044632
+				}
+			},
+			{
+				"rename": "Railing 9",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -17.6274567,
+					"y": -69.5336151,
+					"z": -128.7591
+				},
+				"rotation": {
+					"x": 338.519165,
+					"y": 270.110718,
+					"z": 119.714531
+				}
+			},
+			{
+				"rename": "Railing 10",
+				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Hanging Suit/Prefab_NOM_Railing 1 (1)",
+				"position": {
+					"x": -16.9210014,
+					"y": -67.37303,
+					"z": -130.0546
+				},
+				"rotation": {
+					"x": 336.2997,
+					"y": 268.72406,
+					"z": 120.247337
+				}
+			},
+			{
+				"path": "CannonBarrel_Body/Sector_CannonDebrisMid",
+				"position": {
+					"x": -12.1332092,
+					"y": -91.71135,
+					"z": -104.456573
+				},
+				"rotation": {
+					"x": 25.6817856,
+					"y": 83.02305,
+					"z": 0.00163419382
+				},
+				"scale": 0.05
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_SouthHemisphere/Sector_SouthPole/Sector_Observatory/Geometry_Observatory/OtherComponentsGroup/Architecture_Observatory/Structure_NOM_TornadoPlatform/Structure_NOM_TornadoPlat_BOT",
+				"position": {
+					"x": -12.2385139,
+					"y": -90.2682343,
+					"z": -100.8302
+				},
+				"rotation": {
+					"x": 312.395172,
+					"y": 189.196381,
+					"z": 176.8639
+				},
+				"scale": 0.65
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Staff",
+				"position": {
+					"x": -8.46402,
+					"y": -79.74791,
+					"z": -109.656273
+				},
+				"rotation": {
+					"x": 39.68342,
+					"y": 94.85225,
+					"z": 225.09903
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Staff",
+				"position": {
+					"x": -8.5931015,
+					"y": -81.12224,
+					"z": -108.619
+				},
+				"rotation": {
+					"x": 13.9243555,
+					"y": 137.988037,
+					"z": 217.430557
+				}
+			},
+			{
+				"path": "StatueIsland_Body/Sector_StatueIsland/Lighting_StatueIsland/OtherComponentsGroup/Prefab_NOM_WallTorch",
+				"position": {
+					"x": -10.4970207,
+					"y": -82.2228241,
+					"z": -110.758347
+				},
+				"rotation": {
+					"x": 9.091127,
+					"y": 88.68777,
+					"z": 232.945435
+				}
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/OrbitalControl/Prefab_NOM_Whiteboard_Shared/Props_NOM_Whiteboard_Shared",
+				"position": {
+					"x": 4.385357,
+					"y": -88.50676,
+					"z": -102.999214
+				},
+				"rotation": {
+					"x": 332.9862,
+					"y": 241.704529,
+					"z": 138.619186
+				}
+			},
+			{
+				"path": "StatueIsland_Body/Sector_StatueIsland/Lighting_StatueIsland/OtherComponentsGroup/Prefab_NOM_WallTorch",
+				"position": {
+					"x": 0.3402748,
+					"y": -94.09764,
+					"z": -102.071
+				},
+				"rotation": {
+					"x": 302.7541,
+					"y": 165.312424,
+					"z": 192.898254
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -12.7449684,
+					"y": -86.14804,
+					"z": -104.326569
+				},
+				"rotation": {
+					"x": 349.4416,
+					"y": 102.537735,
+					"z": 230.219284
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/QuantumShard/Prefab_NOM_Torch",
+				"position": {
+					"x": -9.489811,
+					"y": -96.37177,
+					"z": -95.282074
+				},
+				"rotation": {
+					"x": 315.707977,
+					"y": 169.023315,
+					"z": 190.424927
+				}
+			},
+			{
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Lighting_TimeLoopExperiment/Prefab_NOM_WallTorch",
+				"position": {
+					"x": 4.555092,
+					"y": -84.7234039,
+					"z": -106.811081
+				},
+				"rotation": {
+					"x": 26.2798767,
+					"y": 182.1041,
+					"z": 67.22221
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+				"position": {
+					"x": 3.35899353,
+					"y": -81.9488449,
+					"z": -108.46907
+				},
+				"rotation": {
+					"x": 309.04834,
+					"y": 196.4176,
+					"z": 166.372635
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+				"position": {
+					"x": -8.272854,
+					"y": -80.4610748,
+					"z": -109.1389
+				},
+				"rotation": {
+					"x": 355.268951,
+					"y": 98.2839661,
+					"z": 233.190918
+				}
+			},
+			{
+				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Box",
+				"position": {
+					"x": 3.68457413,
+					"y": -82.99619,
+					"z": -108.993279
+				},
+				"rotation": {
+					"x": 15.4161,
+					"y": 76.75239,
+					"z": 230.573242
+				}
+			},
+			{
+				"path": "StatueIsland_Body/Sector_StatueIsland/DetailPatches_StatueIsland/Foliage_StatueIsland_TopBits/Clutter_NOM_Pottery (1)",
+				"position": {
+					"x": 3.206768,
+					"y": -82.20169,
+					"z": -109.616257
+				},
+				"rotation": {
+					"x": 13.650136,
+					"y": 279.919983,
+					"z": 129.052826
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/Fragment OldSettlement 3/Core_OldSettlement 3/DetailPatches_Core_OldSettlement3/Props_BH_SmallClutter (5)",
+				"position": {
+					"x": -3.546749,
+					"y": -82.9318,
+					"z": -107.571976
+				},
+				"rotation": {
+					"x": 308.539734,
+					"y": 186.8619,
+					"z": 176.9123
+				}
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "codex_ember_signal",
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				}
+			}
+		],
+		"nomaiText": [
+			{
+				"position": {
+					"x": -32.47903,
+					"y": -85.9996,
+					"z": -114.706238
+				},
+				"rotation": {
+					"x": 306.807129,
+					"y": 208.208786,
+					"z": 170.179932
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_computer.xml",
+				"rename": "TranslationCairn1"
+			},
+			{
+				"position": {
+					"x": -33.91851,
+					"y": -86.30034,
+					"z": -114.064293
+				},
+				"rotation": {
+					"x": 308.547516,
+					"y": 219.385254,
+					"z": 161.3227
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_message.xml",
+				"rename": "TranslationCairn2"
+			},
+			{
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				},
+				"rotation": {
+					"x": 307.9385,
+					"y": 217.3312,
+					"z": 160.558228
+				},
+				"type": "trailmarker",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_sign.xml"
+			},
+			{
+				"position": {
+					"x": -24.253727,
+					"y": -86.375,
+					"z": -116.526749
+				},
+				"rotation": {
+					"x": 317.763123,
+					"y": 241.133514,
+					"z": 142.7359
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_annona.xml"
+			},
+			{
+				"position": {
+					"x": -18.1588745,
+					"y": -85.72266,
+					"z": -118.368652
+				},
+				"rotation": {
+					"x": 305.923737,
+					"y": 200.621582,
+					"z": 173.216522
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_thatch.xml"
+			},
+			{
+				"position": {
+					"x": -22.54919,
+					"y": -90.46094,
+					"z": -113.862152
+				},
+				"rotation": {
+					"x": 24.7089424,
+					"y": 303.982,
+					"z": 132.060516
+				},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_kousa.xml"
+			},
+			{
+				"arcInfo": [
+					{
+						"type": "adult",
+						"variation": 7
+					},
+					{
+						"position": {
+							"x": 0.1,
+							"y": 0.7
+						},
+						"type": "adult",
+						"variation": 22,
+						"zRotation": 318.0
+					},
+					{
+						"position": {
+							"x": 0.1,
+							"y": 1.6
+						},
+						"type": "adult",
+						"variation": 1,
+						"zRotation": 70.0
+					},
+					{
+						"position": {
+							"x": 0.1,
+							"y": 1.9
+						},
+						"type": "adult",
+						"variation": 5
+					},
+					{
+						"position": {
+							"x": 1.7,
+							"y": 2.3
+						},
+						"type": "adult",
+						"variation": 6,
+						"zRotation": 250.0
+					}
+				],
+				"normal": {
+					"x": -0.176187038,
+					"y": -0.5892279,
+					"z": -0.7885232
+				},
+				"position": {
+					"x": -24.6850929,
+					"y": -85.87837,
+					"z": -116.802307
+				},
+				"rotation": {
+					"x": 36.10225,
+					"y": 192.595245,
+					"z": 1.42653662E-05
+				},
+				"type": "wall",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_text_poke.xml"
+			},
+			{
+				"arcInfo": [
+					{
+						"position": {
+							"x": -0.7,
+							"y": 0.5
+						},
+						"type": "adult",
+						"variation": 6,
+						"zRotation": -4.0
+					},
+					{
+						"position": {
+							"x": 0.9,
+							"y": 1.4
+						},
+						"type": "adult",
+						"variation": 19,
+						"zRotation": 288.0
+					},
+					{
+						"position": {
+							"x": 0.68,
+							"y": 0.9
+						},
+						"type": "adult",
+						"variation": 8,
+						"zRotation": 70.0
+					}
+				],
+				"normal": {
+					"x": -0.0168260671,
+					"y": -0.680001736,
+					"z": -0.733017445
+				},
+				"position": {
+					"x": -6.15855026,
+					"y": -89.9908142,
+					"z": -101.530907
+				},
+				"rotation": {
+					"x": 42.84378,
+					"y": 181.314972,
+					"z": 3.49329525E-06
+				},
+				"type": "wall",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_text_spire.xml"
+			}
+		],
+		"signals": [
+			{
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 5.0,
+				"frequency": "Astral Codex",
+				"identificationRadius": 5.0,
+				"name": "Translation Probe Cinder",
+				"position": {
+					"x": -32.4503021,
+					"y": -93.82471,
+					"z": -117.116425
+				}
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/ember_twin_log.xml"
+	},
+	"ShockEffect": {},
+	"Volumes": {
+		"audioVolumes": [
+			{
+				"audio": "planets/assets/probes.mp3",
+				"clipSelection": "random",
+				"track": "music",
+				"position": {
+					"x": -32.50764,
+					"y": -93.72656,
+					"z": -117.636772
+				},
+				"radius": 50.0
+			}
+		],
+		"revealVolumes": [
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_ember_memorial",
+					"codex_ember_signal_rumor"
+				],
+				"position": {
+					"x": -20.72586,
+					"y": -87.05078,
+					"z": -116.832016
+				},
+				"radius": 15.0
+			}
+		]
+	}
+}
