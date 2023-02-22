@@ -2,6 +2,7 @@
 using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
@@ -201,10 +202,23 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine($"FAILED TO FIND ROTATING OBJECT " + pair.Key, MessageType.Error);
                     }
 
+                    //Replace translator font
+                    GameObject fontReference = SearchUtilities.Find("MaterialReferences/Text");
+                    if (fontReference != null)
+                    {
+                        Font font = fontReference.GetComponent<Text>().font;
+                        GameObject translatorText = SearchUtilities.Find("TranslatorText");
+                        if (translatorText != null)
+                            translatorText.GetComponent<Text>().font = font;
+                        else
+                            ModHelper.Console.WriteLine("FAILED TO FIND TRANSLATOR TEXT", MessageType.Error);
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND FONT REFERENCE", MessageType.Error);
+
                     //Increase ghost matter damage
                     GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
                     stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
-
 
                     //Enable Ember tree collision
                     GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
@@ -333,14 +347,10 @@ namespace AstralCodex
 
                     //Make quantum states turn quantum on proximity
                     GameObject quantumProximityController = SearchUtilities.Find("QuantumProximityController");
-                    GameObject quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe");
-                    if (quantumProximityController != null && quantumStates != null)
-                    {
-                        ProximityQuantum proximityQuantum = quantumProximityController.AddComponent<ProximityQuantum>();
-                        proximityQuantum.quantumStates = quantumStates.GetComponent<NewHorizons.Components.Quantum.NHMultiStateQuantumObject>();
-                    }
+                    if (quantumProximityController != null)
+                        quantumProximityController.AddComponent<EyeProbe>();
                     else
-                        ModHelper.Console.WriteLine("FAILED TO FIND QUANTUM PROXIMITY CONTROLLER OR QUANTUM STATES", MessageType.Error);
+                        ModHelper.Console.WriteLine("FAILED TO FIND QUANTUM PROXIMITY CONTROLLER", MessageType.Error);
 
                     //Reparent final recorder
                     GameObject precursorRecorder = SearchUtilities.Find("EyeRecorderPrecursor");

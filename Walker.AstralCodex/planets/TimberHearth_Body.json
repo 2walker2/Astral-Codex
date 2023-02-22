@@ -16,6 +16,12 @@
 				"scale": 1500.0,
 				"keepLoaded": true
 			}
+		],
+		"nomaiText": [
+			{
+				"type": "computer",
+				"xmlFile": "planets/text/TEST.xml"
+			}
 		]
 	},
 	"ReferenceFrame": {},

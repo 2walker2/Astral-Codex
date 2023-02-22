@@ -4,7 +4,7 @@
   "author": "Walker",
   "name": "Astral Codex",
   "uniqueName": "Walker.AstralCodex",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "owmlVersion": "2.5.2",
   "dependencies": [ "xen.NewHorizons"]
 }
