@@ -33,11 +33,11 @@
 		],
 	"canEnterViaWarpDrive": false,
 	"Skybox": {
-		"rightPath": "planets/assets/leftImage.png",
-		"leftPath": "planets/assets/rightImage.png",
-		"topPath": "planets/assets/upImage.png",
-		"bottomPath": "planets/assets/downImage.png",
-		"frontPath": "planets/assets/frontImage.png",
-		"backPath": "planets/assets/backImage.png"
+		"rightPath": "planets/assets/leftImageAlpha.png",
+		"leftPath": "planets/assets/rightImageAlpha.png",
+		"topPath": "planets/assets/upImageAlpha.png",
+		"bottomPath": "planets/assets/downImageAlpha.png",
+		"frontPath": "planets/assets/frontImageAlpha.png",
+		"backPath": "planets/assets/backImageAlpha.png"
 	}
 }

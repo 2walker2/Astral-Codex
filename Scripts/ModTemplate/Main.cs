@@ -49,7 +49,8 @@ namespace AstralCodex
                 {"RedReference", "red"},
                 {"GreenReference", "green" },
                 {"LightReference", "light" },
-                {"BlackReference", "black" }
+                {"BlackReference", "black" },
+                {"UnlitTransparentReference", "unlitTransparent" }
             };
             //Create components list
             componentsToAdd = new Dictionary<string, Type>()
@@ -202,8 +203,23 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine($"FAILED TO FIND ROTATING OBJECT " + pair.Key, MessageType.Error);
                     }
 
+                    //Replace skybox material
+                    GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+                    GameObject skyboxMaterialsReference = SearchUtilities.Find("SkyboxMaterialsReference");
+                    if (skySphere != null && skyboxMaterialsReference != null)
+                    {
+                        MeshRenderer skyboxMaterialsReferenceRenderer = skyboxMaterialsReference.GetComponent<MeshRenderer>();
+                        for (int i=0; i<skySphere.transform.childCount; i++)
+                        {
+                            MeshRenderer renderer = skySphere.transform.GetChild(i).GetComponent<MeshRenderer>();
+                            renderer.material = skyboxMaterialsReferenceRenderer.sharedMaterials[i];
+                        }
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND SKY SPHERE OR SKYBOX MATERIALS REFERENCE", MessageType.Error);
+
                     //Replace translator font
-                    GameObject fontReference = SearchUtilities.Find("MaterialReferences/Text");
+                    /*GameObject fontReference = SearchUtilities.Find("MaterialReferences/Text");
                     if (fontReference != null)
                     {
                         Font font = fontReference.GetComponent<Text>().font;
@@ -214,11 +230,14 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine("FAILED TO FIND TRANSLATOR TEXT", MessageType.Error);
                     }
                     else
-                        ModHelper.Console.WriteLine("FAILED TO FIND FONT REFERENCE", MessageType.Error);
+                        ModHelper.Console.WriteLine("FAILED TO FIND FONT REFERENCE", MessageType.Error);*/
 
                     //Increase ghost matter damage
                     GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
                     stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+
+                    //Disable old ghost matter particles
+                    SearchUtilities.Find("StationGhostMatter/DarkMatterVolume/ProbeVisuals").SetActive(false);
 
                     //Enable Ember tree collision
                     GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;

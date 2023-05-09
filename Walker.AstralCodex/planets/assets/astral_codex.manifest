@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3234750933
+CRC: 3717907351
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b16868b5fb2a9eb5952d8b2349dc38a1
+    Hash: 03ce9e5c37fc249ba8f2967db06627e5
   TypeTreeHash:
     serializedVersion: 2
     Hash: d997026aad36f07061ad7ff967da2ec2
@@ -88,7 +88,9 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Bundle/InterloperDetail.prefab
+- Assets/Bundle/Textures/Skybox/downImage.png
 - Assets/Bundle/Materials/UnlitWhite.mat
+- Assets/Bundle/Textures/Skybox/frontImage.png
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
 - Assets/Bundle/Materials/Light.mat
@@ -98,6 +100,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState0.prefab
 - Assets/Bundle/Shaders/GreenLight.shader
 - Assets/Bundle/Materials/Chalk.mat
+- Assets/Bundle/Materials/Skybox/SkyboxDown.mat
 - Assets/Bundle/Models/probe.obj
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor1.prefab
 - Assets/Bundle/Models/interloper.obj
@@ -115,14 +118,20 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState7.prefab
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
+- Assets/Bundle/Materials/Skybox/SkyboxFront.mat
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Models/precursor.obj
+- Assets/Bundle/Textures/Skybox/backImage.png
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Models/brittle_hollow_hologram.obj
+- Assets/Bundle/Materials/Skybox/SkyboxLeft.mat
 - Assets/Bundle/Audio/MonolithActivate.wav
+- Assets/Bundle/Materials/Skybox/SkyboxRight.mat
+- Assets/Bundle/Textures/Skybox/leftImage.png
+- Assets/Bundle/Materials/Skybox/SkyboxUp.mat
 - Assets/Bundle/EyeProbe.prefab
 - Assets/Bundle/Textures/WaitHere.png
 - Assets/Bundle/Materials/ReunionMural.mat
@@ -134,6 +143,7 @@ Assets:
 - Assets/Bundle/Models/interloper_detail.obj
 - Assets/Bundle/ThornParticles.prefab
 - Assets/Bundle/Textures/Reunion Mural.png
+- Assets/Bundle/SkyboxOverlay.prefab
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
@@ -154,6 +164,7 @@ Assets:
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
 - Assets/Bundle/SignalParticles.prefab
+- Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Materials/ThornParticles.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor3.prefab
@@ -179,8 +190,10 @@ Assets:
 - Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab
+- Assets/Bundle/Textures/Skybox/rightImage.png
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
+- Assets/Bundle/Textures/Skybox/upImage.png
 - Assets/Bundle/Textures/Pentagon.png
 - Assets/Bundle/Models/dark_bramble_hologram.obj
 - Assets/Bundle/Materials/GreenLight.mat

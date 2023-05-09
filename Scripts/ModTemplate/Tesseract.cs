@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using System.Collections.Generic;
 using NewHorizons;
 using NewHorizons.Utility;
+using UnityEngine.PostProcessing;
 
 namespace AstralCodex
 {
@@ -23,6 +24,7 @@ namespace AstralCodex
         GameObject trailsReveal;
         GameObject skySphere;
         int skySphereDisabled = 0;
+        PostProcessingProfile newPostProcessingProfile;
 
         void Awake()
         {
@@ -118,6 +120,12 @@ namespace AstralCodex
                     //Enable skybox
                     if (skySphere != null)
                         skySphere.SetActive(true);
+
+                    //Adjust post processing
+                    PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
+                    postProcessingSettings.colorGrading.postExposure = 0.5f;
+                    postProcessingSettings.colorGrading.temperature = -20;
+                    postProcessingSettings.colorGrading.tint = -50;
 
                     fourDLayer = 1;
                 }
