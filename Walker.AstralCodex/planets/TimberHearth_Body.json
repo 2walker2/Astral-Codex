@@ -17,14 +17,30 @@
 				"keepLoaded": true
 			}
 		],
-		"nomaiText": [
+		"slideShows": [
 			{
-				"type": "computer",
-				"xmlFile": "planets/text/TEST.xml"
+				"rename": "FlashbackSlides",
+				"type": "slideReel",
+				"slides": [
+					{"imagePath": "planets/slides/1.png"},
+					{"imagePath": "planets/slides/2.png"},
+					{"imagePath": "planets/slides/3.png"},
+					{"imagePath": "planets/slides/4.png"},
+					{"imagePath": "planets/slides/5.png"},
+					{"imagePath": "planets/slides/6.png"},
+					{"imagePath": "planets/slides/7.png"},
+					{"imagePath": "planets/slides/8.png"},
+				],
+				"playWithShipLogFacts": [
+					"codex_flashback_fact"
+				]
 			}
 		]
 	},
 	"ReferenceFrame": {},
-	"ShipLog": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/timber_log.xml"
+	},
 	"ShockEffect": {}
 }

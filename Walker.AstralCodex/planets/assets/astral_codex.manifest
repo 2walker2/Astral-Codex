@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3717907351
+CRC: 444783930
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 03ce9e5c37fc249ba8f2967db06627e5
+    Hash: fb655e7024e63f792e76f625cb740bcc
   TypeTreeHash:
     serializedVersion: 2
     Hash: d997026aad36f07061ad7ff967da2ec2
@@ -149,6 +149,7 @@ Assets:
 - Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
+- Assets/Bundle/Station v3.prefab
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
@@ -184,6 +185,7 @@ Assets:
 - Assets/Bundle/Models/monolith.obj
 - Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
 - Assets/Bundle/Materials/Floor.mat
+- Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
 - Assets/Bundle/Audio/Signal.wav

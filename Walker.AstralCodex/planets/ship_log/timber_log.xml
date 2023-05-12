@@ -1,0 +1,15 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMBER_HEARTH</ID>
+    <Entry>
+        <ID>codex_flashback</ID>
+        <Name>Flashback Vision</Name>
+        
+        <IgnoreMoreToExplore/>
+        <Curiosity>codex_astral_codex</Curiosity>
+        
+        <ExploreFact>
+            <ID>codex_flashback_fact</ID>
+            <Text>When I died, I saw a series of images that focused in on one of the modules of a Nomai structure.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

@@ -25,11 +25,17 @@ namespace AstralCodex
         Dictionary<string, string> materialsToFind;
         Dictionary<string, Type> componentsToAdd;
         Dictionary<string, Vector3> rotatingObjects;
+        
+        List<RenderTexture> flashbackTextureList;
+        bool flashbackOverridden = false;
+        int flashbackImageCount = 8;
+        int[] flashbackMultiplicity = new int[] { -1, 4, 4, 4, 4, 4, 4, 25, 4 };
 
         void Awake()
         {
             //Initialize instance
             if (instance == null) instance = this;
+            
             //Create ghost matter crystal material list
             ghostMatterCrystals = new List<string>() { 
                 "Station/Visual/Model", 
@@ -43,6 +49,7 @@ namespace AstralCodex
                 "TranslationProbe3/Model",
                 "ChimeSign"
             };
+            
             //Create materials list
             materialsToFind = new Dictionary<string, string>()
             {
@@ -50,8 +57,9 @@ namespace AstralCodex
                 {"GreenReference", "green" },
                 {"LightReference", "light" },
                 {"BlackReference", "black" },
-                {"UnlitTransparentReference", "unlitTransparent" }
+                {"SpritesDefaultReference", "spritesDefault" }
             };
+            
             //Create components list
             componentsToAdd = new Dictionary<string, Type>()
             {
@@ -71,6 +79,7 @@ namespace AstralCodex
                 {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
                 {"TranslationProbe1", typeof(BrambleProjectionActivate) },
             };
+            
             //Create rotating objects list
             rotatingObjects = new Dictionary<string, Vector3>()
             {
@@ -95,6 +104,7 @@ namespace AstralCodex
                 {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
                 {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) }
             };
+
             //Set scene loading
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
@@ -109,35 +119,25 @@ namespace AstralCodex
             newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             newHorizons.LoadConfigs(this);
 
+            //Load flashback textures
+            flashbackTextureList = new List<RenderTexture>();
+            for (int renderTextureIndex = flashbackImageCount; renderTextureIndex > 0; renderTextureIndex--)
+            {
+                Texture2D texture = ModHelper.Assets.GetTexture("textures/" + renderTextureIndex.ToString() + ".png");
+                RenderTexture renderTexture = new RenderTexture(480, 270, 0);
+                renderTexture.enableRandomWrite = true;
+                RenderTexture.active = renderTexture;
+                Graphics.Blit(texture, renderTexture);
+                flashbackTextureList.AddRange(Enumerable.Repeat(renderTexture, flashbackMultiplicity[renderTextureIndex]));
+            }
+
             //Setup
             newHorizons.GetStarSystemLoadedEvent().AddListener((string system) =>
             {
                 if (system == "SolarSystem")
                 {
-                    //Flashback override
-                    //Define parameters here
-                    /*int flashbackImageCount = 8;
-                    int repeatAmount = 5;
-                    GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
-                    if (flashbackCamera != null)
-                    {
-                        List<RenderTexture> renderTexturesList = new List<RenderTexture>();
-                        for (int renderTextureIndex = flashbackImageCount; renderTextureIndex>0; renderTextureIndex--)
-                        {
-                            Texture2D texture = ModHelper.Assets.GetTexture("textures/"+renderTextureIndex.ToString()+".png");
-                            RenderTexture renderTexture = new RenderTexture(480, 270, 0);
-                            renderTexture.enableRandomWrite = true;
-                            RenderTexture.active = renderTexture;
-                            Graphics.Blit(texture, renderTexture);
-                            renderTexturesList.AddRange(Enumerable.Repeat(renderTexture, repeatAmount));
-                        }
-                        RenderTexture[] renderTextureArray = renderTexturesList.ToArray();
-                        FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
-                        flashbackRecorder._renderTextureArray = renderTextureArray;
-                        flashbackRecorder._numCapturedSnapshots = flashbackImageCount * repeatAmount;
-                    }
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA");*/
+                    //Reset flashback overriden
+                    flashbackOverridden = false;
 
                     //Assign ghost matter material
                     foreach (string ghostMatterCrystal in ghostMatterCrystals)
@@ -203,6 +203,16 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine($"FAILED TO FIND ROTATING OBJECT " + pair.Key, MessageType.Error);
                     }
 
+                    //Hide flashback slides
+                    GameObject flashbackSlides = SearchUtilities.Find("FlashbackSlides");
+                    if (flashbackSlides != null)
+                    {
+                        flashbackSlides.transform.GetChild(0).gameObject.SetActive(false);
+                        flashbackSlides.GetComponent<SphereCollider>().enabled = false;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SLIDES");
+
                     //Replace skybox material
                     GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
                     GameObject skyboxMaterialsReference = SearchUtilities.Find("SkyboxMaterialsReference");
@@ -250,9 +260,7 @@ namespace AstralCodex
                         rfVolume.SetActive(true);
                     }
                     else
-                    {
                         ModHelper.Console.WriteLine("FAILED TO FIND REFERENCE VOLUME", MessageType.Error);
-                    }
 
                     //Make sun cactus not cast shadows
                     GameObject sunCactus = GameObject.Find("Sun_Body/Sector_SUN/Prefab_HGT_Cactus_Single_A");
@@ -321,6 +329,16 @@ namespace AstralCodex
                     }
                     else
                         ModHelper.Console.WriteLine("FAILED TO FIND BRAMBLE RECORDER OR DIALOGUE", MessageType.Error);
+
+                    //Add physics to Interloper recorder
+                    GameObject interloperRecorder = SearchUtilities.Find("InterloperRecorderWarning");
+                    if (interloperRecorder != null)
+                    {
+                        AddPhysicsCustom addPhysics = interloperRecorder.AddComponent<AddPhysicsCustom>();
+                        addPhysics.Sector = interloperRecorder.GetComponentInParent<Sector>();
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND INTERLOPER RECORDER OR ENTRYWAY TRIGGER");
                 }
                 else if (system == "EyeOfTheUniverse")
                 {
@@ -417,6 +435,42 @@ namespace AstralCodex
                         assetBundle.Unload(false);
                     }
                 }
+            }
+        }
+
+        void Update()
+        {
+            //Override flashback when player dies
+            if (Locator.GetDeathManager().IsPlayerDying() && !flashbackOverridden)
+            {
+                if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
+                {
+                    Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
+                    GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
+                    if (flashbackCamera != null)
+                    {
+                        //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
+                        FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
+                        RenderTexture[] flashbackTextureArray = new RenderTexture[flashbackTextureList.Count];
+                        for (int i = 0; i < flashbackTextureList.Count; i++)
+                        {
+                            flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
+                            flashbackTextureArray[i].enableRandomWrite = true;
+                            Graphics.CopyTexture(flashbackTextureList[i], flashbackTextureArray[i]);
+                        }
+                        flashbackRecorder._renderTextureArray = flashbackTextureArray;
+                        flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
+
+                        GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
+                        if (flashbackScreen != null)
+                            flashbackScreen.GetComponent<MeshRenderer>().material = materials["spritesDefault"];
+                        else
+                            ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
+                }
+                flashbackOverridden = true;
             }
         }
     }
