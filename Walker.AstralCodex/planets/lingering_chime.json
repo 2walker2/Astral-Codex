@@ -1,16 +1,23 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
 	"name": "Lingering Chime",
+	"AmbientLights": [
+		{
+			"outerRadius": 60,
+			"innerRadius": 20,
+			"intensity": 1.4
+		}
+	],
 	"Atmosphere": {
 		"hasOxygen": true,
 		"hasSnow": true,
-		"size": 20.0
+		"size": 50.0
 	},
 	"Base": {
 		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
-		"surfaceSize": 30.0
+		"surfaceSize": 50.0
 	},
 	"Orbit": {
 		"staticPosition": {
@@ -136,7 +143,7 @@
 				"audio": "planets/assets/ice-and-decay.mp3",
 				"clipSelection": "random",
 				"track": "music",
-				"radius": 20.0
+				"radius": 40.0
 			},
 			{
 				"audio": "NomaiTractorBeamAmbient_LP",
