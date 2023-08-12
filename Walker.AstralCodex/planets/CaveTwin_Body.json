@@ -599,36 +599,60 @@
 		],
 		"nomaiText": [
 			{
-				"position": {
-					"x": -32.47903,
-					"y": -85.9996,
-					"z": -114.706238
-				},
-				"rotation": {
-					"x": 306.807129,
-					"y": 208.208786,
-					"z": 170.179932
-				},
+				"position": {"x": -31.6847, "y": -85.97685, "z": -114.9522},
+				"rotation": {"x": 312.6858, "y": 234.3649, "z": 150.028},
 				"type": "cairn",
 				"location": "unspecified",
-				"xmlFile": "planets/text/ember_cairn_precursor_computer.xml",
+				"xmlFile": "planets/text/ember_cairn_precursor_1.xml",
 				"rename": "TranslationCairn1"
 			},
 			{
-				"position": {
-					"x": -33.91851,
-					"y": -86.30034,
-					"z": -114.064293
-				},
-				"rotation": {
-					"x": 308.547516,
-					"y": 219.385254,
-					"z": 161.3227
-				},
+				"position": {"x": -36.5802, "y": -82.79668, "z": -115.8316},
+				"rotation": {"x": 307.4332, "y": 226.5268, "z": 156.4814},
 				"type": "cairn",
 				"location": "unspecified",
-				"xmlFile": "planets/text/ember_cairn_precursor_message.xml",
+				"xmlFile": "planets/text/ember_cairn_precursor_2.xml",
 				"rename": "TranslationCairn2"
+			},
+			{
+				"position": {"x": -40.60023, "y": -85.74376, "z": -112.3206},
+				"rotation": {"x": 320.8389, "y": 253.7905, "z": 138.8553},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_3.xml",
+				"rename": "TranslationCairn3"
+			},
+			{
+				"position": {"x": -36.50897, "y": -79.17548, "z": -118.3765},
+				"rotation": {"x": 302.5185, "y": 210.0204, "z": 169.4201},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_4.xml",
+				"rename": "TranslationCairn4"
+			},
+			{
+				"position": {"x": -40.53509, "y": -81.23277, "z": -115.6447},
+				"rotation": {"x": 319.6249, "y": 254.8861, "z": 136.6464},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_5.xml",
+				"rename": "TranslationCairn5"
+			},
+			{
+				"position": {"x": -44.05956, "y": -78.88853, "z": -116.0456},
+				"rotation": {"x": 319.5957, "y": 255.2949, "z": 136.3835},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_6.xml",
+				"rename": "TranslationCairn6"
+			},
+			{
+				"position": {"x": -46.97319, "y": -84.97433, "z": -110.5724},
+				"rotation": {"x": 341.3444, "y": 277.0232, "z": 127.5025},
+				"type": "cairn",
+				"location": "unspecified",
+				"xmlFile": "planets/text/ember_cairn_precursor_7.xml",
+				"rename": "TranslationCairn7"
 			},
 			{
 				"position": {
@@ -812,7 +836,8 @@
 					"x": -32.4503021,
 					"y": -93.82471,
 					"z": -117.116425
-				}
+				},
+				"reveals": "codex_ember_signal_rumor"
 			}
 		]
 	},
@@ -852,8 +877,7 @@
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
-					"codex_ember_memorial",
-					"codex_ember_signal_rumor"
+					"codex_ember_memorial"
 				],
 				"position": {
 					"x": -20.72586,

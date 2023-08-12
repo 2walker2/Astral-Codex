@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Props_NOM_GravityCrystal_mat
+  m_Shader: {fileID: 4800000, guid: 11d906b81c24c3d49a59b26d3d4c0283, type: 2}
+  m_ShaderKeywords: _DETAIL_MULX2 _NORMALMAP
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 8bc1e60ee50dbbd4b8f1bce2a67c7dc5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParticlesTex:
+        m_Texture: {fileID: 2800000, guid: 7c439c2b77bfa4f4191451cda9a49834, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0.01, y: 0.1}
+    m_Floats:
+    - _BumpScale: 0.1
+    - _BumpScale1: 1
+    - _BumpScale2: 1
+    - _CameraFadeDist: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DistortScale: 1
+    - _DstBlend: 0
+    - _Extinction: 1
+    - _ExtinctionExp: 1
+    - _FogDensity: 1
+    - _FogExp: 1
+    - _GeomFadeDist: 1
+    - _Glossiness: 0.62
+    - _Metallic: 1
+    - _Metalness: 1
+    - _Mode: 0
+    - _Occlusion: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ParticlesDistort: 1
+    - _Shininess: 0.078125
+    - _Smoothness: 0.59749997
+    - _Specular: 0.11607142
+    - _SrcBlend: 1
+    - _Stencil: -1
+    - _Stencil_readmask: 0
+    - _Stencil_refvalue: 0
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BRDFColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.52941155, g: 0.5762674, b: 1.5, a: 1}
+    - _EmissionColor: {r: 0.52941155, g: 0.5762674, b: 1.5, a: 1}
+    - _FogColor: {r: 0.09999997, g: 0.19999996, b: 0.39999998, a: 1}
+    - _LightColor: {r: 0.24228095, g: 0.29154545, b: 2.4400616, a: 1}
+    - _LightPosRad: {r: 0, g: 0.69, b: 0, a: 0.7}
+    - _ParticlesColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}

@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>position assumed - detecting warp technology
+|                 */ \.|/_          _            |
+|                  .-\|/*\         | \           |
+|           8   8    ||    8      /   \          |
+scanning environs - located new parley
+		</Text>
+	</TextBlock>
+</NomaiObject>

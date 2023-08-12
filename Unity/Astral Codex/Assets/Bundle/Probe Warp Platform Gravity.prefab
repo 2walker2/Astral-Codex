@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5251435262288304943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5254186687437953793}
+  - component: {fileID: 5191793020511050123}
+  - component: {fileID: 5292301154902326937}
+  - component: {fileID: 5292448316848685783}
+  - component: {fileID: 3179623237953859756}
+  m_Layer: 17
+  m_Name: Probe Warp Platform Gravity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5254186687437953793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251435262288304943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5191793020511050123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251435262288304943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.6844638, z: 1}
+  m_Center: {x: 0, y: 0.15776764, z: 0}
+--- !u!114 &5292301154902326937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251435262288304943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lodActivationMask:
+    player: 0
+    probe: 0
+    ship: 0
+    environment: 0
+  _ignorePhysicsSwapDelay: 0
+  _drawBounds: 0
+  _doNotStream: 0
+--- !u!114 &5292448316848685783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251435262288304943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2d328d259791744bb8539650a9c619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layer: 0
+  _priority: 1
+  _alignmentPriority: 0
+  _inheritable: 0
+  _fieldDirection: {x: 0, y: -1, z: 0}
+  _fieldMagnitude: 1
+  _affectsAlignment: 1
+  _offsetCentripetalForce: 0
+  _playGravityCrystalAudio: 1
+--- !u!114 &3179623237953859756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251435262288304943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialOccupants: []
+  _sharedEntryways: []
+  _ignoreDuplicateOccupantWarning: 0

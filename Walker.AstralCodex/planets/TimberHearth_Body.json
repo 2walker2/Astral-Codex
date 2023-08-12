@@ -17,6 +17,13 @@
 				"keepLoaded": true
 			}
 		],
+		"translatorText" : [
+			{
+				"type": "recorder",
+				"xmlFile": "planets/text/TEST.xml",
+				"position": {"x": 15.29159, "y": -43.70462, "z": 185.1682}
+			}	
+		],
 		"slideShows": [
 			{
 				"rename": "FlashbackSlides",

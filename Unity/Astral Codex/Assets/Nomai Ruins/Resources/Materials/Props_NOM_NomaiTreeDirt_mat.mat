@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Props_NOM_NomaiTreeDirt_mat
+  m_Shader: {fileID: 4800000, guid: 36a45932bf50cc0498d4c0f203b3b3d3, type: 2}
+  m_ShaderKeywords: _EMISSION _NORMALMAP _VERTEXOCCLUSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 6efba5449e365684b82dc2ad18cda127, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2a34b1048949a25409d7ccabd1355e2b, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AltitudeBlendWidth: 20
+    - _AltitudeCutoff: 240
+    - _AngleBlendWidth: 0.5
+    - _AngleCutoff: 0.1
+    - _BumpScale: 0.5
+    - _Cutoff: 0.5
+    - _DetailGlossiness: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.25
+    - _GlossyReflections: 1
+    - _HeightBlendWidth: 0.63
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Overlay1Blend: 0
+    - _Overlay1BumpScale: 1
+    - _Overlay1GlossMapScale: 0
+    - _Overlay1Glossiness: 0.35
+    - _Overlay1Mode: 0
+    - _Overlay1OcclusionStrength: 0.5
+    - _Overlay2Blend: 0.15
+    - _Overlay2BumpScale: 0.5
+    - _Overlay2GlossMapScale: 0
+    - _Overlay2Glossiness: 0.059
+    - _Overlay2Mode: 0
+    - _Overlay2OcclusionStrength: 0.5
+    - _OverlayBumpScale: 0.1
+    - _OverlayDetailGlossiness: 0
+    - _OverlayDetailNormalMapScale: 1
+    - _OverlayGlossiness: 0
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _VertexColorAlbedo: 0
+    - _VertexColorSpecular: 0
+    - _VertexOcclusion: 1
+    - _ViewModel: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.9020015, g: 0.9338235, b: 0.8514273, a: 1}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Overlay1Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Overlay2Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OverlayDetailColor: {r: 1, g: 1, b: 1, a: 1}

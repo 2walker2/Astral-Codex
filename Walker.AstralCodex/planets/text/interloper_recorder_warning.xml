@@ -1,32 +1,62 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>ERROR: Fuel Unstable; Deploying liquid to counteract
-Progress 00%: -------------------------
-Progress 36%: |||||||||----------------
-Progress 84%: |||||||||||||||||||||----
-Liquid Deployment Complete
+		<Text>fuel unstable - deploying liquid to neutralize
+| progress 00%: -------------------------------- |
+| progress 36%: ||||||||||||-------------------- |
+| progress 84%: |||||||||||||||||||||||||||----- |
+fuel remains fatal - liquid frozen into ice
 </Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>ERROR: Liquid Frozen; Fuel Remains Fatal
-/ \
-/ ! \
------
-Retrieving Warning; Translating; Translation Complete
-</Text>
+		<Text>[warning: breach scenario in progress               ]
+[retrieving prerecorded message...                  ]
+[    -time recorded: t-minus 125,267 G-hr           ]
+[    -logs author: scientist                        ]
+[evacuate immediately                               ]
+		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>I plea that this message reaches you in time. The fuel contained within this seed is highly dangerous and contact with it is certain to end in your demise. You must rapidly locate to a safe distance or submerge yourselves until it dissipates. Your continued survival depends on it!</Text>
+		<Text>"This message will never be read. If it is, something has gone terribly wrong. The fuel contained within this seed is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is an aquatic species and might thus escape the blast."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: energy-dense enough to last the eons necessary when properly compressed, and light enough transport effectively."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>"Despite the other two's objections, our mission is too important to risk. Even should the unthinkable happen and a breach occur, a successful transmission will still have been worth it."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>5</ParentID>
+		<Text>"... I am sorry."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<ParentID>6</ParentID>
+		<Text>
+[ seed breached                                     ]
+[ fuel dispersed                                    ]
+[ life signs dwindling                              ]
+[ as stars at the end of a universe                 ]
+[                               ... connection lost ]
+		</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
 	      	<FactID>codex_interloper_recorder_warning</FactID>
-	      	<Condition>1</Condition>
+	      	<Condition>5</Condition>
 	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

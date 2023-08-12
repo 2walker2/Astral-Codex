@@ -1,0 +1,39 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text> _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+Homeworld - crystal latices partitioning the sky.
+\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ 		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>
+   .   .   . .      .  .       .     .   .      . 
+.    .  .         .        .          .          .
+Untold galaxies - a myriad of bodies within.
+   .          . .    .      .    .        .     .
+.      .  .    .       .       .      .     .    .
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>0  0                                           0  0
+|  |  0                                     0  |  |
+0  0  | The thread we start must not break. |  0  0
+|  |  0                                     0  |  |
+0  0                                           0  0
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>We will not be forgotten.
+- Archivist
+		</Text>
+	</TextBlock>
+</NomaiObject>

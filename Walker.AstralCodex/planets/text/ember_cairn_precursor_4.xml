@@ -1,0 +1,7 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>"Research Log - Cycle 8195: Should the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]> be discovered by an unprepared party, it wou<![CDATA[<Color=#00ffbc>]]>|<![CDATA[</Color>]]>d simply incite fear of an event which cannot be averted. Safeguards must be put in place to ensure it can only be accessed by <![CDATA[<Color=#00ffbc>]]>}<![CDATA[</Color>]]>hose who can continue the thread." 
+		</Text>
+	</TextBlock>
+</NomaiObject>

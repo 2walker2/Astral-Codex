@@ -1,36 +1,65 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>detecting life nearing sun   communication detected translation begun   deploying first contact via local medium</Text>
+		<Text>life located sixth planet from sun<![CDATA[<Color=lightblue>]]>
+| \\\~     o               .                    |
+|  |||~    |      o       o       O   --> O &lt;-- |
+| ///~     o       .                            |
+<![CDATA[</Color>]]>communication detected - mimicking local medium
+		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>To Those Who Come After.
-Greetings from the past, may this mess<![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>ge find you well. It has traveled far since I set it out upon an unknown astral sea. I know not who you are, r<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>ader, yet I hope a connection may here be made.</Text>
+		<Text>[retrieving relevant log entry...                   ]
+[    -search query: "eclipse"                       ]
+[    -time recorded: t-minus 125,268 G-hr           ]
+[    -log author: explorer                          ]
+[error: translation incomplete                      ]
+		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<ParentID>2</ParentID>
-		<Text>I offer you in gift the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>, a collection of knowledge recorded and <![CDATA[<Color=#00ffbc>]]>+<![CDATA[</Color>]]>reserved eons before your time. It was the work of my l<![CDATA[<Color=#00ffbc>]]>[<![CDATA[</Color>]]>fe to bring this information to your light receptors and I desire that the minds that receive it be of curious <![CDATA[<Color=#00ffbc>]]>/<![CDATA[</Color>]]>ature that my loss has not been in vain.</Text>
+		<ParentID>1</ParentID>
+		<Text>"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>rrive at a new cluster n<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. The <![CDATA[<Color=orange>]]>Codex<![CDATA[</Color>]]> is getting a little dusty with so little of note to record."
+		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>Seek the <![CDATA[<Color=orange>]]>Lingering Chime<![CDATA[</Color>]]>. Once your <![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>pecies has grown, and advanced, s<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>fficiently to be <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>orthy of the mission it bestows, may it grant you the <![CDATA[<Color=orange>]]>Astral Codex<![CDATA[</Color>]]>.</Text>
+		<Text>"Note: I hope the next body we dock at has a flammable atmosphere. It's been so long since our last cam<![CDATA[<Color=#00ffbc>]]>+<![CDATA[</Color>]]>fire. Do you think the there will st<![CDATA[<Color=#00ffbc>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#00ffbc>]]>/<![CDATA[</Color>]]>t of the universe."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>"Archivist was talking again this cycle about needing to test the recipients' technology. It's the mo<![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>t he's talked in a long time, kept going on about "the sun" and "spheres" and "a total eclipse"."
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>5</ParentID>
+		<Text>"Wait... but what about marshmallows?"
+		</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<ParentID>5</ParentID>
+		<Text>"It's strange how much he insists on this additional safeg<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>ard when he's usually so worried about any possible chance that the thread <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>e're starting might break."
+		</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
 	      	<FactID>codex_bramble_scroll</FactID>
-	      	<Condition>4</Condition>
+	      	<Condition>7</Condition>
 	    </RevealFact>
 	    <RevealFact>
 	      	<FactID>codex_bramble_symbols</FactID>
-	      	<Condition>4</Condition>
+	      	<Condition>2</Condition>
 	    </RevealFact>
 	    <RevealFact>
 	      	<FactID>codex_astral_codex_bramble_rumor</FactID>
-	      	<Condition>4</Condition>
+	      	<Condition>3</Condition>
 	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

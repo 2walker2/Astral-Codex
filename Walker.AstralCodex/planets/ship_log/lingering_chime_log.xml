@@ -137,13 +137,8 @@
         </RumorFact>
 
         <ExploreFact>
-            <ID>codex_interloper_recorder_breach</ID> 
-            <Text>I found a crystalline recorder containing an apology in the core of The Interloper.</Text>
-        </ExploreFact>
-
-        <ExploreFact>
             <ID>codex_interloper_recorder_warning</ID> 
-            <Text>I found a crystalline recorder in the core of The Interloper. It describes liquid being used to counteract the effects of ghost matter along with a warning about the impending rupture.</Text>
+            <Text>I found a crystalline recorder in the core of The Interloper recorded by someone called Scientist. It describes liquid being used to neutralize ghost matter along with a warning about the impending rupture. The recorder describes a possible breach as being worth it to transmit something.</Text>
         </ExploreFact>
     </Entry>
     <Entry>
@@ -157,14 +152,14 @@
             <ID>codex_astral_codex_bramble_rumor</ID> 
             <SourceID>codex_bramble_signal</SourceID> 
             <RumorName>Astral Codex</RumorName> 
-            <Text>A codex containing information of great value, offered to the Nomai by an unknown species. The information was to be revealed once the Nomai had grown and advanced sufficiently to be worthy of its contents.</Text> 
+            <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
         </RumorFact>
 
         <RumorFact>
             <ID>codex_astral_codex_ember_rumor</ID> 
             <SourceID>codex_ember_signal</SourceID> 
             <RumorName>Astral Codex</RumorName> 
-            <Text>A codex containing information of great value that will be revealed when three criteria have been met.</Text> 
+            <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
         </RumorFact>
 
         <ExploreFact>

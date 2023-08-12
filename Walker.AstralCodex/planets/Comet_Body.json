@@ -65,7 +65,7 @@
 				"xmlFile": "planets/text/interloper_recorder_warning.xml",
 				"rename": "InterloperRecorderWarning"
 			},
-			{
+			/*{
 				"position": {
 					"x": 24.3789043,
 					"y": 6.492459,
@@ -80,7 +80,7 @@
 				"location": "unspecified",
 				"xmlFile": "planets/text/interloper_recorder_breach.xml",
 				"rename": "InterloperRecorderBreach"
-			}
+			}*/
 		]
 	},
 	"ReferenceFrame": {},

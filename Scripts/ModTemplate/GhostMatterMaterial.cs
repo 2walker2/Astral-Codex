@@ -21,7 +21,9 @@ namespace AstralCodex
                 renderersToExclude = new List<string>()
                 {
                     "ring_text_glow",
-                    "Arc"
+                    "Arc",
+                    "ShellLaticeFilled",
+                    "ShellLatice"
                 };
             }
         }

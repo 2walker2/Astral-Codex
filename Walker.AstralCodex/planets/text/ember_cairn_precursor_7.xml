@@ -1,0 +1,7 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>"Research Log - Cycle 8206: I am experiencing difficulties with our ship's computer. Archivist has left it set to visual output again. However, <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>hat has me mystified is that Explorer has, somehow, taught it to rhyme."
+		</Text>
+	</TextBlock>
+</NomaiObject>

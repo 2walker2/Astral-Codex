@@ -1,0 +1,23 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>When we left our home body it was to escape conflict and to seek a new life and new discoveries. For 207 cycles we drifted peacefully upon the astral sea. But we soon made a discovery we were unprepared to face.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>We first encountered macroscopic quantum phenomena 156 cycles after setting out upon our journey. A single rock, mobile when unobserved. But more soon followed: forests, then asteroids, then entire bodies as we approached the epicenter.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>As we hung in orbit around the vortex, I studied it, its properties, and its extensive influence. Not even the basic structure of the galaxy remained constant. Entire clusters shifted at its whim.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>When we finally pieced together what it represented, we were all gripped by fear. It was an end, and a new beginning.
+- Scientist
+		</Text>
+	</TextBlock>
+</NomaiObject>

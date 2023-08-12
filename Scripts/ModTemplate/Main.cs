@@ -38,16 +38,22 @@ namespace AstralCodex
             
             //Create ghost matter crystal material list
             ghostMatterCrystals = new List<string>() { 
-                "Station/Visual/Model", 
+                "Station/Visual/Model",
                 "BrambleScroll2/Props_NOM_Scroll/Props_NOM_Scroll_Geo", 
                 "TranslationCairn1", 
                 "TranslationCairn2",
+                "TranslationCairn3",
+                "TranslationCairn4",
+                "TranslationCairn5",
+                "TranslationCairn6",
+                "TranslationCairn7",
                 "InterloperRecorderBreach",
                 "InterloperRecorderWarning",
                 "TranslationProbe1/ScaleRoot/Model", 
                 "TranslationProbe2/ScaleRoot/Model",
                 "TranslationProbe3/Model",
-                "ChimeSign"
+                "ChimeSign",
+                "Station Redesign/Visual/Redesign/ChimeRemodel/Shell"
             };
             
             //Create materials list
@@ -73,8 +79,8 @@ namespace AstralCodex
                 {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
                 {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
-                {"Station/ProbeParticles", typeof(ProbeParticles) },
-                {"Station/ThornParticles", typeof(ThornParticles) },
+                {"ProbeParticles", typeof(ProbeParticles) },
+                {"ThornParticles", typeof(ThornParticles) },
                 {"TranslationProbe2", typeof(EmberProjectionActivate) },
                 {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
                 {"TranslationProbe1", typeof(BrambleProjectionActivate) },
@@ -102,7 +108,8 @@ namespace AstralCodex
                 {"TranslationProbe1/Projections/GD Scanner/ScanSource/Giant's Deep", new Vector3(0, 10, 0) },
                 {"TranslationProbe1/Projections/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
                 {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
-                {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) }
+                {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
+                {"Station Redesign/Visual/Redesign/ChimeRemodel/Shell", new Vector3(0, 10, 0) }
             };
 
             //Set scene loading
@@ -244,7 +251,15 @@ namespace AstralCodex
 
                     //Increase ghost matter damage
                     GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
-                    stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+                    if (stationGhostMatter != null)
+                        stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND STATION GHOST MATTER", MessageType.Error);
+                    GameObject brambleGhostMatter = GameObject.Find("BrambleGhostMatter");
+                    if (brambleGhostMatter != null)
+                        brambleGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND BRAMBLE GHOST MATTER", MessageType.Error);
 
                     //Disable old ghost matter particles
                     SearchUtilities.Find("StationGhostMatter/DarkMatterVolume/ProbeVisuals").SetActive(false);

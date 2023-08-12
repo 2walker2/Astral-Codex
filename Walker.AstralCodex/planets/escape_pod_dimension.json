@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"name": "DB_EscapePodDimension_Body",
+	"name": "DB_EscapePodDimension",
 	"Base": {
 		"gravityFallOff": "linear"
 	},
@@ -8,6 +8,7 @@
 	"Props": {
 		"details": [
 			{
+				"rename": "EscapePodProbe",
 				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
 				"position": {
 					"x": -507.328125,
@@ -20,6 +21,36 @@
 					"z": 242.184418
 				},
 				"scale": 0.1
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Probe Warp Platform.prefab",
+				"parentPath": "Sector_EscapePodDimension/EscapePodProbe",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_RemoteViewer/Structure_NOM_RemoteViewer",
+				"parentPath": "Sector_EscapePodDimension/EscapePodProbe/Probe Warp Platform/Warp Pad Anchor",
+				"isRelativeToParent": true,
+				"position": {"y": 0.8945},
+				"stretch": {"x": 1, "y": 2.5, "z": 1}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Probe Warp Platform Gravity.prefab",
+				"parentPath": "Sector_EscapePodDimension/EscapePodProbe/Probe Warp Platform",
+				"isRelativeToParent": true,
+				"position": {"y": 28},
+				"scale": 30,
+			}
+		],
+		"warpReceivers": [
+			{
+				"parentPath": "Sector_EscapePodDimension/EscapePodProbe/Probe Warp Platform/Warp Pad Anchor",
+				"isRelativeToParent": true,
+				"frequency": "codex_bramble_warp",
+				"alignmentTargetBody": "DarkBramble",
+				"rename": "BrambleWarpReceiver"
 			}
 		]
 	},

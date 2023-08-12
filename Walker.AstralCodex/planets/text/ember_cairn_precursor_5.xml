@@ -1,0 +1,17 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>"Research Log - Cycle 8198: There will be two initial safeguards: One to test shuttle technology and expansi<![CDATA[<Color=#00ffbc>]]>?<![CDATA[</Color>]]>n beyond the recipients' home body. And another, requested by Explorer, to ensu<![CDATA[<Color=#00ffbc>]]>]<![CDATA[</Color>]]>e a thriving culture of sufficient scale."
+		</Text>
+	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_ember_cairns_safeguards</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_ember_hologram</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

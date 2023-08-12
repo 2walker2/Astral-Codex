@@ -8,19 +8,104 @@
 	"Props": {
 		"details": [
 			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Bramble Building.prefab",
+				"position": {
+					"x": -231.9974,
+					"y": 227.7628,
+					"z": -407.4612
+				},
+				"rotation": {
+					"x": 10.3242,
+					"y": 290.1941,
+					"z": 59.1494
+				}
+			},
+			{
+				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
+				"position": {"x": -203.7143, "y": 208.2478, "z": -424.6607},
+				"rotation": {"x": 336.3358, "y": 200.4233, "z": 149.0372},
+				"scale": 0.1,
+				"rename": "Bramble Exploration Probe"
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Probe Warp Platform.prefab",
+				"parentPath": "Sector_DB/Bramble Exploration Probe",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "SunStation_Body/Sector_SunStation/Sector_WarpModule/Interactables_WarpModule/Prefab_NOM_WarpReceiver/Structure_NOM_WarpReceiver_PlatformOnly",
+				"parentPath": "Sector_DB/Bramble Exploration Probe/Probe Warp Platform/Warp Pad Anchor",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_RemoteViewer/Structure_NOM_RemoteViewer",
+				"parentPath": "Sector_DB/Bramble Exploration Probe/Probe Warp Platform/Warp Pad Anchor",
+				"isRelativeToParent": true,
+				"position": {"y": 0.8945},
+				"stretch": {"x": 1, "y": 2.5, "z": 1}
+			},
+			{
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam (2)",
+				"parentPath": "Sector_DB/Bramble Building/Tractor Beam Anchor",
+				"isRelativeToParent": true,
+			},
+			{
 				"rename": "TranslationProbe1",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/BrambleProbe.prefab",
+				"position": {"x": -229.694, "y": 212.6833, "z": -416.6939},
+				"rotation": {"x": 320.2596, "y": 93.79926, "z": 304.2686}
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": -227.3813, "y": 222.4607, "z": -411.7201},
+				"rotation": {"x": 340.9069, "y": 104.9419, "z": 299.2064}
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": -230.2868, "y": 230.2194, "z": -407.3272},
+				"rotation": {"x": 6.9628, "y": 119.1737, "z": 296.0259}
+			},
+			{
+				"rename": "BrambleGhostMatter",
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
-					"x": -229.94101,
-					"y": 215.377289,
-					"z": -415.10614
+					"x": -228.8477,
+					"y": 228.4521,
+					"z": -407.3401
 				},
 				"rotation": {
-					"x": 57.004158,
-					"y": 181.4137,
-					"z": 338.745819
-				}
+					"x": 299.6414,
+					"y": 32.5092468,
+					"z": 353.9192
+				},
+				"scale": 0.5,
+				"removeChildren": [
+					"DarkMatterVolume/ProbeVisuals",
+					"Effects_GM_AuroraWisps (3)"
+				]
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible/Effects_GM_AuroraWisps (3)",
+				"position": {
+					"x": -228.8477,
+					"y": 228.4521,
+					"z": -407.3401
+				},
+				"rotation": {
+					"x": 299.6414,
+					"y": 32.5092468,
+					"z": 353.9192
+				},
+				"scale": 0.5
+			},
+			{
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
+				"position": {"x": -239.4906, "y": 218.3939, "z": -407.3005},
+				"rotation": {"x": 297.707, "y": 52.8351, "z": 342.19},
+				"scale": 0.5
 			},
 			{
 				"assetBundle": "planets/assets/turtle_codex",
@@ -34,20 +119,6 @@
 					"x": 343.902466,
 					"y": 308.551727,
 					"z": 57.1129265
-				}
-			},
-			{
-				"assetBundle": "planets/assets/turtle_codex",
-				"path": "Assets/Astral Codex/StorageRoom01.prefab",
-				"position": {
-					"x": -225.259369,
-					"y": 224.1445,
-					"z": -413.063873
-				},
-				"rotation": {
-					"x": 24.0275059,
-					"y": 280.937775,
-					"z": 57.42212
 				}
 			},
 			{
@@ -218,34 +289,6 @@
 				"scale": 1.00000012
 			},
 			{
-				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Shelf (2)/Strucutre_NOM_Shelf",
-				"position": {
-					"x": -231.520676,
-					"y": 235.679657,
-					"z": -407.9357
-				},
-				"rotation": {
-					"x": 334.926453,
-					"y": 102.76384,
-					"z": 211.819153
-				},
-				"scale": 1.00000036
-			},
-			{
-				"path": "Shuttle_Body/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Props_NomaiShuttleInterior/Prefab_NOM_NomaiTree_VarDRY_3",
-				"position": {
-					"x": -232.2944,
-					"y": 231.693329,
-					"z": -404.979034
-				},
-				"rotation": {
-					"x": 11.6863337,
-					"y": 122.2305,
-					"z": 300.1456
-				},
-				"scale": 1.00000012
-			},
-			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Container",
 				"position": {
 					"x": -196.901016,
@@ -260,48 +303,6 @@
 				"scale": 0.99999994
 			},
 			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_Container",
-				"position": {
-					"x": -231.052872,
-					"y": 229.310516,
-					"z": -407.082245
-				},
-				"rotation": {
-					"x": 299.5569,
-					"y": 30.654583,
-					"z": 355.531982
-				},
-				"scale": 1.00000012
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
-				"position": {
-					"x": -227.829239,
-					"y": 226.249969,
-					"z": -408.4161
-				},
-				"rotation": {
-					"x": 303.438965,
-					"y": 354.315033,
-					"z": 26.8165874
-				},
-				"scale": 1.00000024
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Props_CometInterior/Prefab_NOM_BoxBroken",
-				"position": {
-					"x": -226.775055,
-					"y": 229.646454,
-					"z": -406.7338
-				},
-				"rotation": {
-					"x": 60.21546,
-					"y": 196.213333,
-					"z": 351.9041
-				},
-				"scale": 1.00000012
-			},
-			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
 				"position": {
 					"x": -195.603592,
@@ -312,115 +313,6 @@
 					"x": 41.2004433,
 					"y": 266.020264,
 					"z": 46.1028366
-				},
-				"scale": 1.00000012
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (8)",
-				"position": {
-					"x": -229.41983,
-					"y": 226.404266,
-					"z": -407.572418
-				},
-				"rotation": {
-					"x": 51.1025,
-					"y": 253.332184,
-					"z": 36.86277
-				}
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (50)",
-				"position": {
-					"x": -227.326721,
-					"y": 228.513641,
-					"z": -407.5567
-				},
-				"rotation": {
-					"x": 342.117859,
-					"y": 107.338425,
-					"z": 302.3202
-				},
-				"scale": 1.00000012
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (45)",
-				"position": {
-					"x": -226.594482,
-					"y": 228.988251,
-					"z": -408.026978
-				},
-				"rotation": {
-					"x": 325.287628,
-					"y": 94.1616058,
-					"z": 308.24234
-				}
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (45)",
-				"position": {
-					"x": -230.27005,
-					"y": 226.4277,
-					"z": -407.737854
-				},
-				"rotation": {
-					"x": 19.72347,
-					"y": 131.422684,
-					"z": 302.255859
-				},
-				"scale": 1.00000024
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (1)",
-				"position": {
-					"x": -228.0975,
-					"y": 229.822235,
-					"z": -406.000732
-				},
-				"rotation": {
-					"x": 49.6707535,
-					"y": 162.4571,
-					"z": 321.83313
-				},
-				"scale": 0.99999994
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (2)",
-				"position": {
-					"x": -230.809753,
-					"y": 230.343719,
-					"z": -406.805756
-				},
-				"rotation": {
-					"x": 33.3845024,
-					"y": 137.3732,
-					"z": 306.083984
-				},
-				"scale": 0.9999999
-			},
-			{
-				"path": "Comet_Body/Sector_CO/Sector_CometInterior/DetailPatches_CometInterior/SnowChamber_1/Fol_GM_Clutter (3)",
-				"position": {
-					"x": -226.927032,
-					"y": 226.726532,
-					"z": -407.877075
-				},
-				"rotation": {
-					"x": 332.510071,
-					"y": 63.4294548,
-					"z": 54.68305
-				}
-			},
-			{
-				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/Effects_GM_AuroraWisps",
-				"position": {
-					"x": -227.920471,
-					"y": 226.505829,
-					"z": -408.2136
-				},
-				"rotation": {
-					"x": 299.6414,
-					"y": 32.5092468,
-					"z": 353.9192
 				},
 				"scale": 1.00000012
 			},
@@ -1131,9 +1023,9 @@
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
-					"x": -253.491333,
-					"y": 231.187469,
-					"z": -389.3778
+					"x": -256.1746,
+					"y": 234.5458,
+					"z": -386.0164
 				},
 				"rotation": {
 					"x": 317.15625,
@@ -1294,20 +1186,6 @@
 				"scale": 1.00000024
 			},
 			{
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1/plaque_paper_1 (1)",
-				"position": {
-					"x": -203.563324,
-					"y": 209.4609,
-					"z": -423.336945
-				},
-				"rotation": {
-					"x": 33.0369,
-					"y": 129.168335,
-					"z": 295.778931
-				},
-				"scale": 1.00000012
-			},
-			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Volumes_Lakebed/O2_ChertCamp",
 				"position": {
 					"x": -206.6075,
@@ -1415,20 +1293,6 @@
 					"z": 320.453278
 				},
 				"scale": 0.199999928
-			},
-			{
-				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
-				"position": {
-					"x": -204.560562,
-					"y": 210.082,
-					"z": -423.222565
-				},
-				"rotation": {
-					"x": 67.39842,
-					"y": 197.277267,
-					"z": 274.933716
-				},
-				"scale": 0.0400003269
 			},
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
@@ -2089,7 +1953,7 @@
 				},
 				"scale": 0.4999999
 			},
-			{
+			/*{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
 					"x": -237.40799,
@@ -2102,7 +1966,7 @@
 					"z": 319.186035
 				},
 				"scale": 0.399999917
-			},
+			},*/
 			{
 				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/DBState_QuantumObjects/IceShard_Arrangment_2/DB_IceShard_Arrangment_2/IceGeo",
 				"position": {
@@ -2128,16 +1992,6 @@
 				"radius": 1.0,
 				"xmlFile": "planets/text/bramble_chert_recorder.xml",
 				"rename": "bramble_chert_recorder_dialogue"
-			},
-			{
-				"position": {
-					"x": -203.6454,
-					"y": 209.5052,
-					"z": -423.1656
-				},
-				"radius": 1.0,
-				"xmlFile": "planets/text/bramble_chert_note.xml",
-				"rename": "bramble_chert_note_dialogue"
 			}
 		],
 		"entryLocation": [
@@ -2150,7 +2004,7 @@
 				}
 			}
 		],
-		"nomaiText": [
+		"translatorText": [
 			{
 				"arcInfo": [
 					{
@@ -2160,71 +2014,69 @@
 					},
 					{
 						"position": {
-							"x": -1.5931,
-							"y": 0.9747
+							"x": 0.0069,
+							"y": 0.2747
 						},
 						"type": "adult",
 						"variation": 19,
-						"zRotation": 76.0
+						"zRotation": 116.0
 					},
 					{
 						"position": {
-							"x": -1.0031,
-							"y": 1.1547
+							"x": 0.1969,
+							"y": 0.7547
 						},
 						"type": "adult",
 						"variation": 20,
-						"zRotation": 330.0
+						"zRotation": 90
 					},
 					{
 						"position": {
-							"x": 0.1815,
+							"x": -0.2185,
 							"y": 1.786
 						},
 						"type": "adult",
 						"variation": 30,
-						"zRotation": -53.0
+						"zRotation": 337
 					},
 					{
 						"position": {
-							"x": 1.3715,
-							"y": 1.056
+							"x": 1.1748,
+							"y": 2.156
 						},
 						"type": "adult",
 						"variation": 30,
-						"zRotation": 205.0
+						"zRotation": 265
 					},
 					{
 						"position": {
-							"x": 0.7276,
-							"y": 0.216
+							"x": 1.8276,
+							"y": 0.816
 						},
 						"type": "adult",
 						"variation": 12,
-						"zRotation": 19.0
+						"zRotation": 169
 					},
 					{
-						"mirror": true,
 						"position": {
-							"x": 1.6,
-							"y": 0.6
+							"x": 2.21,
+							"y": 1.2
 						},
 						"type": "adult",
 						"variation": 13,
-						"zRotation": -174.0
+						"zRotation": 226
 					}
 				],
 				"position": {
-					"x": -230.5058,
-					"y": 234.907486,
-					"z": -406.313843
+					"x": -241.1843,
+					"y": 232.5205,
+					"z": -402.1165
 				},
 				"rotation": {
-					"x": 300.7578,
-					"y": 326.359,
-					"z": 314.880737
+					"x": 11.2846,
+					"y": 304.9408,
+					"z": 59.4517
 				},
-				"seed": 58,
 				"type": "scroll",
 				"location": "unspecified",
 				"xmlFile": "planets/text/bramble_scroll_nomai.xml"
@@ -2232,37 +2084,65 @@
 			{
 				"arcInfo": [
 					{
-						"position": {},
+						"position": {
+							"y": 0.15
+						},
 						"type": "adult",
-						"variation": 7,
-						"zRotation": 51.0
+						"variation": 0
 					},
 					{
 						"position": {
-							"x": -1.1,
-							"y": 0.45
+							"x": 0.0069,
+							"y": 0.2747
+						},
+						"type": "adult",
+						"variation": 19,
+						"zRotation": 116.0
+					},
+					{
+						"position": {
+							"x": 0.1969,
+							"y": 0.7547
+						},
+						"type": "adult",
+						"variation": 20,
+						"zRotation": 90
+					},
+					{
+						"position": {
+							"x": -0.2185,
+							"y": 1.786
 						},
 						"type": "adult",
 						"variation": 30,
-						"zRotation": 74.0
+						"zRotation": 337
 					},
 					{
 						"position": {
-							"x": -1.2,
-							"y": 1.7
+							"x": 0.8748,
+							"y": 2.156
 						},
 						"type": "adult",
-						"variation": 6,
-						"zRotation": 310.0
+						"variation": 30,
+						"zRotation": 305
 					},
 					{
 						"position": {
-							"x": 0.5,
-							"y": 1.11
+							"x": 1.8276,
+							"y": 1.516
 						},
 						"type": "adult",
-						"variation": 8,
-						"zRotation": 115.0
+						"variation": 12,
+						"zRotation": 219
+					},
+					{
+						"position": {
+							"x": 2.11,
+							"y": 1.8
+						},
+						"type": "adult",
+						"variation": 13,
+						"zRotation": 246
 					}
 				],
 				"position": {
@@ -2298,7 +2178,19 @@
 				},
 				"type": "wall",
 				"location": "unspecified",
-				"xmlFile": "planets/text/bramble_text_kousa.xml"
+				"xmlFile": "planets/text/bramble_text_kousa.xml",
+				"arcInfo": [
+					{
+						"zRotation": 34,
+						"variation": 1
+					}
+				]
+			},
+			{
+				"position": {"x": -224.6992, "y": 238.0056, "z": -402.1397},
+				"rotation": {"x": 319.4394, "y": 86.59109, "z": 313.5918},
+				"xmlFile": "planets/text/bramble_sign_building.xml",
+				"type": "trailmarker"
 			}
 		],
 		"signals": [
@@ -2312,7 +2204,18 @@
 					"x": -229.9409,
 					"y": 215.3773,
 					"z": -415.1065
-				}
+				},
+				"reveals": "codex_bramble_signal_rumor"
+			}
+		],
+		"warpTransmitters": [
+			{
+				"rename": "BrambleWarpTransmitter",
+				"frequency": "codex_bramble_warp",
+				"parentPath": "Sector_DB/Bramble Building/Warp Pad Anchor",
+				"isRelativeToParent": true,
+				"alignmentWindow": 180,
+				"flipAlignment": true
 			}
 		]
 	},
@@ -2336,41 +2239,12 @@
 				"radius": 100.0
 			}
 		],
-		"hazardVolumes": [
-			{
-				"type": "ghostMatter",
-				"damagePerSecond": 50.0,
-				"firstContactDamageType": "impact",
-				"firstContactDamage": 10.0,
-				"position": {
-					"x": -227.819519,
-					"y": 227.878967,
-					"z": -407.323
-				},
-				"radius": 3.0
-			}
-		],
-		"notificationVolumes": [
-			{
-				"target": "all",
-				"entryNotification": {
-					"displayMessage": "DANGER: GHOST MATTER DETECTED NEARBY"
-				},
-				"position": {
-					"x": -227.819519,
-					"y": 227.878967,
-					"z": -407.323
-				},
-				"radius": 10.0
-			}
-		],
 		"revealVolumes": [
 			{
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
-					"codex_bramble_station",
-					"codex_bramble_signal_rumor"
+					"codex_bramble_station"
 				],
 				"position": {
 					"x": -263.504181,
@@ -2378,6 +2252,27 @@
 					"z": -326.037384
 				},
 				"radius": 100.0
+			},
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_bramble_hologram"
+				],
+				"parentPath": "Sector_DB/TranslationProbe1/Projections",
+				"isRelativeToParent": true,
+				"radius": 100.0
+			}
+		],
+		"oxygenVolumes": [
+			{
+				"position": {
+					"x": -205.080154,
+					"y": 245.988251,
+					"z": -408.443085
+				},
+				"radius": 50,
+				"treeVolume": true
 			}
 		]
 	}

@@ -30,12 +30,27 @@
 
         <ExploreFact>
             <ID>codex_ember_cairns</ID> 
-            <Text>I found a set of crystalline cairns on Ember Twin that contain a message from a member of an unknown species to the Nomai. It offers great knowledge to the Nomai when three criteria have been met.</Text> 
+            <Text>I found a set of crystalline cairns on Ember Twin that contain a research log written by someone called Scientist.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_ember_cairns_safeguards</ID> 
+            <Text>One of the crystalline cairns describe two safeguards used to protect something called the Astral Codex. One safeguard tests spacefaring technology and expansion beyond one's home planet. The other tests for a culture of sufficient scale.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_ember_cairns_safeguard_archivist</ID> 
+            <Text>A crystalline cairn describes a third safeguard proposed by someone named Archivist. The details of this safeguard are not described on the cairn.</Text> 
         </ExploreFact>
 
         <ExploreFact>
             <ID>codex_ember_symbols</ID> 
             <Text>Symbols are scattered throughout the message written on the crystalline cairn.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_ember_hologram</ID> 
+            <Text>After reading one of the cairns, a hologram was projected depicting three sets of symbols: several rectangles, a large circle, and several circular symbols.</Text> 
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

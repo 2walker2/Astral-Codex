@@ -15,7 +15,7 @@ namespace AstralCodex
         void Start()
         {
             //Find activation text arc
-            GameObject arc = SearchUtilities.Find("TranslationCairn2/Props_TH_ClutterSmall/Arc_Short/Arc");
+            GameObject arc = SearchUtilities.Find("TranslationCairn5/Props_TH_ClutterSmall/Arc_Short/Arc");
             if (arc != null)
                 line = arc.GetComponent<NomaiTextLine>();
             else

@@ -1,0 +1,13 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>"Research Log - Cycle 8198 Continued: Strangely, Archivist has advo<![CDATA[<Color=#00ffbc>]]>*<![CDATA[</Color>]]>ated for a tertiary safeguard although the details of its implementation are not yet clear."
+		</Text>
+	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_ember_cairns_safeguard_archivist</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

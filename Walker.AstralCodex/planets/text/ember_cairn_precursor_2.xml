@@ -1,0 +1,21 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>[retrieving relevant log entries...                 ]
+[    -search queries: "shuttle", "thrive"           ]
+[    -time recorded: t-minus 125,270 G-hr           ]
+[    -logs author: scientist                        ]
+[error: translation incomplete                      ]
+		</Text>
+	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_ember_cairns</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_ember_symbols</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
+</NomaiObject>
