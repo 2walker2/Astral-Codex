@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3807422023
+CRC: 3766496829
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bf8b4b47abec7a2da2e98abd53968951
+    Hash: 916746b6673d56082090e3cc89faeecd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d997026aad36f07061ad7ff967da2ec2
+    Hash: f81e6278d4732fc9ccfd2c17cdcbfb72
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -56,11 +56,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: c6fe68bc48c100c4386d817d187c61d4, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5c2d328d259791744bb8539650a9c619, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 034b758dcb27c9746a7640cdb345b333, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
 - Class: 115
@@ -105,12 +105,13 @@ Assets:
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
 - Assets/Bundle/Models/probe.obj
-- Assets/Bundle/EyeProbeStates/ScannerPrecursor1.prefab
+- Assets/Bundle/EyeProbeStates/ScannerPrecursorExplorer.prefab
 - Assets/Bundle/Models/interloper.obj
 - Assets/Bundle/Textures/Signal.png
 - Assets/Bundle/Models/timber_hearth_hologram.obj
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
+- Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
 - Assets/Bundle/Models/wire2.obj
 - Assets/Bundle/4DParticles.prefab
@@ -118,7 +119,6 @@ Assets:
 - Assets/Bundle/Scanner.prefab
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
-- Assets/Bundle/EyeProbeStates/ScannerState7.prefab
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
@@ -168,7 +168,6 @@ Assets:
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
 - Assets/Bundle/Models/timber_hearth.obj
-- Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Animations/Environments Projection.controller
 - Assets/Bundle/Probe.prefab
@@ -180,7 +179,7 @@ Assets:
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Materials/ThornParticles.mat
-- Assets/Bundle/EyeProbeStates/ScannerPrecursor3.prefab
+- Assets/Bundle/EyeProbeStates/ScannerPrecursorArchivist.prefab
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj
 - Assets/Bundle/Models/scanner.obj
@@ -188,11 +187,12 @@ Assets:
 - Assets/Bundle/Station.prefab
 - Assets/Bundle/Textures/Smudge.png
 - Assets/Bundle/Textures/Effects_Bubbles_v2_d.png
-- Assets/Bundle/EyeProbeStates/ScannerPrecursor2.prefab
+- Assets/Bundle/EyeProbeStates/ScannerPrecursorScientist.prefab
 - Assets/Bundle/Textures/Population.png
-- Assets/Bundle/EyeProbeStates/ScannerState6.prefab
+- Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Bramble Building.prefab
 - Assets/Bundle/Materials/Sprite.mat
+- Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Models/species_hologram.obj
@@ -205,6 +205,7 @@ Assets:
 - Assets/Bundle/Models/environments_hologram.obj
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
+- Assets/Bundle/Models/new_precursors.obj
 - Assets/Bundle/Audio/Signal.wav
 - Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat

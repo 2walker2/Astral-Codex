@@ -9,6 +9,12 @@
 		"details": [
 			{
 				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/ThornParticles.prefab",
+				"rename": "BrambleThornParticles",
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Bramble Building.prefab",
 				"position": {
 					"x": -231.9974,

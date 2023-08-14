@@ -15,6 +15,7 @@ namespace AstralCodex
 
         void Start()
         {
+            //Align with cloak sphere
             GameObject cloakSphere = SearchUtilities.Find("CloakSphere");
             if (cloakSphere != null)
             {
@@ -31,6 +32,7 @@ namespace AstralCodex
 
         void Update()
         {
+            //Match visible only when cloak sphere is visible
             partRenderer.enabled = cloakSphereRenderer.enabled;
         }
     }

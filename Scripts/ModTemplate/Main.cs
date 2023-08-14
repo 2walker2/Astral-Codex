@@ -80,7 +80,7 @@ namespace AstralCodex
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
                 {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
                 {"ProbeParticles", typeof(ProbeParticles) },
-                {"ThornParticles", typeof(ThornParticles) },
+                {"BrambleThornParticles", typeof(ThornParticles) },
                 {"TranslationProbe2", typeof(EmberProjectionActivate) },
                 {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, {"Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
                 {"TranslationProbe1", typeof(BrambleProjectionActivate) },
@@ -344,16 +344,6 @@ namespace AstralCodex
                     }
                     else
                         ModHelper.Console.WriteLine("FAILED TO FIND BRAMBLE RECORDER OR DIALOGUE", MessageType.Error);
-
-                    //Add physics to Interloper recorder
-                    GameObject interloperRecorder = SearchUtilities.Find("InterloperRecorderWarning");
-                    if (interloperRecorder != null)
-                    {
-                        AddPhysicsCustom addPhysics = interloperRecorder.AddComponent<AddPhysicsCustom>();
-                        addPhysics.Sector = interloperRecorder.GetComponentInParent<Sector>();
-                    }
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND INTERLOPER RECORDER OR ENTRYWAY TRIGGER");
                 }
                 else if (system == "EyeOfTheUniverse")
                 {

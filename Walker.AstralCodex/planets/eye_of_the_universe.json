@@ -161,7 +161,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState0.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
@@ -177,7 +177,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState1.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
@@ -193,7 +193,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState2.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
@@ -209,7 +209,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState3.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
@@ -225,7 +225,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState4.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
@@ -241,39 +241,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/EyeProbeStates/ScannerState5.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
-				"quantumGroupID": "codex_eye_probe",
-				"position": {
-					"x": -45.1209,
-					"y": 0.56,
-					"z": 7565.978
-				},
-				"rotation": {
-					"x": 0,
-					"y": 235.0281,
-					"z": 0
-				}
-			},
-			{
-				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/EyeProbeStates/ScannerState6.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
-				"quantumGroupID": "codex_eye_probe",
-				"position": {
-					"x": -45.1209,
-					"y": 0.56,
-					"z": 7565.978
-				},
-				"rotation": {
-					"x": 0,
-					"y": 235.0281,
-					"z": 0
-				}
-			},
-			{
-				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/EyeProbeStates/ScannerState7.prefab",
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/ScaleRoot",
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe",
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
