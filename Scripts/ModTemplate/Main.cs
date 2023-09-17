@@ -10,6 +10,7 @@ using Harmony;
 using System.Collections;
 using System.Linq;
 using NewHorizons.Utility;
+using UnityEngine.InputSystem;
 
 namespace AstralCodex
 {
@@ -38,7 +39,7 @@ namespace AstralCodex
             
             //Create ghost matter crystal material list
             ghostMatterCrystals = new List<string>() { 
-                "Station/Visual/Model",
+                //"Station/Visual/Model",
                 "BrambleScroll2/Props_NOM_Scroll/Props_NOM_Scroll_Geo", 
                 "TranslationCairn1", 
                 "TranslationCairn2",
@@ -47,13 +48,16 @@ namespace AstralCodex
                 "TranslationCairn5",
                 "TranslationCairn6",
                 "TranslationCairn7",
-                "InterloperRecorderBreach",
+                //"InterloperRecorderBreach",
                 "InterloperRecorderWarning",
                 "TranslationProbe1/ScaleRoot/Model", 
                 "TranslationProbe2/ScaleRoot/Model",
                 "TranslationProbe3/Model",
-                "ChimeSign",
-                "Station Redesign/Visual/Redesign/ChimeRemodel/Shell"
+                //"ChimeSign",
+                "Station Redesign v2/Visual/Model/Shell/Ghost Matter Shell",
+                "CodexGalaxyComputer",
+                "CodexSpeciesComputer",
+                "CodexEnvironmentsComputer"
             };
             
             //Create materials list
@@ -75,8 +79,8 @@ namespace AstralCodex
                 {"TechnologyWire", typeof(TechnologyWire) },
                 {"TimberHearthSpacecraftDetector", typeof(SpacecraftDetector) },
                 {"AshTwinSpacecraftDetector", typeof(SpacecraftDetector) },
-                {"Monolith", typeof(Monolith) },
-                {"LingeringChime_Body/Sector/Water/WaterVolume", typeof(GhostMatterSubmerge) },
+                //{"Monolith", typeof(Monolith) },
+                {"ChimeWhiteHoleWater/ChimeWhiteHoleWaterCollider", typeof(GhostMatterSubmerge) },
                 {"PopulationScannerOrigin", typeof(PopulationTrails) },
                 {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
                 {"ProbeParticles", typeof(ProbeParticles) },
@@ -109,7 +113,15 @@ namespace AstralCodex
                 {"TranslationProbe1/Projections/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
                 {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
                 {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
-                {"Station Redesign/Visual/Redesign/ChimeRemodel/Shell", new Vector3(0, 10, 0) }
+                //Chime
+                {"Station Redesign v2/Visual/Model/Floor/Rim", new Vector3(0, 0, -10) },
+                {"Station Redesign v2/Collision/Floor/Rim", new Vector3(0, 0, -10) },
+                {"Station Redesign v2/Visual/Solar Panels", new Vector3(0, 0, 10) },
+                {"Station Redesign v2/Collision/Solar Panels", new Vector3(0, 0, 10) },
+                {"Station Redesign v2/Orbiting Water Root", new Vector3(0, 3, 0) },
+                {"Station Redesign v2/Transmitter Coin/Root/Codex Environments Projection/Scanner/Scan Source", new Vector3(0, 15, 0)},
+                {"Station Redesign v2/Campfire Coin/Root/Codex Species Projection/Scanner", new Vector3(0, 5, 0)},
+                {"Station Redesign v2/Other Coin/Root/Codex Galaxy Projection/ScanSource/Dot Emitter", new Vector3(0, 5, 0)},
             };
 
             //Set scene loading
@@ -210,6 +222,44 @@ namespace AstralCodex
                             ModHelper.Console.WriteLine($"FAILED TO FIND ROTATING OBJECT " + pair.Key, MessageType.Error);
                     }
 
+                    //Parent Chime water to white hole
+                    GameObject chimeWater = SearchUtilities.Find("LingeringChime_Body/Sector/Water");
+                    if (chimeWater != null)
+                    {
+                        GameObject chimeWhiteHoleWater = SearchUtilities.Find("Station Redesign v2/Orbiting Water Root/ChimeWhiteHoleWater");
+                        if (chimeWhiteHoleWater != null)
+                        {
+                            chimeWater.transform.parent = chimeWhiteHoleWater.transform;
+                            chimeWater.transform.localPosition = Vector3.zero;
+                        }
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND CHIME WATER", MessageType.Error);
+
+                    //Make Chime signal detectable underwater
+                    GameObject chimeSignal = SearchUtilities.Find("Chime Signal");
+                    if (chimeSignal != null)
+                    {
+                        AudioSignalDetectionTrigger detectionTrigger = chimeSignal.GetComponent<AudioSignalDetectionTrigger>();
+                        detectionTrigger._allowUnderwater = true;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND CHIME SIGNL", MessageType.Error);
+
+                    //Put Chime clutter on VisibleToProbe (22) layer
+                    GameObject stationClutter1 = SearchUtilities.Find("StationClutter1");
+                    if (stationClutter1 != null)
+                    {
+                        stationClutter1.layer = 22;
+                        SearchUtilities.Find("StationClutter2").layer = 22;
+                        SearchUtilities.Find("StationClutter3").layer = 22;
+                        //SearchUtilities.Find("StationClutter4").layer = 22;
+                        //SearchUtilities.Find("StationClutter5").layer = 22;
+                        //SearchUtilities.Find("StationClutter6").layer = 22;
+                    }
+                    else
+                        ModHelper.Console.WriteLine("FAILED TO FIND STATION CLUTTER");
+
                     //Hide flashback slides
                     GameObject flashbackSlides = SearchUtilities.Find("FlashbackSlides");
                     if (flashbackSlides != null)
@@ -218,7 +268,7 @@ namespace AstralCodex
                         flashbackSlides.GetComponent<SphereCollider>().enabled = false;
                     }
                     else
-                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SLIDES");
+                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SLIDES", MessageType.Error);
 
                     //Replace skybox material
                     GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
@@ -252,9 +302,10 @@ namespace AstralCodex
                     //Increase ghost matter damage
                     GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
                     if (stationGhostMatter != null)
-                        stationGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
+                        stationGhostMatter.GetComponent<DarkMatterVolume>()._damagePerSecond = 150;
                     else
                         ModHelper.Console.WriteLine("FAILED TO FIND STATION GHOST MATTER", MessageType.Error);
+                    
                     GameObject brambleGhostMatter = GameObject.Find("BrambleGhostMatter");
                     if (brambleGhostMatter != null)
                         brambleGhostMatter.GetComponentInChildren<DarkMatterVolume>()._damagePerSecond = 150;
@@ -262,7 +313,7 @@ namespace AstralCodex
                         ModHelper.Console.WriteLine("FAILED TO FIND BRAMBLE GHOST MATTER", MessageType.Error);
 
                     //Disable old ghost matter particles
-                    SearchUtilities.Find("StationGhostMatter/DarkMatterVolume/ProbeVisuals").SetActive(false);
+                    //SearchUtilities.Find("StationGhostMatter/DarkMatterVolume/ProbeVisuals").SetActive(false);
 
                     //Enable Ember tree collision
                     GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
@@ -476,6 +527,18 @@ namespace AstralCodex
                         ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
                 }
                 flashbackOverridden = true;
+            }
+
+            //Debug warp to Chime
+            if (Keyboard.current.lKey.wasPressedThisFrame)
+            {
+                OWRigidbody playerBody = Locator.GetPlayerBody();
+                if (playerBody != null)
+                {
+                    playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(0, -34998, 0));
+                    playerBody.SetVelocity(Vector3.zero);
+                    playerBody.SetAngularVelocity(Vector3.zero);
+                }
             }
         }
     }

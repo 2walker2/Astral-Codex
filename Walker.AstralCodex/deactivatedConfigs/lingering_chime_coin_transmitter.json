@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Orbiting Coin Transmitter",
+	"AmbientLights": [
+		{
+			"outerRadius": 60,
+			"innerRadius": 20,
+			"intensity": 1.4
+		}
+	],
+	"Orbit": {
+		"primaryBody": "Lingering Chime",
+		"semiMajorAxis": 150,
+		"trueAnomaly": 0,
+		"inclination": 30,
+		"isTidallyLocked": true
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Transmitter Coin.prefab",
+				"keepLoaded": true
+			}
+		],
+		"signals": [
+			{
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 500.0,
+				"frequency": "Astral Codex",
+				"identificationRadius": 7.0,
+				"name": "Chime Transmitter",
+				"reveals": "codex_lingering_chime_lower_antenna",
+				"position": {
+					"y": 13.39
+				}
+			}
+		],
+	}
+}

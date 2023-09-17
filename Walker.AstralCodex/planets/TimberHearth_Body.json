@@ -15,15 +15,27 @@
 				"rotation": {},
 				"scale": 1500.0,
 				"keepLoaded": true
-			}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/White Hole.prefab",
+				"position": {"x": -139.1085, "y": -46.29195, "z": -290.1906},
+				"scale": 0.5
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Black Hole.prefab",
+				"position": {"x": -88.97565, "y": -69.16965, "z": -197.5249},
+				"scale": 0.5
+			},
 		],
-		"translatorText" : [
+		/*"translatorText" : [
 			{
 				"type": "recorder",
 				"xmlFile": "planets/text/TEST.xml",
 				"position": {"x": 15.29159, "y": -43.70462, "z": 185.1682}
 			}	
-		],
+		],*/
 		"slideShows": [
 			{
 				"rename": "FlashbackSlides",
@@ -41,6 +53,27 @@
 				"playWithShipLogFacts": [
 					"codex_flashback_fact"
 				]
+			}
+		],
+		"singularities": [
+			{
+				"type": "whiteHole",
+				"hasWarpEffects": false,
+				"horizonRadius": 0.5,
+				"distortRadius": 1,
+				"uniqueID": "codex_timber_white",
+				"rename": "codex_timber_white",
+				"position": {"x": -139.1085, "y": -46.29195, "z": -290.1906}
+			},
+			{
+				"type": "blackHole",
+				"hasWarpEffects": false,
+				"horizonRadius": 0.5,
+				"distortRadius": 1,
+				"uniqueID": "codex_timber_black",
+				"pairedSingularity": "codex_chime_white",
+				"rename": "codex_timber_black",
+				"position": {"x": -88.97565, "y": -69.16965, "z": -197.5249}
 			}
 		]
 	},

@@ -1,6 +1,6 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>KOUSA: Exploration log: After delving into the fractal spaces of <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, the probe has picked up the distress beacon of Escape Pod 3. Though I know there cannot possibly be any survivors after all these years, it sill brings me comfort to be close to you once more Foli.</Text>
+		<Text>KOUSA: Exploration log: After delving into the fractal spaces of <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, the probe has picked up the distress beacon of Escape Pod 3. Though I know there cannot possibly be any survivors after all these years, it sill brings me comfort to be close to you once more, Foli.</Text>
 	</TextBlock>
 </NomaiObject>

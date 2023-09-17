@@ -32,7 +32,9 @@ Untold galaxies - a myriad of bodies within.
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>We will not be forgotten.
+		<Text>
+We must not be forgotten.
+
 - Archivist
 		</Text>
 	</TextBlock>

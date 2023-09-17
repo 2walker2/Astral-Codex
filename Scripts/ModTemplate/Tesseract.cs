@@ -24,7 +24,6 @@ namespace AstralCodex
         GameObject trailsReveal;
         GameObject skySphere;
         int skySphereDisabled = 0;
-        PostProcessingProfile newPostProcessingProfile;
 
         void Awake()
         {
@@ -124,8 +123,8 @@ namespace AstralCodex
                     //Adjust post processing
                     PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
                     postProcessingSettings.colorGrading.postExposure = 0.5f;
-                    postProcessingSettings.colorGrading.temperature = -20;
-                    postProcessingSettings.colorGrading.tint = -50;
+                    postProcessingSettings.colorGrading.temperature = -15;
+                    postProcessingSettings.colorGrading.tint = -40;
 
                     fourDLayer = 1;
                 }

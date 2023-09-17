@@ -35,14 +35,14 @@
 				"position": {"y": 0.8945},
 				"stretch": {"x": 1, "y": 2.5, "z": 1}
 			},
-			{
+			/*{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Probe Warp Platform Gravity.prefab",
 				"parentPath": "Sector_EscapePodDimension/EscapePodProbe/Probe Warp Platform",
 				"isRelativeToParent": true,
 				"position": {"y": 28},
 				"scale": 30,
-			}
+			}*/
 		],
 		"warpReceivers": [
 			{

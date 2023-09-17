@@ -4,26 +4,35 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
     class GhostMatterSubmerge : MonoBehaviour
     {
-
         SphereShape ghostMatterCollider;
         SphereShape ghostMatterNotification;
+        GameObject signal;
 
         void Start()
         {
-            ghostMatterCollider = GameObject.Find("StationGhostMatter/DarkMatterVolume").GetComponent<SphereShape>();
+            ghostMatterCollider = SearchUtilities.Find("StationGhostMatter").GetComponent<SphereShape>();
             //if (ghostMatterCollider != null) Main.modHelper.Console.WriteLine($"FOUND GHOST MATTER COLLIDER", MessageType.Success);
-            ghostMatterNotification = GameObject.Find("StationGhostMatter/DarkMatterVolume/NotificationVolume/ChildShape").GetComponent<SphereShape>();
-            ghostMatterNotification.radius = 100;
+            ghostMatterNotification = SearchUtilities.Find("StationGhostMatter/NotificationVolume").GetComponent<SphereShape>();
+            ghostMatterNotification.radius = 250;
             ghostMatterNotification.enabled = true;
             ghostMatterCollider.enabled = true;
+            signal = SearchUtilities.Find("Chime Signal");
         }
 
-        void OnTriggerStay(Collider other)
+        void Update()
+        {
+            if (Locator.GetDeathManager().IsPlayerDying())
+                signal.SetActive(false);
+                
+        }
+
+        void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("PlayerDetector"))
             {

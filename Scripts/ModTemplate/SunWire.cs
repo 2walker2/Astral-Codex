@@ -3,6 +3,7 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -12,6 +13,7 @@ namespace AstralCodex
         MeshRenderer sunDisplayRenderer;
         MeshRenderer renderer;
         GameObject reveal;
+        NomaiComputer computer;
 
         void Start()
         {
@@ -20,19 +22,20 @@ namespace AstralCodex
             sunDisplayRenderer = GameObject.Find("SunDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("NoSunCompleteReveal");
-            Initialize(reveal);
+            computer = SearchUtilities.Find("CodexEnvironmentsComputer").GetComponent<NomaiComputer>();
+            Initialize(reveal, computer);
         }
 
         void Update()
         {
             if (cloakSphereRenderer.enabled == true)
             {
-                TurnOn(renderer, reveal);
+                TurnOn(renderer, reveal, computer);
                 sunDisplayRenderer.material = Main.instance.materials["black"];
             }
             else
             {
-                TurnOff(renderer, reveal);
+                TurnOff(renderer, reveal, computer);
                 sunDisplayRenderer.material = Main.instance.materials["light"];
             }
         }

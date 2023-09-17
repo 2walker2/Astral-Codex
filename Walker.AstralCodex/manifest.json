@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/amazingalek/owml/master/schemas/manifest_schema.json",
   "filename": "AstralCodex.dll",
   "author": "Walker",
-  "name": "Astral Codex",
+  "name": "Astral Codec",
   "uniqueName": "Walker.AstralCodex",
   "version": "0.1.5",
   "owmlVersion": "2.5.2",

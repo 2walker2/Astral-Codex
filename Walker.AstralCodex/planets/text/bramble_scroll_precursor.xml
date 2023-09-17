@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>rrive at a new cluster n<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. The <![CDATA[<Color=orange>]]>Codex<![CDATA[</Color>]]> is getting a little dusty with so little of note to record."
+		<Text>"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>rrive at a new system n<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. We haven't added anything to our transmission for the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> in a while."
 		</Text>
 	</TextBlock>
 	<TextBlock>

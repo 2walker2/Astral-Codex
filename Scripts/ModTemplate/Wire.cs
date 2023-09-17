@@ -9,16 +9,17 @@ namespace AstralCodex
 {
     class Wire : MonoBehaviour
     {
-        public bool on = false;
+        protected bool on = false;
 
-        public void Initialize(GameObject reveal)
+        public void Initialize(GameObject reveal, NomaiComputer computer)
         {
             reveal.SetActive(false);
             ShipLogFactListTriggerVolume revealTrigger = reveal.GetComponent<ShipLogFactListTriggerVolume>();
             revealTrigger._player = false;
+            computer.ClearAllEntries();
         }
 
-        public void TurnOn(MeshRenderer renderer, GameObject reveal)
+        public void TurnOn(MeshRenderer renderer, GameObject reveal, NomaiComputer computer)
         {
             if (on == false)
             {
@@ -26,10 +27,11 @@ namespace AstralCodex
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned on", MessageType.Success);
                 renderer.material = Main.instance.materials["green"];
                 reveal.SetActive(true);
+                computer.DisplayAllEntries();
             }
         }
 
-        public void TurnOff(MeshRenderer renderer, GameObject reveal)
+        public void TurnOff(MeshRenderer renderer, GameObject reveal, NomaiComputer computer)
         {
             if (on == true)
             {
@@ -37,6 +39,7 @@ namespace AstralCodex
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned off", MessageType.Success);
                 renderer.material = Main.instance.materials["red"];
                 reveal.SetActive(false);
+                computer.ClearAllEntries();
             }
         }
     }

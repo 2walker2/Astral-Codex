@@ -3,6 +3,7 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -12,6 +13,7 @@ namespace AstralCodex
         MeshRenderer renderer;
         MeshRenderer missingPopulationDisplay;
         GameObject reveal;
+        NomaiComputer computer;
 
         void Start()
         {
@@ -20,19 +22,20 @@ namespace AstralCodex
             missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("PopulationCompleteReveal");
-            Initialize(reveal);
+            computer = SearchUtilities.Find("CodexSpeciesComputer").GetComponent<NomaiComputer>();
+            Initialize(reveal, computer);
         }
 
         void Update()
         {
             if (playerClone.activeInHierarchy)
             {
-                TurnOn(renderer, reveal);
+                TurnOn(renderer, reveal, computer);
                 missingPopulationDisplay.material = Main.instance.materials["light"];
             }
             else
             {
-                TurnOff(renderer, reveal);
+                TurnOff(renderer, reveal, computer);
                 missingPopulationDisplay.material = Main.instance.materials["black"];
             }
         }

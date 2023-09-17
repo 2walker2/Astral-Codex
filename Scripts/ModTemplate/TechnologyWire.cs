@@ -3,6 +3,7 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using NewHorizons.Utility;
 
 namespace AstralCodex
 {
@@ -10,24 +11,26 @@ namespace AstralCodex
     {
         MeshRenderer renderer;
         GameObject reveal;
+        NomaiComputer computer;
 
         void Start()
         {
             on = false;
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("SpacecraftCompleteReveal");
-            Initialize(reveal);
+            computer = SearchUtilities.Find("CodexGalaxyComputer").GetComponent<NomaiComputer>();
+            Initialize(reveal, computer);
         }
 
         void Update()
         {
             if (SpacecraftDetector.numberActive == SpacecraftDetector.numberPresent)
             {
-                TurnOn(renderer, reveal);
+                TurnOn(renderer, reveal, computer);
             }
             else
             {
-                TurnOff(renderer, reveal);
+                TurnOff(renderer, reveal, computer);
             }
         }
     }

@@ -143,7 +143,7 @@
     </Entry>
     <Entry>
         <ID>codex_astral_codex</ID>
-        <Name>Astal Codex</Name>
+        <Name>Astal Codec</Name>
 
         <Curiosity>codex_astral_codex</Curiosity>
         <IsCuriosity/>
@@ -151,20 +151,21 @@
         <RumorFact>
             <ID>codex_astral_codex_bramble_rumor</ID> 
             <SourceID>codex_bramble_signal</SourceID> 
-            <RumorName>Astral Codex</RumorName> 
+            <RumorName>Astral Codec</RumorName> 
             <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
         </RumorFact>
 
         <RumorFact>
             <ID>codex_astral_codex_ember_rumor</ID> 
             <SourceID>codex_ember_signal</SourceID> 
-            <RumorName>Astral Codex</RumorName> 
+            <RumorName>Astral Codec</RumorName> 
             <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
         </RumorFact>
 
         <ExploreFact>
             <ID>codex_astral_codex_fact</ID>
-            <Text><![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
+            <Text>REPLACE EVERYTHING BELOW THIS
+<![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
 My species and my world are gone. But I have reached the Eye and that gives me hope that my people may be remembered. The Chime is ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
 You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
 But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onward. Send whatever device you possess on a final journey through the Eye, that the Codex may persist, and grow, and inform the worthy species in the next cycle of what came before.

@@ -23,7 +23,8 @@ namespace AstralCodex
                     "ring_text_glow",
                     "Arc",
                     "ShellLaticeFilled",
-                    "ShellLatice"
+                    "ShellLatice",
+                    "Ring1", "Ring2", "Ring3", "Ring4", "Ring5", "Ring6", "Ring7"
                 };
             }
         }

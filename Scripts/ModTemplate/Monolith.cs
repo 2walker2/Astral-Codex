@@ -9,7 +9,7 @@ namespace AstralCodex
 {
     class Monolith : Wire
     {
-        Wire sunWire;
+        /*Wire sunWire;
         Wire populationWire;
         Wire technologyWire;
         MeshRenderer renderer;
@@ -59,6 +59,6 @@ namespace AstralCodex
                 TurnOff(renderer, null);
             }
         }
-
+        */
     }
 }

@@ -6,7 +6,7 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>CYCAD: Our clan has spent far too long ignoring this place as a result of the tragedy that occured here.</Text>
+		<Text>CYCAD: Our clan has spent far too long ignoring this place as a result of the tragedy that occurred here.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
@@ -26,7 +26,7 @@
 	<TextBlock>
 		<ID>6</ID>
 		<ParentID>5</ParentID>
-		<Text>CYCAD: This phonomenon may prove to have untapped comical potential. I am eager to observe the reactions of Lami, Laevi, and Taget (the children) upon first sighting of the eclipse.</Text>
+		<Text>CYCAD: This phenomenon may prove to have untapped comical potential. I am eager to observe the reactions of Lami, Laevi, and Taget (the children) upon first sighting of the eclipse.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>7</ID>

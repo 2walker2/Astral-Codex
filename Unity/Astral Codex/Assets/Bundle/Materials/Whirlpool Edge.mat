@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Whirlpool Edge
+  m_Shader: {fileID: 4800000, guid: 1481e275c74a3f8418bbf40643695785, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FoamEdgeTexture:
+        m_Texture: {fileID: 2800000, guid: 0061a585379882e468fb08cbbec6205c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_8268:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Brightness: 0.1
+    - _Cutoff: 0.5
+    - _EdgeDistanceAdjustment: 0.1
+    - _EdgeRotateSpeed: -1
+    - _EdgeStretch: 0.25
+    - _FadeDistanceMax: 35000
+    - _FadeDistanceMin: 5000
+    - _LightWrapping: 0
+    - _SecondaryEdgeAlpha: 0.1
+    - _SecondaryEdgeRotateSpeed: -1.5
+    - _vv: 0.5
+    m_Colors:
+    - _Tint: {r: 0.5582948, g: 0.92283666, b: 0.9622641, a: 0.49019608}

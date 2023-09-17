@@ -829,7 +829,7 @@
 			{
 				"audio": "planets/assets/chimes.wav",
 				"detectionRadius": 5.0,
-				"frequency": "Astral Codex",
+				"frequency": "Astral Codec",
 				"identificationRadius": 5.0,
 				"name": "Translation Probe Cinder",
 				"position": {

@@ -2203,14 +2203,10 @@
 			{
 				"audio": "planets/assets/chimes.wav",
 				"detectionRadius": 5.0,
-				"frequency": "Astral Codex",
+				"frequency": "Astral Codec",
 				"identificationRadius": 5.0,
 				"name": "Translation Probe Thicket",
-				"position": {
-					"x": -229.9409,
-					"y": 215.3773,
-					"z": -415.1065
-				},
+				"position": {"x": -229.694, "y": 212.6833, "z": -416.6939},
 				"reveals": "codex_bramble_signal_rumor"
 			}
 		],

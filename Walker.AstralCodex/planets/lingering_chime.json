@@ -3,8 +3,8 @@
 	"name": "Lingering Chime",
 	"AmbientLights": [
 		{
-			"outerRadius": 60,
-			"innerRadius": 20,
+			"outerRadius": 100,
+			"innerRadius": 30,
 			"intensity": 1.4
 		}
 	],
@@ -17,25 +17,36 @@
 		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
-		"surfaceSize": 50.0
+		"surfaceSize": 100.0,
+		"hasMapMarker": false
 	},
 	"Orbit": {
 		"staticPosition": {
+			//"y": 4500
 			"y": -35000.0
 		},
 		"siderealPeriod": 3.0,
 		"isStatic": true
 	},
+	"Water": {
+		"size": 10,
+		"tint": {
+			"r": 0,
+			"g": 255,
+			"b": 235
+		},
+		"density": 0
+	},
 	"Props": {
 		"details": [
 			{
 				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/Station Redesign.prefab",
+				"path": "Assets/Bundle/Station Redesign v2.prefab",
 				"position": {},
 				"rotation": {},
 				"keepLoaded": true
 			},
-			{
+			/*{
 				"rename": "StationGhostMatter",
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
 				"position": {
@@ -44,16 +55,92 @@
 					"z": 0.000695943832
 				},
 				"rotation": {},
-				"scale": 0.9
-			}
+				"scale": 0.9,
+				"removeChildren": [
+					"DarkMatterVolume/ProbeVisuals"
+				]
+			},*/
+			{
+				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Interactables_CometInterior/DarkMatter_KillVolumes/DarkMatterVolume (4)",
+				"position": {
+					"y": 15,
+					"z": 45
+				},
+				"rename": "StationGhostMatter",
+				"removeChildren": [
+					"ProbeVisuals"
+				],
+				"scale": 1.66
+			},
+			{
+				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
+				"position": {"y": 12, "z": 44},
+				"stretch": {"x": 2.5, "y": 1.25, "z": 2},
+				"keepLoaded": true
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": 0.0313, "y": 1.1602, "z": 41.8782},
+				"rotation": {"x": 2.2561, "y": 3.9638, "z": 356.107},
+				"rename": "StationClutter1"
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": 1.4168, "y": 1.1602, "z": 47.4472},
+				"rotation": {"x": 2.2561, "y": 36.6785, "z": 356.107},
+				"rename": "StationClutter2"
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x":-2.9323, "y": 1.1602, "z": 45.2816},
+				"rotation": {"x":2.2561, "y": 311.7032, "z": 356.107},
+				"rename": "StationClutter3"
+			},
+			/*{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": 0.0313, "y": -1.1602, "z": 41.8782},
+				"rotation": {"x": 358.7285, "y": 3.9638, "z": 5.0944},
+				"stretch": {"x": 1, "y": -1, "z": 1},
+				"rename": "StationClutter4"
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": 1.4168, "y": -1.1602, "z": 47.4472},
+				"rotation": {"x": 358.7285, "y": 36.6785, "z": 5.0944},
+				"stretch": {"x": 1, "y": -1, "z": 1},
+				"rename": "StationClutter5"
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x":-2.9323, "y": -1.1602, "z": 45.2816},
+				"rotation": {"x": 358.7285, "y": 311.7032, "z": 5.0944},
+				"stretch": {"x": 1, "y": -1, "z": 1},
+				"rename": "StationClutter6"
+			},*/
+			{
+				"rename": "SecondaryProbe",
+				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
+				"position": {
+					"x": -32.9545,
+					"y": 54.1631,
+					"z": 19.7346
+				},
+				"rotation": {
+					"x": 36.2819,
+					"y": 304.7003
+				},
+				"scale": 0.5
+				//"parentPath": "Sector/Station Redesign v2/ProbePosition",
+				//"isRelativeToParent": true
+			},
 		],
 		"entryLocation": [
 			{
 				"id": "codex_lingering_chime"
 			}
 		],
-		"nomaiText": [
-			{
+		"translatorText": [
+			/*{
 				"normal": {
 					"y": -1.0
 				},
@@ -68,19 +155,45 @@
 				"location": "unspecified",
 				"xmlFile": "planets/text/chime_sign.xml",
 				"rename": "ChimeSign"
-			}
-		],
-		"signals": [
+			}*/
 			{
-				"audio": "planets/assets/chimes.wav",
-				"detectionRadius": 100.0,
-				"frequency": "Astral Codex",
-				"identificationRadius": 7.0,
-				"name": "Chime Transmitter",
 				"position": {
-					"y": -10.5
+					"x": -39,
+					"y": -0.75,
+					"z": -22.5,
 				},
-				"reveals": "codex_lingering_chime_lower_antenna"
+				"rotation": {
+					"x": 180
+				},
+				"type": "computer",
+				"xmlFile": "planets/text/codex_computer_galaxy.xml",
+				"rename": "CodexGalaxyComputer"
+			},
+			{
+				"position": {
+					"x": 39,
+					"y": -0.75,
+					"z": -22.5,
+				},
+				"rotation": {
+					"x": 180
+				},
+				"type": "computer",
+				"xmlFile": "planets/text/codex_computer_species.xml",
+				"rename": "CodexSpeciesComputer"
+			},
+			{
+				"position": {
+					"x": 0,
+					"y": -0.75,
+					"z": 45,
+				},
+				"rotation": {
+					"x": 180
+				},
+				"type": "computer",
+				"xmlFile": "planets/text/codex_computer_environments.xml",
+				"rename": "CodexEnvironmentsComputer"
 			}
 		],
 		"remotes": [
@@ -88,11 +201,47 @@
 				"id": "Anomaly Recording",
 				"decalPath": "planets/assets/vision_symbol.png",
 				"platform": {
-					"position": {
-						"y": 21.0
-					},
+					"position": {"x": -21.0616, "y": 36.7966, "z": 11.2404},
 					"rename": "StationVision",
 					"reveals": "codex_projection_fact"
+				}
+			}
+		],
+		"singularities": [
+			{
+				"type": "blackHole",
+				"hasWarpEffects": false,
+				"horizonRadius": 2.5,
+				"distortRadius": 5,
+				"uniqueID": "codex_chime_black",
+				"pairedSingularity": "codex_timber_white",
+				"rename": "codex_chime_black",
+				"parentPath": "Sector/Station Redesign v2/Orbiting Water Root/Black Hole Water",
+				"isRelativeToParent": true
+			},
+			{
+				"type": "whiteHole",
+				"hasWarpEffects": false,
+				"horizonRadius": 2.5,
+				"distortRadius": 2.5,
+				"uniqueID": "codex_chime_white",
+				"rename": "codex_chime_white",
+				"parentPath": "Sector/Station Redesign v2/Orbiting Water Root/ChimeWhiteHoleWater/WhiteHolePosition",
+				"isRelativeToParent": true
+			}
+		],
+		"signals": [
+			{
+				"rename": "Chime Signal",
+				"audio": "planets/assets/chimes.wav",
+				"detectionRadius": 500.0,
+				"frequency": "Astral Codec",
+				"identificationRadius": 5.0,
+				"name": "Chime Transmitter",
+				"reveals": "codex_lingering_chime_lower_antenna",
+				"position": {
+					"y": 12.5,
+					"z": 45
 				}
 			}
 		]
@@ -119,7 +268,7 @@
 		"xmlFile": "planets/ship_log/lingering_chime_log.xml"
 	},
 	"ShockEffect": {},
-	"Water": {
+	/*"Water": {
 		"size": 1.0,
 		"tint": {
 			"r": 148,
@@ -136,14 +285,14 @@
 				"value": 11.5
 			}
 		]
-	},
+	},*/
 	"Volumes": {
 		"audioVolumes": [
 			{
 				"audio": "planets/assets/ice-and-decay.mp3",
 				"clipSelection": "random",
 				"track": "music",
-				"radius": 40.0
+				"radius": 120.0
 			},
 			{
 				"audio": "NomaiTractorBeamAmbient_LP",
@@ -262,9 +411,20 @@
 		],
 		"zeroGravityVolumes": [
 			{
-				"radius": 125.0,
+				"radius": 250.0,
 				"parentPath": "Volumes",
 				"rename": "ZeroGVolume"
+			}
+		],
+		"speedTrapVolumes": [
+			{
+				"radius": 15,
+				"position": {
+					"y": 15,
+					"z": 45
+				},
+				"acceleration": 5,
+				"speedLimit": 2.5
 			}
 		]
 	}
