@@ -496,41 +496,47 @@ namespace AstralCodex
 
         void Update()
         {
-            //Override flashback when player dies
-            if (Locator.GetDeathManager().IsPlayerDying() && !flashbackOverridden)
+            if (Locator.GetDeathManager().IsPlayerDying())
             {
-                if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
+                //Override flashback when player dies
+                if (!flashbackOverridden)
                 {
-                    Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
-                    GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
-                    if (flashbackCamera != null)
+                    if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
                     {
-                        //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
-                        FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
-                        RenderTexture[] flashbackTextureArray = new RenderTexture[flashbackTextureList.Count];
-                        for (int i = 0; i < flashbackTextureList.Count; i++)
+                        Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
+                        GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
+                        if (flashbackCamera != null)
                         {
-                            flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
-                            flashbackTextureArray[i].enableRandomWrite = true;
-                            Graphics.CopyTexture(flashbackTextureList[i], flashbackTextureArray[i]);
-                        }
-                        flashbackRecorder._renderTextureArray = flashbackTextureArray;
-                        flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
+                            //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
+                            FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
+                            RenderTexture[] flashbackTextureArray = new RenderTexture[flashbackTextureList.Count];
+                            for (int i = 0; i < flashbackTextureList.Count; i++)
+                            {
+                                flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
+                                flashbackTextureArray[i].enableRandomWrite = true;
+                                Graphics.CopyTexture(flashbackTextureList[i], flashbackTextureArray[i]);
+                            }
+                            flashbackRecorder._renderTextureArray = flashbackTextureArray;
+                            flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
 
-                        GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
-                        if (flashbackScreen != null)
-                            flashbackScreen.GetComponent<MeshRenderer>().material = materials["spritesDefault"];
+                            GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
+                            if (flashbackScreen != null)
+                                flashbackScreen.GetComponent<MeshRenderer>().material = materials["spritesDefault"];
+                            else
+                                ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
+                        }
                         else
-                            ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
+                            ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
                     }
-                    else
-                        ModHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
+                    flashbackOverridden = true;
                 }
-                flashbackOverridden = true;
+
+                //Prevent spacetime from breaking (test)
+                TimeLoopCoreController.s_paradoxExists = false;
             }
 
             //Debug warp to Chime
-            if (Keyboard.current.lKey.wasPressedThisFrame)
+            if (Keyboard.current.lKey.isPressed && Keyboard.current.cKey.wasPressedThisFrame)
             {
                 OWRigidbody playerBody = Locator.GetPlayerBody();
                 if (playerBody != null)

@@ -50,7 +50,7 @@
 		],
 		"remotes": [
 			{
-				"id": "Anomaly Recording",
+				"id": "Secondary Probe",
 				"decalPath": "planets/assets/vision_symbol.png",
 				"stones": [
 					{

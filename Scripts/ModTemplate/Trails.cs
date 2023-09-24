@@ -27,21 +27,25 @@ namespace AstralCodex
         public virtual void Start()
         {
             visible = false;
+
             //Get QM
             quantumMoon = SearchUtilities.Find("QuantumMoon_Body");
             if (quantumMoon == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON", OWML.Common.MessageType.Error);
             quantumMoonAtmosphere = SearchUtilities.Find("QuantumMoon_Body/Atmosphere_QM/AtmoSphere");
             if (quantumMoonAtmosphere == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON ATMOSPHERE", OWML.Common.MessageType.Error);
+
             //Get Dark Bramble cloak sphere
             GameObject darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
             if (darkBrambleCloakSphere != null)
                 darkBrambleCloakSphereRenderer = darkBrambleCloakSphere.GetComponent<MeshRenderer>();
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CLOAK SPHERE", OWML.Common.MessageType.Error);
+
             //Get trails
             trails = GetComponentsInChildren<LineRenderer>(true).ToList();
             if (trails.Count == 0) Main.modHelper.Console.WriteLine("NO TRAILS FOUND", OWML.Common.MessageType.Error);
             widthMultiplier = trails[0].widthMultiplier;
+
             //Get targets
             targets = new List<List<Transform>>();
             if (targetPaths == null) Main.modHelper.Console.WriteLine("NO TARGET PATHS", OWML.Common.MessageType.Error);
@@ -58,8 +62,9 @@ namespace AstralCodex
                 }
                 targets.Add(pathTargets);
             }
+
             //Get material
-            GameObject trailMatGO = GameObject.Find("StationGhostMatter/DarkMatterVolume/ObjectTrail");
+            GameObject trailMatGO = GameObject.Find("StationGhostMatterEffects");
             if (trailMatGO != null)
                 trailMat = trailMatGO.GetComponent<ParticleSystemRenderer>().material;
             else

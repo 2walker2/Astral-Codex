@@ -20,7 +20,7 @@ namespace AstralCodex
         GameObject fourDParticles2;
         int fourDLayer = 0;
         float timeStayed = 0;
-        float secondLayerDelay = 15f;
+        float secondLayerDelay = 10f;
         GameObject trailsReveal;
         GameObject skySphere;
         int skySphereDisabled = 0;
@@ -44,12 +44,16 @@ namespace AstralCodex
             if (trailsReveal != null)
                 trailsReveal.SetActive(false);
             skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+
+            //Save tesseract state from previous loops
+            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+                EnteredTesseract(true);
         }
 
         void LateUpdate()
         {
             //Initially disable skySphere
-            if (skySphereDisabled == 5)
+            if (fourDLayer == 0 && skySphereDisabled == 5)
             {
                 if (skySphere != null)
                     skySphere.SetActive(false);
@@ -108,37 +112,65 @@ namespace AstralCodex
             {
                 //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)
-                {   
-                    //Disable probe launcher overlay
-                    Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
-                    foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
-
-                    //Instantiate effect
-                    fourDParticles.SetActive(true);
-
-                    //Enable skybox
-                    if (skySphere != null)
-                        skySphere.SetActive(true);
-
-                    //Adjust post processing
-                    PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
-                    postProcessingSettings.colorGrading.postExposure = 0.5f;
-                    postProcessingSettings.colorGrading.temperature = -15;
-                    postProcessingSettings.colorGrading.tint = -40;
-
-                    fourDLayer = 1;
-                }
+                    EnteredTesseract(true);
+                else
+                    EnteredTesseract(false);
             }
+        }
+
+        private void EnteredTesseract(bool value)
+        {
+            //Disable probe launcher overlay
+            int cameraLayer = 28;
+            if (!value)
+                cameraLayer = 12;
+            Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
+            foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = cameraLayer;
+
+            //Instantiate effect
+            fourDParticles.SetActive(value);
+
+            //Enable skybox
+            if (skySphere != null)
+                skySphere.SetActive(value);
+
+            //Adjust post processing
+            PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
+            if (value)
+            {
+                postProcessingSettings.colorGrading.temperature = -25;
+                postProcessingSettings.colorGrading.tint = -50;
+            }
+            else
+            {
+                postProcessingSettings.colorGrading.temperature = 0;
+                postProcessingSettings.colorGrading.tint = 0;
+            }
+            
+
+            //Set persistent condition
+            PlayerData.SetPersistentCondition("CODEX_ENTERED_TESSERACT", value);
+
+            if (value)
+                fourDLayer = 1;
+            else
+            {
+                fourDLayer = 0;
+                if ((Camera.main.cullingMask & (1 << 22)) == 0)
+                    Camera.main.cullingMask -= (1 << 22);
+            }
+                
         }
 
         void OnTriggerStay(Collider other)
         {
-            if (fourDLayer == 1)
+            if (fourDLayer != 2)
             {
                 timeStayed += Time.deltaTime;
                 //Second 4D layer
                 if (timeStayed > secondLayerDelay)
                 {
+                    EnteredTesseract(true);
                     fourDLayer = 2;
                     fourDParticles2.SetActive(true);
                     Trails.visible = true;

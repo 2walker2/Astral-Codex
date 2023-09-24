@@ -70,13 +70,15 @@
 				"removeChildren": [
 					"ProbeVisuals"
 				],
-				"scale": 1.66
+				"scale": 1.66,
+				"keepLoaded": true
 			},
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
 				"position": {"y": 12, "z": 44},
 				"stretch": {"x": 2.5, "y": 1.25, "z": 2},
-				"keepLoaded": true
+				"keepLoaded": true,
+				"rename": "StationGhostMatterEffects"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",

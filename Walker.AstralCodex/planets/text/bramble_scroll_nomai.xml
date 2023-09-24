@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>OENO: By studying the sky shortly after an object has entered <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, we believe we have located the space the interior occupies. Coleus informs us that the phenomenon is most unsettling.</Text>
+		<Text>OENO: By studying the sky after an object has entered <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, we believe we have located the space the interior occupies. Coleus informs us that the phenomenon is most unsettling.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>

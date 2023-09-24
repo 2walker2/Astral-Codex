@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>CLARY: Hypothesis: two of you would be too much for the fabric of spacetime to handle. Come, sister, the shuttle is almost ready.</Text>
+		<Text>CLARY: Hypothesis: two of you would be too much for the fabric of spacetime (or me) to handle. Come, sister, the shuttle is almost ready.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

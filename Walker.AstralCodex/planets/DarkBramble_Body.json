@@ -2003,11 +2003,7 @@
 		"entryLocation": [
 			{
 				"id": "codex_bramble_signal",
-				"position": {
-					"x": -258.197632,
-					"y": 309.902344,
-					"z": -323.9849
-				}
+				"position": {"x": -227.4579, "y": 292.255, "z": -361.3911}
 			}
 		],
 		"translatorText": [
@@ -2275,6 +2271,18 @@
 				},
 				"radius": 50,
 				"treeVolume": true
+			}
+		],
+		"speedTrapVolumes": [
+			{
+				"position": {
+					"x": -230.534,
+					"y": 228.6422,
+					"z": -409.4509
+				},
+				"radius": 1,
+				"acceleration": 5,
+				"speedLimit": 2.5
 			}
 		]
 	}
