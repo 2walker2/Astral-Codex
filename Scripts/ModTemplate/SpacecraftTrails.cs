@@ -27,7 +27,8 @@ namespace AstralCodex
                 new List<string> {
                     "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket",
                     "DarkBramble_Body"
-                }
+                },
+                new List<string> { "AlphaShipMarker" }
             };
         }
     }

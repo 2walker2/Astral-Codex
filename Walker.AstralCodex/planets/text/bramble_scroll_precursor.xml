@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>life located sixth planet from sun<![CDATA[<Color=lightblue>]]>
+		<Text>life located fifth orbit from sun<![CDATA[<Color=lightblue>]]>
 | \\\~     o               .                    |
 |  |||~    |      o       o       O   --> O &lt;-- |
 | ///~     o       .                            |
@@ -15,25 +15,25 @@
 [    -search query: "eclipse"                       ]
 [    -time recorded: t-minus 125,268 G-hr           ]
 [    -log author: explorer                          ]
-[error: translation incomplete                      ]
+[error: <![CDATA[<Color=#ff0040>]]>translation incomplete<![CDATA[</Color>]]>                      ]
 		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#00ffbc>]]>;<![CDATA[</Color>]]>rrive at a new system n<![CDATA[<Color=#00ffbc>]]>&#38;<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. We haven't added anything to our transmission for the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> in a while."
+		<Text>"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#ff0040>]]>;<![CDATA[</Color>]]>rrive at a new system n<![CDATA[<Color=#ff0040>]]>&#38;<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. We haven't added anything to our transmission for the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> in a while."
 		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>"Note: I hope the next body we dock at has a flammable atmosphere. It's been so long since our last cam<![CDATA[<Color=#00ffbc>]]>+<![CDATA[</Color>]]>fire. Do you think the there will st<![CDATA[<Color=#00ffbc>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#00ffbc>]]>/<![CDATA[</Color>]]>t of the universe."
+		<Text>"Note: I hope the next body we dock at has a flammable atmosphere. It's been so long since our last cam<![CDATA[<Color=#ff0040>]]>+<![CDATA[</Color>]]>fire. Do you think the there will st<![CDATA[<Color=#ff0040>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#ff0040>]]>/<![CDATA[</Color>]]>t of the universe."
 		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>"Archivist was talking again this cycle about needing to test the recipients' technology. It's the mo<![CDATA[<Color=#00ffbc>]]>{<![CDATA[</Color>]]>t he's talked in a long time, kept going on about "the sun" and "spheres" and "a total eclipse"."
+		<Text>"Archivist was talking again this cycle about needing to test the recipients' technology. It's the mo<![CDATA[<Color=#ff0040>]]>{<![CDATA[</Color>]]>t he's talked in a long time, kept going on about "the sun" and "spheres" and "a total eclipse"."
 		</Text>
 	</TextBlock>
 	<TextBlock>
@@ -45,7 +45,7 @@
 	<TextBlock>
 		<ID>7</ID>
 		<ParentID>5</ParentID>
-		<Text>"It's strange how much he insists on this additional safeg<![CDATA[<Color=#00ffbc>]]>.<![CDATA[</Color>]]>ard when he's usually so worried about any possible chance that the thread <![CDATA[<Color=#00ffbc>]]>-<![CDATA[</Color>]]>e're starting might break."
+		<Text>"It's strange how much he insists on this additional safeg<![CDATA[<Color=#ff0040>]]>.<![CDATA[</Color>]]>ard when he's usually so worried about any possible chance that the thread <![CDATA[<Color=#ff0040>]]>-<![CDATA[</Color>]]>e're starting might break."
 		</Text>
 	</TextBlock>
 	<ShipLogConditions>

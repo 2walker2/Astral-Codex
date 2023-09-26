@@ -5,7 +5,7 @@
 [    -search queries: "shuttle", "thrive"           ]
 [    -time recorded: t-minus 125,270 G-hr           ]
 [    -logs author: scientist                        ]
-[error: translation incomplete                      ]
+[error: <![CDATA[<Color=#ff0040>]]>translation incomplete<![CDATA[</Color>]]>                      ]
 		</Text>
 	</TextBlock>
 	<ShipLogConditions>

@@ -1,6 +1,6 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>THATCH: Greetings, friends, it has been too long since we were separated. I brought you something in particular, Aunt Melorae. Take care of this tree from <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>, let it mark the site of our clan's reunion (do ensure it does not invade this planet's biosphere).</Text>
+		<Text>THATCH: Greetings, Aunt Melorae, it has been too long since we were separated. I brought you something. Take care of this tree from <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>, let it mark the site of our clan's reunion (do ensure it does not invade this planet's biosphere).</Text>
 	</TextBlock>
 </NomaiObject>

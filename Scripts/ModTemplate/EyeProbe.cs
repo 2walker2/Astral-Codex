@@ -81,11 +81,11 @@ namespace AstralCodex
                     p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
             }
             //Trigger blink once recorder is read
-            if (recorder._dictNomaiTextData[4].IsTranslated && !translator._isEquipped && !blinkCalled)
+            /*if (recorder._dictNomaiTextData[4].IsTranslated && !translator._isEquipped && !blinkCalled)
             {
                 blinkCalled = true;
                 StartCoroutine(nameof(Disappear));
-            }
+            }*/
         }
 
         void LateUpdate()

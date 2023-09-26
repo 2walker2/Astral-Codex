@@ -128,7 +128,8 @@ namespace AstralCodex
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = cameraLayer;
 
             //Instantiate effect
-            fourDParticles.SetActive(value);
+            fourDParticles.SetActive(false);
+            fourDParticles.SetActive(true);
 
             //Enable skybox
             if (skySphere != null)
@@ -156,7 +157,7 @@ namespace AstralCodex
             else
             {
                 fourDLayer = 0;
-                if ((Camera.main.cullingMask & (1 << 22)) == 0)
+                if ((Camera.main.cullingMask & (1 << 22)) != 0)
                     Camera.main.cullingMask -= (1 << 22);
             }
                 

@@ -14,20 +14,20 @@ fuel remains fatal - liquid frozen into ice
 		<Text>[warning: breach scenario in progress               ]
 [retrieving prerecorded message...                  ]
 [    -time recorded: t-minus 125,267 G-hr           ]
-[    -logs author: scientist                        ]
+[    -author: scientist                             ]
 [evacuate immediately                               ]
 		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>"This message will never be read. If it is, something has gone terribly wrong. The fuel contained within this seed is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is an aquatic species and might thus escape the blast."
+		<Text>"If you are reading this message, something has gone terribly wrong. The fuel contained within this seed is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is aquatic and might thus escape the blast."
 		</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: energy-dense enough to last the eons necessary when properly compressed, and light enough transport effectively."
+		<Text>"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: energy-dense enough to last the eons necessary when properly compressed, and light enough transport."
 		</Text>
 	</TextBlock>
 	<TextBlock>

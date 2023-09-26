@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "TIMBER_MOON",
+	"Props": {
+		"details": [
+			{
+				"rename": "AlphaShipMarker",
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Empty.prefab",
+				"position": {"x": 46.34633, "y": -12.83655, "z": -52.74532}
+			}
+		],
+	}
+}

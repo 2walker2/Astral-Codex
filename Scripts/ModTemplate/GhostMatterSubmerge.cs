@@ -19,7 +19,7 @@ namespace AstralCodex
             ghostMatterCollider = SearchUtilities.Find("StationGhostMatter").GetComponent<SphereShape>();
             //if (ghostMatterCollider != null) Main.modHelper.Console.WriteLine($"FOUND GHOST MATTER COLLIDER", MessageType.Success);
             ghostMatterNotification = SearchUtilities.Find("StationGhostMatter/NotificationVolume").GetComponent<SphereShape>();
-            ghostMatterNotification.radius = 250;
+            ghostMatterNotification.radius = 75;
             ghostMatterNotification.enabled = true;
             ghostMatterCollider.enabled = true;
             signal = SearchUtilities.Find("Chime Signal");

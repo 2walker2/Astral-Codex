@@ -17,8 +17,10 @@
 		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
-		"surfaceSize": 100.0,
-		"hasMapMarker": false
+		"surfaceSize": 65,
+		"hasMapMarker": false,
+		"soiOverride": 200,
+		"surfaceGravity": 10
 	},
 	"Orbit": {
 		"staticPosition": {
@@ -131,7 +133,8 @@
 					"x": 36.2819,
 					"y": 304.7003
 				},
-				"scale": 0.5
+				"scale": 0.5,
+				"keepLoaded": true
 				//"parentPath": "Sector/Station Redesign v2/ProbePosition",
 				//"isRelativeToParent": true
 			},
@@ -236,7 +239,7 @@
 			{
 				"rename": "Chime Signal",
 				"audio": "planets/assets/chimes.wav",
-				"detectionRadius": 500.0,
+				"detectionRadius": 75.0,
 				"frequency": "Astral Codec",
 				"identificationRadius": 5.0,
 				"name": "Chime Transmitter",
