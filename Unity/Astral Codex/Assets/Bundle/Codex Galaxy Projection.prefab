@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3465131083771137869}
   - component: {fileID: 3465131083771137870}
   - component: {fileID: 3465131083771137866}
-  - component: {fileID: 3465131083771136182}
   m_Layer: 12
   m_Name: Dot Emitter
   m_TagString: Untagged
@@ -4820,19 +4819,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &3465131083771136182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3465131083771137865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 0, y: 5, z: 0}
 --- !u!1 &3465131084318079028
 GameObject:
   m_ObjectHideFlags: 0

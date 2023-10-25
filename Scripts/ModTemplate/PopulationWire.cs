@@ -31,12 +31,12 @@ namespace AstralCodex
             if (playerClone.activeInHierarchy)
             {
                 TurnOn(renderer, reveal, computer);
-                missingPopulationDisplay.material = Main.instance.materials["light"];
+                missingPopulationDisplay.material = AssetHandler.materials["light"];
             }
             else
             {
                 TurnOff(renderer, reveal, computer);
-                missingPopulationDisplay.material = Main.instance.materials["black"];
+                missingPopulationDisplay.material = AssetHandler.materials["black"];
             }
         }
         

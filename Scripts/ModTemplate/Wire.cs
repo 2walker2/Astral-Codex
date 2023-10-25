@@ -25,7 +25,7 @@ namespace AstralCodex
             {
                 on = true;
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned on", MessageType.Success);
-                renderer.material = Main.instance.materials["green"];
+                renderer.material = AssetHandler.materials["green"];
                 reveal.SetActive(true);
                 computer.DisplayAllEntries();
             }
@@ -37,7 +37,7 @@ namespace AstralCodex
             {
                 on = false;
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned off", MessageType.Success);
-                renderer.material = Main.instance.materials["red"];
+                renderer.material = AssetHandler.materials["red"];
                 reveal.SetActive(false);
                 computer.ClearAllEntries();
             }

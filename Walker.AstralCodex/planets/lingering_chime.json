@@ -11,7 +11,7 @@
 	"Atmosphere": {
 		"hasOxygen": true,
 		"hasSnow": true,
-		"size": 50.0
+		"size": 65.0
 	},
 	"Base": {
 		"ambientLight": -100.0,
@@ -41,6 +41,10 @@
 	},
 	"Props": {
 		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/AssetReferences.prefab"
+			},
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Station Redesign v2.prefab",
@@ -416,7 +420,7 @@
 		],
 		"zeroGravityVolumes": [
 			{
-				"radius": 250.0,
+				"radius": 65.0,
 				"parentPath": "Volumes",
 				"rename": "ZeroGVolume"
 			}

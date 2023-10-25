@@ -5447,7 +5447,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 10
+    angle: 13
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -9568,8 +9568,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257582198129399698}
   m_LocalRotation: {x: 0.57683235, y: -0, z: -0, w: 0.8168626}
-  m_LocalPosition: {x: 0, y: 0.43, z: 5.47}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalPosition: {x: 0, y: -0, z: 3.921}
+  m_LocalScale: {x: 0.35, y: 0.1, z: 0.35}
   m_Children: []
   m_Father: {fileID: 1257582197603115244}
   m_RootOrder: 0
@@ -14364,9 +14364,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: f333f17db1ea32f49b504e0ba65be747, type: 3}
 --- !u!1 &1870960288435898568
 GameObject:
   m_ObjectHideFlags: 0

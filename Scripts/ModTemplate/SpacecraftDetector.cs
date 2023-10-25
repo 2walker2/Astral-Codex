@@ -70,10 +70,10 @@ namespace AstralCodex
             {
                 active = true;
                 numberActive++;
-                planetIcon.material = Main.instance.materials["light"];
+                planetIcon.material = AssetHandler.materials["light"];
             }
             else
-                planetIcon.material = Main.instance.materials["black"];
+                planetIcon.material = AssetHandler.materials["black"];
         }
 
         void OnTriggerEnter(Collider other)
@@ -84,7 +84,7 @@ namespace AstralCodex
             if (ship || shuttle || modelShip)
             {
                 if (planetIcon != null)
-                    planetIcon.material = Main.instance.materials["light"];
+                    planetIcon.material = AssetHandler.materials["light"];
                 if (active == false)
                     numberActive++;
                 active = true;
@@ -99,7 +99,7 @@ namespace AstralCodex
             if (!ship && !shuttle && !modelShip)
             {
                 if (planetIcon != null)
-                    planetIcon.material = Main.instance.materials["black"];
+                    planetIcon.material = AssetHandler.materials["black"];
                 if (active == true)
                     numberActive--;
                 active = false;

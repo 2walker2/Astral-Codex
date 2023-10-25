@@ -24,7 +24,7 @@ Untold galaxies - a myriad of bodies within.
 		<ParentID>2</ParentID>
 		<Text>0  0                                           0  0
 |  |  0                                     0  |  |
-0  0  | The thread we start must not break. |  0  0
+0  0  |      The thread cannot break.       |  0  0
 |  |  0                                     0  |  |
 0  0                                           0  0
 		</Text>

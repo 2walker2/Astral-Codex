@@ -21,7 +21,7 @@ fuel remains fatal - liquid frozen into ice
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>"If you are reading this message, something has gone terribly wrong. The fuel contained within this seed is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is aquatic and might thus escape the blast."
+		<Text>"If you are reading this message, something has gone terribly wrong. The fuel contained within this geode is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is aquatic and might thus escape the blast."
 		</Text>
 	</TextBlock>
 	<TextBlock>
@@ -46,7 +46,7 @@ fuel remains fatal - liquid frozen into ice
 		<ID>7</ID>
 		<ParentID>6</ParentID>
 		<Text>
-[ seed breached                                     ]
+[ geode breached                                    ]
 [ fuel dispersed                                    ]
 [ life signs dwindling                              ]
 [ as stars at the end of a universe                 ]

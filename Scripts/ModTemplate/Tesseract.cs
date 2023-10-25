@@ -3,7 +3,7 @@ using OWML.ModHelper;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
-using NewHorizons;
+using NewHorizons.Builder;
 using NewHorizons.Utility;
 using UnityEngine.PostProcessing;
 
@@ -24,6 +24,7 @@ namespace AstralCodex
         GameObject trailsReveal;
         GameObject skySphere;
         int skySphereDisabled = 0;
+        AudioClip defaultTravelMusic;
 
         void Awake()
         {
@@ -44,6 +45,17 @@ namespace AstralCodex
             if (trailsReveal != null)
                 trailsReveal.SetActive(false);
             skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+
+            //Save default travel music and update travel audio source settings
+            GlobalMusicController globalMusicController = Locator.GetGlobalMusicController();
+            if (globalMusicController != null)
+            {
+                defaultTravelMusic = globalMusicController._travelSource.clip;
+                globalMusicController._travelSource._audioLibraryClip = 0;
+                globalMusicController._travelSource._clipArrayIndex = 0;
+                globalMusicController._travelSource._clipArrayLength = 0;
+                globalMusicController._travelSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
+            }          
 
             //Save tesseract state from previous loops
             if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
@@ -121,11 +133,8 @@ namespace AstralCodex
         private void EnteredTesseract(bool value)
         {
             //Disable probe launcher overlay
-            int cameraLayer = 28;
-            if (!value)
-                cameraLayer = 12;
             Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
-            foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = cameraLayer;
+            foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
 
             //Instantiate effect
             fourDParticles.SetActive(false);
@@ -147,7 +156,12 @@ namespace AstralCodex
                 postProcessingSettings.colorGrading.temperature = 0;
                 postProcessingSettings.colorGrading.tint = 0;
             }
-            
+
+            //Update travel music
+            if (value)
+                Locator.GetGlobalMusicController()._travelSource.clip = AssetHandler.audioClips["fourDTravelMusic"];
+            else
+                Locator.GetGlobalMusicController()._travelSource.clip = defaultTravelMusic;
 
             //Set persistent condition
             PlayerData.SetPersistentCondition("CODEX_ENTERED_TESSERACT", value);

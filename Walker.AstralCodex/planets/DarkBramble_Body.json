@@ -1997,7 +1997,8 @@
 				},
 				"radius": 1.0,
 				"xmlFile": "planets/text/bramble_chert_recorder.xml",
-				"rename": "bramble_chert_recorder_dialogue"
+				"rename": "bramble_chert_recorder_dialogue",
+				"pathToAnimController": "Sector_DB/bramble_chert_recorder"
 			}
 		],
 		"entryLocation": [

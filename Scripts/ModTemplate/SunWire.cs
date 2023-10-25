@@ -31,12 +31,12 @@ namespace AstralCodex
             if (cloakSphereRenderer.enabled == true)
             {
                 TurnOn(renderer, reveal, computer);
-                sunDisplayRenderer.material = Main.instance.materials["black"];
+                sunDisplayRenderer.material = AssetHandler.materials["black"];
             }
             else
             {
                 TurnOff(renderer, reveal, computer);
-                sunDisplayRenderer.material = Main.instance.materials["light"];
+                sunDisplayRenderer.material = AssetHandler.materials["light"];
             }
         }
     }

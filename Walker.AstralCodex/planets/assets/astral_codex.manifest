@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 42837387
+CRC: 1540273843
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ad1e92e97fdb38bf3f5641785270ad6b
+    Hash: e90e50a3c7be5d0fa7032e1a7cff5a6f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b029cb64c456fb5dd640122867eebd7
@@ -130,6 +130,7 @@ Assets:
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_DW_Iron_DarkPaint_New_d.png
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
+- Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
@@ -163,6 +164,7 @@ Assets:
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
+- Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Models/interloper_detail.obj
 - Assets/Bundle/ThornParticles.prefab
 - Assets/Bundle/Textures/Chime Redesign/GhostMetal1.png
@@ -176,13 +178,13 @@ Assets:
 - Assets/Bundle/Codex Species Projection.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
+- Assets/Bundle/Shaders/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
 - Assets/Bundle/Textures/Chime Redesign/GhostEmmissiveOverlay.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_d.png
 - Assets/Bundle/Textures/ThornParticles.png
-- Assets/Bundle/Models/Chime Redesign/ChimeRemodel_signalemitter_seperated.blend
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
@@ -209,6 +211,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
 - Assets/Bundle/White Hole Water.prefab
 - Assets/Bundle/Models/attlerock.obj
+- Assets/Bundle/Shaders/Glass.shader
 - Assets/Bundle/Materials/ThornParticles.mat
 - Assets/Bundle/Shaders/Whirlpool Water.shader
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorArchivist.prefab
@@ -217,7 +220,6 @@ Assets:
 - Assets/Bundle/Models/scanner.obj
 - Assets/Bundle/Textures/Chime Redesign/Structure_IP_Iron_DarkPaint_Old_n.png
 - Assets/Bundle/Materials/Chime Redesign/Metal 2.mat
-- Assets/Bundle/Models/Chime Redesign/ChimeRemodel_walkways_seperated.blend
 - Assets/Bundle/Textures/Smudge.png
 - Assets/Bundle/Textures/Effects_Bubbles_v2_d.png
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorScientist.prefab
@@ -230,9 +232,11 @@ Assets:
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Animations/Rotate.anim
+- Assets/Bundle/Audio/Ghost_Space.mp3
 - Assets/Bundle/Models/species_hologram.obj
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
+- Assets/Bundle/Models/sun.obj
 - Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
 - Assets/Bundle/Materials/Floor.mat
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel.blend

@@ -23,8 +23,8 @@ namespace AstralCodex
         NomaiTranslator translator;
         NewHorizons.Components.Quantum.NHMultiStateQuantumObject quantumStates;
         PlayerCameraEffectController cameraEffectController;
-        GameObject musicSource;
-        GameObject musicFinaleSource;
+        OWAudioSource musicSource;
+        OWAudioSource musicFinaleSource;
         QuantumCampsiteController campsiteController;
         CosmicInflationController cosmicInflationController;
 
@@ -42,8 +42,8 @@ namespace AstralCodex
                 translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
                 recorder = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Quantum States - codex_eye_probe/ScannerState7/Scanner Orb/Sphere/PrecursorRecorderPosition/EyeRecorderPrecursor/InteractSphere").GetComponent<NomaiText>();
                 cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
-                musicSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicSource");
-                musicFinaleSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicFinaleSource");
+                musicSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicSource").GetComponent<OWAudioSource>();
+                musicFinaleSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicFinaleSource").GetComponent<OWAudioSource>();
                 campsiteController = SearchUtilities.Find("Sector_Campfire").GetComponent<QuantumCampsiteController>();
                 cosmicInflationController = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InflationController").GetComponent<CosmicInflationController>();
                 //Lights
@@ -91,17 +91,17 @@ namespace AstralCodex
         void LateUpdate()
         {
             //Finale starts when CosmicInflationController starts waiting for crossfade to the finale to start
-            if (cosmicInflationController._waitForCrossfade && !musicFinaleSource.activeSelf)
+            if (cosmicInflationController._waitForCrossfade && !musicFinaleSource.isPlaying)
             {
-                musicSource.SetActive(false);
-                musicFinaleSource.SetActive(true);
+                musicSource.FadeOut(5);
+                musicFinaleSource.FadeIn(5, true);
                 finaleStarted = true;
             }
             //Audio joins in once any of the travelers are playing
             else if (!finaleStarted)
             {
-                if (campsiteController._hasJamSessionStarted && !musicSource.activeSelf)
-                    musicSource.SetActive(true);
+                if (campsiteController._hasJamSessionStarted && !musicSource.isPlaying)
+                    musicSource.FadeIn(5, true);
             }
         }
 
@@ -113,7 +113,7 @@ namespace AstralCodex
             quantumStates.gameObject.SetActive(false);
         }
 
-        IEnumerator Disappear()
+        /*IEnumerator Disappear()
         {
             yield return new WaitForSeconds(1f);
             cameraEffectController.CloseEyes(0.25f);
@@ -123,7 +123,7 @@ namespace AstralCodex
             yield return new WaitForSeconds(0.25f);
             gameObject.SetActive(false);
             yield return null;
-        }
+        }*/
 
         void OnDisable()
         {
