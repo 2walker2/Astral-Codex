@@ -9,9 +9,10 @@ namespace AstralCodex
 {
     class PopulationTrails : Trails
     {
-
+        #region Target Paths
         void Awake()
         {
+            //Paths to each object the trails should be pointing to
             targetPaths = new List<List<string>> {
                 new List<string> {"Traveller_HEA_Player_v2" },
                 new List<string> {
@@ -64,7 +65,9 @@ namespace AstralCodex
                 new List<string> {"TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player" }
                 };
         }
+        #endregion
 
+        #region Initialization
         public override void Start()
         {
             base.Start();
@@ -73,5 +76,6 @@ namespace AstralCodex
             c.a = 0.2f;
             trails[0].material.color = c;
         }
+        #endregion
     }
 }

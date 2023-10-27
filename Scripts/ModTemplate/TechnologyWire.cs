@@ -9,29 +9,31 @@ namespace AstralCodex
 {
     class TechnologyWire : Wire
     {
-        MeshRenderer renderer;
-        GameObject reveal;
-        NomaiComputer computer;
-
+        #region Initialization
         void Start()
         {
             on = false;
             renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("SpacecraftCompleteReveal");
             computer = SearchUtilities.Find("CodexGalaxyComputer").GetComponent<NomaiComputer>();
-            Initialize(reveal, computer);
+            Initialize();
         }
+        #endregion
 
+        #region Turn On/Off
         void Update()
         {
             if (SpacecraftDetector.numberActive == SpacecraftDetector.numberPresent)
             {
-                TurnOn(renderer, reveal, computer);
+                TurnOn();
+                //The display is handled by the SpacecraftDetectors
             }
             else
             {
-                TurnOff(renderer, reveal, computer);
+                TurnOff();
+                //The display is handled by the SpacecraftDetectors
             }
         }
+        #endregion
     }
 }

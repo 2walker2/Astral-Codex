@@ -9,10 +9,13 @@ namespace AstralCodex
 {
     class BrambleProjectionActivate : MonoBehaviour
     {
-        GameObject projection;
-        Transform scroll;
-        Transform parent;
+        #region Private Variables
+        GameObject projection; //The GameObject to enable
+        Transform scroll; //The scroll that triggers the projection when picked up
+        Transform parent; //The scroll's initial parent Transform
+        #endregion
 
+        #region Initialization
         void Start()
         {
             //Find scroll and parent
@@ -25,12 +28,15 @@ namespace AstralCodex
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND BRAMBLE PROJECTION", MessageType.Error);
         }
+        #endregion
 
+        #region Update
         void Update()
         {
             //Activate projection when scroll is picked up
             if (!projection.activeInHierarchy && scroll.transform.parent != parent)
                 projection.SetActive(true);
         }
+        #endregion
     }
 }

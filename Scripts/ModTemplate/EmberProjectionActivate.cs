@@ -9,9 +9,12 @@ namespace AstralCodex
 {
     class EmberProjectionActivate : MonoBehaviour
     {
-        NomaiTextLine line;
-        GameObject projection;
+        #region Private Variables
+        NomaiTextLine line; //The line of text that activates the projection when read
+        GameObject projection; //The GameObject to enable
+        #endregion
 
+        #region Initialization
         void Start()
         {
             //Find activation text arc
@@ -27,12 +30,15 @@ namespace AstralCodex
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EMBER PROJECTION", MessageType.Error);
         }
+        #endregion
 
+        #region Update
         void Update()
         {
             //Activate projection when text is read
             if (!projection.activeInHierarchy && line._state == NomaiTextLine.VisualState.TRANSLATED)
                 projection.SetActive(true);
         }
+        #endregion
     }
 }

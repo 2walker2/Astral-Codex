@@ -14,31 +14,34 @@ namespace AstralCodex
 {
     class EyeProbe : MonoBehaviour
     {
-        float distance = 25;
-        float lightDistance = 15;
-        float lightFadeSpeed = 0.025f;
-        GameObject signal;
-        Transform player;
-        NomaiText recorder;
-        NomaiTranslator translator;
-        NewHorizons.Components.Quantum.NHMultiStateQuantumObject quantumStates;
-        PlayerCameraEffectController cameraEffectController;
-        OWAudioSource musicSource;
-        OWAudioSource musicFinaleSource;
-        QuantumCampsiteController campsiteController;
-        CosmicInflationController cosmicInflationController;
+        #region Private Variables
+        float distance = 25; //The distance the player must be within for quantum states to update
+        float lightDistance = 15; //The distance at which lights are deactivated
+        float lightFadeSpeed = 0.025f; //The speed at which lights fade
+        GameObject signal; //The GameObject holding the signal
+        Transform player; //The player's transform
+        NomaiText recorder; //The recorder GameObject spawned by the final quantum state
+        NomaiTranslator translator; //The player's translator tool
+        NewHorizons.Components.Quantum.NHMultiStateQuantumObject quantumStates; //The QuantumStates component
+        PlayerCameraEffectController cameraEffectController; //The effect controller on the main camera
+        OWAudioSource musicSource; //The audio source for the precursor Campfire Song
+        OWAudioSource musicFinaleSource; //The audio source for the finale of the precursor Campfire Song
+        QuantumCampsiteController campsiteController; //The campsite controller in the Ancient Glade
+        CosmicInflationController cosmicInflationController; //The cosmic inflation controller in the Ancient Glade
 
-        Dictionary<Light, float> fadeLights = new Dictionary<Light, float>();
-        bool blinkCalled = false;
-        bool finaleStarted = false;
+        Dictionary<Light, float> fadeLights = new Dictionary<Light, float>(); //The lights that should be deactivated when the player approaches the probe
+        bool blinkCalled = false; //Whether the player's camera has been told to blink
+        bool finaleStarted = false; //Whether the finale of the precursor Campfire Song has started
+        #endregion
 
+        #region Initialization
         void Start()
         {
             quantumStates = SearchUtilities.Find("Quantum States - codex_eye_probe").GetComponent<NewHorizons.Components.Quantum.NHMultiStateQuantumObject>();
             if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
             {
                 //Component references
-                player = SearchUtilities.Find("Player_Body").transform;
+                player = Locator.GetPlayerTransform();
                 translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
                 recorder = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Quantum States - codex_eye_probe/ScannerState7/Scanner Orb/Sphere/PrecursorRecorderPosition/EyeRecorderPrecursor/InteractSphere").GetComponent<NomaiText>();
                 cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
@@ -61,13 +64,15 @@ namespace AstralCodex
                 gameObject.SetActive(false);
             }
         }
+        #endregion
 
+        #region Update
         void Update()
         {
             //Enable/disable ability to change quantum state based on distance
             quantumStates._isQuantum = (transform.position - player.position).magnitude < distance;
             //Disable signal once on final state
-            if (quantumStates._stateIndex == quantumStates._states.Length - 1 && signal != null)
+            if (signal != null && signal.activeSelf && quantumStates._stateIndex == quantumStates._states.Length - 1)
                 signal.SetActive(false);
             //Lights
             if ((transform.position - player.position).magnitude < lightDistance)
@@ -87,7 +92,9 @@ namespace AstralCodex
                 StartCoroutine(nameof(Disappear));
             }*/
         }
+        #endregion
 
+        #region Music
         void LateUpdate()
         {
             //Finale starts when CosmicInflationController starts waiting for crossfade to the finale to start
@@ -104,7 +111,9 @@ namespace AstralCodex
                     musicSource.FadeIn(5, true);
             }
         }
+        #endregion
 
+        #region Remove Probe
         void DeactivateProbe()
         {
             GameObject eyeProbe = SearchUtilities.Find("EyeProbe");
@@ -131,5 +140,6 @@ namespace AstralCodex
             foreach (KeyValuePair<Light, float> p in fadeLights)
                 p.Key.intensity = p.Value;
         }
+        #endregion
     }
 }

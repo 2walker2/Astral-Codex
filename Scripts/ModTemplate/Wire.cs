@@ -9,17 +9,34 @@ namespace AstralCodex
 {
     class Wire : MonoBehaviour
     {
-        protected bool on = false;
+        #region Protected Variables
+        protected bool on = false; //Whether this wire is currently on
+        protected MeshRenderer renderer; //The renderer on this wire
+        protected GameObject reveal; //The GameObject containing the reveal for this wire
+        protected NomaiComputer computer; //The computer containing the portion of the Codec revealed by this wire
+        #endregion
 
-        public void Initialize(GameObject reveal, NomaiComputer computer)
+        #region Initialization
+        void Awake()
         {
+            //Component reference
+            renderer = GetComponent<MeshRenderer>();
+        }
+
+        //Called by derived wires in their Start() function
+        public void Initialize()
+        {
+            //Set initial state
             reveal.SetActive(false);
             ShipLogFactListTriggerVolume revealTrigger = reveal.GetComponent<ShipLogFactListTriggerVolume>();
             revealTrigger._player = false;
             computer.ClearAllEntries();
         }
+        #endregion
 
-        public void TurnOn(MeshRenderer renderer, GameObject reveal, NomaiComputer computer)
+        #region Turn On/Off
+        //Called by derived wires in their Update() function
+        public void TurnOn()
         {
             if (on == false)
             {
@@ -31,7 +48,8 @@ namespace AstralCodex
             }
         }
 
-        public void TurnOff(MeshRenderer renderer, GameObject reveal, NomaiComputer computer)
+        //Called by derived wires in their Update() function
+        public void TurnOff()
         {
             if (on == true)
             {
@@ -42,5 +60,6 @@ namespace AstralCodex
                 computer.ClearAllEntries();
             }
         }
+        #endregion
     }
 }

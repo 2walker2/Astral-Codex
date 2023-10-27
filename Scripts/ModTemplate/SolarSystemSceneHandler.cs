@@ -6,11 +6,12 @@ using System.Collections.Generic;
 using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.InputSystem;
 
 namespace AstralCodex
 {
     //Configures the solar system scene
-    class SolarSystemHandler : MonoBehaviour
+    class SolarSystemSceneHandler : MonoBehaviour
     {
         const string SceneName = "SolarSystem";
 
@@ -18,6 +19,11 @@ namespace AstralCodex
         //Asset references
         public Dictionary<string, Material> materials;
         public Dictionary<string, AudioClip> audioClips;
+        #endregion
+
+        #region Private Variables
+        bool flashbackOverridden = false;
+        NomaiExperimentBlackHole experimentBlackHole;
         #endregion
 
         #region Path List Declarations
@@ -62,7 +68,7 @@ namespace AstralCodex
 
         //Components to add to gameObjects in the scene
         Dictionary<string, Type> componentsToAdd = new Dictionary<string, Type>() {
-            {"Tesseract", typeof(Tesseract)},
+            {"Tesseract", typeof(TesseractInteraction)},
             {"SunWire", typeof(SunWire)},
             { "PopulationWire", typeof(PopulationWire) },
             { "TechnologyWire", typeof(TechnologyWire) },
@@ -126,6 +132,8 @@ namespace AstralCodex
         {
             if (system == SceneName)
             {
+                flashbackOverridden = false;
+
                 //General configuration
                 AssignGhostMatterMaterial();
                 FindMaterials();
@@ -138,6 +146,7 @@ namespace AstralCodex
                 ReplaceSkyboxMaterial();
                 IncreaseGhostMatterDamage();
                 EnableEmberTreeCollision();
+                InitializeSpacetimeStabilitySystem();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -300,6 +309,16 @@ namespace AstralCodex
             //Enable collision on the reunion memorial tree on ET
             GameObject.Find("EmberTwinTree").GetComponentInChildren<MeshCollider>().enabled = true;
         }
+
+        void InitializeSpacetimeStabilitySystem()
+        {
+            //Initialize the spacetime stability system
+            GameObject experimentBlackHoleGO = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Interactables_TimeLoopExperiment/WarpCoreExperiment/SingularityEffects/Singularity_BlackHole");
+            if (experimentBlackHoleGO != null)
+                experimentBlackHole = experimentBlackHoleGO.GetComponent<NomaiExperimentBlackHole>();
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND EXPERIMENT BLACK HOLE", MessageType.Error);
+        }
         #endregion
 
         #region Chime Configuration
@@ -419,6 +438,93 @@ namespace AstralCodex
                 visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
                 //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
             }*/
+        }
+        #endregion
+
+        #region Update
+        void Update()
+        {
+            if (SceneManager.GetSceneByName(SceneName).isLoaded)
+            {
+                //Player death management
+                if (Locator.GetDeathManager().IsPlayerDying())
+                {
+                    PlayerDeathHandler();
+                }
+
+                StabilizeSpacetime();
+
+                DebugUtilities();
+            }
+        }
+        #endregion
+
+        #region Update Functions
+        void PlayerDeathHandler()
+        {
+            if (Locator.GetDeathManager().IsPlayerDying())
+            {
+                //Override flashback when player dies
+                if (!flashbackOverridden)
+                {
+                    if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
+                    {
+                        Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
+                        GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
+                        if (flashbackCamera != null)
+                        {
+                            //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
+                            FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
+                            RenderTexture[] flashbackTextureArray = new RenderTexture[AssetHandler.flashbackTextureList.Count];
+                            for (int i = 0; i < AssetHandler.flashbackTextureList.Count; i++)
+                            {
+                                flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
+                                flashbackTextureArray[i].enableRandomWrite = true;
+                                Graphics.CopyTexture(AssetHandler.flashbackTextureList[i], flashbackTextureArray[i]);
+                            }
+                            flashbackRecorder._renderTextureArray = flashbackTextureArray;
+                            flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
+
+                            GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
+                            if (flashbackScreen != null)
+                                flashbackScreen.GetComponent<MeshRenderer>().material = AssetHandler.materials["spritesDefault"];
+                            else
+                                Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
+                        }
+                        else
+                            Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
+                    }
+                    flashbackOverridden = true;
+                }
+            }
+        }
+
+        void StabilizeSpacetime()
+        {
+            //Prevent spacetime from breaking
+            if (TimeLoopCoreController.s_paradoxExists || (experimentBlackHole!= null && experimentBlackHole._duplicateActive))
+            {
+                if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_lingering_chime_tesseract") && PlayerData._currentGameSave.shipLogFactSaves["codex_lingering_chime_tesseract"].revealOrder > -1)
+                {
+                    TimeLoopCoreController.s_paradoxExists = false; //Prevent from breaking via ATP duplication
+                    experimentBlackHole._duplicateActive = false; //Prevent from breaking via HEL experiment
+                }
+            }
+        }
+
+        void DebugUtilities()
+        {
+            //Debug warp to Chime
+            if (Keyboard.current.lKey.isPressed && Keyboard.current.cKey.wasPressedThisFrame)
+            {
+                OWRigidbody playerBody = Locator.GetPlayerBody();
+                if (playerBody != null)
+                {
+                    playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(0, -34998, 0));
+                    playerBody.SetVelocity(Vector3.zero);
+                    playerBody.SetAngularVelocity(Vector3.zero);
+                }
+            }
         }
         #endregion
     }

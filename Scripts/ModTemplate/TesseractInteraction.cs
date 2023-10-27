@@ -9,36 +9,24 @@ using UnityEngine.PostProcessing;
 
 namespace AstralCodex
 {
-    class Tesseract : MonoBehaviour
+    class TesseractInteraction : MonoBehaviour
     {
-        List<Transform> points;
-        List<LineRenderer> lineRenderers;
-        float time;
-        List<Vector3> trackPoints;
-        List<int> timeOffsets;
-        GameObject fourDParticles;
-        GameObject fourDParticles2;
-        int fourDLayer = 0;
-        float timeStayed = 0;
-        float secondLayerDelay = 10f;
-        GameObject trailsReveal;
-        GameObject skySphere;
-        int skySphereDisabled = 0;
-        AudioClip defaultTravelMusic;
+        #region Private Variables
+        GameObject fourDParticles; //The particles to enable when the player first enters the tesseract
+        GameObject fourDParticles2; //The particles to enable after the player has waited in the tesseract
+        int fourDLayer = 0; //The player's current tesseract layer (0=normal, 1=entered, 2=waited)
+        float timeStayed = 0; //The time the player has stayed in the tesseract since the last time they entered it
+        float secondLayerDelay = 10f; //How long the player has to stay in the tesseract before it will activate a second time
+        GameObject trailsReveal; //The GameObject holding the reveal volume for the trails
+        GameObject skySphere; //The GameObject holding the ghost matter skybox overlay
+        int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
+        AudioClip defaultTravelMusic; //The default travel music so it can be restored if the player resets the tesseract
+        #endregion
 
-        void Awake()
-        {
-            //Constants
-            trackPoints = new List<Vector3>() { new Vector3(-1, 1, 1), new Vector3(1, 1, 1), new Vector3(2, 2, 2), new Vector3(-2, 2, 2) };
-            timeOffsets = new List<int>() { 0, 1, 1, 0, 0, 1, 1, 0, 3, 2, 2, 3, 3, 2, 2, 3 };
-        }
-
+        #region Initialization
         void Start()
         {
-            points = new List<Transform>(transform.Find("Points").GetComponentsInChildren<Transform>());
-            points.RemoveAt(0);
-            lineRenderers = new List<LineRenderer>(GetComponentsInChildren<LineRenderer>());
-            time = 0;
+            //Component references
             fourDParticles = transform.Find("4DParticles").gameObject;
             fourDParticles2 = transform.Find("4DParticles2").gameObject;
             trailsReveal = SearchUtilities.Find("TrailsReveal");
@@ -55,13 +43,18 @@ namespace AstralCodex
                 globalMusicController._travelSource._clipArrayIndex = 0;
                 globalMusicController._travelSource._clipArrayLength = 0;
                 globalMusicController._travelSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
-            }          
+            }
 
-            //Save tesseract state from previous loops
+            //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
                 EnteredTesseract(true);
-        }
 
+            //Add the animation component as well
+            gameObject.AddComponent<TesseractAnimation>();
+        }
+        #endregion
+
+        #region Update
         void LateUpdate()
         {
             //Initially disable skySphere
@@ -79,44 +72,10 @@ namespace AstralCodex
                 if ((Camera.main.cullingMask & (1 << 22)) == 0)
                     Camera.main.cullingMask += (1 << 22);
             }
-
-            //Animate tesseract
-            time += Time.deltaTime;
-            for (int i = 0; i < points.Count; ++i)
-            {
-                //Loop variables
-                LineRenderer lr = lineRenderers[i];
-                Transform p = points[i];
-                Vector3[] positions = new Vector3[3];
-
-                //Move points
-                float t = (time + timeOffsets[i]) % 4;
-                float tt = t % 1;
-                int track = Mathf.FloorToInt(t);
-                Vector3 trackStart = trackPoints[track];
-                Vector3 trackEnd;
-                if (track >= trackPoints.Count - 1) trackEnd = trackPoints[0];
-                else trackEnd = trackPoints[track + 1];
-                Vector3 newPosition = new Vector3(Mathf.Lerp(trackStart.x, trackEnd.x, tt), Mathf.Lerp(trackStart.y, trackEnd.y, tt), Mathf.Lerp(trackStart.z, trackEnd.z, tt));
-                newPosition.y *= Mathf.Sign(p.transform.localPosition.y);
-                newPosition.z *= Mathf.Sign(p.transform.localPosition.z);
-                p.transform.localPosition = newPosition;
-
-                //Render lines
-                //Own position
-                positions[1] = p.position;
-                //Next position
-                if ((i + 1) % 4 == 0) positions[0] = points[i - 3].position;
-                else positions[0] = points[i + 1].position;
-                //Connecting positions
-                int connectingIndex = i + 4;
-                if (connectingIndex >= points.Count) connectingIndex -= points.Count;
-                positions[2] = points[connectingIndex].position;
-                //Apply positions
-                lr.SetPositions(positions);
-            }
         }
+        #endregion
 
+        #region Player Enters/Exits/Waits in Tesseract
         private void OnTriggerEnter(Collider other)
         {
             //Move into 4D
@@ -199,5 +158,6 @@ namespace AstralCodex
         {
             timeStayed = 0;
         }
+        #endregion
     }
 }

@@ -13,21 +13,29 @@ namespace AstralCodex
 {
     class SpacecraftDetector : MonoBehaviour
     {
-        public static int numberActive = 0;
-        public static int numberPresent = 0;
+        //Known bug: Probably breaks if multiple Nomai shuttles enter the same SpacecraftDetector and then one leaves
 
+        #region Static Variables
+        public static int numberActive = 0; //The number of SpacecraftDetectors with a ship in them in the scene
+        public static int numberPresent = 0; //The number of SpacecraftDetectors in the scene
+
+        //The icons associated with each SpacecraftDetector
         static Dictionary<string, string> planetIcons = new Dictionary<string, string>
         {
             {"TimberHearthSpacecraftDetector", "SpacecraftDisplays/TimberHearth" },
             {"AshTwinSpacecraftDetector", "SpacecraftDisplays/HourglassTwins/AshTwin" }
         };
+        #endregion
 
-        bool ship = false;
-        bool shuttle = false;
-        bool modelShip = false;
-        bool active = false;
-        MeshRenderer planetIcon;
+        #region Private Variables
+        bool ship = false; //Whether the player's ship is inside this SpacecraftDetector
+        bool shuttle = false; //Whether a Nomai shuttle is inside this SpacecraftDetector
+        bool modelShip = false; //Whether the model ship is inside this SpacecraftDetector
+        bool active = false; //Whether this SpacecraftDetector has a spacecraft inside it
+        MeshRenderer planetIcon; //The planet icon associated with this SpacecraftDetector
+        #endregion
 
+        #region Enable/Disable Handling
         void OnEnable()
         {
             numberPresent++;
@@ -41,7 +49,9 @@ namespace AstralCodex
             if (active == true)
                 numberActive--;
         }
+        #endregion
 
+        #region Initialization
         void Awake()
         {
             //Find planet icon
@@ -58,12 +68,16 @@ namespace AstralCodex
             }
             planetIcon = iconObject.GetComponent<MeshRenderer>();
         }
-
+        
         void Start()
         {
             Collider coll = GetComponent<Collider>();
+
+            //Toggle collider to detect objects that start inside it
             coll.enabled = false;
             coll.enabled = true;
+
+            //Initial state
             if (gameObject.name == "InterloperSpacecraftDetector" || gameObject.name == "QuantumMoonSpacecraftDetector") shuttle = true;
             if (gameObject.name == "TimberHearthSpacecraftDetector") modelShip = true;
             if (shuttle || ship || modelShip)
@@ -75,7 +89,9 @@ namespace AstralCodex
             else
                 planetIcon.material = AssetHandler.materials["black"];
         }
+        #endregion
 
+        #region Detect Spacecraft
         void OnTriggerEnter(Collider other)
         {
             if (other.transform.root.CompareTag("NomaiShuttleBody")) shuttle = true;
@@ -105,5 +121,6 @@ namespace AstralCodex
                 active = false;
             }
         }
+        #endregion
     }
 }

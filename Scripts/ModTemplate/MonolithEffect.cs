@@ -9,12 +9,13 @@ namespace AstralCodex
 {
     class MonolithEffect : MonoBehaviour
     {
+        /*
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
                 GameObject.Find("MonolithAudio").GetComponent<AudioSource>().enabled = true;
             }
-        }
+        }*/
     }
 }

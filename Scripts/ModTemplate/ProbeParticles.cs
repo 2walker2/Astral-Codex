@@ -10,8 +10,11 @@ namespace AstralCodex
 {
     class ProbeParticles: MonoBehaviour
     {
-        ParticleSystem particleSystem;
+        #region Private Variables
+        ParticleSystem particleSystem; //The particle system on this object
+        #endregion
 
+        #region Initialization
         void Start()
         {
             //Attach particles to probe
@@ -24,11 +27,14 @@ namespace AstralCodex
             }
             particleSystem = GetComponentInChildren<ParticleSystem>();
         }
+        #endregion
 
+        #region Play Particles
         void Update()
         {
             if (!particleSystem.isPlaying && PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
                 particleSystem.Play();
         }
+        #endregion
     }
 }

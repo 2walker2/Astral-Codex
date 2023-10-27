@@ -13,17 +13,23 @@ namespace AstralCodex
 {
     class Trails : MonoBehaviour
     {
-        public static bool visible = false;
+        #region Public Variables
+        public static bool visible = false; //Whether the trails are currently visible
 
-        public List<List<Transform>> targets;
-        public List<List<string>> targetPaths;
-        public List<LineRenderer> trails;
-        Material trailMat;
-        float widthMultiplier;
-        GameObject quantumMoon;
-        GameObject quantumMoonAtmosphere;
-        MeshRenderer darkBrambleCloakSphereRenderer;
+        public List<List<Transform>> targets; //These trails' target Transforms
+        public List<List<string>> targetPaths; //The paths to these trails' target Transforms
+        public List<LineRenderer> trails; //The trail LineRenderers controlled by this script
+        #endregion
 
+        #region Private Variables
+        Material trailMat; //The material to apply to the trails
+        float widthMultiplier; //The mutliplier to apply to each trail's width
+        GameObject quantumMoon; //The Quantum Moon's body's GameObject
+        GameObject quantumMoonAtmosphere; //The Quantum Moon's atmosphere's GameObject
+        MeshRenderer darkBrambleCloakSphereRenderer; //The renderer attached to the cloaking sphere that hides the interior of Dark Bramble
+        #endregion
+
+        #region Initialization
         public virtual void Start()
         {
             visible = false;
@@ -64,12 +70,13 @@ namespace AstralCodex
             }
 
             //Get material
-            GameObject trailMatGO = GameObject.Find("StationGhostMatterEffects");
+            GameObject trailMatGO = GameObject.Find("StationGhostMatterEffects"); //Pull ghost matter material off the ghost matter in the Chime
             if (trailMatGO != null)
                 trailMat = trailMatGO.GetComponent<ParticleSystemRenderer>().material;
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL MATERIAL", OWML.Common.MessageType.Error);
             trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
+            
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)
             {
@@ -77,24 +84,34 @@ namespace AstralCodex
                 trails[i].material = trailMat;
             }
         }
+        #endregion
 
+        #region Update Trail Positions
         public virtual void Update()
         {
-            //Ensure targets remain accurate
+            //Update trail target positions as they move
             if (visible == true)
             {
                 for (int i = 0; i < trails.Count && i < targets.Count; i++)
                 {
                     bool validTarget = false;
+                    //Iterate over each possible target for this trail until one is valid
                     for (int j = 0; j < targets[i].Count; j++)
                     {
+                        //Skip if any of the following are true:
+                        //1. The target doesn't exist
+                        //2. The target is disabled
+                        //3. The target is on the Quantum Moon and the QM is at the 6th location
+                        //4. The target is inside Dark Bramble and the interior is not manifested
                         if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false))
                             continue;
 
-                        trails[i].SetPosition(0, transform.position);
-                        trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f);
+                        trails[i].SetPosition(0, transform.position); //The start of the trail
+                        trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f); //The trail's target (offset to approximate pointing at NPCs' heads)
+                        //Intermediate points for smoother width interpolation
                         trails[i].SetPosition(1, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.1f));
                         trails[i].SetPosition(2, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.89f));
+                        
                         trails[i].widthMultiplier = Mathf.Min(widthMultiplier, Vector3.Distance(trails[i].GetPosition(3), transform.position) / 250);
                         validTarget = true;
                         break;
@@ -103,5 +120,6 @@ namespace AstralCodex
                 }
             }
         }
+        #endregion
     }
 }

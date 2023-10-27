@@ -9,36 +9,37 @@ namespace AstralCodex
 {
     class PopulationWire : Wire
     {
-        GameObject playerClone;
-        MeshRenderer renderer;
-        MeshRenderer missingPopulationDisplay;
-        GameObject reveal;
-        NomaiComputer computer;
+        #region Private Variables
+        GameObject playerClone; //The player's clone in the ATP
+        MeshRenderer missingPopulationDisplay; //The renderer of the missing segment in the population display
+        #endregion
 
+        #region Initialization
         void Start()
         {
             on = false;
+
+            //Component references
             playerClone = GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0).gameObject;
             missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
-            renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("PopulationCompleteReveal");
             computer = SearchUtilities.Find("CodexSpeciesComputer").GetComponent<NomaiComputer>();
-            Initialize(reveal, computer);
         }
+        #endregion
 
+        #region Turn On/Off
         void Update()
         {
             if (playerClone.activeInHierarchy)
             {
-                TurnOn(renderer, reveal, computer);
+                TurnOn();
                 missingPopulationDisplay.material = AssetHandler.materials["light"];
             }
             else
             {
-                TurnOff(renderer, reveal, computer);
                 missingPopulationDisplay.material = AssetHandler.materials["black"];
             }
         }
-        
+        #endregion
     }
 }

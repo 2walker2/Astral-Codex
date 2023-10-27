@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using System.Collections.Generic;
 using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 namespace AstralCodex
 {
@@ -16,7 +17,13 @@ namespace AstralCodex
         public static string assetBundlePath = "planets/assets/astral_codex";
         public static Dictionary<string, Material> materials;
         public static Dictionary<string, AudioClip> audioClips;
+
+        public static List<RenderTexture> flashbackTextureList;
         #endregion
+
+        //Flashback settings
+        int flashbackImageCount = 8;
+        int[] flashbackMultiplicity = new int[] { -1, 4, 4, 4, 4, 4, 4, 25, 4 };
 
         #region Path Lists
         //Materials to find in the asset bundle
@@ -69,6 +76,21 @@ namespace AstralCodex
                     audioClips.Add(pair.Value, audio);
                 else
                     Main.modHelper.Console.WriteLine("FAILED TO LOAD AUDIO CLIP " + audio.name + " FROM ASSET BUNDLE");
+            }
+        }
+
+        void LoadFlashbackTextures()
+        {
+            //Load flashback textures
+            flashbackTextureList = new List<RenderTexture>();
+            for (int renderTextureIndex = flashbackImageCount; renderTextureIndex > 0; renderTextureIndex--)
+            {
+                Texture2D texture = Main.modHelper.Assets.GetTexture("textures/" + renderTextureIndex.ToString() + ".png");
+                RenderTexture renderTexture = new RenderTexture(480, 270, 0);
+                renderTexture.enableRandomWrite = true;
+                RenderTexture.active = renderTexture;
+                Graphics.Blit(texture, renderTexture);
+                flashbackTextureList.AddRange(Enumerable.Repeat(renderTexture, flashbackMultiplicity[renderTextureIndex]));
             }
         }
         #endregion

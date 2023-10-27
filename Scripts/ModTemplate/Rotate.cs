@@ -8,11 +8,15 @@ namespace AstralCodex
 {
     class Rotate : MonoBehaviour
     {
-        public Vector3 speed;
+        #region Public Variables
+        public Vector3 speed; //The speed the object should rotate about each axis
+        #endregion
 
+        #region Rotate
         void Update()
         {
             transform.Rotate(speed * Time.deltaTime);
         }
+        #endregion
     }
 }

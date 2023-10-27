@@ -10,9 +10,12 @@ namespace AstralCodex
 {
     class ThornParticles: MonoBehaviour
     {
-        MeshRenderer cloakSphereRenderer;
-        ParticleSystemRenderer partRenderer;
+        #region Private Variables
+        MeshRenderer cloakSphereRenderer; //The renderer on the cloaking sphere that hides the interior of Dark Bramble
+        ParticleSystemRenderer partRenderer; //The renderer on the particle system attached to this object
+        #endregion
 
+        #region Initialization
         void Start()
         {
             //Align with cloak sphere
@@ -29,11 +32,14 @@ namespace AstralCodex
                 Main.modHelper.Console.WriteLine("PARTICLES FAILED TO FIND CLOAK SPHERE");
             partRenderer = GetComponent<ParticleSystemRenderer>();
         }
+        #endregion
 
+        #region Enable/Disable Particles
         void Update()
         {
             //Match visible only when cloak sphere is visible
             partRenderer.enabled = cloakSphereRenderer.enabled;
         }
+        #endregion
     }
 }

@@ -9,9 +9,10 @@ namespace AstralCodex
 {
     class SpacecraftTrails : Trails
     {
-        
+        #region Target Paths
         void Awake()
         {
+            //The objects to point trails at
             targetPaths = new List<List<string>> {
                 new List<string> {"Ship_Body" },
                 new List<string> {"Prefab_HEA_RiebeckShip" },
@@ -31,5 +32,6 @@ namespace AstralCodex
                 new List<string> { "AlphaShipMarker" }
             };
         }
+        #endregion
     }
 }
