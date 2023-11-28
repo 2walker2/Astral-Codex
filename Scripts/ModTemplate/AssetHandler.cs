@@ -39,7 +39,8 @@ namespace AstralCodex
         //AudioClips to find in the asset bundle
         Dictionary<string, string> audioClipsToFind = new Dictionary<string, string>()
         {
-            {"Assets/Bundle/Audio/Ghost_Space.mp3", "fourDTravelMusic"}
+            {"Assets/Bundle/Audio/Ghost_Space.mp3", "fourDTravelMusic"},
+            {"Assets/Bundle/Audio/Unveilment.mp3", "codecFinalEndTimes" }
         };
         #endregion
 

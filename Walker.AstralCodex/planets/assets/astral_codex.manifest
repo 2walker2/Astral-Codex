@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1540273843
+CRC: 3473399259
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e90e50a3c7be5d0fa7032e1a7cff5a6f
+    Hash: 665247b10fe49dff8ae699b6e16ef560
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b029cb64c456fb5dd640122867eebd7
@@ -139,6 +139,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/Textures/Skybox/backImage.png
+- Assets/Bundle/Audio/Unveilment.mp3
 - Assets/Bundle/White Hole.prefab
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab

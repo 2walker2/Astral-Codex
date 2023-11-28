@@ -147,6 +147,8 @@ namespace AstralCodex
                 IncreaseGhostMatterDamage();
                 EnableEmberTreeCollision();
                 InitializeSpacetimeStabilitySystem();
+
+                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(SwitchFinalEndTimesMusic);
                 
                 //Chime configuration
                 ConfigureChime();
@@ -318,6 +320,39 @@ namespace AstralCodex
                 experimentBlackHole = experimentBlackHoleGO.GetComponent<NomaiExperimentBlackHole>();
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXPERIMENT BLACK HOLE", MessageType.Error);
+        }
+
+        void SwitchFinalEndTimesMusic()
+        {
+            //Switch the final end times audio if the player has the codec at the start of the loop
+            if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
+            {
+                Main.modHelper.Console.WriteLine("SWITCHING FINAL END TIMES");
+
+                GlobalMusicController globalMusicController = Locator.GetGlobalMusicController();
+
+                //Override settings on all final end times sources
+                globalMusicController._finalEndTimesIntroSource._audioLibraryClip = 0;
+                globalMusicController._finalEndTimesIntroSource._clipArrayIndex = 0;
+                globalMusicController._finalEndTimesIntroSource._clipArrayLength = 0;
+                globalMusicController._finalEndTimesIntroSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
+
+                globalMusicController._finalEndTimesLoopSource._audioLibraryClip = 0;
+                globalMusicController._finalEndTimesLoopSource._clipArrayIndex = 0;
+                globalMusicController._finalEndTimesLoopSource._clipArrayLength = 0;
+                globalMusicController._finalEndTimesLoopSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
+
+                globalMusicController._finalEndTimesDarkBrambleSource._audioLibraryClip = 0;
+                globalMusicController._finalEndTimesDarkBrambleSource._clipArrayIndex = 0;
+                globalMusicController._finalEndTimesDarkBrambleSource._clipArrayLength = 0;
+                globalMusicController._finalEndTimesDarkBrambleSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
+
+                //Switch the clips
+                AudioClip codecFinalEndTimes = AssetHandler.audioClips["codecFinalEndTimes"];
+                globalMusicController._finalEndTimesIntroSource.clip = codecFinalEndTimes;
+                globalMusicController._finalEndTimesLoopSource.clip = codecFinalEndTimes;
+                globalMusicController._finalEndTimesDarkBrambleSource.clip = codecFinalEndTimes;
+            }
         }
         #endregion
 
