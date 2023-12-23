@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3261855682
+CRC: 3615823329
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1e772aebd843912b631eb416ffed3379
+    Hash: a38f14b299360b80d50584fcd01f7909
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b029cb64c456fb5dd640122867eebd7
@@ -121,6 +121,7 @@ Assets:
 - Assets/Bundle/Models/timber_hearth_hologram.obj
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
+- Assets/Bundle/Black Hole Interior Particles.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
 - Assets/Bundle/Models/wire2.obj
