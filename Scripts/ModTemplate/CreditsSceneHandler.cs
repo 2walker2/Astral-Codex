@@ -13,6 +13,8 @@ namespace AstralCodex
     {
         const string SceneName = "Credits_Final";
 
+        DialogueConditionManager dialogueConditionManagerSharedInstance;
+
         #region Initialization
         void Awake()
         {
@@ -25,7 +27,9 @@ namespace AstralCodex
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             if (scene.name == SceneName)
-                InitializeScene();
+            {
+                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(InitializeScene);
+            }
         }
         #endregion
 
@@ -35,8 +39,11 @@ namespace AstralCodex
             //Update end text
             if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
             {
+                dialogueConditionManagerSharedInstance = DialogueConditionManager.SharedInstance;
                 if (DialogueConditionManager.SharedInstance.GetConditionState("PROBE_ENTERED_EYE"))
-                    GameObject.Find("14.3 Billion Years Later").GetComponent<Text>().text = "14.3 Billion Years Later\n\nThe Codec is Rediscovered";
+                {
+                    SearchUtilities.Find("14.3 Billion Years Later").GetComponent<Text>().text = "14.3 Billion Years Later\n\nThe Codec is Rediscovered";
+                }
             }
         }
         #endregion

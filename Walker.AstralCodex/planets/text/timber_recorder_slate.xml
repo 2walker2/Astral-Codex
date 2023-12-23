@@ -1,0 +1,17 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>RECORDING</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hornfels insisted I bring this recorder with me to "document any unknown Nomai artifacts". If you ask me, I think they're being a little too optimistic. I'm unlikely to find anything of interest on such a routine trip.</Page>
+			<Page>Oh well. Slate's Expedition Log: Day 1</Page>
+			<Page>I'm out here by the ol' Nomai ruins to see if I can scrounge up an intact warp core for the hatchling. Gotta get their scout properly equipped before they set out for the stars.</Page>
+			<Page>I maaaay have gotten a bit too late of a start though and the sun's already setting so I might as well make camp here. Good thing I brought plenty of marshmallows, eh?</Page>
+			<Page>Ahhhhhhhhh! What's going on?! Wait no, come back! Where are you going?!</Page>
+			<Page>Ok. Deep breaths. What was that? I woke up to this faint ringing noise, almost to quiet to hear. When I opened my eyes, my campfire was moving. It just... lifted into the air like something had picked it up. Then it floated off into the sky like some kind of ghost.</Page>
+			<Page>That can't have been real, right? I must have had too much sap wine recently. Right? I didn't find any cores but I'm returning to the village and never camping here again. Hornfels can make one of the other venturers go find a core.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

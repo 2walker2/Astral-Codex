@@ -26,6 +26,8 @@ namespace AstralCodex
         {
             if (system == SceneName)
             {
+                AssetHandler.S.Load();
+
                 //Configure
                 InitializeProbeParticles();
                 ConfigureMuseumPlaque();

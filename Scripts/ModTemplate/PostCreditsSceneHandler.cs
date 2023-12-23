@@ -11,7 +11,14 @@ namespace AstralCodex
 {
     class PostCreditsSceneHandler : MonoBehaviour
     {
+
+        GameObject sceneRoot;
+        GameObject probe;
+        GameObject particles;
+        ParticleSystem particlesSystem;
+
         const string SceneName = "PostCreditScene";
+
 
         #region Initialization
         void Awake()
@@ -25,7 +32,12 @@ namespace AstralCodex
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             if (scene.name == SceneName)
-                InitializeScene();
+            {
+                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(InitializeScene);
+
+                //Debug force probe to show
+                DialogueConditionManager.SharedInstance.SetConditionState("PROBE_ENTERED_EYE", true);
+            }
         }
         #endregion
 
@@ -35,21 +47,36 @@ namespace AstralCodex
             //Particles on end screen
             if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
             {
-                GameObject probe = GameObject.Find("Probe");
-                if (probe != null)
+                if (DialogueConditionManager.SharedInstance.GetConditionState("PROBE_ENTERED_EYE"))
                 {
-                    AssetBundle.UnloadAllAssetBundles(false);
-                    //ModHelper.Console.WriteLine($"FOUND PROBE", MessageType.Success);
-                    AssetBundle assetBundle = Main.modHelper.Assets.LoadBundle("planets/assets/astral_codex");
-                    GameObject particles = (GameObject)Instantiate(assetBundle.LoadAsset("Assets/Bundle/SignalParticles.prefab"), probe.transform);
-                    particles.GetComponentInChildren<ParticleSystem>().Play();
-                    //Audio (doesn't work)
-                    /*AudioClip signal = (AudioClip)assetBundle.LoadAsset("Assets/Bundle/Audio/Signal.wav");
-                    Destroy(probe.GetComponentInChildren<OWAudioSource>());
-                    AudioSource probeAudio = probe.GetComponentInChildren<AudioSource>();
-                    probeAudio.clip = signal;
-                    probeAudio.volume = 5f;*/
-                    assetBundle.Unload(false);
+                    sceneRoot = SearchUtilities.Find("PostCreditsScene");
+                    probe = sceneRoot.transform.Find("Probe").gameObject;
+                    if (probe != null)
+                    {
+                        GameObject particlesPrefab = NewHorizons.Utility.Files.AssetBundleUtilities.LoadPrefab(AssetHandler.assetBundlePath, "Assets/Bundle/SignalParticles.prefab", Main.modBehaviour);
+                        particles = Instantiate(particlesPrefab, probe.transform);
+                        particles.SetActive(true); //Not sure why they're instantiated deactivated but this should fix it
+
+                        //Adjust the scale and orientation of the particles
+                        Transform eyeTransform = particles.transform.GetChild(0).GetChild(0);
+                        eyeTransform.localScale = Vector3.one * 25;
+                        Transform eyeCenterTransform = eyeTransform.transform.GetChild(0);
+                        eyeCenterTransform.localScale = Vector3.one * 250;
+
+                        particlesSystem = particles.GetComponentInChildren<ParticleSystem>();
+                        particlesSystem.Play();
+
+
+                        //Audio
+                        AudioClip signal = NewHorizons.Utility.Files.AssetBundleUtilities.Load<AudioClip>(AssetHandler.assetBundlePath, "Assets/Bundle/Audio/Signal.wav", Main.modBehaviour);
+                        OWAudioSource signalSource = probe.GetComponentInChildren<OWAudioSource>();
+                        signalSource._audioLibraryClip = 0;
+                        signalSource._clipArrayIndex = 0;
+                        signalSource._clipArrayLength = 0;
+                        signalSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
+                        signalSource.clip = signal;
+                        signalSource.dopplerLevel = 0;
+                    }
                 }
             }
         }

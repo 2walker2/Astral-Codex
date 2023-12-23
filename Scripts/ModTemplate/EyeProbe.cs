@@ -78,12 +78,18 @@ namespace AstralCodex
             if ((transform.position - player.position).magnitude < lightDistance)
             {
                 foreach (KeyValuePair<Light, float> p in fadeLights)
-                    p.Key.intensity = Mathf.Max(p.Key.intensity - lightFadeSpeed, 0);
+                {
+                    if (p.Key != null)
+                        p.Key.intensity = Mathf.Max(p.Key.intensity - lightFadeSpeed, 0);
+                }
             }
             else
             {
                 foreach (KeyValuePair<Light, float> p in fadeLights)
-                    p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
+                {
+                    if (p.Key != null)
+                        p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
+                }
             }
             //Trigger blink once recorder is read
             /*if (recorder._dictNomaiTextData[4].IsTranslated && !translator._isEquipped && !blinkCalled)

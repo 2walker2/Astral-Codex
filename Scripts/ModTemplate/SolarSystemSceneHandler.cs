@@ -15,12 +15,6 @@ namespace AstralCodex
     {
         const string SceneName = "SolarSystem";
 
-        #region Public Variables
-        //Asset references
-        public Dictionary<string, Material> materials;
-        public Dictionary<string, AudioClip> audioClips;
-        #endregion
-
         #region Private Variables
         bool flashbackOverridden = false;
         NomaiExperimentBlackHole experimentBlackHole;
@@ -44,26 +38,10 @@ namespace AstralCodex
             "TranslationProbe2/ScaleRoot/Model",
             "TranslationProbe3/Model",
             //"ChimeSign",
-            "Station Redesign v2/Visual/Model/Shell/Ghost Matter Shell",
+            "Station/Visual/Model/Shell/Ghost Matter Shell",
             "CodexGalaxyComputer",
             "CodexSpeciesComputer",
             "CodexEnvironmentsComputer"
-        };
-
-        //Materials to find on the asset references prefab
-        Dictionary<string, string> materialsToFind = new Dictionary<string, string>()
-        {
-            {"RedReference", "red"},
-            {"GreenReference", "green" },
-            {"LightReference", "light" },
-            {"BlackReference", "black" },
-            {"SpritesDefaultReference", "spritesDefault" }
-        };
-
-        //AudioClips to find on the asset references prefab
-        Dictionary<string, string> audioClipsToFind = new Dictionary<string, string>()
-        {
-            {"TravelMusicReference", "fourDTravelMusic"}
         };
 
         //Components to add to gameObjects in the scene
@@ -108,14 +86,14 @@ namespace AstralCodex
             {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
             {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
             //Chime
-            {"Station Redesign v2/Visual/Model/Floor/Rim", new Vector3(0, 0, -10) },
-            {"Station Redesign v2/Collision/Floor/Rim", new Vector3(0, 0, -10) },
-            {"Station Redesign v2/Visual/Solar Panels", new Vector3(0, 0, 10) },
-            {"Station Redesign v2/Collision/Solar Panels", new Vector3(0, 0, 10) },
-            {"Station Redesign v2/Orbiting Water Root", new Vector3(0, 3, 0) },
-            {"Station Redesign v2/Transmitter Coin/Root/Codex Environments Projection/Scanner/Scan Source", new Vector3(0, 15, 0)},
-            {"Station Redesign v2/Campfire Coin/Root/Codex Species Projection/Scanner", new Vector3(0, 5, 0)},
-            {"Station Redesign v2/Other Coin/Root/Codex Galaxy Projection/ScanSource/Dot Emitter", new Vector3(0, 5, 0)},
+            {"Station/Visual/Model/Floor/Rim", new Vector3(0, 0, -10) },
+            {"Station/Collision/Floor/Rim", new Vector3(0, 0, -10) },
+            {"Station/Visual/Solar Panels", new Vector3(0, 0, 10) },
+            {"Station/Collision/Solar Panels", new Vector3(0, 0, 10) },
+            {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },
+            {"Station/Transmitter Coin/Root/Codex Environments Projection/Scanner/Scan Source", new Vector3(0, 15, 0)},
+            {"Station/Campfire Coin/Root/Codex Species Projection/Scanner", new Vector3(0, 5, 0)},
+            {"Station/Other Coin/Root/Codex Galaxy Projection/ScanSource/Dot Emitter", new Vector3(0, 5, 0)},
         };
         #endregion
 
@@ -132,12 +110,12 @@ namespace AstralCodex
         {
             if (system == SceneName)
             {
+                AssetHandler.S.Load();
+
                 flashbackOverridden = false;
 
                 //General configuration
                 AssignGhostMatterMaterial();
-                FindMaterials();
-                FindAudioClips();
                 AssignScripts();
                 AssignRotatingObjects();
 
@@ -168,57 +146,6 @@ namespace AstralCodex
                     crystal.AddComponent<GhostMatterMaterial>();
                     //Main.modHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
                 }
-            }
-        }
-
-        void FindMaterials()
-        {
-            //Find materials on the asset reference prefab
-            materials = new Dictionary<string, Material>();
-            foreach (KeyValuePair<string, string> pair in materialsToFind)
-            {
-                GameObject obj = SearchUtilities.Find("MaterialReferences/" + pair.Key);
-                if (obj != null)
-                {
-                    MeshRenderer rend = obj.GetComponent<MeshRenderer>();
-                    if (rend != null)
-                    {
-                        Material mat = rend.material;
-                        if (mat != null)
-                        {
-                            materials.Add(pair.Value, mat);
-                            //Main.modHelper.Console.WriteLine($"FOUND MATERIAL " + pair.Value, MessageType.Success);
-                        }
-                        else
-                            Main.modHelper.Console.WriteLine($"FAILED TO FIND MATERIAL " + pair.Value, MessageType.Error);
-                    }
-                    else
-                        Main.modHelper.Console.WriteLine($"FAILED TO FIND RENDERER FOR MATERIAL " + pair.Value, MessageType.Error);
-                }
-                else
-                    Main.modHelper.Console.WriteLine($"FAILED TO FIND OBJECT FOR MATERIAL " + pair.Value, MessageType.Error);
-            }
-        }
-
-        void FindAudioClips()
-        {
-            //Find audioClips on the asset reference prefab
-            audioClips = new Dictionary<string, AudioClip>();
-            foreach (KeyValuePair<string, string> pair in audioClipsToFind)
-            {
-                GameObject obj = SearchUtilities.Find("AudioReferences/" + pair.Key);
-                if (obj != null)
-                {
-                    AudioSource source = obj.GetComponent<AudioSource>();
-                    if (source != null)
-                    {
-                        audioClips.Add(pair.Value, source.clip);
-                    }
-                    else
-                        Main.modHelper.Console.WriteLine($"FAILED TO FIND AUDIO SOURCE FOR CLIP " + pair.Value, MessageType.Error);
-                }
-                else
-                    Main.modHelper.Console.WriteLine($"FAILED TO FIND OBJECT FOR AUDIO CLIP " + pair.Value, MessageType.Error);
             }
         }
 
@@ -274,18 +201,16 @@ namespace AstralCodex
         {
             //Replace skybox material with a transparent version so the default stars are still visible
             GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
-            GameObject skyboxMaterialsReference = SearchUtilities.Find("SkyboxMaterialsReference");
-            if (skySphere != null && skyboxMaterialsReference != null)
+            if (skySphere != null)
             {
-                MeshRenderer skyboxMaterialsReferenceRenderer = skyboxMaterialsReference.GetComponent<MeshRenderer>();
                 for (int i = 0; i < skySphere.transform.childCount; i++)
                 {
                     MeshRenderer renderer = skySphere.transform.GetChild(i).GetComponent<MeshRenderer>();
-                    renderer.material = skyboxMaterialsReferenceRenderer.sharedMaterials[i];
+                    renderer.material = AssetHandler.skyboxMaterialList[i];
                 }
             }
             else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND SKY SPHERE OR SKYBOX MATERIALS REFERENCE", MessageType.Error);
+                Main.modHelper.Console.WriteLine("FAILED TO FIND SKY SPHERE", MessageType.Error);
         }
 
         void IncreaseGhostMatterDamage()
@@ -327,8 +252,6 @@ namespace AstralCodex
             //Switch the final end times audio if the player has the codec at the start of the loop
             if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
             {
-                Main.modHelper.Console.WriteLine("SWITCHING FINAL END TIMES");
-
                 GlobalMusicController globalMusicController = Locator.GetGlobalMusicController();
 
                 //Override settings on all final end times sources
@@ -373,7 +296,7 @@ namespace AstralCodex
             GameObject chimeWater = SearchUtilities.Find("LingeringChime_Body/Sector/Water");
             if (chimeWater != null)
             {
-                GameObject chimeWhiteHoleWater = SearchUtilities.Find("Station Redesign v2/Orbiting Water Root/ChimeWhiteHoleWater");
+                GameObject chimeWhiteHoleWater = SearchUtilities.Find("Station/Orbiting Water Root/ChimeWhiteHoleWater");
                 if (chimeWhiteHoleWater != null)
                 {
                     chimeWater.transform.parent = chimeWhiteHoleWater.transform;

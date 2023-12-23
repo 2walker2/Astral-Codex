@@ -25,7 +25,6 @@ namespace AstralCodex
         static Material material; //The ghost matter material crystal to apply
         
         List<MeshRenderer> renderers; //The mesh renderers on this object and its children
-        float delay = 0.5f; //The time to wait before applying the material to ensure everything is fully loaded
         #endregion
 
         #region Apply Material

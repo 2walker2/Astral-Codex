@@ -14,10 +14,13 @@ namespace AstralCodex
     {
 
         #region Public Variables
+        public static AssetHandler S;
+
         public static string assetBundlePath = "planets/assets/astral_codex";
         public static Dictionary<string, Material> materials;
         public static Dictionary<string, AudioClip> audioClips;
 
+        public static List<Material> skyboxMaterialList;
         public static List<RenderTexture> flashbackTextureList;
         #endregion
 
@@ -42,14 +45,52 @@ namespace AstralCodex
             {"Assets/Bundle/Audio/Ghost_Space.mp3", "fourDTravelMusic"},
             {"Assets/Bundle/Audio/Unveilment.mp3", "codecFinalEndTimes" }
         };
+
+        //Skybox Materials to find in the asset bundle
+        List<string> skyboxMaterialsToFind = new List<string>()
+        {
+            "Assets/Bundle/Materials/Skybox/SkyboxLeft.mat",
+            "Assets/Bundle/Materials/Skybox/SkyboxRight.mat",
+            "Assets/Bundle/Materials/Skybox/SkyboxUp.mat",
+            "Assets/Bundle/Materials/Skybox/SkyboxDown.mat",
+            "Assets/Bundle/Materials/Skybox/SkyboxFront.mat",
+            "Assets/Bundle/Materials/Skybox/SkyboxBack.mat"
+        };
+        #endregion
+
+        #region Unity Functions
+        void Awake()
+        {
+            //Initialize singleton
+            if (S == null)
+                S = this;
+            else
+            {
+                Main.modHelper.Console.WriteLine("DUPLICATE ASSET HANDLER", MessageType.Error);
+                Destroy(this);
+            }
+        }
+
+        void OnDestroy()
+        {
+            //Free up singleton
+            if (S == this)
+            {
+                S = null;
+                Main.modHelper.Console.WriteLine("ASSET HANDLER DESTROYED");
+            }
+        }
+
         #endregion
 
         #region Loading
-        void Awake()
+        public void Load()
         {
             //Load assets
             LoadMaterials();
             LoadAudioClips();
+            LoadSkyboxMaterials();
+            LoadFlashbackTextures();
         }
 
         void LoadMaterials()
@@ -80,6 +121,22 @@ namespace AstralCodex
             }
         }
 
+        void LoadSkyboxMaterials()
+        {
+            //Load materials to use for the skybox
+            skyboxMaterialList = new List<Material>();
+            for (int i=0; i<skyboxMaterialsToFind.Count; i++)
+            {
+                Material material = NewHorizons.Utility.Files.AssetBundleUtilities.Load<Material>(assetBundlePath, skyboxMaterialsToFind[i], Main.modBehaviour);
+                if (material != null)
+                {
+                    skyboxMaterialList.Add(material);
+                }
+                else
+                    Main.modHelper.Console.WriteLine("FAILED TO LOAD SKYBOX MATERIAL " + material.name + " FROM ASSET BUNDLE");
+            }
+        }
+
         void LoadFlashbackTextures()
         {
             //Load flashback textures
@@ -94,6 +151,7 @@ namespace AstralCodex
                 flashbackTextureList.AddRange(Enumerable.Repeat(renderTexture, flashbackMultiplicity[renderTextureIndex]));
             }
         }
+        
         #endregion
     }
 }

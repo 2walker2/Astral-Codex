@@ -28,14 +28,747 @@
 				"position": {"x": -88.97565, "y": -69.16965, "z": -197.5249},
 				"scale": 0.5
 			},
-		],
-		/*"translatorText" : [
 			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Chime Exhaust.prefab",
+				"position": {"x": 15.408, "y":-45.061, "z":190.7548},
+				"rotation": {"y": 180, "z": 180}
+			},
+			//Teaser campsite props
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 325.023346,
+					"y": 132.162125,
+					"z": 265.901031
+				},
+				"position": {
+					"x": -139.913055,
+					"y": -13.902504,
+					"z": -172.814438
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 303.149567,
+					"y": 134.963516,
+					"z": 263.8514
+				},
+				"position": {
+					"x": -141.074982,
+					"y": -14.5397415,
+					"z": -171.7975
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 44.4731331,
+					"y": 126.507591,
+					"z": 265.291931
+				},
+				"position": {
+					"x": -140.728882,
+					"y": -13.9734907,
+					"z": -172.259354
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 273.490723,
+					"y": 262.35788,
+					"z": 136.923813
+				},
+				"position": {
+					"x": -145.610733,
+					"y": -16.83519,
+					"z": -167.8803
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 328.576,
+					"y": 134.459961,
+					"z": 265.3105
+				},
+				"position": {
+					"x": -146.9282,
+					"y": -16.2417221,
+					"z": -166.904861
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 34.43102,
+					"y": 129.263168,
+					"z": 265.147949
+				},
+				"position": {
+					"x": -147.606369,
+					"y": -15.8771286,
+					"z": -166.19339
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 83.76156,
+					"y": 337.0223,
+					"z": 118.819695
+				},
+				"position": {
+					"x": -151.465866,
+					"y": -10.3038635,
+					"z": -163.663254
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 38.2134743,
+					"y": 125.97921,
+					"z": 266.177246
+				},
+				"position": {
+					"x": -150.8535,
+					"y": -11.2383347,
+					"z": -163.957825
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 89.6341553,
+					"y": 85.8202438,
+					"z": 226.508835
+				},
+				"position": {
+					"x": -149.483719,
+					"y": 1.03518677,
+					"z": -165.7838
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 348.648438,
+					"y": 309.27597,
+					"z": 90.80155
+				},
+				"position": {
+					"x": -145.389587,
+					"y": -2.09706879,
+					"z": -169.101715
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 276.2166,
+					"y": 347.1021,
+					"z": 51.9216
+				},
+				"position": {
+					"x": -143.2438,
+					"y": -3.428997,
+					"z": -170.939514
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 352.504669,
+					"y": 128.68306,
+					"z": 273.862427
+				},
+				"position": {
+					"x": -143.7945,
+					"y": -2.80460072,
+					"z": -170.565765
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 302.650421,
+					"y": 132.544022,
+					"z": 268.0241
+				},
+				"position": {
+					"x": -150.586563,
+					"y": -6.29526424,
+					"z": -164.99794
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 327.498657,
+					"y": 310.201,
+					"z": 91.26383
+				},
+				"position": {
+					"x": -150.577667,
+					"y": -5.43933535,
+					"z": -165.158691
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 272.691956,
+					"y": 287.572083,
+					"z": 113.331085
+				},
+				"position": {
+					"x": -150.415359,
+					"y": -4.716797,
+					"z": -165.0525
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 6.363733,
+					"y": 128.010925,
+					"z": 266.978638
+				},
+				"position": {
+					"x": -152.255783,
+					"y": -11.06565,
+					"z": -162.860245
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 300.844025,
+					"y": 122.751968,
+					"z": 277.48468
+				},
+				"position": {
+					"x": -145.470428,
+					"y": -2.83734512,
+					"z": -169.2023
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 340.608276,
+					"y": 310.373535,
+					"z": 85.8339157
+				},
+				"position": {
+					"x": -140.029266,
+					"y": -5.55246067,
+					"z": -173.40097
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Props_Village/OtherComponentsGroup/ObservatoryPath/Prefab_HEA_VillagePlank (39)",
+				"rotation": {
+					"x": 47.83517,
+					"y": 304.949036,
+					"z": 84.29011
+				},
+				"position": {
+					"x": -140.680756,
+					"y": -3.96773529,
+					"z": -173.075562
+				}
+			},
+			{
+				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
+				"scale": 1.50000012,
+				"rotation": {
+					"x": 308.3122,
+					"y": 133.94574,
+					"z": 262.509521
+				},
+				"position": {
+					"x": -148.126083,
+					"y": -14.0725708,
+					"z": -165.96431
+				}
+			},
+			{
+				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
+				"scale": 1.50000012,
+				"rotation": {
+					"x": 324.613617,
+					"y": 131.3572,
+					"z": 264.310944
+				},
+				"position": {
+					"x": -148.447937,
+					"y": -13.5429058,
+					"z": -165.766953
+				}
+			},
+			{
+				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
+				"scale": 1.50000012,
+				"rotation": {
+					"x": 321.316254,
+					"y": 131.777817,
+					"z": 264.0575
+				},
+				"position": {
+					"x": -147.86676,
+					"y": -13.3716011,
+					"z": -166.239609
+				}
+			},
+			{
+				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
+				"scale": 1.50000012,
+				"rotation": {
+					"x": 320.831329,
+					"y": 131.842972,
+					"z": 264.0165
+				},
+				"position": {
+					"x": -148.390976,
+					"y": -13.6454506,
+					"z": -166.3095
+				}
+			},
+			{
+				"path": "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_WoodenCrate1",
+				"rotation": {
+					"x": 0.458244026,
+					"y": 128.018326,
+					"z": 265.364319
+				},
+				"position": {
+					"x": -147.586258,
+					"y": -14.0046415,
+					"z": -166.39389
+				}
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
+				"rotation": {
+					"x": 32.72582,
+					"y": 126.41433,
+					"z": 266.430023
+				},
+				"position": {
+					"x": -152.29335,
+					"y": -10.2597065,
+					"z": -163.13887
+				}
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
+				"rotation": {
+					"x": 339.512726,
+					"y": 129.423981,
+					"z": 265.9541
+				},
+				"position": {
+					"x": -151.318085,
+					"y": -12.0333824,
+					"z": -163.660416
+				}
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
+				"rotation": {
+					"x": 344.467651,
+					"y": 133.124756,
+					"z": 265.847626
+				},
+				"position": {
+					"x": -147.3771,
+					"y": -15.315383,
+					"z": -166.587585
+				}
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
+				"rotation": {
+					"x": 309.49472,
+					"y": 134.012924,
+					"z": 264.708557
+				},
+				"position": {
+					"x": -147.412018,
+					"y": -9.039225,
+					"z": -168.461685
+				}
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Lighting_TM/Props_HEA_Lantern",
+				"rotation": {
+					"x": 15.3822336,
+					"y": 130.242767,
+					"z": 273.971863
+				},
+				"position": {
+					"x": -143.75148,
+					"y": -3.573987,
+					"z": -170.796066
+				}
+			},
+			/*{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/Prefab_HEA_Campfire",
+				"rotation": {
+					"x": 358.441437,
+					"y": 309.7182,
+					"z": 93.35894
+				},
+				"position": {
+					"x": -142.562256,
+					"y": -16.4685383,
+					"z": -170.280167
+				}
+			},*/
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 280.113251,
+					"y": 107.147095,
+					"z": 292.35437
+				},
+				"position": {
+					"x": -145.149765,
+					"y": -4.557109,
+					"z": -169.483261
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 277.091736,
+					"y": 96.6394348,
+					"z": 302.748047
+				},
+				"position": {
+					"x": -146.047089,
+					"y": -4.3776207,
+					"z": -168.736221
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 276.831177,
+					"y": 95.21868,
+					"z": 304.158356
+				},
+				"position": {
+					"x": -146.450226,
+					"y": -4.29987526,
+					"z": -168.400757
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 275.665344,
+					"y": 86.7560349,
+					"z": 312.57135
+				},
+				"position": {
+					"x": -146.789047,
+					"y": -4.23628235,
+					"z": -168.119217
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 285.544342,
+					"y": 323.1117,
+					"z": 75.568985
+				},
+				"position": {
+					"x": -147.264832,
+					"y": -4.25085831,
+					"z": -167.732574
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 302.282562,
+					"y": 309.1925,
+					"z": 91.99594
+				},
+				"position": {
+					"x": -146.549469,
+					"y": -5.25611067,
+					"z": -168.3856
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 312.773041,
+					"y": 313.33667,
+					"z": 84.35617
+				},
+				"position": {
+					"x": -146.39325,
+					"y": -4.783052,
+					"z": -168.488968
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 284.259552,
+					"y": 113.917542,
+					"z": 285.7318
+				},
+				"position": {
+					"x": -146.436584,
+					"y": -3.6899128,
+					"z": -168.3593
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 280.340424,
+					"y": 107.666435,
+					"z": 291.843262
+				},
+				"position": {
+					"x": -145.834229,
+					"y": -3.892025,
+					"z": -168.867783
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 294.908478,
+					"y": 120.900017,
+					"z": 279.1239
+				},
+				"position": {
+					"x": -145.761673,
+					"y": -4.782776,
+					"z": -169.00383
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 295.205231,
+					"y": 121.011871,
+					"z": 279.022583
+				},
+				"position": {
+					"x": -145.618622,
+					"y": -4.42118835,
+					"z": -169.089249
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 339.750519,
+					"y": 127.77269,
+					"z": 274.082
+				},
+				"position": {
+					"x": -146.069519,
+					"y": -4.46978664,
+					"z": -169.112167
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 82.33461,
+					"y": 279.3649,
+					"z": 59.95487
+				},
+				"position": {
+					"x": -145.8977,
+					"y": -4.569928,
+					"z": -168.874619
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 49.9380379,
+					"y": 133.752869,
+					"z": 275.956055
+				},
+				"position": {
+					"x": -146.651779,
+					"y": -4.45519257,
+					"z": -168.249924
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 55.0972557,
+					"y": 134.692978,
+					"z": 276.70282
+				},
+				"position": {
+					"x": -146.811951,
+					"y": -4.270603,
+					"z": -168.489639
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 296.914917,
+					"y": 308.779816,
+					"z": 92.3552
+				},
+				"position": {
+					"x": -145.910233,
+					"y": -5.51544476,
+					"z": -168.932678
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 69.69491,
+					"y": 298.7656,
+					"z": 78.90403
+				},
+				"position": {
+					"x": -145.132477,
+					"y": -5.36116552,
+					"z": -169.566833
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 17.39531,
+					"y": 311.214081,
+					"z": 91.11699
+				},
+				"position": {
+					"x": -146.277649,
+					"y": -6.18230247,
+					"z": -168.466049
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 27.0761757,
+					"y": 311.425049,
+					"z": 91.1971054
+				},
+				"position": {
+					"x": -145.02829,
+					"y": -6.07024,
+					"z": -169.550156
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 328.115,
+					"y": 310.216949,
+					"z": 91.25532
+				},
+				"position": {
+					"x": -145.461349,
+					"y": -6.1140914,
+					"z": -169.174286
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 16.9650631,
+					"y": 308.017578,
+					"z": 85.99613
+				},
+				"position": {
+					"x": -144.693619,
+					"y": -5.133573,
+					"z": -169.77623
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 342.773132,
+					"y": 310.5496,
+					"z": 91.11596
+				},
+				"position": {
+					"x": -144.346085,
+					"y": -6.39620924,
+					"z": -170.132629
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteTableSetting/Props_HEA_MarshmallowCanClosed1",
+				"rotation": {
+					"x": 3.19566464,
+					"y": 127.79612,
+					"z": 265.357239
+				},
+				"position": {
+					"x": -147.9951,
+					"y": -13.34691,
+					"z": -166.268646
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteSleepingBag/Props_HEA_BlanketRoll",
+				"scale": 1.50000012,
+				"rotation": {
+					"x": 325.520538,
+					"y": 130.613068,
+					"z": 265.401184
+				},
+				"position": {
+					"x": -149.381012,
+					"y": -11.9421282,
+					"z": -165.308609
+				}
+			},
+			//Slate recorder
+			{
+				"rename": "timber_recorder_slate",
+				"path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder",
+				"position": {"x": -142.9267, "y": -13.8289, "z": -170.3083},
+				"rotation": {"x": 332.6902, "y": 308.0737, "z": 93.77947}
+			}
+		],
+		"translatorText" : [
+			{
+				"rename": "timber_recorder_nomai",
 				"type": "recorder",
-				"xmlFile": "planets/text/interloper_recorder_warning.xml",
-				"position": {"x": 15.29159, "y": -43.70462, "z": 185.1682}
+				"xmlFile": "planets/text/timber_recorder_nomai.xml",
+				"position": {"x": -129.4664, "y": -64.27246, "z": -276.7014},
+				"rotation": {"x": 283.4799, "y": 178.5897, "z": 208.0663}
 			}	
-		],*/
+		],
+		"dialogue": [
+			{
+				"radius": 2.0,
+				"xmlFile": "planets/text/timber_recorder_slate.xml",
+				"rename": "timber_recorder_slate_dialog",
+				"pathToAnimController": "Sector_TH/timber_recorder_slate",
+				"parentPath": "Sector_TH/timber_recorder_slate",
+				"isRelativeToParent": true	
+			}
+		],
 		"slideShows": [
 			{
 				"rename": "FlashbackSlides",

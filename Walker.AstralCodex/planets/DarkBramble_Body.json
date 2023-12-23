@@ -1822,7 +1822,7 @@
 				"scale": 1.0000006
 			},
 			{
-				"rename": "bramble_chert_recorder",
+				"rename": "bramble_recorder_chert",
 				"path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder",
 				"position": {
 					"x": -208.053375,
@@ -1996,9 +1996,9 @@
 					"z": -409.3344
 				},
 				"radius": 1.0,
-				"xmlFile": "planets/text/bramble_chert_recorder.xml",
-				"rename": "bramble_chert_recorder_dialogue",
-				"pathToAnimController": "Sector_DB/bramble_chert_recorder"
+				"xmlFile": "planets/text/bramble_recorder_chert.xml",
+				"rename": "bramble_recorder_chert_dialogue",
+				"pathToAnimController": "Sector_DB/bramble_recorder_chert"
 			}
 		],
 		"entryLocation": [

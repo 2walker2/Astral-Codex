@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3473399259
+CRC: 3261855682
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 665247b10fe49dff8ae699b6e16ef560
+    Hash: 1e772aebd843912b631eb416ffed3379
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b029cb64c456fb5dd640122867eebd7
@@ -97,6 +97,7 @@ Assets:
 - Assets/Bundle/Textures/Skybox/downImage.png
 - Assets/Bundle/Materials/UnlitWhite.mat
 - Assets/Bundle/Textures/Skybox/frontImage.png
+- Assets/Bundle/Materials/Additive.mat
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
 - Assets/Bundle/Materials/Light.mat
@@ -112,6 +113,7 @@ Assets:
 - Assets/Bundle/Shaders/GreenLight.shader
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
+- Assets/Bundle/Shaders/OneSidedGlass.shader
 - Assets/Bundle/Models/probe.obj
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorExplorer.prefab
 - Assets/Bundle/Models/interloper.obj
@@ -144,6 +146,7 @@ Assets:
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
+- Assets/Bundle/Models/ember_twin.obj
 - Assets/Bundle/Black Hole Water.prefab
 - Assets/Bundle/Models/brittle_hollow_hologram.obj
 - Assets/Bundle/Materials/Skybox/SkyboxLeft.mat
@@ -179,6 +182,7 @@ Assets:
 - Assets/Bundle/Codex Species Projection.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
+- Assets/Bundle/Models/chime_exhaust_particle.obj
 - Assets/Bundle/Shaders/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Station Redesign.prefab
@@ -192,22 +196,26 @@ Assets:
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Textures/Chalkboard.jpg
 - Assets/Bundle/Materials/RedLight.mat
-- Assets/Bundle/Animations/Switch Environments Projection.anim
+- Assets/Bundle/Animations/SwitchEnvironmentsProjection.anim
 - Assets/Bundle/Models/Chime Redesign/projector.obj
+- Assets/Bundle/Shaders/OneSidedGlass.mat
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
 - Assets/Bundle/Models/timber_hearth.obj
 - Assets/Bundle/Textures/Eye.png
-- Assets/Bundle/Animations/Environments Projection.controller
+- Assets/Bundle/Animations/EnvironmentsProjectionController.controller
 - Assets/Bundle/Probe.prefab
 - Assets/Bundle/Textures/AdvancedSpacecraft.png
 - Assets/Bundle/Probe Warp Platform Gravity.prefab
 - Assets/Bundle/Textures/Water Normal Map.jpg
+- Assets/Bundle/Animations/ChimeHologramMove.anim
 - Assets/Bundle/Materials/Chime Redesign/Scanner 1.mat
 - Assets/Bundle/Models/population_bar.obj
+- Assets/Bundle/Models/Chime Redesign/ChimeRemodel_modified.blend
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Materials/WhiteHole.mat
+- Assets/Bundle/Models/ash_twin.obj
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
 - Assets/Bundle/White Hole Water.prefab
@@ -238,9 +246,12 @@ Assets:
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
 - Assets/Bundle/Models/sun.obj
+- Assets/Bundle/Station Redesign v3.prefab
 - Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
 - Assets/Bundle/Materials/Floor.mat
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel.blend
+- Assets/Bundle/Chime Exhaust.prefab
+- Assets/Bundle/Models/chime_exhaust.obj
 - Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Models/environments_hologram.obj
 - Assets/Bundle/Empty.prefab
@@ -250,6 +261,7 @@ Assets:
 - Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab
+- Assets/Bundle/Animations/BrambleProbeChimeHologramController.controller
 - Assets/Bundle/Textures/Skybox/rightImage.png
 - Assets/Bundle/Materials/Chime Redesign/Coin Metal.mat
 - Assets/Bundle/Models/probe_broken.obj

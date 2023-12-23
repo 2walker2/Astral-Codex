@@ -38457,7 +38457,6 @@ GameObject:
   - component: {fileID: 5033375187887989116}
   - component: {fileID: 5033375187887989115}
   - component: {fileID: 5033375187887989114}
-  - component: {fileID: 5033375187887989117}
   m_Layer: 12
   m_Name: Eye
   m_TagString: Untagged
@@ -43238,19 +43237,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &5033375187887989117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5033375187887989119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 0, y: -10, z: 0}
 --- !u!1 &5033375188402070333
 GameObject:
   m_ObjectHideFlags: 0

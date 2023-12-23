@@ -1,14 +1,13 @@
 {
     "credits": [
         "Walker#Design, Development, Writing",
-        "Texture_Turtle#2D and 3D Art",
-        "Greenpixel#Composer",
+        "Texture_Turtle#2D and 3D Art, Trailer",
+        "Greenpixel#Composer, 3D Art",
         "Reavo End#Composer",
-        "JohnCorby#Quality Assurance",
+        "JohnCorby#Composer, Quality Assurance",
         "Book#Quality Assurance",
         "InspectorJ (Freesound.com)#Sound Effects",
         "Hedgehog Team (Unity Asset Store)#Ghost Matter Skybox",
-        "benzoix (Freepik.com)#Chalkboard Texture",
         "MegaPiggy#Playtesting",
         "Caffeinated Gay#Playtesting",
         "FunkyShoeMan#Playtesting",
@@ -16,6 +15,7 @@
         "xen 12#Playtesting",
         "Samster68#Playtesting",
         "Toby Wright#Playtesting",
+        "pikpik#Playtesting",
         "Outer Wilds Modding Discord#Special Thanks"
     ],
     "popupMessage": "Thank you for playing Astral Codec!\n\n\nIn death a new mystery will be revealed."
