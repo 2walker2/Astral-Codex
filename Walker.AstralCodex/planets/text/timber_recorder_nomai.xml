@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>CYCAD: Something or someone has disturbed the warp cores. When I emerged from the warp pad, I noticed some of the spare cores were missing. I have also spotted two naked singularities: one at the top of this cascade and one in the pool at the base.</Text>
+		<Text>CYCAD: Something or someone has disturbed the warp cores. When I emerged from the warp pad, a portion of the spare cores were missing. I have also spotted two naked singularities: one at the top of this cascade and one in the pool at the base.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

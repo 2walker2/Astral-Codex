@@ -5,7 +5,7 @@
 		{
 			"outerRadius": 100,
 			"innerRadius": 30,
-			"intensity": 1.4
+			"intensity": 0
 		}
 	],
 	"Atmosphere": {
@@ -14,13 +14,12 @@
 		"size": 65.0
 	},
 	"Base": {
-		"ambientLight": -100.0,
 		"gravityFallOff": "linear",
 		"showMinimap": false,
 		"surfaceSize": 65,
 		"hasMapMarker": false,
 		"soiOverride": 200,
-		"surfaceGravity": 10
+		"surfaceGravity": 12
 	},
 	"Orbit": {
 		"staticPosition": {
