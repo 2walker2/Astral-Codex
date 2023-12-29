@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2433395885
+CRC: 1359830905
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 42bae0e304673a71cbc2019453874639
+    Hash: b40fdedd645447dffe2b89b1cab6c799
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b029cb64c456fb5dd640122867eebd7
@@ -91,6 +91,7 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Bundle/Shaders/TesseractActivation.shader
 - Assets/Bundle/InterloperDetail.prefab
 - Assets/Bundle/Coin.prefab
 - Assets/Bundle/Materials/Whirlpool Edge.mat
@@ -122,6 +123,7 @@ Assets:
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
 - Assets/Bundle/Black Hole Interior Particles.prefab
+- Assets/Bundle/Shaders/Custom_CodexDispenser.mat
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
 - Assets/Bundle/Models/wire2.obj
@@ -135,6 +137,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Models/solar_flare.obj
+- Assets/Bundle/Shaders/Wire.mat
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
 - Assets/Bundle/Materials/Chime Redesign/Geode Inside.mat
@@ -145,6 +148,7 @@ Assets:
 - Assets/Bundle/Textures/Skybox/backImage.png
 - Assets/Bundle/Audio/Unveilment.mp3
 - Assets/Bundle/White Hole.prefab
+- Assets/Bundle/Shaders/CodexDispenser.shader
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
@@ -168,10 +172,12 @@ Assets:
 - Assets/Bundle/Transmitter Coin.prefab
 - Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
+- Assets/Bundle/Test Codex Dispenser.prefab
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
 - Assets/Bundle/AssetReferences.prefab
+- Assets/Bundle/Textures/WirePattern.png
 - Assets/Bundle/Models/interloper_detail.obj
 - Assets/Bundle/ThornParticles.prefab
 - Assets/Bundle/Textures/Chime Redesign/GhostMetal1.png
@@ -197,6 +203,7 @@ Assets:
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
 - Assets/Bundle/Models/wire3.obj
+- Assets/Bundle/Shaders/Wire.shader
 - Assets/Bundle/Textures/Chalkboard.jpg
 - Assets/Bundle/Materials/RedLight.mat
 - Assets/Bundle/Animations/SwitchEnvironmentsProjection.anim
@@ -217,6 +224,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Scanner 1.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_modified.blend
+- Assets/Bundle/Models/test_wire.obj
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Materials/WhiteHole.mat
@@ -224,6 +232,7 @@ Assets:
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
 - Assets/Bundle/White Hole Water.prefab
+- Assets/Bundle/Models/inverted_sphere.obj
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Shaders/Glass.shader
 - Assets/Bundle/Materials/ThornParticles.mat
@@ -244,9 +253,11 @@ Assets:
 - Assets/Bundle/Materials/Sprite.mat
 - Assets/Bundle/Codex Environments Projection.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
+- Assets/Bundle/Textures/NoiseBig.png
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Audio/Ghost_Space.mp3
+- Assets/Bundle/Shaders/TesseractActivation.mat
 - Assets/Bundle/Models/species_hologram.obj
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
@@ -262,7 +273,9 @@ Assets:
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
 - Assets/Bundle/Models/new_precursors.obj
+- Assets/Bundle/Textures/T_Noise_01.png
 - Assets/Bundle/Audio/Signal.wav
+- Assets/Bundle/Test Wire.prefab
 - Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab

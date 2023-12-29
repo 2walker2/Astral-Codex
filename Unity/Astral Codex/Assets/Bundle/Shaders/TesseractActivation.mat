@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TesseractActivation
+  m_Shader: {fileID: 4800000, guid: 30bae000a5dcdca4ea2ec6471f975029, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BorderColorNoise:
+        m_Texture: {fileID: 2800000, guid: 048b8fdcecc26f34eb7f5d34b574be45, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 68954c9e980bfab49bf012d176acc5e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BorderColorNoiseScale: 0.5
+    - _BorderColorNoiseStrength: 3
+    - _BorderFadeThickness: 1
+    - _BorderThickness: 0.4
+    - _Cutoff: 0.5
+    - _DEBUG_TimeOffset: 0.5
+    - _FadeSpeed: 0.75
+    - _FadeStartDelay: 1.5
+    - _NoiseScale: 3
+    - _NoiseStrength: 3
+    - _StartTime: -Infinity
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BorderColor1: {r: 0, g: 1, b: 0.6694645, a: 1}
+    - _BorderColor2: {r: 0.7349014, g: 0.22169802, b: 1, a: 1}

@@ -7,6 +7,17 @@
 	"Orbit": {},
 	"Props": {
 		"details": [
+			//Start of debug details
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Test Wire.prefab",
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Test Codex Dispenser.prefab",
+				"position": {"x": 14.2846, "y": -47.0275, "z": 186.3972}
+			},
+			//End of debug details
 			{
 				"rename": "TimberHearthSpacecraftDetector",
 				"assetBundle": "planets/assets/astral_codex",
