@@ -283,11 +283,27 @@ namespace AstralCodex
         void ConfigureChime()
         {
             //Configure gameObjects in the Lingering Chime
+            ApplyChimeMaterials();
             ParentChimeWaterToWhiteHole();
             MakeChimeSignalDetectableUnderwater();
             PutChimeClutterOnVisibleToProbeLayer();
             EnableChimeReferenceFrame();
             ConfigureProjectionPool();
+        }
+
+        void ApplyChimeMaterials()
+        {
+            //Apply ghost matter material to chime exuast
+            GameObject chimeExhaust = SearchUtilities.Find("Chime Exhaust Root");
+            if (chimeExhaust != null)
+            {
+                foreach (MeshRenderer renderer in chimeExhaust.GetComponentsInChildren<MeshRenderer>())
+                {
+                    renderer.material = AssetHandler.materials["ghostMatter"];
+                }
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME EXHAUST ROOT");
         }
 
         void ParentChimeWaterToWhiteHole()

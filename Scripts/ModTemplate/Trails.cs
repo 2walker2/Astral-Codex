@@ -70,12 +70,8 @@ namespace AstralCodex
             }
 
             //Get material
-            GameObject trailMatGO = GameObject.Find("StationGhostMatterEffects"); //Pull ghost matter material off the ghost matter in the Chime
-            if (trailMatGO != null)
-                trailMat = trailMatGO.GetComponent<ParticleSystemRenderer>().material;
-            else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND TRAIL MATERIAL", OWML.Common.MessageType.Error);
-            trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f);
+            trailMat = AssetHandler.materials["ghostMatter"];
+            trailMat.color = new Color(trailMat.color.r, trailMat.color.g, trailMat.color.b, 3f); //Make material brighter
             
             //Initial configuration
             for (int i = 0; i < trails.Count && i < targets.Count; i++)

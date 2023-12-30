@@ -39,6 +39,12 @@ namespace AstralCodex
             {"Assets/Bundle/Materials/Sprite.mat", "spritesDefault" }
         };
 
+        //Materials to pull off objects in the base game
+        Dictionary<string, string> baseGameMaterialsToFind = new Dictionary<string, string>()
+        {
+            {"Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",  "ghostMatter"}
+        };
+
         //AudioClips to find in the asset bundle
         Dictionary<string, string> audioClipsToFind = new Dictionary<string, string>()
         {
@@ -95,8 +101,9 @@ namespace AstralCodex
 
         void LoadMaterials()
         {
-            //Load materials from the asset bundle and store them in the material dictionary for reference
             materials = new Dictionary<string, Material>();
+
+            //Load materials from the asset bundle and store them in the material dictionary for reference
             foreach (KeyValuePair<string, string> pair in materialsToFind)
             {
                 Material mat = NewHorizons.Utility.Files.AssetBundleUtilities.Load<Material>(assetBundlePath, pair.Key, Main.modBehaviour);
@@ -104,6 +111,25 @@ namespace AstralCodex
                     materials.Add(pair.Value, mat);
                 else
                     Main.modHelper.Console.WriteLine("FAILED TO LOAD MATERIAL " + mat.name + " FROM ASSET BUNDLE");
+            }
+
+            //Load materials from base game renderers and store them in the material dictionary for reference
+            foreach (KeyValuePair<string, string> pair in baseGameMaterialsToFind)
+            {
+                GameObject referenceObject = SearchUtilities.Find(pair.Key);
+                if (referenceObject != null)
+                {
+                    Renderer referenceRenderer = referenceObject.GetComponent<Renderer>();
+                    if (referenceRenderer != null)
+                    {
+                        Material mat = referenceRenderer.material;
+                        materials.Add(pair.Value, mat);
+                    }
+                    else
+                        Main.modHelper.Console.WriteLine("FAILED TO FIND REFERENCE RENDERER FOR MATERIAL " + pair.Value);
+                }
+                else
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND REFERENCE OBJECT FOR MATERIAL " + pair.Value);
             }
         }
 
