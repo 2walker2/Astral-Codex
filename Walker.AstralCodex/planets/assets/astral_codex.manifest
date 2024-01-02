@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2953392083
+CRC: 1245240836
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 17228c9c406ad944a2f8ea87481c664d
+    Hash: 2d91b3276dc65aef0d1ef8a494204ae4
   TypeTreeHash:
     serializedVersion: 2
     Hash: f0125fa12564f4c0109811e7d0ced46e
@@ -127,6 +127,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Rough.png
 - Assets/Bundle/Black Hole Interior Particles.prefab
 - Assets/Bundle/Shaders/Custom_CodexDispenser.mat
+- Assets/Bundle/Tesseract Activation Effect.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
 - Assets/Bundle/Models/wire2.obj

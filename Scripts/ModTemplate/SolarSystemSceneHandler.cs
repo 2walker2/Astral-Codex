@@ -293,7 +293,7 @@ namespace AstralCodex
 
         void ApplyChimeMaterials()
         {
-            //Apply ghost matter material to chime exuast
+            //Apply ghost matter material to chime exhaust
             GameObject chimeExhaust = SearchUtilities.Find("Chime Exhaust Root");
             if (chimeExhaust != null)
             {

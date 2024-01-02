@@ -12,8 +12,9 @@ namespace AstralCodex
     class TesseractInteraction : MonoBehaviour
     {
         #region Private Variables
-        GameObject fourDParticles; //The particles to enable when the player first enters the tesseract
-        GameObject fourDParticles2; //The particles to enable after the player has waited in the tesseract
+        GameObject activationEffect; //The prefab to instantiate when the player enters the tesseract
+        //GameObject fourDParticles; //The particles to enable when the player first enters the tesseract
+        //GameObject fourDParticles2; //The particles to enable after the player has waited in the tesseract
         int fourDLayer = 0; //The player's current tesseract layer (0=normal, 1=entered, 2=waited)
         float timeStayed = 0; //The time the player has stayed in the tesseract since the last time they entered it
         float secondLayerDelay = 10f; //How long the player has to stay in the tesseract before it will activate a second time
@@ -27,8 +28,9 @@ namespace AstralCodex
         void Start()
         {
             //Component references
-            fourDParticles = transform.Find("4DParticles").gameObject;
-            fourDParticles2 = transform.Find("4DParticles2").gameObject;
+            activationEffect = NewHorizons.Utility.Files.AssetBundleUtilities.LoadPrefab(AssetHandler.assetBundlePath, "Assets/Bundle/Tesseract Activation Effect.prefab", Main.modBehaviour);
+            //fourDParticles = transform.Find("4DParticles").gameObject;
+            //fourDParticles2 = transform.Find("4DParticles2").gameObject;
             trailsReveal = SearchUtilities.Find("TrailsReveal");
             if (trailsReveal != null)
                 trailsReveal.SetActive(false);
@@ -96,8 +98,9 @@ namespace AstralCodex
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
 
             //Instantiate effect
-            fourDParticles.SetActive(false);
-            fourDParticles.SetActive(true);
+            GameObject activationEffectInstance = Instantiate(activationEffect);
+            activationEffectInstance.AddComponent<TesseractActivationEffect>();
+            activationEffectInstance.SetActive(true);
 
             //Enable skybox
             if (skySphere != null)
@@ -136,7 +139,7 @@ namespace AstralCodex
                 
         }
 
-        void OnTriggerStay(Collider other)
+        /*void OnTriggerStay(Collider other)
         {
             if (fourDLayer != 2)
             {
@@ -152,7 +155,7 @@ namespace AstralCodex
                         trailsReveal.SetActive(true);
                 }
             }
-        }
+        }*/
 
         void OnTriggerExit(Collider other)
         {

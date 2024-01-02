@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8517662132061849997}
   - component: {fileID: 1190396890465700467}
   - component: {fileID: 2366170345215662578}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Exhaust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2583949271372190844}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Chime Exhaust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 7578280712222812586}
   - component: {fileID: 5810419832937782385}
   - component: {fileID: 8049986909155292019}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

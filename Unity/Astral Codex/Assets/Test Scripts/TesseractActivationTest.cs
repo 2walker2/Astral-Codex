@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class TesseractActivationTest : MonoBehaviour
 {
     [SerializeField] MeshRenderer render;
-    [SerializeField] ParticleSystem particles;
 
     // Update is called once per frame
     void Update()
@@ -14,7 +13,6 @@ public class TesseractActivationTest : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             render.material.SetFloat("_StartTime", Time.time);
-            particles.Play();
         }
     }
 }
