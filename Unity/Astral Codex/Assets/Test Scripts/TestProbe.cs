@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class TestProbe : MonoBehaviour
 {
+    [SerializeField] GameObject codexDispenser;
     [SerializeField] Rigidbody rigid;
 
     private void OnTriggerEnter(Collider other)
     {
-        transform.parent = other.transform;
-        rigid.useGravity = false;
-        rigid.isKinematic = true;
+        if (other.gameObject == codexDispenser)
+        {
+            transform.parent = other.transform;
+            rigid.useGravity = false;
+            rigid.isKinematic = true;
+        }
     }
 }

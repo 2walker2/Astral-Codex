@@ -8,10 +8,10 @@ public class CodexDispenserTest : MonoBehaviour
     [SerializeField] GameObject probe;
 
     [Header("Component References")]
-    [Tooltip("The outwards particle system to activate")]
-    [SerializeField] ParticleSystem outwardParticles;
-    [Tooltip("The inwards particle system to control")]
-    [SerializeField] ParticleSystem inwardParticles;
+    [Tooltip("The outwards particle systems to activate")]
+    [SerializeField] ParticleSystem[] outwardParticles;
+    [Tooltip("The inwards particle systems to control")]
+    [SerializeField] ParticleSystem[] inwardParticles;
     [Tooltip("The audio source to use")]
     [SerializeField] AudioSource audioSource;
 
@@ -48,7 +48,11 @@ public class CodexDispenserTest : MonoBehaviour
 
         //Start audio and particles
         audioSource.Play();
-        outwardParticles.Play();
+        
+        foreach (ParticleSystem p in outwardParticles)
+        {
+            p.Play();
+        }
 
         //Probe sinks into dispenser
         float sinkStartTime = Time.time;
@@ -65,9 +69,11 @@ public class CodexDispenserTest : MonoBehaviour
         yield return new WaitForSeconds(particleBurstTime - (Time.time - startTime));
 
         //Enable inward particles' orbital velocity
-        Debug.Log("Changing particles orbital velocity");
-        ParticleSystem.VelocityOverLifetimeModule inwardVelocityOverLifetimeModule = inwardParticles.velocityOverLifetime;
-        inwardVelocityOverLifetimeModule.speedModifierMultiplier = 1f;
+        foreach (ParticleSystem p in inwardParticles)
+        {
+            ParticleSystem.VelocityOverLifetimeModule inwardVelocityOverLifetimeModule = p.velocityOverLifetime;
+            inwardVelocityOverLifetimeModule.speedModifierMultiplier = 1f;
+        }
 
         yield return null;
     }
