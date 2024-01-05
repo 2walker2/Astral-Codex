@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 50aa0624500f27647affa3c39b8dddbd
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: 6547cd56d78e37347aeb40bfc1252b34, type: 3}
+  - _UVDistortionTexture: {fileID: 2800000, guid: 6338747e61b383c4c925842959fd96a0,
+      type: 3}
+  - _VertexDistortionXTexture: {fileID: 2800000, guid: 6338747e61b383c4c925842959fd96a0,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
