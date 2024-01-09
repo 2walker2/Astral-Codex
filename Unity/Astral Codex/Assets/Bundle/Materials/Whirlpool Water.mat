@@ -29,10 +29,10 @@ Material:
     - _FadeDistanceMax: 35000
     - _FadeDistanceMin: 5000
     - _NormalStrength: 1
-    - _RefractionInnerRadius: 0.25
+    - _RefractionInnerRadius: 0.45
     - _RefractionMapScale: 1
     - _RefractionOuterRadius: 0.5
     - _RefractionStrength: 0.005
-    - _RotationSpeed: -0.5
+    - _RotationSpeed: 0.25
     m_Colors:
     - _BaseColor: {r: 0.18049124, g: 0.9811321, b: 0.9494594, a: 0.078431375}

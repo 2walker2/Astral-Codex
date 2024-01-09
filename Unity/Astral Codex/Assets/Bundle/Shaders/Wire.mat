@@ -26,7 +26,7 @@ Material:
     m_Floats:
     - _BaseWireColorFactor: 0.01
     - _Gloss: 2
-    - _Metallic: 5
+    - _Metallic: 1.5
     - _Speed: 0.5
     - _StripeThickness: 0.2
     m_Colors:

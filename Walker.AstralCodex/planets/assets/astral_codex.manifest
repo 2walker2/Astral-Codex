@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1245240836
+CRC: 2664688356
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2d91b3276dc65aef0d1ef8a494204ae4
+    Hash: 265237840379a1879c09ad6134fadc4d
   TypeTreeHash:
     serializedVersion: 2
     Hash: f0125fa12564f4c0109811e7d0ced46e
@@ -109,6 +109,7 @@ Assets:
 - Assets/Bundle/Textures/Monolith.png
 - Assets/Bundle/Materials/Chime Redesign/Metal.mat
 - Assets/Bundle/Station Redesign v2.prefab
+- Assets/Bundle/Materials/Foliage1.mat
 - Assets/Bundle/Materials/BlackHole.mat
 - Assets/Bundle/Materials/Chime Redesign/Display Sheet.mat
 - Assets/Bundle/Audio/TractorBeam.wav
@@ -125,11 +126,13 @@ Assets:
 - Assets/Bundle/SpacecraftDetector.prefab
 - Assets/Bundle/Materials/Signal.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Rough.png
+- Assets/Bundle/Textures/Foliage/Foliage1G.png
 - Assets/Bundle/Black Hole Interior Particles.prefab
 - Assets/Bundle/Shaders/Custom_CodexDispenser.mat
 - Assets/Bundle/Tesseract Activation Effect.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
+- Assets/Bundle/Textures/Foliage/Foliage1.png
 - Assets/Bundle/Models/wire2.obj
 - Assets/Bundle/4DParticles.prefab
 - Assets/Bundle/Textures/Chime Redesign/Structure_IP_metalHammered_n.png
@@ -138,6 +141,7 @@ Assets:
 - Assets/Bundle/Scanner.prefab
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_DW_Iron_DarkPaint_New_d.png
+- Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Models/solar_flare.obj
@@ -145,10 +149,13 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
 - Assets/Bundle/Materials/Chime Redesign/Geode Inside.mat
+- Assets/Bundle/Textures/Foliage/Foliage4.png
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
+- Assets/Bundle/Textures/Foliage/Foliage3.png
 - Assets/Bundle/Models/Chime Redesign/NewProbe_Seperate.blend
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
+- Assets/Bundle/Shaders/Foliage.shader
 - Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/Textures/Skybox/backImage.png
 - Assets/Bundle/Audio/Unveilment.mp3
@@ -165,6 +172,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Tube.mat
 - Assets/Bundle/Materials/Skybox/SkyboxRight.mat
 - Assets/Bundle/Textures/Skybox/leftImage.png
+- Assets/Bundle/Textures/Foliage/WaterDecorG.png
 - Assets/Bundle/Materials/Skybox/SkyboxUp.mat
 - Assets/Bundle/Shaders/Whirlpool Edge.shader
 - Assets/Bundle/Codex Galaxy Projection.prefab
@@ -176,13 +184,16 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/Light.mat
 - Assets/Bundle/Models/torus.obj
+- Assets/Bundle/Textures/Foliage/Foliage5G.png
 - Assets/Bundle/Transmitter Coin.prefab
 - Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/Test Codex Dispenser.prefab
+- Assets/Bundle/Textures/Foliage/Foliage3G.png
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
+- Assets/Bundle/Shaders/WireCoating.mat
 - Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Textures/WirePattern.png
 - Assets/Bundle/Models/interloper_detail.obj
@@ -212,6 +223,7 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Models/Chime Redesign/NewProbe.blend
+- Assets/Bundle/Shaders/WireCoating.shader
 - Assets/Bundle/Shaders/Wire.shader
 - Assets/Bundle/Textures/Chalkboard.jpg
 - Assets/Bundle/Materials/RedLight.mat
@@ -220,6 +232,7 @@ Assets:
 - Assets/Bundle/Models/Chime Redesign/projector.obj
 - Assets/Bundle/Shaders/OneSidedGlass.mat
 - Assets/Bundle/Materials/Black.mat
+- Assets/Bundle/Textures/Foliage/Foliage2G.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
 - Assets/Bundle/Models/timber_hearth.obj
 - Assets/Bundle/Textures/Eye.png
@@ -227,6 +240,7 @@ Assets:
 - Assets/Bundle/Probe.prefab
 - Assets/Bundle/Materials/Chime Redesign/Metal 4.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 1.mat
+- Assets/Bundle/Materials/FoliageWaterDecor.mat
 - Assets/Bundle/Textures/AdvancedSpacecraft.png
 - Assets/Bundle/Probe Warp Platform Gravity.prefab
 - Assets/Bundle/Textures/Water Normal Map.jpg
@@ -234,6 +248,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Scanner 1.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_modified.blend
+- Assets/Bundle/Textures/Foliage/Foliage4G.png
 - Assets/Bundle/Models/test_wire.obj
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
 - Assets/Bundle/SignalParticles.prefab
@@ -259,6 +274,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 2.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorScientist.prefab
 - Assets/Bundle/Textures/Population.png
+- Assets/Bundle/Materials/Foliage5.mat
 - Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Materials/Whirlpool Water.mat
 - Assets/Bundle/Bramble Building.prefab
@@ -268,6 +284,7 @@ Assets:
 - Assets/Bundle/Textures/NoiseBig.png
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Animations/Rotate.anim
+- Assets/Bundle/Textures/Foliage/Foliage5.png
 - Assets/Bundle/Audio/Ghost_Space.mp3
 - Assets/Bundle/Shaders/TesseractActivation.mat
 - Assets/Bundle/Models/species_hologram.obj
@@ -280,16 +297,19 @@ Assets:
 - Assets/Bundle/Materials/Floor.mat
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel.blend
 - Assets/Bundle/Audio/Codex Reveal.mp3
+- Assets/Bundle/Textures/Foliage/Foliage2.png
 - Assets/Bundle/Chime Exhaust.prefab
 - Assets/Bundle/Models/chime_exhaust.obj
 - Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Models/environments_hologram.obj
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
+- Assets/Bundle/Textures/Distortion.png
 - Assets/Bundle/Models/new_precursors.obj
 - Assets/Bundle/Textures/T_Noise_01.png
 - Assets/Bundle/Audio/Signal.wav
 - Assets/Bundle/Test Wire.prefab
+- Assets/Bundle/Materials/Foliage2.mat
 - Assets/Bundle/ReunionMural.prefab
 - Assets/Bundle/Materials/Chalkboard.mat
 - Assets/Bundle/EyeProbeStates/ScannerState3.prefab
@@ -300,6 +320,7 @@ Assets:
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
 - Assets/Bundle/Models/Chime Redesign/transmitter.obj
+- Assets/Bundle/Materials/Foliage3.mat
 - Assets/Bundle/Textures/Line.png
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (15).png
 - Assets/Bundle/Black Hole.prefab
@@ -307,6 +328,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Metal.mat
 - Assets/Bundle/Textures/Pentagon.png
 - Assets/Bundle/Models/dark_bramble_hologram.obj
+- Assets/Bundle/Textures/Foliage/WaterDecor.png
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Materials/Chime Redesign/Goldish foil.mat
 - Assets/Bundle/Models/hemisphere.obj

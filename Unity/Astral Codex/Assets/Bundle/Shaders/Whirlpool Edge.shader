@@ -84,9 +84,9 @@ Shader "Custom/Whirlpool" {
 ////// Emissive:
                 float4 _Tint_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Tint );
                 float _Brightness_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Brightness );
-                float4 node_853 = _Time;
+                float4 node_633 = _Time;
                 float _EdgeRotateSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _EdgeRotateSpeed );
-                float node_3865_ang = node_853.g;
+                float node_3865_ang = node_633.g;
                 float node_3865_spd = _EdgeRotateSpeed_var;
                 float node_3865_cos = cos(node_3865_spd*node_3865_ang);
                 float node_3865_sin = sin(node_3865_spd*node_3865_ang);
@@ -97,7 +97,7 @@ Shader "Custom/Whirlpool" {
                 float2 node_3865 = (mul((((i.uv0-node_5531)*((1.0 - (distance(i.uv0,float2(0.5,0.5))/_EdgeDistanceAdjustment_var))*_EdgeStretch_var))+node_5531)-node_3865_piv,float2x2( node_3865_cos, -node_3865_sin, node_3865_sin, node_3865_cos))+node_3865_piv);
                 float4 node_5648 = tex2D(_FoamEdgeTexture,TRANSFORM_TEX(node_3865, _FoamEdgeTexture));
                 float _SecondaryEdgeRotateSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _SecondaryEdgeRotateSpeed );
-                float node_8053_ang = node_853.g;
+                float node_8053_ang = node_633.g;
                 float node_8053_spd = _SecondaryEdgeRotateSpeed_var;
                 float node_8053_cos = cos(node_8053_spd*node_8053_ang);
                 float node_8053_sin = sin(node_8053_spd*node_8053_ang);

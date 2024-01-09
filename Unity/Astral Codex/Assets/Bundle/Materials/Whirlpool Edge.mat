@@ -30,9 +30,9 @@ Material:
     m_Floats:
     - _Brightness: 0.1
     - _Cutoff: 0.5
-    - _EdgeDistanceAdjustment: 0.1
+    - _EdgeDistanceAdjustment: 0.05
     - _EdgeRotateSpeed: -1
-    - _EdgeStretch: 0.25
+    - _EdgeStretch: 10
     - _FadeDistanceMax: 35000
     - _FadeDistanceMin: 5000
     - _LightWrapping: 0
