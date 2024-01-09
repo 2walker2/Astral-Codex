@@ -43,14 +43,15 @@ Material:
     - _AlphaClip: 1
     - _Brightness: 4
     - _Cutoff: 0.5
-    - _DepthBlendMax: 15
+    - _DepthBlendMax: 5
     - _DepthBlendMin: 0.5
+    - _DepthBlendVanishTreshold: 0.5
     - _DiffusePower: 1
     - _DistortionScale: 0.25
     - _DistortionSpeed: 0.025
     - _DistortionStrength: 0.115
     - _LightTransmission: 0
-    - _MaxDitherValue: 10
+    - _MaxDitherValue: 8
     - _UVDistortionStrengthHeightThreshold: 0
     - _VertexDistortionStrengthHeightThreshold: 0.2
     - _VertexDistortionStrengthHeightThreshold_copy: 0

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2664688356
+CRC: 1571627561
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 265237840379a1879c09ad6134fadc4d
+    Hash: a026e40751db97bfc33408882d5c6ad0
   TypeTreeHash:
     serializedVersion: 2
     Hash: f0125fa12564f4c0109811e7d0ced46e
@@ -118,6 +118,7 @@ Assets:
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
 - Assets/Bundle/Shaders/OneSidedGlass.shader
+- Assets/Bundle/Materials/Chime Redesign/Interloper Rock Props.mat
 - Assets/Bundle/Models/probe.obj
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorExplorer.prefab
 - Assets/Bundle/Models/interloper.obj
@@ -143,7 +144,9 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/Structure_DW_Iron_DarkPaint_New_d.png
 - Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
+- Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_n.png
 - Assets/Bundle/Textures/Glass Normal Map.jpg
+- Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_d.png
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/Shaders/Wire.mat
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
@@ -201,12 +204,14 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/GhostMetal1.png
 - Assets/Bundle/Materials/Chime Redesign/Foil.mat
 - Assets/Bundle/Textures/Reunion Mural.png
+- Assets/Bundle/Materials/Chime Redesign/Sand.mat
 - Assets/Bundle/SkyboxOverlay.prefab
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_technology.blend
 - Assets/Bundle/Codex Species Projection.prefab
+- Assets/Bundle/Foliage Group 4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/CornerPiece.png
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
@@ -220,6 +225,7 @@ Assets:
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
+- Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Models/Chime Redesign/NewProbe.blend
@@ -238,6 +244,7 @@ Assets:
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Animations/EnvironmentsProjectionController.controller
 - Assets/Bundle/Probe.prefab
+- Assets/Bundle/Materials/Chime Redesign/Interloper Rock Surface.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 4.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 1.mat
 - Assets/Bundle/Materials/FoliageWaterDecor.mat
@@ -251,11 +258,13 @@ Assets:
 - Assets/Bundle/Textures/Foliage/Foliage4G.png
 - Assets/Bundle/Models/test_wire.obj
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
+- Assets/Bundle/Foliage Group 1.prefab
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Materials/WhiteHole.mat
 - Assets/Bundle/Models/ash_twin.obj
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
+- Assets/Bundle/Foliage Group 3.prefab
 - Assets/Bundle/White Hole Water.prefab
 - Assets/Bundle/Models/inverted_sphere.obj
 - Assets/Bundle/Models/attlerock.obj
@@ -273,6 +282,7 @@ Assets:
 - Assets/Bundle/Textures/Effects_Bubbles_v2_d.png
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 2.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorScientist.prefab
+- Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_d.png
 - Assets/Bundle/Textures/Population.png
 - Assets/Bundle/Materials/Foliage5.mat
 - Assets/Bundle/EyeProbeStates/ScannerState4.prefab
@@ -283,6 +293,7 @@ Assets:
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
 - Assets/Bundle/Textures/NoiseBig.png
 - Assets/Bundle/Animations/RotateController.controller
+- Assets/Bundle/Textures/Chime Redesign/Effects_HT_Sand_n.png
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Textures/Foliage/Foliage5.png
 - Assets/Bundle/Audio/Ghost_Space.mp3
@@ -299,8 +310,10 @@ Assets:
 - Assets/Bundle/Audio/Codex Reveal.mp3
 - Assets/Bundle/Textures/Foliage/Foliage2.png
 - Assets/Bundle/Chime Exhaust.prefab
+- Assets/Bundle/Foliage Group 2.prefab
 - Assets/Bundle/Models/chime_exhaust.obj
 - Assets/Bundle/Models/stationv3.obj
+- Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_n.png
 - Assets/Bundle/Models/environments_hologram.obj
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat

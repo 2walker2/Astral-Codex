@@ -47,12 +47,13 @@ Material:
     - _Brightness: 4
     - _Cutoff: 0.5
     - _DepthBlendDistance: 1
-    - _DepthBlendMax: 15
+    - _DepthBlendMax: 5
     - _DepthBlendMin: 0.5
+    - _DepthBlendVanishTreshold: 0.5
     - _DiffuseAmbientLight: 1
     - _DiffusePower: 0.25
     - _LightTransmission: 0.75
-    - _MaxDitherValue: 10
+    - _MaxDitherValue: 8
     - _Metallic: 0
     - _PositionNoiseOffsetMultiplier: 0.564836
     - _UVDistortionStrengthHeightThreshold: 0

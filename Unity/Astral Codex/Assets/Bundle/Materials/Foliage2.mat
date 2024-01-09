@@ -38,12 +38,13 @@ Material:
     m_Floats:
     - _Brightness: 4
     - _Cutoff: 0.5
-    - _DepthBlendMax: 15
+    - _DepthBlendMax: 5
     - _DepthBlendMin: 0.5
+    - _DepthBlendVanishTreshold: 0.5
     - _DiffuseAmbientLight: 1
     - _DiffusePower: 0.25
     - _LightTransmission: 0.75
-    - _MaxDitherValue: 10
+    - _MaxDitherValue: 8
     - _Metallic: 0
     - _UVDistortionStrengthHeightThreshold: 0.05
     - _VertexDistortionStrengthHeightThreshold: 0.05
@@ -63,6 +64,6 @@ Material:
     - _UVDistortionStrengthBase: {r: 0.01, g: 0.05, b: 0, a: 0}
     - _UVDistortionStrengthHeight: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _VertexDistortionScale: {r: 1, g: 5, b: 0, a: 0}
-    - _VertexDistortionSpeed: {r: 0.05, g: 1, b: 0, a: 0}
+    - _VertexDistortionSpeed: {r: 0.06, g: 1.25, b: 0, a: 0}
     - _VertexDistortionStrengthBase: {r: 0, g: 0, b: 0, a: 0}
     - _VertexDistortionStrengthHeight: {r: 1.5, g: 0.5, b: 0, a: 0}
