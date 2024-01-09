@@ -34,8 +34,11 @@ Material:
     m_Floats:
     - _Brightness: 4
     - _Cutoff: 0.5
+    - _DepthBlendMax: 15
+    - _DepthBlendMin: 0.5
     - _DiffusePower: 0.25
     - _LightTransmission: 0.75
+    - _MaxDitherValue: 10
     - _UVDistortionStrengthHeightThreshold: 0.15
     - _VertexDistortionStrengthHeightThreshold: 0.2
     m_Colors:

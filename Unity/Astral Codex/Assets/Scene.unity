@@ -6525,7 +6525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1000586337
 Transform:
   m_ObjectHideFlags: 0
@@ -32185,6 +32185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Station Redesign v3
       objectReference: {fileID: 0}
+    - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ab47dc4849974bbdce006af51450d, type: 3}
 --- !u!1001 &671532823587686702
@@ -42315,7 +42320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8574119911254744556
 MonoBehaviour:
   m_ObjectHideFlags: 0
