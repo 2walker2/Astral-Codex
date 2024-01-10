@@ -17,7 +17,8 @@ namespace AstralCodex
             "TranslationProbe1/ScaleRoot/Model/BH Projector Ring/BH Scanner",
             "TranslationProbe1/ScaleRoot/Model/GD Projector Ring/GD Scanner",
             "TranslationProbe1/ScaleRoot/Model/DB Projector Ring/DB Scanner",
-            "TranslationProbe1/ScaleRoot/Model/Sun Projector/Sun Scanner"
+            "TranslationProbe1/ScaleRoot/Model/Sun Projector/Sun Scanner",
+            "TranslationProbe1/Projections"
         };
 
         bool active = false; //Whether the projection is currently active

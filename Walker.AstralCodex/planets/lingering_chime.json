@@ -10,7 +10,6 @@
 	],
 	"Atmosphere": {
 		"hasOxygen": true,
-		"hasSnow": true,
 		"size": 65.0
 	},
 	"Base": {
