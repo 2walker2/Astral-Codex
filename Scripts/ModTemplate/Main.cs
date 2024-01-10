@@ -53,7 +53,7 @@ namespace AstralCodex
             newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             newHorizons.LoadConfigs(this);
 
-            //Locate the gameObject that holds this script
+            //Locate the GameObject that holds this script
             GameObject modBehaviourGO = SearchUtilities.Find(ModHelper.Manifest.UniqueName);
             if (modBehaviourGO != null)
             {

@@ -65,24 +65,24 @@ namespace AstralCodex
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
         {
-            {"TranslationProbe2/Projections", new Vector3(0, 2, 0) },
-            {"TranslationProbe2/Projections/Sun Scanner/ScanSource/SunScan", new Vector3(0, 8, 0) },
-            {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (4)/DarkBramble", new Vector3(0, 8, 0) },
-            {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (3)/GiantsDeep", new Vector3(0, 8, 0) },
-            {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (2)/BrittleHollow", new Vector3(0, 8, 0) },
-            {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource (1)/TimberHearth", new Vector3(0, 8, 0) },
-            {"TranslationProbe2/Projections/SpacecraftScanner/ScanSource/HourglassTwins", new Vector3(0, 8, 0) },
-            {"TranslationProbe1/Projections/HT Scanner", new Vector3(0, 5, 0) },
-            {"TranslationProbe1/Projections/TH Scanner", new Vector3(0, 3, 0) },
-            {"TranslationProbe1/Projections/BH Scanner", new Vector3(0, 2.5f, 0) },
-            {"TranslationProbe1/Projections/GD Scanner", new Vector3(0, 2, 0) },
-            {"TranslationProbe1/Projections/DB Scanner", new Vector3(0, 1.5f, 0) },
-            {"TranslationProbe1/Projections/Sun Scanner/ScanSource/Sun", new Vector3(3, -3, 3) },
-            {"TranslationProbe1/Projections/HT Scanner/ScanSource/Hourglass Twins", new Vector3(0, 10, 0) },
-            {"TranslationProbe1/Projections/TH Scanner/ScanSource/TimberHearth", new Vector3(0, 10, 0) },
-            {"TranslationProbe1/Projections/BH Scanner/ScanSource/Brittle Hollow", new Vector3(0, 10, 0) },
-            {"TranslationProbe1/Projections/GD Scanner/ScanSource/Giant's Deep", new Vector3(0, 10, 0) },
-            {"TranslationProbe1/Projections/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring", new Vector3(0, 2, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/Sun Scanner/ScanSource/SunScan", new Vector3(0, 8, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (4)/DarkBramble", new Vector3(0, 8, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (3)/GiantsDeep", new Vector3(0, 8, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (2)/BrittleHollow", new Vector3(0, 8, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (1)/TimberHearth", new Vector3(0, 8, 0) },
+            {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource/HourglassTwins", new Vector3(0, 8, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/HT Projector Ring", new Vector3(0, 5, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/TH Projector Ring", new Vector3(0, 3, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/BH Projector Ring", new Vector3(0, 2.5f, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/GD Projector Ring", new Vector3(0, 2, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/DB Projector Ring", new Vector3(0, 1.5f, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/Sun Projector/Sun Scanner/ScanSource/Sun", new Vector3(3, -3, 3) },
+            {"TranslationProbe1/ScaleRoot/Model/HT Projector Ring/HT Scanner/ScanSource/Hourglass Twins", new Vector3(0, 10, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/TH Projector Ring/TH Scanner/ScanSource/TimberHearth", new Vector3(0, 10, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/BH Projector Ring/BH Scanner/ScanSource/Brittle Hollow", new Vector3(0, 10, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/GD Projector Ring/GD Scanner/ScanSource/Giant's Deep", new Vector3(0, 10, 0) },
+            {"TranslationProbe1/ScaleRoot/Model/DB Projector Ring/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
             {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
             {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
             //Chime
@@ -215,7 +215,7 @@ namespace AstralCodex
 
         void IncreaseGhostMatterDamage()
         {
-            //Increase the damage of ghost matter pathces to prevent the player from speeding through them
+            //Increase the damage of ghost matter patches to prevent the player from speeding through them
             //Chime ghost matter
             GameObject stationGhostMatter = GameObject.Find("StationGhostMatter");
             if (stationGhostMatter != null)
@@ -436,40 +436,37 @@ namespace AstralCodex
         #region Update Functions
         void PlayerDeathHandler()
         {
-            if (Locator.GetDeathManager().IsPlayerDying())
+            //Override flashback when player dies
+            if (!flashbackOverridden)
             {
-                //Override flashback when player dies
-                if (!flashbackOverridden)
+                if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
                 {
-                    if ((!PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_projection_fact") || PlayerData._currentGameSave.shipLogFactSaves["codex_projection_fact"].revealOrder <= -1) && TimeLoop._isTimeFlowing)
+                    Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
+                    GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
+                    if (flashbackCamera != null)
                     {
-                        Locator.GetShipLogManager().RevealFact("codex_flashback_fact");
-                        GameObject flashbackCamera = SearchUtilities.Find("FlashbackCamera");
-                        if (flashbackCamera != null)
+                        //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
+                        FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
+                        RenderTexture[] flashbackTextureArray = new RenderTexture[AssetHandler.flashbackTextureList.Count];
+                        for (int i = 0; i < AssetHandler.flashbackTextureList.Count; i++)
                         {
-                            //ModHelper.Console.WriteLine("OVERWRITING FLASHBACK", MessageType.Success);
-                            FlashbackRecorder flashbackRecorder = flashbackCamera.GetComponent<FlashbackRecorder>();
-                            RenderTexture[] flashbackTextureArray = new RenderTexture[AssetHandler.flashbackTextureList.Count];
-                            for (int i = 0; i < AssetHandler.flashbackTextureList.Count; i++)
-                            {
-                                flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
-                                flashbackTextureArray[i].enableRandomWrite = true;
-                                Graphics.CopyTexture(AssetHandler.flashbackTextureList[i], flashbackTextureArray[i]);
-                            }
-                            flashbackRecorder._renderTextureArray = flashbackTextureArray;
-                            flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
-
-                            GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
-                            if (flashbackScreen != null)
-                                flashbackScreen.GetComponent<MeshRenderer>().material = AssetHandler.materials["spritesDefault"];
-                            else
-                                Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
+                            flashbackTextureArray[i] = new RenderTexture(480, 270, 0);
+                            flashbackTextureArray[i].enableRandomWrite = true;
+                            Graphics.CopyTexture(AssetHandler.flashbackTextureList[i], flashbackTextureArray[i]);
                         }
+                        flashbackRecorder._renderTextureArray = flashbackTextureArray;
+                        flashbackRecorder._numCapturedSnapshots = flashbackTextureArray.Length;
+
+                        GameObject flashbackScreen = SearchUtilities.Find("FlashbackCamera/Screen");
+                        if (flashbackScreen != null)
+                            flashbackScreen.GetComponent<MeshRenderer>().material = AssetHandler.materials["spritesDefault"];
                         else
-                            Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
+                            Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SCREEN", MessageType.Error);
                     }
-                    flashbackOverridden = true;
+                    else
+                        Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK CAMERA", MessageType.Error);
                 }
+                flashbackOverridden = true;
             }
         }
 

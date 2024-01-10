@@ -10,7 +10,18 @@ namespace AstralCodex
     class BrambleProjectionActivate : MonoBehaviour
     {
         #region Private Variables
-        GameObject projection; //The GameObject to enable
+        //The paths to the projection objects to activate
+        string[] projectionPaths = {
+            "TranslationProbe1/ScaleRoot/Model/HT Projector Ring/HT Scanner",
+            "TranslationProbe1/ScaleRoot/Model/TH Projector Ring/TH Scanner",
+            "TranslationProbe1/ScaleRoot/Model/BH Projector Ring/BH Scanner",
+            "TranslationProbe1/ScaleRoot/Model/GD Projector Ring/GD Scanner",
+            "TranslationProbe1/ScaleRoot/Model/DB Projector Ring/DB Scanner",
+            "TranslationProbe1/ScaleRoot/Model/Sun Projector/Sun Scanner"
+        };
+
+        bool active = false; //Whether the projection is currently active
+        GameObject[] projectionGOs; //The GameObjects to enable
         Transform scroll; //The scroll that triggers the projection when picked up
         Transform parent; //The scroll's initial parent Transform
         #endregion
@@ -21,12 +32,22 @@ namespace AstralCodex
             //Find scroll and parent
             scroll = SearchUtilities.Find("BrambleScroll2").transform;
             parent = scroll.parent;
-            //Find projection root
-            projection = SearchUtilities.Find("TranslationProbe1/Projections");
-            if (projection != null)
-                projection.SetActive(false);
-            else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND BRAMBLE PROJECTION", MessageType.Error);
+
+            //Find projection GameObjects and disable them initially
+            projectionGOs = new GameObject[projectionPaths.Length];
+            for (int i = 0; i < projectionPaths.Length; i++)
+            {
+                GameObject projectionGO = SearchUtilities.Find(projectionPaths[i]);
+                if (projectionGO != null)
+                {
+                    projectionGO.SetActive(false);
+                    projectionGOs[i] = projectionGO;
+                }
+                else
+                {
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND BRAMBLE PROJECTION " + projectionPaths[i], MessageType.Error);
+                }
+            }
         }
         #endregion
 
@@ -34,8 +55,13 @@ namespace AstralCodex
         void Update()
         {
             //Activate projection when scroll is picked up
-            if (!projection.activeInHierarchy && scroll.transform.parent != parent)
-                projection.SetActive(true);
+            if (!active && scroll.transform.parent != parent)
+            {
+                foreach (GameObject p in projectionGOs)
+                {
+                    p.SetActive(true);
+                }
+            }
         }
         #endregion
     }
