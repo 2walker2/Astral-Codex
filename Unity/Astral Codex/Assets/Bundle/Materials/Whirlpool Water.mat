@@ -35,4 +35,4 @@ Material:
     - _RefractionStrength: 0.005
     - _RotationSpeed: 0.25
     m_Colors:
-    - _BaseColor: {r: 0.18049124, g: 0.9811321, b: 0.9494594, a: 0.078431375}
+    - _BaseColor: {r: 0.18039218, g: 0.98039216, b: 0.587523, a: 0.19607843}

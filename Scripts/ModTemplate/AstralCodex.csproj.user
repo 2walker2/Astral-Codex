@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <OutputPath>D:\Outer Wilds Modding\Astral-Codex\Walker.AstralCodex</OutputPath>
+    <OutputPath>$(SolutionDir)\..\Walker.AstralCodex</OutputPath>
 	<OuterWildsModDirectory>$(AppData)\OuterWildsModManager\OWML\Mods</OuterWildsModDirectory>
   </PropertyGroup>
 </Project>

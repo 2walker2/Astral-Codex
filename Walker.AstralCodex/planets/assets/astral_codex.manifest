@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3753823233
+CRC: 1076331545
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 854b44152cda1744661d4e6a8a1d3a15
+    Hash: c4e8830975e358b19eebec00c0038121
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f0125fa12564f4c0109811e7d0ced46e
+    Hash: a7d5f91270fdfeb91eb4562ede222b50
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -36,6 +36,8 @@ ClassTypes:
 - Class: 82
   Script: {instanceID: 0}
 - Class: 83
+  Script: {instanceID: 0}
+- Class: 86
   Script: {instanceID: 0}
 - Class: 91
   Script: {instanceID: 0}
@@ -115,7 +117,10 @@ Assets:
 - Assets/Bundle/Audio/TractorBeam.wav
 - Assets/Bundle/EyeProbeStates/ScannerState0.prefab
 - Assets/Bundle/Shaders/GreenLight.shader
+- Assets/Bundle/Textures/Chime Redesign/LightCookie.asset
+- Assets/Bundle/Models/wind_chime.obj
 - Assets/Bundle/Materials/Chalk.mat
+- Assets/Bundle/Shaders/Unlit_LightCookie.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
 - Assets/Bundle/Shaders/OneSidedGlass.shader
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Props.mat
@@ -133,6 +138,8 @@ Assets:
 - Assets/Bundle/Tesseract Activation Effect.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
+- Assets/Bundle/Materials/Chime Redesign/ShaderTest/Outer Wilds_Blended_Terrain_Vertex
+  Color 4x.asset
 - Assets/Bundle/Textures/Foliage/Foliage1.png
 - Assets/Bundle/Models/wire2.obj
 - Assets/Bundle/4DParticles.prefab
@@ -142,23 +149,27 @@ Assets:
 - Assets/Bundle/Scanner.prefab
 - Assets/Bundle/Textures/Probe.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_DW_Iron_DarkPaint_New_d.png
-- Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
+- Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_n.png
 - Assets/Bundle/Textures/Glass Normal Map.jpg
+- Assets/Bundle/Materials/Chime Redesign/Probe/Glass.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_d.png
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/Shaders/Wire.mat
+- Assets/Bundle/Wind Chime.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
 - Assets/Bundle/Materials/Chime Redesign/Geode Inside.mat
+- Assets/Bundle/Projector Model.prefab
 - Assets/Bundle/Textures/Foliage/Foliage4.png
+- Assets/Bundle/Materials/Chime Redesign/Probe/Metal 2.mat
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/Textures/Foliage/Foliage3.png
-- Assets/Bundle/Models/Chime Redesign/NewProbe_Seperate.blend
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Shaders/Foliage.shader
+- Assets/Bundle/Materials/Chime Redesign/Moss.mat
 - Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/Textures/Skybox/backImage.png
 - Assets/Bundle/Audio/Unveilment.mp3
@@ -187,6 +198,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/Light.mat
 - Assets/Bundle/Models/torus.obj
+- Assets/Bundle/Shaders/Sand.shader
 - Assets/Bundle/Textures/Foliage/Foliage5G.png
 - Assets/Bundle/Transmitter Coin.prefab
 - Assets/Bundle/EmberProbe.prefab
@@ -206,10 +218,10 @@ Assets:
 - Assets/Bundle/Textures/Reunion Mural.png
 - Assets/Bundle/Materials/Chime Redesign/Sand.mat
 - Assets/Bundle/SkyboxOverlay.prefab
+- Assets/Bundle/Models/Chime Redesign/Projector.blend
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
-- Assets/Bundle/Models/Chime Redesign/ChimeRemodel_technology.blend
 - Assets/Bundle/Codex Species Projection.prefab
 - Assets/Bundle/Foliage Group 4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/CornerPiece.png
@@ -224,11 +236,12 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_d.png
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
+- Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
 - Assets/Bundle/Models/wire3.obj
-- Assets/Bundle/Models/Chime Redesign/NewProbe.blend
+- Assets/Bundle/Textures/Chime Redesign/Caustics.bmp
 - Assets/Bundle/Shaders/WireCoating.shader
 - Assets/Bundle/Shaders/Wire.shader
 - Assets/Bundle/Textures/Chalkboard.jpg
@@ -241,18 +254,21 @@ Assets:
 - Assets/Bundle/Textures/Foliage/Foliage2G.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
 - Assets/Bundle/Models/timber_hearth.obj
+- Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Animations/EnvironmentsProjectionController.controller
 - Assets/Bundle/Probe.prefab
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Surface.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 4.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 1.mat
+- Assets/Bundle/Shaders/LightCookie.shader
 - Assets/Bundle/Materials/FoliageWaterDecor.mat
 - Assets/Bundle/Textures/AdvancedSpacecraft.png
 - Assets/Bundle/Probe Warp Platform Gravity.prefab
 - Assets/Bundle/Textures/Water Normal Map.jpg
 - Assets/Bundle/Animations/ChimeHologramMove.anim
 - Assets/Bundle/Materials/Chime Redesign/Scanner 1.mat
+- Assets/Bundle/Materials/Chime Redesign/Probe/Metal 1.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_modified.blend
 - Assets/Bundle/Textures/Foliage/Foliage4G.png
@@ -285,7 +301,6 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_d.png
 - Assets/Bundle/Textures/Population.png
 - Assets/Bundle/Materials/Foliage5.mat
-- Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Materials/Whirlpool Water.mat
 - Assets/Bundle/Bramble Building.prefab
 - Assets/Bundle/Materials/Sprite.mat
@@ -329,7 +344,6 @@ Assets:
 - Assets/Bundle/Animations/BrambleProbeChimeHologramController.controller
 - Assets/Bundle/Textures/Skybox/rightImage.png
 - Assets/Bundle/Materials/Chime Redesign/Coin Metal.mat
-- Assets/Bundle/Models/Chime Redesign/FoliageTest.blend
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
 - Assets/Bundle/Models/Chime Redesign/transmitter.obj
@@ -345,5 +359,6 @@ Assets:
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Materials/Chime Redesign/Goldish foil.mat
 - Assets/Bundle/Models/hemisphere.obj
+- Assets/Bundle/Shaders/Custom_Sand.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 3.mat
 Dependencies: []

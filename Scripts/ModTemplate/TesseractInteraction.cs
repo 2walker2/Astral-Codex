@@ -49,7 +49,7 @@ namespace AstralCodex
 
             //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
-                EnteredTesseract(true);
+                EnteredTesseract(true, false);
 
             //Add the animation component as well
             gameObject.AddComponent<TesseractAnimation>();
@@ -91,16 +91,19 @@ namespace AstralCodex
             }
         }
 
-        private void EnteredTesseract(bool value)
+        private void EnteredTesseract(bool value, bool displayEffect = true)
         {
             //Disable probe launcher overlay
             Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
 
             //Instantiate effect
-            GameObject activationEffectInstance = Instantiate(activationEffect);
-            activationEffectInstance.AddComponent<TesseractActivationEffect>();
-            activationEffectInstance.SetActive(true);
+            if (displayEffect)
+            {
+                GameObject activationEffectInstance = Instantiate(activationEffect);
+                activationEffectInstance.AddComponent<TesseractActivationEffect>();
+                activationEffectInstance.SetActive(true);
+            }
 
             //Enable skybox
             if (skySphere != null)

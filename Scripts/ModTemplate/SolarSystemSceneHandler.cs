@@ -20,7 +20,7 @@ namespace AstralCodex
         NomaiExperimentBlackHole experimentBlackHole;
         #endregion
 
-        #region Path List Declarations
+        #region Path Lists
         //GameObjects to put on the VisibleToProbe layer and assign the ghost matter crystal material to
         List<string> ghostMatterCrystals = new List<string>() { 
             //"Station/Visual/Model",
@@ -86,8 +86,6 @@ namespace AstralCodex
             {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
             {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
             //Chime
-            {"Station/Visual/Model/Floor/Rim", new Vector3(0, 0, -10) },
-            {"Station/Collision/Floor/Rim", new Vector3(0, 0, -10) },
             {"Station/Visual/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Collision/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },
@@ -304,6 +302,15 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME EXHAUST ROOT");
+
+            //Apply ghost matter crystal material to shell
+            GameObject chimeShell = SearchUtilities.Find("Visual/Shell/Crystal");
+            if (chimeShell != null)
+            {
+                chimeShell.GetComponent<MeshRenderer>().material = AssetHandler.materials["ghostMatterCrystal"];
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SHELL");
         }
 
         void ParentChimeWaterToWhiteHole()

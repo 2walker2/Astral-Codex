@@ -42,15 +42,17 @@ Material:
     m_Floats:
     - _AlphaClip: 1
     - _Brightness: 4
+    - _Contrast: 1.2
     - _Cutoff: 0.5
     - _DepthBlendMax: 5
     - _DepthBlendMin: 0.5
     - _DepthBlendVanishTreshold: 0.5
-    - _DiffusePower: 1
+    - _DiffusePower: 2.5
     - _DistortionScale: 0.25
     - _DistortionSpeed: 0.025
     - _DistortionStrength: 0.115
-    - _LightTransmission: 0
+    - _EmissionStrength: 0.25
+    - _LightTransmission: 0.25
     - _MaxDitherValue: 8
     - _UVDistortionStrengthHeightThreshold: 0
     - _VertexDistortionStrengthHeightThreshold: 0.2
@@ -61,7 +63,7 @@ Material:
     - _VertexSineStrengthHeight: 0
     - _VertexSineStrengthHeightThreshold: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.32547167, b: 0.33228657, a: 1}
+    - _Color: {r: 0.46226418, g: 0.09812213, b: 0.1025094, a: 1}
     - _UVDistortionScale: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _UVDistortionSpeed: {r: 0.025, g: 0.025, b: 0, a: 0}
     - _UVDistortionStrength: {r: 0.115, g: 0.115, b: 0, a: 0}

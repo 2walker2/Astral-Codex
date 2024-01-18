@@ -3,9 +3,10 @@
 	"name": "Lingering Chime",
 	"AmbientLights": [
 		{
-			"outerRadius": 100,
-			"innerRadius": 30,
-			"intensity": 0
+			"outerRadius": 130,
+			"innerRadius": 0,
+			"intensity": 0.5,
+			"tint": {"r": 255, "g": 160, "b": 71, "a": 255}
 		}
 	],
 	"Atmosphere": {
@@ -211,7 +212,7 @@
 				"uniqueID": "codex_chime_black",
 				"pairedSingularity": "codex_timber_white",
 				"rename": "codex_chime_black",
-				"parentPath": "Sector/Station/Orbiting Water Root/Black Hole Water",
+				"parentPath": "Sector/Station/Black Hole Water",
 				"isRelativeToParent": true
 			},
 			{

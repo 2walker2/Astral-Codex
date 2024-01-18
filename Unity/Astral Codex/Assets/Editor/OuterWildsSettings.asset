@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a31156297bb4d919d24d9ff325c2d64, type: 3}
   m_Name: OuterWildsSettings
   m_EditorClassIdentifier: 
-  m_AssetBundleOutputPath: D:\Outer Wilds Modding\Astral-Codex\Walker.AstralCodex\planets\assets
+  m_AssetBundleOutputPath: C:\Users\dwalk\Outer Wilds Modding\Astral-Codex\Walker.AstralCodex\planets\assets
   m_StartGameAfterBuild: 0
   m_GameExePath: 

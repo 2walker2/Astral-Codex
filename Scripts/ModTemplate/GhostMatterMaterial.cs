@@ -9,10 +9,9 @@ namespace AstralCodex
 {
     class GhostMatterMaterial : MonoBehaviour
     {
-        //The path to the gameObject used as the source of the material
-        const string materialSourcePath = "TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter";
-
         #region Variables
+        const string MaterialName = "ghostMatterCrystal"; //The name of the material to get from the AssetHandler
+
         //Renderers to not apply the material to
         static List<string> renderersToExclude = new List<string>()
         {
@@ -22,7 +21,6 @@ namespace AstralCodex
             "ShellLatice",
             "Ring1", "Ring2", "Ring3", "Ring4", "Ring5", "Ring6", "Ring7"
         };
-        static Material material; //The ghost matter material crystal to apply
         
         List<MeshRenderer> renderers; //The mesh renderers on this object and its children
         #endregion
@@ -32,39 +30,26 @@ namespace AstralCodex
         {
             renderers = new List<MeshRenderer>(GetComponentsInChildren<MeshRenderer>());
             NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(ApplyMaterial);
-            //Invoke(nameof(ApplyMaterial), delay);
         }
 
         void ApplyMaterial()
         {
-            //Find the material if it hasn't been found yet
-            if (material == null)
-            {
-                GameObject ghostMatterClutter = SearchUtilities.Find(materialSourcePath);
-                if (ghostMatterClutter != null)
-                    material = ghostMatterClutter.GetComponent<MeshRenderer>().material;
-            }
-
             //Apply the material to this object
-            if (material != null)
+            if (renderers != null && renderers.Count > 0)
             {
-                if (renderers != null && renderers.Count > 0)
+                foreach (MeshRenderer r in renderers)
                 {
-                    foreach (MeshRenderer r in renderers)
+                    Material material = AssetHandler.materials[MaterialName];
+                    if (r.material != material)
                     {
-                        if (r.material != material)
+                        if (!renderersToExclude.Contains(r.gameObject.name))
                         {
-                            if (!renderersToExclude.Contains(r.gameObject.name))
-                            {
-                                r.material = material;
-                            }
-                            r.gameObject.layer = NewHorizons.Utility.OuterWilds.Layer.VisibleToProbe; ;
+                            r.material = material;
                         }
+                        r.gameObject.layer = NewHorizons.Utility.OuterWilds.Layer.VisibleToProbe; ;
                     }
                 }
             }
-            else
-                Main.modHelper.Console.WriteLine("ATTEMPTED TO APPLY GM MATERIAL BEFORE IT WAS FOUND", MessageType.Error);
         }
         #endregion
     }

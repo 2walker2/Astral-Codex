@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using Harmony;
 
 namespace AstralCodex
 {
@@ -42,7 +43,8 @@ namespace AstralCodex
         //Materials to pull off objects in the base game
         Dictionary<string, string> baseGameMaterialsToFind = new Dictionary<string, string>()
         {
-            {"Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",  "ghostMatter"}
+            {"Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",  "ghostMatter"},
+            {"TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter", "ghostMatterCrystal" }
         };
 
         //AudioClips to find in the asset bundle
