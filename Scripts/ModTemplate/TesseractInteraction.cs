@@ -110,7 +110,7 @@ namespace AstralCodex
                 skySphere.SetActive(value);
 
             //Adjust post processing
-            PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
+            /*PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
             if (value)
             {
                 postProcessingSettings.colorGrading.temperature = -25;
@@ -120,7 +120,7 @@ namespace AstralCodex
             {
                 postProcessingSettings.colorGrading.temperature = 0;
                 postProcessingSettings.colorGrading.tint = 0;
-            }
+            }*/
 
             //Update travel music
             if (value)

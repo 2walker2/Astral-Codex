@@ -44,7 +44,9 @@ Material:
     - _DepthBlendVanishTreshold: 0.5
     - _DiffuseAmbientLight: 1
     - _DiffusePower: 0.25
-    - _EmissionStrength: 0.25
+    - _EmissionContrast: 1.5
+    - _EmissionStrength: 0.15
+    - _Gloss: 0
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8
     - _Metallic: 0
@@ -59,7 +61,7 @@ Material:
     - _VertexXDistortionSpeed: 0.025
     - _VertexXDistortionStrength: 2
     m_Colors:
-    - _Color: {r: 0.9528302, g: 0.36405307, b: 0.47075438, a: 1}
+    - _Color: {r: 0.9529412, g: 0.3647059, b: 0.56863934, a: 1}
     - _UVDistortionScale: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _UVDistortionSpeed: {r: 0.015, g: 0.015, b: 0, a: 0}
     - _UVDistortionStrength: {r: 0.115, g: 0.115, b: 0, a: 0}

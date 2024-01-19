@@ -492,15 +492,23 @@ namespace AstralCodex
 
         void DebugUtilities()
         {
-            //Debug warp to Chime
-            if (Keyboard.current.lKey.isPressed && Keyboard.current.cKey.wasPressedThisFrame)
+            if (Keyboard.current.lKey.isPressed)
             {
-                OWRigidbody playerBody = Locator.GetPlayerBody();
-                if (playerBody != null)
+                //Debug warp to Chime
+                if (Keyboard.current.cKey.wasPressedThisFrame)
                 {
-                    playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(0, -34998, 0));
-                    playerBody.SetVelocity(Vector3.zero);
-                    playerBody.SetAngularVelocity(Vector3.zero);
+                    OWRigidbody playerBody = Locator.GetPlayerBody();
+                    if (playerBody != null)
+                    {
+                        playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(0, -34998, 0));
+                        playerBody.SetVelocity(Vector3.zero);
+                        playerBody.SetAngularVelocity(Vector3.zero);
+                    }
+                }
+                else if (Keyboard.current.sKey.wasPressedThisFrame)
+                {
+                    GameObject sunLight = SearchUtilities.Find("SunLight");
+                    sunLight.SetActive(!sunLight.activeSelf);
                 }
             }
         }

@@ -51,9 +51,12 @@ Material:
     - _DistortionScale: 0.25
     - _DistortionSpeed: 0.025
     - _DistortionStrength: 0.115
-    - _EmissionStrength: 0.25
+    - _EmissionContrast: 1.5
+    - _EmissionStrength: 0.15
+    - _Gloss: 0
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8
+    - _Metallic: 0
     - _UVDistortionStrengthHeightThreshold: 0
     - _VertexDistortionStrengthHeightThreshold: 0.2
     - _VertexDistortionStrengthHeightThreshold_copy: 0

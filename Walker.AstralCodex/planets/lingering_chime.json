@@ -5,8 +5,8 @@
 		{
 			"outerRadius": 130,
 			"innerRadius": 0,
-			"intensity": 0.5,
-			"tint": {"r": 255, "g": 160, "b": 71, "a": 255}
+			"intensity": 1.5,
+			"tint": {"r": 150, "g": 255, "b": 200, "a": 255}
 		}
 	],
 	"Atmosphere": {
@@ -62,7 +62,7 @@
 					"DarkMatterVolume/ProbeVisuals"
 				]
 			},*/
-			{
+			/*{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Interactables_CometInterior/DarkMatter_KillVolumes/DarkMatterVolume (4)",
 				"position": {
 					"y": 15,
@@ -99,7 +99,7 @@
 				"position": {"x":-2.9323, "y": 1.1602, "z": 45.2816},
 				"rotation": {"x":2.2561, "y": 311.7032, "z": 356.107},
 				"rename": "StationClutter3"
-			},
+			},*/
 			/*{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
 				"position": {"x": 0.0313, "y": -1.1602, "z": 41.8782},
@@ -152,7 +152,7 @@
 				"xmlFile": "planets/text/chime_sign.xml",
 				"rename": "ChimeSign"
 			}*/
-			{
+			/*{
 				"position": {
 					"x": -39,
 					"y": -0.75,
@@ -190,7 +190,7 @@
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_environments.xml",
 				"rename": "CodexEnvironmentsComputer"
-			}
+			}*/
 		],
 		"remotes": [
 			{

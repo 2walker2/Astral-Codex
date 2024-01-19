@@ -32,6 +32,8 @@ Material:
         m_Scale: {x: 2.5, y: 2.5}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _DiffuseAmbientLight: 0
+    - _DiffusePower: 0
     - _Gloss: 1
     - _GlossMax: 1.1
     - _GlossMin: 1
@@ -39,6 +41,7 @@ Material:
     - _MetallicMin: 0
     - _MetallicStrength: 0.5
     - _NormalStrength: 0.75
+    - _SpecularAmbientLight: 0
     - _Transmission: 0
     m_Colors:
     - _Color1: {r: 1, g: 0.9794827, b: 0.6179246, a: 1}
