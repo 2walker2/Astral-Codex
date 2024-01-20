@@ -99,9 +99,9 @@ Shader "Custom/Refraction" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_6780 = _Time;
+                float4 node_8782 = _Time;
                 float _RotationSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RotationSpeed );
-                float node_7538_ang = node_6780.g;
+                float node_7538_ang = node_8782.g;
                 float node_7538_spd = _RotationSpeed_var;
                 float node_7538_cos = cos(node_7538_spd*node_7538_ang);
                 float node_7538_sin = sin(node_7538_spd*node_7538_ang);
@@ -226,9 +226,9 @@ Shader "Custom/Refraction" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_8715 = _Time;
+                float4 node_6862 = _Time;
                 float _RotationSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RotationSpeed );
-                float node_7538_ang = node_8715.g;
+                float node_7538_ang = node_6862.g;
                 float node_7538_spd = _RotationSpeed_var;
                 float node_7538_cos = cos(node_7538_spd*node_7538_ang);
                 float node_7538_sin = sin(node_7538_spd*node_7538_ang);

@@ -1,5 +1,6 @@
 public class ProxyShadowCascade
 {
+	[System.Flags]
 	public enum Flags
 	{
 		Near = 1,

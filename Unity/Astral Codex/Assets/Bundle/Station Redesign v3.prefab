@@ -9547,6 +9547,7 @@ GameObject:
   - component: {fileID: 4376753253826987320}
   - component: {fileID: 4881196188233538149}
   - component: {fileID: 1766132492728277832}
+  - component: {fileID: 1495444459170098265}
   m_Layer: 22
   m_Name: Crystal
   m_TagString: Untagged
@@ -9584,7 +9585,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4217977304145803882}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -9615,6 +9616,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1495444459170098265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217977304145803882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cascadeFlags: -1
+  _earlyDraw: 0
+  _dynamic: 0
 --- !u!1 &4229210485221864688
 GameObject:
   m_ObjectHideFlags: 0
@@ -27864,6 +27880,7 @@ Transform:
   - {fileID: 2677156798514893373}
   - {fileID: 6266828498020030950}
   - {fileID: 8246904761627491721}
+  - {fileID: 232065998776114147}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29702,6 +29719,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &8192097666121127724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232065998776114147}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232065998776114147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192097666121127724}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2579636452285666297}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8218526017349171264
 GameObject:
   m_ObjectHideFlags: 0
@@ -30534,6 +30581,7 @@ GameObject:
   - component: {fileID: 5048304004146784223}
   - component: {fileID: 5784032878561646347}
   - component: {fileID: 4036747625100740435}
+  - component: {fileID: 8080194232067445443}
   m_Layer: 22
   m_Name: Solar Panels
   m_TagString: Untagged
@@ -30571,8 +30619,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8565953346054700117}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -30603,6 +30651,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8080194232067445443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8565953346054700117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cascadeFlags: -1
+  _earlyDraw: 0
+  _dynamic: 0
 --- !u!1 &8584332119784069309
 GameObject:
   m_ObjectHideFlags: 0
@@ -32934,7 +32997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6266828498020030950
 Transform:
   m_ObjectHideFlags: 0
