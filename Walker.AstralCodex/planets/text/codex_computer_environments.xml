@@ -23,9 +23,9 @@ Untold galaxies - a myriad of bodies within.
 		<ID>3</ID>
 		<ParentID>2</ParentID>
 		<Text>0  0                                           0  0
-|  |  0                                     0  |  |
-0  0  |      The thread cannot break.       |  0  0
-|  |  0                                     0  |  |
+|  |  0      The thread cannot break.       0  |  |
+0  0  |                                     |  0  0
+|  |  0      We will not be forgotten.      0  |  |
 0  0                                           0  0
 		</Text>
 	</TextBlock>
@@ -33,7 +33,7 @@ Untold galaxies - a myriad of bodies within.
 		<ID>4</ID>
 		<ParentID>3</ParentID>
 		<Text>
-We must not be forgotten.
+Not even by the death of a universe.
 
 - Archivist
 		</Text>

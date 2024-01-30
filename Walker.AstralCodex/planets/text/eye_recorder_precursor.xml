@@ -9,7 +9,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<Text>SCIENTIST: Our universe is cold but the experiences it contained will breath life into the next. May the Codec soon hurtle into a newborn universe, preserving the past and recording the future.</Text>
+		<Text>SCIENTIST: Our universe may now be cold but the experiences it contained will breath life into the next. With luck the Codec will soon hurtle into a newborn universe, preserving the past and recording the future.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
@@ -17,15 +17,15 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
-		<Text>ARCHIVIST: I hope they preserve our story. I fear that they will not - that we are but a dwindling specter of a forgotten people.</Text>
+		<Text>ARCHIVIST: I wish for them to preserve our story. I fear that they will not - that we are but a dwindling specter of a forgotten people.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
-		<Text>EXPLORER: I hope they cherish it. Maybe they'll tell it to each other around a campfire someday and it will remind them that the astral sea is not as lonely as it appears.</Text>
+		<Text>EXPLORER: I hope it inspires them. Maybe they'll tell it to each other around a campfire someday and it can remind them that the astral sea isn't as lonely as it appears.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>7</ID>
-		<Text>SCIENTIST: I hope that they will broaden it. Let it become the prologue of a saga stretching trillions of years across dozens of universes.</Text>
+		<Text>SCIENTIST: I hope that they will broaden it. It could become the prologue of a saga stretching trillions of years across dozens of universes.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>8</ID>
@@ -37,6 +37,6 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>10</ID>
-		<Text>EXPLORER: But more importantly, a prelude to what comes next.</Text>
+		<Text>EXPLORER: And a prelude to what comes next!</Text>
 	</TextBlock>
 </NomaiObject>

@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>This is it. The end of the universe. Not a million or a billion cycles from now in some distant future. Right now, happening around us as we watch, powerless to stop it.</Text>
+		<Text>This is it. This is the end. Not a million or a billion cycles from now in some distant future. Right now, happening around us as we watch, powerless to stop it.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

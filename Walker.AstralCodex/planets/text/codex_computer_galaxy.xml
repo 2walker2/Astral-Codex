@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>We left our home body to escape conflict and to pursue our curiosity. For 207 cycles we drifted peacefully upon the astral sea. But we soon made a discovery we were unprepared to face.</Text>
+		<Text>We left our home body to escape conflict and pursue curiosity. For 207 cycles we drifted peacefully upon the astral sea. Until we made a discovery we were unprepared to face.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
@@ -16,8 +16,7 @@
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>When we finally pieced together what it represented, we were all gripped by fear. It meant an end, and a new beginning.
-
+		<Text>When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could of the peoples and places we knew. Our final desperate cry into the abyss.
 - Scientist
 		</Text>
 	</TextBlock>
