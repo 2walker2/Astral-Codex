@@ -291,7 +291,7 @@ namespace AstralCodex
 
         void ApplyChimeMaterials()
         {
-            //Apply ghost matter material to chime exhaust
+            //Apply ghost matter material to Chime exhaust
             GameObject chimeExhaust = SearchUtilities.Find("Chime Exhaust Root");
             if (chimeExhaust != null)
             {
@@ -302,6 +302,19 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME EXHAUST ROOT");
+
+            //Apply ghost matter material to lidar probe Chime exhaust
+            GameObject lidarProbesRoot = SearchUtilities.Find("Exterior Lidar Probes");
+            if (lidarProbesRoot != null)
+            {
+                foreach (MeshRenderer renderer in lidarProbesRoot.GetComponentsInChildren<MeshRenderer>())
+                {
+                    if (renderer.gameObject.name == "Exhaust")
+                        renderer.material = AssetHandler.materials["ghostMatter"];
+                }
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND EXTERIOR LIDAR PROBES ROOT");
 
             //Apply ghost matter crystal material to shell
             GameObject chimeShell = SearchUtilities.Find("Visual/Shell/Crystal");

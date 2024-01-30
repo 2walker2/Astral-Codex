@@ -5,7 +5,7 @@
 		{
 			"outerRadius": 130,
 			"innerRadius": 0,
-			"intensity": 0.15,
+			"intensity": 1,
 			//"tint": {"r": 200, "g": 200, "b": 255, "a": 255}
 		}
 	],
@@ -411,7 +411,7 @@
 		],
 		"zeroGravityVolumes": [
 			{
-				"radius": 65.0,
+				"radius": 53.5,
 				"parentPath": "Volumes",
 				"rename": "ZeroGVolume"
 			}

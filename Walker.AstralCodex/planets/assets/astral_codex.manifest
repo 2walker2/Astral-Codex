@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1955824323
+CRC: 2049805798
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 17ec52a9566e0c30479c9b223711c67a
+    Hash: 1dcd4ce14bd5605784a322ce43f98230
   TypeTreeHash:
     serializedVersion: 2
     Hash: 78094baec7dd894d472220d7b15ce3a7
@@ -126,7 +126,7 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/LightCookie.asset
 - Assets/Bundle/Models/wind_chime.obj
 - Assets/Bundle/Materials/Chalk.mat
-- Assets/Bundle/Shaders/Unlit_LightCookie.mat
+- Assets/Bundle/Materials/CausticsCookie.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
 - Assets/Bundle/Shaders/OneSidedGlass.shader
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Props.mat
@@ -162,7 +162,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Glass.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_d.png
 - Assets/Bundle/Models/solar_flare.obj
-- Assets/Bundle/Shaders/Wire.mat
+- Assets/Bundle/Materials/Wire.mat
 - Assets/Bundle/Wind Chime.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
@@ -214,7 +214,7 @@ Assets:
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
-- Assets/Bundle/Shaders/WireCoating.mat
+- Assets/Bundle/Materials/WireCoating.mat
 - Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Textures/WirePattern.png
 - Assets/Bundle/Models/interloper_detail.obj
@@ -234,6 +234,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/Models/chime_exhaust_particle.obj
+- Assets/Bundle/Materials/Glass.mat
 - Assets/Bundle/Shaders/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Station Redesign.prefab
@@ -246,8 +247,10 @@ Assets:
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat
 - Assets/Bundle/Textures/Chime Redesign/Effects_IP_ScreenFlickerMaskTriangles.png
+- Assets/Bundle/Textures/Chime Redesign/Terrain_GM_Crystal_n.png
 - Assets/Bundle/Models/wire3.obj
 - Assets/Bundle/Textures/Chime Redesign/Caustics.bmp
+- Assets/Bundle/Models/Chime Redesign/NewProbe.blend
 - Assets/Bundle/Shaders/WireCoating.shader
 - Assets/Bundle/Shaders/Wire.shader
 - Assets/Bundle/Textures/Chalkboard.jpg
@@ -295,7 +298,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Emblem.mat
 - Assets/Bundle/Shaders/Whirlpool Water.shader
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorArchivist.prefab
-- Assets/Bundle/Materials/Chime Redesign/Whirlpool Particles.mat
+- Assets/Bundle/Materials/Whirlpool Particles.mat
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj
 - Assets/Bundle/Models/scanner.obj
