@@ -37,7 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Brightness: 4
-    - _Contrast: 1.2
+    - _Contrast: 1.5
     - _Cutoff: 0.5
     - _DepthBlendMax: 5
     - _DepthBlendMin: 0.5
@@ -46,10 +46,10 @@ Material:
     - _DiffusePower: 0.25
     - _EmissionContrast: 1.5
     - _EmissionStrength: 0.15
-    - _Gloss: 0
+    - _Gloss: -10
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8
-    - _Metallic: 0
+    - _Metallic: 0.25
     - _UVDistortionStrengthHeightThreshold: 0.05
     - _VertexDistortionStrengthHeightThreshold: 0.05
     - _VertexSineScale: 10
@@ -61,7 +61,7 @@ Material:
     - _VertexXDistortionSpeed: 0.025
     - _VertexXDistortionStrength: 2
     m_Colors:
-    - _Color: {r: 0.9529412, g: 0.3647059, b: 0.56863934, a: 1}
+    - _Color: {r: 0.9433962, g: 0.11124954, b: 0.39972678, a: 1}
     - _UVDistortionScale: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _UVDistortionSpeed: {r: 0.015, g: 0.015, b: 0, a: 0}
     - _UVDistortionStrength: {r: 0.115, g: 0.115, b: 0, a: 0}

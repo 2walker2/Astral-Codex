@@ -4,6 +4,9 @@ ShaderImporter:
   externalObjects: {}
   defaultTextures:
   - _RefractionMap: {fileID: 2800000, guid: 1bfbf56a34346ab46b4bd9baaf585b2d, type: 3}
+  - _ColorNoise: {fileID: 2800000, guid: ed52176dbd204314a8bbf2cf3da84543, type: 3}
+  - _RefractionDistortion: {fileID: 2800000, guid: 6338747e61b383c4c925842959fd96a0,
+      type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 

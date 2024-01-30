@@ -19,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ColorNoise:
+        m_Texture: {fileID: 2800000, guid: ed52176dbd204314a8bbf2cf3da84543, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionDistortion:
+        m_Texture: {fileID: 2800000, guid: 6338747e61b383c4c925842959fd96a0, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
     - _RefractionMap:
         m_Texture: {fileID: 2800000, guid: 1bfbf56a34346ab46b4bd9baaf585b2d, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -26,13 +34,17 @@ Material:
     m_Floats:
     - _Base: 10
     - _Cutoff: 0.5
+    - _DiffuseAmbient: 0.1
     - _FadeDistanceMax: 35000
     - _FadeDistanceMin: 5000
     - _NormalStrength: 1
+    - _RefractionDistortionStrength: 0.1
     - _RefractionInnerRadius: 0.45
     - _RefractionMapScale: 1
     - _RefractionOuterRadius: 0.5
-    - _RefractionStrength: 0.005
-    - _RotationSpeed: 0.25
+    - _RefractionStrength: 0.015
+    - _RotationSpeed: 0.1
     m_Colors:
-    - _BaseColor: {r: 0.18039218, g: 0.98039216, b: 0.587523, a: 0.19607843}
+    - _BaseColor: {r: 0.2783019, g: 0.5586849, b: 1, a: 0.19607843}
+    - _PrimaryColor: {r: 0, g: 0.31061032, b: 0.81960785, a: 0.019607844}
+    - _SecondaryColor: {r: 0, g: 0.7499349, b: 0.98039216, a: 0.02745098}

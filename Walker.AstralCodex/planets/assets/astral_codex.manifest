@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 886282374
+CRC: 1955824323
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2332b74d684d8d12fe581e793c4115ad
+    Hash: 17ec52a9566e0c30479c9b223711c67a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 78094baec7dd894d472220d7b15ce3a7
@@ -295,6 +295,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Emblem.mat
 - Assets/Bundle/Shaders/Whirlpool Water.shader
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorArchivist.prefab
+- Assets/Bundle/Materials/Chime Redesign/Whirlpool Particles.mat
 - Assets/Bundle/Materials/Solar Panel.mat
 - Assets/Bundle/Models/brittle_hollow.obj
 - Assets/Bundle/Models/scanner.obj

@@ -44,7 +44,8 @@ namespace AstralCodex
         Dictionary<string, string> baseGameMaterialsToFind = new Dictionary<string, string>()
         {
             {"Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",  "ghostMatter"},
-            {"TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter", "ghostMatterCrystal" }
+            {"TimberHearth_Body/Sector_TH/Sector_NomaiCrater/DetailPatches_NomaiCrater/NomaiCrater Foliage/Props_GhostMatter/Props_GM_Clutter", "ghostMatterCrystal" },
+            {"CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic", "sand" }
         };
 
         //AudioClips to find in the asset bundle

@@ -25,17 +25,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Texture:
         m_Texture: {fileID: 2800000, guid: 40c75cc862192924691d85b11ab1bbd9, type: 3}
-        m_Scale: {x: 1.5, y: 1.5}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BaseStrength: 0.005
+    - _BaseStrength: 0
     - _Contrast: 0.75
     - _Cutoff: 0.5
     - _DistortionSpeed: 0.0015
     - _DistortionStrength: 0.1
     - _EdgeFadeDistance: 0.45
     - _EdgeFadeSoftness: 0.25
-    - _RadialDistortion: 0.4
+    - _RadialDistortion: 0.45
     - _Strength: 0.1
     - _TextureScale: 1
     - _TwirlStrength: 0

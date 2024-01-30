@@ -45,7 +45,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Brightness: 4
-    - _Contrast: 1.2
+    - _Contrast: 1.5
     - _Cutoff: 0.5
     - _DepthBlendDistance: 1
     - _DepthBlendMax: 5
@@ -55,10 +55,10 @@ Material:
     - _DiffusePower: 0.25
     - _EmissionContrast: 1.5
     - _EmissionStrength: 0.15
-    - _Gloss: 0
+    - _Gloss: -10
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8
-    - _Metallic: 0
+    - _Metallic: 0.25
     - _PositionNoiseOffsetMultiplier: 0.564836
     - _UVDistortionStrengthHeightThreshold: 0
     - _UVDistortionStrengthHeightThreshold_copy_copy: 0

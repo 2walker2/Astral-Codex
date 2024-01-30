@@ -311,6 +311,17 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SHELL");
+
+            //Apply sand material to terrain
+            GameObject chimeTerrain = SearchUtilities.Find("Visual/Interior Terrain/Terrain");
+            if (chimeTerrain != null)
+            {
+                MeshRenderer terrainRenderer = chimeTerrain.GetComponent<MeshRenderer>();
+                terrainRenderer.material = AssetHandler.materials["sand"];
+                terrainRenderer.material.color = Color.black;
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME TERRAIN");
         }
 
         void ParentChimeWaterToWhiteHole()
