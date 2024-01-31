@@ -10,26 +10,34 @@ namespace AstralCodex
 {
     class TesseractActivationEffect : MonoBehaviour
     {
-        const string StartTimeParameter = "_StartTime"; //The parameter on the material to set to indicate the start time of the effect
+        const string TimeInputParameter = "_TimeInput"; //The parameter on the material to set to indicate current time of the effect
 
         float lifetime = 10f; //The total time before this effect is destroyed
+        float time; //The time since this object was created
+        Material controlledMaterial; //The material this script controls
 
         void Start()
         {
             //Parent self to the player's camera
             transform.parent = Camera.main.transform;
             transform.localPosition = Vector3.zero;
+            transform.forward = -transform.parent.right;
 
-            //Set the material's start time to the current time
-            GetComponentInChildren<MeshRenderer>().material.SetFloat(StartTimeParameter, Time.time);
+            //Get the material to control
+            controlledMaterial = GetComponent<MeshRenderer>().material;
 
-            //Destroy after effect is complete
-            Invoke(nameof(DestroySelf), lifetime);
+            time = 0;
         }
 
-        void DestroySelf()
+        void Update()
         {
-            Destroy(this);
+            //Update time
+            time += Time.deltaTime;
+            if (time > lifetime)
+                Destroy(gameObject);
+
+            //Pass time to material
+            controlledMaterial.SetFloat(TimeInputParameter, time);
         }
     }
 }

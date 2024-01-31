@@ -44,7 +44,7 @@ namespace AstralCodex
         {
             //Get the mod helper (accessible starting here)
             modHelper = ModHelper;
-            ModHelper.Console.WriteLine($"ASTRAL CODEX mod loaded", MessageType.Success);
+            ModHelper.Console.WriteLine($"ASTRAL CODEC mod loaded", MessageType.Success);
 
             //Get the mod behaviour
             modBehaviour = this;

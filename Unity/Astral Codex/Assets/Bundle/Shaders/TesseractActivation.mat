@@ -33,12 +33,13 @@ Material:
     - _BorderFadeThickness: 1
     - _BorderThickness: 0.4
     - _Cutoff: 0.5
-    - _DEBUG_TimeOffset: 0.5
+    - _DEBUG_TimeOffset: 0
     - _FadeSpeed: 0.75
-    - _FadeStartDelay: 0
+    - _FadeStartDelay: 2
     - _NoiseScale: 3
     - _NoiseStrength: 3
     - _StartTime: -Infinity
+    - _TimeInput: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BorderColor1: {r: 0, g: 1, b: 0.6694645, a: 1}

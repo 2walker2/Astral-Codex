@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2049805798
+CRC: 3803153418
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1dcd4ce14bd5605784a322ce43f98230
+    Hash: ce08a1d0b96f7d80c6d617ef1aae840e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 78094baec7dd894d472220d7b15ce3a7
@@ -112,6 +112,7 @@ Assets:
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
 - Assets/Bundle/Materials/Light.mat
+- Assets/Bundle/Materials/Wires/PopulationDisplayWire.mat
 - Assets/Bundle/Probe Warp Platform.prefab
 - Assets/Bundle/Tesseract.prefab
 - Assets/Bundle/Textures/Monolith.png
@@ -158,11 +159,12 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_n.png
+- Assets/Bundle/Materials/Wires/PopulationDisplayWireShell.mat
 - Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Materials/Chime Redesign/Probe/Glass.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_d.png
 - Assets/Bundle/Models/solar_flare.obj
-- Assets/Bundle/Materials/Wire.mat
+- Assets/Bundle/Materials/Wires/SunSolarPanelWire.mat
 - Assets/Bundle/Wind Chime.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
@@ -211,10 +213,11 @@ Assets:
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/Test Codex Dispenser.prefab
 - Assets/Bundle/Textures/Foliage/Foliage3G.png
+- Assets/Bundle/Materials/Wires/SpacecraftDisplayWireShell.mat
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
-- Assets/Bundle/Materials/WireCoating.mat
+- Assets/Bundle/Materials/Wires/SunSolarPanelWireShell.mat
 - Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Textures/WirePattern.png
 - Assets/Bundle/Models/interloper_detail.obj
@@ -241,6 +244,7 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
 - Assets/Bundle/Textures/Chime Redesign/GhostEmmissiveOverlay.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_d.png
+- Assets/Bundle/Materials/Wires/SunDisplayWireShell.mat
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
@@ -254,6 +258,7 @@ Assets:
 - Assets/Bundle/Shaders/WireCoating.shader
 - Assets/Bundle/Shaders/Wire.shader
 - Assets/Bundle/Textures/Chalkboard.jpg
+- Assets/Bundle/Materials/Wires/SunDisplayWire.mat
 - Assets/Bundle/Materials/RedLight.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Gold.mat
 - Assets/Bundle/Animations/SwitchEnvironmentsProjection.anim
@@ -262,6 +267,7 @@ Assets:
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Textures/Foliage/Foliage2G.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
+- Assets/Bundle/Materials/Wires/SpacecraftDisplayWire.mat
 - Assets/Bundle/Models/timber_hearth.obj
 - Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png

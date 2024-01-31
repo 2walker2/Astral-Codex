@@ -7,6 +7,7 @@ using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.InputSystem;
+using System.Diagnostics;
 
 namespace AstralCodex
 {
@@ -92,12 +93,14 @@ namespace AstralCodex
             {"Station/Transmitter Coin/Root/Codex Environments Projection/Scanner/Scan Source", new Vector3(0, 15, 0)},
             {"Station/Campfire Coin/Root/Codex Species Projection/Scanner", new Vector3(0, 5, 0)},
             {"Station/Other Coin/Root/Codex Galaxy Projection/ScanSource/Dot Emitter", new Vector3(0, 5, 0)},
+            {"Station/Exterior Lidar Probes", new Vector3(0, 1.5f, 0) },
         };
         #endregion
 
         #region Initialization
         void Awake()
         {
+            Main.modHelper.Console.WriteLine("UUUUUUUUUUUUUUUUUUUUH!");
             //Initialize the star system loaded callback
             Main.newHorizons.GetStarSystemLoadedEvent().AddListener((string system) => { OnStarSystemLoaded(system); });
         }
@@ -324,6 +327,20 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SHELL");
+
+            //Apply ghost matter crystal material to cracked geode interior
+            Main.modHelper.Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAH!");
+            GameObject crackedGeode = SearchUtilities.Find("Visual/Rotatable/Cracked Geode");
+            if (crackedGeode != null)
+            {
+                Main.modHelper.Console.WriteLine("OOOOOOOOOOOOOOOOOOOOOOOH!");
+                MeshRenderer crackedGeodeRenderer = crackedGeode.GetComponent<MeshRenderer>();
+                Material[] crackedGeodeMaterials = crackedGeodeRenderer.materials;
+                crackedGeodeMaterials[1] = AssetHandler.materials["ghostMatterCrystal"];
+                crackedGeodeRenderer.materials = crackedGeodeMaterials;
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CRACKED GEODE");
 
             //Apply sand material to terrain
             GameObject chimeTerrain = SearchUtilities.Find("Visual/Interior Terrain/Terrain");

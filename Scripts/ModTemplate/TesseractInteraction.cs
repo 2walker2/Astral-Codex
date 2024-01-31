@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using NewHorizons.Builder;
 using NewHorizons.Utility;
 using UnityEngine.PostProcessing;
+using System.Diagnostics;
 
 namespace AstralCodex
 {
@@ -22,6 +23,7 @@ namespace AstralCodex
         GameObject skySphere; //The GameObject holding the ghost matter skybox overlay
         int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
         AudioClip defaultTravelMusic; //The default travel music so it can be restored if the player resets the tesseract
+        List<ParticleSystem> exteriorProbeLidarProjections = new List<ParticleSystem>(); //The lidar scan particles of the Chime's exterior probes
         #endregion
 
         #region Initialization
@@ -35,6 +37,19 @@ namespace AstralCodex
             if (trailsReveal != null)
                 trailsReveal.SetActive(false);
             skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+
+            GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
+            if (exteriorProbeRoot != null)
+            {
+                ParticleSystem[] particleSystems = exteriorProbeRoot.GetComponentsInChildren<ParticleSystem>();
+                foreach (ParticleSystem particleSystem in particleSystems)
+                {
+                    if (particleSystem.gameObject.name == "ScanSource")
+                        exteriorProbeLidarProjections.Add(particleSystem);
+                }
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND EXTERIOR LIDAR PROBES");
 
             //Save default travel music and update travel audio source settings
             GlobalMusicController globalMusicController = Locator.GetGlobalMusicController();
@@ -127,6 +142,15 @@ namespace AstralCodex
                 Locator.GetGlobalMusicController()._travelSource.clip = AssetHandler.audioClips["fourDTravelMusic"];
             else
                 Locator.GetGlobalMusicController()._travelSource.clip = defaultTravelMusic;
+
+            //Toggle exterior lidar probes
+            foreach (ParticleSystem p in exteriorProbeLidarProjections)
+            {
+                if (value)
+                    p.Stop();
+                else
+                    p.Play();
+            }
 
             //Set persistent condition
             PlayerData.SetPersistentCondition("CODEX_ENTERED_TESSERACT", value);
