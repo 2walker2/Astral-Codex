@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Secondary probe arrived at destination, initiating visual link. Projection stone generated.</Text>
+		<Text>Secondary probe arrived at destination, initiating visual link. Projection stone generated. Connection unstable.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

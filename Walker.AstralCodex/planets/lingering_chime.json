@@ -33,7 +33,7 @@
 		"isStatic": true
 	},
 	"Water": {
-		"size": 10,
+		"size": 8,
 		"tint": {
 			"r": 0,
 			"g": 255,
@@ -66,23 +66,23 @@
 					"DarkMatterVolume/ProbeVisuals"
 				]
 			},*/
-			/*{
+			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Interactables_CometInterior/DarkMatter_KillVolumes/DarkMatterVolume (4)",
 				"position": {
-					"y": 15,
-					"z": 45
+					"y": 13,
+					"z": 38
 				},
 				"rename": "StationGhostMatter",
 				"removeChildren": [
 					"ProbeVisuals"
 				],
-				"scale": 1.66,
+				"scale": 1.5,
 				"keepLoaded": true
 			},
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
-				"position": {"y": 12, "z": 44},
-				"stretch": {"x": 2.5, "y": 1.25, "z": 2},
+				"position": {"y": 10, "z": 36},
+				"stretch": {"x": 1.75, "y": 1.1, "z": 1.1},
 				"keepLoaded": true,
 				"rename": "StationGhostMatterEffects"
 			},
@@ -103,7 +103,7 @@
 				"position": {"x":-2.9323, "y": 1.1602, "z": 45.2816},
 				"rotation": {"x":2.2561, "y": 311.7032, "z": 356.107},
 				"rename": "StationClutter3"
-			},*/
+			},
 			/*{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
 				"position": {"x": 0.0313, "y": -1.1602, "z": 41.8782},
@@ -198,10 +198,11 @@
 		],
 		"remotes": [
 			{
-				"id": "Anomaly Recording",
+				"id": "Secondary Probe",
 				"decalPath": "planets/assets/vision_symbol.png",
 				"platform": {
-					"position": {"x": -21.0616, "y": 36.7966, "z": 11.2404},
+					"position": {"x": -18, "y": 32, "z": 10},
+					"rotation": {"x": 180},
 					"rename": "StationVision",
 					"reveals": "codex_projection_fact"
 				}
@@ -238,10 +239,10 @@
 				"frequency": "Astral Codec",
 				"identificationRadius": 5.0,
 				"name": "Chime Transmitter",
-				"reveals": "codex_lingering_chime_lower_antenna",
+				"reveals": "codex_lingering_chime_signal",
 				"position": {
-					"y": 12.5,
-					"z": 45
+					"y": 9.7,
+					"z": 39.1
 				}
 			}
 		]
@@ -307,67 +308,67 @@
 		],
 		"revealVolumes": [
 			{
+				//When approaching Chime
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
 					"codex_lingering_chime_rumor",
 					"codex_lingering_chime_fact"
 				],
-				"radius": 125.0
+				"radius": 200
 			},
 			{
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_lingering_chime_upper_rumor"
-				],
-				"radius": 20.0
-			},
-			{
+				//When entered tesseract
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
 					"codex_lingering_chime_tesseract",
+					"codex_lingering_chime_material"
+				],
+				"position": {
+					"y": -58
+				},
+				"radius": 3.5
+			},
+			{
+				//When entered Chime
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_upper_rumor",
 					"codex_lingering_chime_water",
-					"codex_lingering_chime_material",
-					"codex_lingering_chime_lower_rumor",
+					"codex_lingering_chime_antenna",
 					"codex_lingering_chime_population_fact",
 					"codex_lingering_chime_spacecraft_fact",
 					"codex_lingering_chime_no_sun_fact"
 				],
-				"position": {
-					"x": 11.45,
-					"y": 3.26
-				},
-				"radius": 4.0
+				"radius": 52
 			},
 			{
+				//When activated scanners
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
 					"codex_lingering_chime_population_trails",
 					"codex_lingering_chime_spacecraft_trails"
 				],
-				"position": {
-					"x": 11.45,
-					"y": 3.26
-				},
-				"radius": 4.0,
+				"radius": 52,
 				"rename": "TrailsReveal"
 			},
 			{
+				//When entering lower deck
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
-					"codex_lingering_chime_lower_monolith"
+					"codex_lingering_chime_lower"
 				],
 				"position": {
-					"x": -11.45,
-					"y": -3.5
+					"y": -26
 				},
-				"radius": 5.0
+				"radius": 25
 			},
 			{
+				//When population solved
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
@@ -377,6 +378,7 @@
 				"rename": "PopulationCompleteReveal"
 			},
 			{
+				//When spacecraft solved
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
@@ -386,6 +388,7 @@
 				"rename": "SpacecraftCompleteReveal"
 			},
 			{
+				//When no sun solved
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
@@ -395,6 +398,7 @@
 				"rename": "NoSunCompleteReveal"
 			},
 			{
+				//When Codec obtained
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
@@ -418,13 +422,13 @@
 		],
 		"speedTrapVolumes": [
 			{
-				"radius": 15,
+				"radius": 13,
 				"position": {
-					"y": 15,
-					"z": 45
+					"y": 13,
+					"z": 38
 				},
-				"acceleration": 5,
-				"speedLimit": 2.5
+				"acceleration": 7,
+				"speedLimit": 2
 			}
 		]
 	}

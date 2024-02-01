@@ -17,6 +17,10 @@
             <Text>An invisible structure far below the plane of the solar system.</Text>
         </ExploreFact>
         <ExploreFact>
+            <ID>codex_lingering_chime_tesseract</ID>
+            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
+        </ExploreFact>
+        <ExploreFact>
             <ID>codex_lingering_chime_material</ID>
             <Text>The structure is composed of the same material as ghost matter crystals.</Text>
         </ExploreFact>
@@ -34,12 +38,16 @@
             <Text>There is an entrance to the structure on the sunward side.</Text> 
         </RumorFact>
         <ExploreFact>
-            <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
+            <ID>codex_lingering_chime_water</ID>
+            <Text>A sphere of water orbits inside the structure.</Text> 
         </ExploreFact>
         <ExploreFact>
-            <ID>codex_lingering_chime_water</ID>
-            <Text>There is a slowly expanding sphere of water at the core of the structure.</Text> 
+            <ID>codex_lingering_chime_antenna</ID> 
+            <Text>There is an unknown signal coming from an antenna within the structure. It's completely surrounded by ghost matter.</Text> 
+        </ExploreFact>
+        <ExploreFact>
+            <ID>codex_lingering_chime_signal</ID>
+            <Text>There is an antenna broadcasting a chiming signal within the structure.</Text> 
         </ExploreFact>
         
         <Entry>
@@ -51,11 +59,11 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_population_fact</ID>
-                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one-sixth full. Symbols are chalked next to a satellite dish nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one-sixth full. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_trails</ID>
-                <Text>After passing through the strange device a second time, I can see green trails emanating from the satellite dish connected to points throughout the system.</Text>
+                <Text>After passing through the strange device a second time, I can see green trails emanating from the nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
@@ -71,15 +79,15 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_fact</ID>
-                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a satellite dish nearby that read: <![CDATA[<Color=#00ffbc>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
+                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#00ffbc>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_trails</ID>
-                <Text>After passing through the strange device a second time, I can see purple trails emanating from the satellite dish connected to points throughout the system.</Text>
+                <Text>After passing through the strange device a second time, I can see purple trails emanating from the nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>
-                <Text>All of the icons powered on and the indicator light turned green when a spacecraft was present on each planet in the system.</Text>
+                <Text>All of the icons powered on and the indicator light turned green when a spacecraft was present on each planet in the solar system.</Text>
             </ExploreFact>
         </Entry>
         <Entry>
@@ -106,21 +114,9 @@
         <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
 
-        <RumorFact>
-            <ID>codex_lingering_chime_lower_rumor</ID> 
-            <SourceID>codex_lingering_chime_upper</SourceID> 
-            <RumorName>Chime Signal</RumorName>
-            <Text>There is an unknown signal coming from the lower deck of the structure. The path downwards is blocked by ghost matter.</Text> 
-        </RumorFact>
-
         <ExploreFact>
-            <ID>codex_lingering_chime_lower_antenna</ID>
-            <Text>There is an antenna broadcasting a chiming signal on the lower deck.</Text> 
-        </ExploreFact>
-
-        <ExploreFact>
-            <ID>codex_lingering_chime_lower_monolith</ID>
-            <Text>There is a strange metallic monolith on the lower deck. It appears unpowered. Wires run to it from three indicator lights in the floor.</Text> 
+            <ID>codex_lingering_chime_lower</ID>
+            <Text>There is strange massive device at the center of the lower deck. It appears to be unpowered. Wires run to it from three other devices nearby.</Text> 
         </ExploreFact>
     </Entry>
     <Entry>
@@ -138,7 +134,7 @@
 
         <ExploreFact>
             <ID>codex_interloper_recorder_warning</ID> 
-            <Text>I found a crystalline recorder in the core of The Interloper recorded by someone called Scientist. It describes liquid being used to neutralize ghost matter along with a warning about the impending rupture. The recorder describes a possible breach as being worth it to transmit something.</Text>
+            <Text>I found a crystalline recorder in the core of The Interloper recorded by someone called Scientist. It describes liquid being used to neutralize ghost matter along with a warning about the impending rupture. The recorder describes a possible breach as being worth the risk in order to transmit something.</Text>
         </ExploreFact>
     </Entry>
     <Entry>
