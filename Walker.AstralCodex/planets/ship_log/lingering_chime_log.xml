@@ -18,7 +18,7 @@
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#00ffbc>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
+            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#ff0040>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_material</ID>
@@ -59,7 +59,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_population_fact</ID>
-                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one-sixth full. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#00ffbc>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one-sixth full. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#ff0040>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_trails</ID>
@@ -79,7 +79,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_fact</ID>
-                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#00ffbc>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
+                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#ff0040>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_trails</ID>
@@ -99,7 +99,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_fact</ID>
-                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#00ffbc>]]>/? {./<![CDATA[</Color>]]></Text>
+                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>/? {./<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_complete</ID>

@@ -88,21 +88,27 @@
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": 0.0313, "y": 1.1602, "z": 41.8782},
-				"rotation": {"x": 2.2561, "y": 3.9638, "z": 356.107},
+				"position": {"x": 0.1695, "y": 0.8547, "z": 31.7184},
+				"rotation": {"x": 5.5689, "y": 4.0401, "z": 355.4895},
 				"rename": "StationClutter1"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": 1.4168, "y": 1.1602, "z": 47.4472},
-				"rotation": {"x": 2.2561, "y": 36.6785, "z": 356.107},
+				"position": {"x": -0.6596, "y": 0.7347, "z": 37.1562},
+				"rotation": {"x": 1.2307, "y": 36.5986, "z": 353.6952},
 				"rename": "StationClutter2"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x":-2.9323, "y": 1.1602, "z": 45.2816},
-				"rotation": {"x":2.2561, "y": 311.7032, "z": 356.107},
+				"position": {"x": -3.5178, "y": 0.9057, "z": 32.9728},
+				"rotation": {"x": 358.491, "y": 269.7259, "z": 352.7424},
 				"rename": "StationClutter3"
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+				"position": {"x": 0.0294, "y": 0.8784, "z": 41.7781},
+				"rotation": {"x": 359.8041, "y": 236.8189, "z": 359.0835},
+				"rename": "StationClutter4"
 			},
 			/*{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",

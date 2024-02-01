@@ -61,7 +61,7 @@
 				"rename": "TranslationProbe1",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/BrambleProbe.prefab",
-				"position": {"x": -229.694, "y": 212.6833, "z": -416.6939},
+				"position": {"x": -230.2982, "y": 212.9088, "z": -417.0578},
 				"rotation": {"x": 320.2596, "y": 93.79926, "z": 304.2686}
 			},
 			{
@@ -2131,12 +2131,13 @@
 					},
 					{
 						"position": {
-							"x": 1.8276,
-							"y": 1.516
+							"x": -0.0548,
+							"y": 2.0251
 						},
 						"type": "adult",
 						"variation": 12,
-						"zRotation": 219
+						"zRotation": 34.2545,
+						"mirror": true
 					},
 					{
 						"position": {

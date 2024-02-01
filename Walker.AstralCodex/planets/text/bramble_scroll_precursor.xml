@@ -27,7 +27,7 @@
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>"Note: I hope the next body we dock at has a flammable atmosphere. It's been so long since our last cam<![CDATA[<Color=#ff0040>]]>+<![CDATA[</Color>]]>fire. Do you think the there will st<![CDATA[<Color=#ff0040>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#ff0040>]]>/<![CDATA[</Color>]]>t of the universe."
+		<Text>"I hope the next body we dock at has a flammable atmosphere. It's been so long since our last cam<![CDATA[<Color=#ff0040>]]>+<![CDATA[</Color>]]>fire. Do you think the there will st<![CDATA[<Color=#ff0040>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#ff0040>]]>/<![CDATA[</Color>]]>t of the universe."
 		</Text>
 	</TextBlock>
 	<TextBlock>
@@ -38,7 +38,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
-		<ParentID>5</ParentID>
+		<ParentID>4</ParentID>
 		<Text>"Wait... but what about marshmallows?"
 		</Text>
 	</TextBlock>

@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>SPIRE: We will need to build a gravity cannon here on <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]> to allow for shuttle travel back to <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>. This model can be used as reference for the full-scale construction, as well as to send small objects until construction is complete.</Text>
+		<Text>SPIRE: We will need to build a gravity cannon here on <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]> to allow for shuttle travel back to <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>. This model can be used as reference for the full-scale construction, and to send small objects until construction is complete.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with  <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. With passengers such a collision would surely be fatal.</Text>
+		<Text>KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with  <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. Such a collision would surely be fatal for any passengers.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>

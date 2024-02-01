@@ -381,7 +381,7 @@ namespace AstralCodex
                 detectionTrigger._allowUnderwater = true;
             }
             else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SIGNL", MessageType.Error);
+                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SIGNAL", MessageType.Error);
         }
 
         void PutChimeClutterOnVisibleToProbeLayer()
@@ -393,7 +393,7 @@ namespace AstralCodex
                 stationClutter1.layer = 22;
                 SearchUtilities.Find("StationClutter2").layer = 22;
                 SearchUtilities.Find("StationClutter3").layer = 22;
-                //SearchUtilities.Find("StationClutter4").layer = 22;
+                SearchUtilities.Find("StationClutter4").layer = 22;
                 //SearchUtilities.Find("StationClutter5").layer = 22;
                 //SearchUtilities.Find("StationClutter6").layer = 22;
             }
