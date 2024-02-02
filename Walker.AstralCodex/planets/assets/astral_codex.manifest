@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 171223323
+CRC: 1102058928
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ae25ef8899bd411f46d8007dde5113cf
+    Hash: 6f0a9ad5f5752fd827c9f3c7be5e03cb
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 78094baec7dd894d472220d7b15ce3a7
+    Hash: a5dcd1bd93d440168c3b71419a371807
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -62,13 +62,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 147fd1465383e9d418a3c3e6172c99a2, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: c6fe68bc48c100c4386d817d187c61d4, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
 - Class: 114
@@ -175,6 +171,7 @@ Assets:
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/Textures/Foliage/Foliage3.png
+- Assets/Bundle/Models/Chime Redesign/NewProbe_Seperate.blend
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Shaders/Foliage.shader
 - Assets/Bundle/Materials/Chime Redesign/Moss.mat
@@ -231,6 +228,8 @@ Assets:
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
 - Assets/Bundle/Animations/RotateFastController.controller
+- Assets/Bundle/Models/Chime Redesign/ChimeRemodel_technology.blend
+- Assets/Bundle/Models/hollow_sphere.obj
 - Assets/Bundle/Codex Species Projection.prefab
 - Assets/Bundle/Foliage Group 4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/CornerPiece.png
@@ -247,6 +246,7 @@ Assets:
 - Assets/Bundle/Materials/Wires/SunDisplayWireShell.mat
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
+- Assets/Bundle/Animations/CodecDispenser.controller
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat
@@ -360,6 +360,7 @@ Assets:
 - Assets/Bundle/Animations/BrambleProbeChimeHologramController.controller
 - Assets/Bundle/Textures/Skybox/rightImage.png
 - Assets/Bundle/Materials/Chime Redesign/Coin Metal.mat
+- Assets/Bundle/Models/Chime Redesign/FoliageTest.blend
 - Assets/Bundle/Models/probe_broken.obj
 - Assets/Bundle/Models/station.obj
 - Assets/Bundle/Models/Chime Redesign/transmitter.obj
@@ -374,6 +375,7 @@ Assets:
 - Assets/Bundle/Textures/Foliage/WaterDecor.png
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Materials/Chime Redesign/Goldish foil.mat
+- Assets/Bundle/Animations/DispenseCodec.anim
 - Assets/Bundle/Models/hemisphere.obj
 - Assets/Bundle/Shaders/Custom_Sand.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 3.mat

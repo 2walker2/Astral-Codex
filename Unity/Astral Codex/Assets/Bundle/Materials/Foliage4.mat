@@ -40,7 +40,7 @@ Material:
     - _DepthBlendVanishTreshold: 0.5
     - _DiffusePower: 0.25
     - _EmissionContrast: 1.5
-    - _EmissionStrength: 0.15
+    - _EmissionStrength: 0.25
     - _Gloss: -10
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8

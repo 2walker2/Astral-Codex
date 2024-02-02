@@ -13,6 +13,7 @@ namespace AstralCodex
 {
     internal class CodexDispenser : MonoBehaviour
     {
+        const string AnimatorState = "DispenseCodec";
 
         bool animationStarted = false;
 
@@ -27,6 +28,8 @@ namespace AstralCodex
         ProbeLauncher probeLauncher;
         OWRigidbody owRigidbody;
         ProbePromptReceiver probePrompt;
+        Animator animator;
+        GameObject addendumDialogueTrigger;
 
         void Start()
         {
@@ -38,6 +41,11 @@ namespace AstralCodex
             probeLauncher = Locator.GetPlayerCamera().GetComponentInChildren<ProbeLauncher>();
             owRigidbody = GetComponent<OWRigidbody>();
             probePrompt = GetComponent<ProbePromptReceiver>();
+            animator = transform.parent.parent.GetComponentInChildren<Animator>();
+            addendumDialogueTrigger = transform.Find("CodecAddendumDialogue").gameObject;
+
+            //Disable the addendum dialogue trigger
+            addendumDialogueTrigger.SetActive(false);
         }
 
         void ProbeAnchored()
@@ -63,6 +71,9 @@ namespace AstralCodex
             //Disable probe launch prompt
             Destroy(probePrompt);
 
+            //Start the animation
+            animator.Play(AnimatorState);
+
             //Probe sinks into dispenser
             float sinkStartTime = Time.time;
             Vector3 probeStartPosition = probe.GetAnchor()._localImpactPos;
@@ -75,6 +86,15 @@ namespace AstralCodex
 
                 yield return new WaitForEndOfFrame();
             }
+
+            //Wait until the animation is complete
+            yield return new WaitForSeconds(totalDuration);
+
+            //Enable the dialogue trigger
+            addendumDialogueTrigger.SetActive(true);
+            InteractReceiver addendumDialogueInteractReceiver = addendumDialogueTrigger.GetComponent<InteractReceiver>();
+            addendumDialogueInteractReceiver._screenPrompt._text = "<CMD> Write Addendum"; //These will need to be translated
+            addendumDialogueInteractReceiver._noCommandIconPrompt._text = "Write Addendum";
 
             yield return null;
         }

@@ -52,7 +52,7 @@ Material:
     - _DistortionSpeed: 0.025
     - _DistortionStrength: 0.115
     - _EmissionContrast: 1.5
-    - _EmissionStrength: 0.15
+    - _EmissionStrength: 0.25
     - _Gloss: -10
     - _LightTransmission: 0.25
     - _MaxDitherValue: 8

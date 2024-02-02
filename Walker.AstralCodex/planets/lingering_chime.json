@@ -251,6 +251,16 @@
 					"z": 39.1
 				}
 			}
+		],
+		"dialogue": [
+			{
+				"rename": "CodecAddendumDialogue",
+				"parentPath": "Sector/Station/CodecDispenser/Core/Collision",
+				"isRelativeToParent": true,
+				"radius": 1.5,
+				"range": 5,
+				"xmlFile": "planets/text/codex_addendum.xml"
+			}
 		]
 	},
 	"ReferenceFrame": {
@@ -435,6 +445,13 @@
 				},
 				"acceleration": 7,
 				"speedLimit": 2
+			}
+		],
+		"interferenceVolumes": [
+			{
+				"radius": 1,
+				"parentPath": "Sector/Station/CodecDispenser/Core/Collision",
+				"isRelativeToParent": true
 			}
 		]
 	}
