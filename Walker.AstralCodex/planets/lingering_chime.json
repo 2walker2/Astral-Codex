@@ -69,7 +69,7 @@
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Interactables_CometInterior/DarkMatter_KillVolumes/DarkMatterVolume (4)",
 				"position": {
-					"y": 13,
+					"y": 14,
 					"z": 38
 				},
 				"rename": "StationGhostMatter",

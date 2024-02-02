@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
+using Harmony;
 
 namespace AstralCodex
 {
@@ -62,6 +63,7 @@ namespace AstralCodex
             { "TranslationProbe2", typeof(EmberProjectionActivate) },
             { "Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
             { "TranslationProbe1", typeof(BrambleProjectionActivate) },
+            { "CodecDispenser/Core/Collision", typeof(CodexDispenser) },
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -329,11 +331,9 @@ namespace AstralCodex
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SHELL");
 
             //Apply ghost matter crystal material to cracked geode interior
-            Main.modHelper.Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAH!");
             GameObject crackedGeode = SearchUtilities.Find("Visual/Rotatable/Cracked Geode");
             if (crackedGeode != null)
             {
-                Main.modHelper.Console.WriteLine("OOOOOOOOOOOOOOOOOOOOOOOH!");
                 MeshRenderer crackedGeodeRenderer = crackedGeode.GetComponent<MeshRenderer>();
                 Material[] crackedGeodeMaterials = crackedGeodeRenderer.materials;
                 crackedGeodeMaterials[1] = AssetHandler.materials["ghostMatterCrystal"];
