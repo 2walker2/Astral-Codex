@@ -27,11 +27,11 @@ Material:
     - _BaseWireColorFactor: 0.01
     - _Gloss: 2
     - _Metallic: 1.5
-    - _Speed: 0.5
+    - _Speed: 0.2
     - _StripeThickness: 0.2
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.49852014, b: 0.51886785, a: 1}
+    - _BaseColor: {r: 1, g: 0.7926367, b: 0.76886797, a: 1}
     - _EdgeColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HighlightColor: {r: 0, g: 1, b: 0.57647055, a: 1}
+    - _HighlightColor: {r: 1, g: 0, b: 0.26997897, a: 1}
     - _PatternScale: {r: 9, g: 0.5, b: 0, a: 0}
     - _WireColor: {r: 0, g: 0, b: 0, a: 1}

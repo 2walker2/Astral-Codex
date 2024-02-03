@@ -115,6 +115,13 @@ namespace AstralCodex
                     trails[i].gameObject.SetActive(validTarget);
                 }
             }
+            else
+            {
+                foreach (var trail in trails)
+                {
+                    trail.gameObject.SetActive(false);
+                }
+            }
         }
         #endregion
     }

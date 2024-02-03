@@ -49,12 +49,11 @@ namespace AstralCodex
         //Components to add to gameObjects in the scene
         Dictionary<string, Type> componentsToAdd = new Dictionary<string, Type>() {
             {"Tesseract", typeof(TesseractInteraction)},
-            {"SunWire", typeof(SunWire)},
-            { "PopulationWire", typeof(PopulationWire) },
-            { "TechnologyWire", typeof(TechnologyWire) },
+            {"Sun Wires", typeof(SunWire)},
+            { "Population Wires", typeof(PopulationWire) },
+            { "Technology Wires", typeof(TechnologyWire) },
             { "TimberHearthSpacecraftDetector", typeof(SpacecraftDetector) },
             { "AshTwinSpacecraftDetector", typeof(SpacecraftDetector) },
-            //{"Monolith", typeof(Monolith) },
             { "ChimeWhiteHoleWater/ChimeWhiteHoleWaterCollider", typeof(GhostMatterSubmerge) },
             { "PopulationScannerOrigin", typeof(PopulationTrails) },
             { "SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
@@ -64,6 +63,7 @@ namespace AstralCodex
             { "Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
             { "TranslationProbe1", typeof(BrambleProjectionActivate) },
             { "CodecDispenser/Core/Collision", typeof(CodexDispenser) },
+            { "Trail Wires/Activation Trigger", typeof(TrailActivation) }
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -102,7 +102,6 @@ namespace AstralCodex
         #region Initialization
         void Awake()
         {
-            Main.modHelper.Console.WriteLine("UUUUUUUUUUUUUUUUUUUUH!");
             //Initialize the star system loaded callback
             Main.newHorizons.GetStarSystemLoadedEvent().AddListener((string system) => { OnStarSystemLoaded(system); });
         }

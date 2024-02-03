@@ -13,7 +13,6 @@ namespace AstralCodex
         void Start()
         {
             on = false;
-            renderer = GetComponent<MeshRenderer>();
             reveal = GameObject.Find("SpacecraftCompleteReveal");
             computer = SearchUtilities.Find("CodexGalaxyComputer").GetComponent<NomaiComputer>();
             Initialize();

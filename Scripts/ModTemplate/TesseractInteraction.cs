@@ -12,13 +12,13 @@ namespace AstralCodex
 {
     class TesseractInteraction : MonoBehaviour
     {
+        const string TesseractEnteredCondition = "CODEX_ENTERED_TESSERACT";
+
         #region Private Variables
         GameObject activationEffect; //The prefab to instantiate when the player enters the tesseract
         //GameObject fourDParticles; //The particles to enable when the player first enters the tesseract
         //GameObject fourDParticles2; //The particles to enable after the player has waited in the tesseract
         int fourDLayer = 0; //The player's current tesseract layer (0=normal, 1=entered, 2=waited)
-        float timeStayed = 0; //The time the player has stayed in the tesseract since the last time they entered it
-        float secondLayerDelay = 10f; //How long the player has to stay in the tesseract before it will activate a second time
         GameObject trailsReveal; //The GameObject holding the reveal volume for the trails
         GameObject skySphere; //The GameObject holding the ghost matter skybox overlay
         int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
@@ -63,7 +63,7 @@ namespace AstralCodex
             }
 
             //Restore tesseract state from previous loops
-            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+            if (PlayerData.GetPersistentCondition(TesseractEnteredCondition))
                 EnteredTesseract(true, false);
 
             //Add the animation component as well
@@ -153,7 +153,7 @@ namespace AstralCodex
             }
 
             //Set persistent condition
-            PlayerData.SetPersistentCondition("CODEX_ENTERED_TESSERACT", value);
+            PlayerData.SetPersistentCondition(TesseractEnteredCondition, value);
 
             if (value)
                 fourDLayer = 1;
@@ -164,29 +164,6 @@ namespace AstralCodex
                     Camera.main.cullingMask -= (1 << 22);
             }
                 
-        }
-
-        /*void OnTriggerStay(Collider other)
-        {
-            if (fourDLayer != 2)
-            {
-                timeStayed += Time.deltaTime;
-                //Second 4D layer
-                if (timeStayed > secondLayerDelay)
-                {
-                    EnteredTesseract(true);
-                    fourDLayer = 2;
-                    fourDParticles2.SetActive(true);
-                    Trails.visible = true;
-                    if (trailsReveal != null)
-                        trailsReveal.SetActive(true);
-                }
-            }
-        }*/
-
-        void OnTriggerExit(Collider other)
-        {
-            timeStayed = 0;
         }
         #endregion
     }

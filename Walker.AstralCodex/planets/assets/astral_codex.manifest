@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1102058928
+CRC: 124435234
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6f0a9ad5f5752fd827c9f3c7be5e03cb
+    Hash: bbac82add934cd936dc518412621d79a
   TypeTreeHash:
     serializedVersion: 2
     Hash: a5dcd1bd93d440168c3b71419a371807
@@ -107,6 +107,7 @@ Assets:
 - Assets/Bundle/Materials/Additive.mat
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
+- Assets/Bundle/Materials/Wires/PopulationTrailWireShell.mat
 - Assets/Bundle/Materials/Light.mat
 - Assets/Bundle/Materials/Wires/PopulationDisplayWire.mat
 - Assets/Bundle/Probe Warp Platform.prefab
@@ -191,6 +192,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Tube.mat
 - Assets/Bundle/Materials/Skybox/SkyboxRight.mat
 - Assets/Bundle/Textures/Skybox/leftImage.png
+- Assets/Bundle/Materials/Wires/SunCodecWire.mat
 - Assets/Bundle/Textures/Foliage/WaterDecorG.png
 - Assets/Bundle/Materials/Skybox/SkyboxUp.mat
 - Assets/Bundle/Shaders/Whirlpool Edge.shader
@@ -205,6 +207,7 @@ Assets:
 - Assets/Bundle/Models/torus.obj
 - Assets/Bundle/Shaders/Sand.shader
 - Assets/Bundle/Textures/Foliage/Foliage5G.png
+- Assets/Bundle/Materials/Wires/PopulationCodecWire.mat
 - Assets/Bundle/Transmitter Coin.prefab
 - Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
@@ -218,6 +221,7 @@ Assets:
 - Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Textures/WirePattern.png
 - Assets/Bundle/Models/interloper_detail.obj
+- Assets/Bundle/Materials/Wires/SunCodecWireShell.mat
 - Assets/Bundle/ThornParticles.prefab
 - Assets/Bundle/Textures/Chime Redesign/GhostMetal1.png
 - Assets/Bundle/Materials/Chime Redesign/Foil.mat
@@ -277,6 +281,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Metal 4.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 1.mat
 - Assets/Bundle/Shaders/LightCookie.shader
+- Assets/Bundle/Materials/Wires/SpacecraftCodecWireShell.mat
 - Assets/Bundle/Materials/FoliageWaterDecor.mat
 - Assets/Bundle/Textures/AdvancedSpacecraft.png
 - Assets/Bundle/Probe Warp Platform Gravity.prefab
@@ -298,6 +303,7 @@ Assets:
 - Assets/Bundle/Foliage Group 3.prefab
 - Assets/Bundle/White Hole Water.prefab
 - Assets/Bundle/Models/inverted_sphere.obj
+- Assets/Bundle/Materials/Wires/PopulationCodecWireShell.mat
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Shaders/Glass.shader
 - Assets/Bundle/Materials/ThornParticles.mat
@@ -324,6 +330,7 @@ Assets:
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
 - Assets/Bundle/Textures/NoiseBig.png
 - Assets/Bundle/Animations/RotateController.controller
+- Assets/Bundle/Materials/Wires/SpacecraftCodecWire.mat
 - Assets/Bundle/Textures/Chime Redesign/Effects_HT_Sand_n.png
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Textures/Foliage/Foliage5.png
@@ -371,12 +378,15 @@ Assets:
 - Assets/Bundle/Textures/Skybox/upImage.png
 - Assets/Bundle/Materials/Chime Redesign/Probe/Metal.mat
 - Assets/Bundle/Textures/Pentagon.png
+- Assets/Bundle/Materials/Wires/SpacecraftTrailWireShell.mat
 - Assets/Bundle/Models/dark_bramble_hologram.obj
 - Assets/Bundle/Textures/Foliage/WaterDecor.png
 - Assets/Bundle/Materials/GreenLight.mat
 - Assets/Bundle/Materials/Chime Redesign/Goldish foil.mat
 - Assets/Bundle/Animations/DispenseCodec.anim
 - Assets/Bundle/Models/hemisphere.obj
+- Assets/Bundle/Materials/Wires/PopulationTrailWire.mat
 - Assets/Bundle/Shaders/Custom_Sand.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 3.mat
+- Assets/Bundle/Materials/Wires/SpacecraftTrailWire.mat
 Dependencies: []
