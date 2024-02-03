@@ -63,6 +63,7 @@ namespace AstralCodex
         IEnumerator CodecAnimation()
         {
             animationStarted = true;
+            float startTime = Time.time;
             Main.modHelper.Console.WriteLine("STARTING CODEC ANIMATION");
 
             //Prevent player from recalling scout
@@ -88,13 +89,29 @@ namespace AstralCodex
             }
 
             //Wait until the animation is complete
-            yield return new WaitForSeconds(totalDuration);
+            yield return new WaitForSeconds(totalDuration - (Time.time - startTime));
 
             //Enable the dialogue trigger
             addendumDialogueTrigger.SetActive(true);
             InteractReceiver addendumDialogueInteractReceiver = addendumDialogueTrigger.GetComponent<InteractReceiver>();
             addendumDialogueInteractReceiver._screenPrompt._text = "<CMD> Write Addendum"; //These will need to be translated
             addendumDialogueInteractReceiver._noCommandIconPrompt._text = "Write Addendum";
+
+            //Wait for the player to interact with the dialogue
+            while (addendumDialogueInteractReceiver._hasInteracted)
+                yield return new WaitForEndOfFrame();
+
+            //Wait for the player to stop interacting with the dialogue
+            while (!addendumDialogueInteractReceiver._hasInteracted)
+                yield return new WaitForEndOfFrame();
+
+            //Give player ship log
+            Locator.GetShipLogManager().RevealFact("codex_astral_codex_fact", true, true);
+
+            //Release probe
+            probe.Unanchor();
+            probeLauncher._isRetrieving = false;
+            
 
             yield return null;
         }
