@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>We left our home body to escape conflict and pursue curiosity. For 207 cycles we drifted peacefully upon the astral sea. Until we made a discovery we were unprepared to face.</Text>
+		<Text>We left our home body to escape conflict and to pursue our curiosity. For 207 cycles we drifted peacefully upon the astral sea. Until we made a discovery we were unprepared to face.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

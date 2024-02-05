@@ -136,7 +136,7 @@
 				"path": "NomaiProbe_Body/Structure_NOM_Probe_Renderer",
 				"scale": 0.5,
 				"keepLoaded": true,
-				"parentPath": "Sector/Station/ProbePosition",
+				"parentPath": "Sector/Station/Position Markers/ProbePosition",
 				"isRelativeToParent": true
 			},
 		],
@@ -162,45 +162,27 @@
 				"xmlFile": "planets/text/chime_sign.xml",
 				"rename": "ChimeSign"
 			}*/
-			/*{
-				"position": {
-					"x": -39,
-					"y": -0.75,
-					"z": -22.5,
-				},
-				"rotation": {
-					"x": 180
-				},
+			{
+				"parentPath": "Sector/Station/Position Markers/CodecComputerGalaxyPosition",
+				"isRelativeToParent": true,
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_galaxy.xml",
 				"rename": "CodexGalaxyComputer"
 			},
 			{
-				"position": {
-					"x": 39,
-					"y": -0.75,
-					"z": -22.5,
-				},
-				"rotation": {
-					"x": 180
-				},
+				"parentPath": "Sector/Station/Position Markers/CodecComputerSpeciesPosition",
+				"isRelativeToParent": true,
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_species.xml",
 				"rename": "CodexSpeciesComputer"
 			},
 			{
-				"position": {
-					"x": 0,
-					"y": -0.75,
-					"z": 45,
-				},
-				"rotation": {
-					"x": 180
-				},
+				"parentPath": "Sector/Station/Position Markers/CodecComputerEnvironmentsPosition",
+				"isRelativeToParent": true,
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_environments.xml",
 				"rename": "CodexEnvironmentsComputer"
-			}*/
+			}
 		],
 		"remotes": [
 			{
