@@ -22,7 +22,7 @@ namespace AstralCodex
             //Component references
             cloakSphereRenderer = GameObject.Find("CloakSphere").GetComponent<MeshRenderer>();
             sunDisplayRenderer = GameObject.Find("SunDisplay").GetComponent<MeshRenderer>();
-            reveal = GameObject.Find("NoSunCompleteReveal");
+            //reveal = GameObject.Find("NoSunCompleteReveal");
             computer = SearchUtilities.Find("CodexEnvironmentsComputer").GetComponent<NomaiComputer>();
             projection = SearchUtilities.Find("Station/Props/Projector Model/Codex Environments Projection");
             

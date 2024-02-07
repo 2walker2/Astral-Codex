@@ -25,5 +25,9 @@
 	      	<FactID>codex_astral_codex_species</FactID>
 	      	<Condition>4</Condition>
 	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_lingering_chime_population_complete</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

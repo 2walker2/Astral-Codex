@@ -44,5 +44,9 @@ Not even by the death of a universe.
 	      	<FactID>codex_astral_codex_environments</FactID>
 	      	<Condition>4</Condition>
 	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_lingering_chime_no_sun_complete</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

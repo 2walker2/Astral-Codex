@@ -24,7 +24,7 @@ namespace AstralCodex
         #region Variables
         public bool on = false; //Whether this wire is currently on
         protected List<Material> materials; //The materials controlled by this wire group
-        protected GameObject reveal; //The GameObject containing the reveal for this wire
+        //protected GameObject reveal; //The GameObject containing the reveal for this wire
         protected NomaiComputer computer; //The computer containing the portion of the Codec revealed by this wire
         protected GameObject projection; //The root GameObject of the lidar projection for this wire
         #endregion
@@ -45,12 +45,12 @@ namespace AstralCodex
         public void Initialize()
         {
             //Set initial state
-            if (reveal != null)
+            /*if (reveal != null)
             {
                 reveal.SetActive(false);
                 ShipLogFactListTriggerVolume revealTrigger = reveal.GetComponent<ShipLogFactListTriggerVolume>();
                 revealTrigger._player = false;
-            }
+            }*/
             projection?.SetActive(false);
             computer?.ClearAllEntries();
         }
@@ -64,7 +64,7 @@ namespace AstralCodex
             {
                 on = true;
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned on", MessageType.Success);
-                reveal?.SetActive(true);
+                //reveal?.SetActive(true);
                 projection?.SetActive(true);
                 computer?.DisplayAllEntries();
 
@@ -79,7 +79,7 @@ namespace AstralCodex
             {
                 on = false;
                 //Main.modHelper.Console.WriteLine(gameObject.name + " turned off", MessageType.Success);
-                reveal?.SetActive(false);
+                //reveal?.SetActive(false);
                 projection?.SetActive(false);
                 computer?.ClearAllEntries();
 

@@ -338,7 +338,7 @@
 				},
 				"radius": 25
 			},
-			{
+			/*{
 				//When population solved
 				"revealOn": "enter",
 				"revealFor": "both",
@@ -382,7 +382,7 @@
 				},
 				"radius": 1.5,
 				"rename": "CodexReveal"
-			}
+			}*/
 		],
 		"zeroGravityVolumes": [
 			{

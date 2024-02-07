@@ -13,7 +13,7 @@ namespace AstralCodex
         void Start()
         {
             on = false;
-            reveal = GameObject.Find("SpacecraftCompleteReveal");
+            //reveal = GameObject.Find("SpacecraftCompleteReveal");
             computer = SearchUtilities.Find("CodexGalaxyComputer").GetComponent<NomaiComputer>();
             projection = SearchUtilities.Find("Station/Props/Projector Model (2)/Codex Galaxy Projection");
             Initialize();
