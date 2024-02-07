@@ -29,6 +29,9 @@ namespace AstralCodex
                 projection.SetActive(false);
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EMBER PROJECTION", MessageType.Error);
+
+            //Disable projection initially
+            projection.SetActive(false);
         }
         #endregion
 

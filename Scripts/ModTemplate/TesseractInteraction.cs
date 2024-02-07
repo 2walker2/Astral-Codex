@@ -108,6 +108,8 @@ namespace AstralCodex
 
         private void EnteredTesseract(bool value, bool displayEffect = true)
         {
+            //TODO Activate status computer HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
             //Disable probe launcher overlay
             Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;

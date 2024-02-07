@@ -34,16 +34,15 @@ namespace AstralCodex
             "TranslationCairn5",
             "TranslationCairn6",
             "TranslationCairn7",
-            //"InterloperRecorderBreach",
             "InterloperRecorderWarning",
             "TranslationProbe1/ScaleRoot/Model",
             "TranslationProbe2/ScaleRoot/Model",
             "TranslationProbe3/Model",
-            //"ChimeSign",
             "Station/Visual/Model/Shell/Ghost Matter Shell",
             "CodexGalaxyComputer",
             "CodexSpeciesComputer",
-            "CodexEnvironmentsComputer"
+            "CodexEnvironmentsComputer",
+            "ChimeStatusComputer"
         };
 
         //Components to add to gameObjects in the scene

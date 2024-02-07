@@ -146,22 +146,6 @@
 			}
 		],
 		"translatorText": [
-			/*{
-				"normal": {
-					"y": -1.0
-				},
-				"position": {
-					"y": -21.0
-				},
-				"rotation": {
-					"y": 180.0,
-					"z": 180.0
-				},
-				"type": "trailmarker",
-				"location": "unspecified",
-				"xmlFile": "planets/text/chime_sign.xml",
-				"rename": "ChimeSign"
-			}*/
 			{
 				"parentPath": "Sector/Station/Position Markers/CodecComputerGalaxyPosition",
 				"isRelativeToParent": true,
@@ -182,6 +166,13 @@
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_environments.xml",
 				"rename": "CodexEnvironmentsComputer"
+			},
+			{
+				"parentPath": "Sector/Station/Position Markers/ChimeStatusComputerPosition",
+				"isRelativeToParent": true,
+				"type": "computer",
+				"xmlFile": "planets/text/chime_computer_status.xml",
+				"rename": "ChimeStatusComputer"
 			}
 		],
 		"remotes": [
@@ -267,24 +258,6 @@
 		"xmlFile": "planets/ship_log/lingering_chime_log.xml"
 	},
 	"ShockEffect": {},
-	/*"Water": {
-		"size": 1.0,
-		"tint": {
-			"r": 148,
-			"g": 255,
-			"b": 243,
-			"a": 0
-		},
-		"curve": [
-			{
-				"value": 4.0
-			},
-			{
-				"time": 18.0,
-				"value": 11.5
-			}
-		]
-	},*/
 	"Volumes": {
 		"audioVolumes": [
 			{
