@@ -67,7 +67,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
-                <Text>The final mark powered on and the indicator light turned green when Self was present in the solar system.</Text>
+                <Text>The final mark powered on and the indicator light turned green when my clone was present in the Ash Twin Project.</Text>
             </ExploreFact>
         </Entry>
         <Entry>
@@ -148,41 +148,34 @@
             <ID>codex_astral_codex_bramble_rumor</ID> 
             <SourceID>codex_bramble_signal</SourceID> 
             <RumorName>Astral Codec</RumorName> 
-            <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
+            <Text>Something used to transmit a message from people named Archivist, Explorer, and Scientist.</Text>
         </RumorFact>
 
         <RumorFact>
             <ID>codex_astral_codex_ember_rumor</ID> 
             <SourceID>codex_ember_signal</SourceID> 
             <RumorName>Astral Codec</RumorName> 
-            <Text>A codex containing information recorded by people named Explorer, Scientist, and Archivist.</Text> 
+            <Text>Something used to transmit a message from people named Archivist, Explorer, and Scientist.</Text> 
         </RumorFact>
 
         <ExploreFact>
-            <ID>codex_astral_codex_fact</ID>
-            <Text>REPLACE EVERYTHING BELOW THIS
-<![CDATA[<Color=#00ffbc>]]>codex downloading   codex downloaded onto all connected devices   translation beginning
-My species and my world are gone. But I have reached the Eye and that gives me hope that my people may be remembered. The Chime is ready. The light from the death of the final star has reached my receptors and I am prepared for the final journey of this universe. 
-You now hold the Astral Codex, the sum of all knowledge my species has recorded and preserved throughout our lifetime.
-But your own time of ending is close at hand. Before you retire to oblivion, I humbly request: add your knowledge to the Codex and pass it onward. Send whatever device you possess on a final journey through the Eye, that the Codex may persist, and grow, and inform the worthy species in the next cycle of what came before.
-Remember us.<![CDATA[</Color>]]></Text>
+            <ID>codex_astral_codex_galaxy</ID>
+            <Text>A means of transmitting information through a vortex. It contains a final message.</Text>
         </ExploreFact>
+
         <ExploreFact>
-            <ID>codex_astral_codex_addendum</ID>
-            <Text>Addendum by: The Hatchling
-The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
+            <ID>codex_astral_codex_species</ID>
+            <Text>Contains the stories of a long-gone people. It can be used to preserve our own.</Text>
+        </ExploreFact>
 
-I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)
-            </Text>
-            <AltText>
-                <Text>Addendum by: The Hatchling
-The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until a single individual released the signal for the Nomai to find, and was imprisoned for their actions.
+        <ExploreFact>
+            <ID>codex_astral_codex_environments</ID>
+            <Text>Used to transmit a message from a dead universe with hopes to be remembered.</Text>
+        </ExploreFact>
 
-The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
-
-I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)</Text>
-            <Condition>IP_SARCOPHAGUS_X3</Condition>
-            </AltText>
+        <ExploreFact>
+            <ID>codex_astral_codex_fact</ID>
+            <Text>I added what I knew to the message. The Astral Codec has been downloaded onto my little scout.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

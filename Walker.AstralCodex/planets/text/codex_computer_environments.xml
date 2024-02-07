@@ -25,7 +25,7 @@ Untold galaxies - a myriad of bodies within.
 		<Text>0  0                                           0  0
 |  |  0      The thread cannot break.       0  |  |
 0  0  |                                     |  0  0
-|  |  0      We will not be forgotten.      0  |  |
+|  |  0     We cannot all be forgotten.     0  |  |
 0  0                                           0  0
 		</Text>
 	</TextBlock>
@@ -39,4 +39,10 @@ Not even by the death of a universe.
 - Archivist
 		</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_astral_codex_environments</FactID>
+	      	<Condition>4</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

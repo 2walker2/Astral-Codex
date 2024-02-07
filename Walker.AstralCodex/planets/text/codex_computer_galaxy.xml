@@ -20,4 +20,10 @@
 - Scientist
 		</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_astral_codex_galaxy</FactID>
+	      	<Condition>4</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

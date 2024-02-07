@@ -5,7 +5,13 @@
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>London town laid to rest underground and yet still deeper down are we falling, falling, falling, falling</Page>
+			<Page>THIS IS PLACEHOLDER AND NEEDS SET UP WITH PROPER DIALOGUE CONDITIONS BASED ON WHAT THE PLAYER KNOWS
+Addendum by: The Hatchling
+The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until a single individual released the signal for the Nomai to find, and was imprisoned for their actions.
+
+The Nomai are true scholars, always curious about the nature of our universe. Their advanced technology is spread throughout the galaxy and one clan's generations-long search for the Eye has had a profound role in the final days of this universe.
+
+I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. And we do not fear death! (except maybe Riebeck)</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
