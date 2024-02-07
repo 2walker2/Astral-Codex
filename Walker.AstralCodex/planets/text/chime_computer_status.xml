@@ -3,26 +3,40 @@
 		<ID>1</ID>
 		<Text>
 [system status report:                              ]
-[    -probe communication transmitter: operational  ]
-[    -primary fuel geode: damaged (leak detected)   ]
-[    -secondary fuel geode: intact                  ]
-[    -tertiary fuel geode: missing                  ]</Text>
+[    -neural link status: online                    ]
+[      -connected to: hatchling                     ]
+[    -space-time stabilizer: active                 ]
+[    -probe communication transmitter: operational  ]</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>scanning for missing geode
-			geode detected encased in ice
-			</Text>
+		<Text>
+[astral codec status:                               ]
+[    -safeguards operational: 3                     ]
+[    -data integrity: 99.998%                       ]
+[    -translation status: complete                  ]
+[    -total time elapsed: 125,268 G-hr              ]</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text></Text>
+		<Text>
+[fuel geode stability:                              ]
+[    -primary fuel geode: damaged (leak detected)   ]
+[    -secondary fuel geode: intact                  ]
+[    -tertiary fuel geode: ejected in transit       ]
+[      -scanning for missing geode                  ]</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text></Text>
+		<Text>
+missing geode located - activating suppression
+|          *                                     |
+|            O  x     ----->      (*)            |
+|          *                      \/\            |
+uncontained fuel detected - rupture confirmation
+		</Text>
 	</TextBlock>
 </NomaiObject>
