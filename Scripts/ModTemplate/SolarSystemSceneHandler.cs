@@ -50,20 +50,20 @@ namespace AstralCodex
         Dictionary<string, Type> componentsToAdd = new Dictionary<string, Type>() {
             {"Tesseract", typeof(TesseractInteraction)},
             {"Sun Wires", typeof(SunWire)},
-            { "Population Wires", typeof(PopulationWire) },
-            { "Technology Wires", typeof(TechnologyWire) },
-            { "TimberHearthSpacecraftDetector", typeof(SpacecraftDetector) },
-            { "AshTwinSpacecraftDetector", typeof(SpacecraftDetector) },
-            { "ChimeWhiteHoleWater/ChimeWhiteHoleWaterCollider", typeof(GhostMatterSubmerge) },
-            { "PopulationScannerOrigin", typeof(PopulationTrails) },
-            { "SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
-            { "ProbeParticles", typeof(ProbeParticles) },
-            { "BrambleThornParticles", typeof(ThornParticles) },
-            { "TranslationProbe2", typeof(EmberProjectionActivate) },
-            { "Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
-            { "TranslationProbe1", typeof(BrambleProjectionActivate) },
-            { "CodecDispenser/Core/Collision", typeof(CodexDispenser) },
-            { "Trail Wires/Activation Trigger", typeof(TrailActivation) }
+            {"Population Wires", typeof(PopulationWire) },
+            {"Technology Wires", typeof(TechnologyWire) },
+            {"TimberHearthSpacecraftDetector", typeof(SpacecraftDetector) },
+            {"AshTwinSpacecraftDetector", typeof(SpacecraftDetector) },
+            {"ChimeWhiteHoleWater/ChimeWhiteHoleWaterCollider", typeof(GhostMatterSubmerge) },
+            {"PopulationScannerOrigin", typeof(PopulationTrails) },
+            {"SpacecraftScannerOrigin", typeof(SpacecraftTrails) },
+            {"ProbeParticles", typeof(ProbeParticles) },
+            {"BrambleThornParticles", typeof(ThornParticles) },
+            {"TranslationProbe2", typeof(EmberProjectionActivate) },
+            {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
+            {"TranslationProbe1", typeof(BrambleProjectionActivate) },
+            {"CodecDispenser/Core/Collision", typeof(CodexDispenser) },
+            {"Trail Wires/Activation Trigger", typeof(TrailActivation) }
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -92,9 +92,6 @@ namespace AstralCodex
             {"Station/Visual/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Collision/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },
-            {"Station/Transmitter Coin/Root/Codex Environments Projection/Scanner/Scan Source", new Vector3(0, 15, 0)},
-            {"Station/Campfire Coin/Root/Codex Species Projection/Scanner", new Vector3(0, 5, 0)},
-            {"Station/Other Coin/Root/Codex Galaxy Projection/ScanSource/Dot Emitter", new Vector3(0, 5, 0)},
             {"Station/Exterior Lidar Probes", new Vector3(0, 1.5f, 0) },
         };
         #endregion

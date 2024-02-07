@@ -24,6 +24,9 @@ namespace AstralCodex
             missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
             reveal = GameObject.Find("PopulationCompleteReveal");
             computer = SearchUtilities.Find("CodexSpeciesComputer").GetComponent<NomaiComputer>();
+            projection = SearchUtilities.Find("Station/Props/Projector Model (1)/Codex Species Projection");
+
+            Initialize();
         }
         #endregion
 
@@ -37,6 +40,7 @@ namespace AstralCodex
             }
             else
             {
+                TurnOff();
                 missingPopulationDisplay.material = AssetHandler.materials["black"];
             }
         }

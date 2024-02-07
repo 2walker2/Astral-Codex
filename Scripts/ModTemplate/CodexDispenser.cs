@@ -15,14 +15,15 @@ namespace AstralCodex
     {
         const string AnimatorState = "DispenseCodec";
 
+        bool active = false;
         bool animationStarted = false;
 
         //Timing information
-        [SerializeField] float totalDuration = 68; //Total duration of the animation
-        [SerializeField] float sinkDuration = 5; //How long it takes the probe to sink into the dispenser
-        [SerializeField] float probeMaxRotationSpeed = 500; //How fast the probe rotates once it's inside the dispenser
-        [SerializeField] AnimationCurve probeRotationSpeedCurve; //The curve used to update the probe's rotation speed
-        [SerializeField] float particleBurstTime = 29; //The time when the particle burst occurs
+        float totalDuration = 68; //Total duration of the animation
+        float sinkDuration = 5; //How long it takes the probe to sink into the dispenser
+        float probeMaxRotationSpeed = 500; //How fast the probe rotates once it's inside the dispenser
+        AnimationCurve probeRotationSpeedCurve; //The curve used to update the probe's rotation speed
+        float particleBurstTime = 29; //The time when the particle burst occurs
 
         SurveyorProbe probe;
         ProbeLauncher probeLauncher;
@@ -30,6 +31,10 @@ namespace AstralCodex
         ProbePromptReceiver probePrompt;
         Animator animator;
         GameObject addendumDialogueTrigger;
+
+        Wire sunWire;
+        Wire populationWire;
+        Wire technologyWire;
 
         void Start()
         {
@@ -40,20 +45,37 @@ namespace AstralCodex
             probe = Locator.GetProbe();
             probeLauncher = Locator.GetPlayerCamera().GetComponentInChildren<ProbeLauncher>();
             owRigidbody = GetComponent<OWRigidbody>();
-            probePrompt = GetComponent<ProbePromptReceiver>();
+            probePrompt = GetComponentInChildren<ProbePromptReceiver>();
             animator = transform.parent.parent.GetComponentInChildren<Animator>();
             addendumDialogueTrigger = transform.Find("CodecAddendumDialogue").gameObject;
 
-            //Disable the addendum dialogue trigger
+            sunWire = GameObject.Find("Sun Wires").GetComponent<Wire>();
+            populationWire = GameObject.Find("Population Wires").GetComponent<Wire>();
+            technologyWire = GameObject.Find("Technology Wires").GetComponent<Wire>();
+
+            //Disable initially
             addendumDialogueTrigger.SetActive(false);
+            probePrompt.enabled = false;
+        }
+
+        void Update()
+        {
+            if (!animationStarted)
+            {
+                active = sunWire.on && populationWire.on && technologyWire.on;
+                probePrompt.gameObject.SetActive(active);
+            }
         }
 
         void ProbeAnchored()
         {
-            //Check if the probe is now a child of this object
-            for (int i=0; i<transform.childCount; i++)
+            if (!active)
+                return;
+
+            //Check if the probe is now a child of this object's child
+            for (int i=0; i<transform.GetChild(0).childCount; i++)
             {
-                if (transform.GetChild(i) == probe.transform)
+                if (transform.GetChild(0).GetChild(i) == probe.transform)
                 {
                     StartCoroutine(nameof(CodecAnimation));
                 }
@@ -70,7 +92,7 @@ namespace AstralCodex
             probeLauncher._isRetrieving = true;
 
             //Disable probe launch prompt
-            Destroy(probePrompt);
+            probePrompt.gameObject.SetActive(false);
 
             //Start the animation
             animator.Play(AnimatorState);
@@ -80,8 +102,6 @@ namespace AstralCodex
             Vector3 probeStartPosition = probe.GetAnchor()._localImpactPos;
             while (Time.time - sinkStartTime < sinkDuration)
             {
-                Main.modHelper.Console.WriteLine("PROBE SHOULD BE SINKING NOW");
-
                 float t = (Time.time - sinkStartTime) / sinkDuration;
                 probe.GetAnchor()._localImpactPos = Vector3.Lerp(probeStartPosition, Vector3.zero, t);
 
@@ -98,12 +118,10 @@ namespace AstralCodex
             addendumDialogueInteractReceiver._noCommandIconPrompt._text = "Write Addendum";
 
             //Wait for the player to interact with the dialogue
-            while (addendumDialogueInteractReceiver._hasInteracted)
-                yield return new WaitForEndOfFrame();
+            yield return new WaitUntil(() => addendumDialogueInteractReceiver._hasInteracted);
 
             //Wait for the player to stop interacting with the dialogue
-            while (!addendumDialogueInteractReceiver._hasInteracted)
-                yield return new WaitForEndOfFrame();
+            yield return new WaitUntil(() => !addendumDialogueInteractReceiver._hasInteracted);
 
             //Give player ship log
             Locator.GetShipLogManager().RevealFact("codex_astral_codex_fact", true, true);

@@ -11,12 +11,12 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>As we hung in orbit around the vortex, I studied it. Its properties were esoteric, and its influence extensive. Not even the basic structure of the galaxy remained constant. Entire systems shifted at its whim!</Text>
+		<Text>As we hung in orbit around the vortex, I studied it. Its properties were esoteric, and its influence extensive. Not even the basic structure of the galaxy remained consistent. Entire systems shifted at its whim!</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could of the peoples and places we knew. Our final desperate cry into the abyss.
+		<Text>When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could and sent our final desperate cry into the abyss.
 - Scientist
 		</Text>
 	</TextBlock>
