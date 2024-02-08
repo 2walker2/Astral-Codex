@@ -173,6 +173,13 @@
 				"type": "computer",
 				"xmlFile": "planets/text/chime_computer_status.xml",
 				"rename": "ChimeStatusComputer"
+			},
+			{
+				"parentPath": "Sector/Station/Position Markers/CodecComputerCorePosition",
+				"isRelativeToParent": true,
+				"type": "computer",
+				"xmlFile": "planets/text/codex_computer_core.xml",
+				"rename": "CodexCoreComputer"
 			}
 		],
 		"remotes": [
@@ -232,7 +239,7 @@
 				"isRelativeToParent": true,
 				"radius": 1.5,
 				"range": 5,
-				"xmlFile": "planets/text/codex_addendum.xml"
+				"xmlFile": "planets/text/codex_dialogue_addendum.xml"
 			}
 		]
 	},

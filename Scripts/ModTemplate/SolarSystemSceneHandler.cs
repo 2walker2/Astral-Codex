@@ -92,6 +92,10 @@ namespace AstralCodex
             {"Station/Collision/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },
             {"Station/Exterior Lidar Probes", new Vector3(0, 1.5f, 0) },
+            {"Station/Exterior Lidar Probes/Probe Root/Probe/Model", new Vector3(0, 0, -10) },
+            {"Station/Exterior Lidar Probes/Probe Root (1)/Probe/Model", new Vector3(0, 0, -10) },
+            {"Station/Exterior Lidar Probes/Probe Root (2)/Probe/Model", new Vector3(0, 0, -10) },
+            {"Station/Exterior Lidar Probes/Probe Root (3)/Probe/Model", new Vector3(0, 0, -10) },
         };
         #endregion
 

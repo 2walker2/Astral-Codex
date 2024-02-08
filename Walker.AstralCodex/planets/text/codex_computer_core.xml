@@ -1,0 +1,23 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>We used the Astral Codec to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the tread of memory alive.
+- Explorer</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>
+codec safeguards followed
+|                      \ | /                     |
+|                    --- o ---                   |
+|                      / | \                     |
+insert device for download
+</Text>
+	</TextBlock>
+</NomaiObject>
