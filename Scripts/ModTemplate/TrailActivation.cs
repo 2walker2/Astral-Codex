@@ -18,19 +18,20 @@ namespace AstralCodex
         float activationDelay = 5f;
         float timeStayed = 0f;
         bool trailsActivated = false;
+        GameObject trailsReveal;
 
         void Start()
         {
             on = false;
             Initialize();
 
+            trailsReveal = SearchUtilities.Find("TrailsReveal");
+
             //Restore state from last loop
             if (PlayerData.GetPersistentCondition(TrailsActivatedCondition))
-            {
                 trailsActivated = true;
-                ActivateTrails(trailsActivated);
-            }
-                
+            ActivateTrails(trailsActivated);
+
         }
 
         void OnTriggerStay(Collider other)
@@ -56,13 +57,13 @@ namespace AstralCodex
 
             Trails.visible = value;
 
+            trailsReveal.SetActive(value);
+
             PlayerData.SetPersistentCondition(TrailsActivatedCondition, value);
         }
 
         void OnTriggerEnter(Collider other)
         {
-            Main.modHelper.Console.WriteLine(other.gameObject.name + " ENTERED TRAIL ACTIVATION ZONE");
-
             if (other.gameObject != Locator.GetPlayerBody().gameObject)
                 return;
             

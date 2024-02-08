@@ -18,7 +18,7 @@
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now! Symbols are chalked on the floor under the device that read: <![CDATA[<Color=#ff0040>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
+            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now!</Text> 
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_material</ID>
@@ -49,6 +49,11 @@
             <ID>codex_lingering_chime_signal</ID>
             <Text>There is an antenna broadcasting a chiming signal within the structure.</Text> 
         </ExploreFact>
+        <ExploreFact>
+            <ID>codex_lingering_chime_trails_activator</ID>
+            <Text>Wires run from a small platform to two devices within the structure. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
+        </ExploreFact>
+
         
         <Entry>
             <ID>codex_lingering_chime_population</ID>
@@ -63,7 +68,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_trails</ID>
-                <Text>After passing through the strange device a second time, I can see green trails emanating from the nearby device connected to points throughout the solar system.</Text>
+                <Text>After standing on a marked platform for a few seconds, I can see green trails emanating from the nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
@@ -83,7 +88,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_trails</ID>
-                <Text>After passing through the strange device a second time, I can see purple trails emanating from the nearby device connected to points throughout the solar system.</Text>
+                <Text>After standing on a marked platform for a few seconds, I can see purple trails emanating from the nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>
@@ -121,15 +126,15 @@
     </Entry>
     <Entry>
         <ID>codex_interloper</ID>
-        <Name>Fuel Seed</Name>
+        <Name>Interloper Fuel Geode</Name>
 
         <Curiosity>codex_astral_codex</Curiosity>
     
         <RumorFact>
             <ID>codex_interloper_rumor</ID> 
             <SourceID>codex_lingering_chime</SourceID> 
-            <RumorName>Missing Piece</RumorName> 
-            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel seed has ruptured and blanketed the system.</Text>
+            <RumorName>Missing Fuel Geode</RumorName> 
+            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel geode has ruptured and blanketed the system.</Text>
         </RumorFact>
 
         <ExploreFact>
@@ -160,17 +165,17 @@
 
         <ExploreFact>
             <ID>codex_astral_codex_galaxy</ID>
-            <Text>A means of transmitting information through a vortex. It contains a final message.</Text>
+            <Text>A means of transmitting information through a vortex. It contains someone's final message.</Text>
         </ExploreFact>
 
         <ExploreFact>
             <ID>codex_astral_codex_species</ID>
-            <Text>Contains the stories of a long-gone people. It can be used to preserve our own.</Text>
+            <Text>Contains the stories of a long-gone people. It could be used to preserve our own.</Text>
         </ExploreFact>
 
         <ExploreFact>
             <ID>codex_astral_codex_environments</ID>
-            <Text>Used to transmit a message from a dead universe with hopes to be remembered.</Text>
+            <Text>Used to transmit a message from a dead universe with hope to be remembered.</Text>
         </ExploreFact>
 
         <ExploreFact>

@@ -19,11 +19,11 @@ namespace AstralCodex
         //GameObject fourDParticles; //The particles to enable when the player first enters the tesseract
         //GameObject fourDParticles2; //The particles to enable after the player has waited in the tesseract
         int fourDLayer = 0; //The player's current tesseract layer (0=normal, 1=entered, 2=waited)
-        GameObject trailsReveal; //The GameObject holding the reveal volume for the trails
         GameObject skySphere; //The GameObject holding the ghost matter skybox overlay
         int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
         AudioClip defaultTravelMusic; //The default travel music so it can be restored if the player resets the tesseract
         List<ParticleSystem> exteriorProbeLidarProjections = new List<ParticleSystem>(); //The lidar scan particles of the Chime's exterior probes
+        NomaiComputer statusComputer; //The computer that displays the status of the Chime
         #endregion
 
         #region Initialization
@@ -33,10 +33,9 @@ namespace AstralCodex
             activationEffect = NewHorizons.Utility.Files.AssetBundleUtilities.LoadPrefab(AssetHandler.assetBundlePath, "Assets/Bundle/Tesseract Activation Effect.prefab", Main.modBehaviour);
             //fourDParticles = transform.Find("4DParticles").gameObject;
             //fourDParticles2 = transform.Find("4DParticles2").gameObject;
-            trailsReveal = SearchUtilities.Find("TrailsReveal");
-            if (trailsReveal != null)
-                trailsReveal.SetActive(false);
             skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+            statusComputer = SearchUtilities.Find("ChimeStatusComputer").GetComponent<NomaiComputer>();
+            statusComputer.ClearAllEntries();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -108,7 +107,10 @@ namespace AstralCodex
 
         private void EnteredTesseract(bool value, bool displayEffect = true)
         {
-            //TODO Activate status computer HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            if (value)
+                statusComputer.DisplayAllEntries();
+            else
+                statusComputer.ClearAllEntries();
 
             //Disable probe launcher overlay
             Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();

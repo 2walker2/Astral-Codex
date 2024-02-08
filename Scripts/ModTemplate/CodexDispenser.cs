@@ -123,9 +123,6 @@ namespace AstralCodex
             //Wait for the player to stop interacting with the dialogue
             yield return new WaitUntil(() => !addendumDialogueInteractReceiver._hasInteracted);
 
-            //Give player ship log
-            Locator.GetShipLogManager().RevealFact("codex_astral_codex_fact", true, true);
-
             //Release probe
             probe.Unanchor();
             probeLauncher._isRetrieving = false;
