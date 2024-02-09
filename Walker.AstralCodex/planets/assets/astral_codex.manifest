@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2577155554
+CRC: 237322718
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bf2e5b146baefe93f9944ee7ec1e0381
+    Hash: 28816970e7625689ad42580ab8a4dc98
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -209,6 +209,7 @@ Assets:
 - Assets/Bundle/Textures/WaitHere.png
 - Assets/Bundle/Materials/ReunionMural.mat
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
+- Assets/Bundle/Materials/ChimeFuelTubeGlass.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Light.mat
 - Assets/Bundle/Models/torus.obj
 - Assets/Bundle/Textures/Foliage/Foliage5G.png
@@ -246,8 +247,10 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState2.prefab
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/Models/chime_exhaust_particle.obj
+- Assets/Bundle/Materials/InterloperFuelTubeGlass.mat
 - Assets/Bundle/Materials/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
+- Assets/Bundle/Interloper Light.prefab
 - Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
 - Assets/Bundle/Textures/Chime Redesign/GhostEmmissiveOverlay.png
@@ -256,7 +259,7 @@ Assets:
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Animations/CodecDispenser.controller
-- Assets/Bundle/Materials/FuelTube.mat
+- Assets/Bundle/Materials/ChimeFuelTube.mat
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat

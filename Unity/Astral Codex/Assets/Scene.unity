@@ -30320,6 +30320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Station Redesign v3
       objectReference: {fileID: 0}
+    - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ab47dc4849974bbdce006af51450d, type: 3}
 --- !u!1001 &92571328003566280
@@ -40517,6 +40522,75 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &8235901401163348019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8235901401623113432, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_Name
+      value: Interloper Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -78.50942
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.52309
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.930447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235901401623113438, guid: 2bf922f7a51db2548bffa5425a61459f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bf922f7a51db2548bffa5425a61459f, type: 3}
 --- !u!1 &8574119911254744555
 GameObject:
   m_ObjectHideFlags: 0

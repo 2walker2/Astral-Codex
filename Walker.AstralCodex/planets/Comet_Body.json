@@ -72,7 +72,29 @@
 			},
 			{
 				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/Interloper Fuel Tube.prefab"
+				"path": "Assets/Bundle/Interloper Fuel Tube.prefab",
+				"position": {"x": -6.8259, "y": 8.8473, "z": -34.5352},
+				"rotation": {"x": 30.1427, "y": 167.308, "z": 358.5088}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Fuel Tube.prefab",
+				"position": {"x": -3.6402, "y": 4.2957, "z": -32.2224},
+				"rotation": {"x": 28.631, "y": 61.9767, "z": 241.4538}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Light.prefab",
+				"position": {
+					"x": -2.54491878,
+					"y": 9.113178,
+					"z": -35.87623
+				},
+				"rotation": {
+					"x": 15.0000143,
+					"y": 252.0,
+					"z": 151.0
+				}
 			}
 		],
 		"entryLocation": [

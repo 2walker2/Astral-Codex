@@ -24,16 +24,19 @@ Material:
         m_Scale: {x: 2, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BaseWireColorFactor: 0.25
+    - _BaseWireColorFactor: 0
+    - _BaseWireOpacity: 0.1
+    - _Cutoff: 0.5
+    - _FresnelExponent: 0.5
     - _Gloss: 0
     - _Metallic: 1
     - _NoiseContrast: 2
-    - _NoiseSpeed: -0.025
+    - _NoiseSpeed: -0.05
     - _Speed: 0.1
     - _StripeCount: 1
     - _StripeThickness: 0.4
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.49852014, b: 0.51886785, a: 1}
+    - _BaseColor: {r: 0, g: 0.9607844, b: 1, a: 1}
     - _HighlightColor: {r: 0, g: 1, b: 0.736887, a: 1}
-    - _PrimaryColor: {r: 0, g: 0.7264151, b: 0.45578983, a: 1}
-    - _SecondaryColor: {r: 0, g: 0.99215686, b: 0.77092993, a: 1}
+    - _PrimaryColor: {r: 0, g: 4, b: 2.509804, a: 0.78431374}
+    - _SecondaryColor: {r: 0, g: 3.9686275, b: 3.9215686, a: 0.39215687}
