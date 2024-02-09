@@ -8,20 +8,6 @@
 	"Props": {
 		"details": [
 			{
-				"assetBundle": "planets/assets/astral_codex",
-				"path": "Assets/Bundle/InterloperDetail.prefab",
-				"position": {
-					"x": -4.357168,
-					"y": 7.9921875,
-					"z": -35.9044876
-				},
-				"rotation": {
-					"x": 302.532654,
-					"y": 304.163544,
-					"z": 8.890494E-05
-				}
-			},
-			{
 				"rename": "TranslationProbe3",
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/ProbeBroken.prefab",
@@ -36,6 +22,57 @@
 					"z": 289.3435
 				},
 				"scale": 0.5
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Thruster.prefab",
+				"position": {"x": 65.3777, "y": 21.0914, "z": 46.3166},
+				"rotation": {"x": 337.3251, "y": 277.8721, "z": 288.7272},
+				"scale": 0.65
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Lattice.prefab",
+				"position": {"x": -38.8128, "y": -1.2236, "z": 2.5765},
+				"rotation": {"x": 346.6353, "y": 0, "z": 0},
+				"scale": 0.65
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Lattice.prefab",
+				"rotation": {
+				"x": 318.12558,
+				"y": 160.2486,
+				"z": 200.379211
+				},
+				"position": {
+				"x": -69.88568,
+				"y": -14.7629013,
+				"z": 33.498497
+				},
+				"scale": 0.65
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Lattice.prefab",
+				"rotation": {
+				"x": 89.41919,
+				"y": 19.7670269,
+				"z": 32.78414
+				},
+				"position": {"x": -27.9151, "y": -59.258, "z": 34.0356},
+				"scale": 0.65
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Lattice.prefab",
+				"position": {"x": -16.446, "y": 26.539, "z": 55.7441},
+				"rotation": {"x": 270.3764, "y": 262.0801, "z": 180.0049},
+				"scale": 0.65
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"path": "Assets/Bundle/Interloper Fuel Tube.prefab"
 			}
 		],
 		"entryLocation": [

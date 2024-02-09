@@ -13,7 +13,7 @@ fuel remains fatal - liquid frozen into ice
 		<ParentID>1</ParentID>
 		<Text>[warning: breach scenario in progress               ]
 [retrieving prerecorded message...                  ]
-[    -time recorded: t-minus 125,267 G-hr           ]
+[    -time recorded: t-minus 125,268 G-hr           ]
 [    -author: scientist                             ]
 [evacuate immediately                               ]
 		</Text>
@@ -27,7 +27,7 @@ fuel remains fatal - liquid frozen into ice
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: energy-dense enough to last the eons necessary when properly compressed, and light enough transport."
+		<Text>"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: easily compressed and energy-dense enough to last the eons necessary."
 		</Text>
 	</TextBlock>
 	<TextBlock>

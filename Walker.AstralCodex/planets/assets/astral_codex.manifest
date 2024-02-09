@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3666788125
+CRC: 2577155554
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 705262e7b249159eccfb0b496549551b
+    Hash: bf2e5b146baefe93f9944ee7ec1e0381
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a5dcd1bd93d440168c3b71419a371807
+    Hash: b6997563fd397695a43919f78a5f1115
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -64,7 +64,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 7f5f781ad5c7cb3479ad11f01f455d95, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 44aa9aac3f798ff478ea63d7fdd28e3e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
 - Class: 114
@@ -126,7 +130,6 @@ Assets:
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Materials/CausticsCookie.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
-- Assets/Bundle/Shaders/OneSidedGlass.shader
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Props.mat
 - Assets/Bundle/Models/probe.obj
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorExplorer.prefab
@@ -163,6 +166,7 @@ Assets:
 - Assets/Bundle/Models/solar_flare.obj
 - Assets/Bundle/Materials/Wires/SunSolarPanelWire.mat
 - Assets/Bundle/Wind Chime.prefab
+- Assets/Bundle/Interloper Lattice.prefab
 - Assets/Bundle/EyeProbeStates/ScannerState1.prefab
 - Assets/Bundle/Materials/Skybox/SkyboxFront.mat
 - Assets/Bundle/Materials/Chime Redesign/Geode Inside.mat
@@ -182,6 +186,8 @@ Assets:
 - Assets/Bundle/White Hole.prefab
 - Assets/Bundle/Shaders/CodexDispenser.shader
 - Assets/Bundle/ProbeBroken.prefab
+- Assets/Bundle/Interloper Thruster.prefab
+- Assets/Bundle/Interloper Fuel Tube.prefab
 - Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
 - Assets/Bundle/Models/ember_twin.obj
@@ -205,12 +211,12 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/Light.mat
 - Assets/Bundle/Models/torus.obj
-- Assets/Bundle/Shaders/Sand.shader
 - Assets/Bundle/Textures/Foliage/Foliage5G.png
 - Assets/Bundle/Materials/Wires/PopulationCodecWire.mat
 - Assets/Bundle/Transmitter Coin.prefab
 - Assets/Bundle/EmberProbe.prefab
 - Assets/Bundle/Models/stationv_map.obj
+- Assets/Bundle/Shaders/FuelTube.shader
 - Assets/Bundle/Test Codex Dispenser.prefab
 - Assets/Bundle/Textures/Foliage/Foliage3G.png
 - Assets/Bundle/Materials/Wires/SpacecraftDisplayWireShell.mat
@@ -241,7 +247,6 @@ Assets:
 - Assets/Bundle/Textures/TopPattern.png
 - Assets/Bundle/Models/chime_exhaust_particle.obj
 - Assets/Bundle/Materials/Glass.mat
-- Assets/Bundle/Shaders/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
@@ -251,6 +256,7 @@ Assets:
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Animations/CodecDispenser.controller
+- Assets/Bundle/Materials/FuelTube.mat
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Geode.mat
@@ -267,7 +273,6 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Gold.mat
 - Assets/Bundle/Animations/SwitchEnvironmentsProjection.anim
 - Assets/Bundle/Models/Chime Redesign/projector.obj
-- Assets/Bundle/Shaders/OneSidedGlass.mat
 - Assets/Bundle/Materials/Black.mat
 - Assets/Bundle/Textures/Foliage/Foliage2G.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
@@ -305,7 +310,6 @@ Assets:
 - Assets/Bundle/Models/inverted_sphere.obj
 - Assets/Bundle/Materials/Wires/PopulationCodecWireShell.mat
 - Assets/Bundle/Models/attlerock.obj
-- Assets/Bundle/Shaders/Glass.shader
 - Assets/Bundle/Materials/ThornParticles.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Emblem.mat
 - Assets/Bundle/Shaders/Whirlpool Water.shader
@@ -335,7 +339,7 @@ Assets:
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Textures/Foliage/Foliage5.png
 - Assets/Bundle/Audio/Ghost_Space.mp3
-- Assets/Bundle/Shaders/TesseractActivation.mat
+- Assets/Bundle/Materials/TesseractActivation.mat
 - Assets/Bundle/Models/species_hologram.obj
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
@@ -355,6 +359,7 @@ Assets:
 - Assets/Bundle/Models/environments_hologram.obj
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
+- Assets/Bundle/Materials/InterloperFuelTube.mat
 - Assets/Bundle/Textures/Distortion.png
 - Assets/Bundle/Models/new_precursors.obj
 - Assets/Bundle/Textures/T_Noise_01.png
@@ -386,7 +391,6 @@ Assets:
 - Assets/Bundle/Animations/DispenseCodec.anim
 - Assets/Bundle/Models/hemisphere.obj
 - Assets/Bundle/Materials/Wires/PopulationTrailWire.mat
-- Assets/Bundle/Shaders/Custom_Sand.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 3.mat
 - Assets/Bundle/Materials/Wires/SpacecraftTrailWire.mat
 Dependencies: []

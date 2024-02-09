@@ -45,6 +45,14 @@ namespace AstralCodex
             "ChimeStatusComputer"
         };
 
+        string exhaustName = "Exhaust";
+        //Ghost matter exhaust gameObjects that should have the ghost matter material applied to all children named "Exhaust"
+        List<string> ghostMatterExhaustObjects = new List<string>() {
+            "Chime Exhaust Root",
+            "Exterior Lidar Probes",
+            "Interloper Thruster"
+        };
+
         //Components to add to gameObjects in the scene
         Dictionary<string, Type> componentsToAdd = new Dictionary<string, Type>() {
             {"Tesseract", typeof(TesseractInteraction)},
@@ -118,6 +126,7 @@ namespace AstralCodex
 
                 //General configuration
                 AssignGhostMatterMaterial();
+                AssignGhostMatterExhaustMaterial();
                 AssignScripts();
                 AssignRotatingObjects();
 
@@ -148,6 +157,26 @@ namespace AstralCodex
                     crystal.AddComponent<GhostMatterMaterial>();
                     //Main.modHelper.Console.WriteLine($"FOUND " + ghostMatterCrystal, MessageType.Success);
                 }
+            }
+        }
+
+        void AssignGhostMatterExhaustMaterial()
+        {
+            //Assign ghost matter material to objects in the scene
+            foreach (string ghostMatterExhaust in ghostMatterExhaustObjects)
+            {
+                GameObject ghostMatterExhaustGO = SearchUtilities.Find(ghostMatterExhaust);
+                if (ghostMatterExhaustGO != null)
+                {
+                    MeshRenderer[] exhaustRenderers = ghostMatterExhaustGO.GetComponentsInChildren<MeshRenderer>();
+                    foreach (MeshRenderer exhaustRenderer in exhaustRenderers)
+                    {
+                        if (exhaustRenderer.gameObject.name == exhaustName)
+                            exhaustRenderer.material = AssetHandler.materials["ghostMatter"];
+                    }
+                }
+                else
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND GHOST MATTER EXHAUST ROOT " + ghostMatterExhaust);
             }
         }
 
@@ -295,31 +324,6 @@ namespace AstralCodex
 
         void ApplyChimeMaterials()
         {
-            //Apply ghost matter material to Chime exhaust
-            GameObject chimeExhaust = SearchUtilities.Find("Chime Exhaust Root");
-            if (chimeExhaust != null)
-            {
-                foreach (MeshRenderer renderer in chimeExhaust.GetComponentsInChildren<MeshRenderer>())
-                {
-                    renderer.material = AssetHandler.materials["ghostMatter"];
-                }
-            }
-            else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME EXHAUST ROOT");
-
-            //Apply ghost matter material to lidar probe Chime exhaust
-            GameObject lidarProbesRoot = SearchUtilities.Find("Exterior Lidar Probes");
-            if (lidarProbesRoot != null)
-            {
-                foreach (MeshRenderer renderer in lidarProbesRoot.GetComponentsInChildren<MeshRenderer>())
-                {
-                    if (renderer.gameObject.name == "Exhaust")
-                        renderer.material = AssetHandler.materials["ghostMatter"];
-                }
-            }
-            else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND EXTERIOR LIDAR PROBES ROOT");
-
             //Apply ghost matter crystal material to shell
             GameObject chimeShell = SearchUtilities.Find("Visual/Shell/Crystal");
             if (chimeShell != null)
