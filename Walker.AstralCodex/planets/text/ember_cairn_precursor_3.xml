@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>"Research Log - Cycle 8183: We don't have much time - a mere <![CDATA[<Color=#ff0040>]]>(<![CDATA[</Color>]]>ew hundred cycles at most. Archivist is collating data for Explorer's "<![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>" idea. It's good that he has somet<![CDATA[<Color=#ff0040>]]>)<![CDATA[</Color>]]>ing to do. Our discovery impacted him the hardest of us."
+		<Text>"Research Log - Cycle 8183: We don't have much time - a mere <![CDATA[<Color=#ff0040>]]>(<![CDATA[</Color>]]>ew hundred cycles at most. Archivist is busy collating data for Explorer's "<![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>" idea. It's good that he has somet<![CDATA[<Color=#ff0040>]]>)<![CDATA[</Color>]]>ing to do. Our discovery impacted him the hardest of us."
 		</Text>
 	</TextBlock>
 	<ShipLogConditions>
