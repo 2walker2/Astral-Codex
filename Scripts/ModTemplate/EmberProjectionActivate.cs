@@ -24,7 +24,7 @@ namespace AstralCodex
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EMBER PROJECTION ACTIVATION ARC", MessageType.Error);
             //Find projection root
-            projection = SearchUtilities.Find("TranslationProbe2/Projections");
+            projection = SearchUtilities.Find("TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections");
             if (projection != null)
                 projection.SetActive(false);
             else

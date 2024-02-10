@@ -56,8 +56,8 @@ MonoBehaviour:
   _layer: 0
   _layerMask: 0
   _pointChecksOnly: 0
-  _center: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _center: {x: 0, y: 1, z: 0}
+  _size: {x: 2, y: 2, z: 2}
 --- !u!114 &3268239982412186076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5422303415703029433}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.104, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49999994, y: 0.49999988, z: 0.49999994}
   m_Children: []
   m_Father: {fileID: 679790397197978173}

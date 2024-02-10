@@ -9,7 +9,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<Text>SCIENTIST: Our universe may now be cold but the experiences it contained will breath life into the next. With luck the Codec will soon hurtle into a newborn universe, preserving the past and recording the future.</Text>
+		<Text>SCIENTIST: Our universe may now be cold but the experiences it contained will breath life into the next. With luck the Astral Codec will soon hurtle into a newborn universe, preserving the past and recording the future.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
@@ -17,7 +17,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
-		<Text>ARCHIVIST: I wish for them to preserve our story. I fear that they will not - that we are but a dwindling specter of a forgotten people.</Text>
+		<Text>ARCHIVIST: I desire for them to preserve our story. I fear that they will not - that we are but a dwindling specter of a forgotten people.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
@@ -29,7 +29,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>8</ID>
-		<Text>EXPLORER: One day, someone else will stand here in this place. They too will face the end of all they know. I hope they find this echo. I hope they take comfort in knowing that we came before, that they are not alone.</Text>
+		<Text>EXPLORER: One day, someone else will stand here in this place. They'll be facing the end of all they know. I hope they find this echo. I hope they feel comforted knowing that we came before, that they are not alone.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>9</ID>

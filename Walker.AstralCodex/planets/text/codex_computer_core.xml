@@ -6,18 +6,18 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the tread of memory alive.
+		<Text>Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive.
 - Explorer</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
 		<Text>
-codec safeguards followed
+tests passed - disabled codec safeguards
 |                      \ | /                     |
 |                    --- o ---                   |
 |                      / | \                     |
-insert device for download
+core activated - insert device for download
 </Text>
 	</TextBlock>
 </NomaiObject>

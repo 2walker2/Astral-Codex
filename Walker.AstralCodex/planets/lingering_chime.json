@@ -198,8 +198,8 @@
 			{
 				"type": "blackHole",
 				"hasWarpEffects": false,
-				"horizonRadius": 2.5,
-				"distortRadius": 5,
+				"horizonRadius": 1,
+				"distortRadius": 2,
 				"uniqueID": "codex_chime_black",
 				"pairedSingularity": "codex_timber_white",
 				"rename": "codex_chime_black",
@@ -318,7 +318,11 @@
 					"codex_lingering_chime_antenna",
 					"codex_lingering_chime_population_fact",
 					"codex_lingering_chime_spacecraft_fact",
-					"codex_lingering_chime_no_sun_fact"
+					"codex_lingering_chime_no_sun_fact",
+					"codex_lingering_chime_trails_activator",
+					"codex_lingering_chime_lower",
+					"codex_lingering_chime_lower_rumor"
+
 				],
 				"radius": 52
 			},
@@ -332,18 +336,6 @@
 				],
 				"radius": 52,
 				"rename": "TrailsReveal"
-			},
-			{
-				//When entering lower deck
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_lingering_chime_lower"
-				],
-				"position": {
-					"y": -26
-				},
-				"radius": 25
 			},
 			/*{
 				//When population solved

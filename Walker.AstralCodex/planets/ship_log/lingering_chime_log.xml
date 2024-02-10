@@ -119,6 +119,12 @@
         <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
 
+        <RumorFact>
+            <ID>codex_lingering_chime_lower_rumor</ID>
+            <SourceID>codex_lingering_chime_upper</SourceID> 
+            <RumorName>Lower Deck</RumorName> 
+            <Text>There is a second side of the structure below the water.</Text> 
+        </RumorFact>
         <ExploreFact>
             <ID>codex_lingering_chime_lower</ID>
             <Text>There is strange massive device at the center of the lower deck. It appears to be unpowered. Wires run to it from three other devices nearby.</Text> 
@@ -134,7 +140,7 @@
             <ID>codex_interloper_rumor</ID> 
             <SourceID>codex_lingering_chime</SourceID> 
             <RumorName>Missing Fuel Geode</RumorName> 
-            <Text>A piece of the structure has broken off and is missing. A computer log states that a fuel geode has ruptured and blanketed the system.</Text>
+            <Text>A piece of the structure has broken off and is missing. A computer log describes a fuel geode breaking off and rupturing.</Text>
         </RumorFact>
 
         <ExploreFact>
@@ -180,7 +186,7 @@
 
         <ExploreFact>
             <ID>codex_astral_codex_fact</ID>
-            <Text>I added what I knew to the message. The Astral Codec has been downloaded onto my little scout.</Text>
+            <Text>I added what I knew to the message. The Astral Codec has been downloaded onto my little scout. I was asked to pass it onwards through the vortex.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

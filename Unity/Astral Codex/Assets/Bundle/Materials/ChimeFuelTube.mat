@@ -28,7 +28,7 @@ Material:
     - _BaseWireOpacity: 1
     - _Cutoff: 0.5
     - _DEBUG_Offset: 4.86
-    - _FresnelExponent: 2
+    - _FresnelExponent: 0.5
     - _Gloss: 0
     - _Metallic: 1
     - _NoiseContrast: 2

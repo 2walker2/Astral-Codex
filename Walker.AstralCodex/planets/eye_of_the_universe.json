@@ -148,7 +148,7 @@
 				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -165,7 +165,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -181,7 +181,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -197,7 +197,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -213,7 +213,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -229,7 +229,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -245,7 +245,7 @@
 				"quantumGroupID": "codex_eye_probe",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"rotation": {
@@ -260,7 +260,7 @@
 				"path": "Assets/Bundle/Empty.prefab",
 				"position": {
 					"x": -45.1209,
-					"y": 0.56,
+					"y": 1.2182,
 					"z": 7565.978
 				},
 				"keepLoaded": true

@@ -75,7 +75,7 @@ namespace AstralCodex
             if (signal != null && signal.activeSelf && quantumStates._stateIndex == quantumStates._states.Length - 1)
                 signal.SetActive(false);
             //Lights
-            if ((transform.position - player.position).magnitude < lightDistance)
+            /*if ((transform.position - player.position).magnitude < lightDistance)
             {
                 foreach (KeyValuePair<Light, float> p in fadeLights)
                 {
@@ -90,7 +90,7 @@ namespace AstralCodex
                     if (p.Key != null)
                         p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
                 }
-            }
+            }*/
             //Trigger blink once recorder is read
             /*if (recorder._dictNomaiTextData[4].IsTranslated && !translator._isEquipped && !blinkCalled)
             {

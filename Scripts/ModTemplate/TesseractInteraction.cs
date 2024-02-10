@@ -21,7 +21,6 @@ namespace AstralCodex
         int fourDLayer = 0; //The player's current tesseract layer (0=normal, 1=entered, 2=waited)
         GameObject skySphere; //The GameObject holding the ghost matter skybox overlay
         int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
-        AudioClip defaultTravelMusic; //The default travel music so it can be restored if the player resets the tesseract
         List<ParticleSystem> exteriorProbeLidarProjections = new List<ParticleSystem>(); //The lidar scan particles of the Chime's exterior probes
         NomaiComputer statusComputer; //The computer that displays the status of the Chime
         #endregion
@@ -49,17 +48,6 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXTERIOR LIDAR PROBES");
-
-            //Save default travel music and update travel audio source settings
-            GlobalMusicController globalMusicController = Locator.GetGlobalMusicController();
-            if (globalMusicController != null)
-            {
-                defaultTravelMusic = globalMusicController._travelSource.clip;
-                globalMusicController._travelSource._audioLibraryClip = 0;
-                globalMusicController._travelSource._clipArrayIndex = 0;
-                globalMusicController._travelSource._clipArrayLength = 0;
-                globalMusicController._travelSource._clipSelectionOnPlay = OWAudioSource.ClipSelectionOnPlay.MANUAL;
-            }
 
             //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition(TesseractEnteredCondition))
@@ -142,10 +130,7 @@ namespace AstralCodex
             }
 
             //Update travel music
-            if (value)
-                Locator.GetGlobalMusicController()._travelSource.clip = AssetHandler.audioClips["fourDTravelMusic"];
-            else
-                Locator.GetGlobalMusicController()._travelSource.clip = defaultTravelMusic;
+            MusicHandler.SetTravelMusic(value);
 
             //Toggle exterior lidar probes
             foreach (ParticleSystem p in exteriorProbeLidarProjections)

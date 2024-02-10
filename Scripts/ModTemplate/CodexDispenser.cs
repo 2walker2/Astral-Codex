@@ -14,6 +14,7 @@ namespace AstralCodex
     internal class CodexDispenser : MonoBehaviour
     {
         const string AnimatorState = "DispenseCodec";
+        const string CoreActivatedCondition = "CODEX_ACTIVATED_CORE";
 
         bool active = false;
         bool animationStarted = false;
@@ -31,6 +32,7 @@ namespace AstralCodex
         ProbePromptReceiver probePrompt;
         Animator animator;
         GameObject addendumDialogueTrigger;
+        NomaiComputer coreComputer;
 
         Wire sunWire;
         Wire populationWire;
@@ -48,22 +50,32 @@ namespace AstralCodex
             probePrompt = GetComponentInChildren<ProbePromptReceiver>();
             animator = transform.parent.parent.GetComponentInChildren<Animator>();
             addendumDialogueTrigger = transform.Find("CodecAddendumDialogue").gameObject;
+            coreComputer = SearchUtilities.Find("CodexCoreComputer").GetComponent<NomaiComputer>();
 
             sunWire = GameObject.Find("Sun Wires").GetComponent<Wire>();
             populationWire = GameObject.Find("Population Wires").GetComponent<Wire>();
             technologyWire = GameObject.Find("Technology Wires").GetComponent<Wire>();
 
-            //Disable initially
-            addendumDialogueTrigger.SetActive(false);
-            probePrompt.enabled = false;
+            //Restore previous state
+            active = PlayerData.GetPersistentCondition(CoreActivatedCondition);
+
+            addendumDialogueTrigger.SetActive(active);
+            probePrompt.gameObject.SetActive(active);
+            if (!active)
+                coreComputer.ClearAllEntries();
         }
 
         void Update()
         {
-            if (!animationStarted)
+            if (!active)
             {
-                active = sunWire.on && populationWire.on && technologyWire.on;
-                probePrompt.gameObject.SetActive(active);
+                if (sunWire.on && populationWire.on && technologyWire.on)
+                {
+                    active = true;
+                    PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
+                    probePrompt.gameObject.SetActive(true);
+                    coreComputer.DisplayAllEntries();
+                }
             }
         }
 
@@ -126,7 +138,9 @@ namespace AstralCodex
             //Release probe
             probe.Unanchor();
             probeLauncher._isRetrieving = false;
-            
+
+            //Switch final end times music
+            MusicHandler.SetFinalEndTimes();
 
             yield return null;
         }
