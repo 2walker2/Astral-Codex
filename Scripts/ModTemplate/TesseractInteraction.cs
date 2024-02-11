@@ -23,6 +23,7 @@ namespace AstralCodex
         int skySphereDisabled = 0; //A timer used for disabling the sky sphere a few frames after the solar system loads
         List<ParticleSystem> exteriorProbeLidarProjections = new List<ParticleSystem>(); //The lidar scan particles of the Chime's exterior probes
         NomaiComputer statusComputer; //The computer that displays the status of the Chime
+        Animator solarPanelsAnimator; //The Animator that controls the solar panels rising and falling
         #endregion
 
         #region Initialization
@@ -35,6 +36,7 @@ namespace AstralCodex
             skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
             statusComputer = SearchUtilities.Find("ChimeStatusComputer").GetComponent<NomaiComputer>();
             statusComputer.ClearAllEntries();
+            solarPanelsAnimator = SearchUtilities.Find("Station/Solar Panels").GetComponent<Animator>();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -131,6 +133,9 @@ namespace AstralCodex
 
             //Update travel music
             MusicHandler.SetTravelMusic(value);
+
+            //Trigger solar panels animation
+            solarPanelsAnimator.SetBool("Open", value);
 
             //Toggle exterior lidar probes
             foreach (ParticleSystem p in exteriorProbeLidarProjections)

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1725677683
+CRC: 436098398
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 29bbb783950826aab0d542b5219854fc
+    Hash: 314c27fcda8d20198bd76beaca870b1f
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -104,6 +104,7 @@ Assets:
 - Assets/Bundle/Shaders/TesseractActivation.shader
 - Assets/Bundle/InterloperDetail.prefab
 - Assets/Bundle/Coin.prefab
+- Assets/Bundle/Animations/SolarPanelsRising.anim
 - Assets/Bundle/Materials/Whirlpool Edge.mat
 - Assets/Bundle/Textures/Skybox/downImage.png
 - Assets/Bundle/Materials/UnlitWhite.mat
@@ -344,6 +345,7 @@ Assets:
 - Assets/Bundle/Audio/Ghost_Space.mp3
 - Assets/Bundle/Materials/TesseractActivation.mat
 - Assets/Bundle/Models/species_hologram.obj
+- Assets/Bundle/Animations/Solar Panels.controller
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
 - Assets/Bundle/Audio/codec_intense.mp3

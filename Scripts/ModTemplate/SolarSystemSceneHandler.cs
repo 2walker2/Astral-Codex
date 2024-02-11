@@ -97,8 +97,7 @@ namespace AstralCodex
             {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
             {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
             //Chime
-            {"Station/Visual/Solar Panels", new Vector3(0, 0, 10) },
-            {"Station/Collision/Solar Panels", new Vector3(0, 0, 10) },
+            {"Station/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },
             {"Station/Exterior Lidar Probes", new Vector3(0, 1.5f, 0) },
             {"Station/Exterior Lidar Probes/Probe Root/Probe/Model", new Vector3(0, 0, -10) },
