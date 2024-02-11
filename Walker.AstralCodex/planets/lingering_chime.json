@@ -245,7 +245,7 @@
 	},
 	"ReferenceFrame": {
 		"hideInMap": true,
-		"maxTargetDistance": 30000.0,
+		"maxTargetDistance": 35000.0,
 		"targetColliderRadius": 10000.0
 	},
 	"ShipLog": {

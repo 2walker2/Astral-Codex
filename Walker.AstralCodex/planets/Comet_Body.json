@@ -82,7 +82,7 @@
 				"position": {"x": -3.6402, "y": 4.2957, "z": -32.2224},
 				"rotation": {"x": 28.631, "y": 61.9767, "z": 241.4538}
 			},
-			{
+			/*{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Interloper Light.prefab",
 				"position": {
@@ -95,7 +95,7 @@
 					"y": 252.0,
 					"z": 151.0
 				}
-			}
+			}*/
 		],
 		"entryLocation": [
 			{

@@ -72,7 +72,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
-                <Text>The final mark powered on and the indicator light turned green when my clone was present in the Ash Twin Project.</Text>
+                <Text>The final mark powered on and a computer activated when my clone was present in the Ash Twin Project.</Text>
             </ExploreFact>
         </Entry>
         <Entry>
@@ -92,7 +92,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>
-                <Text>All of the icons powered on and the indicator light turned green when a spacecraft was present on each planet in the solar system.</Text>
+                <Text>All of the icons powered on and a computer activated when a spacecraft was present on each planet in the solar system.</Text>
             </ExploreFact>
         </Entry>
         <Entry>
@@ -108,7 +108,7 @@
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_complete</ID>
-                <Text>The icon powered off and the indicator light turned green when the interior of Dark Bramble was blocking the light from the Sun.</Text>
+                <Text>The icon powered off and a computer activated when the interior of Dark Bramble was blocking the light from the Sun.</Text>
             </ExploreFact>
         </Entry>
     </Entry>
@@ -181,7 +181,7 @@
 
         <ExploreFact>
             <ID>codex_astral_codex_environments</ID>
-            <Text>Used to transmit a message from a dead universe with hope to be remembered.</Text>
+            <Text>Used to transmit a message from a dying universe with hope to be remembered.</Text>
         </ExploreFact>
 
         <ExploreFact>
