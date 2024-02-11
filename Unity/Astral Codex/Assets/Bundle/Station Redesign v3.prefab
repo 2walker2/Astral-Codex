@@ -42701,7 +42701,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5095242298055268513}
-  m_Mesh: {fileID: -1492611884366129855, guid: e2c7adba57b8ef54da45e5fa3cec4b66, type: 3}
+  m_Mesh: {fileID: -2776626741326780813, guid: e2c7adba57b8ef54da45e5fa3cec4b66, type: 3}
 --- !u!23 &3414363574411338650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42720,7 +42720,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: 42a596f4cdb846f45a8d2d7016d3c4ba, type: 3}
+  - {fileID: 2100000, guid: 7a2e6c6a79844c94696033ef55349947, type: 2}
+  - {fileID: 2100000, guid: dc793d8f0db35854ab97e51aa4c4ecda, type: 2}
+  - {fileID: 2100000, guid: b77101e97e857a34eae2fa0ee1398b94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45758,7 +45760,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -1492611884366129855, guid: e2c7adba57b8ef54da45e5fa3cec4b66, type: 3}
+  m_Mesh: {fileID: -5150888409024054078, guid: e2c7adba57b8ef54da45e5fa3cec4b66, type: 3}
 --- !u!1 &5836041702718364208
 GameObject:
   m_ObjectHideFlags: 0
@@ -51996,7 +51998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7059735983788815897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.877, z: 0}
+  m_LocalPosition: {x: 0, y: 3.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 620136510950729605}
@@ -75836,17 +75838,17 @@ PrefabInstance:
     - target: {fileID: 5109967691056168112, guid: 9c3fb23f7c481fa4cbe1d897de08278d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22222227
+      value: 0.13333334
       objectReference: {fileID: 0}
     - target: {fileID: 5109967691056168112, guid: 9c3fb23f7c481fa4cbe1d897de08278d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2222223
+      value: 0.13333334
       objectReference: {fileID: 0}
     - target: {fileID: 5109967691056168112, guid: 9c3fb23f7c481fa4cbe1d897de08278d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2222223
+      value: 0.13333334
       objectReference: {fileID: 0}
     - target: {fileID: 5109967691056168112, guid: 9c3fb23f7c481fa4cbe1d897de08278d,
         type: 3}
@@ -78605,8 +78607,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
         type: 3}
+      propertyPath: VelocityModule.y.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 2.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
+      propertyPath: VelocityModule.y.minScalar
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
+      propertyPath: VelocityModule.radial.scalar
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
+      propertyPath: VelocityModule.orbitalY.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
+      propertyPath: VelocityModule.orbitalZ.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500991725423085421, guid: 20ed15f445f045b4b991951e638148c4,
+        type: 3}
+      propertyPath: VelocityModule.radial.minScalar
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4500991726301604044, guid: 20ed15f445f045b4b991951e638148c4,
         type: 3}

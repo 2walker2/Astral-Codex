@@ -199,7 +199,7 @@
 				"type": "blackHole",
 				"hasWarpEffects": false,
 				"horizonRadius": 1,
-				"distortRadius": 2,
+				"distortRadius": 1.5,
 				"uniqueID": "codex_chime_black",
 				"pairedSingularity": "codex_timber_white",
 				"rename": "codex_chime_black",
