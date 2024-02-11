@@ -42,7 +42,7 @@ namespace AstralCodex
                 dialogueConditionManagerSharedInstance = DialogueConditionManager.SharedInstance;
                 if (DialogueConditionManager.SharedInstance.GetConditionState("PROBE_ENTERED_EYE"))
                 {
-                    SearchUtilities.Find("14.3 Billion Years Later").GetComponent<Text>().text = "14.3 Billion Years Later\n\nThe Codec is Rediscovered";
+                    SearchUtilities.Find("14.3 Billion Years Later").GetComponent<Text>().text = "14.3 Billion Years Later\n\nThe Astral Codec is Rediscovered";
                 }
             }
         }

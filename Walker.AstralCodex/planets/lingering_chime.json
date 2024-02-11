@@ -227,8 +227,8 @@
 				"name": "Chime Transmitter",
 				"reveals": "codex_lingering_chime_signal",
 				"position": {
-					"y": 9.7,
-					"z": 39.1
+					"y": 9.25,
+					"z": 39
 				}
 			}
 		],

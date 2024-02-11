@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 583844553
+CRC: 2633801113
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 945c3dd1685363c312a3070f592820b4
+    Hash: 86e6c52b221ce7515680a988feb24dfb
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -251,7 +251,6 @@ Assets:
 - Assets/Bundle/Materials/InterloperFuelTubeGlass.mat
 - Assets/Bundle/Materials/Glass.mat
 - Assets/Bundle/Materials/Skybox.mat
-- Assets/Bundle/Interloper Light.prefab
 - Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
 - Assets/Bundle/Textures/Chime Redesign/GhostEmmissiveOverlay.png
