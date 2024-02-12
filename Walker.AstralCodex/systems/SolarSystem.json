@@ -30,7 +30,8 @@
 		{ "id": "codex_lingering_chime", "position": {"x": 3250, "y": -50 } },
 		{ "id": "codex_projection", "position": {"x": 2950, "y": -150 } },
 		{ "id": "codex_bramble_signal", "position": {"x": 4160, "y": -80 } },
-		{ "id": "codex_ember_signal", "position": {"x": 3970, "y": 250 } }
+		{ "id": "codex_ember_signal", "position": {"x": 3970, "y": 250 } },
+		{ "id": "codex_ash_clone", "position": {"x": 4220, "y": 330 } }
 		],
 	"canEnterViaWarpDrive": false,
 	"Skybox": {

@@ -16,9 +16,20 @@
 				"scale": 600.0,
 				"keepLoaded": true
 			}
+		],
+		"translatorText": [
+			{
+				"type": "scroll",
+				"xmlFile": "planets/text/ash_scroll_cloning.xml",
+				"position": {"x": -1.2734, "y": 19.8177, "z": -124.8464},
+				"rotation": {"x": 45.5645, "y": 82.5093, "z": 36.909}
+			}
 		]
 	},
 	"ReferenceFrame": {},
-	"ShipLog": {},
+	"ShipLog": {
+		"spriteFolder": "planets/ship_log/images",
+		"xmlFile": "planets/ship_log/ash_twin_log.xml"
+	},
 	"ShockEffect": {}
 }
