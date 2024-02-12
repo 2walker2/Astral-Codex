@@ -21,6 +21,11 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
+		<Text>POKE: Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of myself? The logistics involved would be fascinating.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>5</ParentID>
 		<Text>CLARY: Hypothesis: two of you would be too much for the fabric of spacetime (or me) to handle. Come, sister, the shuttle is almost ready.</Text>
 	</TextBlock>
 	<ShipLogConditions>
