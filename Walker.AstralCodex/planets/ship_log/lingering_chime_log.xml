@@ -104,7 +104,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_fact</ID>
-                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>/? {./<![CDATA[</Color>]]></Text>
+                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>&#38;*|[+{&#38;<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_complete</ID>

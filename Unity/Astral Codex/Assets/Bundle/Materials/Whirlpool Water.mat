@@ -44,7 +44,7 @@ Material:
     - _RefractionMapScale: 1
     - _RefractionOuterRadius: 0.5
     - _RefractionStrength: 0.015
-    - _RotationSpeed: 0.1
+    - _RotationSpeed: -0.1
     m_Colors:
     - _BaseColor: {r: 0.2783019, g: 0.5586849, b: 1, a: 0.19607843}
     - _PrimaryColor: {r: 0, g: 0.31061032, b: 0.81960785, a: 0.019607844}
