@@ -295,6 +295,7 @@ namespace AstralCodex
             PutChimeClutterOnVisibleToProbeLayer();
             EnableChimeReferenceFrame();
             ConfigureProjectionPool();
+            RandomizeWindChimeAnimationTime();
         }
 
         void ApplyChimeMaterials()
@@ -438,6 +439,15 @@ namespace AstralCodex
                 visionCamera.GetComponent<Camera>().cullingMask += (1 << 22);
                 //visionCamera.GetComponent<NomaiViewerImageEffect>()._material.color = new Color(0, 0, 0);
             }*/
+        }
+
+        GameObject windChimeRoot;
+        void RandomizeWindChimeAnimationTime()
+        {
+            foreach (Animator animator in SearchUtilities.Find("Station/Visual/Wind Chimes").GetComponentsInChildren<Animator>())
+            {
+                animator.Play("WindChime", -1, UnityEngine.Random.Range(0.0f, 1.0f));
+            }
         }
         #endregion
 

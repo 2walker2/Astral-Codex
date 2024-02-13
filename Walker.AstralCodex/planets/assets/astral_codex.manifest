@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3599647246
+CRC: 1319670900
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d5c56de0c11b1e47d9cb7f5d1e69facc
+    Hash: 46aca3ddd69bb375ae5087f2a306585e
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -306,8 +306,10 @@ Assets:
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
 - Assets/Bundle/Foliage Group 1.prefab
 - Assets/Bundle/SignalParticles.prefab
+- Assets/Bundle/Animations/WindChime.controller
 - Assets/Bundle/Materials/WhiteHole.mat
 - Assets/Bundle/Models/ash_twin.obj
+- Assets/Bundle/Animations/WindChime.anim
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
 - Assets/Bundle/Foliage Group 3.prefab
@@ -390,6 +392,7 @@ Assets:
 - Assets/Bundle/Black Hole.prefab
 - Assets/Bundle/Textures/Skybox/upImage.png
 - Assets/Bundle/Materials/Chime Redesign/Probe/Metal.mat
+- Assets/Bundle/Materials/Chime Redesign/Wind Chimes.mat
 - Assets/Bundle/Textures/Pentagon.png
 - Assets/Bundle/Materials/Wires/SpacecraftTrailWireShell.mat
 - Assets/Bundle/Models/dark_bramble_hologram.obj

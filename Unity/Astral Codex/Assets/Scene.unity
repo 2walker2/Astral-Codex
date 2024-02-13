@@ -30323,7 +30323,7 @@ PrefabInstance:
     - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ab47dc4849974bbdce006af51450d, type: 3}
@@ -30952,6 +30952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProbeBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649670410434070862, guid: ee5682940eaa3054e8797d1c41284b43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7283156753290693759, guid: ee5682940eaa3054e8797d1c41284b43,
         type: 3}
