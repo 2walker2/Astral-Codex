@@ -54,7 +54,22 @@
             <Text>Wires run from a small platform to two devices within the structure. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>-;[} )&#38;]&#38;<![CDATA[</Color>]]></Text> 
         </ExploreFact>
 
-        
+        <Entry>
+            <ID>codex_lingering_chime_no_sun</ID>
+            <Name>Circular Display</Name>
+
+            <IgnoreMoreToExplore/>
+            <Curiosity>codex_astral_codex</Curiosity>
+
+            <ExploreFact>
+                <ID>codex_lingering_chime_no_sun_fact</ID>
+                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>&#38;*|[+{&#38;<![CDATA[</Color>]]></Text>
+            </ExploreFact>
+            <ExploreFact>
+                <ID>codex_lingering_chime_no_sun_complete</ID>
+                <Text>The icon powered off and a computer activated when the interior of Dark Bramble was blocking the light from the Sun.</Text>
+            </ExploreFact>
+        </Entry>
         <Entry>
             <ID>codex_lingering_chime_population</ID>
             <Name>Tally Display</Name>
@@ -93,22 +108,6 @@
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>
                 <Text>All of the icons powered on and a computer activated when a spacecraft was present on each planet in the solar system.</Text>
-            </ExploreFact>
-        </Entry>
-        <Entry>
-            <ID>codex_lingering_chime_no_sun</ID>
-            <Name>Circular Display</Name>
-
-            <IgnoreMoreToExplore/>
-            <Curiosity>codex_astral_codex</Curiosity>
-
-            <ExploreFact>
-                <ID>codex_lingering_chime_no_sun_fact</ID>
-                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>&#38;*|[+{&#38;<![CDATA[</Color>]]></Text>
-            </ExploreFact>
-            <ExploreFact>
-                <ID>codex_lingering_chime_no_sun_complete</ID>
-                <Text>The icon powered off and a computer activated when the interior of Dark Bramble was blocking the light from the Sun.</Text>
             </ExploreFact>
         </Entry>
     </Entry>
@@ -150,7 +149,7 @@
     </Entry>
     <Entry>
         <ID>codex_astral_codex</ID>
-        <Name>Astal Codec</Name>
+        <Name>Astral Codec</Name>
 
         <Curiosity>codex_astral_codex</Curiosity>
         <IsCuriosity/>

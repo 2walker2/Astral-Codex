@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 943971337
+CRC: 507255043
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0d5ace582a243bd2b4275d126816469c
+    Hash: f8bbfea1477032cef62e8a48a780b70d
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -190,6 +190,7 @@ Assets:
 - Assets/Bundle/Interloper Thruster.prefab
 - Assets/Bundle/Interloper Fuel Tube.prefab
 - Assets/Bundle/BrambleProbe.prefab
+- Assets/Bundle/Textures/Eclipse.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
 - Assets/Bundle/Models/ember_twin.obj
 - Assets/Bundle/Black Hole Water.prefab
@@ -309,6 +310,7 @@ Assets:
 - Assets/Bundle/Animations/WindChime.controller
 - Assets/Bundle/Materials/WhiteHole.mat
 - Assets/Bundle/Models/ash_twin.obj
+- Assets/Bundle/Materials/Chime Redesign/Display Platform Metal.mat
 - Assets/Bundle/Animations/WindChime.anim
 - Assets/Bundle/Materials/Skybox/SkyboxBack.mat
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat

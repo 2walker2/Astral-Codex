@@ -540,6 +540,13 @@ namespace AstralCodex
                     sunLight.SetActive(!sunLight.activeSelf);
                 }
             }
+            else if (Keyboard.current.zKey.wasPressedThisFrame)
+            {
+                if (Time.timeScale > 0)
+                    Time.timeScale = 0;
+                else
+                    Time.timeScale = 1;
+            }
         }
         #endregion
     }

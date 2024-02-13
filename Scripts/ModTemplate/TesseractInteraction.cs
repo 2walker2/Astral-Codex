@@ -122,8 +122,8 @@ namespace AstralCodex
             PostProcessingGameplaySettings postProcessingSettings = Locator.GetPlayerCamera().postProcessingSettings;
             if (value)
             {
-                postProcessingSettings.colorGrading.temperature = -25;
-                postProcessingSettings.colorGrading.tint = -50;
+                postProcessingSettings.colorGrading.temperature = -10;
+                postProcessingSettings.colorGrading.tint = -30;
             }
             else
             {
