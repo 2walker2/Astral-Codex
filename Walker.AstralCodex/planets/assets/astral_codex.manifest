@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 865810335
+CRC: 3599647246
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ad35d1d9e46c6d275b579cf221ada084
+    Hash: d5c56de0c11b1e47d9cb7f5d1e69facc
   TypeTreeHash:
     serializedVersion: 2
     Hash: b6997563fd397695a43919f78a5f1115
@@ -220,6 +220,7 @@ Assets:
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/Shaders/FuelTube.shader
 - Assets/Bundle/Test Codex Dispenser.prefab
+- Assets/Bundle/Materials/CentralPlatformGlass.mat
 - Assets/Bundle/Textures/Foliage/Foliage3G.png
 - Assets/Bundle/Materials/Wires/SpacecraftDisplayWireShell.mat
 - Assets/Bundle/Textures/BottomPattern.png
@@ -281,6 +282,7 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/LOD_Rock_QM_Shard_n.png
 - Assets/Bundle/Materials/Wires/SpacecraftDisplayWire.mat
 - Assets/Bundle/Models/timber_hearth.obj
+- Assets/Bundle/Textures/EyeColored.png
 - Assets/Bundle/EyeProbeStates/ScannerState4.prefab
 - Assets/Bundle/Textures/Eye.png
 - Assets/Bundle/Animations/EnvironmentsProjectionController.controller
@@ -341,6 +343,7 @@ Assets:
 - Assets/Bundle/Textures/Chime Redesign/Effects_HT_Sand_n.png
 - Assets/Bundle/Animations/Rotate.anim
 - Assets/Bundle/Textures/Foliage/Foliage5.png
+- Assets/Bundle/Materials/EyeColored.mat
 - Assets/Bundle/Audio/Ghost_Space.mp3
 - Assets/Bundle/Materials/TesseractActivation.mat
 - Assets/Bundle/Models/species_hologram.obj
@@ -355,6 +358,7 @@ Assets:
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel.blend
 - Assets/Bundle/Audio/Codex Reveal.mp3
 - Assets/Bundle/Textures/Foliage/Foliage2.png
+- Assets/Bundle/Shaders/UnlitTransparentHDR.shader
 - Assets/Bundle/Chime Exhaust.prefab
 - Assets/Bundle/Foliage Group 2.prefab
 - Assets/Bundle/Models/chime_exhaust.obj

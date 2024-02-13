@@ -105,6 +105,8 @@ namespace AstralCodex
             {"Station/Exterior Lidar Probes/Probe Root (2)/Probe/Model", new Vector3(0, 0, -10) },
             {"Station/Exterior Lidar Probes/Probe Root (3)/Probe/Model", new Vector3(0, 0, -10) },
             {"Station/Props/Transmitter/Transmitter Orb", new Vector3(0, 0, 15) },
+            {"Station/Visual/Upper Central Platform/Eye", new Vector3(0, 1.5f, 0) },
+            {"Station/Visual/Lower Central Platform/Eye", new Vector3(0, 1.5f, 0) },
         };
         #endregion
 
