@@ -111,9 +111,9 @@ Shader "Custom/Refraction" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_5802 = _Time;
+                float4 node_2925 = _Time;
                 float _RotationSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RotationSpeed );
-                float node_7538_ang = node_5802.g;
+                float node_7538_ang = node_2925.g;
                 float node_7538_spd = _RotationSpeed_var;
                 float node_7538_cos = cos(node_7538_spd*node_7538_ang);
                 float node_7538_sin = sin(node_7538_spd*node_7538_ang);
@@ -128,7 +128,7 @@ Shader "Custom/Refraction" {
                 float2 node_6068 = (mul(i.uv0-node_6068_piv,float2x2( node_6068_cos, -node_6068_sin, node_6068_sin, node_6068_cos))+node_6068_piv);
                 float2 node_7538 = (mul(node_6068-node_7538_piv,float2x2( node_7538_cos, -node_7538_sin, node_7538_sin, node_7538_cos))+node_7538_piv);
                 float _RefractionDistortionSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RefractionDistortionSpeed );
-                float node_3461_ang = node_5802.g;
+                float node_3461_ang = node_2925.g;
                 float node_3461_spd = _RefractionDistortionSpeed_var;
                 float node_3461_cos = cos(node_3461_spd*node_3461_ang);
                 float node_3461_sin = sin(node_3461_spd*node_3461_ang);
@@ -258,9 +258,9 @@ Shader "Custom/Refraction" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_3584 = _Time;
+                float4 node_9512 = _Time;
                 float _RotationSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RotationSpeed );
-                float node_7538_ang = node_3584.g;
+                float node_7538_ang = node_9512.g;
                 float node_7538_spd = _RotationSpeed_var;
                 float node_7538_cos = cos(node_7538_spd*node_7538_ang);
                 float node_7538_sin = sin(node_7538_spd*node_7538_ang);
@@ -275,7 +275,7 @@ Shader "Custom/Refraction" {
                 float2 node_6068 = (mul(i.uv0-node_6068_piv,float2x2( node_6068_cos, -node_6068_sin, node_6068_sin, node_6068_cos))+node_6068_piv);
                 float2 node_7538 = (mul(node_6068-node_7538_piv,float2x2( node_7538_cos, -node_7538_sin, node_7538_sin, node_7538_cos))+node_7538_piv);
                 float _RefractionDistortionSpeed_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RefractionDistortionSpeed );
-                float node_3461_ang = node_3584.g;
+                float node_3461_ang = node_9512.g;
                 float node_3461_spd = _RefractionDistortionSpeed_var;
                 float node_3461_cos = cos(node_3461_spd*node_3461_ang);
                 float node_3461_sin = sin(node_3461_spd*node_3461_ang);

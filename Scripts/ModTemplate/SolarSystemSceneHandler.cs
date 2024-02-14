@@ -296,6 +296,7 @@ namespace AstralCodex
             EnableChimeReferenceFrame();
             ConfigureProjectionPool();
             RandomizeWindChimeAnimationTime();
+            ReduceAudioRangeOfSingularities();
         }
 
         void ApplyChimeMaterials()
@@ -344,6 +345,9 @@ namespace AstralCodex
                 {
                     chimeWater.transform.parent = chimeWhiteHoleWater.transform;
                     chimeWater.transform.localPosition = Vector3.zero;
+
+                    //Also update layer for lighting
+                    chimeWater.layer = 4; //"Water" layer
                 }
             }
             else
@@ -448,6 +452,14 @@ namespace AstralCodex
             {
                 animator.Play("WindChime", -1, UnityEngine.Random.Range(0.0f, 1.0f));
             }
+        }
+
+        void ReduceAudioRangeOfSingularities()
+        {
+            GameObject blackHoleAmbiance = SearchUtilities.Find("codex_chime_black/BlackHoleAmbience");
+            blackHoleAmbiance.GetComponent<AudioSource>().maxDistance = 10;
+            GameObject whiteHoleAmbiance = SearchUtilities.Find("codex_chime_white/BlackHoleAmbience");
+            whiteHoleAmbiance.GetComponent<AudioSource>().maxDistance = 10;
         }
         #endregion
 

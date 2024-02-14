@@ -214,7 +214,7 @@
 				"uniqueID": "codex_chime_white",
 				"rename": "codex_chime_white",
 				"parentPath": "Sector/Station/Orbiting Water Root/ChimeWhiteHoleWater/WhiteHolePosition",
-				"isRelativeToParent": true
+				"isRelativeToParent": true,
 			}
 		],
 		"signals": [
@@ -259,21 +259,21 @@
 				"y": -90.0
 			},
 			"revealedSprite": "planets/ship_log/images/lingering_chime_map.png",
-			"scale": 0.5
 		},
 		"spriteFolder": "planets/ship_log/images",
-		"xmlFile": "planets/ship_log/lingering_chime_log.xml"
+		"xmlFile": "planets/ship_log/lingering_chime_log.xml",
+		"scale": 0.65
 	},
 	"ShockEffect": {},
 	"Volumes": {
 		"audioVolumes": [
-			{
+			/*{
 				"audio": "planets/assets/ice-and-decay.mp3",
 				"clipSelection": "random",
 				"track": "music",
-				"radius": 120.0
-			},
-			{
+				"radius": 53
+			},*/
+			/*{
 				"audio": "NomaiTractorBeamAmbient_LP",
 				"clipSelection": "random",
 				"track": "environment",
@@ -282,7 +282,7 @@
 					"y": 3.26
 				},
 				"radius": 4.0
-			}
+			}*/
 		],
 		"revealVolumes": [
 			{
