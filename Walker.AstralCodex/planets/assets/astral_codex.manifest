@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 259195464
+CRC: 2734176942
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 13a0cc42ec858f4863ecbdbfcb4c131e
+    Hash: 018df8f2423ed8440525ce4f092b214e
   TypeTreeHash:
     serializedVersion: 2
     Hash: ae6f06510e5441eff35fbb35f3275296
@@ -191,6 +191,7 @@ Assets:
 - Assets/Bundle/ProbeBroken.prefab
 - Assets/Bundle/Interloper Thruster.prefab
 - Assets/Bundle/Interloper Fuel Tube.prefab
+- Assets/Bundle/StorageCrystalBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
 - Assets/Bundle/Textures/Eclipse.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
@@ -240,6 +241,7 @@ Assets:
 - Assets/Bundle/Textures/Reunion Mural.png
 - Assets/Bundle/Materials/Chime Redesign/Sand.mat
 - Assets/Bundle/SkyboxOverlay.prefab
+- Assets/Bundle/StorageCrystal.prefab
 - Assets/Bundle/Models/Chime Redesign/Projector.blend
 - Assets/Bundle/Shaders/RedLight.shader
 - Assets/Bundle/Materials/Metal.mat
@@ -263,6 +265,7 @@ Assets:
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Animations/CodecDispenser.controller
+- Assets/Bundle/Audio/chime_bells.mp3
 - Assets/Bundle/Materials/ChimeFuelTube.mat
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj

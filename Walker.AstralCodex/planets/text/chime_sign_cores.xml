@@ -1,0 +1,12 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>
+[sample collection report:                          ]
+[    -item: contained singularities                 ]
+[    -quantity: 4                                   ]
+[    -time retrieved: t-minus 120 hr                ]
+[    -status: containment broken - 2 lost in transit]
+		</Text>
+	</TextBlock>
+</NomaiObject>

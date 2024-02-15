@@ -1,0 +1,12 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>
+[sample collection report:                          ]
+[    -item: campfire                                ]
+[    -time retrieved: t-minus 120 hr                ]
+[    -retrieving pre-recorded note from: explorer   ]
+[    	-"I knew it! Constant of the universe."     ]
+		</Text>
+	</TextBlock>
+</NomaiObject>

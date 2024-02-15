@@ -43,7 +43,10 @@ namespace AstralCodex
             "CodexSpeciesComputer",
             "CodexEnvironmentsComputer",
             "ChimeStatusComputer",
-            "CodexCoreComputer"
+            "CodexCoreComputer",
+            "CampfireSign",
+            "CoresSign",
+            "StaffSign"
         };
 
         string exhaustName = "Exhaust";
@@ -107,6 +110,22 @@ namespace AstralCodex
             {"Station/Props/Transmitter/Transmitter Orb", new Vector3(0, 0, 15) },
             {"Station/Visual/Upper Central Platform/Eye", new Vector3(0, 1.5f, 0) },
             {"Station/Visual/Lower Central Platform/Eye", new Vector3(0, 1.5f, 0) },
+            {"Station/Black Hole Water/BlackHoleWarpCoreRoot", new Vector3(0, 10, 0) },
+            {"Station/Black Hole Water/BlackHoleWarpCoreRoot/BlackHoleWarpCorePosittion", new Vector3(-30, 0, 0) },
+            {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot", new Vector3(0, 15, 0) },
+            {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot/WhiteHoleWarpCorePosition", new Vector3(-30, 0, 0) },
+            {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) }
+        };
+
+        List<string> visibleToProbeChimeProps = new List<string>()
+        {
+            "StationClutter1",
+            "StationClutter2",
+            "StationClutter3",
+            "StationClutter4",
+            "ArchivedCampfire",
+            "WhiteHoleWarpCore",
+            "BlackHoleWarpCore"
         };
         #endregion
 
@@ -292,7 +311,7 @@ namespace AstralCodex
             ApplyChimeMaterials();
             ParentChimeWaterToWhiteHole();
             MakeChimeSignalDetectableUnderwater();
-            PutChimeClutterOnVisibleToProbeLayer();
+            PutChimePropsOnVisibleToProbeLayer();
             EnableChimeReferenceFrame();
             ConfigureProjectionPool();
             RandomizeWindChimeAnimationTime();
@@ -367,21 +386,17 @@ namespace AstralCodex
                 Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME SIGNAL", MessageType.Error);
         }
 
-        void PutChimeClutterOnVisibleToProbeLayer()
+        void PutChimePropsOnVisibleToProbeLayer()
         {
             //Put Chime clutter on VisibleToProbe (22) layer
-            GameObject stationClutter1 = SearchUtilities.Find("StationClutter1");
-            if (stationClutter1 != null)
+            foreach (string prop in visibleToProbeChimeProps)
             {
-                stationClutter1.layer = 22;
-                SearchUtilities.Find("StationClutter2").layer = 22;
-                SearchUtilities.Find("StationClutter3").layer = 22;
-                SearchUtilities.Find("StationClutter4").layer = 22;
-                //SearchUtilities.Find("StationClutter5").layer = 22;
-                //SearchUtilities.Find("StationClutter6").layer = 22;
+                GameObject propGO = SearchUtilities.Find(prop);
+                if (propGO != null)
+                    propGO.layer = 22;
+                else
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME PROP "+prop, MessageType.Error);
             }
-            else
-                Main.modHelper.Console.WriteLine("FAILED TO FIND STATION CLUTTER");
         }
 
         void EnableChimeReferenceFrame()
@@ -448,7 +463,7 @@ namespace AstralCodex
         GameObject windChimeRoot;
         void RandomizeWindChimeAnimationTime()
         {
-            foreach (Animator animator in SearchUtilities.Find("Station/Visual/Wind Chimes").GetComponentsInChildren<Animator>())
+            foreach (Animator animator in SearchUtilities.Find("Station/Wind Chimes").GetComponentsInChildren<Animator>())
             {
                 animator.Play("WindChime", -1, UnityEngine.Random.Range(0.0f, 1.0f));
             }

@@ -139,6 +139,25 @@
 				"parentPath": "Sector/Station/Position Markers/ProbePosition",
 				"isRelativeToParent": true
 			},
+			{
+				"rename": "ArchivedCampfire",
+				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
+				"position": {"x": -1.3535, "y": -1.0075, "z": 43.8388},
+				"rotation": {"x": 0, "y": 175.1932, "z": 180},
+				"removeChildren": ["Effects/Effects_HEA_SmokeColumn"]
+			},
+			{
+				"rename": "WhiteHoleWarpCore",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
+				"parentPath": "Sector/Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot/WhiteHoleWarpCorePosition",
+				"isRelativeToParent": true
+			},
+			{
+				"rename": "BlackHoleWarpCore",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
+				"parentPath": "Sector/Station/Black Hole Water/BlackHoleWarpCoreRoot/BlackHoleWarpCorePosittion",
+				"isRelativeToParent": true
+			}
 		],
 		"entryLocation": [
 			{
@@ -180,6 +199,27 @@
 				"type": "computer",
 				"xmlFile": "planets/text/codex_computer_core.xml",
 				"rename": "CodexCoreComputer"
+			},
+			{
+				"parentPath": "Sector/Station/Position Markers/CampfireSignPosition",
+				"isRelativeToParent": true,
+				"type": "trailmarker",
+				"xmlFile": "planets/text/chime_sign_campfire.xml",
+				"rename": "CampfireSign",
+			},
+			{
+				"parentPath": "Sector/Station/Position Markers/WarpCoresSignPosition",
+				"isRelativeToParent": true,
+				"type": "trailmarker",
+				"xmlFile": "planets/text/chime_sign_cores.xml",
+				"rename": "CoresSign",
+			},
+			{
+				"parentPath": "Sector/Station/Position Markers/StaffSignPosition",
+				"isRelativeToParent": true,
+				"type": "trailmarker",
+				"xmlFile": "planets/text/chime_sign_staff.xml",
+				"rename": "StaffSign",
 			}
 		],
 		"remotes": [
@@ -198,8 +238,8 @@
 			{
 				"type": "blackHole",
 				"hasWarpEffects": false,
-				"horizonRadius": 1,
-				"distortRadius": 1.5,
+				"horizonRadius": 1.5,
+				"distortRadius": 2.25,
 				"uniqueID": "codex_chime_black",
 				"pairedSingularity": "codex_timber_white",
 				"rename": "codex_chime_black",
