@@ -26,6 +26,7 @@ namespace AstralCodex
         float widthMultiplier; //The mutliplier to apply to each trail's width
         GameObject quantumMoon; //The Quantum Moon's body's GameObject
         GameObject quantumMoonAtmosphere; //The Quantum Moon's atmosphere's GameObject
+        GameObject quantumMoonEyeState; //The root GameObject of the EOTU state of the Quantum Moon
         MeshRenderer darkBrambleCloakSphereRenderer; //The renderer attached to the cloaking sphere that hides the interior of Dark Bramble
         #endregion
 
@@ -39,6 +40,8 @@ namespace AstralCodex
             if (quantumMoon == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON", OWML.Common.MessageType.Error);
             quantumMoonAtmosphere = SearchUtilities.Find("QuantumMoon_Body/Atmosphere_QM/AtmoSphere");
             if (quantumMoonAtmosphere == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON ATMOSPHERE", OWML.Common.MessageType.Error);
+            quantumMoonEyeState = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE");
+            if (quantumMoonEyeState == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON EYE STATE", OWML.Common.MessageType.Error);
 
             //Get Dark Bramble cloak sphere
             GameObject darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
@@ -99,7 +102,7 @@ namespace AstralCodex
                         //2. The target is disabled
                         //3. The target is on the Quantum Moon and the QM is at the 6th location
                         //4. The target is inside Dark Bramble and the interior is not manifested
-                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false))
+                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false))
                             continue;
 
                         trails[i].SetPosition(0, transform.position); //The start of the trail
