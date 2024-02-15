@@ -19,7 +19,7 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/White Hole.prefab",
-				"position": {"x": -139.7486, "y":-46.172, "z":-287.7325},
+				"position": {"x": -96.9762, "y": -63.692, "z": -196.6363},
 				"scale": 0.5,
 				"rename": "codex_timber_white_prefab"
 			},
@@ -746,21 +746,15 @@
 				}
 			},
 			{
-				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Interactables_EscapePodDimension/DynamicProps_EscapePodDimension/EscapePodFlare_Body (2)/Prefab_NOM_Lamp_EscapePodFlare",
-				"position": {"x": -130.1223, "y":-64.5235, "z":-274.7979},
-				"rotation": {"x": 286.8321, "y":290.5278, "z":102.6623},
-				"scale": 0.5
-			},
-			{
-				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -139.3833, "y":-44.6169, "z":-287.9852},
-				"rotation": {"x": 301.6929, "y":200.0122, "z":110.4175},
-				"scale": 0.5
-			},
-			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
 				"position": {"x": -89.4962, "y": -74.1966, "z":-198.7138},
 				"rotation": {"x": 89.5319, "y":302.9918, "z":180.0006},
+				"scale": 0.5
+			},
+			{
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
+				"position": {"x": -90.5798, "y": -75.0364, "z": -198.1222},
+				"rotation": {"x": 341.016, "y": 302.9899, "z": 180},
 				"scale": 0.5
 			},
 			//Warp receiver props
@@ -794,15 +788,6 @@
 				"position": {"x": -142.9267, "y": -13.8289, "z": -170.3083},
 				"rotation": {"x": 332.6902, "y": 308.0737, "z": 93.77947}
 			}
-		],
-		"translatorText" : [
-			{
-				"rename": "timber_recorder_nomai",
-				"type": "recorder",
-				"xmlFile": "planets/text/timber_recorder_nomai.xml",
-				"position": {"x": -130.0807, "y": -63.02553, "z": -274.8435},
-				"rotation": {"x": 342.0781, "y": 291.9577, "z": 102.5343}
-			}	
 		],
 		"dialogue": [
 			{
@@ -848,7 +833,7 @@
 				"distortRadius": 1,
 				"uniqueID": "codex_timber_white",
 				"rename": "codex_timber_white",
-				"position": {"x": -139.7486, "y":-46.172, "z":-287.7325},
+				"position": {"x": -96.9762, "y": -63.692, "z": -196.6363},
 			},
 			{
 				"type": "blackHole",

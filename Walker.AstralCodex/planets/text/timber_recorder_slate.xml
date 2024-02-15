@@ -5,13 +5,16 @@
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Hornfels insisted I bring this recorder with me to "document any unknown Nomai artifacts". If you ask me, I think they're being a little too optimistic. I'm unlikely to find anything of interest on such a routine trip.</Page>
-			<Page>Oh well. Slate's Expedition Log: Day 1</Page>
-			<Page>I'm out here by the ol' Nomai ruins to see if I can scrounge up an intact warp core for the hatchling. Gotta get their scout properly equipped before they set out for the stars.</Page>
-			<Page>I maaaay have gotten a bit too late of a start though and the sun's already setting so I might as well make camp here. Good thing I brought plenty of marshmallows, eh?</Page>
-			<Page>Ahhhhhhhhh! What's going on?! Wait no, come back! Where are you going?!</Page>
-			<Page>Ok. Deep breaths. What was that? I woke up to this faint ringing noise, almost to quiet to hear. When I opened my eyes, my campfire was moving. It just... lifted into the air like something had picked it up. Then it floated off into the sky like some kind of ghost.</Page>
-			<Page>That can't have been real, right? I must have had too much sap wine recently. Right? I didn't find any cores but I'm returning to the village and never camping here again. Hornfels can make one of the other venturers go find a core.</Page>
+			<Page>Hornfels insisted I bring this recorder with me to "document any unknown Nomai artifacts". If you ask me, I think they're being a little too optimistic. I'm not going to find anything of interest on such a routine expedition.</Page>
+			<Page>Oh well. Here we go anyways. Slate's Expedition Log: Day 1</Page>
+			<Page>I'm out here by the ol' Nomai ruins to see if I can scrounge up an intact warp core or two for the hatchling. Gotta get their scout properly equipped before they set out for the stars.</Page>
+			<Page>I found some pretty quickly by that weird spiral ruin. Four of them were even still intact. Jackpot!</Page>
+			<Page>I maaaay have gotten a bit too late of a start though and the sun's already setting so I might as well make camp here before heading back. Good thing I brought plenty of marshmallows, eh?</Page>
+			<Page><![CDATA[<size=60>]]>Ahhhhhhhhh!<![CDATA[</size>]]> What's going on?! Wait no, get back here! Take that!</Page>
+			<Page>Ok. <![CDATA[<Pause=0.5>]]>Calm down. <![CDATA[<Pause=0.5>]]>What the heck? What was that thing?</Page> 
+			<Page>I woke up to this faint ringing noise, almost to quiet to hear. When I opened my eyes, my campfire was moving. It just... lifted into the air like something had grabbed it. Then it floated off into the sky like some kind of ghost.</Page>
+			<Page>I whacked at it with my marshmallow stick and it sounded like I hit something. But it just kept going. It even took the warp cores I found too!</Page>
+			<Page>That can't have been real, right? I must have had too much sap wine recently. I'm going back to the village and never camping here again. Hornfels can make one of the other venturers go find a core.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
