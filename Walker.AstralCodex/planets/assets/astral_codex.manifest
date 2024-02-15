@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2734176942
+CRC: 3010303805
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 018df8f2423ed8440525ce4f092b214e
+    Hash: 84348c799d836e02ea1a8acd19d5e2d4
   TypeTreeHash:
     serializedVersion: 2
     Hash: ae6f06510e5441eff35fbb35f3275296
@@ -109,6 +109,7 @@ Assets:
 - Assets/Bundle/Animations/SolarPanelsRising.anim
 - Assets/Bundle/Materials/Whirlpool Edge.mat
 - Assets/Bundle/Textures/Skybox/downImage.png
+- Assets/Bundle/Audio/chime_bells.ogg
 - Assets/Bundle/Materials/UnlitWhite.mat
 - Assets/Bundle/Textures/Skybox/frontImage.png
 - Assets/Bundle/Materials/Additive.mat
@@ -265,7 +266,6 @@ Assets:
 - Assets/Bundle/Textures/ThornParticles.png
 - Assets/Bundle/Models/hollows_lantern.obj
 - Assets/Bundle/Animations/CodecDispenser.controller
-- Assets/Bundle/Audio/chime_bells.mp3
 - Assets/Bundle/Materials/ChimeFuelTube.mat
 - Assets/Bundle/Models/Chime Redesign/Projector_Fin.blend
 - Assets/Bundle/Models/spiral_galaxy_hologram.obj
