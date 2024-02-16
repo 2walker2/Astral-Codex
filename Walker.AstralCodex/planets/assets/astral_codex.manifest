@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1130893589
+CRC: 4158855799
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5c0b5d11f71bcf3a6ec8df71a6826512
+    Hash: f3e2b6e402b2415537ec7ec32b1acb6c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ae6f06510e5441eff35fbb35f3275296
+    Hash: 5dea2742c3d18e812c949c24b168584e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -49,6 +49,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 75b33721cd4633949b48a1c2974c29a2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4eca0612bbafa0b439c7abec581127ae, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: d8592143aba9d594fb3338233ad486ee, type: 3}
 - Class: 114
@@ -163,6 +165,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_n.png
+- Assets/Bundle/LockOn.prefab
 - Assets/Bundle/Materials/Wires/PopulationDisplayWireShell.mat
 - Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Materials/Chime Redesign/Probe/Glass.mat

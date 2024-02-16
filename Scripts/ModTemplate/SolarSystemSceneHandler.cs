@@ -75,7 +75,8 @@ namespace AstralCodex
             {"TranslationProbe1", typeof(BrambleProjectionActivate) },
             {"CodecDispenser/Core/Collision", typeof(CodexDispenser) },
             {"Trail Wires/Activation Trigger", typeof(TrailActivation) },
-            {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) }
+            {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) },
+            {"BrambleWarpReceiver", typeof(DisableShapeInShip) }
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -161,6 +162,7 @@ namespace AstralCodex
                 InitializeSpacetimeStabilitySystem();
                 RemoveBreakableComponentFromBramblePlatforms();
                 RemoveSubmergeControllerFromBrambleGhostMatter();
+                ConfigureBrambleWarpPads();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -322,6 +324,14 @@ namespace AstralCodex
         void RemoveSubmergeControllerFromBrambleGhostMatter()
         {
             Destroy(SearchUtilities.Find("BrambleGhostMatter").GetComponent<DarkMatterSubmergeController>());
+        }
+
+        void ConfigureBrambleWarpPads()
+        {
+            NomaiWarpTransmitter warpTransmitter = SearchUtilities.Find("BrambleWarpTransmitter").GetComponent<NomaiWarpTransmitter>();
+            warpTransmitter._warpRadius = 5;
+            NomaiWarpReceiver warpReceived = SearchUtilities.Find("BrambleWarpReceiver").GetComponent<NomaiWarpReceiver>();
+            warpReceived._warpRadius = 5;
         }
         #endregion
 

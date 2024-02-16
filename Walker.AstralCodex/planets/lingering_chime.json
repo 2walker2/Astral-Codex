@@ -31,7 +31,7 @@
 		},
 		"siderealPeriod": 3.0,
 		"isStatic": true,
-		"primaryBody": "Sun_Body"
+		"primaryBody": "SUN"
 	},
 	"Water": {
 		"size": 8,
