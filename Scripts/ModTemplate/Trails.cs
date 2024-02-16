@@ -109,7 +109,7 @@ namespace AstralCodex
                            !targets[i][j].gameObject.activeInHierarchy ||
                            (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) ||
                            (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false) ||
-                           Vector3.Distance(targets[i][j].position, supernovaController.transform.position) < supernovaController._currentSupernovaScale)
+                           (Vector3.Distance(targets[i][j].position, supernovaController.transform.position) < supernovaController._currentSupernovaScale && targets[i][j].root.gameObject.name != "TimeLoopRing_Body"))
                         {
                             continue;
                         }

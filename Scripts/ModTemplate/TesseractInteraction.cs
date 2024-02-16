@@ -24,6 +24,7 @@ namespace AstralCodex
         List<ParticleSystem> exteriorProbeLidarProjections = new List<ParticleSystem>(); //The lidar scan particles of the Chime's exterior probes
         NomaiComputer statusComputer; //The computer that displays the status of the Chime
         Animator solarPanelsAnimator; //The Animator that controls the solar panels rising and falling
+        Shape chimeSignalDetectionShape; //The shape that notifies the player of an unidentified signal for the Chime transmitter
         #endregion
 
         #region Initialization
@@ -37,6 +38,7 @@ namespace AstralCodex
             statusComputer = SearchUtilities.Find("ChimeStatusComputer").GetComponent<NomaiComputer>();
             statusComputer.ClearAllEntries();
             solarPanelsAnimator = SearchUtilities.Find("Station/Solar Panels").GetComponent<Animator>();
+            chimeSignalDetectionShape = SearchUtilities.Find("Chime Signal").GetComponent<Shape>();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -145,6 +147,9 @@ namespace AstralCodex
                 else
                     p.Play();
             }
+
+            //Toggle signal
+            chimeSignalDetectionShape.enabled = value;
 
             //Set persistent condition
             PlayerData.SetPersistentCondition(TesseractEnteredCondition, value);

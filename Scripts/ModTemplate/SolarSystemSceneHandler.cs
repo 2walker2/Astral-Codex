@@ -74,7 +74,8 @@ namespace AstralCodex
             {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
             {"TranslationProbe1", typeof(BrambleProjectionActivate) },
             {"CodecDispenser/Core/Collision", typeof(CodexDispenser) },
-            {"Trail Wires/Activation Trigger", typeof(TrailActivation) }
+            {"Trail Wires/Activation Trigger", typeof(TrailActivation) },
+            {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) }
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -158,6 +159,8 @@ namespace AstralCodex
                 IncreaseGhostMatterDamage();
                 EnableEmberTreeCollision();
                 InitializeSpacetimeStabilitySystem();
+                RemoveBreakableComponentFromBramblePlatforms();
+                RemoveSubmergeControllerFromBrambleGhostMatter();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -301,6 +304,24 @@ namespace AstralCodex
                 experimentBlackHole = experimentBlackHoleGO.GetComponent<NomaiExperimentBlackHole>();
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXPERIMENT BLACK HOLE", MessageType.Error);
+        }
+
+        void RemoveBreakableComponentFromBramblePlatforms()
+        {
+            GameObject brambleSector = SearchUtilities.Find("DarkBramble_Body/Sector_DB");
+            //Fragment integrity components
+            FragmentIntegrity[] fragmentIntegrities = brambleSector.GetComponentsInChildren<FragmentIntegrity>();
+            foreach (FragmentIntegrity fragmentIntegrity in fragmentIntegrities)
+                Destroy(fragmentIntegrity);
+            //Detechable fragment components
+            DetachableFragment[] detachableFragments = brambleSector.GetComponentsInChildren<DetachableFragment>();
+            foreach (DetachableFragment detachableFragment in detachableFragments)
+                Destroy(detachableFragment);
+        }
+
+        void RemoveSubmergeControllerFromBrambleGhostMatter()
+        {
+            Destroy(SearchUtilities.Find("BrambleGhostMatter").GetComponent<DarkMatterSubmergeController>());
         }
         #endregion
 

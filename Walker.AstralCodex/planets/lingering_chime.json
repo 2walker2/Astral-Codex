@@ -18,10 +18,10 @@
 	},
 	"Base": {
 		"gravityFallOff": "linear",
-		"showMinimap": false,
+		//"showMinimap": false,
 		"surfaceSize": 65,
 		"hasMapMarker": false,
-		"soiOverride": 200,
+		"soiOverride": 150,
 		"surfaceGravity": 12
 	},
 	"Orbit": {
@@ -30,7 +30,8 @@
 			"y": -35000.0
 		},
 		"siderealPeriod": 3.0,
-		"isStatic": true
+		"isStatic": true,
+		"primaryBody": "Sun_Body"
 	},
 	"Water": {
 		"size": 8,
@@ -261,7 +262,7 @@
 			{
 				"rename": "Chime Signal",
 				"audio": "planets/assets/chimes.wav",
-				"detectionRadius": 75.0,
+				"detectionRadius": 150,
 				"frequency": "Astral Codec",
 				"identificationRadius": 5.0,
 				"name": "Chime Transmitter",
@@ -448,5 +449,21 @@
 				"isRelativeToParent": true
 			}
 		]
-	}
+	},
+	/*"CometTail": {
+		"primaryBody": "Sun_Body",
+		"innerRadius": 100,
+		"dustTint": {
+			"r": 94,
+			"g": 255,
+			"b": 242,
+			"a": 0
+		},
+		"gasTint": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 0
+		}
+	}*/
 }
