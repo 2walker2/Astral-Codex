@@ -28,6 +28,7 @@ namespace AstralCodex
         GameObject quantumMoonAtmosphere; //The Quantum Moon's atmosphere's GameObject
         GameObject quantumMoonEyeState; //The root GameObject of the EOTU state of the Quantum Moon
         MeshRenderer darkBrambleCloakSphereRenderer; //The renderer attached to the cloaking sphere that hides the interior of Dark Bramble
+        SupernovaEffectController supernovaController; //The sun's supernova controller
         #endregion
 
         #region Initialization
@@ -42,6 +43,7 @@ namespace AstralCodex
             if (quantumMoonAtmosphere == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON ATMOSPHERE", OWML.Common.MessageType.Error);
             quantumMoonEyeState = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE");
             if (quantumMoonEyeState == null) Main.modHelper.Console.WriteLine("FAILED TO FIND QUANTUM MOON EYE STATE", OWML.Common.MessageType.Error);
+            supernovaController = Locator.GetSunController()._supernova;
 
             //Get Dark Bramble cloak sphere
             GameObject darkBrambleCloakSphere = SearchUtilities.Find("CloakSphere");
@@ -102,8 +104,15 @@ namespace AstralCodex
                         //2. The target is disabled
                         //3. The target is on the Quantum Moon and the QM is at the 6th location
                         //4. The target is inside Dark Bramble and the interior is not manifested
-                        if (targets[i][j] == null || !targets[i][j].gameObject.activeInHierarchy || (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) || (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false))
+                        //5. The target is within the supernova
+                        if (targets[i][j] == null ||
+                           !targets[i][j].gameObject.activeInHierarchy ||
+                           (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) ||
+                           (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false) ||
+                           Vector3.Distance(targets[i][j].position, supernovaController.transform.position) < supernovaController._currentSupernovaScale)
+                        {
                             continue;
+                        }
 
                         trails[i].SetPosition(0, transform.position); //The start of the trail
                         trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f); //The trail's target (offset to approximate pointing at NPCs' heads)

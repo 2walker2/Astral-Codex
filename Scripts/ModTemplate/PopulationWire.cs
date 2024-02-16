@@ -10,8 +10,8 @@ namespace AstralCodex
     class PopulationWire : Wire
     {
         #region Private Variables
-        GameObject playerClone; //The player's clone in the ATP
-        MeshRenderer missingPopulationDisplay; //The renderer of the missing segment in the population display
+        MeshRenderer[] populationSegments;
+        PopulationTrails trails;
         #endregion
 
         #region Initialization
@@ -20,8 +20,18 @@ namespace AstralCodex
             on = false;
 
             //Component references
-            playerClone = GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0).gameObject;
-            missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
+            //playerClone = GameObject.Find("TimeLoopRing_Body/Characters_TimeLoopRing").transform.GetChild(0).gameObject;
+            //missingPopulationDisplay = GameObject.Find("MissingPopulationDisplay").GetComponent<MeshRenderer>();
+
+            GameObject populationSegmentsRoot = SearchUtilities.Find("Station/Population Area/PopulationDisplays");
+            if (populationSegmentsRoot != null)
+            {
+                populationSegments = populationSegmentsRoot.GetComponentsInChildren<MeshRenderer>();
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND POPULATION DISPLAY ROOT", MessageType.Error);
+            trails = FindObjectOfType<PopulationTrails>();
+
             //reveal = GameObject.Find("PopulationCompleteReveal");
             computer = SearchUtilities.Find("CodexSpeciesComputer").GetComponent<NomaiComputer>();
             projection = SearchUtilities.Find("Station/Props/Projector Model (1)/Codex Species Projection");
@@ -33,15 +43,29 @@ namespace AstralCodex
         #region Turn On/Off
         void Update()
         {
-            if (playerClone.activeInHierarchy)
+            //Reflect the trail status on the displays
+            int trailsActive = 0;
+            for (int i=0; i<populationSegments.Length; i++)
+            {
+                if (trails.trails[i].gameObject.activeSelf)
+                {
+                    populationSegments[i].material = AssetHandler.materials["light"];
+                    trailsActive++;
+                }
+                else
+                {
+                    populationSegments[i].material = AssetHandler.materials["black"];
+                }
+            }
+
+            //Turn on if every trail is on
+            if (trailsActive == populationSegments.Length)
             {
                 TurnOn();
-                missingPopulationDisplay.material = AssetHandler.materials["light"];
             }
             else
             {
                 TurnOff();
-                missingPopulationDisplay.material = AssetHandler.materials["black"];
             }
         }
         #endregion

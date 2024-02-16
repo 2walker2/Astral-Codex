@@ -15,14 +15,6 @@ namespace AstralCodex
             //Paths to each object the trails should be pointing to
             targetPaths = new List<List<string>> {
                 new List<string> {"Traveller_HEA_Player_v2" },
-                new List<string> {
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_HT/Interactables_HTState/QuantumDeadNomaiSuit",
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/QuantumDeadNomaiSuit",
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_BH/Interactables_BHState/QuantumDeadNomaiSuit",
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_GD/Interactables_GDState/QuantumDeadNomaiSuit",
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/QuantumDeadNomaiSuit",
-                    "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle"
-                },
                 new List<string> {"Villager_HEA_Slate" },
                 new List<string> {"Traveller_HEA_Gabbro" },
                 new List<string> {"Traveller_HEA_Chert" },
@@ -62,7 +54,17 @@ namespace AstralCodex
                     "Villager_HEA_Hornfels (1)" 
                 },
                 new List<string> {"Villager_HEA_Tuff" },
-                new List<string> {"TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player" }
+                 new List<string> {
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_HT/Interactables_HTState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_BH/Interactables_BHState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_GD/Interactables_GDState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/QuantumDeadNomaiSuit",
+                    "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                    "QuantumMoon_Body",
+                    "PopulationScannerOrigin"
+                },
+                new List<string> {"TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player" },
                 };
         }
         #endregion
