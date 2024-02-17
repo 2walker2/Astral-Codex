@@ -164,6 +164,7 @@ namespace AstralCodex
                 RemoveSubmergeControllerFromBrambleGhostMatter();
                 ConfigureBrambleWarpPads();
                 PreventBaseGameDialogue();
+                MakeBrambleCloakSphereCastShadows();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -341,6 +342,12 @@ namespace AstralCodex
             CapsuleCollider slateDialogueCollider = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").GetComponent<CapsuleCollider>();
             slateDialogueCollider.radius = 0;
             slateDialogueCollider.height = 0;
+        }
+
+        void MakeBrambleCloakSphereCastShadows()
+        {
+            MeshRenderer brambleCloakSphereRenderer = SearchUtilities.Find("DB_HubDimension_Body/BrambleRepelVolume/CloakSphere").GetComponent<MeshRenderer>();
+            brambleCloakSphereRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
         #endregion
 
