@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "TimeLoopRing",
+	"Props": {
+		"dialogue": [
+			{
+				"radius": 1,
+				"parentPath": "Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player",
+				"isRelativeToParent": true,
+				"position": {"y": 0.5},
+				"pathToAnimController": "Characters_TimeLoopRing/NPC_Player",
+				"xmlFile": "planets/text/ParadoxSelf.xml"
+			}
+		]
+	}
+}
