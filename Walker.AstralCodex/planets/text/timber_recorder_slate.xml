@@ -16,5 +16,6 @@
 			<Page>I whacked at it with my marshmallow stick and it sounded like I hit something. But it just kept going. It even took the warp cores I found too!</Page>
 			<Page>That can't have been real, right? I must have had too much sap wine recently. I'm going back to the village and never camping here again. Hornfels can make one of the other venturers go find a core.</Page>
 		</Dialogue>
+		<SetPersistentCondition>CODEX_MISSING_CAMPFIRE</SetPersistentCondition>
 	</DialogueNode>
 </DialogueTree>
