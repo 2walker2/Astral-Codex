@@ -19,7 +19,7 @@ namespace AstralCodex
         void Start()
         {
             //Parent self to the player's camera
-            transform.parent = Camera.main.transform;
+            transform.parent = Locator.GetPlayerCamera().transform;
             transform.localPosition = Vector3.zero;
             transform.forward = -transform.parent.right;
 

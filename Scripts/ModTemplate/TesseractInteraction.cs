@@ -25,6 +25,7 @@ namespace AstralCodex
         NomaiComputer statusComputer; //The computer that displays the status of the Chime
         Animator solarPanelsAnimator; //The Animator that controls the solar panels rising and falling
         Shape chimeSignalDetectionShape; //The shape that notifies the player of an unidentified signal for the Chime transmitter
+        Camera playerCamera; //The player's camera
         #endregion
 
         #region Initialization
@@ -39,6 +40,7 @@ namespace AstralCodex
             statusComputer.ClearAllEntries();
             solarPanelsAnimator = SearchUtilities.Find("Station/Solar Panels").GetComponent<Animator>();
             chimeSignalDetectionShape = SearchUtilities.Find("Chime Signal").GetComponent<Shape>();
+            playerCamera = Locator.GetPlayerCamera().GetComponent<Camera>();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -74,11 +76,11 @@ namespace AstralCodex
             skySphereDisabled++;
 
             //Ensure correct layers remain visible
-            if (Camera.main != null && fourDLayer != 0)
+            if (playerCamera != null && fourDLayer != 0)
             {
                 // Visible to Probe visible unless on layer 0
-                if ((Camera.main.cullingMask & (1 << 22)) == 0)
-                    Camera.main.cullingMask += (1 << 22);
+                if ((playerCamera.cullingMask & (1 << 22)) == 0)
+                    playerCamera.cullingMask += (1 << 22);
             }
         }
         #endregion
@@ -159,8 +161,8 @@ namespace AstralCodex
             else
             {
                 fourDLayer = 0;
-                if ((Camera.main.cullingMask & (1 << 22)) != 0)
-                    Camera.main.cullingMask -= (1 << 22);
+                if ((playerCamera.cullingMask & (1 << 22)) != 0)
+                    playerCamera.cullingMask -= (1 << 22);
             }
                 
         }
