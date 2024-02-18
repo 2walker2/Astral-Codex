@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 using UnityEngine;
 using NewHorizons;
 using NewHorizons.Utility;
+using System.ComponentModel.Design.Serialization;
 
 namespace AstralCodex
 {
     class Trails : MonoBehaviour
     {
         #region Public Variables
-        public static bool visible = false; //Whether the trails are currently visible
-
         public List<List<Transform>> targets; //These trails' target Transforms
         public List<List<string>> targetPaths; //The paths to these trails' target Transforms
         public List<LineRenderer> trails; //The trail LineRenderers controlled by this script
+        public GameObject root; //The root gameObject of all the trails
         #endregion
 
         #region Private Variables
@@ -34,7 +34,9 @@ namespace AstralCodex
         #region Initialization
         public virtual void Start()
         {
-            visible = false;
+            //Get root
+            root = transform.GetChild(0).gameObject;
+            root.SetActive(false);
 
             //Get QM
             quantumMoon = SearchUtilities.Find("QuantumMoon_Body");
@@ -90,49 +92,38 @@ namespace AstralCodex
         #region Update Trail Positions
         public virtual void Update()
         {
-            //Update trail target positions as they move
-            if (visible == true)
+            for (int i = 0; i < trails.Count && i < targets.Count; i++)
             {
-                for (int i = 0; i < trails.Count && i < targets.Count; i++)
+                bool validTarget = false;
+                //Iterate over each possible target for this trail until one is valid
+                for (int j = 0; j < targets[i].Count; j++)
                 {
-                    bool validTarget = false;
-                    //Iterate over each possible target for this trail until one is valid
-                    for (int j = 0; j < targets[i].Count; j++)
+                    //Skip if any of the following are true:
+                    //1. The target doesn't exist
+                    //2. The target is disabled
+                    //3. The target is on the Quantum Moon and the QM is at the 6th location
+                    //4. The target is inside Dark Bramble and the interior is not manifested
+                    //5. The target is within the supernova
+                    if (targets[i][j] == null ||
+                        !targets[i][j].gameObject.activeInHierarchy ||
+                        (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) ||
+                        (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false) ||
+                        (Vector3.Distance(targets[i][j].position, supernovaController.transform.position) < supernovaController._currentSupernovaScale && targets[i][j].root.gameObject.name != "TimeLoopRing_Body"))
                     {
-                        //Skip if any of the following are true:
-                        //1. The target doesn't exist
-                        //2. The target is disabled
-                        //3. The target is on the Quantum Moon and the QM is at the 6th location
-                        //4. The target is inside Dark Bramble and the interior is not manifested
-                        //5. The target is within the supernova
-                        if (targets[i][j] == null ||
-                           !targets[i][j].gameObject.activeInHierarchy ||
-                           (targets[i][j].IsChildOf(quantumMoon.transform) && quantumMoonAtmosphere.activeInHierarchy == false && quantumMoonEyeState.activeInHierarchy == false) ||
-                           (targets[i][j].transform.root.gameObject.name.Substring(0,3) == "DB_" && darkBrambleCloakSphereRenderer.enabled == false) ||
-                           (Vector3.Distance(targets[i][j].position, supernovaController.transform.position) < supernovaController._currentSupernovaScale && targets[i][j].root.gameObject.name != "TimeLoopRing_Body"))
-                        {
-                            continue;
-                        }
-
-                        trails[i].SetPosition(0, transform.position); //The start of the trail
-                        trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f); //The trail's target (offset to approximate pointing at NPCs' heads)
-                        //Intermediate points for smoother width interpolation
-                        trails[i].SetPosition(1, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.1f));
-                        trails[i].SetPosition(2, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.89f));
-                        
-                        trails[i].widthMultiplier = Mathf.Min(widthMultiplier, Vector3.Distance(trails[i].GetPosition(3), transform.position) / 250);
-                        validTarget = true;
-                        break;
+                        continue;
                     }
-                    trails[i].gameObject.SetActive(validTarget);
+
+                    trails[i].SetPosition(0, transform.position); //The start of the trail
+                    trails[i].SetPosition(3, targets[i][j].position + targets[i][j].up * 1.5f); //The trail's target (offset to approximate pointing at NPCs' heads)
+                    //Intermediate points for smoother width interpolation
+                    trails[i].SetPosition(1, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.1f));
+                    trails[i].SetPosition(2, Vector3.Lerp(trails[i].GetPosition(0), trails[i].GetPosition(3), 0.89f));
+                        
+                    trails[i].widthMultiplier = Mathf.Min(widthMultiplier, Vector3.Distance(trails[i].GetPosition(3), transform.position) / 250);
+                    validTarget = true;
+                    break;
                 }
-            }
-            else
-            {
-                foreach (var trail in trails)
-                {
-                    trail.gameObject.SetActive(false);
-                }
+                trails[i].gameObject.SetActive(validTarget);
             }
         }
         #endregion
