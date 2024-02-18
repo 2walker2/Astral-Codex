@@ -19,6 +19,8 @@ namespace AstralCodex
         float timeStayed = 0f;
         bool trailsActivated = false;
         GameObject trailsReveal;
+        Rotate populationOrbRotator;
+        Rotate spacecraftOrbRotator;
 
         void Start()
         {
@@ -26,6 +28,8 @@ namespace AstralCodex
             Initialize();
 
             trailsReveal = SearchUtilities.Find("TrailsReveal");
+            populationOrbRotator = SearchUtilities.Find("Station/Spacecraft Area/Scanner/Orb").GetComponent<Rotate>();
+            spacecraftOrbRotator = SearchUtilities.Find("Station/Population Area/Scanner/Orb").GetComponent<Rotate>();
 
             //Restore state from last loop
             if (PlayerData.GetPersistentCondition(TrailsActivatedCondition))
@@ -58,6 +62,8 @@ namespace AstralCodex
             Trails.visible = value;
 
             trailsReveal.SetActive(value);
+            populationOrbRotator.enabled = value;
+            spacecraftOrbRotator.enabled = value;
 
             PlayerData.SetPersistentCondition(TrailsActivatedCondition, value);
         }

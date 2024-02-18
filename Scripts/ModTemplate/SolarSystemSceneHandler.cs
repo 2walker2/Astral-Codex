@@ -116,7 +116,9 @@ namespace AstralCodex
             {"Station/Black Hole Water/BlackHoleWarpCoreRoot/BlackHoleWarpCorePosittion", new Vector3(-30, 0, 0) },
             {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot", new Vector3(0, 15, 0) },
             {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot/WhiteHoleWarpCorePosition", new Vector3(-30, 0, 0) },
-            {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) }
+            {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) },
+            {"Station/Spacecraft Area/Scanner/Orb", new Vector3(100, 0, 0) },
+            {"Station/Population Area/Scanner/Orb", new Vector3(100, 0, 0) }
         };
 
         List<string> visibleToProbeChimeProps = new List<string>()
