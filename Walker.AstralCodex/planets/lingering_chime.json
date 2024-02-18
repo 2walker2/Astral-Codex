@@ -88,6 +88,11 @@
 				"rename": "StationGhostMatterEffects"
 			},
 			{
+				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
+				"position": {"y": -3.5, "z": 70},
+				"rename": "GeodeGhostMatterEffects"
+			},
+			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
 				"position": {"x": 0.1695, "y": 0.8547, "z": 31.7184},
 				"rotation": {"x": 5.5689, "y": 4.0401, "z": 355.4895},
