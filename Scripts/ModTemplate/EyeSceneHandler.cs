@@ -33,6 +33,7 @@ namespace AstralCodex
                 ConfigureMuseumPlaque();
                 InitializeProximityQuantumStates();
                 ConfigureRecorder();
+                AddProbeDestructionVolumes();
             }
         }
         #endregion
@@ -111,6 +112,13 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND PRECURSOR RECORDER OR ITS ANCHOR", MessageType.Error);
+        }
+
+        void AddProbeDestructionVolumes()
+        {
+            //Make it easier to lose the probe in the eye by adding additional destruction volumes
+            foreach (EndlessTriggerVolume endlessVolume in FindObjectsOfType<EndlessTriggerVolume>())
+                endlessVolume.gameObject.AddComponent<ProbeDestructionVolume>();
         }
         #endregion
     }
