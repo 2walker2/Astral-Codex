@@ -447,7 +447,12 @@ namespace AstralCodex
             {
                 GameObject propGO = SearchUtilities.Find(prop);
                 if (propGO != null)
-                    propGO.layer = 22;
+                {
+                    Renderer[] propRenderers = propGO.GetComponentsInChildren<Renderer>();
+                    foreach (Renderer renderer in propRenderers)
+                        renderer.gameObject.layer = 22;
+                }
+                    
                 else
                     Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME PROP "+prop, MessageType.Error);
             }
