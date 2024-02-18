@@ -20,6 +20,8 @@ namespace AstralCodex
         #region Private Variables
         bool flashbackOverridden = false;
         NomaiExperimentBlackHole experimentBlackHole;
+        GameObject skySphere;
+        StarfieldController starfieldController;
         #endregion
 
         #region Path Lists
@@ -116,7 +118,9 @@ namespace AstralCodex
             {"Station/Black Hole Water/BlackHoleWarpCoreRoot/BlackHoleWarpCorePosittion", new Vector3(-30, 0, 0) },
             {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot", new Vector3(0, 15, 0) },
             {"Station/Orbiting Water Root/ChimeWhiteHoleWater/White Hole/WhiteHoleWarpCoreRoot/WhiteHoleWarpCorePosition", new Vector3(-30, 0, 0) },
-            {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) }
+            {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) },
+            {"Station/Spacecraft Area/Scanner/Orb", new Vector3(100, 0, 0) },
+            {"Station/Population Area/Scanner/Orb", new Vector3(100, 0, 0) }
         };
 
         List<string> visibleToProbeChimeProps = new List<string>()
@@ -156,13 +160,15 @@ namespace AstralCodex
 
                 //Specific configurations
                 HideFlashbackSlides();
-                ReplaceSkyboxMaterial();
+                ConfigureSkybox();
                 IncreaseGhostMatterDamage();
                 EnableEmberTreeCollision();
                 InitializeSpacetimeStabilitySystem();
                 RemoveBreakableComponentFromBramblePlatforms();
                 RemoveSubmergeControllerFromBrambleGhostMatter();
                 ConfigureBrambleWarpPads();
+                PreventBaseGameDialogue();
+                MakeBrambleCloakSphereCastShadows();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -258,10 +264,10 @@ namespace AstralCodex
                 Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SLIDES", MessageType.Error);
         }
 
-        void ReplaceSkyboxMaterial()
+        void ConfigureSkybox()
         {
             //Replace skybox material with a transparent version so the default stars are still visible
-            GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+            skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
             if (skySphere != null)
             {
                 for (int i = 0; i < skySphere.transform.childCount; i++)
@@ -272,6 +278,8 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND SKY SPHERE", MessageType.Error);
+
+            starfieldController = FindObjectOfType<StarfieldController>();
         }
 
         void IncreaseGhostMatterDamage()
@@ -332,6 +340,25 @@ namespace AstralCodex
             warpTransmitter._warpRadius = 5;
             NomaiWarpReceiver warpReceived = SearchUtilities.Find("BrambleWarpReceiver").GetComponent<NomaiWarpReceiver>();
             warpReceived._warpRadius = 5;
+        }
+
+        void PreventBaseGameDialogue()
+        {
+            //Slate
+            CapsuleCollider slateDialogueCollider = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").GetComponent<CapsuleCollider>();
+            slateDialogueCollider.radius = 0;
+            slateDialogueCollider.height = 0;
+
+            //Self
+            CapsuleCollider selfDialogueCollider = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player").GetComponent<CapsuleCollider>();
+            selfDialogueCollider.radius = 0;
+            selfDialogueCollider.height = 0;
+        }
+
+        void MakeBrambleCloakSphereCastShadows()
+        {
+            MeshRenderer brambleCloakSphereRenderer = SearchUtilities.Find("DB_HubDimension_Body/BrambleRepelVolume/CloakSphere").GetComponent<MeshRenderer>();
+            brambleCloakSphereRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
         }
         #endregion
 
@@ -424,7 +451,12 @@ namespace AstralCodex
             {
                 GameObject propGO = SearchUtilities.Find(prop);
                 if (propGO != null)
-                    propGO.layer = 22;
+                {
+                    Renderer[] propRenderers = propGO.GetComponentsInChildren<Renderer>();
+                    foreach (Renderer renderer in propRenderers)
+                        renderer.gameObject.layer = 22;
+                }
+                    
                 else
                     Main.modHelper.Console.WriteLine("FAILED TO FIND CHIME PROP "+prop, MessageType.Error);
             }
@@ -521,6 +553,7 @@ namespace AstralCodex
                 }
 
                 StabilizeSpacetime();
+                PreventSkyboxInDreamWorld();
 
                 DebugUtilities();
             }
@@ -575,6 +608,14 @@ namespace AstralCodex
                     experimentBlackHole._duplicateActive = false; //Prevent from breaking via HEL experiment
                 }
             }
+        }
+
+        void PreventSkyboxInDreamWorld()
+        {
+            if (skySphere.activeSelf && starfieldController._playerInDreamWorld)
+                skySphere.SetActive(false);
+            else if (!skySphere.activeSelf && !starfieldController._playerInDreamWorld)
+                skySphere.SetActive(true);
         }
 
         void DebugUtilities()

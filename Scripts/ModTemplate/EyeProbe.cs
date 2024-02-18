@@ -21,6 +21,7 @@ namespace AstralCodex
         GameObject signal; //The GameObject holding the signal
         Transform player; //The player's transform
         NomaiText recorder; //The recorder GameObject spawned by the final quantum state
+        GameObject recorderGO; //The parent GameObject of the recorder
         NomaiTranslator translator; //The player's translator tool
         NewHorizons.Components.Quantum.NHMultiStateQuantumObject quantumStates; //The QuantumStates component
         PlayerCameraEffectController cameraEffectController; //The effect controller on the main camera
@@ -44,6 +45,7 @@ namespace AstralCodex
                 player = Locator.GetPlayerTransform();
                 translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
                 recorder = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Quantum States - codex_eye_probe/ScannerState7/Scanner Orb/Sphere/PrecursorRecorderPosition/EyeRecorderPrecursor/InteractSphere").GetComponent<NomaiText>();
+                recorderGO = recorder.transform.parent.gameObject;
                 cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
                 musicSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicSource").GetComponent<OWAudioSource>();
                 musicFinaleSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicFinaleSource").GetComponent<OWAudioSource>();
@@ -71,9 +73,7 @@ namespace AstralCodex
         {
             //Enable/disable ability to change quantum state based on distance
             quantumStates._isQuantum = (transform.position - player.position).magnitude < distance;
-            //Disable signal once on final state
-            if (signal != null && signal.activeSelf && quantumStates._stateIndex == quantumStates._states.Length - 1)
-                signal.SetActive(false);
+
             //Lights
             /*if ((transform.position - player.position).magnitude < lightDistance)
             {
@@ -91,12 +91,13 @@ namespace AstralCodex
                         p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
                 }
             }*/
+
             //Trigger blink once recorder is read
-            /*if (recorder._dictNomaiTextData[4].IsTranslated && !translator._isEquipped && !blinkCalled)
+            if (recorder._dictNomaiTextData[10].IsTranslated && !translator._isEquipped && !blinkCalled)
             {
                 blinkCalled = true;
                 StartCoroutine(nameof(Disappear));
-            }*/
+            }
         }
         #endregion
 
@@ -128,23 +129,19 @@ namespace AstralCodex
             quantumStates.gameObject.SetActive(false);
         }
 
-        /*IEnumerator Disappear()
+        IEnumerator Disappear()
         {
             yield return new WaitForSeconds(1f);
             cameraEffectController.CloseEyes(0.25f);
             yield return new WaitForSeconds(0.25f);
-            DeactivateProbe();
+            
+            recorderGO.SetActive(false);
+            signal.SetActive(false);
+
             cameraEffectController.OpenEyes(0.25f);
             yield return new WaitForSeconds(0.25f);
             gameObject.SetActive(false);
             yield return null;
-        }*/
-
-        void OnDisable()
-        {
-            //Reset lights
-            foreach (KeyValuePair<Light, float> p in fadeLights)
-                p.Key.intensity = p.Value;
         }
         #endregion
     }
