@@ -20,6 +20,8 @@ namespace AstralCodex
         #region Private Variables
         bool flashbackOverridden = false;
         NomaiExperimentBlackHole experimentBlackHole;
+        GameObject skySphere;
+        StarfieldController starfieldController;
         #endregion
 
         #region Path Lists
@@ -158,7 +160,7 @@ namespace AstralCodex
 
                 //Specific configurations
                 HideFlashbackSlides();
-                ReplaceSkyboxMaterial();
+                ConfigureSkybox();
                 IncreaseGhostMatterDamage();
                 EnableEmberTreeCollision();
                 InitializeSpacetimeStabilitySystem();
@@ -262,10 +264,10 @@ namespace AstralCodex
                 Main.modHelper.Console.WriteLine("FAILED TO FIND FLASHBACK SLIDES", MessageType.Error);
         }
 
-        void ReplaceSkyboxMaterial()
+        void ConfigureSkybox()
         {
             //Replace skybox material with a transparent version so the default stars are still visible
-            GameObject skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
+            skySphere = SearchUtilities.Find("Skybox/Sky Sphere");
             if (skySphere != null)
             {
                 for (int i = 0; i < skySphere.transform.childCount; i++)
@@ -276,6 +278,8 @@ namespace AstralCodex
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND SKY SPHERE", MessageType.Error);
+
+            starfieldController = FindObjectOfType<StarfieldController>();
         }
 
         void IncreaseGhostMatterDamage()
@@ -549,6 +553,7 @@ namespace AstralCodex
                 }
 
                 StabilizeSpacetime();
+                PreventSkyboxInDreamWorld();
 
                 DebugUtilities();
             }
@@ -603,6 +608,14 @@ namespace AstralCodex
                     experimentBlackHole._duplicateActive = false; //Prevent from breaking via HEL experiment
                 }
             }
+        }
+
+        void PreventSkyboxInDreamWorld()
+        {
+            if (skySphere.activeSelf && starfieldController._playerInDreamWorld)
+                skySphere.SetActive(false);
+            else if (!skySphere.activeSelf && !starfieldController._playerInDreamWorld)
+                skySphere.SetActive(true);
         }
 
         void DebugUtilities()
