@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1096252246317738985}
   - component: {fileID: 4855700983078144995}
   - component: {fileID: 7767007392402279283}
-  - component: {fileID: 5933474548010886463}
+  - component: {fileID: 587835131600803904}
+  - component: {fileID: 6464690319687655660}
   m_Layer: 0
   m_Name: Divider
   m_TagString: Untagged
@@ -94,7 +95,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0561538, y: 4.00004, z: 0.19328028}
   m_Center: {x: -0.013090372, y: 1.99998, z: 0}
---- !u!114 &5933474548010886463
+--- !u!114 &587835131600803904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,11 +104,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 2797605827773467480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3014da1c89ce2573a27c371d8ccd9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2230d37408c52364d84739d6ae8956b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _ignorePlayer: 0
   _ignoreProbe: 1
-  _ignoreProbeAnchor: 0
+  _ignoreProbeAnchor: 1
   _preventItemDrop: 0
   _ignoreMarshmallow: 0
+--- !u!114 &6464690319687655660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797605827773467480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 232
+  _interactRange: 3
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
+  _overrideLaunchSpeed: 0
+  _launchSpeed: 0

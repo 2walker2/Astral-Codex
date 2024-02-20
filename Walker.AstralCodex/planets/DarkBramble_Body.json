@@ -127,11 +127,9 @@
 			"DarkMatterVolume/ProbeVisuals",
 			"Effects_GM_AuroraWisps (3)"
 			],
-			"scale": 0.5,
+			"scale": 0.25,
 			"rotation": {
-			"x": 330.1223,
-			"y": 104.530991,
-			"z": 303.1313
+			"x": -235.5973, "y": 255.7522, "z": -390.4306
 			},
 			"alignRadial": false,
 			"position": {
@@ -2201,8 +2199,18 @@
 			"y": 246.44841,
 			"z": -370.890076
 			}
+			},
+			{
+			"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform",
+			"scale": 1.00000012,
+			"rotation": {
+				"x": 336.6559, "y": 102.5558, "z": 306.0076
+			},
+			"alignRadial": false,
+			"position": {
+			"x": -225.4689, "y": 247.6055, "z": -394.883
 			}
-
+			}
 		],
 		"dialogue": [
 			{
@@ -2409,8 +2417,8 @@
 				]
 			},
 			{
-				"position": {"x": -221.2046, "y": 246.579, "z": -397.9525},
-				"rotation": {"x": 308.2608, "y": 64.68594, "z": 330.0126},
+				"position": {"x": -220.3701, "y": 246.691, "z": -398.3224},
+				"rotation": {"x": 312.0136, "y": 73.50795, "z": 323.259},
 				"xmlFile": "planets/text/bramble_sign_building.xml",
 				"type": "trailmarker"
 			}
