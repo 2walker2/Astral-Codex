@@ -613,10 +613,13 @@ namespace AstralCodex
 
         void PreventSkyboxInDreamWorld()
         {
-            if (skySphere.activeSelf && starfieldController._playerInDreamWorld)
-                skySphere.SetActive(false);
-            else if (!skySphere.activeSelf && !starfieldController._playerInDreamWorld)
-                skySphere.SetActive(true);
+            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+            {
+                if (skySphere.activeSelf && starfieldController._playerInDreamWorld)
+                    skySphere.SetActive(false);
+                else if (!skySphere.activeSelf && !starfieldController._playerInDreamWorld)
+                    skySphere.SetActive(true);
+            }
         }
 
         void DebugUtilities()
