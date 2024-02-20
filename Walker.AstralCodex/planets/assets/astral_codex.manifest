@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3747876244
+CRC: 2268977796
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1af0a556675c869fe671e25a77ad9886
+    Hash: fe43ea4011029ce0e4005f3fa44c1ce5
   TypeTreeHash:
     serializedVersion: 2
     Hash: ae6f06510e5441eff35fbb35f3275296
@@ -109,6 +109,7 @@ Assets:
 - Assets/Bundle/Animations/SolarPanelsRising.anim
 - Assets/Bundle/Materials/Whirlpool Edge.mat
 - Assets/Bundle/Textures/Skybox/downImage.png
+- Assets/Bundle/CodecDispenser.prefab
 - Assets/Bundle/Audio/chime_bells.ogg
 - Assets/Bundle/Materials/UnlitWhite.mat
 - Assets/Bundle/Textures/Skybox/frontImage.png
@@ -194,6 +195,7 @@ Assets:
 - Assets/Bundle/Interloper Fuel Tube.prefab
 - Assets/Bundle/StorageCrystalBroken.prefab
 - Assets/Bundle/BrambleProbe.prefab
+- Assets/Bundle/Models/swivel_ring.obj
 - Assets/Bundle/Textures/Eclipse.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_n.png
 - Assets/Bundle/Models/ember_twin.obj
@@ -210,6 +212,7 @@ Assets:
 - Assets/Bundle/Shaders/Whirlpool Edge.shader
 - Assets/Bundle/Codex Galaxy Projection.prefab
 - Assets/Bundle/Materials/Chime Redesign/Thruster Metal.mat
+- Assets/Bundle/Models/floor_diagonal.obj
 - Assets/Bundle/Textures/Whirlpool.png
 - Assets/Bundle/EyeProbe.prefab
 - Assets/Bundle/Textures/WaitHere.png
@@ -242,6 +245,8 @@ Assets:
 - Assets/Bundle/Textures/Reunion Mural.png
 - Assets/Bundle/Materials/Chime Redesign/Sand.mat
 - Assets/Bundle/SkyboxOverlay.prefab
+- Assets/Bundle/Models/Chime Redesign/Dispenser.blend
+- Assets/Bundle/Materials/Chime Redesign/Red Foil.mat
 - Assets/Bundle/StorageCrystal.prefab
 - Assets/Bundle/Models/Chime Redesign/Projector.blend
 - Assets/Bundle/Shaders/RedLight.shader
@@ -249,6 +254,7 @@ Assets:
 - Assets/Bundle/Animations/RotateFastController.controller
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_technology.blend
 - Assets/Bundle/Models/hollow_sphere.obj
+- Assets/Bundle/Models/Chime Redesign/Dispenser_Fin.blend
 - Assets/Bundle/Codex Species Projection.prefab
 - Assets/Bundle/Foliage Group 4.prefab
 - Assets/Bundle/Materials/Chime Redesign/Probe/CornerPiece.png
@@ -307,6 +313,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Metal 1.mat
 - Assets/Bundle/Models/population_bar.obj
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel_modified.blend
+- Assets/Bundle/Materials/Chime Redesign/Dispenser/Lighter Metal.mat
 - Assets/Bundle/Textures/Foliage/Foliage4G.png
 - Assets/Bundle/Models/test_wire.obj
 - Assets/Bundle/Fonts/SpaceMono-Modified.ttf
@@ -321,7 +328,6 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Metal 3.mat
 - Assets/Bundle/Foliage Group 3.prefab
 - Assets/Bundle/White Hole Water.prefab
-- Assets/Bundle/Models/Project2RenderFreestyle.png
 - Assets/Bundle/Models/inverted_sphere.obj
 - Assets/Bundle/Audio/chime_ambience.ogg
 - Assets/Bundle/Materials/Wires/PopulationCodecWireShell.mat
@@ -348,6 +354,7 @@ Assets:
 - Assets/Bundle/Materials/Sprite.mat
 - Assets/Bundle/Codex Environments Projection.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
+- Assets/Bundle/Materials/Chime Redesign/Metal 5.mat
 - Assets/Bundle/Textures/NoiseBig.png
 - Assets/Bundle/Animations/RotateController.controller
 - Assets/Bundle/Materials/Wires/SpacecraftCodecWire.mat

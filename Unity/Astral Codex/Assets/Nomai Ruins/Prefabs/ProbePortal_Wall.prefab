@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1726679454065038832}
   - component: {fileID: 1726679454065038833}
+  - component: {fileID: 851788111517155531}
+  - component: {fileID: 6053946415556130366}
   m_Layer: 0
   m_Name: ProbeWindow
   m_TagString: Untagged
@@ -45,6 +47,42 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 69dfc892ba283144b9266397be31ab72, type: 2}
+--- !u!114 &851788111517155531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726679454065038847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2230d37408c52364d84739d6ae8956b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ignorePlayer: 0
+  _ignoreProbe: 1
+  _ignoreProbeAnchor: 0
+  _preventItemDrop: 0
+  _ignoreMarshmallow: 0
+--- !u!114 &6053946415556130366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726679454065038847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 232
+  _interactRange: 3
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
+  _overrideLaunchSpeed: 0
+  _launchSpeed: 0
 --- !u!1 &1726679454373841193
 GameObject:
   m_ObjectHideFlags: 0
