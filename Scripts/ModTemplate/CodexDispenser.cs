@@ -23,7 +23,7 @@ namespace AstralCodex
         bool animationStarted = false;
 
         //Timing information
-        float totalDuration = 3; //68; //Total duration of the animation
+        float totalDuration = 57.5f; //68; //Total duration of the animation
         float sinkDuration = 5; //How long it takes the probe to sink into the dispenser
         float probeRotationAcceleration = 100; //How fast the probe's rotation speed increases
         float probeRotationMaxSpeed = 250; //How fast the probe rotates once it's inside the dispenser
@@ -40,6 +40,7 @@ namespace AstralCodex
         NomaiComputer coreComputer;
         NomaiTranslator translator;
         Transform coreTransform;
+        OWAudioSource chimeMusic;
 
         Wire sunWire;
         Wire populationWire;
@@ -59,6 +60,7 @@ namespace AstralCodex
             coreComputer = SearchUtilities.Find("CodexCoreComputer").GetComponent<NomaiComputer>();
             translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
             coreTransform = transform.GetChild(0);
+            chimeMusic = SearchUtilities.Find("Station/Audio/Music").GetComponent<OWAudioSource>();
 
             sunWire = GameObject.Find("Sun Wires").GetComponent<Wire>();
             populationWire = GameObject.Find("Population Wires").GetComponent<Wire>();
@@ -133,6 +135,7 @@ namespace AstralCodex
             {
                 if (transform.GetChild(0).GetChild(i) == probe.transform && !animationStarted)
                 {
+                    chimeMusic.FadeOut(2f); //Fade out music
                     StartCoroutine(nameof(CodecAnimation));
                 }
             }
@@ -165,7 +168,7 @@ namespace AstralCodex
             probePrompt.enabled = false;
 
             //Start the animation
-            //animator.Play(AnimatorState);
+            animator.Play(AnimatorState);
 
             //Probe sinks into dispenser
             float sinkStartTime = Time.time;

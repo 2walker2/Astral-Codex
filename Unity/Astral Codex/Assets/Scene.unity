@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 8
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: a07fadb24ea940240afba3afc1a692cc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 156bfb59bd7671245935dc519850bb76, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003999781, g: 0.02884545, b: 0.028052036, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -30350,11 +30350,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Station Redesign v3
       objectReference: {fileID: 0}
-    - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ab47dc4849974bbdce006af51450d, type: 3}
 --- !u!1001 &92571328003566280
@@ -30587,6 +30582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bramble Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 851788111522070987, guid: e2d5ed9cb07c2de4f9fff00395056571,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2d5ed9cb07c2de4f9fff00395056571, type: 3}
