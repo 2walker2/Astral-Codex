@@ -281,9 +281,9 @@
 		"dialogue": [
 			{
 				"rename": "CodecAddendumDialogue",
-				"parentPath": "Sector/Station/CodecDispenser/Core/Collision",
+				"parentPath": "Sector/Station/CodecDispenser/Core",
 				"isRelativeToParent": true,
-				"radius": 1.5,
+				"radius": 2,
 				"range": 5,
 				"xmlFile": "planets/text/codex_dialogue_addendum.xml"
 			}

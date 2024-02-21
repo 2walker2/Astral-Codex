@@ -8,6 +8,7 @@ using System.Collections;
 using UnityEngine.UIElements;
 using NewHorizons.OtherMods;
 using UnityEngine.Playables;
+using UnityEngine.InputSystem;
 
 namespace AstralCodex
 {
@@ -17,22 +18,28 @@ namespace AstralCodex
         const string CoreActivatedCondition = "CODEX_ACTIVATED_CORE";
 
         bool active = false;
+        bool startedScalingCore = false;
+        bool coreScaled = false;
         bool animationStarted = false;
 
         //Timing information
-        float totalDuration = 68; //Total duration of the animation
+        float totalDuration = 3; //68; //Total duration of the animation
         float sinkDuration = 5; //How long it takes the probe to sink into the dispenser
-        float probeMaxRotationSpeed = 500; //How fast the probe rotates once it's inside the dispenser
-        AnimationCurve probeRotationSpeedCurve; //The curve used to update the probe's rotation speed
+        float probeRotationAcceleration = 100; //How fast the probe's rotation speed increases
+        float probeRotationMaxSpeed = 250; //How fast the probe rotates once it's inside the dispenser
         float particleBurstTime = 29; //The time when the particle burst occurs
+
+        float coreMaxScale = 1;
+        float coreScaleSpeed = 0.5f;
 
         SurveyorProbe probe;
         ProbeLauncher probeLauncher;
-        OWRigidbody owRigidbody;
         ProbePromptReceiver probePrompt;
         Animator animator;
         GameObject addendumDialogueTrigger;
         NomaiComputer coreComputer;
+        NomaiTranslator translator;
+        Transform coreTransform;
 
         Wire sunWire;
         Wire populationWire;
@@ -46,52 +53,103 @@ namespace AstralCodex
             //Component references
             probe = Locator.GetProbe();
             probeLauncher = Locator.GetPlayerCamera().GetComponentInChildren<ProbeLauncher>();
-            owRigidbody = GetComponent<OWRigidbody>();
             probePrompt = GetComponentInChildren<ProbePromptReceiver>();
-            animator = transform.parent.parent.GetComponentInChildren<Animator>();
-            addendumDialogueTrigger = transform.Find("CodecAddendumDialogue").gameObject;
+            animator = transform.parent.GetComponentInChildren<Animator>();
+            addendumDialogueTrigger = SearchUtilities.Find("CodecAddendumDialogue").gameObject;
             coreComputer = SearchUtilities.Find("CodexCoreComputer").GetComponent<NomaiComputer>();
+            translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
+            coreTransform = transform.GetChild(0);
 
             sunWire = GameObject.Find("Sun Wires").GetComponent<Wire>();
             populationWire = GameObject.Find("Population Wires").GetComponent<Wire>();
             technologyWire = GameObject.Find("Technology Wires").GetComponent<Wire>();
 
-            //Restore previous state
-            active = PlayerData.GetPersistentCondition(CoreActivatedCondition);
+            //Start deactivated
+            addendumDialogueTrigger.SetActive(false);
+            probePrompt.enabled = false;
+            coreComputer.ClearAllEntries();
 
-            addendumDialogueTrigger.SetActive(active);
-            probePrompt.gameObject.SetActive(active);
-            if (!active)
-                coreComputer.ClearAllEntries();
+            //Restore previous state
+            if (PlayerData.GetPersistentCondition(CoreActivatedCondition))
+                Activate();
         }
 
         void Update()
         {
+            //Debug
+            if (Main.debugMode)
+            {
+                if (Keyboard.current.lKey.isPressed && Keyboard.current.uKey.wasPressedThisFrame)
+                    Activate();
+            }
+
+            //Activate
             if (!active)
             {
                 if (sunWire.on && populationWire.on && technologyWire.on)
                 {
-                    active = true;
-                    PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
-                    probePrompt.gameObject.SetActive(true);
-                    coreComputer.DisplayAllEntries();
+                    Activate();
+                }
+            }
+            else if (!startedScalingCore)
+            {
+                //Wait for player to translate computer before activating core
+                if (!translator.IsEquipped())
+                {
+                    bool computerTranslated = true;
+                    for (int i = 1; i <= 3; i++)
+                    {
+                        if (!coreComputer._dictNomaiTextData[i].IsTranslated)
+                        {
+                            computerTranslated = false;
+                            break;
+                        }
+                    }
+                    if (computerTranslated)
+                    {
+                        coreComputer.ClearAllEntries();
+                        StartCoroutine(ScaleCore());
+                    }
                 }
             }
         }
 
+        void Activate()
+        {
+            active = true;
+            PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
+            coreComputer.DisplayEntry(1);
+            coreComputer.DisplayEntry(2);
+            coreComputer.DisplayEntry(3);
+        }
+
         void ProbeAnchored()
         {
-            if (!active)
+            if (!coreScaled)
                 return;
 
             //Check if the probe is now a child of this object's child
-            for (int i=0; i<transform.GetChild(0).childCount; i++)
+            for (int i=0; i<coreTransform.childCount; i++)
             {
-                if (transform.GetChild(0).GetChild(i) == probe.transform)
+                if (transform.GetChild(0).GetChild(i) == probe.transform && !animationStarted)
                 {
                     StartCoroutine(nameof(CodecAnimation));
                 }
             }
+        }
+
+        IEnumerator ScaleCore()
+        {
+            startedScalingCore = true;
+
+            while (coreTransform.localScale.x < coreMaxScale)
+            {
+                coreTransform.localScale += Vector3.one * coreScaleSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+
+            coreScaled = true;
+            probePrompt.enabled = true;
         }
 
         IEnumerator CodecAnimation()
@@ -104,10 +162,10 @@ namespace AstralCodex
             probeLauncher._isRetrieving = true;
 
             //Disable probe launch prompt
-            probePrompt.gameObject.SetActive(false);
+            probePrompt.enabled = false;
 
             //Start the animation
-            animator.Play(AnimatorState);
+            //animator.Play(AnimatorState);
 
             //Probe sinks into dispenser
             float sinkStartTime = Time.time;
@@ -120,8 +178,17 @@ namespace AstralCodex
                 yield return new WaitForEndOfFrame();
             }
 
-            //Wait until the animation is complete
-            yield return new WaitForSeconds(totalDuration - (Time.time - startTime));
+            //Spin probe and wait for animation to be complete
+            float probeRotationSpeed = 0;
+            while (Time.time - startTime < totalDuration)
+            {
+                if (probeRotationSpeed < probeRotationMaxSpeed)
+                    probeRotationSpeed += probeRotationAcceleration * Time.deltaTime;
+                probe.transform.Rotate(Vector3.one * probeRotationSpeed * Time.deltaTime);
+                yield return new WaitForEndOfFrame();
+            }
+
+            Main.modHelper.Console.WriteLine("FINISHING CODEC ANIMATION");
 
             //Enable the dialogue trigger
             addendumDialogueTrigger.SetActive(true);
@@ -135,14 +202,28 @@ namespace AstralCodex
             //Wait for the player to stop interacting with the dialogue
             yield return new WaitUntil(() => !addendumDialogueInteractReceiver._hasInteracted);
 
+            //Disable the dialogue trigger
+            addendumDialogueTrigger.SetActive(false);
+
             //Release probe
             probe.Unanchor();
             probeLauncher._isRetrieving = false;
 
+            //Display last computer entry
+            coreComputer.DisplayEntry(4);
+
+            //Scale down core
+            while (coreTransform.localScale.x > 0)
+            {
+                coreTransform.localScale -= Vector3.one * coreScaleSpeed * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            transform.localScale = Vector3.zero;
+
             //Switch final end times music
             MusicHandler.SetFinalEndTimes();
 
-            yield return null;
+            Main.modHelper.Console.WriteLine("CODEC ANIMATION COROUTINE COMPLETE");
         }
     }
 }

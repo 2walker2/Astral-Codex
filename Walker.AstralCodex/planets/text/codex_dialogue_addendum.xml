@@ -45,8 +45,6 @@
 			<DialogueOption>
 				<Text><![CDATA[<i>Finally, yourself...</i>]]></Text>
 				<DialogueTarget>End</DialogueTarget>
-				<RequiredCondition>CODEX_ADDENDUM_NOMAI</RequiredCondition>
-				<RequiredCondition>CODEX_ADDENDUM_STRANGERS</RequiredCondition>
 				<RequiredCondition>CODEX_ADDENDUM_HEARTHIANS</RequiredCondition>
 			</DialogueOption>
 		</DialogueOptionsList>

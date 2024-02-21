@@ -75,7 +75,7 @@ namespace AstralCodex
             {"TranslationProbe2", typeof(EmberProjectionActivate) },
             {"Sector_CaveTwin/Railing 1", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 2", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 3", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 4", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 5", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 6", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 7", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 8", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 9", typeof(BoxCollider) }, { "Sector_CaveTwin/Railing 10", typeof(BoxCollider) },
             {"TranslationProbe1", typeof(BrambleProjectionActivate) },
-            {"CodecDispenser/Core/Collision", typeof(CodexDispenser) },
+            {"CodecDispenser/Core", typeof(CodexDispenser) },
             {"Trail Wires/Activation Trigger", typeof(TrailActivation) },
             {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) },
             {"BrambleWarpReceiver", typeof(DisableShapeInShip) },
@@ -556,7 +556,8 @@ namespace AstralCodex
                 StabilizeSpacetime();
                 PreventSkyboxInDreamWorld();
 
-                DebugUtilities();
+                if (Main.debugMode)
+                    DebugUtilities();
             }
         }
         #endregion
@@ -632,7 +633,7 @@ namespace AstralCodex
                     OWRigidbody playerBody = Locator.GetPlayerBody();
                     if (playerBody != null)
                     {
-                        playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(0, -34990, 0));
+                        playerBody.SetPosition(Locator.GetSunTransform().position + new Vector3(3, -35010, 0));
                         playerBody.SetVelocity(Vector3.zero);
                         playerBody.SetAngularVelocity(Vector3.zero);
                     }

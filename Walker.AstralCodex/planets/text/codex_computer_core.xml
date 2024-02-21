@@ -20,4 +20,9 @@ tests passed - disabled codec safeguards
 core activated - insert device for download
 </Text>
 	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>CODEC DOWNLOADED MESSAGE HERE</Text>
+	</TextBlock>
 </NomaiObject>
