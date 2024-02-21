@@ -843,7 +843,7 @@ GameObject:
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &798056027
 Transform:
   m_ObjectHideFlags: 0
@@ -30290,6 +30290,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 187842316238641629, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2579636452285666297, guid: 602ab47dc4849974bbdce006af51450d,
         type: 3}
       propertyPath: m_RootOrder
@@ -30345,10 +30350,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5968723218551797228, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
         type: 3}
       propertyPath: m_Name
       value: Station Redesign v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448156498448378091, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376244709037722900, guid: 602ab47dc4849974bbdce006af51450d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ab47dc4849974bbdce006af51450d, type: 3}
