@@ -10,7 +10,8 @@ namespace AstralCodex
 {
     class ProbeParticles: MonoBehaviour
     {
-        #region Private Variables
+        #region Variables
+        bool suppressed = false;
         ParticleSystem particleSystem; //The particle system on this object
         #endregion
 
@@ -32,10 +33,14 @@ namespace AstralCodex
         #region Play Particles
         void Update()
         {
-            /*
-            if (!particleSystem.isPlaying && PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
+            if (!suppressed && !particleSystem.isPlaying && PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
                 particleSystem.Play();
-            */
+        }
+
+        public void Suppress(bool value)
+        {
+            suppressed = value;
+            particleSystem.gameObject.SetActive(!suppressed);
         }
         #endregion
     }

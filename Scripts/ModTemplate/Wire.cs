@@ -10,15 +10,15 @@ namespace AstralCodex
     class Wire : MonoBehaviour
     {
         #region Material Properties
-        const string SpeedProperty = "_Speed";
-        const string HighlightColorProperty = "_HighlightColor";
-        const string BaseColorProperty = "_BaseColor";
+        public const string SpeedProperty = "_Speed";
+        public const string HighlightColorProperty = "_HighlightColor";
+        public const string BaseColorProperty = "_BaseColor";
         #endregion
 
         #region Material Property Values
-        private float[] speeds = {0.5f, 0.25f}; //The speed stripes on the wire move when on vs. off
-        private Color[] highlightColors = { new Color(0, 1, 0.576f), new Color(1, 0, 0.271f) }; //The color of the stripes on the wire when on vs. off
-        private Color[] baseColors = { new Color(0, 0.498f, 0.518f), new Color(1, 0.792f, 0.769f) }; //The base color of the wire when on vs. off
+        public static float[] speeds = {0.5f, 0.25f}; //The speed stripes on the wire move when on vs. off
+        public static Color[] highlightColors = { new Color(0, 1, 0.576f), new Color(1, 0, 0.271f) }; //The color of the stripes on the wire when on vs. off
+        public static Color[] baseColors = { new Color(0, 0.498f, 0.518f), new Color(1, 0.792f, 0.769f) }; //The base color of the wire when on vs. off
         #endregion
 
         #region Variables

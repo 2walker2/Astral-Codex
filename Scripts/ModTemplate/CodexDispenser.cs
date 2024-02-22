@@ -9,6 +9,7 @@ using UnityEngine.UIElements;
 using NewHorizons.OtherMods;
 using UnityEngine.Playables;
 using UnityEngine.InputSystem;
+using System;
 
 namespace AstralCodex
 {
@@ -25,15 +26,14 @@ namespace AstralCodex
         //Timing information
         float totalDuration = 57.5f; //68; //Total duration of the animation
         float sinkDuration = 5; //How long it takes the probe to sink into the dispenser
-        float probeRotationAcceleration = 100; //How fast the probe's rotation speed increases
-        float probeRotationMaxSpeed = 250; //How fast the probe rotates once it's inside the dispenser
-        float particleBurstTime = 29; //The time when the particle burst occurs
+        float probeRotationAcceleration = 10; //How fast the probe's rotation speed increases
+        float probeRotationMaxSpeed = 150; //How fast the probe rotates once it's inside the dispenser
 
         float coreMaxScale = 1;
         float coreScaleSpeed = 0.5f;
 
         SurveyorProbe probe;
-        Light probeLight;
+        Light[] probeLights;
         ProbeLauncher probeLauncher;
         ProbePromptReceiver probePrompt;
         Animator animator;
@@ -42,6 +42,11 @@ namespace AstralCodex
         NomaiTranslator translator;
         Transform coreTransform;
         OWAudioSource chimeMusic;
+        ParticleSystem addendumParticles;
+        ProbeParticles probeParticles;
+        GameObject shatterEffect;
+        MeshRenderer baseModelRenderer;
+        int wireMaterialIndex = 5;
 
         Wire sunWire;
         Wire populationWire;
@@ -54,7 +59,7 @@ namespace AstralCodex
 
             //Component references
             probe = Locator.GetProbe();
-            probeLight = probe.transform.Find("AmbientLight_Probe").GetComponent<Light>();
+            probeLights = probe.transform.GetComponentsInChildren<Light>();
             probeLauncher = Locator.GetPlayerCamera().GetComponentInChildren<ProbeLauncher>();
             probePrompt = GetComponentInChildren<ProbePromptReceiver>();
             animator = transform.parent.GetComponentInChildren<Animator>();
@@ -63,6 +68,10 @@ namespace AstralCodex
             translator = SearchUtilities.Find("Player_Body/PlayerCamera/NomaiTranslatorProp").GetComponent<NomaiTranslator>();
             coreTransform = transform.GetChild(0);
             chimeMusic = SearchUtilities.Find("Station/Audio/Music").GetComponent<OWAudioSource>();
+            addendumParticles = SearchUtilities.Find("Station/CodecDispenser/AddendumParticles").GetComponent<ParticleSystem>();
+            probeParticles = probe.GetComponentInChildren<ProbeParticles>();
+            baseModelRenderer = SearchUtilities.Find("Station/CodecDispenser/Model/Base").GetComponent<MeshRenderer>();
+            shatterEffect = SearchUtilities.Find("Station/CodecDispenser/Shatter Effect");
 
             sunWire = GameObject.Find("Sun Wires").GetComponent<Wire>();
             populationWire = GameObject.Find("Population Wires").GetComponent<Wire>();
@@ -125,6 +134,13 @@ namespace AstralCodex
             coreComputer.DisplayEntry(1);
             coreComputer.DisplayEntry(2);
             coreComputer.DisplayEntry(3);
+
+            //Update material properties
+            int propertyValueIndex = active ? 0 : 1;
+            Material[] baseModelMaterials = baseModelRenderer.materials;
+            baseModelMaterials[wireMaterialIndex].SetFloat(Wire.SpeedProperty, Wire.speeds[propertyValueIndex]);
+            baseModelMaterials[wireMaterialIndex].SetColor(Wire.HighlightColorProperty, Wire.highlightColors[propertyValueIndex]);
+            baseModelMaterials[wireMaterialIndex].SetColor(Wire.BaseColorProperty, Wire.baseColors[propertyValueIndex]);
         }
 
         void ProbeAnchored()
@@ -169,33 +185,35 @@ namespace AstralCodex
             //Disable probe launch prompt
             probePrompt.enabled = false;
 
+            //Suppress probe particles
+            probeParticles.Suppress(true);
+
             //Start the animation
             animator.Play(AnimatorState);
 
             //Save probe light's initial intensity
-            float probeLightInitialIntensity = probeLight.intensity;
+            float[] probeLightsInitialIntensity = new float[probeLights.Length];
+            for (int i=0; i<probeLights.Length;  i++)
+                probeLightsInitialIntensity[i] = probeLights[i].intensity;
 
             //Probe sinks into dispenser
             float sinkStartTime = Time.time;
             Vector3 probeStartPosition = probe.GetAnchor()._localImpactPos;
+            Vector3 probeFinalPosition = -probe.GetAnchor()._localImpactPos.normalized * 0.1f;
             while (Time.time - sinkStartTime < sinkDuration)
             {
                 float t = (Time.time - sinkStartTime) / sinkDuration;
-                probe.GetAnchor()._localImpactPos = Vector3.Lerp(probeStartPosition, Vector3.zero, t);
-                probeLight.intensity = Mathf.Lerp(probeLightInitialIntensity, 0, t);
+                probe.GetAnchor()._localImpactPos = Vector3.Lerp(probeStartPosition, probeFinalPosition, t);
+
+                //Fade lights out
+                for (int i=0; i<probeLights.Length; i++)
+                    probeLights[i].intensity = Mathf.Lerp(probeLightsInitialIntensity[i], 0.01f, t);
 
                 yield return new WaitForEndOfFrame();
             }
 
-            //Spin probe and wait for animation to be complete
-            /*float probeRotationSpeed = 0;
-            while (Time.time - startTime < totalDuration)
-            {
-                if (probeRotationSpeed < probeRotationMaxSpeed)
-                    probeRotationSpeed += probeRotationAcceleration * Time.deltaTime;
-                probe.transform.Rotate(Vector3.up * probeRotationSpeed * Time.deltaTime);
-                yield return new WaitForEndOfFrame();
-            }*/
+            //Start spinning the probe
+            Coroutine spinProbeCoroutine = StartCoroutine(RotateProbe());
 
             //Wait for animation to be complete
             yield return new WaitForSeconds(totalDuration - (Time.time - startTime));
@@ -208,6 +226,9 @@ namespace AstralCodex
             addendumDialogueInteractReceiver._screenPrompt._text = "<CMD> Write Addendum"; //These will need to be translated
             addendumDialogueInteractReceiver._noCommandIconPrompt._text = "Write Addendum";
 
+            //Play the addendum particles
+            addendumParticles.Play();
+
             //Wait for the player to interact with the dialogue
             yield return new WaitUntil(() => addendumDialogueInteractReceiver._hasInteracted);
 
@@ -217,28 +238,47 @@ namespace AstralCodex
             //Disable the dialogue trigger
             addendumDialogueTrigger.SetActive(false);
 
+            //Stop the addendum particles
+            addendumParticles.Stop();
+
+            //Stop spinning the probe
+            StopCoroutine(spinProbeCoroutine);
+
             //Release probe
             probe.Unanchor();
             probeLauncher._isRetrieving = false;
 
             //Restore probe light
-            probeLight.intensity = probeLightInitialIntensity;
+            for (int i = 0; i < probeLights.Length; i++)
+                probeLights[i].intensity = probeLightsInitialIntensity[i];
+
+            //Restore probe particles
+            probeParticles.Suppress(false);
 
             //Display last computer entry
             coreComputer.DisplayEntry(4);
 
-            //Scale down core
-            while (coreTransform.localScale.x > 0)
-            {
-                coreTransform.localScale -= Vector3.one * coreScaleSpeed * Time.deltaTime;
-                yield return new WaitForEndOfFrame();
-            }
-            transform.localScale = Vector3.zero;
+            //Shatter the core
+            coreTransform.localScale = Vector3.zero;
+            shatterEffect.gameObject.SetActive(true);
 
             //Switch final end times music
             MusicHandler.SetFinalEndTimes();
 
             Main.modHelper.Console.WriteLine("CODEC ANIMATION COROUTINE COMPLETE");
+        }
+
+        IEnumerator RotateProbe()
+        {
+            float probeRotationSpeed = 0;
+
+            while (true)
+            {
+                if (probeRotationSpeed < probeRotationMaxSpeed)
+                    probeRotationSpeed += probeRotationAcceleration * Time.deltaTime;
+                probe.transform.RotateAround(transform.position, probe.transform.forward, probeRotationSpeed * Time.deltaTime);
+                yield return new WaitForEndOfFrame();
+            }
         }
     }
 }

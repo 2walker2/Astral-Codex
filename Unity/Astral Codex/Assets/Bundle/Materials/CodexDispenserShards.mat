@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CodexDispenserShards
+  m_Shader: {fileID: 4800000, guid: cf8fa6644d21ed749ac74329f710488f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ColorNoise:
+        m_Texture: {fileID: 2800000, guid: c69ae682fdb37454582106ebcd39c492, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: ed52176dbd204314a8bbf2cf3da84543, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Norm:
+        m_Texture: {fileID: 2800000, guid: 19bfd2b8a09c9e24d928dda1ea30ab63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cutoff: 0.5
+    - _DepthBlendDistance: 2
+    - _DepthThresholdMax: 1
+    - _DepthThresholdMin: 0
+    - _FresnelExp: 9
+    - _Gloss: 0.15
+    - _Metallic: 0.5
+    - _NoiseFallSpeed: -0.1
+    - _NoiseHorizontalSpeed: 0.05
+    - _NoiseScale: 2
+    - _NormScale: 1.75
+    - _NormSinOffset: 2
+    - _NormSpeed: 2
+    - _NormStrength: 1.5
+    - _Opacity: 1
+    - _OutlineWidth: 0.01
+    - _Transmission: 0.25
+    - _VertexOffsetStrength: 0
+    m_Colors:
+    - _BaseColor: {r: 0.10849059, g: 1, b: 0.67790616, a: 1}
+    - _BaseColor1: {r: 0.013349922, g: 0.9433962, b: 0.75013536, a: 1}
+    - _BaseColor2: {r: 0, g: 0.7249274, b: 1, a: 1}
+    - _DEBUG_HighlightColor: {r: 1, g: 0, b: 0, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 1}
+    - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.4764151, g: 0.9287392, b: 1, a: 1}
+    - _Specular: {r: 0.6247775, g: 0.9631441, b: 0.9811321, a: 1}

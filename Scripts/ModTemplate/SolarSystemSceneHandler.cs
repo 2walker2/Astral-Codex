@@ -122,7 +122,8 @@ namespace AstralCodex
             {"Station/Props/Staff Crystal/Staff", new Vector3(0, 15, 0) },
             {"Station/Spacecraft Area/Scanner/Orb", new Vector3(100, 0, 0) },
             {"Station/Population Area/Scanner/Orb", new Vector3(100, 0, 0) },
-            {"Station/CodecDispenser/Model/Reflectors", new Vector3(0, 0, 3) }
+            {"Station/CodecDispenser/Model/Reflectors", new Vector3(0, 0, 3) },
+            {"Station/CodecDispenser/Model/Canisters", new Vector3(0, 0, -3) }
         };
 
         List<string> visibleToProbeChimeProps = new List<string>()

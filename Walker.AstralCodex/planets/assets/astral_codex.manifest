@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4074760498
+CRC: 115745094
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1ac1af47f7ac49de3d9bbfdc5179e9af
+    Hash: 9e3469592e8995e2fe16108f3835a710
   TypeTreeHash:
     serializedVersion: 2
     Hash: ae6f06510e5441eff35fbb35f3275296
@@ -126,7 +126,6 @@ Assets:
 - Assets/Bundle/Station Redesign v2.prefab
 - Assets/Bundle/Materials/Foliage1.mat
 - Assets/Bundle/Materials/BlackHole.mat
-- Assets/Bundle/Textures/Grainy 1 - 512x512.png
 - Assets/Bundle/Materials/Chime Redesign/Display Sheet.mat
 - Assets/Bundle/Audio/TractorBeam.wav
 - Assets/Bundle/EyeProbeStates/ScannerState0.prefab
@@ -207,6 +206,7 @@ Assets:
 - Assets/Bundle/Audio/MonolithActivate.wav
 - Assets/Bundle/Materials/Chime Redesign/Probe/Tube.mat
 - Assets/Bundle/Materials/Skybox/SkyboxRight.mat
+- Assets/Bundle/Materials/AddendumParticles.mat
 - Assets/Bundle/Textures/Skybox/leftImage.png
 - Assets/Bundle/Materials/Wires/SunCodecWire.mat
 - Assets/Bundle/Textures/Foliage/WaterDecorG.png
@@ -265,6 +265,7 @@ Assets:
 - Assets/Bundle/Models/chime_exhaust_particle.obj
 - Assets/Bundle/Materials/InterloperFuelTubeGlass.mat
 - Assets/Bundle/Materials/Glass.mat
+- Assets/Bundle/Models/Chime Redesign/CoreShards.blend
 - Assets/Bundle/Materials/Skybox.mat
 - Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
@@ -354,6 +355,7 @@ Assets:
 - Assets/Bundle/Materials/Whirlpool Water.mat
 - Assets/Bundle/Bramble Building.prefab
 - Assets/Bundle/Materials/Sprite.mat
+- Assets/Bundle/Audio/core shatter.ogg
 - Assets/Bundle/Codex Environments Projection.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerFinalTimeV2.wav
 - Assets/Bundle/Materials/Chime Redesign/Metal 5.mat
@@ -371,6 +373,8 @@ Assets:
 - Assets/Bundle/Models/dark_bramble.obj
 - Assets/Bundle/Models/monolith.obj
 - Assets/Bundle/Audio/codec_intense.mp3
+- Assets/Bundle/Materials/CodexDispenserShards.mat
+- Assets/Bundle/Textures/AddendumParticles.png
 - Assets/Bundle/Models/sun.obj
 - Assets/Bundle/Station Redesign v3.prefab
 - Assets/Bundle/EyeProbeStates/ScannerOrb.prefab
@@ -421,6 +425,7 @@ Assets:
 - Assets/Bundle/Animations/DispenseCodec.anim
 - Assets/Bundle/Models/hemisphere.obj
 - Assets/Bundle/Materials/Wires/PopulationTrailWire.mat
+- Assets/Bundle/Materials/Wires/DispenserWire.mat
 - Assets/Bundle/Materials/Chime Redesign/Probe/Scanner 3.mat
 - Assets/Bundle/Materials/Wires/SpacecraftTrailWire.mat
 Dependencies: []
