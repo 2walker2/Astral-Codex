@@ -33,6 +33,7 @@ namespace AstralCodex
         float coreScaleSpeed = 0.5f;
 
         SurveyorProbe probe;
+        Light probeLight;
         ProbeLauncher probeLauncher;
         ProbePromptReceiver probePrompt;
         Animator animator;
@@ -53,6 +54,7 @@ namespace AstralCodex
 
             //Component references
             probe = Locator.GetProbe();
+            probeLight = probe.transform.Find("AmbientLight_Probe").GetComponent<Light>();
             probeLauncher = Locator.GetPlayerCamera().GetComponentInChildren<ProbeLauncher>();
             probePrompt = GetComponentInChildren<ProbePromptReceiver>();
             animator = transform.parent.GetComponentInChildren<Animator>();
@@ -170,6 +172,9 @@ namespace AstralCodex
             //Start the animation
             animator.Play(AnimatorState);
 
+            //Save probe light's initial intensity
+            float probeLightInitialIntensity = probeLight.intensity;
+
             //Probe sinks into dispenser
             float sinkStartTime = Time.time;
             Vector3 probeStartPosition = probe.GetAnchor()._localImpactPos;
@@ -177,19 +182,23 @@ namespace AstralCodex
             {
                 float t = (Time.time - sinkStartTime) / sinkDuration;
                 probe.GetAnchor()._localImpactPos = Vector3.Lerp(probeStartPosition, Vector3.zero, t);
+                probeLight.intensity = Mathf.Lerp(probeLightInitialIntensity, 0, t);
 
                 yield return new WaitForEndOfFrame();
             }
 
             //Spin probe and wait for animation to be complete
-            float probeRotationSpeed = 0;
+            /*float probeRotationSpeed = 0;
             while (Time.time - startTime < totalDuration)
             {
                 if (probeRotationSpeed < probeRotationMaxSpeed)
                     probeRotationSpeed += probeRotationAcceleration * Time.deltaTime;
-                probe.transform.Rotate(Vector3.one * probeRotationSpeed * Time.deltaTime);
+                probe.transform.Rotate(Vector3.up * probeRotationSpeed * Time.deltaTime);
                 yield return new WaitForEndOfFrame();
-            }
+            }*/
+
+            //Wait for animation to be complete
+            yield return new WaitForSeconds(totalDuration - (Time.time - startTime));
 
             Main.modHelper.Console.WriteLine("FINISHING CODEC ANIMATION");
 
@@ -211,6 +220,9 @@ namespace AstralCodex
             //Release probe
             probe.Unanchor();
             probeLauncher._isRetrieving = false;
+
+            //Restore probe light
+            probeLight.intensity = probeLightInitialIntensity;
 
             //Display last computer entry
             coreComputer.DisplayEntry(4);

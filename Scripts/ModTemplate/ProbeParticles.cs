@@ -32,8 +32,10 @@ namespace AstralCodex
         #region Play Particles
         void Update()
         {
+            /*
             if (!particleSystem.isPlaying && PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
                 particleSystem.Play();
+            */
         }
         #endregion
     }

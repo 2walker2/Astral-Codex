@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3827781208
+CRC: 4074760498
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9521c9d318c3b220739e4f94ff91c3fd
+    Hash: 1ac1af47f7ac49de3d9bbfdc5179e9af
   TypeTreeHash:
     serializedVersion: 2
     Hash: ae6f06510e5441eff35fbb35f3275296
@@ -126,6 +126,7 @@ Assets:
 - Assets/Bundle/Station Redesign v2.prefab
 - Assets/Bundle/Materials/Foliage1.mat
 - Assets/Bundle/Materials/BlackHole.mat
+- Assets/Bundle/Textures/Grainy 1 - 512x512.png
 - Assets/Bundle/Materials/Chime Redesign/Display Sheet.mat
 - Assets/Bundle/Audio/TractorBeam.wav
 - Assets/Bundle/EyeProbeStates/ScannerState0.prefab
@@ -146,12 +147,13 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Probe/Rough.png
 - Assets/Bundle/Textures/Foliage/Foliage1G.png
 - Assets/Bundle/Black Hole Interior Particles.prefab
-- Assets/Bundle/Shaders/Custom_CodexDispenser.mat
+- Assets/Bundle/Materials/CodexDispenser.mat
 - Assets/Bundle/Tesseract Activation Effect.prefab
 - Assets/Bundle/Audio/ProgenitorTravelerLoop.wav
 - Assets/Bundle/Textures/Bubble.png
 - Assets/Bundle/Materials/Chime Redesign/ShaderTest/Outer Wilds_Blended_Terrain_Vertex
   Color 4x.asset
+- Assets/Bundle/Textures/Chime Redesign/Terrain_GM_Crystal_a.png
 - Assets/Bundle/Textures/Foliage/Foliage1.png
 - Assets/Bundle/Models/wire2.obj
 - Assets/Bundle/4DParticles.prefab

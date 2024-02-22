@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_CodexDispenser
+  m_Name: CodexDispenser
   m_Shader: {fileID: 4800000, guid: cf8fa6644d21ed749ac74329f710488f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,9 +33,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.5
-    - _DepthBlendDistance: 1
+    - _DepthBlendDistance: 2
     - _DepthThresholdMax: 1
-    - _DepthThresholdMin: 0.25
+    - _DepthThresholdMin: 0
     - _FresnelExp: 9
     - _Gloss: 0.15
     - _Metallic: 0.5
