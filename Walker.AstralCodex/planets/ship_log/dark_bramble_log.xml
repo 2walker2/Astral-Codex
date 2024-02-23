@@ -41,7 +41,7 @@
 
         <ExploreFact>
             <ID>codex_bramble_warp</ID> 
-            <Text>A sealed building contains a nomai device labeled as a warp transmitter.</Text>
+            <Text>A sign outside a sealed building reads "Warp Transmitter".</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>
