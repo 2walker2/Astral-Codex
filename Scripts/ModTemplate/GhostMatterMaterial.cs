@@ -22,13 +22,13 @@ namespace AstralCodex
             "Ring1", "Ring2", "Ring3", "Ring4", "Ring5", "Ring6", "Ring7"
         };
         
-        List<MeshRenderer> renderers; //The mesh renderers on this object and its children
+        List<Renderer> renderers; //The mesh renderers on this object and its children
         #endregion
 
         #region Apply Material
         void Start()
         {
-            renderers = new List<MeshRenderer>(GetComponentsInChildren<MeshRenderer>());
+            renderers = new List<Renderer>(GetComponentsInChildren<Renderer>());
             NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(ApplyMaterial);
         }
 
@@ -37,7 +37,7 @@ namespace AstralCodex
             //Apply the material to this object
             if (renderers != null && renderers.Count > 0)
             {
-                foreach (MeshRenderer r in renderers)
+                foreach (Renderer r in renderers)
                 {
                     Material material = AssetHandler.materials[MaterialName];
                     if (r.material != material)

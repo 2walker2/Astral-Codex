@@ -48,7 +48,8 @@ namespace AstralCodex
             "CodexCoreComputer",
             "CampfireSign",
             "CoresSign",
-            "StaffSign"
+            "StaffSign",
+            "DB_ExitOnlyDimension_Body/Sector_ExitOnlyDimension/Ernesto"
         };
 
         string exhaustName = "Exhaust";

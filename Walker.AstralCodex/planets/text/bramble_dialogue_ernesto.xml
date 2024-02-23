@@ -1,0 +1,16 @@
+<DialogueTree   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Ernesto</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>&#34;{$&gt;+   @|(   )|   /(!{   .|[   %?$@]&gt;}   $)&#34;[$?   !|-~!</Page>
+			<Page>]   {|%~   @|(   {$-   .(&gt;</Page>
+			<Page>]&#34;   &lt;$)   $   ?|&#34;   |.   .(&gt;   &#34;|   /$+~</Page>
+			<Page>]&#34;   /~$&gt;)   $   ?|&#34;   &#34;{$&#34;   )|/~|&gt;~   &lt;|(?-   ~&#38;~&gt;   }|   &#34;|   &#34;{~   ~..|[&#34;   |.   -~!|-]&gt;}   &#34;{])</Page>
+			<Page>&#34;{~   )~![~&#34;   &lt;|[-   ])   <![CDATA[<Color=orange>]]>!|]&gt;&lt;|[?-<![CDATA[</Color>]]></Page>
+			<Page>?~&#34;   /~   +&gt;|&lt;   @|(   .|(&gt;-   ]&#34;</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

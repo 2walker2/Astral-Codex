@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "DB_ExitOnlyDimension",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Orbit": {},
+	"Props": {
+		"details": [
+			{
+				"rename": "Ernesto",
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish",
+				"scale": 0.025,
+				"rotation": {
+					"x": 350.9451,
+					"y": 298.6659,
+					"z": 47.55349
+					},
+				"position": {
+					"x": -99.67702,
+					"y": 458.634277,
+					"z": -55.5638
+					}
+			}
+		],
+		"dialogue": [
+			{
+				"parentPath": "Sector_ExitOnlyDimension/Ernesto",
+				"isRelativeToParent": true,
+				"pathToAnimController": "Sector_ExitOnlyDimension/Ernesto",
+				"radius": 3,
+				"range": 7,
+				"xmlFile": "planets/text/bramble_dialogue_ernesto.xml",
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}
