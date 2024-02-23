@@ -29,7 +29,13 @@ namespace AstralCodex
                     "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket",
                     "DarkBramble_Body"
                 },
-                new List<string> { "AlphaShipMarker" }
+                new List<string> { "AlphaShipMarker" },
+                new List<string> { "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/Prefab_NOM_Vessel_Computer" },
+                new List<string> { "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Interactibles_EscapePod/Prefab_NOM_Vessel_Computer" },
+                new List<string> { 
+                    "Sector_EscapePodBody/Interactables_EscapePodBody/Prefab_NOM_Vessel_Computer",
+                    "DarkBramble_Body"
+                }
             };
         }
         #endregion
