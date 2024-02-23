@@ -123,7 +123,10 @@ namespace AstralCodex
             {"Station/Spacecraft Area/Scanner/Orb", new Vector3(100, 0, 0) },
             {"Station/Population Area/Scanner/Orb", new Vector3(100, 0, 0) },
             {"Station/CodecDispenser/Model/Reflectors", new Vector3(0, 0, 3) },
-            {"Station/CodecDispenser/Model/Canisters", new Vector3(0, 0, -3) }
+            {"Station/CodecDispenser/Model/Canisters", new Vector3(0, 0, -3) },
+            {"Station/Props/Projector Model Sun/Projector_Fin/Head", new Vector3(0, 100, 0) },
+            {"Station/Props/Projector Model Population/Projector_Fin/Head", new Vector3(0, 100, 0) },
+            {"Station/Props/Projector Model Spacecraft/Projector_Fin/Head", new Vector3(0, 100, 0) }
         };
 
         List<string> visibleToProbeChimeProps = new List<string>()

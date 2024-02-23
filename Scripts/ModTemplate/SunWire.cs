@@ -25,8 +25,9 @@ namespace AstralCodex
             sunDisplayRenderer = GameObject.Find("SunDisplay").GetComponent<MeshRenderer>();
             //reveal = GameObject.Find("NoSunCompleteReveal");
             computer = SearchUtilities.Find("CodexEnvironmentsComputer").GetComponent<NomaiComputer>();
-            projection = SearchUtilities.Find("Station/Props/Projector Model/Codex Environments Projection");
+            projection = SearchUtilities.Find("Station/Props/Projector Model Sun/Codex Environments Projection");
             chimeLensLight = SearchUtilities.Find("Station/Lighting/Top Light");
+            projectorRotate = SearchUtilities.Find("Station/Props/Projector Model Sun/Projector_Fin/Head").GetComponent<Rotate>();
             
             Initialize();
         }

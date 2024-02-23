@@ -27,6 +27,9 @@ namespace AstralCodex
         //protected GameObject reveal; //The GameObject containing the reveal for this wire
         protected NomaiComputer computer; //The computer containing the portion of the Codec revealed by this wire
         protected GameObject projection; //The root GameObject of the lidar projection for this wire
+        protected Rotate projectorRotate;
+
+        bool forceRotate = false;
         #endregion
 
         #region Initialization
@@ -53,6 +56,8 @@ namespace AstralCodex
             }*/
             projection?.SetActive(false);
             computer?.ClearAllEntries();
+            if (projectorRotate != null)
+                projectorRotate.enabled = false;
         }
         #endregion
 
@@ -67,6 +72,8 @@ namespace AstralCodex
                 //reveal?.SetActive(true);
                 projection?.SetActive(true);
                 computer?.DisplayAllEntries();
+                if (projectorRotate != null)
+                    projectorRotate.enabled = true;
 
                 UpdateMaterialProperties(on);
             }
@@ -82,6 +89,8 @@ namespace AstralCodex
                 //reveal?.SetActive(false);
                 projection?.SetActive(false);
                 computer?.ClearAllEntries();
+                if (projectorRotate != null && !forceRotate)
+                    projectorRotate.enabled = false;
 
                 UpdateMaterialProperties(on);
             }
@@ -107,6 +116,15 @@ namespace AstralCodex
             ParticleSystem[] projectionParticles = projection.GetComponentsInChildren<ParticleSystem>();
             foreach (ParticleSystem particle in projectionParticles)
                 particle.Stop();
+        }
+
+        public void ForceRotateProjector()
+        {
+            if (projectorRotate != null)
+            {
+                forceRotate = true;
+                projectorRotate.enabled = true;
+            }
         }
         #endregion
     }

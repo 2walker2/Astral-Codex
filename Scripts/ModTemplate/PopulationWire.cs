@@ -34,7 +34,8 @@ namespace AstralCodex
 
             //reveal = GameObject.Find("PopulationCompleteReveal");
             computer = SearchUtilities.Find("CodexSpeciesComputer").GetComponent<NomaiComputer>();
-            projection = SearchUtilities.Find("Station/Props/Projector Model (1)/Codex Species Projection");
+            projection = SearchUtilities.Find("Station/Props/Projector Model Population/Codex Species Projection");
+            projectorRotate = SearchUtilities.Find("Station/Props/Projector Model Population/Projector_Fin/Head").GetComponent<Rotate>();
 
             Initialize();
         }

@@ -34,7 +34,8 @@ namespace AstralCodex
             on = false;
             //reveal = GameObject.Find("SpacecraftCompleteReveal");
             computer = SearchUtilities.Find("CodexGalaxyComputer").GetComponent<NomaiComputer>();
-            projection = SearchUtilities.Find("Station/Props/Projector Model (2)/Codex Galaxy Projection");
+            projection = SearchUtilities.Find("Station/Props/Projector Model Spacecraft/Codex Galaxy Projection");
+            projectorRotate = SearchUtilities.Find("Station/Props/Projector Model Spacecraft/Projector_Fin/Head").GetComponent<Rotate>();
 
             GameObject planetDisplaysRoot = SearchUtilities.Find("Station/Spacecraft Area/SpacecraftDisplays");
             if (planetDisplaysRoot != null)

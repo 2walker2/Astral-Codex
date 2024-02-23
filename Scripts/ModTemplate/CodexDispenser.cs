@@ -177,7 +177,6 @@ namespace AstralCodex
         {
             animationStarted = true;
             float startTime = Time.time;
-            Main.modHelper.Console.WriteLine("STARTING CODEC ANIMATION");
 
             //Prevent player from recalling scout
             probeLauncher._isRetrieving = true;
@@ -192,6 +191,11 @@ namespace AstralCodex
             sunWire.DisableProjection();
             populationWire.DisableProjection();
             technologyWire.DisableProjection();
+
+            //Start spinning the other 3 codec projectors
+            sunWire.ForceRotateProjector();
+            populationWire.ForceRotateProjector();
+            technologyWire.ForceRotateProjector();
 
             //Start the animation
             animator.Play(AnimatorState);
@@ -222,8 +226,6 @@ namespace AstralCodex
 
             //Wait for animation to be complete
             yield return new WaitForSeconds(totalDuration - (Time.time - startTime));
-
-            Main.modHelper.Console.WriteLine("FINISHING CODEC ANIMATION");
 
             //Enable the dialogue trigger
             addendumDialogueTrigger.SetActive(true);
@@ -269,8 +271,6 @@ namespace AstralCodex
 
             //Switch final end times music
             MusicHandler.SetFinalEndTimes();
-
-            Main.modHelper.Console.WriteLine("CODEC ANIMATION COROUTINE COMPLETE");
         }
 
         IEnumerator RotateProbe()
