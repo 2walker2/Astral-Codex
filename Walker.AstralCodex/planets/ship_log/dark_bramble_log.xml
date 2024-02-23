@@ -36,7 +36,12 @@
 
         <ExploreFact>
             <ID>codex_bramble_hologram</ID> 
-            <Text>When I picked up the crystalline scroll, a hologram was projected depicting the solar system. A line connected an object at the edge of the system to a spot below the sun.</Text>
+            <Text>When I picked up a crystalline scroll, a hologram was projected depicting the solar system. An object traveled from the edge of the solar system to a point below the sun.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>codex_bramble_warp</ID> 
+            <Text>A sealed building contains a nomai device labeled as a warp transmitter.</Text>
         </ExploreFact>
     </Entry>
 </AstroObjectEntry>

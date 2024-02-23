@@ -102,8 +102,8 @@ namespace AstralCodex
             {"TranslationProbe1/ScaleRoot/Model/BH Projector Ring/BH Scanner/ScanSource/Brittle Hollow", new Vector3(0, 10, 0) },
             {"TranslationProbe1/ScaleRoot/Model/GD Projector Ring/GD Scanner/ScanSource/Giant's Deep", new Vector3(0, 10, 0) },
             {"TranslationProbe1/ScaleRoot/Model/DB Projector Ring/DB Scanner/ScanSource/DarkBramble", new Vector3(0, 10, 0) },
-            {"TranslationProbe1/Projections/TravelLine/Chime", new Vector3(0, -25, 0) },
-            {"TranslationProbe1/Projections/TravelLine/Eye", new Vector3(0, 10, 0) },
+            {"TranslationProbe1/Projections/Chime", new Vector3(0, -25, 0) },
+            {"TranslationProbe1/Projections/Eye", new Vector3(0, 10, 0) },
             //Chime
             {"Station/Solar Panels", new Vector3(0, 0, 10) },
             {"Station/Orbiting Water Root", new Vector3(0, 3, 0) },

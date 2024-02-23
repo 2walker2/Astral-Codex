@@ -3,4 +3,10 @@
 		<ID>1</ID>
 		<Text>Warp Transmitter</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_bramble_warp</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>
