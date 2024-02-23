@@ -13,7 +13,7 @@
 		<ID>3</ID>
 		<ParentID>2</ParentID>
 		<Text>
-tests passed - disabled codec safeguards
+tests passed - codec safeguards disabled
 |                      \ | /                     |
 |                    --- o ---                   |
 |                      / | \                     |
@@ -23,6 +23,12 @@ core activated - insert device for download
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>CODEC DOWNLOADED MESSAGE HERE</Text>
+		<Text>
+codec downloaded successfully
+|     *     *    *       |    *     *    *     * |
+| *     *      *        \|/      *         *     |
+|  *         *     *   -----           *     *   |
+pass it onwards
+</Text>
 	</TextBlock>
 </NomaiObject>

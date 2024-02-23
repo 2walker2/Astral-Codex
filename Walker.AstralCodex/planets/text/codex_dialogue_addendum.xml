@@ -67,6 +67,7 @@
 		<Name>Nomai_Mission</Name>
 		<Dialogue>
 			<Page>While other Nomai clans survive to this day, one clan's generations-long search for the Eye of the Universe has played a profound role in the final days of this universe.</Page>
+			<Page>Without their records and technology, I could not have made it as far as I have.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -80,6 +81,7 @@
 		<Name>Nomai_Fate</Name>
 		<Dialogue>
 			<Page>Tragically, the Nomai that settled in this solar system were wiped out by an explosion of ghost matter released by a damaged fuel geode from the Lingering Chime.</Page>
+			<Page>They would have been fascinated by this discovery if they had survived.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -93,7 +95,8 @@
 	<DialogueNode>
 		<Name>Strangers</Name>
 		<Dialogue>
-			<Page>The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until a single individual released the signal for the Nomai to find, and was imprisoned for their actions.</Page>
+			<Page>The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until one of them released the signal for the Nomai to find, and was imprisoned for their actions.</Page>
+			<Page>I met The Prisoner but was unable to free them from their fate.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -107,7 +110,8 @@
 	<DialogueNode>
 		<Name>Hearthians</Name>
 		<Dialogue>
-			<Page>I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire. Our space program, Outer Wilds Ventures has made great strides in exploring the solar system we call home.</Page>
+			<Page>I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire.</Page>
+			<Page>Despite the <![CDATA[<i>many</i>]]> dangers of the solar system we call home, our space program has recently allowed us to take our first steps towards the stars.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -121,7 +125,7 @@
 	<DialogueNode>
 		<Name>End</Name>
 		<Dialogue>
-			<Page>Trapped within a time loop of the Nomai's creation, I have uncovered the deepest secrets of the Outer Wilds! Now I can make sure they are not forgotten. I will pass the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> on in whatever way I can.</Page>
+			<Page>Trapped within a time loop of the Nomai's creation, I have uncovered the deepest mysteries of the Outer Wilds! I will do what I can make sure they are not forgotten.</Page>
 			<Page>- Signed, The Hatchling</Page>
 		</Dialogue>
 		<RevealFacts>
