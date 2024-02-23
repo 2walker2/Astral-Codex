@@ -846,7 +846,8 @@
 					"y": -93.82471,
 					"z": -117.116425
 				},
-				"reveals": "codex_ember_signal_rumor"
+				"reveals": "codex_ember_signal_rumor",
+				"volume": 0.35
 			}
 		]
 	},
@@ -867,7 +868,8 @@
 					"y": -93.72656,
 					"z": -117.636772
 				},
-				"radius": 50.0
+				"radius": 50.0,
+				"volume": 0.8
 			}
 		],
 		"oxygenVolumes": [

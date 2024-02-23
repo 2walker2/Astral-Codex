@@ -34,6 +34,8 @@ namespace AstralCodex
                 InitializeProximityQuantumStates();
                 ConfigureRecorder();
                 AddProbeDestructionVolumes();
+
+                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(AddSkybox);
             }
         }
         #endregion
@@ -119,6 +121,18 @@ namespace AstralCodex
             //Make it easier to lose the probe in the eye by adding additional destruction volumes
             foreach (EndlessTriggerVolume endlessVolume in FindObjectsOfType<EndlessTriggerVolume>())
                 endlessVolume.gameObject.AddComponent<ProbeDestructionVolume>();
+        }
+
+        void AddSkybox()
+        {
+            if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
+            {
+                GameObject skySphere = NewHorizons.Utility.Files.AssetBundleUtilities.LoadPrefab(AssetHandler.assetBundlePath, "Assets/Bundle/Eye Skybox Sphere.prefab", Main.modBehaviour);
+                GameObject spherePosition = SearchUtilities.Find("Skybox/Starfield/DistantSupernova_EYE(Clone)");
+                GameObject skySphereGO = Instantiate(skySphere, spherePosition.transform);
+                skySphereGO.transform.localEulerAngles = new Vector3(0, 85, 0);
+                skySphereGO.SetActive(true);
+            }
         }
         #endregion
     }

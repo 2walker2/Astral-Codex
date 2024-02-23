@@ -2431,7 +2431,8 @@
 				"identificationRadius": 5.0,
 				"name": "Translation Probe Thicket",
 				"position": {"x": -229.694, "y": 212.6833, "z": -416.6939},
-				"reveals": "codex_bramble_signal_rumor"
+				"reveals": "codex_bramble_signal_rumor",
+				"volume": 0.35
 			}
 		],
 		"warpTransmitters": [
@@ -2462,7 +2463,8 @@
 					"y": 245.988281,
 					"z": -408.44278
 				},
-				"radius": 100.0
+				"radius": 100.0,
+				"volume": 0.8
 			}
 		],
 		"revealVolumes": [

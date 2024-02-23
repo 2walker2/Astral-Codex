@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1634215744
+CRC: 3775148654
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5df9dfcd32b1a0cc3d074040ef57df36
+    Hash: 17cb2de52455859ab2fa4f447046cf26
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1a33245abcbfba18f21070c11b44e674
+    Hash: 8647b5a21ce07a5535a652cd0af3eb71
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -64,6 +64,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 7f5f781ad5c7cb3479ad11f01f455d95, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 61de772abfc572d49ac2e0a4074a236e, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 2357c7ea4be9dc840867927064ff876e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
@@ -114,6 +116,7 @@ Assets:
 - Assets/Bundle/Materials/Additive.mat
 - Assets/Bundle/Materials/Pentagon.mat
 - Assets/Bundle/Models/wire1.obj
+- Assets/Bundle/Eye Skybox Sphere.prefab
 - Assets/Bundle/Materials/Wires/PopulationTrailWireShell.mat
 - Assets/Bundle/Materials/Light.mat
 - Assets/Bundle/Materials/Wires/PopulationDisplayWire.mat
@@ -179,6 +182,7 @@ Assets:
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
 - Assets/Bundle/Textures/Foliage/Foliage3.png
+- Assets/Bundle/Materials/EyeSkyboxSphere.mat
 - Assets/Bundle/Models/Chime Redesign/NewProbe_Seperate.blend
 - Assets/Bundle/EyeProbeStates/ScannerPrecursor5.prefab
 - Assets/Bundle/Shaders/Foliage.shader
@@ -234,6 +238,7 @@ Assets:
 - Assets/Bundle/Textures/BottomPattern.png
 - Assets/Bundle/Textures/NoSun.png
 - Assets/Bundle/Textures/Chime Redesign/LOD_Terrain_QM_CaveTwinSurface_Floor_v2_d.png
+- Assets/Bundle/Shaders/Fesnel.shader
 - Assets/Bundle/Materials/Wires/SunSolarPanelWireShell.mat
 - Assets/Bundle/AssetReferences.prefab
 - Assets/Bundle/Textures/WirePattern.png
