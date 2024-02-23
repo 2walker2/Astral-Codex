@@ -23,6 +23,7 @@ namespace AstralCodex
         Rotate spacecraftOrbRotator;
         PopulationTrails populationTrails;
         SpacecraftTrails spacecraftTrails;
+        AudioSource audioSource;
 
         void Start()
         {
@@ -34,11 +35,12 @@ namespace AstralCodex
             spacecraftOrbRotator = SearchUtilities.Find("Station/Population Area/Scanner/Orb").GetComponent<Rotate>();
             populationTrails = FindObjectOfType<PopulationTrails>();
             spacecraftTrails = FindObjectOfType<SpacecraftTrails>();
+            audioSource = GetComponent<AudioSource>();
 
             //Restore state from last loop
             if (PlayerData.GetPersistentCondition(TrailsActivatedCondition))
                 trailsActivated = true;
-            ActivateTrails(trailsActivated);
+            ActivateTrails(trailsActivated, false);
 
         }
 
@@ -56,7 +58,7 @@ namespace AstralCodex
             }
         }
 
-        void ActivateTrails(bool value)
+        void ActivateTrails(bool value, bool playSound = true)
         {
             if (value)
                 TurnOn();
@@ -69,6 +71,9 @@ namespace AstralCodex
             trailsReveal.SetActive(value);
             populationOrbRotator.enabled = value;
             spacecraftOrbRotator.enabled = value;
+
+            if (playSound)
+                audioSource.Play();
 
             PlayerData.SetPersistentCondition(TrailsActivatedCondition, value);
         }

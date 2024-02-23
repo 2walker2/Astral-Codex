@@ -188,6 +188,11 @@ namespace AstralCodex
             //Suppress probe particles
             probeParticles.Suppress(true);
 
+            //Disable the other 3 Codec projections
+            sunWire.DisableProjection();
+            populationWire.DisableProjection();
+            technologyWire.DisableProjection();
+
             //Start the animation
             animator.Play(AnimatorState);
 

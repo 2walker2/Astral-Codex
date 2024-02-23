@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 115745094
+CRC: 1634215744
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9e3469592e8995e2fe16108f3835a710
+    Hash: 5df9dfcd32b1a0cc3d074040ef57df36
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ae6f06510e5441eff35fbb35f3275296
+    Hash: 1a33245abcbfba18f21070c11b44e674
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -45,8 +45,6 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: 75b33721cd4633949b48a1c2974c29a2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
@@ -123,11 +121,9 @@ Assets:
 - Assets/Bundle/Tesseract.prefab
 - Assets/Bundle/Textures/Monolith.png
 - Assets/Bundle/Materials/Chime Redesign/Metal.mat
-- Assets/Bundle/Station Redesign v2.prefab
 - Assets/Bundle/Materials/Foliage1.mat
 - Assets/Bundle/Materials/BlackHole.mat
 - Assets/Bundle/Materials/Chime Redesign/Display Sheet.mat
-- Assets/Bundle/Audio/TractorBeam.wav
 - Assets/Bundle/EyeProbeStates/ScannerState0.prefab
 - Assets/Bundle/Shaders/GreenLight.shader
 - Assets/Bundle/Textures/Chime Redesign/LightCookie.asset
@@ -135,6 +131,7 @@ Assets:
 - Assets/Bundle/Materials/Chalk.mat
 - Assets/Bundle/Materials/CausticsCookie.mat
 - Assets/Bundle/Materials/Skybox/SkyboxDown.mat
+- Assets/Bundle/Audio/chime_tesseract.ogg
 - Assets/Bundle/Materials/Chime Redesign/Interloper Rock Props.mat
 - Assets/Bundle/Models/probe.obj
 - Assets/Bundle/EyeProbeStates/ScannerPrecursorExplorer.prefab
@@ -203,7 +200,7 @@ Assets:
 - Assets/Bundle/Black Hole Water.prefab
 - Assets/Bundle/Models/brittle_hollow_hologram.obj
 - Assets/Bundle/Materials/Skybox/SkyboxLeft.mat
-- Assets/Bundle/Audio/MonolithActivate.wav
+- Assets/Bundle/Audio/TrailsActivate.wav
 - Assets/Bundle/Materials/Chime Redesign/Probe/Tube.mat
 - Assets/Bundle/Materials/Skybox/SkyboxRight.mat
 - Assets/Bundle/Materials/AddendumParticles.mat
@@ -230,6 +227,7 @@ Assets:
 - Assets/Bundle/Models/stationv_map.obj
 - Assets/Bundle/Shaders/FuelTube.shader
 - Assets/Bundle/Test Codex Dispenser.prefab
+- Assets/Bundle/Audio/chime_lidar.ogg
 - Assets/Bundle/Materials/CentralPlatformGlass.mat
 - Assets/Bundle/Textures/Foliage/Foliage3G.png
 - Assets/Bundle/Materials/Wires/SpacecraftDisplayWireShell.mat
@@ -267,7 +265,6 @@ Assets:
 - Assets/Bundle/Materials/Glass.mat
 - Assets/Bundle/Models/Chime Redesign/CoreShards.blend
 - Assets/Bundle/Materials/Skybox.mat
-- Assets/Bundle/Station Redesign.prefab
 - Assets/Bundle/Textures/Chime Redesign/NormalMap (16).png
 - Assets/Bundle/Textures/Chime Redesign/GhostEmmissiveOverlay.png
 - Assets/Bundle/Textures/Chime Redesign/Structure_EYE_CopperOld_d.png
@@ -381,7 +378,6 @@ Assets:
 - Assets/Bundle/Materials/Floor.mat
 - Assets/Bundle/Audio/ice-and-decay.mp3
 - Assets/Bundle/Models/Chime Redesign/ChimeRemodel.blend
-- Assets/Bundle/Audio/Codex Reveal.mp3
 - Assets/Bundle/Textures/Foliage/Foliage2.png
 - Assets/Bundle/Shaders/UnlitTransparentHDR.shader
 - Assets/Bundle/Chime Exhaust.prefab

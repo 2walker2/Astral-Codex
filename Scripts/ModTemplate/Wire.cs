@@ -98,6 +98,16 @@ namespace AstralCodex
                 mat.SetColor(BaseColorProperty, baseColors[propertyValueIndex]);
             }
         }
+
+        public void DisableProjection()
+        {
+            if (projection == null)
+                return;
+
+            ParticleSystem[] projectionParticles = projection.GetComponentsInChildren<ParticleSystem>();
+            foreach (ParticleSystem particle in projectionParticles)
+                particle.Stop();
+        }
         #endregion
     }
 }
