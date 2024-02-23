@@ -191,5 +191,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioLibraryClip: 0
   _clipSelectionOnPlay: 2
-  _track: 65
+  _track: 64
   _randomizePlayheadOnAwake: 0
