@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using NewHorizons.Utility;
+using System.Linq;
 
 namespace AstralCodex
 {
@@ -28,7 +29,8 @@ namespace AstralCodex
         #region Apply Material
         void Start()
         {
-            renderers = new List<Renderer>(GetComponentsInChildren<Renderer>());
+            renderers = new List<Renderer>(GetComponentsInChildren<MeshRenderer>());
+            renderers.AddRange(GetComponentsInChildren<SkinnedMeshRenderer>());
             NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(ApplyMaterial);
         }
 

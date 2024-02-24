@@ -2278,7 +2278,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3
+  MinDistance: 2
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -5839,7 +5839,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3
+  MinDistance: 2
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -27508,7 +27508,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3
+  MinDistance: 2
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -109151,6 +109151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8288177266904479987}
     m_Modifications:
+    - target: {fileID: 3019706674927679584, guid: 0a5e9775b2fc3694e9e41be2d520ad3a,
+        type: 3}
+      propertyPath: MinDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3465131083771137869, guid: 0a5e9775b2fc3694e9e41be2d520ad3a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -110317,6 +110322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2967158049315442937, guid: ae62c5ccf3dbdaf4489045e2dd8ae8ef,
+        type: 3}
+      propertyPath: MinDistance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1859726551471020932, guid: ae62c5ccf3dbdaf4489045e2dd8ae8ef, type: 3}
@@ -115832,6 +115842,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6093606381417150753}
     m_Modifications:
+    - target: {fileID: 8263740133815352513, guid: 4dde8197e373e4e42a17da92e4c86670,
+        type: 3}
+      propertyPath: MinDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8864843680414093425, guid: 4dde8197e373e4e42a17da92e4c86670,
         type: 3}
       propertyPath: scalingMode
