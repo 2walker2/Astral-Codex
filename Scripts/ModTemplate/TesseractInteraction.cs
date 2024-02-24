@@ -55,6 +55,9 @@ namespace AstralCodex
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXTERIOR LIDAR PROBES");
 
+            //Disable signal at start
+            chimeSignalDetectionShape.enabled = false;
+
             //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition(TesseractEnteredCondition))
                 EnteredTesseract(true, false);
