@@ -1,2 +1,3 @@
-# Astral Codex
- A story mod for Outer Wilds
+# Astral Codec
+
+A story mod exploring the origin of The Interloper. @;{&< ?/ })& ?]["[/;| *?/*&+} (?] &?}&
