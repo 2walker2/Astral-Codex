@@ -63,7 +63,7 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_fact</ID>
-                <Text>There is a large circular icon displayed next to an indicator light on the floor. Symbols are chalked nearby that read: <![CDATA[<Color=#ff0040>]]>&#38;*|[+{&#38;<![CDATA[</Color>]]></Text>
+                <Text>There is a large circular icon displayed on a platform on the floor. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>&#38;*|[+{&#38;<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_no_sun_complete</ID>
@@ -79,11 +79,11 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_population_fact</ID>
-                <Text>There are 23 tally marks displayed next to an indicator light on the floor. The final mark is only one-sixth full. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#ff0040>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
+                <Text>There are 23 tally marks displayed on a platform on the floor. The final mark is only one-sixth full. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>+?+.|;}[?/<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_trails</ID>
-                <Text>After standing on a marked platform for a few seconds, I can see green trails emanating from the nearby device connected to points throughout the solar system.</Text>
+                <Text>After standing on a marked platform for a few seconds, I can see green trails emanating from a nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_population_complete</ID>
@@ -99,11 +99,11 @@
 
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_fact</ID>
-                <Text>There are 6 icons displayed next to an indicator light on the floor. One of the icons is powered off. Symbols are chalked next to a device nearby that read: <![CDATA[<Color=#ff0040>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
+                <Text>There are 6 icons displayed on a platform on the floor. One of the icons is powered off. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>{+;*&#38;*];(}<![CDATA[</Color>]]></Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_trails</ID>
-                <Text>After standing on a marked platform for a few seconds, I can see purple trails emanating from the nearby device connected to points throughout the solar system.</Text>
+                <Text>After standing on a marked platform for a few seconds, I can see purple trails emanating from a nearby device connected to points throughout the solar system.</Text>
             </ExploreFact>
             <ExploreFact>
                 <ID>codex_lingering_chime_spacecraft_complete</ID>

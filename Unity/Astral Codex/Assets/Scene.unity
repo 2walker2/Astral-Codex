@@ -20546,6 +20546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmberProbe
       objectReference: {fileID: 0}
+    - target: {fileID: 3566224354149553961, guid: f7c0bd360f003684c84aa24d6581a164,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7c0bd360f003684c84aa24d6581a164, type: 3}
 --- !u!1 &1767684557

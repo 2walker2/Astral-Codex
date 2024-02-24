@@ -869,7 +869,8 @@
 					"z": -117.636772
 				},
 				"radius": 50.0,
-				"volume": 0.8
+				"volume": 0.8,
+				"priority": 0
 			}
 		],
 		"oxygenVolumes": [
