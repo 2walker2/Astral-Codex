@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 6268475220808973072}
   - component: {fileID: 6268475220808973073}
   - component: {fileID: 6268475220808973078}
-  - component: {fileID: 6268475220808973075}
+  - component: {fileID: 4568498978674258681}
   m_Layer: 0
   m_Name: Window_Corner_R_Broken
   m_TagString: Untagged
@@ -407,8 +407,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6268475220808973075
-MeshCollider:
+--- !u!65 &4568498978674258681
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -417,10 +417,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0972a429e892a8346ab18d61e0a352e7, type: 2}
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.5}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &8341657086033766652
 GameObject:
   m_ObjectHideFlags: 0
