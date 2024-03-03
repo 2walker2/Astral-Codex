@@ -5,7 +5,7 @@
 [sample collection report:                          ]
 [    -item: contained singularities                 ]
 [    -quantity: 4                                   ]
-[    -time retrieved: t-minus 120 hr                ]
+[    -time since retrieval: 120 hr                  ]
 [    -status: containment broken - 2 lost in transit]
 		</Text>
 	</TextBlock>

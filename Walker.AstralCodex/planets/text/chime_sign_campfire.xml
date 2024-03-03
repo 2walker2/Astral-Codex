@@ -4,8 +4,8 @@
 		<Text>
 [sample collection report:                          ]
 [    -item: campfire                                ]
-[    -time retrieved: t-minus 120 hr                ]
-[    -retrieving pre-recorded note from: explorer   ]
+[    -time since collection: 120 hr                 ]
+[    -retrieving prerecorded note from: explorer    ]
 [    	-"I knew it! Constant of the universe."     ]
 		</Text>
 	</TextBlock>
