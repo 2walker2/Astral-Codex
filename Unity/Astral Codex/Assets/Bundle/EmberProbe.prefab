@@ -4863,6 +4863,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4792729121918625342}
+  - {fileID: 8651584296321080944}
   m_Father: {fileID: 3171742173697572044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14798,7 +14799,6 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4763195904797485483}
-  - {fileID: 8651584296321080944}
   m_Father: {fileID: 488576317652200859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -19652,7 +19652,7 @@ GameObject:
   - component: {fileID: 7309347473260075520}
   - component: {fileID: 2246236681321517719}
   - component: {fileID: 3038849808191825491}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Eye Symbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19666,11 +19666,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8108849247228527830}
-  m_LocalRotation: {x: 0.394018, y: 0.20764586, z: 0.41001245, w: 0.79594153}
-  m_LocalPosition: {x: -0.50612503, y: 0.368625, z: 0.79975015}
-  m_LocalScale: {x: 0.028996833, y: 0.028996833, z: 0.028996838}
+  m_LocalRotation: {x: -0.2842028, y: 0.43675035, z: 0.14309478, w: 0.8414284}
+  m_LocalPosition: {x: -0.40490004, y: 0.6398002, z: -0.29490012}
+  m_LocalScale: {x: 0.02319747, y: 0.023197472, z: 0.023197474}
   m_Children: []
-  m_Father: {fileID: 4792729121918625342}
+  m_Father: {fileID: 488576317652200859}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 152.80899, y: -132.704, z: -113.401}
 --- !u!33 &7309347473260075520
