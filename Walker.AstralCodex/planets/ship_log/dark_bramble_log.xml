@@ -38,10 +38,5 @@
             <ID>codex_bramble_hologram</ID> 
             <Text>When I picked up a crystalline scroll, a hologram was projected depicting the solar system. An object traveled from the edge of the solar system to a point below the sun.</Text>
         </ExploreFact>
-
-        <ExploreFact>
-            <ID>codex_bramble_warp</ID> 
-            <Text>A sign outside a sealed building reads "Warp Transmitter".</Text>
-        </ExploreFact>
     </Entry>
 </AstroObjectEntry>
