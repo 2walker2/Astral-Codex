@@ -125,7 +125,7 @@
 	<DialogueNode>
 		<Name>End</Name>
 		<Dialogue>
-			<Page>Trapped within a time loop of the Nomai's creation, I have uncovered the deepest mysteries of the Outer Wilds! I will do what I can make sure they are not forgotten.</Page>
+			<Page>Trapped within a time loop of the Nomai's creation, I have uncovered the deepest mysteries of the Outer Wilds! I will do what I can to make sure they are not forgotten.</Page>
 			<Page>- Signed, The Hatchling</Page>
 		</Dialogue>
 		<RevealFacts>
