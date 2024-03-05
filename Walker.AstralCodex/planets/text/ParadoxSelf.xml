@@ -1,6 +1,4 @@
 <DialogueTree>
-  <NameField>Self</NameField>
-
   <DialogueNode>
     <Name>Start</Name>
     <DialogueOptionsList>
