@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
-using Harmony;
 
 namespace AstralCodex
 {
@@ -20,6 +19,7 @@ namespace AstralCodex
         #region Private Variables
         bool flashbackOverridden = false;
         NomaiExperimentBlackHole experimentBlackHole;
+        TimeLoopCoreController timeLoopCoreController;
         GameObject skySphere;
         StarfieldController starfieldController;
         #endregion
@@ -321,6 +321,10 @@ namespace AstralCodex
                 experimentBlackHole = experimentBlackHoleGO.GetComponent<NomaiExperimentBlackHole>();
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXPERIMENT BLACK HOLE", MessageType.Error);
+
+            timeLoopCoreController = FindObjectOfType<TimeLoopCoreController>();
+            if (timeLoopCoreController == null)
+                Main.modHelper.Console.WriteLine("FAILED TO FIND TIME LOOP CORE CONTROLLER", MessageType.Error);
         }
 
         void RemoveBreakableComponentFromBramblePlatforms()
@@ -613,7 +617,10 @@ namespace AstralCodex
                 if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_lingering_chime_tesseract") && PlayerData._currentGameSave.shipLogFactSaves["codex_lingering_chime_tesseract"].revealOrder > -1)
                 {
                     TimeLoopCoreController.s_paradoxExists = false; //Prevent from breaking via ATP duplication
+                    EyeStateManager.s_paradoxExists = false; //Prevent from breaking while at Eye
                     experimentBlackHole._duplicateActive = false; //Prevent from breaking via HEL experiment
+                    timeLoopCoreController._probeEnteredCoreLastLoop = false; //Prevent from breaking if probe is sent through ATP
+                    timeLoopCoreController._playerEnteredCoreLastLoop = false; //Prevent from breaking in edge cases if player is sent through ATP
                 }
             }
         }

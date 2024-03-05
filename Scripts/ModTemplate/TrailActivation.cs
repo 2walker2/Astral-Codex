@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
 using System.Linq;
-using Harmony;
+
 using Newtonsoft.Json.Linq;
 
 namespace AstralCodex

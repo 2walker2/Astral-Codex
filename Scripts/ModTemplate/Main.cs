@@ -10,16 +10,9 @@
 using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System;
-using Harmony;
-using System.Collections;
-using System.Linq;
 using NewHorizons.Utility;
-using UnityEngine.InputSystem;
+using HarmonyLib;
+using System.Reflection;
 
 namespace AstralCodex
 {
@@ -41,6 +34,9 @@ namespace AstralCodex
         {
             //Initialize instance
             if (S == null) S = this;
+
+            //Apply Harmony patches
+            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         }
 
         private void Start()

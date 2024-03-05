@@ -13,11 +13,12 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="HarmonyX" Version="2.12.0" />
     <PackageReference Include="OWML" Version="2.5.2" />
     <PackageReference Include="OuterWildsGameLibs" Version="1.1.12.168" />
-	<Reference Include ="NewHorizons">
-      <HintPath Condition ="Exists('$(OuterWildsModDirectory)\xen.NewHorizons\NewHorizons.dll')">$(OuterWildsModDirectory)\xen.NewHorizons\NewHorizons.dll</HintPath>
-	  <HintPath Condition ="Exists('$(OuterWildsModDirectory)\xen.NewHorizons.Debug\NewHorizons.dll')">$(OuterWildsModDirectory)\xen.NewHorizons.Debug\NewHorizons.dll</HintPath>
+	<Reference Include="NewHorizons">
+      <HintPath Condition="Exists('$(OuterWildsModDirectory)\xen.NewHorizons\NewHorizons.dll')">$(OuterWildsModDirectory)\xen.NewHorizons\NewHorizons.dll</HintPath>
+	  <HintPath Condition="Exists('$(OuterWildsModDirectory)\xen.NewHorizons.Debug\NewHorizons.dll')">$(OuterWildsModDirectory)\xen.NewHorizons.Debug\NewHorizons.dll</HintPath>
       <Private>False</Private>
 	</Reference>
   </ItemGroup>
