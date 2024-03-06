@@ -80,7 +80,7 @@ namespace AstralCodex
             {"Trail Wires/Activation Trigger", typeof(TrailActivation) },
             {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) },
             {"BrambleWarpReceiver", typeof(DisableShapeInShip) },
-            {"Sector_DB/Bramble Building/Transform Root/Warp Pad/Warp Pad Swivel", typeof(FaceBrambleSphere) }
+            {"Sector_DB/Bramble Building/Transform Root/Warp Pad/Warp Pad Swivel", typeof(FaceBrambleSphere) },
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
