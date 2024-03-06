@@ -607,6 +607,10 @@ namespace AstralCodex
                 }
                 flashbackOverridden = true;
             }
+
+            //Prevent probe from duplicating in ATP
+            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+                PlayerData.SetPersistentCondition("PROBE_ENTERED_TIMELOOPCORE", false);
         }
 
         void StabilizeSpacetime()
