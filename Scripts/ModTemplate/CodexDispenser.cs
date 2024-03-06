@@ -34,6 +34,8 @@ namespace AstralCodex
         float coreMaxScale = 1;
         float coreScaleSpeed = 0.5f;
 
+        float minRemainingTime = 90; //The maximum time that will be added to the end of the time loop when the player starts getting the Codec
+
         SurveyorProbe probe;
         Light[] probeLights;
         ProbeLauncher probeLauncher;
@@ -138,6 +140,11 @@ namespace AstralCodex
                             {
                                 coreComputer.ClearAllEntries();
                                 startedDispensing = true;
+
+                                //Make sure there is enough time left in the loop
+                                if (TimeLoop.GetSecondsRemaining() < minRemainingTime)
+                                    TimeLoop.SetSecondsRemaining(minRemainingTime);
+
                                 StartCoroutine(ScaleCore());
                             }
                         }
