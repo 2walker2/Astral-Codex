@@ -22,6 +22,8 @@ namespace AstralCodex
         bool startedScalingCore = false;
         bool coreScaled = false;
         bool animationStarted = false;
+        bool complete = false;
+        bool startedDispensing = false;
 
         //Timing information
         float totalDuration = 57.5f; //68; //Total duration of the animation
@@ -82,9 +84,12 @@ namespace AstralCodex
             probePrompt.enabled = false;
             coreComputer.ClearAllEntries();
 
-            //Restore previous state
+            //If codec has already been downloaded, only display final message
             if (PlayerData.GetPersistentCondition(CoreActivatedCondition))
-                Activate();
+            {
+                complete = true;
+                coreComputer.DisplayEntry(4);
+            }
         }
 
         void Update()
@@ -93,47 +98,70 @@ namespace AstralCodex
             if (Main.debugMode)
             {
                 if (Keyboard.current.lKey.isPressed && Keyboard.current.uKey.wasPressedThisFrame)
-                    Activate();
+                    SetActive(true);
             }
 
             //Activate
-            if (!active)
+            if (!complete && !startedDispensing)
             {
-                if (sunWire.on && populationWire.on && technologyWire.on)
+                if (!active)
                 {
-                    Activate();
-                }
-            }
-            else if (!startedScalingCore)
-            {
-                //Wait for player to translate computer before activating core
-                if (!translator.IsEquipped())
-                {
-                    bool computerTranslated = true;
-                    for (int i = 1; i <= 3; i++)
+                    //Turn on
+                    if (sunWire.on && populationWire.on && technologyWire.on)
                     {
-                        if (!coreComputer._dictNomaiTextData[i].IsTranslated)
-                        {
-                            computerTranslated = false;
-                            break;
-                        }
+                        SetActive(true);
                     }
-                    if (computerTranslated)
+                }
+                else
+                {
+                    //Turn back off
+                    if (!sunWire.on || !populationWire.on || !technologyWire.on)
                     {
-                        coreComputer.ClearAllEntries();
-                        StartCoroutine(ScaleCore());
+                        SetActive(false);
+                    }
+                    //Start dispensing
+                    else if (!startedScalingCore)
+                    {
+                        //Wait for player to translate computer before activating core
+                        if (!translator.IsEquipped())
+                        {
+                            bool computerTranslated = true;
+                            for (int i = 1; i <= 3; i++)
+                            {
+                                if (!coreComputer._dictNomaiTextData[i].IsTranslated)
+                                {
+                                    computerTranslated = false;
+                                    break;
+                                }
+                            }
+                            if (computerTranslated)
+                            {
+                                coreComputer.ClearAllEntries();
+                                startedDispensing = true;
+                                StartCoroutine(ScaleCore());
+                            }
+                        }
                     }
                 }
             }
         }
 
-        void Activate()
+        void SetActive(bool value)
         {
-            active = true;
-            PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
-            coreComputer.DisplayEntry(1);
-            coreComputer.DisplayEntry(2);
-            coreComputer.DisplayEntry(3);
+            active = value;
+
+            if (value)
+            {
+                coreComputer.DisplayEntry(1);
+                coreComputer.DisplayEntry(2);
+                coreComputer.DisplayEntry(3);
+            }
+            else
+            {
+                coreComputer.ClearEntry(1);
+                coreComputer.ClearEntry(2);
+                coreComputer.ClearEntry(3);
+            }
 
             //Update material properties
             int propertyValueIndex = active ? 0 : 1;
@@ -268,6 +296,9 @@ namespace AstralCodex
             //Shatter the core
             coreTransform.localScale = Vector3.zero;
             shatterEffect.gameObject.SetActive(true);
+
+            //Set persistent condition
+            PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
 
             //Switch final end times music
             MusicHandler.SetFinalEndTimes();
