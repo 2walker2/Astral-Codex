@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>POKE: I spoke of this to Root when we installed the <![CDATA[<Color=orange>]]>Ash Twin Project's<![CDATA[</Color>]]> advanced warp core. Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of yourself?</Text>
+		<Text>POKE: I spoke of this to Root outside the <![CDATA[<Color=orange>]]>Ash Twin Project<![CDATA[</Color>]]> when we installed its warp core. Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of yourself?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>

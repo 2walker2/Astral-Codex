@@ -21,8 +21,9 @@
 			{
 				"type": "scroll",
 				"xmlFile": "planets/text/ash_scroll_cloning.xml",
-				"position": {"x": -1.2734, "y": 19.8177, "z": -124.8464},
-				"rotation": {"x": 45.5645, "y": 82.5093, "z": 36.909}
+				"position": {"x": -1.3089, "y": 19.9973, "z": -123.1231},
+				"rotation": {"x": 23.6229, "y": 270.0482, "z": 153.4353},
+				"rename": "ATPCloningScroll"
 			}
 		]
 	},
