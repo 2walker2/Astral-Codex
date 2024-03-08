@@ -100,7 +100,7 @@ namespace AstralCodex
         private void OnTriggerEnter(Collider other)
         {
             //Move into 4D
-            if (other.gameObject.CompareTag("Player"))
+            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
             {
                 //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)

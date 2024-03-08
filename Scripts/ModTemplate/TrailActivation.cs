@@ -46,15 +46,18 @@ namespace AstralCodex
 
         void OnTriggerStay(Collider other)
         {
-            if (triggered || other.gameObject != Locator.GetPlayerBody().gameObject)
+            if (triggered)
                 return;
 
-            timeStayed += Time.deltaTime;
-            if (timeStayed > activationDelay)
+            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
             {
-                trailsActivated = !trailsActivated;
-                triggered = true;
-                ActivateTrails(trailsActivated);
+                timeStayed += Time.deltaTime;
+                if (timeStayed > activationDelay)
+                {
+                    trailsActivated = !trailsActivated;
+                    triggered = true;
+                    ActivateTrails(trailsActivated);
+                }
             }
         }
 
@@ -80,18 +83,14 @@ namespace AstralCodex
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject != Locator.GetPlayerBody().gameObject)
-                return;
-            
-            timeStayed = 0f;
+            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
+                timeStayed = 0f;
         }
 
         void OnTriggerExit(Collider other)
         {
-            if (other.gameObject != Locator.GetPlayerBody().gameObject)
-                return;
-
-            triggered = false;
+            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
+                triggered = false;
         }
     }
 }
