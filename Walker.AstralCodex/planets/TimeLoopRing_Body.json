@@ -4,11 +4,7 @@
 	"Props": {
 		"dialogue": [
 			{
-				"radius": 1,
-				"parentPath": "Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player",
-				"isRelativeToParent": true,
-				"position": {"y": 0.5},
-				"pathToAnimController": "Characters_TimeLoopRing/NPC_Player",
+				"pathToExistingDialogue": "Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player",
 				"xmlFile": "planets/text/ParadoxSelf.xml"
 			}
 		]

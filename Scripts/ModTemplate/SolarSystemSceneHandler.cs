@@ -174,7 +174,6 @@ namespace AstralCodex
                 RemoveBreakableComponentFromBramblePlatforms();
                 RemoveSubmergeControllerFromBrambleGhostMatter();
                 ConfigureBrambleWarpPads();
-                PreventBaseGameDialogue();
                 MakeBrambleCloakSphereCastShadows();
                 
                 //Chime configuration
@@ -351,19 +350,6 @@ namespace AstralCodex
             warpTransmitter._warpRadius = 5;
             NomaiWarpReceiver warpReceived = SearchUtilities.Find("BrambleWarpReceiver").GetComponent<NomaiWarpReceiver>();
             warpReceived._warpRadius = 5;
-        }
-
-        void PreventBaseGameDialogue()
-        {
-            //Slate
-            CapsuleCollider slateDialogueCollider = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").GetComponent<CapsuleCollider>();
-            slateDialogueCollider.radius = 0;
-            slateDialogueCollider.height = 0;
-
-            //Self
-            CapsuleCollider selfDialogueCollider = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player").GetComponent<CapsuleCollider>();
-            selfDialogueCollider.radius = 0;
-            selfDialogueCollider.height = 0;
         }
 
         void MakeBrambleCloakSphereCastShadows()
