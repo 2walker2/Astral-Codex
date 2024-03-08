@@ -26,6 +26,8 @@ namespace AstralCodex
         Animator solarPanelsAnimator; //The Animator that controls the solar panels rising and falling
         Shape chimeSignalDetectionShape; //The shape that notifies the player of an unidentified signal for the Chime transmitter
         Camera playerCamera; //The player's camera
+        GameObject chimeInteriorRevealVolume; //The reveal volume for the interior of the Chime
+        GameObject tesseractRevealVolume; //The reveal volume for passing through the tesseract
         #endregion
 
         #region Initialization
@@ -41,6 +43,8 @@ namespace AstralCodex
             solarPanelsAnimator = SearchUtilities.Find("Station/Solar Panels").GetComponent<Animator>();
             chimeSignalDetectionShape = SearchUtilities.Find("Chime Signal").GetComponent<Shape>();
             playerCamera = Locator.GetPlayerCamera().GetComponent<Camera>();
+            chimeInteriorRevealVolume = SearchUtilities.Find("ChimeInteriorRevealVolume");
+            tesseractRevealVolume = SearchUtilities.Find("ChimeTesseractRevealVolume");
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -57,6 +61,10 @@ namespace AstralCodex
 
             //Disable signal at start
             chimeSignalDetectionShape.enabled = false;
+
+            //Disable reveal volumes at start
+            chimeInteriorRevealVolume.SetActive(false);
+            tesseractRevealVolume.SetActive(false);
 
             //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition(TesseractEnteredCondition))
@@ -155,6 +163,10 @@ namespace AstralCodex
 
             //Toggle signal
             chimeSignalDetectionShape.enabled = value;
+
+            //Toggle reveal volumes
+            chimeInteriorRevealVolume.SetActive(value);
+            tesseractRevealVolume.SetActive(value);
 
             //Set persistent condition
             PlayerData.SetPersistentCondition(TesseractEnteredCondition, value);

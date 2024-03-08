@@ -335,8 +335,7 @@
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
-					"codex_lingering_chime_rumor",
-					"codex_lingering_chime_fact"
+					"codex_anomaly_fact",
 				],
 				"radius": 200
 			},
@@ -346,12 +345,14 @@
 				"revealFor": "both",
 				"reveals": [
 					"codex_lingering_chime_tesseract",
+					"codex_lingering_chime_fact",
 					"codex_lingering_chime_material"
 				],
 				"position": {
 					"y": -58
 				},
-				"radius": 3.5
+				"radius": 25,
+				"rename": "ChimeTesseractRevealVolume"
 			},
 			{
 				//When entered Chime
@@ -369,7 +370,8 @@
 					"codex_lingering_chime_lower_rumor"
 
 				],
-				"radius": 52
+				"radius": 52,
+				"rename": "ChimeInteriorRevealVolume"
 			},
 			{
 				//When activated scanners
