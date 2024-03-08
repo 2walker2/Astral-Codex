@@ -2,13 +2,11 @@
   <DialogueNode>
     <Name>Start</Name>
     <DialogueOptionsList>
-      <!-- CODEX -->
       <DialogueOption>
         <Text>It worked! We increased the population!</Text>
         <DialogueTarget>codex_population_success</DialogueTarget>
         <RequiredLogCondition>codex_lingering_chime_population_complete</RequiredLogCondition>
       </DialogueOption>   
-      <!-- END OF CODEX -->
     </DialogueOptionsList>
   </DialogueNode>
 

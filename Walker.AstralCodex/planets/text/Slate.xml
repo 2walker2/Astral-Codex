@@ -3,7 +3,6 @@
 		<Name>Scientist5</Name>
 		
 		<DialogueOptionsList>
-			<!-- CODEX -->
 			<DialogueOption>
 				<RequiredPersistentCondition>CODEX_ENTERED_TESSERACT</RequiredPersistentCondition>
 				<Text>Have you noticed the sky's green?</Text>
@@ -72,8 +71,4 @@
 			<Page>Okay. Now I know you're pulling my leg.</Page>
 		</Dialogue>
 	</DialogueNode>
-
-	<!-- END OF CODEX -->
-
-
 </DialogueTree>
