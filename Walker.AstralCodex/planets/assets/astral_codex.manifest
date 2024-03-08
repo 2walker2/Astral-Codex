@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3800219887
+CRC: 2355653333
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6cbd9d59d93a682df94ef511c53fa8a7
+    Hash: e4ec95c7acef20bfe23c4a40a9f0441b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 833205e256e3caec0a066a8140d90386
+    Hash: 8647b5a21ce07a5535a652cd0af3eb71
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -60,8 +60,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b0c81d85538a4654eb04a9034e3fef93, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: c85ca0b6e117fee4b9db36f9084be253, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 5f973bb6d905cb74b9fdcf3e21b2cbfd, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7f5f781ad5c7cb3479ad11f01f455d95, type: 3}
@@ -71,8 +69,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 2357c7ea4be9dc840867927064ff876e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 7ae0136c7107eea4590214648dc9e397, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 44aa9aac3f798ff478ea63d7fdd28e3e, type: 3}
 - Class: 114
@@ -193,7 +189,6 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Moss.mat
 - Assets/Bundle/Models/precursor.obj
 - Assets/Bundle/Textures/Skybox/backImage.png
-- Assets/Bundle/BrambleRepelCylinder.prefab
 - Assets/Bundle/Audio/Unveilment.mp3
 - Assets/Bundle/White Hole.prefab
 - Assets/Bundle/Shaders/CodexDispenser.shader
@@ -339,7 +334,6 @@ Assets:
 - Assets/Bundle/Foliage Group 3.prefab
 - Assets/Bundle/White Hole Water.prefab
 - Assets/Bundle/Models/inverted_sphere.obj
-- Assets/Bundle/Audio/chime_ambience.ogg
 - Assets/Bundle/Materials/Wires/PopulationCodecWireShell.mat
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Materials/ThornParticles.mat
@@ -396,6 +390,7 @@ Assets:
 - Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_n.png
 - Assets/Bundle/Models/environments_hologram.obj
+- Assets/Bundle/Audio/chime_ambience.ogg
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
 - Assets/Bundle/Materials/InterloperFuelTube.mat
