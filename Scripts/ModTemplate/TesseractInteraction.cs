@@ -109,7 +109,7 @@ namespace AstralCodex
         private void OnEntry(GameObject hitObj)
         {
             //Move into 4D
-            if (hitObj == Locator.GetPlayerDetector())
+            if (hitObj.CompareTag("PlayerDetector"))
             {
                 //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)
@@ -127,7 +127,7 @@ namespace AstralCodex
                 statusComputer.ClearAllEntries();
 
             //Disable probe launcher overlay
-            Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
+            Transform[] probeLauncherRenderers = SearchUtilities.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
 
             //Instantiate effect
