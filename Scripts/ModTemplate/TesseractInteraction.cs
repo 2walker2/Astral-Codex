@@ -8,6 +8,7 @@ using NewHorizons.Utility;
 using UnityEngine.PostProcessing;
 using System.Diagnostics;
 using System;
+using Newtonsoft.Json.Linq;
 
 namespace AstralCodex
 {
@@ -78,6 +79,14 @@ namespace AstralCodex
 
             //Register trigger volume callback
             triggerVolume.OnEntry += OnEntry;
+
+            if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
+            {
+                Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
+                GameObject playerMeshRoot = SearchUtilities.Find("Player_Body/Traveller_HEA_Player_v2/Traveller_Mesh_v01:Traveller_Geo");
+                foreach (SkinnedMeshRenderer renderer in playerMeshRoot.GetComponentsInChildren<SkinnedMeshRenderer>())
+                    renderer.enabled = false;
+            }
         }
 
         
@@ -188,7 +197,6 @@ namespace AstralCodex
                 if ((playerCamera.cullingMask & (1 << 22)) != 0)
                     playerCamera.cullingMask -= (1 << 22);
             }
-                
         }
         #endregion
     }

@@ -52,7 +52,7 @@ namespace AstralCodex
 
         private void OnEntry(GameObject hitObj)
         {
-            if (hitObj == Locator.GetPlayerDetector())
+            if (hitObj.CompareTag("PlayerDetector"))
             {
                 timeStayed = 0f;
                 playerInTrigger = true;
@@ -61,7 +61,7 @@ namespace AstralCodex
 
         private void OnExit(GameObject hitObj)
         {
-            if (hitObj == Locator.GetPlayerDetector())
+            if (hitObj.CompareTag("PlayerDetector"))
             {
                 playerInTrigger = false;
                 triggered = false;
