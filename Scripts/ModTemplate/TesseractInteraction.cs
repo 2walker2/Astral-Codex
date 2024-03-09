@@ -80,6 +80,7 @@ namespace AstralCodex
             //Register trigger volume callback
             triggerVolume.OnEntry += OnEntry;
 
+            //Hide body if player is playing NomaiVR
             if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
             {
                 Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
