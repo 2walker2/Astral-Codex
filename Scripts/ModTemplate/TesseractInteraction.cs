@@ -7,6 +7,7 @@ using NewHorizons.Builder;
 using NewHorizons.Utility;
 using UnityEngine.PostProcessing;
 using System.Diagnostics;
+using System;
 
 namespace AstralCodex
 {
@@ -28,6 +29,7 @@ namespace AstralCodex
         Camera playerCamera; //The player's camera
         GameObject chimeInteriorRevealVolume; //The reveal volume for the interior of the Chime
         GameObject tesseractRevealVolume; //The reveal volume for passing through the tesseract
+        OWTriggerVolume triggerVolume;
         #endregion
 
         #region Initialization
@@ -45,6 +47,7 @@ namespace AstralCodex
             playerCamera = Locator.GetPlayerCamera().GetComponent<Camera>();
             chimeInteriorRevealVolume = SearchUtilities.Find("ChimeInteriorRevealVolume");
             tesseractRevealVolume = SearchUtilities.Find("ChimeTesseractRevealVolume");
+            triggerVolume = GetComponent<OWTriggerVolume>();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -72,7 +75,12 @@ namespace AstralCodex
 
             //Add the animation component as well
             gameObject.AddComponent<TesseractAnimation>();
+
+            //Register trigger volume callback
+            triggerVolume.OnEntry += OnEntry;
         }
+
+        
         #endregion
 
         #region Update
@@ -97,10 +105,11 @@ namespace AstralCodex
         #endregion
 
         #region Player Enters/Exits/Waits in Tesseract
-        private void OnTriggerEnter(Collider other)
+
+        private void OnEntry(GameObject hitObj)
         {
             //Move into 4D
-            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
+            if (hitObj == Locator.GetPlayerDetector())
             {
                 //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)

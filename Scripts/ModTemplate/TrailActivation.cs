@@ -15,6 +15,7 @@ namespace AstralCodex
     {
         const string TrailsActivatedCondition = "CODEX_TRAILS_ACTIVATED";
         bool triggered = false;
+        bool playerInTrigger = false;
         float activationDelay = 5f;
         float timeStayed = 0f;
         bool trailsActivated = false;
@@ -24,6 +25,7 @@ namespace AstralCodex
         PopulationTrails populationTrails;
         SpacecraftTrails spacecraftTrails;
         AudioSource audioSource;
+        OWTriggerVolume triggerVolume;
 
         void Start()
         {
@@ -36,20 +38,39 @@ namespace AstralCodex
             populationTrails = FindObjectOfType<PopulationTrails>();
             spacecraftTrails = FindObjectOfType<SpacecraftTrails>();
             audioSource = GetComponent<AudioSource>();
+            triggerVolume = GetComponent<OWTriggerVolume>();
 
             //Restore state from last loop
             if (PlayerData.GetPersistentCondition(TrailsActivatedCondition))
                 trailsActivated = true;
             ActivateTrails(trailsActivated, false);
 
+            //Register trigger volume callbacks
+            triggerVolume.OnEntry += OnEntry;
+            triggerVolume.OnExit += OnExit;
         }
 
-        void OnTriggerStay(Collider other)
+        private void OnEntry(GameObject hitObj)
         {
-            if (triggered)
-                return;
+            if (hitObj == Locator.GetPlayerDetector())
+            {
+                timeStayed = 0f;
+                playerInTrigger = true;
+            }
+        }
 
-            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
+        private void OnExit(GameObject hitObj)
+        {
+            if (hitObj == Locator.GetPlayerDetector())
+            {
+                playerInTrigger = false;
+                triggered = false;
+            }
+        }
+
+        void Update()
+        {
+            if (playerInTrigger && !triggered)
             {
                 timeStayed += Time.deltaTime;
                 if (timeStayed > activationDelay)
@@ -83,14 +104,12 @@ namespace AstralCodex
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
-                timeStayed = 0f;
+            
         }
 
         void OnTriggerExit(Collider other)
         {
-            if (other.gameObject.GetAttachedOWRigidbody().CompareTag("Player"))
-                triggered = false;
+            
         }
     }
 }
