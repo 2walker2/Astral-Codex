@@ -16,7 +16,6 @@ namespace AstralCodex
     internal class CodexDispenser : MonoBehaviour
     {
         const string AnimatorState = "DispenseCodec";
-        const string CoreActivatedCondition = "CODEX_ACTIVATED_CORE";
 
         bool active = false;
         bool startedScalingCore = false;
@@ -87,7 +86,7 @@ namespace AstralCodex
             coreComputer.ClearAllEntries();
 
             //If codec has already been downloaded, only display final message
-            if (PlayerData.GetPersistentCondition(CoreActivatedCondition))
+            if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1)
             {
                 complete = true;
                 coreComputer.DisplayEntry(4);
@@ -300,9 +299,6 @@ namespace AstralCodex
             //Shatter the core
             coreTransform.localScale = Vector3.zero;
             shatterEffect.gameObject.SetActive(true);
-
-            //Set persistent condition
-            PlayerData.SetPersistentCondition(CoreActivatedCondition, true);
 
             //Switch final end times music
             MusicHandler.SetFinalEndTimes();
