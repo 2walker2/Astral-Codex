@@ -271,14 +271,11 @@ namespace AstralCodex
             //Play the addendum particles
             addendumParticles.Play();
 
-            //Wait for the player to interact with the dialogue
-            yield return new WaitUntil(() => addendumDialogueInteractReceiver._hasInteracted);
+            //Wait for the player to have the astral codec ship log
+            yield return new WaitUntil(() => PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_astral_codex_fact") && PlayerData._currentGameSave.shipLogFactSaves["codex_astral_codex_fact"].revealOrder > -1);
 
-            //Wait for the player to stop interacting with the dialogue
-            yield return new WaitUntil(() => !addendumDialogueInteractReceiver._hasInteracted);
-
-            //Disable the dialogue trigger
-            addendumDialogueTrigger.SetActive(false);
+            //Disable the dialogue trigger's collider
+            addendumDialogueTrigger.GetComponent<Collider>().enabled = false;
 
             //Stop the addendum particles
             addendumParticles.Stop();
