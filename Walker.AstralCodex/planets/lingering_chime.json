@@ -454,6 +454,13 @@
 				"parentPath": "Sector/Station/CodecDispenser/Core/Collision",
 				"isRelativeToParent": true
 			}
+		],
+		"reverbVolumes": [
+			{
+				"radius": 53.5,
+				"parentPath": "Volumes",
+				"rename": "ReverbVolume"
+			}
 		]
 	},
 	/*"CometTail": {
