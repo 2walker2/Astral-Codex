@@ -81,12 +81,18 @@ namespace AstralCodex
             triggerVolume.OnEntry += OnEntry;
 
             //Hide body if player is playing NomaiVR
+            //Modification of NomaiVR's code that places the body on the visible to probe layer
             if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
             {
                 Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
-                GameObject playerMeshRoot = SearchUtilities.Find("Player_Body/Traveller_HEA_Player_v2/Traveller_Mesh_v01:Traveller_Geo");
-                foreach (SkinnedMeshRenderer renderer in playerMeshRoot.GetComponentsInChildren<SkinnedMeshRenderer>())
+
+                var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
+
+                var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+                foreach (var renderer in renderers)
+                {
                     renderer.enabled = false;
+                }
             }
         }
 
