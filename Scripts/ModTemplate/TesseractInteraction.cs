@@ -80,28 +80,21 @@ namespace AstralCodex
             //Register trigger volume callback
             triggerVolume.OnEntry += OnEntry;
 
-            // nomaivr code moves body to VisibleToProbe layer, but tesseract shows that layer. so just hide the body instead
+            //Hide body if player is playing NomaiVR
+            //Modification of NomaiVR's code that places the body on the visible to probe layer
+            // https://github.com/Raicuparta/nomai-vr/blob/9e0091e9c9d1ecd0aced42bde59b750237600e08/NomaiVR/Hands/HandsController.cs#L109
             if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
             {
                 Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
-                // wait a frame to let nomaivr do stuff first
-                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(() =>
+
+                var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
+
+                var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+                foreach (var renderer in renderers)
                 {
-                    // https://github.com/Raicuparta/nomai-vr/blob/9e0091e9c9d1ecd0aced42bde59b750237600e08/NomaiVR/Hands/HandsController.cs#L111-L130
-                    var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
-
-                    var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
-                    foreach (var renderer in renderers)
-                    {
-                        if (renderer.name.Contains("ShadowCaster") || renderer.name.Contains("Head") || renderer.name.Contains("Helmet"))
-                        {
-                            continue;
-                        }
-
-                        if (renderer.gameObject.layer == LayerMask.NameToLayer("VisibleToProbe"))
-                            renderer.enabled = false;
-                    }
-                });
+                    // still make it cast shadow like base nomaivr does
+                    renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+                }
             }
         }
 
