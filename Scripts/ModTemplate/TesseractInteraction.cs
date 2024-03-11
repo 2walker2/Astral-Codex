@@ -84,21 +84,24 @@ namespace AstralCodex
             if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
             {
                 Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
-
-                // https://github.com/Raicuparta/nomai-vr/blob/9e0091e9c9d1ecd0aced42bde59b750237600e08/NomaiVR/Hands/HandsController.cs#L111-L130
-                var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
-
-                var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
-                foreach (var renderer in renderers)
+                // wait a frame to let nomaivr do stuff first
+                NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(() =>
                 {
-                    if (renderer.name.Contains("ShadowCaster") || renderer.name.Contains("Head") || renderer.name.Contains("Helmet"))
-                    {
-                        continue;
-                    }
+                    // https://github.com/Raicuparta/nomai-vr/blob/9e0091e9c9d1ecd0aced42bde59b750237600e08/NomaiVR/Hands/HandsController.cs#L111-L130
+                    var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
 
-                    if (renderer.gameObject.layer == LayerMask.NameToLayer("VisibleToProbe"))
-                        renderer.enabled = false;
-                }
+                    var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+                    foreach (var renderer in renderers)
+                    {
+                        if (renderer.name.Contains("ShadowCaster") || renderer.name.Contains("Head") || renderer.name.Contains("Helmet"))
+                        {
+                            continue;
+                        }
+
+                        if (renderer.gameObject.layer == LayerMask.NameToLayer("VisibleToProbe"))
+                            renderer.enabled = false;
+                    }
+                });
             }
         }
 
