@@ -40,7 +40,7 @@
       "[sample collection report:                          ] [    -item: contained singularities                 ] [    -quantity: 4                                   ] [    -time since retrieval: 120 hr                  ] [    -status: containment broken - 2 lost in transit]": "[样例收藏报告:                          ]\n[    -物品: 奇点                 ]\n[    -数量: 4                                   ]\n[    -上次更新: 120 小时                  ]\n[    -状态: 内部破损 - 两个在途中丢失]",
       "[sample collection report:                          ] [    -item: writing implement/musical instrument    ] [    -time since retrieval: 2462 M-hr               ] [    -translation utility: high                     ] [    -status: language database extracted           ]": "[样例收藏报告:                          ]\n[    -物品: 文字用具/乐器    ]\n[    -上次更新: 2462 百万小时               ]\n[    -翻译实用性: 高                     ]\n[    -状态：提取语言数据库           ]",
 
-      "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "我们使用<![CDATA[<Color=orange>]]>群星编码<![CDATA[</Color>]]>来传输所有信息, 我们能在结束前记录的每一条信息。如果你在读这篇文章，我们的信息一定完好无损地穿过了宇宙之烟。",
+      "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "我们通过<![CDATA[<Color=orange>]]>群星编码<![CDATA[</Color>]]>来传输我们在终焉前记录的每一条信息。如果你正在读这篇文章，那说明我们的信息一定是完好无损地穿过了宇宙之眼。",
       "Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive. - Explorer": "请便。 添加你自己的故事和知识，并以任何可能的方式将它带去宇宙之眼。 保存我们的知识、记忆，送到下一个宇宙. - 探索者",
       "tests passed - codec safeguards disabled |                      \\ | /                     | |                    --- o ---                   | |                      / | \\                     | core activated - insert device for download": "测试通过 - 群星编码防护解除                   \n|                      \\ | /                     |\n|                    --- o ---                   |\n|                      / | \\                     |\n核心激活 - 插入一个设备以记录",
       "codec downloaded successfully |     *     *    *       |    *     *    *     * | | *     *      *        \\|/      *         *     | |  *         *     *   -----           *     *   | pass it onwards": "编码下载成功                 \n|     *     *    *       |    *     *    *     * |\n| *     *      *        \\|/      *         *     |\n|  *         *     *   -----           *     *   |\n向前传递",
@@ -234,9 +234,9 @@
       "Something used to transmit a message from people named Archivist, Explorer, and Scientist.": "用来传递来自档案员、探索者和科学家的信息的东西。",
       "Something used to transmit a message protected by three safeguards.": "用于传输受三种保护措施保护的信息的东西。",
       "A means of transmitting information through a vortex. It contains someone's final message.": "通过量子漩涡传递信息的一种方式。它包含某人的遗言。",
-      "Contains the stories of a long-gone people. It could be used to preserve our own.": "包含一个早已逝去的种族的故事。它也可以用来保护我们的。",
-      "Used to transmit a message from a dying universe with hope to be remembered.": "用于传递来自垂死宇宙的信息，渴望被铭记。",
-      "I added what I knew to the message. The Astral Codec has been downloaded onto my little scout. I was asked to pass it onwards through the vortex.": "我在信息中添加了我所知道的内容。群星编码已经下载到我的小侦察兵上。我被要求把它穿过量子漩涡。",
+      "Contains the stories of a long-gone people. It could be used to preserve our own.": "包含一个早已逝去的种族的故事。它同样也可以用来储存我们的故事。",
+      "Used to transmit a message from a dying universe with hope to be remembered.": "一些希望能被记住的人用于传递来自垂死宇宙的信息。",
+      "I added what I knew to the message. The Astral Codec has been downloaded onto my little scout. I was asked to pass it onwards through the vortex.": "我在信息中添加了我所知道的内容。群星编码已经下载到我的小侦察兵上。我被要求把它发送进量子漩涡。",
 
       "Flashback Vision": "闪回",
       "When I died, I saw a series of images that zoomed in on one of the modules of a Nomai structure.": "当我死亡时，我看到了一系列放大到一个挪麦结构的模块上的图像。"
