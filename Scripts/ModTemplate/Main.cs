@@ -19,7 +19,7 @@ namespace AstralCodex
     public class Main : ModBehaviour
     {
         //DEBUG
-        public static bool debugMode = false; //CHANGE ON RELEASE
+        public static bool debugMode = true; //CHANGE ON RELEASE
 
         //Constant values
         public static string assetBundlePath = "planets/assets/astral_codex";

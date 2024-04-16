@@ -10,12 +10,15 @@ using NewHorizons.OtherMods;
 using UnityEngine.Playables;
 using UnityEngine.InputSystem;
 using System;
+using NewHorizons;
 
 namespace AstralCodex
 {
     internal class CodexDispenser : MonoBehaviour
     {
         const string AnimatorState = "DispenseCodec";
+        const string CommandPrefix = "<CMD> ";
+        const string AddendumPrompt = "Write Addendum";
 
         bool active = false;
         bool startedScalingCore = false;
@@ -264,8 +267,9 @@ namespace AstralCodex
             //Enable the dialogue trigger
             addendumDialogueTrigger.SetActive(true);
             InteractReceiver addendumDialogueInteractReceiver = addendumDialogueTrigger.GetComponent<InteractReceiver>();
-            addendumDialogueInteractReceiver._screenPrompt._text = "<CMD> Write Addendum"; //These will need to be translated
-            addendumDialogueInteractReceiver._noCommandIconPrompt._text = "Write Addendum";
+            string translatedAddendumPrompt = Main.newHorizons.GetTranslationForUI(AddendumPrompt); //Translate interact prompt
+            addendumDialogueInteractReceiver._screenPrompt._text = CommandPrefix + translatedAddendumPrompt;
+            addendumDialogueInteractReceiver._noCommandIconPrompt._text = AddendumPrompt;
 
             //Play the addendum particles
             addendumParticles.Play();
