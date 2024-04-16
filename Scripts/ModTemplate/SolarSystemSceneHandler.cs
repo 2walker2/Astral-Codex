@@ -81,6 +81,10 @@ namespace AstralCodex
             {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) },
             {"BrambleWarpReceiver", typeof(DisableShapeInShip) },
             {"Sector_DB/Bramble Building/Transform Root/Warp Pad/Warp Pad Swivel", typeof(FaceBrambleSphere) },
+            {"Station/Sun Area/Eclipse Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Spacecraft Area/Spacecraft Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Population Area/Population Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Trail Activation Area/Wait Here Canvas/Text", typeof(CipherTextTranslator) },
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
