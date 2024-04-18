@@ -2288,6 +2288,15 @@
 						"type": "adult",
 						"variation": 13,
 						"zRotation": 226
+					},
+					{
+						"position": {
+							"x": 2,
+							"y": -0.32
+						},
+						"type": "adult",
+						"variation": 15,
+						"zRotation": 169
 					}
 				],
 				/*"position": {
