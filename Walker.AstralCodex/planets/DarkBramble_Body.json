@@ -13,10 +13,6 @@
 			"keepLoaded": true,
 			"rotation": {},
 			"alignRadial": false,
-			"position": {
-			"x": -583.000244,
-			"z": 2366.00024
-			},
 			"rename": "BrambleThornParticles"
 			},
 			{
@@ -2292,6 +2288,15 @@
 						"type": "adult",
 						"variation": 13,
 						"zRotation": 226
+					},
+					{
+						"position": {
+							"x": 2,
+							"y": -0.32
+						},
+						"type": "adult",
+						"variation": 15,
+						"zRotation": 169
 					}
 				],
 				/*"position": {

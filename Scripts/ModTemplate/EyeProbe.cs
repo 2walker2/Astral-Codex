@@ -1,5 +1,4 @@
-﻿using Harmony;
-using OWML.ModHelper;
+﻿using OWML.ModHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -6,11 +6,21 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Firing signal received, retrieving stored coordinates. Launching secondary probe.</Text>
+		<Text>Firing signal received, retrieving stored coordinates. Launching secondary probe. Secondary probe arrived at destination.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Secondary probe arrived at destination, initiating visual link. Projection stone generated. Connection unstable.</Text>
+		<Text>Initiating visual link. Projection stone generated. Connection unstable.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+	    <RevealFact>
+	      	<FactID>codex_anomaly_rumor</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	    <RevealFact>
+	      	<FactID>codex_projection_rumor</FactID>
+	      	<Condition>1</Condition>
+	    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

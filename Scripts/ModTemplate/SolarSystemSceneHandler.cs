@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
-using Harmony;
 
 namespace AstralCodex
 {
@@ -20,6 +19,7 @@ namespace AstralCodex
         #region Private Variables
         bool flashbackOverridden = false;
         NomaiExperimentBlackHole experimentBlackHole;
+        TimeLoopCoreController timeLoopCoreController;
         GameObject skySphere;
         StarfieldController starfieldController;
         #endregion
@@ -80,7 +80,11 @@ namespace AstralCodex
             {"Trail Wires/Activation Trigger", typeof(TrailActivation) },
             {"Station/Volumes/HideMinimapVolume", typeof(HideMinimapTrigger) },
             {"BrambleWarpReceiver", typeof(DisableShapeInShip) },
-            {"Sector_DB/Bramble Building/Transform Root/Warp Pad/Warp Pad Swivel", typeof(FaceBrambleSphere) }
+            {"Sector_DB/Bramble Building/Transform Root/Warp Pad/Warp Pad Swivel", typeof(FaceBrambleSphere) },
+            {"Station/Sun Area/Eclipse Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Spacecraft Area/Spacecraft Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Population Area/Population Canvas/Text", typeof(CipherTextTranslator) },
+            {"Station/Trail Activation Area/Wait Here Canvas/Text", typeof(CipherTextTranslator) },
         };
 
         Dictionary<string, Vector3> rotatingObjects = new Dictionary<string, Vector3>()
@@ -92,11 +96,11 @@ namespace AstralCodex
             {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (2)/BrittleHollow", new Vector3(0, 8, 0) },
             {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource (1)/TimberHearth", new Vector3(0, 8, 0) },
             {"TranslationProbe2/ScaleRoot/Model/Projection Ring/Projections/SpacecraftScanner/ScanSource/HourglassTwins", new Vector3(0, 8, 0) },
-            {"TranslationProbe1/ScaleRoot/Model/HT Projector Ring", new Vector3(0, 0, 5) },
-            {"TranslationProbe1/ScaleRoot/Model/TH Projector Ring", new Vector3(0, 0, 3) },
-            {"TranslationProbe1/ScaleRoot/Model/BH Projector Ring", new Vector3(0, 0, 2.5f) },
-            {"TranslationProbe1/ScaleRoot/Model/GD Projector Ring", new Vector3(0, 0, 2) },
-            {"TranslationProbe1/ScaleRoot/Model/DB Projector Ring", new Vector3(0, 0, 1.5f) },
+            {"TranslationProbe1/ScaleRoot/Model/HT Projector Ring", new Vector3(0, 0, -5) },
+            {"TranslationProbe1/ScaleRoot/Model/TH Projector Ring", new Vector3(0, 0, -3) },
+            {"TranslationProbe1/ScaleRoot/Model/BH Projector Ring", new Vector3(0, 0, -2.5f) },
+            {"TranslationProbe1/ScaleRoot/Model/GD Projector Ring", new Vector3(0, 0, -2) },
+            {"TranslationProbe1/ScaleRoot/Model/DB Projector Ring", new Vector3(0, 0, -1.5f) },
             {"TranslationProbe1/ScaleRoot/Model/Sun Projector/Sun Scanner/ScanSource/Sun", new Vector3(3, -3, 3) },
             {"TranslationProbe1/ScaleRoot/Model/HT Projector Ring/HT Scanner/ScanSource/Hourglass Twins", new Vector3(0, 10, 0) },
             {"TranslationProbe1/ScaleRoot/Model/TH Projector Ring/TH Scanner/ScanSource/TimberHearth", new Vector3(0, 10, 0) },
@@ -174,7 +178,6 @@ namespace AstralCodex
                 RemoveBreakableComponentFromBramblePlatforms();
                 RemoveSubmergeControllerFromBrambleGhostMatter();
                 ConfigureBrambleWarpPads();
-                PreventBaseGameDialogue();
                 MakeBrambleCloakSphereCastShadows();
                 
                 //Chime configuration
@@ -321,6 +324,10 @@ namespace AstralCodex
                 experimentBlackHole = experimentBlackHoleGO.GetComponent<NomaiExperimentBlackHole>();
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND EXPERIMENT BLACK HOLE", MessageType.Error);
+
+            timeLoopCoreController = FindObjectOfType<TimeLoopCoreController>();
+            if (timeLoopCoreController == null)
+                Main.modHelper.Console.WriteLine("FAILED TO FIND TIME LOOP CORE CONTROLLER", MessageType.Error);
         }
 
         void RemoveBreakableComponentFromBramblePlatforms()
@@ -347,19 +354,6 @@ namespace AstralCodex
             warpTransmitter._warpRadius = 5;
             NomaiWarpReceiver warpReceived = SearchUtilities.Find("BrambleWarpReceiver").GetComponent<NomaiWarpReceiver>();
             warpReceived._warpRadius = 5;
-        }
-
-        void PreventBaseGameDialogue()
-        {
-            //Slate
-            CapsuleCollider slateDialogueCollider = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").GetComponent<CapsuleCollider>();
-            slateDialogueCollider.radius = 0;
-            slateDialogueCollider.height = 0;
-
-            //Self
-            CapsuleCollider selfDialogueCollider = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player/ConversationZone_NPC_Player").GetComponent<CapsuleCollider>();
-            selfDialogueCollider.radius = 0;
-            selfDialogueCollider.height = 0;
         }
 
         void MakeBrambleCloakSphereCastShadows()
@@ -603,6 +597,10 @@ namespace AstralCodex
                 }
                 flashbackOverridden = true;
             }
+
+            //Prevent probe from duplicating in ATP
+            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+                PlayerData.SetPersistentCondition("PROBE_ENTERED_TIMELOOPCORE", false);
         }
 
         void StabilizeSpacetime()
@@ -613,7 +611,10 @@ namespace AstralCodex
                 if (PlayerData._currentGameSave.shipLogFactSaves.ContainsKey("codex_lingering_chime_tesseract") && PlayerData._currentGameSave.shipLogFactSaves["codex_lingering_chime_tesseract"].revealOrder > -1)
                 {
                     TimeLoopCoreController.s_paradoxExists = false; //Prevent from breaking via ATP duplication
+                    EyeStateManager.s_paradoxExists = false; //Prevent from breaking while at Eye
                     experimentBlackHole._duplicateActive = false; //Prevent from breaking via HEL experiment
+                    timeLoopCoreController._probeEnteredCoreLastLoop = false; //Prevent from breaking if probe is sent through ATP
+                    timeLoopCoreController._playerEnteredCoreLastLoop = false; //Prevent from breaking in edge cases if player is sent through ATP
                 }
             }
         }

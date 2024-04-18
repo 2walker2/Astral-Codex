@@ -6,17 +6,17 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>A dozen more cycles and there won't be anything left. No more home body wracked by conflict. No more of any of the myriad of species and cultures we've encountered in our travels. No more campfires under the stars.</Text>
+		<Text>A dozen more cycles and there won't be anything left. No more home body wracked by conflict. No more of any of the many species and cultures we've met so far. No more campfires under the stars.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Except that's not true. Scientist at least believes there will be something after. If anyone is reading this, then I guess she was right. But even that won't last forever. Someday, someone will again face the end.</Text>
+		<Text>But that's not true. Scientist at least thinks there will be something afterward. If anyone is reading this, then I guess she was right. But even that won't last forever. Someday, someone else will face the end.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>We cannot survive what is coming, but at least some of our stories can. And now yours have a chance too. Together, we can create an unbroken thread of memory stretching across eons and the vast astral sea.
+		<Text>We can't survive what's coming, but at least some of our stories can. And now yours have a chance too. Together we can create an unbroken thread of memory stretching across eons and the vast astral sea.
 - Explorer
 		</Text>
 	</TextBlock>

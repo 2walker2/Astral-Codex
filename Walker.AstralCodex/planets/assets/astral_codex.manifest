@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3434667260
+CRC: 2813016866
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e423b770360ebc16f207547421f8894c
+    Hash: d98b171552e6f56fe8b98b70ca127307
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8647b5a21ce07a5535a652cd0af3eb71
+    Hash: 69f59a59e2f31bb38abf33f4cdec25d1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -46,6 +46,8 @@ ClassTypes:
 - Class: 108
   Script: {instanceID: 0}
 - Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: d8592143aba9d594fb3338233ad486ee, type: 3}
@@ -69,6 +71,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 2357c7ea4be9dc840867927064ff876e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c82db0fa1189d6b4b8fcaa80eff2fca0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 44aa9aac3f798ff478ea63d7fdd28e3e, type: 3}
 - Class: 114
@@ -99,6 +103,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
 - Class: 224
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
@@ -108,6 +114,7 @@ Assets:
 - Assets/Bundle/Coin.prefab
 - Assets/Bundle/Animations/SolarPanelsRising.anim
 - Assets/Bundle/Materials/Whirlpool Edge.mat
+- Assets/Bundle/Fonts/Greatest Fortune.ttf
 - Assets/Bundle/Textures/Skybox/downImage.png
 - Assets/Bundle/CodecDispenser.prefab
 - Assets/Bundle/Audio/chime_bells.ogg
@@ -334,7 +341,6 @@ Assets:
 - Assets/Bundle/Foliage Group 3.prefab
 - Assets/Bundle/White Hole Water.prefab
 - Assets/Bundle/Models/inverted_sphere.obj
-- Assets/Bundle/Audio/chime_ambience.ogg
 - Assets/Bundle/Materials/Wires/PopulationCodecWireShell.mat
 - Assets/Bundle/Models/attlerock.obj
 - Assets/Bundle/Materials/ThornParticles.mat
@@ -391,6 +397,7 @@ Assets:
 - Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_n.png
 - Assets/Bundle/Models/environments_hologram.obj
+- Assets/Bundle/Audio/chime_ambience.ogg
 - Assets/Bundle/Empty.prefab
 - Assets/Bundle/Materials/Dot.mat
 - Assets/Bundle/Materials/InterloperFuelTube.mat

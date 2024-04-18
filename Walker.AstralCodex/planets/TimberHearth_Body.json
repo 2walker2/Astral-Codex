@@ -799,11 +799,7 @@
 				"isRelativeToParent": true	
 			},
 			{
-				"radius": 1,
-				"parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
-				"isRelativeToParent": true,
-				"position": {"y": 1},
-				"pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+				"pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
 				"xmlFile": "planets/text/Slate.xml"
 			}
 			//Debug dialog

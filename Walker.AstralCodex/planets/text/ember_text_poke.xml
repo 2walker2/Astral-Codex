@@ -21,7 +21,7 @@
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>POKE: I spoke of this to Root when we installed the <![CDATA[<Color=orange>]]>Ash Twin Project's<![CDATA[</Color>]]> advanced warp core. Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of yourself?</Text>
+		<Text>POKE: Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of yourself?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
@@ -32,10 +32,6 @@
 	    <RevealFact>
 	      	<FactID>codex_ember_matter</FactID>
 	      	<Condition>4</Condition>
-	    </RevealFact>
-	    <RevealFact>
-	      	<FactID>codex_ash_clone_rumor</FactID>
-	      	<Condition>5</Condition>
 	    </RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

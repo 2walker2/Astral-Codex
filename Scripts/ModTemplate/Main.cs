@@ -10,23 +10,16 @@
 using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System;
-using Harmony;
-using System.Collections;
-using System.Linq;
 using NewHorizons.Utility;
-using UnityEngine.InputSystem;
+using HarmonyLib;
+using System.Reflection;
 
 namespace AstralCodex
 {
     public class Main : ModBehaviour
     {
         //DEBUG
-        public static bool debugMode = true; //CHANGE ON RELEASE
+        public static bool debugMode = false; //CHANGE ON RELEASE
 
         //Constant values
         public static string assetBundlePath = "planets/assets/astral_codex";
@@ -41,6 +34,9 @@ namespace AstralCodex
         {
             //Initialize instance
             if (S == null) S = this;
+
+            //Apply Harmony patches
+            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         }
 
         private void Start()

@@ -16,8 +16,7 @@
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could and sent our final desperate cry into the abyss.
-- Scientist
+		<Text>When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could and launched this probe, our final desperate cry into the abyss. - Scientist
 		</Text>
 	</TextBlock>
 	<ShipLogConditions>

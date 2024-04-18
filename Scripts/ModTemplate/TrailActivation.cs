@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using NewHorizons.Utility;
 using UnityEngine.SceneManagement;
 using System.Linq;
-using Harmony;
+
 using Newtonsoft.Json.Linq;
 
 namespace AstralCodex
@@ -15,6 +15,7 @@ namespace AstralCodex
     {
         const string TrailsActivatedCondition = "CODEX_TRAILS_ACTIVATED";
         bool triggered = false;
+        bool playerInTrigger = false;
         float activationDelay = 5f;
         float timeStayed = 0f;
         bool trailsActivated = false;
@@ -24,6 +25,7 @@ namespace AstralCodex
         PopulationTrails populationTrails;
         SpacecraftTrails spacecraftTrails;
         AudioSource audioSource;
+        OWTriggerVolume triggerVolume;
 
         void Start()
         {
@@ -36,25 +38,47 @@ namespace AstralCodex
             populationTrails = FindObjectOfType<PopulationTrails>();
             spacecraftTrails = FindObjectOfType<SpacecraftTrails>();
             audioSource = GetComponent<AudioSource>();
+            triggerVolume = GetComponent<OWTriggerVolume>();
 
             //Restore state from last loop
             if (PlayerData.GetPersistentCondition(TrailsActivatedCondition))
                 trailsActivated = true;
             ActivateTrails(trailsActivated, false);
 
+            //Register trigger volume callbacks
+            triggerVolume.OnEntry += OnEntry;
+            triggerVolume.OnExit += OnExit;
         }
 
-        void OnTriggerStay(Collider other)
+        private void OnEntry(GameObject hitObj)
         {
-            if (triggered || other.gameObject != Locator.GetPlayerBody().gameObject)
-                return;
-
-            timeStayed += Time.deltaTime;
-            if (timeStayed > activationDelay)
+            if (hitObj.CompareTag("PlayerDetector"))
             {
-                trailsActivated = !trailsActivated;
-                triggered = true;
-                ActivateTrails(trailsActivated);
+                timeStayed = 0f;
+                playerInTrigger = true;
+            }
+        }
+
+        private void OnExit(GameObject hitObj)
+        {
+            if (hitObj.CompareTag("PlayerDetector"))
+            {
+                playerInTrigger = false;
+                triggered = false;
+            }
+        }
+
+        void Update()
+        {
+            if (playerInTrigger && !triggered)
+            {
+                timeStayed += Time.deltaTime;
+                if (timeStayed > activationDelay)
+                {
+                    trailsActivated = !trailsActivated;
+                    triggered = true;
+                    ActivateTrails(trailsActivated);
+                }
             }
         }
 
@@ -80,18 +104,12 @@ namespace AstralCodex
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject != Locator.GetPlayerBody().gameObject)
-                return;
             
-            timeStayed = 0f;
         }
 
         void OnTriggerExit(Collider other)
         {
-            if (other.gameObject != Locator.GetPlayerBody().gameObject)
-                return;
-
-            triggered = false;
+            
         }
     }
 }

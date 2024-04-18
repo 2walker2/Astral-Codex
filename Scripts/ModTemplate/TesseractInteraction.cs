@@ -7,6 +7,8 @@ using NewHorizons.Builder;
 using NewHorizons.Utility;
 using UnityEngine.PostProcessing;
 using System.Diagnostics;
+using System;
+using Newtonsoft.Json.Linq;
 
 namespace AstralCodex
 {
@@ -26,6 +28,9 @@ namespace AstralCodex
         Animator solarPanelsAnimator; //The Animator that controls the solar panels rising and falling
         Shape chimeSignalDetectionShape; //The shape that notifies the player of an unidentified signal for the Chime transmitter
         Camera playerCamera; //The player's camera
+        GameObject chimeInteriorRevealVolume; //The reveal volume for the interior of the Chime
+        GameObject tesseractRevealVolume; //The reveal volume for passing through the tesseract
+        OWTriggerVolume triggerVolume;
         #endregion
 
         #region Initialization
@@ -41,6 +46,9 @@ namespace AstralCodex
             solarPanelsAnimator = SearchUtilities.Find("Station/Solar Panels").GetComponent<Animator>();
             chimeSignalDetectionShape = SearchUtilities.Find("Chime Signal").GetComponent<Shape>();
             playerCamera = Locator.GetPlayerCamera().GetComponent<Camera>();
+            chimeInteriorRevealVolume = SearchUtilities.Find("ChimeInteriorRevealVolume");
+            tesseractRevealVolume = SearchUtilities.Find("ChimeTesseractRevealVolume");
+            triggerVolume = GetComponent<OWTriggerVolume>();
 
             GameObject exteriorProbeRoot = SearchUtilities.Find("Exterior Lidar Probes");
             if (exteriorProbeRoot != null)
@@ -58,13 +66,39 @@ namespace AstralCodex
             //Disable signal at start
             chimeSignalDetectionShape.enabled = false;
 
+            //Disable reveal volumes at start
+            chimeInteriorRevealVolume.SetActive(false);
+            tesseractRevealVolume.SetActive(false);
+
             //Restore tesseract state from previous loops
             if (PlayerData.GetPersistentCondition(TesseractEnteredCondition))
                 EnteredTesseract(true, false);
 
             //Add the animation component as well
             gameObject.AddComponent<TesseractAnimation>();
+
+            //Register trigger volume callback
+            triggerVolume.OnEntry += OnEntry;
+
+            //Hide body if player is playing NomaiVR
+            //Modification of NomaiVR's code that places the body on the visible to probe layer
+            // https://github.com/Raicuparta/nomai-vr/blob/9e0091e9c9d1ecd0aced42bde59b750237600e08/NomaiVR/Hands/HandsController.cs#L109
+            if (Main.modHelper.Interaction.ModExists("Raicuparta.NomaiVR"))
+            {
+                Main.modHelper.Console.WriteLine("NomaiVR is installed, hiding player body");
+
+                var bodyModels = Locator.GetPlayerBody().transform.Find("Traveller_HEA_Player_v2");
+
+                var renderers = bodyModels.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+                foreach (var renderer in renderers)
+                {
+                    // still make it cast shadow like base nomaivr does
+                    renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+                }
+            }
         }
+
+        
         #endregion
 
         #region Update
@@ -89,10 +123,11 @@ namespace AstralCodex
         #endregion
 
         #region Player Enters/Exits/Waits in Tesseract
-        private void OnTriggerEnter(Collider other)
+
+        private void OnEntry(GameObject hitObj)
         {
             //Move into 4D
-            if (other.gameObject.CompareTag("Player"))
+            if (hitObj.CompareTag("PlayerDetector"))
             {
                 //Main.modHelper.Console.WriteLine($"ENTERED TESSERACT", MessageType.Success);
                 if (fourDLayer == 0)
@@ -110,7 +145,7 @@ namespace AstralCodex
                 statusComputer.ClearAllEntries();
 
             //Disable probe launcher overlay
-            Transform[] probeLauncherRenderers = GameObject.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
+            Transform[] probeLauncherRenderers = SearchUtilities.Find("Props_HEA_ProbeLauncher_ProbeCamera").GetComponentsInChildren<Transform>();
             foreach (Transform r in probeLauncherRenderers) r.gameObject.layer = 28;
 
             //Instantiate effect
@@ -156,6 +191,10 @@ namespace AstralCodex
             //Toggle signal
             chimeSignalDetectionShape.enabled = value;
 
+            //Toggle reveal volumes
+            chimeInteriorRevealVolume.SetActive(value);
+            tesseractRevealVolume.SetActive(value);
+
             //Set persistent condition
             PlayerData.SetPersistentCondition(TesseractEnteredCondition, value);
 
@@ -167,7 +206,6 @@ namespace AstralCodex
                 if ((playerCamera.cullingMask & (1 << 22)) != 0)
                     playerCamera.cullingMask -= (1 << 22);
             }
-                
         }
         #endregion
     }

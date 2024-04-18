@@ -6,19 +6,9 @@
 
         <Curiosity>codex_astral_codex</Curiosity>
         
-        <RumorFact>
-            <ID>codex_lingering_chime_rumor</ID>
-            <SourceID>codex_projection</SourceID>
-            <RumorName>Anomalous Body</RumorName>
-            <Text>The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.</Text> 
-        </RumorFact>
         <ExploreFact>
             <ID>codex_lingering_chime_fact</ID>
             <Text>An invisible structure far below the plane of the solar system.</Text>
-        </ExploreFact>
-        <ExploreFact>
-            <ID>codex_lingering_chime_tesseract</ID>
-            <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now!</Text> 
         </ExploreFact>
         <ExploreFact>
             <ID>codex_lingering_chime_material</ID>

@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>We used the Astral Codec to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.</Text>
+		<Text>We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>

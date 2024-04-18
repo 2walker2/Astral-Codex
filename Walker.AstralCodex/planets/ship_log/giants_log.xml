@@ -7,9 +7,37 @@
         <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
         
+        <RumorFact>
+            <ID>codex_projection_rumor</ID>
+            <SourceID>codex_flashback</SourceID>
+            <Text>The images I saw when I died led me to the Orbital Probe Cannon's Probe Tracking Module.</Text> 
+        </RumorFact>
+
         <ExploreFact>
             <ID>codex_projection_fact</ID>
             <Text>The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.</Text>
         </ExploreFact>
+
+        <Entry>
+            <ID>codex_anomaly</ID>
+            <Name>Anomalous Body</Name>
+
+            <Curiosity>codex_astral_codex</Curiosity>
+            
+            <RumorFact>
+                <ID>codex_anomaly_rumor</ID>
+                <SourceID>codex_projection</SourceID>
+                <Text>The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.</Text> 
+            </RumorFact>
+
+            <ExploreFact>
+                <ID>codex_anomaly_fact</ID>
+                <Text>An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.</Text>
+            </ExploreFact>
+            <ExploreFact>
+                <ID>codex_lingering_chime_tesseract</ID>
+                <Text>I passed through a strange device and the structure revealed itself. I can see ghost matter now!</Text> 
+            </ExploreFact>
+        </Entry>
     </Entry>
 </AstroObjectEntry>
