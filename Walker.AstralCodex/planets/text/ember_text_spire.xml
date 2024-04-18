@@ -11,7 +11,7 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>1</ParentID>
-		<Text>KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with  <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. Such a collision would surely be fatal for any passengers.</Text>
+		<Text>KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. Such a collision would surely be fatal for any passengers.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 	    <RevealFact>
