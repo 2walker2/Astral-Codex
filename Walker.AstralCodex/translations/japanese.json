@@ -1,0 +1,270 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "UIDictionary": {
+        "Thank you for downloading Astral Codec!\n\n\nIn death a new mystery will be revealed.": "Astral Codecをダウンロードしていただきありがとうございます！\n\n\n死によって新たな謎が明かされます。",
+        "Secondary Probe": "第2探査機",
+        "Lingering Chime": "名残り奏",
+        "Astral Codec": "アストラル･コーデック",
+        "Chime Transmitter": "奏の伝送装置",
+        "Translation Probe Cinder": "翻訳探査機 残り火",
+        "Translation Probe Thicket": "翻訳探査機 密生林",
+        "Translation Probe Astral": "翻訳探査機 アストラル",
+        "Write Addendum": "追記する"
+    },
+    "DialogueDictionary": {
+        // Slate
+        "Have you noticed the sky's green?": "空が緑色になってるのに気づいてる？",
+        "It looks perfectly normal to me.": "私にはまったくもって普通に見えるぞ。",
+        "Are you sure you're alright? I know Chert and Riebeck both got a little green around the gills before takeoff. But never like this.": "本当に大丈夫か？ChertもRiebeckも出発前にエラ周りが少し緑色になってたのは知ってる。だが、決してそのようなものじゃない。",
+        "Did you know there's a laser pointed at your head?": "あなたの頭にレーザーが照射されてるのを知ってる？",
+        "Like I'm being scanned or something? <![CDATA[<i>Creepy</i>]]>...": "まるで私がスキャンか何かされてるかのように？<![CDATA[<i>気味が悪い</i>]]>…",
+        "I haven't heard that ghost story before, Hatchling. I'll have to use it on Hornfels sometime.": "そんな怪談は初めて聞いたよ、ひよっ子。いつかHornfelsに話してやることにしよう。",
+        "Did your campfire really fly off?": "あなたのキャンプファイヤーは本当に飛んでいったの？",
+        "Sure did. Spookiest thing I've ever seen. It just up and lifted off into the sky all on its own.": "確かにそうだ。私がこれまで見たなかで最も不気味なものだった。あれはそのまま上昇し、ひとりでに空へ飛び去っていった。",
+        "I wonder where it could be now.": "やつは今どこにいるんだろうな。",
+        "I found it.": "それを見つけた。",
+        "You found it! Where!?": "見つけた！どこで！？",
+        "In an invisible alien spacecraft below the sun.": "太陽の下にある目に見えない異星人の宇宙船の中だ。",
+        "Okay. Now I know you're pulling my leg.": "わかった。今ならお前が私をからかってるんだとな。",
+
+        "Hornfels insisted I bring this recorder with me to \"document any unknown Nomai artifacts\". If you ask me, I think they're being a little too optimistic. I'm not going to find anything of interest on such a routine expedition.": "Hornfelsは“未知のNomaiの遺物を記録する”ため私にこのレコーダーを持っていくようにと主張した。私に言わせればあいつは少し楽観的すぎると思う。こんな日常的な探索では興味深いものなんて何も見つからないだろう。",
+        "Oh well. Here we go anyways. Slate's Expedition Log: Day 1": "まあいい。とにかく行こう。Slateの探索記録:1日目",
+        "I'm out here by the ol' Nomai ruins to see if I can scrounge up an intact warp core or two for the hatchling. Gotta get their scout properly equipped before they set out for the stars.": "私は、ひよっ子のために無傷のワープコアを1つか2つばかり漁りに古いNomaiの遺跡のそばに来ている。星々に向けて出発する前にあいつのスカウトに適切な装備を整えてやらなくちゃならない。&lt;i&gt;&lt;/i&gt;",
+        "I found some pretty quickly by that weird spiral ruin. Four of them were even still intact. Jackpot!": "あの奇妙な螺旋遺跡のそばですぐにいくつか見つかった。そのうち4つはまだ無傷だった。大当たりだ！",
+        "I maaaay have gotten a bit too late of a start though and the sun's already setting, so I might as well make camp here before heading back. Good thing I brought plenty of marshmallows, eh?": "まあ出発が少し遅れてしまったし太陽ももう沈んでるので、帰る前にここでキャンプした方がいいかもしれないなあ。マシュマロをたくさん持ってきてよかっただろう？",
+        "<![CDATA[<size=60>]]>Ahhhhhhhhh!<![CDATA[</size>]]> What's going on?! Wait no, get back here! Take that!": "<![CDATA[<size=60>]]>ああああああ！<![CDATA[</size>]]>何が起きてる？！待って、いや、ここに戻れ！これでもか！",
+        "Ok. <![CDATA[<Pause=0.5>]]>Calm down. <![CDATA[<Pause=0.5>]]>What the heck? What was that thing?": "ああ。<![CDATA[<Pause=0.5>]]>落ち着け。<![CDATA[<Pause=0.5>]]>いったい何だ？あれは何だったんだ？",
+        "I woke up to this faint ringing noise, almost too quiet to hear. When I opened my eyes, my campfire was moving. It just... lifted into the air like something had grabbed it. Then it floated off into the sky like some kind of ghost.": "私はこのかすかな鳴り響く音で目が覚めたが、いやあまりにも静かでほとんど聞こえなかったが。目を開けるとキャンプファイヤーが動いていたんだ。それはただ…何かにつかまれたかのように空中に持ち上がった。それからは幽霊かのように空へ飛び去っていった。",
+        "I whacked at it with my marshmallow stick and it sounded like I hit something. But it just kept going. It even took the warp cores I found too!": "マシュマロスティックで叩いたら何かに当たったような音がした。だがそれは続いたんだ。見つけたワープコアすら奪っていった！&lt;i&gt;&lt;/i&gt;",
+        "That can't have been real, right? I must have had too much sap wine recently. I'm going back to the village and never camping here again. Hornfels can make one of the other travelers go find a core.": "現実であるはずがないよな？最近樹液ワインを飲みすぎたに違いない。私は村へ戻り、二度とここでキャンプをすることはないだろう。Hornfelsは他の旅人にコアを探しに行かせればいい。",
+
+        // Chert
+        "Chert’s Research Notes — property of Chert!": "Chertの調査メモ — Chertの私物！",
+        "This is the only known Nomai construction on <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>. Interestingly, its material places it as one of the newest Nomai structures I've explored.": "これは<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>で知られている唯一のNomaiの建造物だ。興味深いことに、資料によればこれは私が調査した中で最も新しいNomaiの建造物の1つとされている。",
+        "It looks like construction was never finished. Was it abandoned? Or did something happen to the Nomai here?": "建築はまだ終わってないように見える。放棄されたのか？それともここでNomaiに何かあったのか？",
+        "The probe down on the observation deck is clearly used for research of some sort. But what were they studying?": "展望台にある探査機は明らかに何らかの研究に使われている。だが、彼らは何を研究していたのだろう？",
+        "There's also that device mounted to the probe. I know I've seen devices like it in other Nomai ruins but this one seems to be deactivated.": "探査機にはあの装置も取り付けられている。他のNomaiの遺跡でも似たようなものを見たことがあるが、この装置は無効化されてるようだ。",
+        "Oh hey, I just spotted a supernova while taking down camp. Those are normally pretty rare. Neat!": "ああそうだ、キャンプの撤収中に超新星を発見した。普段それはかなり珍しいんだ。運がいい！&lt;i&gt;&lt;/i&gt;",
+
+        // ParadoxSelf
+        "It worked! We increased the population!": "うまくいった！人口を増やせた！",
+        "Glad I could help! Teamwork makes the dream work after all.": "役に立ててよかった！やはりチームワークが夢を実現させるんだ。",
+        "At least I think I remember Hal saying that once.": "少なくとも、Halが一度そう言ったのを覚えてると思う。",
+        "I can't believe the population quota we needed was just barely in reach.": "必要な人口割り当てがギリギリで達成できたとは信じられない。",
+        "What a coincidence!": "なんて偶然だ！",
+
+        // Computer on Giant's Deep
+        "Anomaly matching partial criteria for the <![CDATA[<Color=lightblue>]]>Eye of the Universe<![CDATA[</Color>]]> impacted by probe 78,809. Coordinates recorded.": "探査機 78,809が衝突した<![CDATA[<Color=lightblue>]]>宇宙の眼<![CDATA[</Color>]]>と部分的に基準が一致する異常。座標を記録しました。",
+        "Firing signal received, retrieving stored coordinates. Launching secondary probe. Secondary probe arrived at destination.": "発射信号受信、保存されていた座標を読み出しています。第2探査機発射中。第2探査機は目的地に到着しました。",
+        "Initiating visual link. Projection stone generated. Connection unstable.": "視覚化リンク開始中。プロジェクションストーンを生成しました。接続は不安定です。",
+
+        // Nomai on Hourglass Twins
+        "ANNONA: Welcome to <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]>, my friends! It is good to see you again after so long apart. Observation: we must develop a better means of interplanetary travel so that we can be properly reunited (perhaps warp travel could be recreated with the right equipment).": "ANNONA:<![CDATA[<Color=lightblue>]]>燃え盛る双子星<![CDATA[</Color>]]>へようこそ！ここまで長かったが、再び会えて嬉しいよ。意見:我々は問題なく合流できるように、惑星間航行をするためのより良い手段を開発しなければならない(おそらくワープ移動は適切な機器で再現できる)。",
+        "KOUSA: Foli... You didn't make it out, did you?": "KOUSA:Foli…。あなたはもういなくなってしまったの？",
+        "THATCH: Greetings, Aunt Melorae, it has been too long since we were separated. I brought you something. Take care of this tree from <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>, let it mark the site of our clan's reunion (do ensure it does not invade this planet's biosphere).": "THATCH:Meloraeおばさん、私たちは離れ離れになってからあまりにも長い年月が経ってしまったわ。こんなものを持ってきたの。<![CDATA[<Color=lightblue>]]>脆い空洞<![CDATA[</Color>]]>の木よ。これを大切にして、私たちの部族の再会の印としてほしいの(この惑星の生態系をおびやかさないようには注意して)。",
+        "<![CDATA[<Color=orange>]]>Reunion Memorial<![CDATA[</Color>]]>": "<![CDATA[<Color=orange>]]>再会の記念樹<![CDATA[</Color>]]>",
+        "POKE: We have failed, Annona. Though the fault does not lie with the warp core I crafted, I cannot help but feel some responsibility. Hypothesis: had I better understood your designs, less energy would have been required.": "POKE:私たちは失敗してしまったの、Annona。私が作ったワープコアのせいではないけれど、それでも責任を感じずにはいられない。仮説:あなたの設計を私がもっとよく理解していれば、必要なエネルギーをより少なくできたのでしょう。",
+        "POKE: However, despite this doubt (and the struggle of living without you), I will press on. Like this tree before me, we Nomai can thrive even in an environment far from our home.": "POKE:でも、この疑念(そしてあなたなしで生きる苦悩)を抱えても、私は前に進むわ。目の前にあるこの木のように私たちNomaiは故郷から遠く離れた環境であっても繁栄できる。",
+        "POKE: I depart soon to explore the <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> alongside Pye and Clary. However, when I return, I will investigate any way to reduce the energy the warp core requires (perhaps with more precision...).": "POKE:私はもうすぐ<![CDATA[<Color=lightblue>]]>彗星<![CDATA[</Color>]]>を調査するためPyeとClaryと一緒に出発するの。だけど戻ってきたら、ワープコアに必要なエネルギーを削減する方法を研究するつもり(おそらく、より正確にすると…)。",
+        "POKE: The possibilities of the <![CDATA[<Color=orange>]]>Ash Twin Project<![CDATA[</Color>]]> still excite me. Once we have found the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>, imagine what else we could achieve with this technology! With a negative time interval on this scale, we could potentially duplicate matter (or even one of us).": "POKE:<![CDATA[<Color=orange>]]>灰の双子星プロジェクト<![CDATA[</Color>]]>がもつ可能性には未だに興奮してるわ。ひとたび<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>を見つけたら、この技術で他にどんなことができるか想像してみて！この規模のネガティブインターバルを使えば、物質(もしくは私たちの1人)を複製できてしまうかもしれない。",
+        "POKE: Imagine - temporal clones could be used to temporarily increase the population of our clan. How would it feel to work alongside a future version of yourself?": "POKE:想像してみて — 一時的なクローンを使って一時的に部族の人口を増やすことができたら。未来のバージョンの自分自身と一緒に仕事をするのはどんな気分かしら？",
+        "CLARY: Hypothesis: two of you would be too much for the fabric of spacetime (or me) to handle. Come, sister, the shuttle is almost ready.": "CLARY:仮説:あなたが2人もいれば時空構造(もしくは私)にとって取り扱うには多すぎる。来て、Poke、シャトルの準備がもうできるわ。",
+        "SPIRE: We will need to build a gravity cannon here on <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]> to allow for shuttle travel back to <![CDATA[<Color=lightblue>]]>Brittle Hollow<![CDATA[</Color>]]>. This model can be used as reference for the full-scale construction, and to send small objects until construction is complete.": "SPIRE:<![CDATA[<Color=lightblue>]]>脆い空洞<![CDATA[</Color>]]>へのシャトルの移動を可能にするため、<![CDATA[<Color=lightblue>]]>燃え盛る双子星<![CDATA[</Color>]]>のここに重力砲を建設する必要がある。この模型は本格的な工事をする際の参考として、また工事が完了するまでの間に小物を送る用途として利用できる。",
+        "SPIRE: Despite its scale, this model operates at full power. Be careful when near it - stepping inside will result in a rapid trip to orbit.": "SPIRE:その大きさに見合わず、この模型は最大限のパワーで動作する。近くにいるときは気をつけてほしい — 中に足を踏み入れた途端に軌道上へ旅行に出かけることになるだろう。",
+        "KOUSA: We must be cautions once the cannon is complete. Multiple test launches from the model have collided with <![CDATA[<Color=lightblue>]]>Ash Twin<![CDATA[</Color>]]>. Such a collision would surely be fatal for any passengers.": "KOUSA:砲が完成したら用心しなくちゃいけない。この模型による複数の発射試験で<![CDATA[<Color=lightblue>]]>灰の双子星<![CDATA[</Color>]]>と衝突してる。そのような衝突は乗客にとって致命傷になりかねない。",
+
+        "POKE: The advanced warp core has been installed. The <![CDATA[<Color=orange>]]>Ash Twin Project<![CDATA[</Color>]]> is now complete and ready to operate when the Sun Station comes online.": "POKE:先進的ワープコアが設置されました。<![CDATA[<Color=orange>]]>灰の双子星プロジェクト<![CDATA[</Color>]]>は現在完成しており、太陽ステーションがオンラインになったときに動作する準備ができています。",
+        "POKE: Be sure to maintain a safe distance from the core when it activates. If someone were to pass through it, we do not know how the project would handle the resulting increase in population between loops.": "POKE:コアが起動したら必ずそこから安全な距離を保つようにしてください。もしも誰かがそこを通過した場合、その結果生じるループ間の人口増加によってプロジェクトに何が起こるか私たちには予測できないためです。",
+        "ROOT: I agree with Poke. While the implications of temporal cloning are fascinating, we should not risk the stability of the <![CDATA[<Color=orange>]]>Ash Twin Project<![CDATA[</Color>]]> for such an experiment (at least not until its task is complete).": "ROOT:Pokeに賛成だ。一時的なクローンの作成により何が起きるのかは興味深いが、そのような実験のために<![CDATA[<Color=orange>]]>灰の双子星プロジェクト<![CDATA[</Color>]]>の安定性を危険にさらすべきではない(少なくともその役目が完了するまでは)。",
+
+        // Nomai on Dark Bramble
+        "Warp Transmitter": "ワープ発信機",
+        "KOUSA: Exploration log: Within the fractal spaces of <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, the probe has picked up the distress beacon of Escape Pod 3. I know there cannot possibly be any survivors after all these years, yet I still find comfort being close to you once more, Foli.": "KOUSA:探索記録:<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>のフラクタル空間内で、探査機は脱出ポッド3の救難信号を受信した。これだけの年月が経って、もう生存者なんていないことはわかってる。でも、もう一度あなたの近くにいるだけで今でも安心するの、Foli。",
+        "OENO: This research station has been established to study the spacial distortions located within <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>.": "OENO:この研究所は<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>内部の空間の歪みを研究するために設立された。",
+        "CYCAD: Our clan has spent far too long ignoring this place as a result of the tragedy that occurred here.": "CYCAD:我々の部族はここで起きた悲劇の結果、あまりにも長い間この場所を見ないことにして過ごしてきた。",
+        "OENO: I am pleased to report that our research is progressing rapidly! We have determined that the space within <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]> is distorted to an impossible degree. This space cannot possibly exist within a single location.": "OENO:研究が急速に進んでるのを報告できてすごく嬉しい！我々は、<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>内部の空間が不可能な程度に歪んでいると結論づけた。この空間は単一の場所内に存在することはできない。",
+        "CYCAD: Hypothesis: when an object, or entity, enters <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, the interior manifests elsewhere within a pocket of space linked to this one. This manifestation would exert a repelling force on objects in its surroundings even when unoccupied.": "CYCAD:仮説:物体または実体が<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>に入ると、内部はこの空間にリンクされた宇宙空間内のどこかに現れる。この出現は、そこ自体が占有されていなくても周囲の物体に反発力を及ぼすだろう。&lt;i&gt;&lt;/i&gt;",
+        "OENO: By studying the sky after an object has entered <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>, we believe we have located the space the interior occupies. Coleus informs us that the phenomenon is most unsettling to observe.": "OENO:物体が<![CDATA[<Color=lightblue>]]>闇のイバラ<![CDATA[</Color>]]>に入った後の空を研究することで、内部が占める空間を突き止めたと考えている。Coleusは、この現象が観察していて最も不安になったものだと教えてくれた。&lt;i&gt;&lt;/i&gt;",
+        "CYCAD: This phenomenon may prove to have untapped comical potential. I am eager to observe the reactions of Lami, Laevi, and Taget (the children) upon first sighting of the eclipse.": "CYCAD:この現象にはまだ活かされてない面白い可能性があるかもしれない。初めて日食を見たときのLamiやLaevi、Taget(子どもたち)の反応を観察してみたいな。",
+        "OENO: Update: The eclipse has vanished after several hours of observation. Perhaps it only manifest briefly as the planet absorbs any new objects that enter it? This is an unsettling possibility.": "OENO:最新情報:数時間観察した後、日食は消滅した。もしかすると、何か新しく入ってきた物体を惑星が吸収する際にのみ、それは短い間だけ出現するということなのだろうか？まだ可能性の域を出ないが。&lt;i&gt;&lt;/i&gt;",
+        "CYCAD: The <![CDATA[<Color=lightblue>]]>comet<![CDATA[</Color>]]> Spire detected is entering the system! Oeno and I will be rejoining the rest of our clan to await news from the expedition team. Further exploration of this phenomenon must wait for a subsequent time.": "CYCAD:Spireが発見した<![CDATA[<Color=lightblue>]]>彗星<![CDATA[</Color>]]>がこの星系に侵入してきた！Oenoと私は部族のもとに戻り、探索チームからの知らせを待つつもりだ。この現象のさらなる調査は次回まで待つことになる。",
+
+        // Chime on Ember Twin
+        "position assumed - detecting warp technology\r\n|                 */ \\.|/_          _            |\r\n|                  .-\\|/*\\         | \\           |\r\n|           8   8    ||    8      /   \\          |\r\nscanning environs - located new parley\r\n\t\t": "位置推定 - ワープ技術検出\n￤　　　　　　＊／　＼・｜／＿　　　　　＿　　　　　￤\n￤　　　　　　　・―＼｜／＊＼　　　　｜　＼　　　　￤\n￤　　　　８　８　　｜｜　　　８　　／　　　＼　　　￤\n環境スキャン - 新たな取引所特定&lt;i&gt;&lt;/i&gt;",
+        "[retrieving relevant log entries...                 ]\r\n[    -search queries: \"shuttle\", \"thrive\"           ]\r\n[    -time since recording: 125,268 G-hr            ]\r\n[    -logs author: scientist                        ]\r\n[error: <![CDATA[<Color=#ff0040>]]>translation incomplete<![CDATA[</Color>]]>                      ]\r\n\t\t": "［関連ログエントリー収集中…　　　　　　　　　　　　］\n［　　－検索クエリ：＂シャトル＂，＂繁栄＂　　　　　］\n［　　－記録経過時間：125,268 G-hr　　　　　　　　 ］\n［　　－ログ作成者：科学者　　　　　　　　　　　　　］\n［エラー：<![CDATA[<Color=#ff0040>]]>翻訳不完全<![CDATA[</Color>]]>　　　　　　　　　　　　　　　　］&lt;i&gt;&lt;/i&gt;",
+        "\"Research Log - Cycle 8183: We don't have much time - a mere <![CDATA[<Color=#ff0040>]]>(<![CDATA[</Color>]]>ew hundred cycles at most. Archivist is busy collating data for Explorer's \"<![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>\" idea. It's good that he has somet<![CDATA[<Color=#ff0040>]]>)<![CDATA[</Color>]]>ing to do. Our discovery impacted him the hardest of us.\"\r\n\t\t": "＂研究ログ - サイクル8183：あまり時間がない — せいぜい数百サイクルね。探索者の“<![CDATA[<Color=orange>]]>アストラル･コーデック<![CDATA[</Color>]]>”というアイデアに向けて、記録者はデー<![CDATA[<Color=#ff0040>]]>};<![CDATA[</Color>]]>の照合に忙しそう。彼になすべきことがあるのは良いことよ。私たちの発見により最も大きな影響を受けたのは彼だった。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Research Log - Cycle 8195: If our Codec transmission is discovered by an unprepared party, it wou<![CDATA[<Color=#ff0040>]]>|<![CDATA[</Color>]]>d only incite fear of an event which cannot be averted. Safeguards must be established to ensure it can only be accessed by <![CDATA[<Color=#ff0040>]]>}<![CDATA[</Color>]]>hose who can continue the thread.\" \r\n\t\t": "＂研究ログ - サイクル8195：もし私たちのコーデック送信が準備の整っていない者たちに発見された場合、それは回避できない事象の恐怖を煽るだけになってしまう。糸を継続できる者だけがアクセ<![CDATA[<Color=#ff0040>]]>{.<![CDATA[</Color>]]>可能となるよう安全装置を確立する必要があるわ。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Research Log - Cycle 8198: There will be two initial safeguards: One to test shuttle technology and expansi<![CDATA[<Color=#ff0040>]]>?<![CDATA[</Color>]]>n beyond the recipients' home body. And another, requested by Explorer, to ensu<![CDATA[<Color=#ff0040>]]>]<![CDATA[</Color>]]>e a thriving culture of sufficient scale.\"\r\n\t\t": "＂研究ログ - サイクル8198：最初の安全装置は2つ:1つは<![CDATA[<Color=#ff0040>]]>{[<![CDATA[</Color>]]>ャトル技術および受信者たちの故郷の星からの拡張具合を<![CDATA[<Color=#ff0040>]]>}&<![CDATA[</Color>]]>ストするもの。そしてもう1つは探索者からの要請で、十分な規模に繁栄している文化だと保証するもの。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Research Log - Cycle 8198 Continued: Strangely, Archivist has advo<![CDATA[<Color=#ff0040>]]>*<![CDATA[</Color>]]>ated for a tertiary safeguard although the details of its implementation are not yet clear.\"\r\n\t\t": "＂研究ログ - サイクル8198続き：奇妙なことに、記録者は実装の詳細が未だ明確でない<![CDATA[<Color=#ff0040>]]>/[<![CDATA[</Color>]]>もかかわらず第3の安全装置を提唱している。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Research Log - Cycle 8206: I am experiencing difficulties with our ship's computer. Archivist has left it set to visual output again. However, <![CDATA[<Color=#ff0040>]]>-<![CDATA[</Color>]]>hat has me mystified is that Explorer has, somehow, taught it to rhyme.\"\r\n\t\t": "＂研究ログ - サイクル8206：船の<![CDATA[<Color=#ff0040>]]>*?<![CDATA[</Color>]]>ンピュータで問題が発生してる。記録者がまたビジュアル出力に設定したままにしていた。一方、私にとって不思議に思えたのは、探索者がどういうわけか詩を教えていたことだった。＂&lt;i&gt;&lt;/i&gt;",
+
+        // Chime on Dark Bramble
+        "life located fifth orbit from sun<![CDATA[<Color=lightblue>]]>\r\n| \\\\\\~     o               .                    |\r\n|  |||~    |      o       o       O   --> O &lt;-- |\r\n| ///~     o       .                            |\r\n<![CDATA[</Color>]]>communication detected - mimicking local medium\r\n\t\t": "太陽から5番目の軌道にある生命体<![CDATA[<Color=lightblue>]]>\n￤＼＼＼～　　ｏ　　　　　　　．　　　　　　　　　　￤\n￤  ｜｜｜～　  ｜   　ｏ　　　ｏ　　　Ｏ　―＞ Ｏ ＜―  ￤\n￤／／／～　　ｏ　　　．　　　　　　　　　　　　　　￤\n<![CDATA[</Color>]]>通信を検出 - ローカルメディアを模倣&lt;i&gt;&lt;/i&gt;",
+        "[retrieving relevant log entry...                   ]\r\n[    -search query: \"eclipse\"                       ]\r\n[    -time since recording: 125,268 G-hr            ]\r\n[    -log author: explorer                          ]\r\n[error: <![CDATA[<Color=#ff0040>]]>translation incomplete<![CDATA[</Color>]]>                      ]\r\n\t\t": "［関連ログエントリー収集中…　　　　　　　　　　　　］\n［　　－検索クエリ：＂日食＂　　　　　　　　　　　　］\n［　　－記録経過時間：125,268 G-hr　　　　　　　　 ］\n［　　－ログ作成者：探索者　　　　　　　　　　　　　］\n［エラー：<![CDATA[<Color=#ff0040>]]>翻訳不完全<![CDATA[</Color>]]>　　　　　　　　　　　　　　　　］&lt;i&gt;&lt;/i&gt;",
+        "\"Alright. Log time. Nothing of note, just more empty space. Scientist says we'll <![CDATA[<Color=#ff0040>]]>;<![CDATA[</Color>]]>rrive at a new system n<![CDATA[<Color=#ff0040>]]>&<![CDATA[</Color>]]>xt cycle. Maybe we'll finally encounter another civilization. We haven't added anything to our transmission for the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> in a while.\"\r\n\t\t": "＂そう、記録の時間だ。特筆すべきことは何もなく、単に空きスペースが<![CDATA[<Color=#ff0040>]]>).<![CDATA[</Color>]]>えただけだった。科学者は次のサイクルで新たな星系に到達するだろうと言っている。おそらく我々はようやく別の文明と遭遇するだろう。しばらく<![CDATA[<Color=orange>]]>アストラル･コーデック<![CDATA[</Color>]]>への通信に何も追加してなかったから。＂&lt;i&gt;&lt;/i&gt;",
+        "\"I hope the next body we dock at has a flammable atmosphere, it's been so long since our last cam<![CDATA[<Color=#ff0040>]]>+<![CDATA[</Color>]]>fire. Do you think there will st<![CDATA[<Color=#ff0040>]]>[<![CDATA[</Color>]]>ll be campfires after? Surely there will. So many bodies have them, they're a consta<![CDATA[<Color=#ff0040>]]>/<![CDATA[</Color>]]>t of the universe.\"\r\n\t\t": "＂次に停泊する天体が可燃性の大気を持っていることを願う。前回のキャンプ<![CDATA[<Color=#ff0040>]]>(;<![CDATA[</Color>]]>イヤーから非常に長い時間が経った。この後もまだキャン<![CDATA[<Color=#ff0040>]]>+.<![CDATA[</Color>]]>ファイヤーは続くと思う？確実に続くはずだ。とても多くの天体に存在していて、あれは宇宙における不変なものだから。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Archivist was talking again this cycle about needing to test the recipients' technology. It's the mo<![CDATA[<Color=#ff0040>]]>{<![CDATA[</Color>]]>t he's talked in a long time, kept going on about \"the sun\" and \"spheres\" and \"a total eclipse\".\"\r\n\t\t": "＂記録者はこのサイクルでも受信者のテクノロジーをテストする必要があると言<![CDATA[<Color=#ff0040>]]>|}.<![CDATA[</Color>]]>ていた。彼が最も長く話してたことは、“太陽”と“球体”と“皆既日食”についてだった。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Wait... but what about marshmallows?\"\r\n\t\t": "＂待って…だけどマシュマ<![CDATA[<Color=#ff0040>]]>]?<![CDATA[</Color>]]>はどうだろう？＂&lt;i&gt;&lt;/i&gt;",
+        "\"It's strange how much he insists on this additional safeg<![CDATA[<Color=#ff0040>]]>.<![CDATA[</Color>]]>ard when he's usually so worried about any possible chance that the thread <![CDATA[<Color=#ff0040>]]>-<![CDATA[</Color>]]>e're starting might break.\"": "＂我々の始めている糸が絶えるあらゆる可能性をよく懸念してる彼なのに、この追加の安全装置<![CDATA[<Color=#ff0040>]]>-?<![CDATA[</Color>]]>ここまで主張するなんて奇妙だ。＂&lt;i&gt;&lt;/i&gt;",
+
+        // Chime on Interloper
+        "fuel unstable - deploying liquid to neutralize\r\n| progress 00%: -------------------------------- |\r\n| progress 36%: ||||||||||||-------------------- |\r\n| progress 84%: |||||||||||||||||||||||||||----- |\r\nfuel remains fatal - liquid frozen into ice\r\n": "燃料不安定 - 中和用液体を展開\n￤進行状況 00%：░░░░░░░░░░░░░░░░░░░░░░░　￤\n￤進行状況 36%：█████░░░░░░░░░░░░░░░░    ￤\n￤進行状況 84%：█████████████░░░░░    ￤\n燃料は依然として致命的 - 液体は凍結&lt;i&gt;&lt;/i&gt;",
+        "[warning: breach scenario in progress               ]\r\n[retrieving prerecorded message...                  ]\r\n[    -time since recording: 125,268 G-hr            ]\r\n[    -author: scientist                             ]\r\n[evacuate immediately                               ]\r\n\t\t": "［注意：拡散シナリオ進行中　　　　　　　　　　　　　］\n［　　－事前録音メッセージを収集中…　　　　　　　　］\n［　　－記録経過時間：125,268 G-hr　　　　　　　　 ］\n［　　－作成者：科学者　　　　　　　　　　　　　　　］\n［至急避難せよ　　　　　　　　　　　　　　　　　　　］&lt;i&gt;&lt;/i&gt;",
+        "\"If you are reading this message, something has gone terribly wrong. The fuel contained within this geode is exceedingly dangerous and contact with it must be avoided at all costs. I can only hope that any reader is aquatic and might thus escape the blast.\"\r\n\t\t": "＂もしこのメッセージを読んでいるなら、何かひどく不具合が発生してるということです。この晶洞内に含まれる燃料は極めて危険なので、接触は絶対に避けなければなりません。私にできるのは、この読者が水生生物であり、そのために爆風から逃れられたのだと祈ることだけです。＂&lt;i&gt;&lt;/i&gt;",
+        "\"You must understand that despite the risks, despite the terrible acts committed using it on our home body, this fuel was the only viable option: easily compressed and energy-dense enough to last the eons necessary.\"\r\n\t\t": "＂リスクを承知で、そして私たちの故郷の天体においてそれを使用した恐ろしい行為があったにもかかわらず、この燃料が唯一の実行可能な選択肢だったのだと理解する必要があります:簡単に圧縮でき、必要な永続性を維持するのに十分なエネルギー密度があります。＂&lt;i&gt;&lt;/i&gt;",
+        "\"Despite the other two's objections, our mission is too important to risk. Even should the unthinkable happen and a breach occur, a successful transmission will still have been worth it.\"\r\n\t\t": "＂他の2人の反対もありましたが、私たちの使命はリスクを補って余りあるほど重要です。たとえ予期せぬことが起こり拡散が発生したとしても、送信が成功したならばそれだけの価値があるのです。＂&lt;i&gt;&lt;/i&gt;",
+        "\"... I am sorry.\"": "＂…ごめんなさい。＂&lt;i&gt;&lt;/i&gt;",
+        "\r\n[ geode breached                                    ]\r\n[ fuel dispersed                                    ]\r\n[ life signs dwindling                              ]\r\n[ as stars at the end of a universe                 ]\r\n[                               ... connection lost ]\r\n\t\t": "［　晶洞破裂　　　　　　　　　　　　　　　　　　　　］\n［　燃料拡散　　　　　　　　　　　　　　　　　　　　］\n［　生命の兆候が減少中　　　　　　　　　　　　　　　］\n［　宇宙の終わりの星々のように　　　　　　　　　　　］\n［　　　　　　　　　　　　　　　　　　　　…接続切断］&lt;i&gt;&lt;/i&gt;",
+
+        // Lingering Chime
+        "\r\n[system status report:                              ]\r\n[    -neural link status: online                    ]\r\n[      -connected to: hatchling                     ]\r\n[    -space-time stabilizer: active                 ]\r\n[    -probe communication transmitter: operational  ]": "［システムステータスレポート：　　　　　　　　　　　］\n［　　－神経接続ステータス：オンライン　　　　　　　］\n［　　　－接続先：ひよっ子　　　　　　　　　　　　　］\n［　　－時空安定装置：アクティブ　　　　　　　　　　］\n［　　－探査機通信装置：動作可能　　　　　　　　　　］&lt;i&gt;&lt;/i&gt;",
+        "\r\n[<![CDATA[<Color=orange>]]>astral codec<![CDATA[</Color>]]> status:                               ]\r\n[    -transmission successful                       ]\r\n[    -data integrity: 99.998%                       ]\r\n[    -translation status: complete                  ]\r\n[    -time since transmission: 125,268 G-hr         ]": "［<![CDATA[<Color=orange>]]>アストラル・コーデック<![CDATA[</Color>]]>ステータス：　　　　　　　　］\n［　　－送信成功　　　　　　　　　　　　　　　　　　］\n［　　－データ整合性：99.998%　　　　　　　　　 　 ］\n［　　－翻訳ステータス：完了　　　　　　　　　　　　］\n［　　－送信経過時間：125,268 G-hr　　　　　　　　 ］&lt;i&gt;&lt;/i&gt;",
+        "\r\n[fuel geode stability:                              ]\r\n[    -primary fuel geode: damaged (leak detected)   ]\r\n[    -secondary fuel geode: intact                  ]\r\n[    -tertiary fuel geode: ejected in transit       ]\r\n[      -scanning for missing geode                  ]": "［燃料晶洞安定性：　　　　　　　　　　　　　　　　　］\n［　　－第一燃料晶洞：損傷（漏出検出）　　　　　　　］\n［　　－第二燃料晶洞：無傷　　　　　　　　　　　　　］\n［　　－第三燃料晶洞：移動時に欠落　　　　　　　　　］\n［　　　－欠落した晶洞をスキャン　　　　　　　　　　］&lt;i&gt;&lt;/i&gt;",
+        "\r\nmissing geode located - activating suppression\r\n|          *                                     |\r\n|            O  x     ----->      (*)            |\r\n|          *                      \\/\\            |\r\nuncontained fuel detected - rupture confirmation\r\n\t\t": "欠落した晶洞を特定 - 抑制をアクティブ化\n￤　　　＊　　　　　　　　　　　　　　　　　　　　　￤\n￤　　　　Ｏ　＊　　―――――＞　　　（＊）　　　　￤\n￤　　　＊　　　　　　　　　　　　　　｜／＼　　　　￤\n含まれていない燃料検出 - 破裂確認&lt;i&gt;&lt;/i&gt;",
+
+        "\r\n[sample collection report:                          ]\r\n[    -item: campfire                                ]\r\n[    -time since retrieval: 120 hr                  ]\r\n[    -retrieving prerecorded note from: explorer    ]\r\n[    	-\"I knew it! Constant of the universe.\"     ]\r\n\t\t": "［サンプル採取レポート：　　　　　　　　　　　　　　］\n［　　－品目：キャンプファイヤー　　　　　　　　　　］\n［　　－取得経過時間：120 hr　　　　　　　　　　      ］\n［　　－事前録音メモを次から収集中：探索者　　　　　］\n［　　　－＂私は知ってる！宇宙における不変なもの。＂］&lt;i&gt;&lt;/i&gt;",
+        "\r\n[sample collection report:                          ]\r\n[    -item: contained singularities                 ]\r\n[    -quantity: 4                                   ]\r\n[    -time since retrieval: 120 hr                  ]\r\n[    -status: containment broken - 2 lost in transit]\r\n\t\t": "［サンプル採取レポート：　　　　　　　　　　　　　　］\n［　　－品目：封じ込めた特異点　　　　　　　　　　　］\n［　　－数量：4　　　　　　　　　　　　　　　　　     ］\n［　　－取得経過時間：120 hr　　　　　　　　　　      ］\n［　　－ステータス：封じ込め破損 - 移送時2個紛失         ］&lt;i&gt;&lt;/i&gt;",
+        "\r\n[sample collection report:                          ]\r\n[    -item: writing implement/musical instrument    ]\r\n[    -time since retrieval: 2462 M-hr               ]\r\n[    -translation utility: high                     ]\r\n[    -status: language database extracted           ]\r\n\t\t": "［サンプル採取レポート：　　　　　　　　　　　　　　］\n［　　－品目：筆記具／楽器　　　　　　　　　　　　　］\n［　　－取得経過時間：2462 M-hr　　　　　　　　      ］\n［　　－翻訳有用性：高　　　　　　　　　　　　　　　］\n［　　－ステータス：言語データベース抽出済み　　　　］&lt;i&gt;&lt;/i&gt;",
+
+        " _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _\r\n/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\/ \\\r\nHomeworld - crystal lattices partitioning the sky.\r\n\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\\ /\r\n -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -\r\n\t\t": "\u200b　＿　　＿　　＿　　＿　　＿　　＿　　＿　　＿　　＿　\n／　＼／　＼／　＼／　＼／　＼／　＼／　＼／　＼／　＼\n故郷 - 結晶格子が空を区切る\n＼　／＼　／＼　／＼　／＼　／＼　／＼　／＼　／＼　／\n　￣　　￣　　￣　　￣　　￣　　￣　　￣　　￣　　￣　&lt;i&gt;&lt;/i&gt;",
+        "\r\n   .   .   . .      .  .       .     .   .      . \r\n.    .  .         .        .          .          .\r\nUntold galaxies - a myriad of bodies within.\r\n   .          . .    .      .    .        .     .\r\n.      .  .    .       .       .      .     .    .\r\n\t\t": "\u200b　　．　．　　．．　　．　．　　．　　．　　．　　．　\n．　　．　．　　　　．　　　　．　　　　．　　　　　．\n計り知れない銀河 - その中にある無数の天体\n　　．　　　　　．．　．　　　．　．　　　　．　　．　\n．　　　．　．　　．　　．　　　．　　　．　　．　　．&lt;i&gt;&lt;/i&gt;",
+        "0  0                                           0  0\r\n|  |  0      The thread cannot break.       0  |  |\r\n0  0  |                                     |  0  0\r\n|  |  0     We cannot all be forgotten.     0  |  |\r\n0  0                                           0  0\r\n\t\t": "０　０　　　　　　　　　　　　　　　　　　　　　０　０\n｜　｜　０　　　糸が途絶えることはない　　　０　｜　｜\n０　０　｜　　　　　　　　　　　　　　　　　｜　０　０\n｜　｜　０　我々のすべてが忘れられはしない　０　｜　｜\n０　０　　　　　　　　　　　　　　　　　　　　　０　０&lt;i&gt;&lt;/i&gt;",
+        "\r\n\r\nNot even by the death of a universe.\r\n\r\n- Archivist\r\n\t\t": "たとえ宇宙の死によってさえも\n\n- 記録者",
+
+        "We left our home body to escape conflict and to pursue our curiosity. For 207 cycles we drifted peacefully upon the astral sea. Until we made a discovery we were unprepared to face.": "私たちは争いから逃れ、好奇心を追求するため故郷の天体を離れた。207サイクルの間、私たちは星の海を平和に漂った。発見をするまで私たちは直面する準備ができていなかった。&lt;i&gt;&lt;/i&gt;",
+        "We first encountered macroscopic quantum phenomena 156 cycles after setting out upon our journey. A single rock, mobile when unobserved. But more soon followed: mountains, then asteroids, then entire bodies as we approached the epicenter.": "私たちが旅を始めてから156サイクルで初めて巨視的量子力学現象に遭遇した。観察されてないときに移動する単一の岩。だけど、それ以上のものがすぐに続いた:震源に近づくにつれて山々、小惑星、そして天体全体にまで至った。&lt;i&gt;&lt;/i&gt;",
+        "As we hung in orbit around the vortex, I studied it. Its properties were esoteric, and its influence extensive. Not even the basic structure of the galaxy remained consistent. Entire systems shifted at its whim!": "渦の周りの軌道に乗っている間、私はそれを研究した。その特性は難解であり、その影響は広範囲に及んでいた。銀河の基本構造すら一貫してなかった。システム全体が気まぐれに変化してた！&lt;i&gt;&lt;/i&gt;",
+        "When we realized what it meant, we developed a plan. The <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]>: a means of transmitting information through the vortex. We recorded all we could and launched this probe, our final desperate cry into the abyss. - Scientist\r\n\t\t": "それが何を意味するのかを理解したとき、私たちは計画を立てた。<![CDATA[<Color=orange>]]>アストラル･コーデック<![CDATA[</Color>]]>:渦を介して情報を送信する手段。私たちはできる限りのことを記録してこの探査機を送り込んだ。私たちの最後の必死の叫びをその奈落の底へと。\n- 科学者&lt;i&gt;&lt;/i&gt;",
+
+        "This is it. This is the end. Not a million or a billion cycles from now in some distant future. Right now, happening around us as we watch, powerless to stop it.": "いよいよだ。これで終わり。今から100万、10億サイクル後の遠い未来の話ではない。まさに今、我々の見る周りで起きていることであり、それを止める力なんてない。&lt;i&gt;&lt;/i&gt;",
+        "A dozen more cycles and there won't be anything left. No more home body wracked by conflict. No more of any of the many species and cultures we've met so far. No more campfires under the stars.": "あと十数サイクルもする頃には、もう何も残らないだろう。紛争によって故郷が破壊されることももうない。我々がこれまで出会ってきた多くの種や文化ももうない。星空の下でのキャンプファイヤーももうない。&lt;i&gt;&lt;/i&gt;",
+        "But that's not true. Scientist at least thinks there will be something afterward. If anyone is reading this, then I guess she was right. But even that won't last forever. Someday, someone else will face the end.": "だが、そうではない。科学者は少なくともその後に何かあるだろうと考えている。もしもこれを誰かが読んでいるならば、彼女は正しかったのだろう。それでも、それも永遠に続くわけじゃない。いつか、誰かが終わりに直面するのだろう。&lt;i&gt;&lt;/i&gt;",
+        "We can't survive what's coming, but at least some of our stories can. And now yours have a chance too. Together we can create an unbroken thread of memory stretching across eons and the vast astral sea.\r\n- Explorer\r\n\t\t": "我々はこれから起こることを生き残ることはできないが、少なくとも我々の物語の一部は生き残ることができる。そして今、あなたにもチャンスはある。我々はともに、悠久の時と広大な星の海に広がる、途切れることのない記憶の糸を創り出すことができる。\n- 探索者&lt;i&gt;&lt;/i&gt;",
+
+        "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "我々は<![CDATA[<Color=orange>]]>アストラル･コーデック<![CDATA[</Color>]]>を用いて、終わりを迎える前に記録できたあらゆる物語と情報を送信した。あなたがこれを読んでいるなら、我々のメッセージはそのまま渦を通過したに違いない。&lt;i&gt;&lt;/i&gt;",
+        "Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive.\r\n- Explorer": "受け取るんだ。あなた自身の物語や知識を加え、できる限りの方法で渦の先へ届けるんだ。我々は力を合わせれば、記憶の糸を紡ぎ続けることができる。\n- 探索者&lt;i&gt;&lt;/i&gt;",
+        "tests passed - codec safeguards disabled\r\n|                      \\ | /                     |\r\n|                    --- o ---                   |\r\n|                      / | \\                     |\r\ncore activated - insert device for download\r\n": "テストに合格 - コーデックの安全装置を無効化\n￤　　　　　　　　　　　＼｜／　　　　　　　　　　　￤\n￤　　　　　　　　　　――ｏ――　　　　　　　　　　￤\n￤　　　　　　　　　　　／｜＼　　　　　　　　　　　￤\nコアを起動 - ダウンロード用の装置を差し込んでください&lt;i&gt;&lt;/i&gt;",
+        "codec downloaded successfully\r\n|     *     *    *       |    *     *    *     * |\r\n| *     *      *        \\|/      *         *     |\r\n|  *         *     *   -----           *     *   |\r\npass it onwards\r\n": "コーデックのダウンロード成功\n￤　　＊　　＊　　＊　　　｜　　＊　　＊　＊　　＊　￤\n￤＊　　＊　　　＊　　　＼｜／　　　＊　　　＊　　　￤\n￤　＊　　　　＊　　＊　―――　　　　　＊　　＊　　￤\nその先へ届けてほしい。&lt;i&gt;&lt;/i&gt;",
+
+        // Addendum
+        "Addendum by: The Hatchling": "追記: ひよっ子",
+        "<![CDATA[<i>Remember the Nomai...</i>]]>": "<![CDATA[<i>Nomaiを憶えていてほしい…</i>]]>",
+        "The Nomai were true scholars, always curious about the nature of our universe. Relics of their search for knowledge are spread throughout this solar system.": "Nomaiは真の学者であり、常に宇宙の本質に興味を持っていた。知識を追い求めた彼らの遺跡は、この太陽系全体に広がっている。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<i>...</i>]]>": "<![CDATA[<i>…</i>]]>",
+        "<![CDATA[<i>Consider the Nomai's mission...</i>]]>": "<![CDATA[<i>Nomaiの使命に思いを巡らしてほしい…</i>]]>",
+        "While other Nomai clans survive to this day, one clan's generations-long search for the Eye of the Universe has played a profound role in the final days of this universe.": "他のNomaiの部族は今日まで生き残っているが、ある部族の何世代にもわたる宇宙の眼の探究は、この宇宙の最後の日に重大な役割を果たしてきた。&lt;i&gt;&lt;/i&gt;",
+        "Without their records and technology, I could not have made it as far as I have.": "彼らの記録と技術がなければ、私はここまで到達することはできなかっただろう。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<i>Mourn the Nomai's fate...</i>]]>": "<![CDATA[<i>Nomaiの運命を悼んでほしい…</i>]]>",
+        "Tragically, the Nomai that settled in this solar system were wiped out by an explosion of ghost matter released by a damaged fuel geode from the Lingering Chime.": "悲劇的なことにこの太陽系に定住していたNomaiは、名残り奏の損傷した燃料晶洞から放出された幽霊物質の爆発により全滅した。&lt;i&gt;&lt;/i&gt;",
+        "They would have been fascinated by this discovery if they had survived.": "もしも彼らが生き残っていたならば、この発見に魅了されただろうに。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<i>Recall the Strangers...</i>]]>": "<![CDATA[<i>流れ者の住人たちを思い出してほしい…</i>]]>",
+        "The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until one of them released the signal for the Nomai to find, and was imprisoned for their actions.": "流れ者の住人たちは記録者であり、どのような犠牲を払っても情報を保存していた。しかし、眼に対する恐怖から、彼らは自身で創造した模擬現実の中に身を隠すようになった。そうしてそのうちの一人が信号を解放してNomaiが見つけることとなり、その行為のために投獄されるまでは。&lt;i&gt;&lt;/i&gt;",
+        "I met The Prisoner but was unable to free them from their fate.": "私は囚人に会ったが、その人物を運命から解放することはできなかった。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<i>Reflect on Hearthians...</i>]]>": "<![CDATA[<i>Hearthianを顧みてほしい…</i>]]>",
+        "I am a Hearthian. A young species but the bravest I know. We play music and roast marshmallows with friends around a campfire.": "私はHearthian。若い種族だが、私が知る中で最も勇敢な種族だ。私たちは友人たちとキャンプファイヤーを囲んで、音楽を演奏し、マシュマロを焼いていた。&lt;i&gt;&lt;/i&gt;",
+        "Despite the <![CDATA[<i>many</i>]]> dangers of the solar system we call home, our space program has recently allowed us to take our first steps towards the stars.": "私たちが故郷と呼ぶ太陽系には<![CDATA[<i>多くの</i>]]>危険があるにもかかわらず、私たちの宇宙プログラムにより、最近になって星々への第一歩を踏み出すことができた。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<i>Finally, yourself...</i>]]>": "<![CDATA[<i>最後に、私自身のことを…</i>]]>",
+        "Trapped within a time loop of the Nomai's creation, I have uncovered the deepest mysteries of the Outer Wilds! I will do what I can to make sure they are not forgotten.": "Nomaiにより創られたタイムループの中に囚われた私は、Outer Wildsの最も深い謎を明らかにした！彼らが忘れられることのないように、私はできる限りのことをするつもりだ。&lt;i&gt;&lt;/i&gt;",
+        "- Signed, The Hatchling": "- 署名: ひよっ子&lt;i&gt;&lt;/i&gt;",
+
+        // Eye
+        "A little scout just like this one is now home to the Astral Codec: a means of transmitting information via the Eye, passed to us from the universe before ours.": "このようなリトル･スカウトは、現在アストラル･コーデックが存在する場所となっている:それは私たちの前の宇宙から届けられた、眼を介して情報を送信する手段である。&lt;i&gt;&lt;/i&gt;",
+        "Although the Codec's authors are long gone, they have given us the opportunity to save the story of this universe from being lost to the depths of time.": "コーデックの作成者たちはもう亡くなって久しいが、彼らはこの宇宙の物語が時の深淵に失われないよう救う機会を私たちに与えた。&lt;i&gt;&lt;/i&gt;",
+        "If it is released into the Eye, the Astral Codec will pass onwards into the next universe, preserving a thread of memory for eons to come.": "それが眼へ放たれると、アストラル･コーデックは次の宇宙へ届けられ、記憶の糸は永遠に保存されるだろう。&lt;i&gt;&lt;/i&gt;",
+
+        "ARCHIVIST: Signal transmitter online. This place will not be easily lost.": "記録者:信号送信機がオンラインだ。この場所は簡単には失われない。&lt;i&gt;&lt;/i&gt;",
+        "SCIENTIST: Then our part has reached its end. We've sent our spark upon the unknowable sea. All that remains is to wait - and to hope.": "科学者:こうして私たちの役目は終わった。私たちは未知の海に輝きを送った。残っているのは待つこと — そして希望だけ。&lt;i&gt;&lt;/i&gt;",
+        "SCIENTIST: Our universe may now be cold but the experiences it contained will breathe life into the next. With luck the Astral Codec will soon hurtle into a newborn universe, preserving the past and recording the future.": "科学者:私たちの宇宙は今は冷たいかもしれないけれど、そこに含まれる経験が次の宇宙に生命を吹き込むはず。運が良ければアストラル･コーデックはすぐに新たに生まれた宇宙へ突入し、過去を保存しつつ未来を記録する。&lt;i&gt;&lt;/i&gt;",
+        "EXPLORER: I hope the next universe is different. More curious y'know. More willing to seek out knowledge amongst the stars, like we did.": "探索者:次の宇宙が違うことを願っている。より興味をそそられるだろう？私たちがそうだったように、星々の間で知識を探求する意欲がより高まるだろう。&lt;i&gt;&lt;/i&gt;",
+        "ARCHIVIST: I desire for them to preserve our story. I fear that they will not - that we are but a dwindling specter of a forgotten people.": "記録者:彼らには我々の物語を保存してほしいと望んでいる。私は彼らがそうしないのではないかと恐れている — 我々はただ忘れられた者たちの消えゆく亡霊に過ぎないのではないか。&lt;i&gt;&lt;/i&gt;",
+        "EXPLORER: I hope it inspires them. Maybe they'll tell it to each other around a campfire someday and it will remind them that the astral sea isn't as lonely as it appears.": "探索者:それが彼らを鼓舞することを願っている。おそらく彼らは、いつかキャンプファイヤーを囲みながらそのことをお互いに話し、星の海は見た目ほど孤独ではないのだと思い起こすだろう。&lt;i&gt;&lt;/i&gt;",
+        "SCIENTIST: I hope that they will broaden it. It could become the prologue of a saga stretching trillions of years across dozens of universes.": "科学者:彼らがそれを広げてくれると願ってるわ。そして数十の宇宙にわたる数兆年規模の長編物語におけるプロローグとなるかもしれない。&lt;i&gt;&lt;/i&gt;",
+        "EXPLORER: One day, someone else will stand here in this place. They'll be facing the end of all they know. I hope they find this echo. I hope they feel comforted knowing that we came before, that they are not alone.": "探索者:いつの日か、他の誰かがこの場所に立つだろう。彼らは自分の知るすべてが終わることに直面する。このエコーを彼らが見つけてくれることを願っている。私たちが以前来たこと、そして独りではないことを知って、彼らが安心してくれたらと願っている。&lt;i&gt;&lt;/i&gt;",
+        "SCIENTIST: The time has come, friends. Shall we collapse the possibilities laid before us? A final coda to a dead universe.": "科学者:その時が来たわ。私たちの前にある可能性を崩壊させましょう？死んだ宇宙に贈る最後の終結部よ。&lt;i&gt;&lt;/i&gt;",
+        "EXPLORER: And a prelude to what comes next!": "探索者:そして、次に来ることへの前奏曲でもある！&lt;i&gt;&lt;/i&gt;"
+    },
+    "ShipLogDictionary": {
+        // timber_log.xml
+        "Flashback Vision": "再生される映像",
+        "When I died, I saw a series of images that zoomed in on one of the modules of a Nomai structure.": "私は死んだとき、Nomaiの構造物のモジュールの1つを徐々に拡大していく一連の画像を見た。",
+
+        // giants_log.xml
+        "Anomaly Recording": "異常の記録",
+        "The images I saw when I died led me to the Orbital Probe Cannon's Probe Tracking Module.": "死んだときに見た画像により、私は軌道探査砲の探査機追跡モジュールへ導かれた。",
+        "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.": "軌道探査砲は、宇宙の眼の基準と部分的に一致する未知の天体に衝突した第2探査機と接続されたプロジェクションストーンを生成した。遠くに惑星が時計回りに公転しているのが見えた。",
+        "Anomalous Body": "異常な天体",
+        "The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.": "軌道探査砲は、宇宙の眼と部分的に一致する未知の天体をこの星系内で検出した。",
+        "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "太陽系平面のはるか下に存在する異常体。軌道探査砲からの第2探査機が近くで見つかった。",
+        "I passed through a strange device and the structure revealed itself. I can see ghost matter now!": "奇妙な装置を通過したところ、その構造が明らかとなった。幽霊物質が見えるようになった！",
+
+        // ember_twin_log.xml
+        "Reunion Memorial": "再会の記念樹",
+        "Ember Twin Signal": "燃え盛る双子星の信号",
+        "I detected a chiming signal coming from Ember Twin.": "燃え盛る双子星から奏でられる信号を検出した。",
+        "A memorial to the Nomai reunion near the gravity cannon on Ember Twin.": "燃え盛る双子星の重力砲付近にあるNomaiの再会の記念樹。",
+        "A Nomai named Poke believed the Ash Twin Project could be used to duplicate matter, or even people. She theorized about the possibility of increasing the Nomai population using this method.": "Pokeという名のNomaiは、灰の双子星プロジェクトを使えば物質、さらには生命さえも複製できると信じていた。彼女は、この方法を利用してNomaiの人口を増やす実現性について理論を立てていた。",
+        "The Nomai feared that a shuttle colliding with Ash Twin would be fatal for any passengers.": "Nomaiはシャトルが灰の双子星と衝突すれば乗客にとって致命傷になるのではないかと懸念した。",
+        "I found a set of crystalline cairns on Ember Twin that contain a research log written by someone called Scientist.": "私は燃え盛る双子星で、科学者と呼ばれる人物が書いた研究ログを含む一連の結晶製ケルンを見つけた。",
+        "One of the crystalline cairns describe two safeguards used to protect a transmission sent through something called the Astral Codec. One safeguard tests spacefaring technology and expansion beyond one's home planet. The other tests for a culture of sufficient scale.": "結晶製ケルンの1つには、アストラル･コーデックと呼ばれるものを通じて送られる通信を保護するために使用される2つの安全装置について記述されている。1つの安全装置は、宇宙飛行技術と故郷の惑星を超えた拡張具合をテストする。もう1つは、十分な規模の文化があるかどうかをテストする。",
+        "A crystalline cairn describes a third safeguard proposed by someone named Archivist. The details of this safeguard are not described on the cairn.": "結晶製ケルンには記録者という名前の人物により提案された3番目の安全装置について触れられている。この安全装置の詳細はそのケルンには記載されていない。",
+        "Symbols are scattered throughout the message written on the crystalline cairn.": "結晶製ケルンに書かれたメッセージ全体にシンボルが散りばめられている。",
+        "After reading one of the cairns, a hologram was projected depicting three sets of symbols: several rectangles, a large circle, and several circular symbols.": "ケルンの1つを読んだ後、3つのシンボルの集合を描いたホログラムが投影された:それはいくつかの長方形、1つの大きな円、およびいくつかの円形のシンボル。",
+
+        // ash_twin_log.xml
+        "Temporal Cloning Research": "一時的なクローン研究",
+        "Nomai named Root and Poke discussed the possibility of using the Ash Twin Project to duplicate themselves while they installed the project's advanced warp core.": "RootおよびPokeという名のNomaiは、灰の双子星プロジェクトの先進的ワープコアを設置する間、プロジェクトを利用して自分自身を複製できる可能性について話し合っていた。",
+        "A Nomai named Poke considered what would happen if someone entered the core of the Ash Twin Project when it activated. She believed it would create some kind of temporal clone, causing an increase in the clan's population during the next loop.": "Pokeという名のNomaiは、灰の双子星プロジェクトが起動したときそのコアに誰かが入ったらどうなるかを考えた。彼女は、これによりある種の一時的なクローンが作成され、次のループの間は部族の人口が増加するであろうと信じていた。",
+
+        // dark_bramble_log.xml
+        "Dark Bramble Research Station": "闇のイバラの研究所",
+        "Dark Bramble Signal": "闇のイバラの信号",
+        "I detected a chiming signal coming from the surface of Dark Bramble.": "闇のイバラの地表から奏でられる信号を検出した。",
+        "A Nomai research station on the surface of Dark Bramble.": "闇のイバラの地表にあるNomaiの研究所。",
+        "The Nomai discovered that when an object enters Dark Bramble, the planet's interior manifests inside a separate pocket of space elsewhere within the Solar System. They noted that this phenomenon repels objects around it. The phenomenon was described as an eclipse.": "Nomaiは、物体が闇のイバラに入ると惑星の内部が太陽系内のどこか離れた空間内に現れることを発見した。彼らはこの現象が周囲の物体と反発することを記述していた。その現象は日食として説明されていた。",
+        "I found a crystalline scroll on Dark Bramble that contains a log written by someone called Explorer. The log mentions a transmission for something called the Astral Codec. Someone called Archivist discussed a safeguard to test technology that involved the sun.": "探索者と呼ばれる人物により書かれたログが含まれる結晶製スクロールを闇のイバラで見つけた。ログにはアストラル･コーデックと呼ばれるものの通信について言及があった。記録者と呼ばれる人物は太陽に関係するテクノロジーをテストする安全装置について議論していた。",
+        "Symbols are scattered throughout the message stored on the crystalline scroll.": "結晶製スクロールに保存されたメッセージ全体にシンボルが散りばめられている。",
+        "When I picked up a crystalline scroll, a hologram was projected depicting the solar system. An object traveled from the edge of the solar system to a point below the sun.": "結晶製スクロールを拾ったとき、太陽系を描いたホログラムが投影された。ある物体が太陽系の端から太陽の下の点まで移動していた。",
+
+        // lingering_chime_log.xml
+        "Lingering Chime": "名残り奏",
+        "An invisible structure far below the plane of the solar system.": "太陽系平面のはるか下にある目に見えない構造物。",
+        "The structure is composed of the same material as ghost matter crystals.": "この構造物は幽霊物質結晶と同じ物質で構成されている。",
+        "Upper Deck": "上階",
+        "There is an entrance to the structure on the sunward side.": "太陽に向いた側に構造物への入り口がある。",
+        "A sphere of water orbits inside the structure.": "水の球が構造物内部を周回している。",
+        "There is an unknown signal coming from an antenna within the structure. It's completely surrounded by ghost matter.": "構造物内のアンテナから未知の信号が送信されている。それは完全に幽霊物質に囲まれている。",
+        "There is an antenna broadcasting a chiming signal within the structure.": "構造物内にて奏でられる信号を発信するアンテナがある。",
+        "Wires run from a small platform to two devices within the structure. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>-;[} )&]&<![CDATA[</Color>]]>": "ケーブルは小さなプラットフォームから構造物内の2つの装置まで伸びている。プラットフォームには次のようなシンボルがチョークで書かれている:<![CDATA[<Color=#ff0040>]]>*?/?.&-? {;]./;<![CDATA[</Color>]]>",
+        "Circular Display": "円の表示",
+        "There is a large circular icon displayed on a platform on the floor. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>&*|[+{&<![CDATA[</Color>]]>": "床のプラットフォームには大きな円形のアイコンが表示されている。プラットフォームには次のようなシンボルがチョークで書かれている:<![CDATA[<Color=#ff0040>]]>/[|}.{)?*.<![CDATA[</Color>]]>",
+        "The icon powered off and a computer activated when the interior of Dark Bramble was blocking the light from the Sun.": "闇のイバラの内部が太陽の光を遮ると、アイコンの電源がオフとなり、コンピュータが起動した。",
+        "Tally Display": "集計の表示",
+        "There are 23 tally marks displayed on a platform on the floor. The final mark is only one-sixth full. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>+?+.|;}[?/<![CDATA[</Color>]]>": "床のプラットフォームには23本の集計印が表示されている。最後の印は6分の1しか満たされていない。プラットフォームには次のようなシンボルがチョークで書かれている:<![CDATA[<Color=#ff0040>]]>);//&[<![CDATA[</Color>]]>",
+        "After standing on a marked platform for a few seconds, I can see green trails emanating from a nearby device connected to points throughout the solar system.": "刻印されたプラットフォームの上に数秒間立った後、近くの装置から緑色の軌跡が太陽系全体の点に接続されているのが見えるようになった。",
+        "The final mark powered on and a computer activated when my clone was present in the Ash Twin Project.": "私のクローンが灰の双子星プロジェクトに存在していると、最後の印の電源が入り、コンピュータが起動した。",
+        "Icons Display": "アイコンの表示",
+        "There are 6 icons displayed on a platform on the floor. One of the icons is powered off. Symbols are chalked onto the platform that read: <![CDATA[<Color=#ff0040>]]>{+;*&*];(}<![CDATA[</Color>]]>": "床のプラットフォームには6つのアイコンが表示されている。アイコンの1つは電源がオフになっている。プラットフォームには次のようなシンボルがチョークで書かれている:<![CDATA[<Color=#ff0040>]]>.*)..{&//<![CDATA[</Color>]]>",
+        "After standing on a marked platform for a few seconds, I can see purple trails emanating from a nearby device connected to points throughout the solar system.": "刻印されたプラットフォームの上に数秒間立った後、近くの装置から紫色の軌跡が太陽系全体の点に接続されているのが見えるようになった。",
+        "All of the icons powered on and a computer activated when a spacecraft was present on each planet in the solar system.": "太陽系の各惑星に宇宙船が存在していると、すべてのアイコンの電源が入り、コンピュータが起動した。",
+        "Lower Deck": "下階",
+        "There is a second side of the structure below the water.": "水の下には構造物のもう1つの側面がある。",
+        "There is massive strange device at the center of the lower deck. It appears to be unpowered. Wires run to it from three other devices nearby.": "下階の中央には巨大で奇妙な装置がある。電源が入っていないように見える。近くにある他の3つの装置からケーブルが接続されている。",
+        "Interloper Fuel Geode": "侵入者の燃料晶洞",
+        "Missing Fuel Geode": "失われた燃料晶洞",
+        "A piece of the structure has broken off and is missing. A computer log describes a fuel geode breaking off and rupturing.": "構造物の一部が壊れて行方不明になっている。コンピュータのログには、燃料晶洞が壊れて破裂したことが記載されている。",
+        "I found a crystalline recorder in the core of The Interloper recorded by someone called Scientist. It describes liquid being used to neutralize ghost matter along with a warning about the impending rupture. The recorder describes a possible breach as being worth the risk in order to transmit something.": "科学者と呼ばれる人物により記録された結晶製レコーダーを侵入者のコアで見つけた。それは差し迫った破裂についての警告とともに、幽霊物質を中和するために使われる液体について述べていた。また、拡散の可能性について、何かを送信するためにはリスクを冒すだけの価値があると説明していた。",
+        "Astral Codec": "アストラル･コーデック",
+        "Something used to transmit a message from people named Archivist, Explorer, and Scientist.": "記録者、探索者、科学者という名前の人物達からのメッセージを送信するために使用されたもの。",
+        "Something used to transmit a message protected by three safeguards.": "3つの安全装置により保護されたメッセージを送信するために使われるもの。",
+        "A means of transmitting information through a vortex. It contains someone's final message.": "眼を介して情報を伝達する手段。そこには誰かの最後のメッセージが込められている。",
+        "Contains the stories of a long-gone people. It could be used to preserve our own.": "遠く過ぎ去った者達の物語が含まれている。それは私達自身のものを保存するために使用できる。",
+        "Used to transmit a message from a dying universe with hope to be remembered.": "死にゆく宇宙から、記憶に残るという希望を込めてメッセージを送信するために使われる。",
+        "I added what I knew to the message. The Astral Codec has been downloaded onto my little scout. I was asked to pass it onwards through the vortex.": "私が知っていることをメッセージに加えた。アストラル･コーデックは私のリトル･スカウトにダウンロードされた。私はそれを眼の先へ送り届けるように頼まれた。"
+    },
+    "OtherDictionary": {
+        "&*|[+{&": "/[|}.{)?*.",
+        "{+;*&*];(}": ".*)..{&//",
+        "+?+.|;}[?/": ");//&[",
+        "-;[}\n)&]&": "*?/?.&-?\n{;]./;"
+    }
+}
