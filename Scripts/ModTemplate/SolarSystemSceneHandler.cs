@@ -545,7 +545,7 @@ namespace AstralCodex
         #region Update
         void Update()
         {
-            if (SceneManager.GetSceneByName(SceneName).isLoaded)
+            if (SceneManager.GetSceneByName(SceneName).isLoaded && Main.newHorizons.GetCurrentStarSystem() == "SolarSystem")
             {
                 //Player death management
                 if (Locator.GetDeathManager().IsPlayerDying())
