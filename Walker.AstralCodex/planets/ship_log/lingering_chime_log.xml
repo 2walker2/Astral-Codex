@@ -143,6 +143,7 @@
 
         <Curiosity>codex_astral_codex</Curiosity>
         <IsCuriosity/>
+		<AltPhotoCondition>codex_astral_codex_fact</AltPhotoCondition>
 
         <RumorFact>
             <ID>codex_astral_codex_bramble_rumor</ID> 
