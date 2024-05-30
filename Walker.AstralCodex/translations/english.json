@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "ShipLogDictionary": {
+        "Symbols are scattered throughout the message written on the crystalline cairn.": "Symbols are scattered throughout the message written on the crystalline cairns."
+    },
+    "DialogueDictionary": {
+        "<![CDATA[<i>Recall the Strangers...</i>]]>": "<![CDATA[<i>Recall the inhabitants of the Stranger...</i>]]>",
+        "The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until one of them released the signal for the Nomai to find, and was imprisoned for their actions.": "The inhabitants of the Stranger were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until one of them released the signal for the Nomai to find, and was imprisoned for their actions.",
+        "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "An anomaly resting far below the plane of the solar system. A Nomai probe is found nearby."
+    }
+}

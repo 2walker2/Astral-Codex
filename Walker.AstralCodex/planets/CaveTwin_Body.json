@@ -849,6 +849,16 @@
 				"reveals": "codex_ember_signal_rumor",
 				"volume": 0.35
 			}
+		],
+		"audioSources": [
+			{
+				"audio": "NomaiGravityCannonAmbient_LP",
+				"position": {
+					"x": -12.1333027,
+					"y": -91.7113647,
+					"z": -104.456161
+				}
+			}
 		]
 	},
 	"ReferenceFrame": {},

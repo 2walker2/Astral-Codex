@@ -168,6 +168,9 @@
 		"entryLocation": [
 			{
 				"id": "codex_lingering_chime"
+			},
+			{
+				"id": "codex_anomaly"
 			}
 		],
 		"translatorText": [
@@ -335,7 +338,7 @@
 				"revealOn": "enter",
 				"revealFor": "both",
 				"reveals": [
-					"codex_anomaly_fact",
+					"codex_anomaly_fact"
 				],
 				"radius": 200
 			},
@@ -361,17 +364,84 @@
 				"reveals": [
 					"codex_lingering_chime_upper_rumor",
 					"codex_lingering_chime_water",
-					"codex_lingering_chime_antenna",
-					"codex_lingering_chime_population_fact",
-					"codex_lingering_chime_spacecraft_fact",
-					"codex_lingering_chime_no_sun_fact",
-					"codex_lingering_chime_trails_activator",
-					"codex_lingering_chime_lower",
-					"codex_lingering_chime_lower_rumor"
-
+					"codex_lingering_chime_antenna"
 				],
 				"radius": 52,
 				"rename": "ChimeInteriorRevealVolume"
+			},
+			//When approaching spacecraft platform
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_spacecraft_fact"
+				],
+				"position": {
+					"x": -31.69669,
+					"y": 0.8880005,
+					"z": -1.040768
+				},
+				"radius": 10,
+				"rename": "ChimeSpacecraftRevealVolume"
+			},
+			//When approaching no sun platform
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_no_sun_fact"
+				],
+				"position": {
+					"x": 11.75152,
+					"y": 0.7619998,
+					"z": 22.02254
+				},
+				"radius": 10,
+				"rename": "ChimeNoSunRevealVolume"
+			},
+			//When approaching population platform
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_population_fact"
+				],
+				"position": {
+					"x": 22.79734,
+					"y": 1.086,
+					"z": -20.80487
+				},
+				"radius": 10,
+				"rename": "ChimePopulationRevealVolume"
+			},
+			//When approaching trail activation platform
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_trails_activator"
+				],
+				"position": {
+					"x": -10.58383,
+					"y": 1.050001,
+					"z": -14.69132
+				},
+				"radius": 10,
+				"rename": "ChimeTrailsActivatorRevealVolume"
+			},
+			//When approaching codex dispenser
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": [
+					"codex_lingering_chime_lower_rumor",
+					"codex_lingering_chime_lower"
+				],
+				"position": {
+					"y": -11.7
+				},
+				"radius": 15,
+				"rename": "ChimeCodexDispenserRevealVolume"
 			},
 			{
 				//When activated scanners
@@ -383,52 +453,7 @@
 				],
 				"radius": 52,
 				"rename": "TrailsReveal"
-			},
-			/*{
-				//When population solved
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_lingering_chime_population_complete"
-				],
-				"radius": 20.0,
-				"rename": "PopulationCompleteReveal"
-			},
-			{
-				//When spacecraft solved
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_lingering_chime_spacecraft_complete"
-				],
-				"radius": 20.0,
-				"rename": "SpacecraftCompleteReveal"
-			},
-			{
-				//When no sun solved
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_lingering_chime_no_sun_complete"
-				],
-				"radius": 20.0,
-				"rename": "NoSunCompleteReveal"
-			},
-			{
-				//When Codec obtained
-				"revealOn": "enter",
-				"revealFor": "both",
-				"reveals": [
-					"codex_astral_codex_fact",
-					"codex_astral_codex_addendum"
-				],
-				"position": {
-					"x": 11.6,
-					"y": -1.6
-				},
-				"radius": 1.5,
-				"rename": "CodexReveal"
-			}*/
+			}
 		],
 		"zeroGravityVolumes": [
 			{

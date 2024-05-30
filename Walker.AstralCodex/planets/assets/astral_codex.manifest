@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2813016866
+CRC: 357357012
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d98b171552e6f56fe8b98b70ca127307
+    Hash: 1cc96389a185742d6f5462d2cc733ff4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 69f59a59e2f31bb38abf33f4cdec25d1
@@ -195,6 +195,7 @@ Assets:
 - Assets/Bundle/Shaders/Foliage.shader
 - Assets/Bundle/Materials/Chime Redesign/Moss.mat
 - Assets/Bundle/Models/precursor.obj
+- Assets/Bundle/Shaders/UnlitDoubleSided.shader
 - Assets/Bundle/Textures/Skybox/backImage.png
 - Assets/Bundle/Audio/Unveilment.mp3
 - Assets/Bundle/White Hole.prefab
@@ -332,7 +333,6 @@ Assets:
 - Assets/Bundle/Foliage Group 1.prefab
 - Assets/Bundle/SignalParticles.prefab
 - Assets/Bundle/Animations/WindChime.controller
-- Assets/Bundle/Materials/WhiteHole.mat
 - Assets/Bundle/Models/ash_twin.obj
 - Assets/Bundle/Materials/Chime Redesign/Display Platform Metal.mat
 - Assets/Bundle/Animations/WindChime.anim
@@ -393,6 +393,7 @@ Assets:
 - Assets/Bundle/Shaders/UnlitTransparentHDR.shader
 - Assets/Bundle/Chime Exhaust.prefab
 - Assets/Bundle/Foliage Group 2.prefab
+- Assets/Bundle/Materials/WhiteHole.mat
 - Assets/Bundle/Models/chime_exhaust.obj
 - Assets/Bundle/Models/stationv3.obj
 - Assets/Bundle/Textures/Chime Redesign/Terrain_HT_Sand_n.png
