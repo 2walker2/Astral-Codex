@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: Within this probe's memory I have found references to several safeguards, though I have not yet learned what they protect.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: If you have come seeking my help in overcoming one, I fear I will not be able to assist you. I suspect that you will have to find another way.</Text>
+	</TextBlock>
+</NomaiObject>

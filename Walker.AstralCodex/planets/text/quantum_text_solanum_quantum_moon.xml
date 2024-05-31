@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: I wonder how this probe came to be on this state of the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. Perhaps it came from the <![CDATA[<color=lightblue>Eye</color>]]> itself?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: If so, there is much we could learn from it. It could answer some of my clan's greatest questions. Perhaps it could even allow us our first true glimpse of the <![CDATA[<color=lightblue>Eye</color>]]>.</Text>
+	</TextBlock>
+</NomaiObject>

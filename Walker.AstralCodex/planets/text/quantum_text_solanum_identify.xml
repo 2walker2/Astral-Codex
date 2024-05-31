@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: The device that produced that stone is strange. I have never encountered anything of its sort elsewhere. Though it is invisible even to my third eye, I have still succeeded in extracting some of the contents of its memory.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: I am still in the process of decoding it but what I have found so far is intriguing. I am confident that it was not built by Nomai, yet it contains a database of our language. I wonder who could have created it.</Text>
+	</TextBlock>
+</NomaiObject>

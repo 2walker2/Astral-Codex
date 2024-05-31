@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
+using NewHorizons;
 using UnityEngine;
 
 namespace AstralCodex
@@ -30,6 +31,18 @@ namespace AstralCodex
                 }
             }
             return false;
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(NomaiConversationStone), nameof(NomaiConversationStone.GetDisplayName))]
+        public static bool NomaiConversationStone_GetDisplayName_Prefix(NomaiConversationStone __instance, ref string __result)
+        {
+            if (__instance._word == (NomaiWord)7)
+            {
+                __result = Main.newHorizons.GetTranslationForUI("'Probe' Stone");
+                return false;
+            }
+            return true;
         }
     }
 }

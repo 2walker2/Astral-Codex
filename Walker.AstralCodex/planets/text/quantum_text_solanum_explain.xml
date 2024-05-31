@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: I have not yet managed to deduce the origins of that probe, nor have I determined how it managed to produce that stone. Its material resembles nothing I've seen before. I wonder why it is completely invisible to my sight.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: These mysteries intrigue me and have occupied much of my time since I landed on this moon.</Text>
+	</TextBlock>
+</NomaiObject>

@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
+using NewHorizons.Utility.OWML;
 
 namespace AstralCodex
 {
@@ -49,7 +50,9 @@ namespace AstralCodex
             "CampfireSign",
             "CoresSign",
             "StaffSign",
-            "DB_ExitOnlyDimension_Body/Sector_ExitOnlyDimension/Ernesto"
+            "DB_ExitOnlyDimension_Body/Sector_ExitOnlyDimension/Ernesto",
+            "ProbeConversationStone/Model",
+            "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/QMProbe/Model"
         };
 
         string exhaustName = "Exhaust";
@@ -144,6 +147,17 @@ namespace AstralCodex
             "WhiteHoleWarpCore",
             "BlackHoleWarpCore"
         };
+
+        Dictionary<NomaiWord, string> solanumQuestions = new Dictionary<NomaiWord, string>()
+        {
+            { NomaiWord.Explain, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/ExplainProbeText" },
+            { NomaiWord.Eye, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/EyeProbeText" },
+            { NomaiWord.Identify, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/IdentifyProbeText" },
+            { NomaiWord.Me, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/MeProbeText" },
+            { NomaiWord.TheNomai, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/NomaiProbeText" },
+            { NomaiWord.QuantumMoon, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/QMProbeText" },
+            { NomaiWord.You, "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/YouProbeText" },
+        };
         #endregion
 
         #region Initialization
@@ -179,6 +193,7 @@ namespace AstralCodex
                 RemoveSubmergeControllerFromBrambleGhostMatter();
                 ConfigureBrambleWarpPads();
                 MakeBrambleCloakSphereCastShadows();
+                ConfigureProbeConversationStone();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -360,6 +375,59 @@ namespace AstralCodex
         {
             MeshRenderer brambleCloakSphereRenderer = SearchUtilities.Find("DB_HubDimension_Body/BrambleRepelVolume/CloakSphere").GetComponent<MeshRenderer>();
             brambleCloakSphereRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+        }
+
+        void ConfigureProbeConversationStone()
+        {
+            GameObject probeConversationStoneGO = SearchUtilities.Find("ProbeConversationStone");
+            if (probeConversationStoneGO == null)
+            {
+                Main.modHelper.Console.WriteLine("FAILED TO FIND PROBE CONVERSATION STONE", MessageType.Error);
+                return;
+            }
+
+            //Add entry to conversation stone enum
+            NomaiWord probeWord = EnumUtilities.Create<NomaiWord>("Probe");
+
+            //Assign new enum value to conversation stone
+            NomaiConversationStone probeConversationStone = probeConversationStoneGO.GetComponent<NomaiConversationStone>();
+            probeConversationStone._word = probeWord;
+
+            //Get conversation manager
+            NomaiConversationManager conversationManager = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation").GetComponent<NomaiConversationManager>();
+
+            //Add new stone questions
+            NomaiConversationManager.StonePair[] questions = new NomaiConversationManager.StonePair[conversationManager._questions.Length + solanumQuestions.Count];
+            conversationManager._questions.CopyTo(questions, 0);
+            int i = conversationManager._questions.Length;
+            foreach (KeyValuePair<NomaiWord, string> pair in solanumQuestions)
+            {
+                //Find the associated wall text
+                GameObject wallTextGO = SearchUtilities.Find(pair.Value);
+                if (wallTextGO == null)
+                {
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND SOLANUM QUESTION TEXT: " + pair.Value, MessageType.Error);
+                    continue;
+                }
+                NomaiWallText wallText = wallTextGO.GetComponent<NomaiWallText>();
+
+                //Hide the associated wall text
+                wallText.HideImmediate();
+
+                //Generate a new question struct
+                NomaiConversationManager.StonePair question = new NomaiConversationManager.StonePair();
+                question.wordA = pair.Key;
+                question.wordB = probeWord;
+                question.response = wallText;
+
+                //Add struct to array
+                questions[i] = question;
+
+                i++;
+            }
+
+            //Add new questions to array
+            conversationManager._questions = questions;
         }
         #endregion
 
@@ -545,7 +613,7 @@ namespace AstralCodex
         #region Update
         void Update()
         {
-            if (SceneManager.GetSceneByName(SceneName).isLoaded && Main.newHorizons.GetCurrentStarSystem() == "SolarSystem")
+            if (SceneManager.GetSceneByName(SceneName).isLoaded && Main.newHorizons.GetCurrentStarSystem() == SceneName)
             {
                 //Player death management
                 if (Locator.GetDeathManager().IsPlayerDying())

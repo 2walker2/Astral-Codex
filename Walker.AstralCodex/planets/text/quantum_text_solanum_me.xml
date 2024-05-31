@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: Perhaps you know more about this probe than I do. I suspect there is much you could teach me if we were able to communicate more directly.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: I have a hypothesis that my journey may be at an end. The task of uncovering this probe's mysteries may fall to you.</Text>
+	</TextBlock>
+</NomaiObject>

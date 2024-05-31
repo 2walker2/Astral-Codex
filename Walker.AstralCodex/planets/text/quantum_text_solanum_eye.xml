@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: Within the probe's memory I have found several depictions of the <![CDATA[<color=lightblue>Eye</color>]]>'s signal. I wonder what its creators could teach us about the mystery that has enthralled my clan.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: It is tantalizing to have answers to our greatest questions so close. I will continue to decode the probe's memory to learn all I can.</Text>
+	</TextBlock>
+</NomaiObject>

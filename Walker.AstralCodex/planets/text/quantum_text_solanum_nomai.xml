@@ -1,0 +1,11 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: Whoever built this probe, I do not believe that they were Nomai. It is comforting to know that my clan is not alone in our search for the <![CDATA[<color=lightblue>Eye</color>]]>.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: I wonder if this is the only probe of its kind. Perhaps my clan have discovered others in the time since I started my pilgrimage.</Text>
+	</TextBlock>
+</NomaiObject>

@@ -1,0 +1,148 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "QUANTUM_MOON",
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"path": "Assets/Bundle/Conversation Stone.prefab",
+				"rename": "ProbeConversationStone",
+				"position": {
+					"x": 0.6149,
+					"y": -68.5513,
+					"z": 16.8556
+				},
+				"rotation": {
+					"x": 13.0211,
+					"y": 219.8129,
+					"z": 202.0758
+				}
+			},
+			{
+				"assetBundle": "planets/assets/astral_codex",
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"path": "Assets/Bundle/ProbeBroken.prefab",
+				"rename": "QMProbe",
+				"position": {
+					"x": 2.2689,
+					"y": -69.0302,
+					"z": 14.8261
+				},
+				"rotation": {
+					"x": 14.1818,
+					"y": 123.6358,
+					"z": 153.8179
+				},
+				"scale":  0.5
+			}
+		],
+		"translatorText": [
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_explain.xml",
+				"rename": "ExplainProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 131.3259
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_eye.xml",
+				"rename": "EyeProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 189.1442
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_identify.xml",
+				"rename": "IdentifyProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 252.7805
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_me.xml",
+				"rename": "MeProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 246.1513
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_nomai.xml",
+				"rename": "NomaiProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 131.3259
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_quantum_moon.xml",
+				"rename": "QMProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 204.947
+				}
+			},
+			{
+				"parentPath": "Sector_QuantumMoon/State_EYE",
+				"xmlFile": "planets/text/quantum_text_solanum_you.xml",
+				"rename": "YouProbeText",
+				"position": {
+					"x": -3.1602,
+					"y": -70.3173,
+					"z": 1.2597
+				},
+				"rotation": {
+					"x": 358.1369,
+					"y": 312.902,
+					"z": 131.3259
+				}
+			}
+		]
+	}
+}

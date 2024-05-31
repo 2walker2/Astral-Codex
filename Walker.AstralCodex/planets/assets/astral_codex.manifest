@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 357357012
+CRC: 3950378697
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1cc96389a185742d6f5462d2cc733ff4
+    Hash: b6a0091560ceef7d2cbe316834aceb37
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 69f59a59e2f31bb38abf33f4cdec25d1
+    Hash: 3dd47f620c23a1be9ceb6df34150994a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -47,6 +47,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: efebafe055e72bb47a2b52382e9d0767, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
@@ -130,7 +132,9 @@ Assets:
 - Assets/Bundle/Probe Warp Platform.prefab
 - Assets/Bundle/Tesseract.prefab
 - Assets/Bundle/Textures/Monolith.png
+- Assets/Bundle/Conversation Stone.prefab
 - Assets/Bundle/Materials/Chime Redesign/Metal.mat
+- Assets/Bundle/Models/convsersation_stone.obj
 - Assets/Bundle/Materials/Foliage1.mat
 - Assets/Bundle/Materials/BlackHole.mat
 - Assets/Bundle/Materials/Chime Redesign/Display Sheet.mat
@@ -172,6 +176,7 @@ Assets:
 - Assets/Bundle/EyeProbeStates/ScannerState5.prefab
 - Assets/Bundle/Materials/Foliage4.mat
 - Assets/Bundle/Textures/Chime Redesign/Terrain_GM_RockClutter_n.png
+- Assets/Bundle/Materials/New Probe.mat
 - Assets/Bundle/Materials/Wires/PopulationDisplayWireShell.mat
 - Assets/Bundle/Textures/Glass Normal Map.jpg
 - Assets/Bundle/Materials/Chime Redesign/Probe/Glass.mat
@@ -185,6 +190,7 @@ Assets:
 - Assets/Bundle/Materials/Chime Redesign/Geode Inside.mat
 - Assets/Bundle/Projector Model.prefab
 - Assets/Bundle/Textures/Foliage/Foliage4.png
+- Assets/Bundle/Textures/New Probe.png
 - Assets/Bundle/Materials/Chime Redesign/Probe/Metal 2.mat
 - Assets/Bundle/Textures/ChalkboardUnedited.jpg
 - Assets/Bundle/Textures/Circle.png
@@ -260,6 +266,7 @@ Assets:
 - Assets/Bundle/SkyboxOverlay.prefab
 - Assets/Bundle/Models/Chime Redesign/Dispenser.blend
 - Assets/Bundle/Materials/Chime Redesign/Red Foil.mat
+- Assets/Bundle/Materials/ProbeDecal.mat
 - Assets/Bundle/StorageCrystal.prefab
 - Assets/Bundle/Models/Chime Redesign/Projector.blend
 - Assets/Bundle/Shaders/RedLight.shader

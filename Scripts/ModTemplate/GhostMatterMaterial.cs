@@ -20,7 +20,8 @@ namespace AstralCodex
             "Arc",
             "ShellLaticeFilled",
             "ShellLatice",
-            "Ring1", "Ring2", "Ring3", "Ring4", "Ring5", "Ring6", "Ring7"
+            "Ring1", "Ring2", "Ring3", "Ring4", "Ring5", "Ring6", "Ring7",
+            "ConversationStoneDecal"
         };
         
         List<Renderer> renderers; //The mesh renderers on this object and its children

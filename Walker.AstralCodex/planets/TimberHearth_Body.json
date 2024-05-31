@@ -19,14 +19,22 @@
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/White Hole.prefab",
-				"position": {"x": -96.9762, "y": -63.692, "z": -196.6363},
+				"position": {
+					"x": -96.9762,
+					"y": -63.692,
+					"z": -196.6363
+				},
 				"scale": 0.5,
 				"rename": "codex_timber_white_prefab"
 			},
 			{
 				"assetBundle": "planets/assets/astral_codex",
 				"path": "Assets/Bundle/Black Hole.prefab",
-				"position": {"x":-89.0413, "y":-69.1316, "z":-198.5797},
+				"position": {
+					"x": -89.0413,
+					"y": -69.1316,
+					"z": -198.5797
+				},
 				"scale": 0.5,
 				"rename": "codex_timber_black_prefab"
 			},
@@ -747,46 +755,102 @@
 			},
 			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -89.4962, "y": -74.1966, "z":-198.7138},
-				"rotation": {"x": 89.5319, "y":302.9918, "z":180.0006},
+				"position": {
+					"x": -89.4962,
+					"y": -74.1966,
+					"z": -198.7138
+				},
+				"rotation": {
+					"x": 89.5319,
+					"y": 302.9918,
+					"z": 180.0006
+				},
 				"scale": 0.5
 			},
 			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -90.5798, "y": -75.0364, "z": -198.1222},
-				"rotation": {"x": 341.016, "y": 302.9899, "z": 180},
+				"position": {
+					"x": -90.5798,
+					"y": -75.0364,
+					"z": -198.1222
+				},
+				"rotation": {
+					"x": 341.016,
+					"y": 302.9899,
+					"z": 180
+				},
 				"scale": 0.5
 			},
 			//Warp receiver props
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
-				"position": {"x": -241.5257, "y": -44.9414, "z": -44.1596},
-				"rotation": {"x": 287.0285, "y": 321.8648, "z": 120.7406}
+				"position": {
+					"x": -241.5257,
+					"y": -44.9414,
+					"z": -44.1596
+				},
+				"rotation": {
+					"x": 287.0285,
+					"y": 321.8648,
+					"z": 120.7406
+				}
 			},
 			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -242.5306, "y": -45.6083, "z": -44.4345},
-				"rotation": {"x": 273.2614, "y": 332.2199, "z": 0},
+				"position": {
+					"x": -242.5306,
+					"y": -45.6083,
+					"z": -44.4345
+				},
+				"rotation": {
+					"x": 273.2614,
+					"y": 332.2199,
+					"z": 0
+				},
 				"scale": 0.5
 			},
 			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -242.7047, "y": -44.5715, "z": -44.1951},
-				"rotation": {"x": 21.1991, "y": 155.9716, "z": -0.0005},
+				"position": {
+					"x": -242.7047,
+					"y": -44.5715,
+					"z": -44.1951
+				},
+				"rotation": {
+					"x": 21.1991,
+					"y": 155.9716,
+					"z": -0.0005
+				},
 				"scale": 0.5
 			},
 			{
 				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/WarpCoreWallSockets/WarpCoreSocket/Props_NOM_WarpCoreBroken (1)/Props_NOM_WarpCore_Simple",
-				"position": {"x": -241.0346, "y": -46.4682, "z": -45.88},
-				"rotation": {"x": 270.7873, "y": 83.8162, "z": 254.0461},
+				"position": {
+					"x": -241.0346,
+					"y": -46.4682,
+					"z": -45.88
+				},
+				"rotation": {
+					"x": 270.7873,
+					"y": 83.8162,
+					"z": 254.0461
+				},
 				"scale": 0.5
 			},
 			//Slate recorder
 			{
 				"rename": "timber_recorder_slate",
 				"path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder",
-				"position": {"x": -142.9267, "y": -13.8289, "z": -170.3083},
-				"rotation": {"x": 332.6902, "y": 308.0737, "z": 93.77947}
+				"position": {
+					"x": -142.9267,
+					"y": -13.8289,
+					"z": -170.3083
+				},
+				"rotation": {
+					"x": 332.6902,
+					"y": 308.0737,
+					"z": 93.77947
+				}
 			}
 		],
 		"dialogue": [
