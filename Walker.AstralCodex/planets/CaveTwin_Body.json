@@ -58,7 +58,7 @@
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam (2)",
 				"position": {
-					"x": -13.0485764,
+					"x": -13.5067,
 					"y": -69.65393,
 					"z": -120.601837
 				},
@@ -67,7 +67,8 @@
 					"y": 185.5572,
 					"z": 185.296921
 				},
-				"scale": 0.8
+				"scale": 0.8,
+				"rename": "ReunionMemorialBeamUp"
 			},
 			{
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam",

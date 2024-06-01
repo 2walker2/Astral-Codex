@@ -71,7 +71,8 @@
 			{
 			"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Interactibles_WhiteholeStation/Prefab_NOM_TractorBeam (2)",
 			"parentPath": "Sector_DB/Bramble Building/Transform Root/Tractor Beam Anchor",
-			"isRelativeToParent": true
+			"isRelativeToParent": true,
+			"rename": "DarkBrambleResearchStationBeamUp"
 			},
 			{
 			"assetBundle": "planets/assets/astral_codex",

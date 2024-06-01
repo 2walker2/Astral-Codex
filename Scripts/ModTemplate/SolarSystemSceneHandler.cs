@@ -198,6 +198,7 @@ namespace AstralCodex
                 ConfigureBrambleWarpPads();
                 MakeBrambleCloakSphereCastShadows();
                 ConfigureProbeConversationStone();
+                AdjustTractorBeamStrength();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -434,6 +435,17 @@ namespace AstralCodex
 
             //Add new questions to array
             conversationManager._questions = questions;
+        }
+
+        void AdjustTractorBeamStrength()
+        {
+            GameObject reunionBeamUpGO = SearchUtilities.Find("ReunionMemorialBeamUp");
+            if (reunionBeamUpGO != null)
+                reunionBeamUpGO.GetComponentInChildren<TractorBeamFluid>()._verticalSpeed = -16;
+
+            GameObject brambleBeamUpGO = SearchUtilities.Find("DarkBrambleResearchStationBeamUp");
+            if (brambleBeamUpGO != null)
+                brambleBeamUpGO.GetComponentInChildren<TractorBeamFluid>()._verticalSpeed = -14;
         }
         #endregion
 
