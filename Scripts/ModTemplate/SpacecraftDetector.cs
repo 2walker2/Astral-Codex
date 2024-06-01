@@ -21,6 +21,9 @@ namespace AstralCodex
         bool ship = false; //Whether the player's ship is inside this SpacecraftDetector
         bool shuttle = false; //Whether a Nomai shuttle is inside this SpacecraftDetector
         bool modelShip = false; //Whether the model ship is inside this SpacecraftDetector
+
+        Rigidbody shuttleBody = null; //The rigidbody of the shuttle (if any) inside this detector
+        float shuttleForce = 100f; //The force to apply to a shuttle within this detector to avoid it bouncing off the planet
         #endregion
 
         #region Initialization
@@ -40,10 +43,27 @@ namespace AstralCodex
         }
         #endregion
 
+        #region Pull Shuttle In
+        void Update()
+        {
+            if (shuttle && shuttleBody != null)
+            {
+                Main.modHelper.Console.WriteLine("Applying shuttle force", MessageType.Success);
+                Vector3 forceDirection = (transform.position - shuttleBody.transform.position).normalized;
+                shuttleBody.AddForce(forceDirection * shuttleForce);
+            }
+        }
+        #endregion
+
         #region Detect Spacecraft
         void OnTriggerEnter(Collider other)
         {
-            if (other.transform.root.CompareTag("NomaiShuttleBody")) shuttle = true;
+            if (other.transform.root.CompareTag("NomaiShuttleBody"))
+            {
+                Main.modHelper.Console.WriteLine("Shuttle entered detector", MessageType.Success);
+                shuttle = true;
+                shuttleBody = other.GetComponentInParent<Rigidbody>();
+            }
             if (other.transform.root.CompareTag("Ship")) ship = true;
             if (other.transform.root.CompareTag("ModelRocketShipBody")) modelShip = true;
             if (ship || shuttle || modelShip)
