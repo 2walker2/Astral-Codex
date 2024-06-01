@@ -9,6 +9,7 @@ using System;
 using UnityEngine.InputSystem;
 using System.Diagnostics;
 using NewHorizons.Utility.OWML;
+using System.Collections;
 
 namespace AstralCodex
 {
@@ -23,6 +24,8 @@ namespace AstralCodex
         TimeLoopCoreController timeLoopCoreController;
         GameObject skySphere;
         StarfieldController starfieldController;
+        GameObject npcPlayer;
+        bool startedStabilizeSpacetimeEffect;
         #endregion
 
         #region Path Lists
@@ -176,6 +179,7 @@ namespace AstralCodex
                 AssetHandler.S.Load();
 
                 flashbackOverridden = false;
+                startedStabilizeSpacetimeEffect = false;
 
                 //General configuration
                 AssignGhostMatterMaterial();
@@ -343,6 +347,8 @@ namespace AstralCodex
             timeLoopCoreController = FindObjectOfType<TimeLoopCoreController>();
             if (timeLoopCoreController == null)
                 Main.modHelper.Console.WriteLine("FAILED TO FIND TIME LOOP CORE CONTROLLER", MessageType.Error);
+
+            npcPlayer = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player");
         }
 
         void RemoveBreakableComponentFromBramblePlatforms()
@@ -669,6 +675,15 @@ namespace AstralCodex
             //Prevent probe from duplicating in ATP
             if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
                 PlayerData.SetPersistentCondition("PROBE_ENTERED_TIMELOOPCORE", false);
+
+            //Break, then stabilize spacetime if NPC player exists
+            /*if (!startedStabilizeSpacetimeEffect && npcPlayer.activeSelf)
+            {
+                Main.modHelper.Console.WriteLine("Stabilizing spacetime");
+                startedStabilizeSpacetimeEffect = true;
+
+                StartCoroutine(StabilizeSpacetimeEffect());
+            }*/
         }
 
         void StabilizeSpacetime()
@@ -685,6 +700,31 @@ namespace AstralCodex
                     timeLoopCoreController._playerEnteredCoreLastLoop = false; //Prevent from breaking in edge cases if player is sent through ATP
                 }
             }
+        }
+
+        IEnumerator StabilizeSpacetimeEffect()
+        {
+            Main.modHelper.Console.WriteLine("Playing stabilize spacetime effect");
+            RealityShatterImageEffect realityShatterEffect = Locator.GetPlayerCamera().GetComponent<PlayerCameraEffectController>()._realityShatterEffect;
+            realityShatterEffect.enabled = true;
+
+            float shatterProgress = 0;
+            while (shatterProgress < 1)
+            {
+                shatterProgress += Time.deltaTime * 2;
+                realityShatterEffect.SetShatterParameters(shatterProgress, 0, 0, 0);
+                yield return new WaitForEndOfFrame();
+            }
+            while (shatterProgress > 0)
+            {
+                shatterProgress -= Time.deltaTime * 2;
+                realityShatterEffect.SetShatterParameters(shatterProgress, 0, 0, 0);
+                yield return new WaitForEndOfFrame();
+            }
+
+            realityShatterEffect.enabled = false;
+
+            Main.modHelper.Console.WriteLine("Finished stabilize spacetime effect");
         }
 
         void PreventSkyboxInDreamWorld()
@@ -713,10 +753,11 @@ namespace AstralCodex
                         playerBody.SetAngularVelocity(Vector3.zero);
                     }
                 }
+                //Debug shatter and stabilize spacetime
                 else if (Keyboard.current.sKey.wasPressedThisFrame)
                 {
-                    GameObject sunLight = SearchUtilities.Find("SunLight");
-                    sunLight.SetActive(!sunLight.activeSelf);
+                    Main.modHelper.Console.WriteLine("Starting stabilize spacetime effect");
+                    StartCoroutine(StabilizeSpacetimeEffect());
                 }
             }
             else if (Keyboard.current.zKey.wasPressedThisFrame)

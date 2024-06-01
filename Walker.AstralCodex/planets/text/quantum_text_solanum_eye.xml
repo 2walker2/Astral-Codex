@@ -6,6 +6,6 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>SOLANUM: It is tantalizing to have answers to our greatest questions so close. I will continue to decode the probe's memory to learn all I can.</Text>
+		<Text>SOLANUM: It is tantalizing to have answers to our greatest questions so close. I will continue decoding the probe's memory to learn all I can.</Text>
 	</TextBlock>
 </NomaiObject>
