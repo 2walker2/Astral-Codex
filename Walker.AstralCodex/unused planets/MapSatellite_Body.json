@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "MapSatellite",
+	"Props": {
+		"details": [
+			{
+				"position": { "y": 15 },
+				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire"
+			}
+		]
+	},
+	"Atmosphere": {
+		"hasOxygen": true,
+		"size": 25
+	}
+}
