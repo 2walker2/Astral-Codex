@@ -31,9 +31,10 @@ namespace AstralCodex
                 //Configure
                 InitializeProbeParticles();
                 ConfigureMuseumPlaque();
-                InitializeProximityQuantumStates();
+                EyeProbe();
                 ConfigureRecorder();
                 AddProbeDestructionVolumes();
+                ClearParadoxState();
 
                 NewHorizons.Utility.OWML.Delay.FireOnNextUpdate(AddSkybox);
             }
@@ -92,7 +93,7 @@ namespace AstralCodex
             }
         }
         
-        void InitializeProximityQuantumStates()
+        void EyeProbe()
         {
             //Make the translation probe's quantum states turn quantum on proximity
             GameObject quantumProximityController = SearchUtilities.Find("QuantumProximityController");
@@ -120,7 +121,7 @@ namespace AstralCodex
         {
             //Make it easier to lose the probe in the eye by adding additional destruction volumes
             foreach (EndlessTriggerVolume endlessVolume in FindObjectsOfType<EndlessTriggerVolume>())
-                endlessVolume.gameObject.AddComponent<ProbeDestructionVolume>();
+                endlessVolume.gameObject.AddComponent<ProbeDestroyOnExitVolume>();
         }
 
         void AddSkybox()
@@ -132,6 +133,16 @@ namespace AstralCodex
                 GameObject skySphereGO = Instantiate(skySphere, spherePosition.transform);
                 skySphereGO.transform.localEulerAngles = new Vector3(0, 85, 0);
                 skySphereGO.SetActive(true);
+            }
+        }
+
+        void ClearParadoxState()
+        {
+            if (PlayerData.GetPersistentCondition("CODEX_ENTERED_TESSERACT"))
+            {
+                PlayerData.SetPersistentCondition("PLAYER_ENTERED_TIMELOOPCORE", false);
+                PlayerData.SetPersistentCondition("PROBE_ENTERED_TIMELOOPCORE", false);
+                EyeStateManager.s_paradoxExists = false;
             }
         }
         #endregion

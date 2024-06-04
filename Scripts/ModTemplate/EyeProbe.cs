@@ -8,6 +8,7 @@ using UnityEngine;
 using NewHorizons;
 using NewHorizons.Utility;
 using System.Collections;
+using HarmonyLib;
 
 namespace AstralCodex
 {
@@ -50,6 +51,7 @@ namespace AstralCodex
                 musicFinaleSource = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/MusicFinaleSource").GetComponent<OWAudioSource>();
                 campsiteController = SearchUtilities.Find("Sector_Campfire").GetComponent<QuantumCampsiteController>();
                 cosmicInflationController = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InflationController").GetComponent<CosmicInflationController>();
+                
                 //Lights
                 foreach (Light l in player.gameObject.GetComponentsInChildren<Light>())
                     fadeLights.Add(l, l.intensity);
@@ -57,6 +59,9 @@ namespace AstralCodex
                 foreach (Light l in probe.GetComponentsInChildren<Light>())
                     fadeLights.Add(l, l.intensity);
                 signal = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/EyeProbe/AudioSource");
+
+                //Add self to cosmic inflation controller's inflation objects
+                cosmicInflationController._inflationObjects.AddToArray(transform);
             }
             else
             {
@@ -74,7 +79,7 @@ namespace AstralCodex
             quantumStates._isQuantum = (transform.position - player.position).magnitude < distance;
 
             //Lights
-            /*if ((transform.position - player.position).magnitude < lightDistance)
+            if ((transform.position - player.position).magnitude < lightDistance)
             {
                 foreach (KeyValuePair<Light, float> p in fadeLights)
                 {
@@ -89,7 +94,7 @@ namespace AstralCodex
                     if (p.Key != null)
                         p.Key.intensity = Mathf.Min(p.Key.intensity + lightFadeSpeed, p.Value);
                 }
-            }*/
+            }
 
             //Trigger blink once recorder is read
             if (recorder._dictNomaiTextData[10].IsTranslated && !translator._isEquipped && !blinkCalled)
@@ -97,6 +102,10 @@ namespace AstralCodex
                 blinkCalled = true;
                 StartCoroutine(nameof(Disappear));
             }
+
+            //Deactivate when cosmic inflation starts
+            if (cosmicInflationController._state == CosmicInflationController.State.Inflating)
+                DeactivateProbe();
         }
         #endregion
 
@@ -104,7 +113,7 @@ namespace AstralCodex
         void LateUpdate()
         {
             //Finale starts when CosmicInflationController starts waiting for crossfade to the finale to start
-            if (cosmicInflationController._waitForCrossfade && !musicFinaleSource.isPlaying)
+            if (cosmicInflationController._waitForCrossfade && Time.time >= cosmicInflationController._crossFadeMusicTime && !musicFinaleSource.isPlaying)
             {
                 musicSource.FadeOut(5);
                 musicFinaleSource.FadeIn(5, true);
