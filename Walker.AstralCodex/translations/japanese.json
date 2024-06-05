@@ -9,6 +9,7 @@
         "Translation Probe Cinder": "翻訳探査機 残り火",
         "Translation Probe Thicket": "翻訳探査機 密生林",
         "Translation Probe Astral": "翻訳探査機 アストラル",
+        "'Probe' Stone": "「探査機」の石",
         "Write Addendum": "追記する"
     },
     "DialogueDictionary": {
@@ -166,6 +167,22 @@
         "<![CDATA[<i>Finally, yourself...</i>]]>": "<![CDATA[<i>最後に、私自身のことを…</i>]]>",
         "Trapped within a time loop of the Nomai's creation, I have uncovered the deepest mysteries of the Outer Wilds! I will do what I can to make sure they are not forgotten.": "Nomaiにより創られたタイムループの中に囚われた私は、Outer Wildsの最も深い謎を明らかにした！彼らが忘れられることのないように、私はできる限りのことをするつもりだ。&lt;i&gt;&lt;/i&gt;",
         "- Signed, The Hatchling": "- 署名: ひよっ子&lt;i&gt;&lt;/i&gt;",
+
+        // Solanum
+        "SOLANUM: The device that produced that stone is strange. I have never encountered anything of its sort elsewhere. Though it is invisible even to my third eye, I have still succeeded in extracting some of the contents of its memory.": "SOLANUM:その石を作った装置は変わってる。他ではそんなもの見たことがないわ。第3の目ですら見えないけれど、その記録の内容の一部を抽出できた。",
+        "SOLANUM: I am still in the process of decoding it but what I have found so far is intriguing. I am confident that it was not built by Nomai, yet it contains a database of our language. I wonder who could have created it.": "SOLANUM:まだ解読中だけれど、ここまでわかったことでも好奇心をそそられるわ。Nomaiによって作られたものでないことは確かなのに、私たちの言語データベースが含まれてる。一体誰が作ったのだろう。",
+        "SOLANUM: I have not yet managed to deduce the origins of that probe, nor have I determined how it managed to produce that stone. Its material resembles nothing I've seen before. I wonder why it is completely invisible to my sight.": "SOLANUM:私にはまだその探査機の起源の推測も、どうやってこの石が作られたかを突き止めることもできてない。この素材は今まで見たあらゆるものと異なってる。どうして私にはまったく見えないのか不思議。",
+        "SOLANUM: These mysteries intrigue me and have occupied much of my time since I landed on this moon.": "SOLANUM:私はこの謎に魅了されていて、この月に着陸してから多くの時間を費やしてるの。&lt;i&gt;&lt;/i&gt;",
+        "SOLANUM: Perhaps you know more about this probe than I do. I suspect there is much you could teach me if we were able to communicate more directly.": "SOLANUM:きっとあなたの方がこの探査機について詳しいのでしょう。もっと直接意思疎通ができたら、たくさんのことを教えてもらえるのに。&lt;i&gt;&lt;/i&gt;",
+        "SOLANUM: I have a hypothesis that my journey may be at an end. The task of uncovering this probe's mysteries may fall to you.": "SOLANUM:私の旅はもう終わったのかもしれないという仮説を立てているの。この探査機の謎を解明する役目はあなたに委ねられるのでしょう。&lt;i&gt;&lt;/i&gt;",
+        "SOLANUM: I wonder how this probe came to be on this state of the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. Perhaps it came from the <![CDATA[<color=lightblue>Eye</color>]]> itself?": "SOLANUM:この探査機はどうやって<![CDATA[<color=lightblue>量子の月</color>]]>のこの状態にたどり着いたのだろう。もしかすると<![CDATA[<color=lightblue>眼</color>]]>そのものから来たのかも？",
+        "SOLANUM: If so, there is much we could learn from it. It could answer some of my clan's greatest questions. Perhaps it could even allow us our first true glimpse of the <![CDATA[<color=lightblue>Eye</color>]]>.": "SOLANUM:もしそうなら、ここから学べることはたくさんあるわ。私の部族の最大の疑問にも答えてくれるかもしれない。もしかしたら、それによって<![CDATA[<color=lightblue>眼</color>]]>の真の姿を初めて垣間見ることができるかもしれない。&lt;i&gt;&lt;/i&gt;",
+        "SOLANUM: Within this probe's memory I have found references to several safeguards, though I have not yet learned what they protect.": "SOLANUM:この探査機の記録の中でいくつか安全装置に関するものを見つけたけど、何を守っているのかはまだわからないわ。",
+        "SOLANUM: If you have come seeking my help in overcoming one, I fear I will not be able to assist you. I suspect that you will have to find another way.": "SOLANUM:その解決をしようと私に助けを求めに来たのなら、残念だけど役に立つことはできないでしょう。あなたは別の方法を見つけなければならないと思う。",
+        "SOLANUM: Within the probe's memory I have found several depictions of the <![CDATA[<color=lightblue>Eye</color>]]>'s signal. I wonder what its creators could teach us about the mystery that has enthralled my clan.": "SOLANUM:探査機の記録に<![CDATA[<color=lightblue>眼</color>]]>の信号の記述があったわ。私の部族を魅了した謎について、この作成者は何を教えてくれるのかしら。",
+        "SOLANUM: It is tantalizing to have answers to our greatest questions so close. I will continue decoding the probe's memory to learn all I can.": "SOLANUM:私たちの最大の疑問の答えがこんなにも間近でじらしてくるなんて。私は探査機の記録の解読を続けて、できる限りのことを学ぶつもりよ。",
+        "SOLANUM: Whoever built this probe, I do not believe that they were Nomai. It is comforting to know that my clan is not alone in our search for the <![CDATA[<color=lightblue>Eye</color>]]>.": "SOLANUM:この探査機を作ったのが誰であろうと、それはNomaiではないと思う。私の部族が<![CDATA[<color=lightblue>眼</color>]]>の探索において孤独ではないのだと知れて安心したわ。&lt;i&gt;&lt;/i&gt;",
+        "SOLANUM: I wonder if this is the only probe of its kind. Perhaps my clan have discovered others in the time since I started my pilgrimage.": "SOLANUM:これがその類の唯一の探査機なのかしら。もしかすると私が巡礼を始めた時間から、私の部族でも他の探査機を発見したかもしれないわね。&lt;i&gt;&lt;/i&gt;",
 
         // Eye
         "A little scout just like this one is now home to the Astral Codec: a means of transmitting information via the Eye, passed to us from the universe before ours.": "このようなリトル･スカウトは、現在アストラル･コーデックが存在する場所となっている:それは私たちの前の宇宙から届けられた、眼を介して情報を送信する手段である。&lt;i&gt;&lt;/i&gt;",
