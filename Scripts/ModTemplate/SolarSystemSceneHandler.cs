@@ -199,6 +199,7 @@ namespace AstralCodex
                 MakeBrambleCloakSphereCastShadows();
                 ConfigureProbeConversationStone();
                 AdjustTractorBeamStrength();
+                ConfigureMapSatellitePot();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -446,6 +447,22 @@ namespace AstralCodex
             GameObject brambleBeamUpGO = SearchUtilities.Find("DarkBrambleResearchStationBeamUp");
             if (brambleBeamUpGO != null)
                 brambleBeamUpGO.GetComponentInChildren<TractorBeamFluid>()._verticalSpeed = -14;
+        }
+
+        void ConfigureMapSatellitePot()
+        {
+            GameObject mapSatellitePot = SearchUtilities.Find("MapSatellitePot");
+            if (mapSatellitePot != null)
+            {
+                //Remove wine and cloth
+                MeshRenderer mapSatellitePotRenderer = mapSatellitePot.GetComponentInChildren<MeshRenderer>();
+                mapSatellitePotRenderer.materials = [mapSatellitePotRenderer.materials[0], mapSatellitePotRenderer.materials[1]];
+
+                //Add collider
+                mapSatellitePot.AddComponent<CapsuleCollider>();
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND MAP SATELLITE POT", MessageType.Error);
         }
         #endregion
 

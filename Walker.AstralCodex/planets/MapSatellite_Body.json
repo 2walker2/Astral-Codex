@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "MapSatellite",
+	"Props": {
+		"details": [
+			{
+				"position": { "y": 15 },
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Villager_HEA_Porphy/Props_HEA_SapwinePot",
+				"rename": "MapSatellitePot"
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
+				"position": { "y": 15.6437 },
+				"scale":  0.375,
+				"removeChildren": [ "Effects/Effects_HEA_SmokeColumn" ],
+				"rename": "MapSatelliteCampfire"
+			}
+		]
+	},
+	"Atmosphere": {
+		"hasOxygen": true,
+		"size": 25
+	}
+}
