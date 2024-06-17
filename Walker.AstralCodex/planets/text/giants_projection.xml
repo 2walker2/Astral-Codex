@@ -1,0 +1,17 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>The secondary probe is resting at the <![CDATA[<Color=lightblue>]]>anomaly<![CDATA[</Color>]]>.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>Anomaly solar distance: 35 kilometers. Anomaly inclination: 270 degrees.</Text>
+	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>codex_projection_text_fact</FactID>
+			<Condition>2</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

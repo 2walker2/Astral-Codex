@@ -22,5 +22,9 @@
 	      	<FactID>codex_projection_rumor</FactID>
 	      	<Condition>1</Condition>
 	    </RevealFact>
+		<RevealFact>
+			<FactID>codex_projection_fact</FactID>
+			<Condition>1</Condition>
+		</RevealFact>
 	</ShipLogConditions>
 </NomaiObject>

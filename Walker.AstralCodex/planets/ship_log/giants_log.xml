@@ -4,7 +4,6 @@
         <ID>codex_projection</ID>
         <Name>Anomaly Recording</Name>
 
-        <IgnoreMoreToExplore/>
         <Curiosity>codex_astral_codex</Curiosity>
         
         <RumorFact>
@@ -15,8 +14,18 @@
 
         <ExploreFact>
             <ID>codex_projection_fact</ID>
-            <Text>The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.</Text>
+            <Text>The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe.</Text>
         </ExploreFact>
+
+		<ExploreFact>
+			<ID>codex_projection_projection_fact</ID>
+			<Text>When I used the projection stone, I saw a strange vortex below me. I could see the planets orbiting clockwise in the distance.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>codex_projection_text_fact</ID>
+			<Text>The anomaly is located 35 kilometers from the sun with an inclination of 270 degrees.</Text>
+		</ExploreFact>
 
         <Entry>
             <ID>codex_anomaly</ID>

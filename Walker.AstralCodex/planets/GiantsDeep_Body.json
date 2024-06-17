@@ -26,7 +26,7 @@
 				}
 			}
 		],
-		"nomaiText": [
+		"translatorText": [
 			{
 				"normal": {
 					"x": -0.6433741,
@@ -46,6 +46,12 @@
 				"type": "computer",
 				"location": "unspecified",
 				"xmlFile": "planets/text/giants_computer.xml"
+			},
+			{
+				"parentPath": "Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Prefab_NOM_Whiteboard_Shared/ArcSocket",
+				"isRelativeToParent": true,
+				"xmlFile": "planets/text/giants_projection.xml",
+				"rename": "GiantsDeepProjectionText"
 			}
 		],
 		"remotes": [

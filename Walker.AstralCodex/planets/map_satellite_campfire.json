@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Map Satellite Campfire",
+	"Base": {
+		"surfaceGravity": 0
+	},
+	"Orbit": {
+		"primaryBody": "Sun",
+		"inclination": 90,
+		"longitudeOfAscendingNode": -10,
+		"semiMajorAxis": 26000,
+		"trueAnomaly": -14.97,
+		"axialTilt": -4,
+		"siderealPeriod": 4,
+		"initialRotation": 180,
+		"showOrbitLine": false
+	},
+	"Props": {
+		"details": [
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Villager_HEA_Porphy/Props_HEA_SapwinePot",
+				"rename": "MapSatellitePot",
+				"position": {
+					"x": 1.6873,
+					"y": -1.2164,
+					"z": 0
+				},
+				"rotation": {
+					"x": 351.1373,
+					"y": 0,
+					"z": 336.278
+				}
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
+				"isRelativeToParent": true,
+				"parentPath": "Sector/MapSatellitePot",
+				"position": { "y": 0.6437 },
+				"removeChildren": [ "Effects/Effects_HEA_SmokeColumn"],
+				"rename": "MapSatelliteCampfire"
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_NomaiTree_Var_1",
+				"position": { "z": -0.5 },
+				"scale": 0.5
+			},
+			{
+				"path": "Moon_Body/Sector_THM/Interactables_THM/Prefab_HEA_Recorder",
+				"rename": "MapSatelliteCampfireRecorder",
+				"position": {
+					"x": 1.22,
+					"y": 0.5855,
+					"z": 1.1818
+				},
+				"rotation": {
+					"x": 57.0051,
+					"y": 81.109,
+					"z": 0
+				}
+			}
+		],
+		"dialogue": [
+			{
+				"pathToAnimController": "Sector/MapSatelliteCampfireRecorder",
+				"parentPath": "MapSatelliteCampfireRecorder",
+				"isRelativeToParent": true,
+				"xmlFile": "planets/text/map_recorder_gabbro.xml",
+				"radius": 2
+			}
+		]
+	},
+	"ReferenceFrame": {
+		"enabled": true,
+		"hideInMap": true,
+		"maxTargetDistance": 50,
+		"targetWhenClose": true,
+		"targetColliderRadius": 5,
+		"bracketRadius": 5
+	},
+	"Atmosphere": {
+		"hasOxygen": true,
+		"hasTrees": true,
+		"size": 4,
+		"useAtmosphereShader": true,
+		"atmosphereTint": {
+			"r": 217,
+			"g": 119,
+			"b": 28,
+			"a": 255
+		},
+		"atmosphereSunIntensity": 1,
+		"hasShockLayer": false
+	}
+}

@@ -10,6 +10,8 @@ using UnityEngine.InputSystem;
 using System.Diagnostics;
 using NewHorizons.Utility.OWML;
 using System.Collections;
+using HarmonyLib;
+using System.Linq;
 
 namespace AstralCodex
 {
@@ -200,6 +202,7 @@ namespace AstralCodex
                 ConfigureProbeConversationStone();
                 AdjustTractorBeamStrength();
                 ConfigureMapSatellitePot();
+                AddGiantsDeepProjectionText();
                 
                 //Chime configuration
                 ConfigureChime();
@@ -460,9 +463,45 @@ namespace AstralCodex
 
                 //Add collider
                 mapSatellitePot.AddComponent<CapsuleCollider>();
+
+                //Scale campfire prop
+                mapSatellitePot.transform.Find("MapSatelliteCampfire/Props_HEA_Campfire").localScale = Vector3.one * 0.375f;
             }
             else
                 Main.modHelper.Console.WriteLine("FAILED TO FIND MAP SATELLITE POT", MessageType.Error);
+        }
+
+        void AddGiantsDeepProjectionText()
+        {
+            Main.modHelper.Console.WriteLine("ADDING GIANTS DEEP PROJECTION TEXT");
+
+            GameObject projectionWhiteboardGO = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Prefab_NOM_Whiteboard_Shared");
+            if (projectionWhiteboardGO != null)
+            {
+                NomaiSharedWhiteboard projectionWhiteboard = projectionWhiteboardGO.GetComponent<NomaiSharedWhiteboard>();
+
+                GameObject projectionTextGO = SearchUtilities.Find("GiantsDeepProjectionText");
+                if (projectionTextGO != null)
+                {
+                    NomaiWallText projectionText = projectionTextGO.GetComponent<NomaiWallText>();
+
+                    NomaiWallText[] nomaiTexts = new NomaiWallText[projectionWhiteboard._nomaiTexts.Length + 1];
+                    projectionWhiteboard._nomaiTexts.CopyTo(nomaiTexts, 0);
+                    nomaiTexts[nomaiTexts.Length - 1] = projectionText;
+                    projectionWhiteboard._nomaiTexts = nomaiTexts;
+
+                    NomaiRemoteCameraPlatform.ID[] remoteIDs = new NomaiRemoteCameraPlatform.ID[projectionWhiteboard._remoteIDs.Length + 1];
+                    projectionWhiteboard._remoteIDs.CopyTo(remoteIDs, 0);
+                    remoteIDs[remoteIDs.Length - 1] = NewHorizons.Handlers.RemoteHandler.GetPlatformID("Secondary Probe");
+                    projectionWhiteboard._remoteIDs = remoteIDs;
+
+                    projectionText.InitializeAsWhiteboardText();
+                }
+                else
+                    Main.modHelper.Console.WriteLine("FAILED TO FIND SUNKEN MODULE PROJECTION TEXT", MessageType.Error);
+            }
+            else
+                Main.modHelper.Console.WriteLine("FAILED TO FIND SUNKEN MODULE PROJECTION WHITEBOARD", MessageType.Error);
         }
         #endregion
 

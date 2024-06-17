@@ -53,20 +53,6 @@
 				"keepLoaded": true,
 				"scale": 0.8
 			},
-			/*{
-				"rename": "StationGhostMatter",
-				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/DarkMatter_Submergible",
-				"position": {
-					"x": -11.4994841,
-					"y": 1.0,
-					"z": 0.000695943832
-				},
-				"rotation": {},
-				"scale": 0.9,
-				"removeChildren": [
-					"DarkMatterVolume/ProbeVisuals"
-				]
-			},*/
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Interactables_CometInterior/DarkMatter_KillVolumes/DarkMatterVolume (4)",
 				"position": {
@@ -82,38 +68,80 @@
 			},
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
-				"position": {"y": 10, "z": 36},
-				"stretch": {"x": 1.75, "y": 1.1, "z": 1.1},
+				"position": {
+					"y": 10,
+					"z": 36
+				},
+				"stretch": {
+					"x": 1.75,
+					"y": 1.1,
+					"z": 1.1
+				},
 				"keepLoaded": true,
 				"rename": "StationGhostMatterEffects"
 			},
 			{
 				"path": "Comet_Body/Sector_CO/Sector_CometInterior/Effects_CometInterior/Effects_GM_AuroraWisps (2)",
-				"position": {"y": -3.5, "z": 70},
+				"position": {
+					"y": -3.5,
+					"z": 70
+				},
 				"rename": "GeodeGhostMatterEffects"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": 0.1695, "y": 0.8547, "z": 31.7184},
-				"rotation": {"x": 5.5689, "y": 4.0401, "z": 355.4895},
+				"position": {
+					"x": 0.1695,
+					"y": 0.8547,
+					"z": 31.7184
+				},
+				"rotation": {
+					"x": 5.5689,
+					"y": 4.0401,
+					"z": 355.4895
+				},
 				"rename": "StationClutter1"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": -0.6596, "y": 0.7347, "z": 37.1562},
-				"rotation": {"x": 1.2307, "y": 36.5986, "z": 353.6952},
+				"position": {
+					"x": -0.6596,
+					"y": 0.7347,
+					"z": 37.1562
+				},
+				"rotation": {
+					"x": 1.2307,
+					"y": 36.5986,
+					"z": 353.6952
+				},
 				"rename": "StationClutter2"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": -3.5178, "y": 0.9057, "z": 32.9728},
-				"rotation": {"x": 358.491, "y": 269.7259, "z": 352.7424},
+				"position": {
+					"x": -3.5178,
+					"y": 0.9057,
+					"z": 32.9728
+				},
+				"rotation": {
+					"x": 358.491,
+					"y": 269.7259,
+					"z": 352.7424
+				},
 				"rename": "StationClutter3"
 			},
 			{
 				"path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
-				"position": {"x": 0.0294, "y": 0.8784, "z": 41.7781},
-				"rotation": {"x": 359.8041, "y": 236.8189, "z": 359.0835},
+				"position": {
+					"x": 0.0294,
+					"y": 0.8784,
+					"z": 41.7781
+				},
+				"rotation": {
+					"x": 359.8041,
+					"y": 236.8189,
+					"z": 359.0835
+				},
 				"rename": "StationClutter4"
 			},
 			/*{
@@ -148,9 +176,17 @@
 			{
 				"rename": "ArchivedCampfire",
 				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Campfire",
-				"position": {"x": -1.3535, "y": -1.0075, "z": 43.8388},
-				"rotation": {"x": 0, "y": 175.1932, "z": 180},
-				"removeChildren": ["Effects/Effects_HEA_SmokeColumn"]
+				"position": {
+					"x": -1.3535,
+					"y": -1.0075,
+					"z": 43.8388
+				},
+				"rotation": {
+					"x": 0,
+					"y": 175.1932,
+					"z": 180
+				},
+				"removeChildren": [ "Effects/Effects_HEA_SmokeColumn" ]
 			},
 			{
 				"rename": "WhiteHoleWarpCore",
@@ -236,9 +272,13 @@
 				"id": "Secondary Probe",
 				"decalPath": "planets/assets/vision_symbol.png",
 				"platform": {
-					"position": {"x": -18, "y": 32, "z": 10},
+					"position": {
+						"x": -18,
+						"y": 32,
+						"z": 10
+					},
 					"rename": "StationVision",
-					"reveals": "codex_projection_fact"
+					"reveals": "codex_projection_projection_fact"
 				}
 			}
 		],
