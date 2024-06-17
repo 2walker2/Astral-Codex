@@ -6,7 +6,7 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Anomaly solar distance: 35 kilometers. Anomaly inclination: 270 degrees.</Text>
+		<Text><![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> solar distance: 35 kilometers. <![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> inclination: 270 degrees.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>

@@ -1,17 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.</Text>
+		<Text>It's hard to believe that this message will ever be found. By the time anyone reads this, our entire universe, everything and everyone we've ever known, will have been dead for billions of years. That's a difficult thing to imagine.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive.
-- Explorer</Text>
+		<Text>We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
+		<Text>Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive.
+- Explorer</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
 		<Text>
 tests passed - codec safeguards disabled
 |                      \ | /                     |
@@ -21,8 +26,8 @@ core activated - insert device for download
 </Text>
 	</TextBlock>
 	<TextBlock>
-		<ID>4</ID>
-		<ParentID>3</ParentID>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
 		<Text>
 codec downloaded successfully
 |     *     *    *       |    *     *    *     * |

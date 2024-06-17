@@ -26,6 +26,7 @@ namespace AstralCodex
         bool animationStarted = false;
         bool complete = false;
         bool startedDispensing = false;
+        bool forcedActive = false;
 
         //Timing information
         float totalDuration = 57.5f; //68; //Total duration of the animation
@@ -102,7 +103,10 @@ namespace AstralCodex
             if (Main.debugMode)
             {
                 if (Keyboard.current.lKey.isPressed && Keyboard.current.uKey.wasPressedThisFrame)
+                {
                     SetActive(true);
+                    forcedActive = true;
+                }
             }
 
             //Activate
@@ -119,7 +123,7 @@ namespace AstralCodex
                 else
                 {
                     //Turn back off
-                    if (!sunWire.on || !populationWire.on || !technologyWire.on)
+                    if ((!sunWire.on || !populationWire.on || !technologyWire.on) && !forcedActive)
                     {
                         SetActive(false);
                     }
@@ -164,12 +168,14 @@ namespace AstralCodex
                 coreComputer.DisplayEntry(1);
                 coreComputer.DisplayEntry(2);
                 coreComputer.DisplayEntry(3);
+                coreComputer.DisplayEntry(4);
             }
             else
             {
                 coreComputer.ClearEntry(1);
                 coreComputer.ClearEntry(2);
                 coreComputer.ClearEntry(3);
+                coreComputer.ClearEntry(4);
             }
 
             //Update material properties
@@ -298,7 +304,7 @@ namespace AstralCodex
             probeParticles.Suppress(false);
 
             //Display last computer entry
-            coreComputer.DisplayEntry(4);
+            coreComputer.DisplayEntry(5);
 
             //Shatter the core
             coreTransform.localScale = Vector3.zero;
