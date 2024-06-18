@@ -62,7 +62,7 @@
 		"dialogue": [
 			{
 				"pathToAnimController": "Sector/MapSatelliteCampfireRecorder",
-				"parentPath": "MapSatelliteCampfireRecorder",
+				"parentPath": "Sector/MapSatelliteCampfireRecorder",
 				"isRelativeToParent": true,
 				"xmlFile": "planets/text/map_recorder_gabbro.xml",
 				"radius": 2

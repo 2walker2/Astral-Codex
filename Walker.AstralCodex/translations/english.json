@@ -2,7 +2,8 @@
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "ShipLogDictionary": {
         "Symbols are scattered throughout the message written on the crystalline cairn.": "Symbols are scattered throughout the message written on the crystalline cairns.",
-        "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "An anomaly resting far below the plane of the solar system. A Nomai probe is found nearby."
+        "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "An anomaly resting far below the plane of the solar system. A Nomai probe is found nearby.",
+        "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.": "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe."
     },
     "DialogueDictionary": {
         "<![CDATA[<i>Recall the Strangers...</i>]]>": "<![CDATA[<i>Recall the inhabitants of the Stranger...</i>]]>",
