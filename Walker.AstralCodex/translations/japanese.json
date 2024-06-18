@@ -59,6 +59,21 @@
         "Firing signal received, retrieving stored coordinates. Launching secondary probe. Secondary probe arrived at destination.": "発射信号受信、保存されていた座標を読み出しています。第2探査機発射中。第2探査機は目的地に到着しました。",
         "Initiating visual link. Projection stone generated. Connection unstable.": "視覚化リンク開始中。プロジェクションストーンを生成しました。接続は不安定です。",
 
+        // Gabbro
+        "Grabbro again. Hornfels wasn't convinced by my initial assessment of the satellite and wanted me to head back out here to double check my work.": "またGabbroだ。Hornfelsは衛星に対する私の最初の評価に納得せず、私の仕事をダブルチェックしにもう一度ここへ戻って来るよう求めてきた。",
+        "Gabbro again. Hornfels wasn't convinced by my initial assessment of the satellite and wanted me to head back out here to double check my work.": "またGabbroだ。Hornfelsは衛星に対する私の最初の評価に納得せず、私の仕事をダブルチェックしにもう一度ここへ戻って来るよう求めてきた。",
+        "Normally I'd resent being asked to do the same job twice. But I picked up some supplies that will let me do something I've wanted to try for a while.": "いつもだったら同じ仕事を2回やれと言われれば腹を立てるだろう。だが、ちょっと試してみたかったことをやれる材料を持ってきたんだ。",
+        "See, dozing off is great but there are two things that can make it better. One: a warm campfire. And two: zero gravity.": "見てくれ、うとうとするのは素晴らしいことだが、その質をより高めてくれる2つのものがある。1つ:暖かいキャンプファイヤー。2つ:無重力。",
+        "How relaxing would it be to combine both? That's what I want to... find... out...": "両方組み合わせればどれほどリラックスできるだろうか？それこそが私の…知りたい…こと…",
+        "...": "…",
+        "...Huh?": "…ん？",
+        "Ha! That's potent. I didn't even mean to doze off but the satellite's already halfway around the sun. That's gotta be the best nap I've had in ages. Ten minutes of warm, crackling, zero-gravity bliss.": "はっ！こいつはすごい。うとうとするつもりはなかったのに、衛星くんは既に太陽の周りを半分回ってる。これは私が長年経験したなかで最高のうたた寝だ。暖かく、パチパチと音を立てる、無重力の至福の10分間だった。&lt;i&gt;&lt;/i&gt;",
+
+        // Texts of the projection stone
+        "The secondary probe is currently resting at the <![CDATA[<Color=lightblue>]]>anomaly<![CDATA[</Color>]]>.": "第2探査機は現在、当該<![CDATA[<Color=lightblue>]]>異常<![CDATA[</Color>]]>にて停止中。&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> solar distance: 35 kilometers. <![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> inclination: 270 degrees.": "<![CDATA[<Color=lightblue>]]>異常<![CDATA[</Color>]]>と太陽の距離:35km、<![CDATA[<Color=lightblue>]]>異常<![CDATA[</Color>]]>の傾斜角:270°&lt;i&gt;&lt;/i&gt;",
+        "<![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> solar distance: 35 kilometers. <![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> inclination: 270 degrees from orbital plane.": "<![CDATA[<Color=lightblue>]]>異常<![CDATA[</Color>]]>と太陽の距離:35km、<![CDATA[<Color=lightblue>]]>異常<![CDATA[</Color>]]>の傾斜角:軌道面から270°&lt;i&gt;&lt;/i&gt;",
+
         // Nomai on Hourglass Twins
         "ANNONA: Welcome to <![CDATA[<Color=lightblue>]]>Ember Twin<![CDATA[</Color>]]>, my friends! It is good to see you again after so long apart. Observation: we must develop a better means of interplanetary travel so that we can be properly reunited (perhaps warp travel could be recreated with the right equipment).": "ANNONA:<![CDATA[<Color=lightblue>]]>燃え盛る双子星<![CDATA[</Color>]]>へようこそ！ここまで長かったが、再び会えて嬉しいよ。意見:我々は問題なく合流できるように、惑星間航行をするためのより良い手段を開発しなければならない(おそらくワープ移動は適切な機器で再現できる)。",
         "KOUSA: Foli... You didn't make it out, did you?": "KOUSA:Foli…。あなたはもういなくなってしまったの？",
@@ -142,6 +157,7 @@
         "But that's not true. Scientist at least thinks there will be something afterward. If anyone is reading this, then I guess she was right. But even that won't last forever. Someday, someone else will face the end.": "だが、そうではない。科学者は少なくともその後に何かあるだろうと考えている。もしもこれを誰かが読んでいるならば、彼女は正しかったのだろう。それでも、それも永遠に続くわけじゃない。いつか、誰かが終わりに直面するのだろう。&lt;i&gt;&lt;/i&gt;",
         "We can't survive what's coming, but at least some of our stories can. And now yours have a chance too. Together we can create an unbroken thread of memory stretching across eons and the vast astral sea.\r\n- Explorer\r\n\t\t": "我々はこれから起こることを生き残ることはできないが、少なくとも我々の物語の一部は生き残ることができる。そして今、あなたにもチャンスはある。我々はともに、悠久の時と広大な星の海に広がる、途切れることのない記憶の糸を創り出すことができる。\n- 探索者&lt;i&gt;&lt;/i&gt;",
 
+        "It's hard to believe that this message will ever be found. By the time anyone reads this, our entire universe, everything and everyone we've ever known, will have been dead for billions of years. That's a difficult thing to imagine.": "このメッセージがいつか見つかるなんて信じがたいことだ。誰かがこれを読む頃には、我々の知る宇宙すべて、あらゆる物質も、あらゆる生物も、何十億年も前に死んでいるのだろう。想像するのは難しいことだ。&lt;i&gt;&lt;/i&gt;",
         "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "我々は<![CDATA[<Color=orange>]]>アストラル･コーデック<![CDATA[</Color>]]>を用いて、終わりを迎える前に記録できたあらゆる物語と情報を送信した。あなたがこれを読んでいるなら、我々のメッセージはそのまま渦を通過したに違いない。&lt;i&gt;&lt;/i&gt;",
         "Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive.\r\n- Explorer": "受け取るんだ。あなた自身の物語や知識を加え、できる限りの方法で渦の先へ届けるんだ。我々は力を合わせれば、記憶の糸を紡ぎ続けることができる。\n- 探索者&lt;i&gt;&lt;/i&gt;",
         "tests passed - codec safeguards disabled\r\n|                      \\ | /                     |\r\n|                    --- o ---                   |\r\n|                      / | \\                     |\r\ncore activated - insert device for download\r\n": "テストに合格 - コーデックの安全装置を無効化\n￤　　　　　　　　　　　＼｜／　　　　　　　　　　　￤\n￤　　　　　　　　　　――ｏ――　　　　　　　　　　￤\n￤　　　　　　　　　　　／｜＼　　　　　　　　　　　￤\nコアを起動 - ダウンロード用の装置を差し込んでください&lt;i&gt;&lt;/i&gt;",
@@ -209,6 +225,9 @@
         "Anomaly Recording": "異常の記録",
         "The images I saw when I died led me to the Orbital Probe Cannon's Probe Tracking Module.": "死んだときに見た画像により、私は軌道探査砲の探査機追跡モジュールへ導かれた。",
         "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.": "軌道探査砲は、宇宙の眼の基準と部分的に一致する未知の天体に衝突した第2探査機と接続されたプロジェクションストーンを生成した。遠くに惑星が時計回りに公転しているのが見えた。",
+        "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe.": "軌道探査砲は、宇宙の眼の基準と部分的に一致する未知の天体に衝突した第2探査機と接続されたプロジェクションストーンを生成した。",
+        "When I used the projection stone, I saw a strange vortex below me. I could see the planets orbiting clockwise in the distance.": "プロジェクションストーンを使うと、私の下に奇妙なうずが見えた。遠くには複数の惑星が時計回りに公転しているのが見えた。",
+        "The anomaly is located 35 kilometers from the sun with an inclination of 270 degrees.": "この異常は太陽から35km、傾斜角270度の位置に存在する。",
         "Anomalous Body": "異常な天体",
         "The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.": "軌道探査砲は、宇宙の眼と部分的に一致する未知の天体をこの星系内で検出した。",
         "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "太陽系平面のはるか下に存在する異常体。軌道探査砲からの第2探査機が近くで見つかった。",
