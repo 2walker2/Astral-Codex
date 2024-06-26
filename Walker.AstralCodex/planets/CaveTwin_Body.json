@@ -758,12 +758,12 @@
 					},
 					{
 						"position": {
-							"x": 2.6709,
-							"y": 1.7335
+							"x": 1.8054,
+							"y": 0.599
 						},
 						"type": "adult",
 						"variation": 12,
-						"zRotation": 302
+						"zRotation": 148
 					}
 				],
 				"normal": {
