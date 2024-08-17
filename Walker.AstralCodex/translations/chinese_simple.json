@@ -1,6 +1,32 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "DialogueDictionary": {
+      "SOLANUM: Within the probe's memory I have found several depictions of the <![CDATA[<color=lightblue>Eye</color>]]>'s signal. I wonder what its creators could teach us about the mystery that has enthralled my clan.":"所莱内姆：我在探测器的内存中发现了多个关于<![CDATA[<color=lightblue>眼</color>]]>的信号的描述。不知道关于这个令我的家族着迷的谜团，它的创造者能告诉我们什么。",
+      "SOLANUM: It is tantalizing to have answers to our greatest questions so close. I will continue decoding the probe's memory to learn all I can.":"所莱内姆：我们最大困惑的答案近在咫尺，真是令人心痒难挠。我会继续解码探测器的内存，尽我所能学习一切。",
+      "SOLANUM: I have not yet managed to deduce the origins of that probe, nor have I determined how it managed to produce that stone. Its material resembles nothing I've seen before. I wonder why it is completely invisible to my sight.":"所莱内姆：我暂时还没法推断出探测器的来源，也不确定它如何产生了那块石头。它的材料与我见过的一切材料都截然不同。不知道它为何在我的视野里是完全隐形的。",
+      "SOLANUM: These mysteries intrigue me and have occupied much of my time since I landed on this moon.":"所莱内姆：这些谜团令我着迷，自从登陆卫星后，我在它们身上花费了大量的时间。",
+      "SOLANUM: Within this probe's memory I have found references to several safeguards, though I have not yet learned what they protect.":"所莱内姆：在这个探测器的内存中，我发现了对数个安全措施的提及，虽然我还不知道它们保护的是什么。",
+      "SOLANUM: If you have come seeking my help in overcoming one, I fear I will not be able to assist you. I suspect that you will have to find another way.":"所莱内姆：如果你是来向我寻求帮助用于解除安全措施，恐怕我对此无能为力。或许你需要寻找其他办法。",
+      "SOLANUM: I wonder how this probe came to be on this state of the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. Perhaps it came from the <![CDATA[<color=lightblue>Eye</color>]]> itself?":"所莱内姆：不知道这个探测器是如何出现在这一状态下的<![CDATA[<color=lightblue>量子卫星</color>]]>上的。也许它来自<![CDATA[<color=lightblue>眼</color>]]>本身？",
+      "SOLANUM: If so, there is much we could learn from it. It could answer some of my clan's greatest questions. Perhaps it could even allow us our first true glimpse of the <![CDATA[<color=lightblue>Eye</color>]]>.":"所莱内姆：倘若如此，我们有许多东西可以从它身上学习。它能解答一些我的家族最大的困惑。也许它甚至能让我们首次一睹<![CDATA[<color=lightblue>眼</color>]]>的真容。",
+      "SOLANUM: Whoever built this probe, I do not believe that they were Nomai. It is comforting to know that my clan is not alone in our search for the <![CDATA[<color=lightblue>Eye</color>]]>.":"所莱内姆：无论制作了这个探测器的是谁，我不认为它们是挪麦人。我的家族在寻找<![CDATA[<color=lightblue>眼</color>]]>的过程中并不孤独，这让我倍感安慰。",
+      "SOLANUM: I wonder if this is the only probe of its kind. Perhaps my clan have discovered others in the time since I started my pilgrimage.":"所莱内姆：不知道这个探测器是否独一无二。也许我的家族自我的朝圣启程后也发现了其他同样的探测器。",
+      "SOLANUM: Perhaps you know more about this probe than I do. I suspect there is much you could teach me if we were able to communicate more directly.":"所莱内姆：也许你对这个探测器的了解比我更多。如果我们能直接交流，我想你有很多知识可以传授给我。",
+      "SOLANUM: I have a hypothesis that my journey may be at an end. The task of uncovering this probe's mysteries may fall to you.":"所莱内姆：我有个假设——我的旅途可能已经结束。解开这个探测器之谜的任务可能要落在你的肩上了。",
+      "SOLANUM: The device that produced that stone is strange. I have never encountered anything of its sort elsewhere. Though it is invisible even to my third eye, I have still succeeded in extracting some of the contents of its memory.":"所莱内姆：产生那块石头的设备很陌生，我从未在其他地方见过类似的事物。尽管连我的第三眼都无法看见它，我仍然成功提取了它内存的部分内容。",
+      "SOLANUM: I am still in the process of decoding it but what I have found so far is intriguing. I am confident that it was not built by Nomai, yet it contains a database of our language. I wonder who could have created it.":"所莱内姆：我还在解码其中的内容，不过我目前的发现很令人着迷。我很确信它不是被挪麦人制造的，然而它却包含我们的语言数据库。不知道是谁造出了它？",
+      
+      "Gabbro again. Hornfels wasn't convinced by my initial assessment of the satellite and wanted me to head back out here to double check my work.":"又是我，加布罗。我对卫星的第一次检查没能说服霍恩费斯，他让我回来再次确认我的工作。",
+      "Normally I'd resent being asked to do the same job twice. But I picked up some supplies that will let me do something I've wanted to try for a while.":"一般来说我很讨厌被要求做重复的工作。但是我带来了一些物资，能让我做一件我一直想尝试的事。",
+      "See, dozing off is great but there are two things that can make it better. One: a warm campfire. And two: zero gravity.":"你看，打盹是很不错，但是有两件事能让它体验更好。第一，温暖的篝火；第二，零重力。",
+      "How relaxing would it be to combine both? That's what I want to... find... out...":"如果两者结合该有多舒服！这就是我想要……知道……的……",
+      "...":"……",
+      "...Huh?":"……啊？",
+      "Ha! That's potent. I didn't even mean to doze off but the satellite's already halfway around the sun. That's gotta be the best nap I've had in ages. Ten minutes of warm, crackling, zero-gravity bliss.":"哈！效果太强了。我都没想睡过去，但是卫星已经绕了太阳半圈。这一定是我很久以来打过最舒服的盹！十分钟温暖、噼啪作响、零重力的幸福时光。",
+
+      "The secondary probe is currently resting at the <![CDATA[<Color=lightblue>]]>anomaly<![CDATA[</Color>]]>.":"第二探测器目前停在<![CDATA[<Color=lightblue>]]>异常物体<![CDATA[</Color>]]>上。",
+      "<![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> solar distance: 35 kilometers. <![CDATA[<Color=lightblue>]]>Anomaly<![CDATA[</Color>]]> inclination: 270 degrees from orbital plane.":"<![CDATA[<Color=lightblue>]]>异常物体<![CDATA[</Color>]]>与太阳距离：35千米。<![CDATA[<Color=lightblue>]]>异常物体<![CDATA[</Color>]]>倾角：与轨道平面呈270度。",
+
       "Chert’s Research Notes — property of Chert!": "切特的研究笔记，该笔记属于切特所有！",
       "This is the only known Nomai construction on <![CDATA[<Color=lightblue>]]>Dark Bramble<![CDATA[</Color>]]>. Interestingly, its material places it as one of the newest Nomai structures I've explored.": "这是<![CDATA[<Color=lightblue>]]>黑棘星<![CDATA[</Color>]]>上唯一已知的挪麦建筑。有趣的是，从它的建筑材料来看，它是我探索过的距今最近的挪麦建筑之一。",
       "It looks like construction was never finished. Was it abandoned? Or did something happen to the Nomai here?": "看上去这里没能竣工。是被废弃了吗？还是说这里的挪麦人出了什么事？",
@@ -44,7 +70,8 @@
       "[sample collection report:                          ] [    -item: contained singularities                 ] [    -quantity: 4                                   ] [    -time since retrieval: 120 hr                  ] [    -status: containment broken - 2 lost in transit]": "［样本采集报告：　　　　　　　　　　　　　　　　　　］\n［　　－物品：已收容的奇点　　　　　　　　　　　　　］\n［　　－数量：４　　　　　　　　　　　　　　　　　　］\n［　　－回收距今时间：１２０　ｈｒ　　　　　　　　　］\n［　　－状态：容器破坏－转移途中丢失２个　　　　　　］",
       "[sample collection report:                          ] [    -item: writing implement/musical instrument    ] [    -time since retrieval: 2462 M-hr               ] [    -translation utility: high                     ] [    -status: language database extracted           ]": "［样本采集报告：　　　　　　　　　　　　　　　　　　］\n［　　－物品：书写工具／乐器　　　　　　　　　　　　］\n［　　－回收距今时间：２４６２　Ｍ－ｈｒ　　　　　　］\n［　　－翻译实用性：高　　　　　　　　　　　　　　　］\n［　　－状态：语言数据库已提取　　　　　　　　　　　］",
 
-      "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "我们用<![CDATA[<Color=orange>]]>群星编码<![CDATA[</Color>]]>传输了所有的故事，一切我们能在终结前录下的信息。 如果你在阅读这段文字，那么我们的信息一定完好无损地通过了漩涡。",
+      "It's hard to believe that this message will ever be found. By the time anyone reads this, our entire universe, everything and everyone we've ever known, will have been dead for billions of years. That's a difficult thing to imagine.":"很难相信这条信息会被发现。等有人读到这些字时，我们的整个宇宙，我们知道的一切人和事物，都已经逝去亿万年了。这真是难以想象。",
+      "We used the <![CDATA[<Color=orange>]]>Astral Codec<![CDATA[</Color>]]> to transmit every story, every piece of information we could record before the end. If you're reading this, our message must have made it through the vortex intact.": "这个探测器是我们最后的希望。我们用<![CDATA[<Color=orange>]]>群星编码<![CDATA[</Color>]]>传输了所有的故事，一切我们能在终结前录下的信息。 如果你在阅读这段文字，那么我们的信息一定完好无损地通过了漩涡。",
       "Take it. Add your own stories and knowledge, and pass it onwards through the vortex in whatever way you can. Together we can keep the thread of memory alive. - Explorer": "接收它。加入你们自己的故事和知识，用你力所能及的方式让它穿过漩涡传递下去。齐心协力，我们可以让记忆之线生生不息。-探索者",
       "tests passed - codec safeguards disabled |                      \\ | /                     | |                    --- o ---                   | |                      / | \\                     | core activated - insert device for download": "测试通过－编码保护措施已解除\n｜　　　　　　　　　　　＼｜／　　　　　　　　　　　｜\n｜　　　　　　　　　－－－ｏ－－－　　　　　　　　　｜\n｜　　　　　　　　　　　／｜＼　　　　　　　　　　　｜\n编码已激活－插入设备以供下载",
       "codec downloaded successfully |     *     *    *       |    *     *    *     * | | *     *      *        \\|/      *         *     | |  *         *     *   -----           *     *   | pass it onwards": "编码下载成功\n｜　　＊　　　＊　　＊　　｜　　＊　　＊　　＊　　＊｜\n｜＊　　＊　　　＊　　　＼｜／　　　＊　　　　＊　　｜\n｜　＊　　　＊　　＊　－－－－－　　　　　＊　　＊　｜\n传递下去",
@@ -73,7 +100,6 @@
       "The Nomai were true scholars, always curious about the nature of our universe. Relics of their search for knowledge are spread throughout this solar system.": "挪麦人是真正的学者，他们总是渴望探求宇宙的本质，探寻知识的遗迹遍布整个太阳系。",
       "While other Nomai clans survive to this day, one clan's generations-long search for the Eye of the Universe has played a profound role in the final days of this universe.": "尽管其他挪麦家族存活至今，但有一个家族世世代代搜寻宇宙之眼，对宇宙终结有深远的影响。",
       "Without their records and technology, I could not have made it as far as I have.": "没有他们的记录和科技，我不可能走得如此之远。",
-      "...":"……",
       "Tragically, the Nomai that settled in this solar system were wiped out by an explosion of ghost matter released by a damaged fuel geode from the Lingering Chime.": "令人痛惜的是，在这个太阳系中安顿下来的挪麦人由于一次幽灵物质爆炸灭绝了，这是余音站损坏的燃料晶球导致的。",
       "They would have been fascinated by this discovery if they had survived.": "他们如果存活下来，一定会为这一发现而着迷。",
       "The Strangers were archivists, preserving information at any cost. But their fear of the Eye led them to hide from the world inside a simulation of their own creation. Until one of them released the signal for the Nomai to find, and was imprisoned for their actions.": "外星站上的人们热衷于保存档案，为保留信息不惜一切代价。但对眼的恐惧促使他们逃避现实，躲进自己创造的虚拟世界。直到其中一人释放了信号让挪麦人得以接收，并因此被幽禁。",
@@ -125,7 +151,7 @@
       "EXPLORER: And a prelude to what comes next!": "探索者：也是未来一切的序曲！",
 
       "Anomaly matching partial criteria for the <![CDATA[<Color=lightblue>]]>Eye of the Universe<![CDATA[</Color>]]> impacted by probe 78,809. Coordinates recorded.": "探测器78,809与符合<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>部分指标的异常现象发生撞击。坐标已记录。",
-      "Firing signal received, retrieving stored coordinates. Launching secondary probe. Secondary probe arrived at destination.": "收到发射信号，正在读取已储存的坐标。正在发射第二探测器。第二探测器已到达目的地。",
+      "Firing signal received, retrieving stored coordinates. Launching secondary probe. Secondary probe arrived at destination.": "收到发射信号，正在读取已储存的坐标。正在发射第二探测器。第二探测器已到达目的地。启动第一探测器发射程序。",
       "Initiating visual link. Projection stone generated. Connection unstable.": "正在建立视觉链接。投影石已生成。连接不稳定。",
 
       "fuel unstable - deploying liquid to neutralize | progress 00%: -------------------------------- | | progress 36%: ||||||||||||-------------------- | | progress 84%: |||||||||||||||||||||||||||----- | fuel remains fatal - liquid frozen into ice": "燃料不稳定 - 调用液体进行中和\n｜进度００％：－－－－－－－－－－－－－－－－－－－｜\n｜进度３６％：｜｜｜｜｜｜｜－－－－－－－－－－－－｜\n｜进度８４％：｜｜｜｜｜｜｜｜｜｜｜｜｜｜｜｜－－－｜\n燃料仍然致命－液体冻结成冰",
@@ -190,11 +216,13 @@
       
       "Anomaly Recording": "异常事件记录",
       "The images I saw when I died led me to the Orbital Probe Cannon's Probe Tracking Module.": "我死后看到的画面引导我来到轨道探测炮的探测器跟踪模块。",
-      "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.": "轨道探测炮生成了一块投影石与第二探测器建立链接，该探测器与某个符合宇宙之眼部分指标的物体发生了撞击。我能看到远处的行星按顺时针旋转。",
+      "The Orbital Probe Cannon generated a projection stone linked to a secondary probe which impacted an unknown body matching partial criteria for the Eye of the Universe. I can see the planets orbiting clockwise in the distance.": "轨道探测炮生成了一块投影石与第二探测器建立链接，该探测器与某个符合宇宙之眼部分指标的物体发生了撞击。",
+      "When I used the projection stone, I saw a strange vortex below me. I could see the planets orbiting clockwise in the distance.":"使用投影石时，我看到脚下有一个奇怪的漩涡。我能看到远处的行星按顺时针旋转。",
+      "The anomaly is located 35 kilometers from the sun with an inclination of 270 degrees.":"异常物体距离太阳35千米，倾角为270度。",
 
       "Anomalous Body": "异常物体",
       "The Orbital Probe Cannon detected an unknown body within the solar system that was a partial match for the Eye of the Universe.": "轨道探测炮探测到太阳系内有一个未知物体与宇宙之眼部分符合。",
-      "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "在太阳系平面下的远处悬停的一个异常物体。其附近有轨道探测炮发射的第二探测器。",
+      "An anomaly resting far below the plane of the solar system. A secondary probe from the Orbital Probe Cannon is found nearby.": "在太阳系平面下的远处悬停的一个异常物体。其附近有一个挪麦探测器。",
       "I passed through a strange device and the structure revealed itself. I can see ghost matter now!": "在我穿过一个奇特的装置后，构筑物出现在我的眼前。我能看见幽灵物质了！",
 
       "Lingering Chime": "余音站",
@@ -251,7 +279,8 @@
       "Translation Probe Astral":"翻译探测器－群星",
       "Lingering Chime": "余音站",
       "Secondary Probe":"第二探测器",
-      "Write Addendum":"编写附录"
+      "Write Addendum":"编写附录",
+      "'Probe' Stone":"“探测器”投影石"
     },
     "OtherDictionary":{
       "&*|[+{&":"][4#.;/2{)[2",
